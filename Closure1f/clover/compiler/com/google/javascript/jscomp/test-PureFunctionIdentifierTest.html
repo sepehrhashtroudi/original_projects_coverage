@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class PureFunctionIdentifierTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="PureFunctionIdentifierTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>PureFunctionIdentifierTest</td>
+        <td class="testPasses"><span class="sortValue">218</span>218</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>10.05</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference4</span><a href="PureFunctionIdentifierTest_testInference4_570.html">PureFunctionIdentifierTest.testInference4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774457</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new5</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new5_6z9.html">PureFunctionIdentifierTest.testAnnotationInExterns_new5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772898</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis1</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis1_2a3.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775484</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperator1</span><a href="PureFunctionIdentifierTest_testOrOperator1_7ls.html">PureFunctionIdentifierTest.testOrOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775056</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction1</span><a href="PureFunctionIdentifierTest_testAnonymousFunction1_2n6.html">PureFunctionIdentifierTest.testAnonymousFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610075</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.043</span>0.043</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction3</span><a href="PureFunctionIdentifierTest_testAnonymousFunction3_8bb.html">PureFunctionIdentifierTest.testAnonymousFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610162</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.042</span>0.042</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNoSideEffectsSimple</span><a href="PureFunctionIdentifierTest_testNoSideEffectsSimple_6m.html">PureFunctionIdentifierTest.testNoSideEffectsSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609212</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.45</span>0.45</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAssignmentOverride</span><a href="PureFunctionIdentifierTest_testAssignmentOverride_ab8.html">PureFunctionIdentifierTest.testAssignmentOverride</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610628</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.09</span>0.09</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation3</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation3_6mz.html">PureFunctionIdentifierTest.testInvalidAnnotation3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610791</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns4</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns4_6tv.html">PureFunctionIdentifierTest.testAnnotationInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609842</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.042</span>0.042</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns6</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns6_afl.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773509</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns3</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns3_7xj.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773200</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects2</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects2_5sw.html">PureFunctionIdentifierTest.testLocalizedSideEffects2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606980</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCall</span><a href="PureFunctionIdentifierTest_testCall_bk2.html">PureFunctionIdentifierTest.testCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772572</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testSharedFunctionName2</span><a href="PureFunctionIdentifierTest_testSharedFunctionName2_3ig.html">PureFunctionIdentifierTest.testSharedFunctionName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611015</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation5</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation5_78.html">PureFunctionIdentifierTest.testInvalidAnnotation5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610837</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns1</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns1_8s0.html">PureFunctionIdentifierTest.testAnnotationInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609708</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.045</span>0.045</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis4</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis4_2kr.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775550</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testThrow1</span><a href="PureFunctionIdentifierTest_testThrow1_8z.html">PureFunctionIdentifierTest.testThrow1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611717</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperator1</span><a href="PureFunctionIdentifierTest_testHookOperator1_2l1.html">PureFunctionIdentifierTest.testHookOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610859</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new3</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new3_j1.html">PureFunctionIdentifierTest.testAnnotationInExterns_new3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608114</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.059</span>0.059</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new7</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new7_556.html">PureFunctionIdentifierTest.testAnnotationInExterns_new7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772937</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new2</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new2_1yj.html">PureFunctionIdentifierTest.testAnnotationInExterns_new2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608058</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.055</span>0.055</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects6</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects6_4j6.html">PureFunctionIdentifierTest.testLocalizedSideEffects6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607260</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.075</span>0.075</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs3</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs3_9df.html">PureFunctionIdentifierTest.testAnnotationInExternStubs3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773710</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperators4</span><a href="PureFunctionIdentifierTest_testHookOperators4_3so.html">PureFunctionIdentifierTest.testHookOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775259</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInheritance1</span><a href="PureFunctionIdentifierTest_testInheritance1_52.html">PureFunctionIdentifierTest.testInheritance1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608979</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.096</span>0.096</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNoSideEffectsSimple</span><a href="PureFunctionIdentifierTest_testNoSideEffectsSimple_143.html">PureFunctionIdentifierTest.testNoSideEffectsSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773743</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.234</span>0.234</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new2</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new2_yk.html">PureFunctionIdentifierTest.testAnnotationInExterns_new2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772840</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs2</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs2_9ti.html">PureFunctionIdentifierTest.testAnnotationInExternStubs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773673</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testThrow2</span><a href="PureFunctionIdentifierTest_testThrow2_5a8.html">PureFunctionIdentifierTest.testThrow2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775293</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testSharedFunctionName2</span><a href="PureFunctionIdentifierTest_testSharedFunctionName2_7tm.html">PureFunctionIdentifierTest.testSharedFunctionName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773615</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperator2</span><a href="PureFunctionIdentifierTest_testAndOperator2_6z1.html">PureFunctionIdentifierTest.testAndOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611806</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new3</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new3_53t.html">PureFunctionIdentifierTest.testAnnotationInExterns_new3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772860</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new1</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new1_aax.html">PureFunctionIdentifierTest.testAnnotationInExterns_new1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608003</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.054</span>0.054</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects4</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects4_5p7.html">PureFunctionIdentifierTest.testLocalizedSideEffects4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774639</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testSharedFunctionName1</span><a href="PureFunctionIdentifierTest_testSharedFunctionName1_7vb.html">PureFunctionIdentifierTest.testSharedFunctionName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773595</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallRegExpWithSideEffects</span><a href="PureFunctionIdentifierTest_testCallRegExpWithSideEffects_1ct.html">PureFunctionIdentifierTest.testCallRegExpWithSideEffects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608881</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.098</span>0.098</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperator3</span><a href="PureFunctionIdentifierTest_testAndOperator3_2kx.html">PureFunctionIdentifierTest.testAndOperator3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611835</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new5</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new5_cg9.html">PureFunctionIdentifierTest.testAnnotationInExterns_new5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608231</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.053</span>0.053</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperator1</span><a href="PureFunctionIdentifierTest_testHookOperator1_44i.html">PureFunctionIdentifierTest.testHookOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775200</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis3</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis3_373.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606017</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.099</span>0.099</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperator3</span><a href="PureFunctionIdentifierTest_testAndOperator3_25o.html">PureFunctionIdentifierTest.testAndOperator3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775161</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators3</span><a href="PureFunctionIdentifierTest_testUnaryOperators3_4hn.html">PureFunctionIdentifierTest.testUnaryOperators3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774929</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference1</span><a href="PureFunctionIdentifierTest_testInference1_7x8.html">PureFunctionIdentifierTest.testInference1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608503</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.055</span>0.055</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAssignmentOverride</span><a href="PureFunctionIdentifierTest_testAssignmentOverride_9h0.html">PureFunctionIdentifierTest.testAssignmentOverride</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775311</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.037</span>0.037</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new4</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new4_7k1.html">PureFunctionIdentifierTest.testAnnotationInExterns_new4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608173</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.057</span>0.057</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns1</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns1_76c.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611045</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs1b</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs1b_ca5.html">PureFunctionIdentifierTest.testAnnotationInExternStubs1b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773654</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperator3</span><a href="PureFunctionIdentifierTest_testHookOperator3_6iv.html">PureFunctionIdentifierTest.testHookOperator3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610916</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects3</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects3_cxg.html">PureFunctionIdentifierTest.testLocalizedSideEffects3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774611</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction2</span><a href="PureFunctionIdentifierTest_testAnonymousFunction2_ct3.html">PureFunctionIdentifierTest.testAnonymousFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610119</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.042</span>0.042</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns5</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns5_5kd.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697612013</span>2 Jan 15:13:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.086</span>0.086</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference2</span><a href="PureFunctionIdentifierTest_testInference2_boa.html">PureFunctionIdentifierTest.testInference2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774392</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.033</span>0.033</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns8</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns8_78k.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611237</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal1</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesGlobal1_9yx.html">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775570</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new1</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new1_2ce.html">PureFunctionIdentifierTest.testAnnotationInExterns_new1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772821</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns8</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns8_bac.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773565</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns5</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns5_7qy.html">PureFunctionIdentifierTest.testAnnotationInExterns5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609885</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.044</span>0.044</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns2</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns2_a0.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773167</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs1</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs1_24v.html">PureFunctionIdentifierTest.testAnnotationInExternStubs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606198</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.076</span>0.076</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionThatModifiesThis</span><a href="PureFunctionIdentifierTest_testCallFunctionThatModifiesThis_47f.html">PureFunctionIdentifierTest.testCallFunctionThatModifiesThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775611</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrGViaHook</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrGViaHook_4hz.html">PureFunctionIdentifierTest.testCallFunctionFOrGViaHook</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775651</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new8</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new8_98n.html">PureFunctionIdentifierTest.testAnnotationInExterns_new8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608396</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.053</span>0.053</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperators4</span><a href="PureFunctionIdentifierTest_testOrOperators4_9dw.html">PureFunctionIdentifierTest.testOrOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775109</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects1</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects1_3j8.html">PureFunctionIdentifierTest.testLocalizedSideEffects1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606897</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.082</span>0.082</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators2</span><a href="PureFunctionIdentifierTest_testUnaryOperators2_8aq.html">PureFunctionIdentifierTest.testUnaryOperators2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607645</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.06</span>0.06</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testSharedFunctionName1</span><a href="PureFunctionIdentifierTest_testSharedFunctionName1_6sx.html">PureFunctionIdentifierTest.testSharedFunctionName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610984</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperator1</span><a href="PureFunctionIdentifierTest_testAndOperator1_4k8.html">PureFunctionIdentifierTest.testAndOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611778</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallRegExpWithSideEffects</span><a href="PureFunctionIdentifierTest_testCallRegExpWithSideEffects_7rz.html">PureFunctionIdentifierTest.testCallRegExpWithSideEffects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775735</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.043</span>0.043</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators4</span><a href="PureFunctionIdentifierTest_testUnaryOperators4_3j3.html">PureFunctionIdentifierTest.testUnaryOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774960</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionThatModifiesThis</span><a href="PureFunctionIdentifierTest_testCallFunctionThatModifiesThis_4ak.html">PureFunctionIdentifierTest.testCallFunctionThatModifiesThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610248</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.051</span>0.051</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new10</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new10_4o3.html">PureFunctionIdentifierTest.testAnnotationInExterns_new10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772996</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators5</span><a href="PureFunctionIdentifierTest_testUnaryOperators5_72b.html">PureFunctionIdentifierTest.testUnaryOperators5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607821</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.06</span>0.06</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference3</span><a href="PureFunctionIdentifierTest_testInference3_37p.html">PureFunctionIdentifierTest.testInference3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608615</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.052</span>0.052</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperator2</span><a href="PureFunctionIdentifierTest_testAndOperator2_96i.html">PureFunctionIdentifierTest.testAndOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775144</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns2</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns2_6mi.html">PureFunctionIdentifierTest.testAnnotationInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773045</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns3</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns3_a0g.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611932</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.04</span>0.04</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInheritance2</span><a href="PureFunctionIdentifierTest_testInheritance2_cxh.html">PureFunctionIdentifierTest.testInheritance2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775382</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.063</span>0.063</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testDeleteOperator1</span><a href="PureFunctionIdentifierTest_testDeleteOperator1_5ip.html">PureFunctionIdentifierTest.testDeleteOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775009</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperators4</span><a href="PureFunctionIdentifierTest_testAndOperators4_2um.html">PureFunctionIdentifierTest.testAndOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607942</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.06</span>0.06</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns6</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns6_498.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611182</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperator2</span><a href="PureFunctionIdentifierTest_testHookOperator2_25j.html">PureFunctionIdentifierTest.testHookOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775218</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation1</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation1_8pm.html">PureFunctionIdentifierTest.testInvalidAnnotation1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772644</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns2</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns2_btf.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611072</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testApply</span><a href="PureFunctionIdentifierTest_testApply_cqf.html">PureFunctionIdentifierTest.testApply</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607527</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.057</span>0.057</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperators4</span><a href="PureFunctionIdentifierTest_testHookOperators4_lc.html">PureFunctionIdentifierTest.testHookOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609663</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.044</span>0.044</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects8</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects8_cyo.html">PureFunctionIdentifierTest.testLocalizedSideEffects8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774750</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrGWithSideEffects</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrGWithSideEffects_14w.html">PureFunctionIdentifierTest.testCallFunctionFOrGWithSideEffects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611322</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperator3</span><a href="PureFunctionIdentifierTest_testOrOperator3_7c1.html">PureFunctionIdentifierTest.testOrOperator3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775091</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference6</span><a href="PureFunctionIdentifierTest_testInference6_73c.html">PureFunctionIdentifierTest.testInference6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608771</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.051</span>0.051</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns7</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns7_cun.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773535</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs1b</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs1b_alk.html">PureFunctionIdentifierTest.testAnnotationInExternStubs1b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606770</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.065</span>0.065</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference3</span><a href="PureFunctionIdentifierTest_testInference3_dgd.html">PureFunctionIdentifierTest.testInference3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774426</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns1</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns1_1w4.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773362</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis2</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis2_5ld.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697605943</span>2 Jan 15:13:25</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.073</span>0.073</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis3</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis3_bb0.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775528</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns4</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns4_35a.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773461</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testResultLocalitySimple</span><a href="PureFunctionIdentifierTest_testResultLocalitySimple_22g.html">PureFunctionIdentifierTest.testResultLocalitySimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611352</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.365</span>0.365</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrGViaHookWithSideEffects</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrGViaHookWithSideEffects_261.html">PureFunctionIdentifierTest.testCallFunctionFOrGViaHookWithSideEffects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608823</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.057</span>0.057</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs2b</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs2b_9pt.html">PureFunctionIdentifierTest.testAnnotationInExternStubs2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773692</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction4</span><a href="PureFunctionIdentifierTest_testAnonymousFunction4_bw6.html">PureFunctionIdentifierTest.testAnonymousFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610205</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.042</span>0.042</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference4</span><a href="PureFunctionIdentifierTest_testInference4_850.html">PureFunctionIdentifierTest.testInference4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608667</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.051</span>0.051</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testIssue303b</span><a href="PureFunctionIdentifierTest_testIssue303b_2zw.html">PureFunctionIdentifierTest.testIssue303b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610946</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.037</span>0.037</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction1</span><a href="PureFunctionIdentifierTest_testAnonymousFunction1_5nd.html">PureFunctionIdentifierTest.testAnonymousFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775779</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects9</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects9_8p9.html">PureFunctionIdentifierTest.testLocalizedSideEffects9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607467</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.06</span>0.06</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testThrow2</span><a href="PureFunctionIdentifierTest_testThrow2_47y.html">PureFunctionIdentifierTest.testThrow2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611747</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns3</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns3_e7k.html">PureFunctionIdentifierTest.testAnnotationInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773074</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns5</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns5_9fi.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611156</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects5</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects5_bws.html">PureFunctionIdentifierTest.testLocalizedSideEffects5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774664</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs2</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs2_ae5.html">PureFunctionIdentifierTest.testAnnotationInExternStubs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606275</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.074</span>0.074</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInheritance2</span><a href="PureFunctionIdentifierTest_testInheritance2_c8n.html">PureFunctionIdentifierTest.testInheritance2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609076</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.081</span>0.081</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionForGorH</span><a href="PureFunctionIdentifierTest_testCallFunctionForGorH_aqi.html">PureFunctionIdentifierTest.testCallFunctionForGorH</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775670</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects4</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects4_c66.html">PureFunctionIdentifierTest.testLocalizedSideEffects4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607122</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns5</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns5_3lx.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773266</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.063</span>0.063</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCall</span><a href="PureFunctionIdentifierTest_testCall_8c5.html">PureFunctionIdentifierTest.testCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607882</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.059</span>0.059</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns4</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns4_195.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773233</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs2b</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs2b_7tb.html">PureFunctionIdentifierTest.testAnnotationInExternStubs2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606836</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.061</span>0.061</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation4</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation4_48.html">PureFunctionIdentifierTest.testInvalidAnnotation4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610814</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testThrow1</span><a href="PureFunctionIdentifierTest_testThrow1_879.html">PureFunctionIdentifierTest.testThrow1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775276</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new6</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new6_cmd.html">PureFunctionIdentifierTest.testAnnotationInExterns_new6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608285</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.053</span>0.053</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns3</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns3_26x.html">PureFunctionIdentifierTest.testAnnotationInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609798</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.043</span>0.043</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns5</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns5_ed5.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773491</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns1</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns1_egc.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611861</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction4</span><a href="PureFunctionIdentifierTest_testAnonymousFunction4_j5.html">PureFunctionIdentifierTest.testAnonymousFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772716</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrG</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrG_v4.html">PureFunctionIdentifierTest.testCallFunctionFOrG</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775631</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal2</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesGlobal2_75d.html">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775589</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects7</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects7_6lo.html">PureFunctionIdentifierTest.testLocalizedSideEffects7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774721</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testIssue303</span><a href="PureFunctionIdentifierTest_testIssue303_4lu.html">PureFunctionIdentifierTest.testIssue303</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772777</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns2</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns2_2aa.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611889</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.042</span>0.042</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators1</span><a href="PureFunctionIdentifierTest_testUnaryOperators1_1z7.html">PureFunctionIdentifierTest.testUnaryOperators1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774873</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators3</span><a href="PureFunctionIdentifierTest_testUnaryOperators3_6dz.html">PureFunctionIdentifierTest.testUnaryOperators3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607706</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.057</span>0.057</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis4</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis4_1ns.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606117</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.08</span>0.08</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testExternCalls</span><a href="PureFunctionIdentifierTest_testExternCalls_93k.html">PureFunctionIdentifierTest.testExternCalls</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772469</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.102</span>0.102</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation1</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation1_9b6.html">PureFunctionIdentifierTest.testInvalidAnnotation1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610719</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.035</span>0.035</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new9</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new9_ag.html">PureFunctionIdentifierTest.testAnnotationInExterns_new9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608450</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.052</span>0.052</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects8</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects8_c2r.html">PureFunctionIdentifierTest.testLocalizedSideEffects8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607403</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.063</span>0.063</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs3</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs3_2f3.html">PureFunctionIdentifierTest.testAnnotationInExternStubs3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606350</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs1</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs1_2ii.html">PureFunctionIdentifierTest.testAnnotationInExternStubs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773635</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns2</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns2_20j.html">PureFunctionIdentifierTest.testAnnotationInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609754</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.043</span>0.043</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis1</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis1_5ie.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697605871</span>2 Jan 15:13:25</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperator3</span><a href="PureFunctionIdentifierTest_testHookOperator3_2dn.html">PureFunctionIdentifierTest.testHookOperator3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775242</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation3</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation3_bgw.html">PureFunctionIdentifierTest.testInvalidAnnotation3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772595</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs5</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs5_3mj.html">PureFunctionIdentifierTest.testAnnotationInExternStubs5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606470</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperator1</span><a href="PureFunctionIdentifierTest_testAndOperator1_2i8.html">PureFunctionIdentifierTest.testAndOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775126</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperator1</span><a href="PureFunctionIdentifierTest_testOrOperator1_1kl.html">PureFunctionIdentifierTest.testOrOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610300</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.046</span>0.046</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects7</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects7_94m.html">PureFunctionIdentifierTest.testLocalizedSideEffects7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607336</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.067</span>0.067</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns6</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns6_azp.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697612100</span>2 Jan 15:13:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.045</span>0.045</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAndOperators4</span><a href="PureFunctionIdentifierTest_testAndOperators4_btl.html">PureFunctionIdentifierTest.testAndOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775181</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators4</span><a href="PureFunctionIdentifierTest_testUnaryOperators4_afp.html">PureFunctionIdentifierTest.testUnaryOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607764</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.057</span>0.057</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns6</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns6_68z.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773330</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns2</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns2_dpq.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773393</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects1</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects1_859.html">PureFunctionIdentifierTest.testLocalizedSideEffects1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774550</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns7</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns7_43p.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611210</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference6</span><a href="PureFunctionIdentifierTest_testInference6_cvp.html">PureFunctionIdentifierTest.testInference6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774518</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators2</span><a href="PureFunctionIdentifierTest_testUnaryOperators2_6h0.html">PureFunctionIdentifierTest.testUnaryOperators2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774901</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects5</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects5_1oo.html">PureFunctionIdentifierTest.testLocalizedSideEffects5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607193</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.067</span>0.067</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference1</span><a href="PureFunctionIdentifierTest_testInference1_2hb.html">PureFunctionIdentifierTest.testInference1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774360</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new4</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new4_cma.html">PureFunctionIdentifierTest.testAnnotationInExterns_new4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772879</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallBeforeDefinition</span><a href="PureFunctionIdentifierTest_testCallBeforeDefinition_c2b.html">PureFunctionIdentifierTest.testCallBeforeDefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775446</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.037</span>0.037</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal1</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesGlobal1_7s9.html">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609977</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionForGorH</span><a href="PureFunctionIdentifierTest_testCallFunctionForGorH_azs.html">PureFunctionIdentifierTest.testCallFunctionForGorH</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609158</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.053</span>0.053</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testIssue303</span><a href="PureFunctionIdentifierTest_testIssue303_6qk.html">PureFunctionIdentifierTest.testIssue303</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611265</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference2</span><a href="PureFunctionIdentifierTest_testInference2_4an.html">PureFunctionIdentifierTest.testInference2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608558</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.056</span>0.056</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators1</span><a href="PureFunctionIdentifierTest_testUnaryOperators1_9h.html">PureFunctionIdentifierTest.testUnaryOperators1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607585</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.059</span>0.059</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects3</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects3_99r.html">PureFunctionIdentifierTest.testLocalizedSideEffects3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697607051</span>2 Jan 15:13:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.07</span>0.07</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects2</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects2_65c.html">PureFunctionIdentifierTest.testLocalizedSideEffects2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774581</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testIssue303b</span><a href="PureFunctionIdentifierTest_testIssue303b_cvn.html">PureFunctionIdentifierTest.testIssue303b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772755</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs4</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs4_a5l.html">PureFunctionIdentifierTest.testAnnotationInExternStubs4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773729</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesThis2</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesThis2_8hz.html">PureFunctionIdentifierTest.testConstructorThatModifiesThis2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775507</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInheritance1</span><a href="PureFunctionIdentifierTest_testInheritance1_5zk.html">PureFunctionIdentifierTest.testInheritance1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775348</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.033</span>0.033</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns5</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns5_6zq.html">PureFunctionIdentifierTest.testAnnotationInExterns5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773135</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns3</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns3_ii.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611099</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrGViaHook</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrGViaHook_bl8.html">PureFunctionIdentifierTest.testCallFunctionFOrGViaHook</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610582</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.045</span>0.045</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new6</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new6_6j8.html">PureFunctionIdentifierTest.testAnnotationInExterns_new6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772917</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new7</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new7_1jd.html">PureFunctionIdentifierTest.testAnnotationInExterns_new7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608339</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.056</span>0.056</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new8</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new8_21n.html">PureFunctionIdentifierTest.testAnnotationInExterns_new8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772956</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects6</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects6_4hr.html">PureFunctionIdentifierTest.testLocalizedSideEffects6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774693</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testDeleteOperator1</span><a href="PureFunctionIdentifierTest_testDeleteOperator1_aq7.html">PureFunctionIdentifierTest.testDeleteOperator1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697605709</span>2 Jan 15:13:25</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.077</span>0.077</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation2</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation2_4xj.html">PureFunctionIdentifierTest.testInvalidAnnotation2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772659</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects11</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects11_2fz.html">PureFunctionIdentifierTest.testLocalizedSideEffects11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774841</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns4</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns4_9sh.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611129</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallBeforeDefinition</span><a href="PureFunctionIdentifierTest_testCallBeforeDefinition_cpp.html">PureFunctionIdentifierTest.testCallBeforeDefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697605258</span>2 Jan 15:13:25</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.45</span>0.45</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns4</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns4_8o9.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611972</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.04</span>0.04</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testExternCalls</span><a href="PureFunctionIdentifierTest_testExternCalls_35e.html">PureFunctionIdentifierTest.testExternCalls</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606493</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.276</span>0.276</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testUnaryOperators5</span><a href="PureFunctionIdentifierTest_testUnaryOperators5_2s1.html">PureFunctionIdentifierTest.testUnaryOperators5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774990</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal2</span><a href="PureFunctionIdentifierTest_testConstructorThatModifiesGlobal2_6c8.html">PureFunctionIdentifierTest.testConstructorThatModifiesGlobal2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610025</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.049</span>0.049</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperator2</span><a href="PureFunctionIdentifierTest_testOrOperator2_ack.html">PureFunctionIdentifierTest.testOrOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610347</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction3</span><a href="PureFunctionIdentifierTest_testAnonymousFunction3_3g5.html">PureFunctionIdentifierTest.testAnonymousFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772696</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testDeleteOperator2</span><a href="PureFunctionIdentifierTest_testDeleteOperator2_6si.html">PureFunctionIdentifierTest.testDeleteOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697605787</span>2 Jan 15:13:25</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.083</span>0.083</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrGWithSideEffects</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrGWithSideEffects_6d.html">PureFunctionIdentifierTest.testCallFunctionFOrGWithSideEffects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775690</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs4</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs4_49m.html">PureFunctionIdentifierTest.testAnnotationInExternStubs4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697606422</span>2 Jan 15:13:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperators4</span><a href="PureFunctionIdentifierTest_testOrOperators4_59j.html">PureFunctionIdentifierTest.testOrOperators4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697611294</span>2 Jan 15:13:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation4</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation4_6jt.html">PureFunctionIdentifierTest.testInvalidAnnotation4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772611</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new9</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new9_4rt.html">PureFunctionIdentifierTest.testAnnotationInExterns_new9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772975</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns1</span><a href="PureFunctionIdentifierTest_testNamespaceAnnotationInExterns1_3w2.html">PureFunctionIdentifierTest.testNamespaceAnnotationInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772802</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testApply</span><a href="PureFunctionIdentifierTest_testApply_527.html">PureFunctionIdentifierTest.testApply</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772735</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects11</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects11_2d4.html">PureFunctionIdentifierTest.testLocalizedSideEffects11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610534</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.048</span>0.048</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation5</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation5_bbf.html">PureFunctionIdentifierTest.testInvalidAnnotation5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772627</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperator2</span><a href="PureFunctionIdentifierTest_testOrOperator2_bd.html">PureFunctionIdentifierTest.testOrOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775073</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference5</span><a href="PureFunctionIdentifierTest_testInference5_3sx.html">PureFunctionIdentifierTest.testInference5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774488</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects9</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects9_1oe.html">PureFunctionIdentifierTest.testLocalizedSideEffects9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774780</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnonymousFunction2</span><a href="PureFunctionIdentifierTest_testAnonymousFunction2_adc.html">PureFunctionIdentifierTest.testAnonymousFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772675</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testDeleteOperator2</span><a href="PureFunctionIdentifierTest_testDeleteOperator2_ch8.html">PureFunctionIdentifierTest.testDeleteOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775033</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testHookOperator2</span><a href="PureFunctionIdentifierTest_testHookOperator2_677.html">PureFunctionIdentifierTest.testHookOperator2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610887</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testResultLocalitySimple</span><a href="PureFunctionIdentifierTest_testResultLocalitySimple_326.html">PureFunctionIdentifierTest.testResultLocalitySimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773978</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.381</span>0.381</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns4</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns4_3b0.html">PureFunctionIdentifierTest.testAnnotationInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773105</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInvalidAnnotation2</span><a href="PureFunctionIdentifierTest_testInvalidAnnotation2_v2.html">PureFunctionIdentifierTest.testInvalidAnnotation2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610755</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.035</span>0.035</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testConstructorAnnotationInExterns3</span><a href="PureFunctionIdentifierTest_testConstructorAnnotationInExterns3_bdo.html">PureFunctionIdentifierTest.testConstructorAnnotationInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773424</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.036</span>0.036</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrGViaHookWithSideEffects</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrGViaHookWithSideEffects_2v7.html">PureFunctionIdentifierTest.testCallFunctionFOrGViaHookWithSideEffects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697775712</span>2 Jan 15:16:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testOrOperator3</span><a href="PureFunctionIdentifierTest_testOrOperator3_2hp.html">PureFunctionIdentifierTest.testOrOperator3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610395</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.045</span>0.045</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects10</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects10_1rd.html">PureFunctionIdentifierTest.testLocalizedSideEffects10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697774810</span>2 Jan 15:16:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testInference5</span><a href="PureFunctionIdentifierTest_testInference5_6au.html">PureFunctionIdentifierTest.testInference5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697608719</span>2 Jan 15:13:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.051</span>0.051</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns1</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns1_5qb.html">PureFunctionIdentifierTest.testAnnotationInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773016</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testLocalizedSideEffects10</span><a href="PureFunctionIdentifierTest_testLocalizedSideEffects10_ce6.html">PureFunctionIdentifierTest.testLocalizedSideEffects10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610484</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.049</span>0.049</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExternStubs5</span><a href="PureFunctionIdentifierTest_testAnnotationInExternStubs5_4mj.html">PureFunctionIdentifierTest.testAnnotationInExternStubs5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697773736</span>2 Jan 15:16:13</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testCallFunctionFOrG</span><a href="PureFunctionIdentifierTest_testCallFunctionFOrG_282.html">PureFunctionIdentifierTest.testCallFunctionFOrG</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697609930</span>2 Jan 15:13:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PureFunctionIdentifierTest.testAnnotationInExterns_new10</span><a href="PureFunctionIdentifierTest_testAnnotationInExterns_new10_bdr.html">PureFunctionIdentifierTest.testAnnotationInExterns_new10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697610440</span>2 Jan 15:13:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.044</span>0.044</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

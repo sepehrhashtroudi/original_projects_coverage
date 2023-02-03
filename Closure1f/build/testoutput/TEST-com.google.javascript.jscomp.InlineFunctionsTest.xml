@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="sepehr-UX310UQK" name="com.google.javascript.jscomp.InlineFunctionsTest" skipped="0" tests="228" time="1.768" timestamp="2023-01-02T22:15:51">
+  <properties>
+    <property name="java.vendor" value="Private Build" />
+    <property name="lib.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Linux" />
+    <property name="clover.historical.json" value="true" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes" />
+    <property name="build.svnVersion" value="Unversioned directory" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="maven-repository-id" value="sonatype-nexus-staging" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="jsonml-jarfile" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/secure_compiler.jar" />
+    <property name="java.runtime.version" value="1.8.0_352-8u352-ga-1~20.04-b08" />
+    <property name="gen.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/gen" />
+    <property name="clover.project.historydir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/.cloverhistory/compiler" />
+    <property name="clover.flushinterval" value="100" />
+    <property name="user.name" value="sepehr" />
+    <property name="ant.file.compiler" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build.xml" />
+    <property name="build.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build" />
+    <property name="jsonml.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/src/com/google/javascript/jscomp/jsonml" />
+    <property name="ant.build.javac.target" value="1.6" />
+    <property name="stylesheetfile" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/javadoc/dev_javadoc.css" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="jar" />
+    <property name="ant.project.name" value="compiler" />
+    <property name="java.version" value="1.8.0_352" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="protoc.executable" value="protoc" />
+    <property name="classes.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/classes" />
+    <property name="clover.initstring" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/.clover/clover4_4_1.db" />
+    <property name="java.class.version" value="52.0" />
+    <property name="testClasses.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/test" />
+    <property name="user.country" value="US" />
+    <property name="jsonml-classes.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/jsonml-classes" />
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
+    <property name="clover.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/clover" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="externs.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/externs" />
+    <property name="ant.file" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build.xml" />
+    <property name="os.version" value="5.15.0-56-generic" />
+    <property name="javac.debug" value="on" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.352-b08" />
+    <property name="num-fuzz-tests" value="10000" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="clover.jar" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/${clover.home}/clover.jar" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="webservice-jarfile" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/webservice.jar" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="test.fork" value="true" />
+    <property name="webservice.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/src/com/google/javascript/jscomp/webservice" />
+    <property name="java.specification.maintenance.version" value="4" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="buildlib.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/lib" />
+    <property name="ant.build.javac.source" value="1.6" />
+    <property name="user.home" value="/home/sepehr" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/test" />
+    <property name="clover.dest" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/clover/compiler" />
+    <property name="clover.span" value="1day" />
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="test.target" value="test" />
+    <property name="java.vm.vendor" value="Private Build" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on October 24 2019" />
+    <property name="java.class.path" value="/home/sepehr/.ant/lib/clover.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/classes:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/ant-launcher.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/ant.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/args4j.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/caja-r4314.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/guava.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/jarjar.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/json.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/jsr305.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/junit.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/lib/protobuf-java.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/lib/rhino.jar:/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/test:/home/sepehr/.ant/lib/evosuite-1.0.6.jar:/usr/share/java/ant-launcher-1.10.7.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/junittestcases9010501712861874427.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/testoutput/IGNORETHIS.xml crashfile=/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/junitvmwatcher5359982851335479822.properties propsfile=/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/junit6549952695583376702.properties" />
+    <property name="project.name" value="compiler" />
+    <property name="test.class" value="*Test" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="clover.snapshot.file" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/.cloverhistory/compiler/clover.snapshot" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="project.title" value="compiler" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="clover.jarpath" value="/home/sepehr/.ant/lib/clover.jar" />
+    <property name="maven-repository-url" value="https://oss.sonatype.org/service/local/staging/deploy/maven2/" />
+    <property name="webservice-classes.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/webservice-classes" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="user.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f" />
+    <property name="ant.file.type.compiler" value="file" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="basedir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="closure.build.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build" />
+    <property name="build.compiler" value="com.atlassian.clover.ant.taskdefs.CloverCompilerAdapter" />
+    <property name="compiler-jarfile" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/compiler.jar" />
+    <property name="clover.historydir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/.cloverhistory" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="src.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/src" />
+    <property name="ant.project.invoked-targets" value="with.clover,test,clover.report" />
+    <property name="javadoc.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/build/javadoc" />
+    <property name="tools.dir" value="/home/sepehr/masters/test_generation/all_projects_coverage/Closure1f/tools" />
+    <property name="clover.flushpolicy" value="directed" />
+  </properties>
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineBlockMutableArgs3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineBlockMutableArgs4" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables5" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables7" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables8" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables9" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables10" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables11" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables12" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables13" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables14" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables15" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables16" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables17" time="0.002" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testShadowVariables18" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining5" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining6" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining7" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining9" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining10" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining11" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInlining12" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex5" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex6" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex7" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex8" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCostBasedInliningComplex9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testDoubleInlining1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testDoubleInlining2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineOfNonGlobalFunction1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineOfNonGlobalFunction2" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineOfNonGlobalFunction3" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineOfNonGlobalFunction4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineObject" time="0.1" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineEmptyFunction1" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineEmptyFunction2" time="0.027" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineEmptyFunction3" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineEmptyFunction4" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineEmptyFunction5" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions1" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions2" time="0.024" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions3" time="0.023" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions4" time="0.022" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions5" time="0.019" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions6" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions7" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions8" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions9" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions10" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions11" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions12" time="0.016" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions13" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions14" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions15a" time="0.014" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions15b" time="0.021" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions15c" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions15d" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions16a" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions16b" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions17" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions18" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions19" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions20" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions21" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions22" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions23" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions24" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions25" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions26" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions27" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions28" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions29" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions30" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctions31" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInlining1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInlining2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInlining3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInlining4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInliningCosting1" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInliningCosting2" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInliningCosting3" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMixedModeInliningCosting4" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified1" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified5" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified6" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified7" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified8" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineIfParametersModified9" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineNeverPartialSubtitution1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineNeverPartialSubtitution2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineNeverMutateConstants" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineNeverOverrideNewValues" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineMutableArgsReferencedOnce" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineMutableArgs1" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineMutableArgs2" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineMutableArgs3" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineMutableArgs4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineBlockMutableArgs1" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineBlockMutableArgs2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineCall" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineMaskedFunction" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testNoInlineNonFunction" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctionWithArgsMismatch1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctionWithArgsMismatch2" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctionWithArgsMismatch3" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineFunctionWithArgsMismatch4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testArgumentsWithSideEffectsNeverInlined1" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testArgumentsWithSideEffectsNeverInlined2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testOneSideEffectCallDoesNotRuinOthers" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineNoResultNoParamCall1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineNoResultNoParamCall2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineNoResultNoParamCall3" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineNoResultWithParamCall1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineNoResultWithParamCall2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineNoResultWithParamCall3" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline1" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline3" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline5" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline6" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline7" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInline8" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars1" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars2" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars3" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars5" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars6" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars7" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars8" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars9" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars10" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars11" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineVars12" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineInExpresssions1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineInExpresssions2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineInExpresssions3" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineInExpresssions4" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexInlineInExpresssions5" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexNoInline1" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexNoInline2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexSample" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexSampleNoInline" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexNoVarSub" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexFunctionWithFunctionDefinition1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexFunctionWithFunctionDefinition2" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexFunctionWithFunctionDefinition2a" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testComplexFunctionWithFunctionDefinition3" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testDecomposePlusEquals" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testDecomposeFunctionExpressionInCall" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineConstructor1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineConstructor2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineConstructor3" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineConstructor4" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionInlining1" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionInlining2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionInlining3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionInlining4" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining1" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining3" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining5" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining6" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining7" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining8" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining9" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining10" time="0.004" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining11a" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining11b" time="0.015" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining11c" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining11d" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining11e" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionCallInlining12" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionOmega" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInlining1" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInlining2" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInlining3" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInlining4" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInlining5" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInlining6" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInliningOnly1" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInliningOnly2" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInliningOnly3" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLocalFunctionInliningOnly4" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithThis1" time="0.053" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithThis2" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithThis3" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithThis4" time="0.01" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithThis5" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithThis6" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithThis7" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testFunctionExpressionYCombinator" time="0.026" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testRenamePropertyFunction" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testReplacePropertyFunction" time="0.009" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testInlineWithClosureContainingThis" time="0.005" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testIssue5159924a" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testIssue5159924b" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testBug4944818" time="0.012" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testIssue423" time="0.018" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testIssue728" time="0.024" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testAnonymous1" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testAnonymous2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testAnonymous3" time="0.013" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testLoopWithFunctionWithFunction" time="0.011" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testMethodWithFunctionWithFunction" time="0.008" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCrossModuleInlining1" time="0.003" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCrossModuleInlining2" time="0.006" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="testCrossModuleInlining3" time="0.007" />
+  <testcase classname="com.google.javascript.jscomp.InlineFunctionsTest" name="test6671158" time="0.008" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

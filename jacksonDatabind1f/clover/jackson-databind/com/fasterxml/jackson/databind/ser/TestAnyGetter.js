@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":76,"id":31331,"methods":[{"el":57,"sc":5,"sl":49},{"el":75,"sc":5,"sl":60}],"name":"TestAnyGetter","sl":11},{"el":31,"id":31331,"methods":[{"el":25,"sc":9,"sl":23},{"el":27,"sc":9,"sl":27},{"el":30,"sc":9,"sl":29}],"name":"TestAnyGetter.Bean","sl":20},{"el":41,"id":31337,"methods":[{"el":40,"sc":9,"sl":35}],"name":"TestAnyGetter.AnyOnlyBean","sl":33}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1054":{"methods":[{"sl":23},{"sl":27},{"sl":29},{"sl":49}],"name":"testSimpleJsonValue","pass":true,"statements":[{"sl":24},{"sl":27},{"sl":30},{"sl":51},{"sl":52},{"sl":53},{"sl":54},{"sl":55},{"sl":56}]},"test_1218":{"methods":[{"sl":35},{"sl":60}],"name":"testAnyOnly","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":39},{"sl":62},{"sl":65},{"sl":66},{"sl":67},{"sl":68},{"sl":71},{"sl":72},{"sl":73},{"sl":74}]},"test_1891":{"methods":[{"sl":35},{"sl":60}],"name":"testAnyOnly","pass":true,"statements":[{"sl":37},{"sl":38},{"sl":39},{"sl":62},{"sl":65},{"sl":66},{"sl":67},{"sl":68},{"sl":71},{"sl":72},{"sl":73},{"sl":74}]},"test_99":{"methods":[{"sl":23},{"sl":27},{"sl":29},{"sl":49}],"name":"testSimpleJsonValue","pass":true,"statements":[{"sl":24},{"sl":27},{"sl":30},{"sl":51},{"sl":52},{"sl":53},{"sl":54},{"sl":55},{"sl":56}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1054, 99], [1054, 99], [], [], [1054, 99], [], [1054, 99], [1054, 99], [], [], [], [], [1218, 1891], [], [1218, 1891], [1218, 1891], [1218, 1891], [], [], [], [], [], [], [], [], [], [1054, 99], [], [1054, 99], [1054, 99], [1054, 99], [1054, 99], [1054, 99], [1054, 99], [], [], [], [1218, 1891], [], [1218, 1891], [], [], [1218, 1891], [1218, 1891], [1218, 1891], [1218, 1891], [], [], [1218, 1891], [1218, 1891], [1218, 1891], [1218, 1891], [], []]

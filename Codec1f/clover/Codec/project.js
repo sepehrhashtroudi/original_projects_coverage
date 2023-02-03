@@ -1,0 +1,2 @@
+processClover (  {"children":["org/apache/commons/codec/net/","org/apache/commons/codec/binary/","org/apache/commons/codec/","org/apache/commons/codec/language/","org/apache/commons/codec/digest/"],"name":"Clover database Thu Aug 4 2022 16:04:21 MDT","stats":{"AvgMethodComplexity":3.3552632,"Complexity":765,"ErroneousTests":0,"FailingTests":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":5,"TotalPercentageCovered":95.05637,"TotalStatements":1404,"UncoveredElements":114},"title":"Codec"}
+ ); 

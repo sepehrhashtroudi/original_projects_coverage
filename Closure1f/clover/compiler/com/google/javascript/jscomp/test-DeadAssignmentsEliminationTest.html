@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class DeadAssignmentsEliminationTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="DeadAssignmentsEliminationTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>DeadAssignmentsEliminationTest</td>
+        <td class="testPasses"><span class="sortValue">141</span>141</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.424</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testParameters</span><a href="DeadAssignmentsEliminationTest_testParameters_6gj.html">DeadAssignmentsEliminationTest.testParameters</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393608</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297f</span><a href="DeadAssignmentsEliminationTest_testIssue297f_dnc.html">DeadAssignmentsEliminationTest.testIssue297f</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538846</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297g</span><a href="DeadAssignmentsEliminationTest_testIssue297g_ccc.html">DeadAssignmentsEliminationTest.testIssue297g</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538851</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentInArgs</span><a href="DeadAssignmentsEliminationTest_testAssignmentInArgs_9wm.html">DeadAssignmentsEliminationTest.testAssignmentInArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748435</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInExpression1</span><a href="DeadAssignmentsEliminationTest_testInExpression1_5an.html">DeadAssignmentsEliminationTest.testInExpression1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748640</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInnerFunctions2</span><a href="DeadAssignmentsEliminationTest_testInnerFunctions2_b37.html">DeadAssignmentsEliminationTest.testInnerFunctions2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538742</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsLhs</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpUsedAsLhs_ch.html">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsLhs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538536</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testMultiPaths</span><a href="DeadAssignmentsEliminationTest_testMultiPaths_e1a.html">DeadAssignmentsEliminationTest.testMultiPaths</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393595</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentSamples</span><a href="DeadAssignmentsEliminationTest_testAssignmentSamples_4me.html">DeadAssignmentsEliminationTest.testAssignmentSamples</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538642</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadVarDeclarations</span><a href="DeadAssignmentsEliminationTest_testDeadVarDeclarations_aei.html">DeadAssignmentsEliminationTest.testDeadVarDeclarations</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538111</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.243</span>0.243</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testErrorHandling</span><a href="DeadAssignmentsEliminationTest_testErrorHandling_aph.html">DeadAssignmentsEliminationTest.testErrorHandling</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393563</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testErrorHandling</span><a href="DeadAssignmentsEliminationTest_testErrorHandling_cz.html">DeadAssignmentsEliminationTest.testErrorHandling</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748445</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInnerFunctions</span><a href="DeadAssignmentsEliminationTest_testInnerFunctions_c2w.html">DeadAssignmentsEliminationTest.testInnerFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538713</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testForIn</span><a href="DeadAssignmentsEliminationTest_testForIn_4n6.html">DeadAssignmentsEliminationTest.testForIn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538454</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384a</span><a href="DeadAssignmentsEliminationTest_testIssue384a_4m3.html">DeadAssignmentsEliminationTest.testIssue384a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748667</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testBug8730257</span><a href="DeadAssignmentsEliminationTest_testBug8730257_4k0.html">DeadAssignmentsEliminationTest.testBug8730257</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748355</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIdentityAssignments</span><a href="DeadAssignmentsEliminationTest_testIdentityAssignments_70g.html">DeadAssignmentsEliminationTest.testIdentityAssignments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748621</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testNestedReassignments</span><a href="DeadAssignmentsEliminationTest_testNestedReassignments_dhc.html">DeadAssignmentsEliminationTest.testNestedReassignments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393684</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInExpression2</span><a href="DeadAssignmentsEliminationTest_testInExpression2_3bd.html">DeadAssignmentsEliminationTest.testInExpression2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393510</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInExpression1</span><a href="DeadAssignmentsEliminationTest_testInExpression1_2v0.html">DeadAssignmentsEliminationTest.testInExpression1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538586</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384d</span><a href="DeadAssignmentsEliminationTest_testIssue384d_bi0.html">DeadAssignmentsEliminationTest.testIssue384d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748678</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIdentityAssignments</span><a href="DeadAssignmentsEliminationTest_testIdentityAssignments_9y4.html">DeadAssignmentsEliminationTest.testIdentityAssignments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538945</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsCondition</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpUsedAsCondition_3ek.html">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538748</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.055</span>0.055</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentChain</span><a href="DeadAssignmentsEliminationTest_testAssignmentChain_6pt.html">DeadAssignmentsEliminationTest.testAssignmentChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538904</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSelfIncrement</span><a href="DeadAssignmentsEliminationTest_testSelfIncrement_61a.html">DeadAssignmentsEliminationTest.testSelfIncrement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393616</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadPartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testDeadPartiallyWithinTheExpression_9kn.html">DeadAssignmentsEliminationTest.testDeadPartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748526</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentSamples</span><a href="DeadAssignmentsEliminationTest_testAssignmentSamples_6vi.html">DeadAssignmentsEliminationTest.testAssignmentSamples</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393551</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadPartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testDeadPartiallyWithinTheExpression_9a6.html">DeadAssignmentsEliminationTest.testDeadPartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393648</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384b</span><a href="DeadAssignmentsEliminationTest_testIssue384b_7fx.html">DeadAssignmentsEliminationTest.testIssue384b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748671</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadVarDeclarations</span><a href="DeadAssignmentsEliminationTest_testDeadVarDeclarations_b28.html">DeadAssignmentsEliminationTest.testDeadVarDeclarations</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393572</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression_67f.html">DeadAssignmentsEliminationTest.testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748523</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384c</span><a href="DeadAssignmentsEliminationTest_testIssue384c_782.html">DeadAssignmentsEliminationTest.testIssue384c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748674</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297b</span><a href="DeadAssignmentsEliminationTest_testIssue297b_67p.html">DeadAssignmentsEliminationTest.testIssue297b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748351</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297c</span><a href="DeadAssignmentsEliminationTest_testIssue297c_51t.html">DeadAssignmentsEliminationTest.testIssue297c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393715</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testUsedAsConditions</span><a href="DeadAssignmentsEliminationTest_testUsedAsConditions_a8a.html">DeadAssignmentsEliminationTest.testUsedAsConditions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748390</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testForIn</span><a href="DeadAssignmentsEliminationTest_testForIn_sb.html">DeadAssignmentsEliminationTest.testForIn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393483</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testGlobal</span><a href="DeadAssignmentsEliminationTest_testGlobal_365.html">DeadAssignmentsEliminationTest.testGlobal</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393611</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOp</span><a href="DeadAssignmentsEliminationTest_testAssignmentOp_48x.html">DeadAssignmentsEliminationTest.testAssignmentOp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748383</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInnerFunctions</span><a href="DeadAssignmentsEliminationTest_testInnerFunctions_9av.html">DeadAssignmentsEliminationTest.testInnerFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748467</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIncrementalReassignmentInForLoops</span><a href="DeadAssignmentsEliminationTest_testIncrementalReassignmentInForLoops_6f8.html">DeadAssignmentsEliminationTest.testIncrementalReassignmentInForLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393704</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentChain</span><a href="DeadAssignmentsEliminationTest_testAssignmentChain_54u.html">DeadAssignmentsEliminationTest.testAssignmentChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393650</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInExpression2</span><a href="DeadAssignmentsEliminationTest_testInExpression2_6gd.html">DeadAssignmentsEliminationTest.testInExpression2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538605</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.036</span>0.036</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIncDecInSubExpressions</span><a href="DeadAssignmentsEliminationTest_testIncDecInSubExpressions_9l8.html">DeadAssignmentsEliminationTest.testIncDecInSubExpressions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393664</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSimple</span><a href="DeadAssignmentsEliminationTest_testSimple_a6a.html">DeadAssignmentsEliminationTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748712</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297h</span><a href="DeadAssignmentsEliminationTest_testIssue297h_5nj.html">DeadAssignmentsEliminationTest.testIssue297h</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748636</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSelfIncrement</span><a href="DeadAssignmentsEliminationTest_testSelfIncrement_8nw.html">DeadAssignmentsEliminationTest.testSelfIncrement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538565</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInnerFunctions</span><a href="DeadAssignmentsEliminationTest_testInnerFunctions_9tm.html">DeadAssignmentsEliminationTest.testInnerFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393575</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentChain</span><a href="DeadAssignmentsEliminationTest_testAssignmentChain_110.html">DeadAssignmentsEliminationTest.testAssignmentChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748529</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testParameters</span><a href="DeadAssignmentsEliminationTest_testParameters_1au.html">DeadAssignmentsEliminationTest.testParameters</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748376</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297a</span><a href="DeadAssignmentsEliminationTest_testIssue297a_dux.html">DeadAssignmentsEliminationTest.testIssue297a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748541</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testNestedReassignments</span><a href="DeadAssignmentsEliminationTest_testNestedReassignments_1xf.html">DeadAssignmentsEliminationTest.testNestedReassignments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748580</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testGlobal</span><a href="DeadAssignmentsEliminationTest_testGlobal_1kd.html">DeadAssignmentsEliminationTest.testGlobal</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538942</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testLoops</span><a href="DeadAssignmentsEliminationTest_testLoops_3rb.html">DeadAssignmentsEliminationTest.testLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748682</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testGlobal</span><a href="DeadAssignmentsEliminationTest_testGlobal_44j.html">DeadAssignmentsEliminationTest.testGlobal</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748380</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384c</span><a href="DeadAssignmentsEliminationTest_testIssue384c_4kw.html">DeadAssignmentsEliminationTest.testIssue384c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538870</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297b</span><a href="DeadAssignmentsEliminationTest_testIssue297b_2ka.html">DeadAssignmentsEliminationTest.testIssue297b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538828</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297c</span><a href="DeadAssignmentsEliminationTest_testIssue297c_4fw.html">DeadAssignmentsEliminationTest.testIssue297c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538833</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297f</span><a href="DeadAssignmentsEliminationTest_testIssue297f_bk5.html">DeadAssignmentsEliminationTest.testIssue297f</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393494</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression_64s.html">DeadAssignmentsEliminationTest.testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393646</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSelfIncrement</span><a href="DeadAssignmentsEliminationTest_testSelfIncrement_36n.html">DeadAssignmentsEliminationTest.testSelfIncrement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748476</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignToExtern</span><a href="DeadAssignmentsEliminationTest_testAssignToExtern_9v2.html">DeadAssignmentsEliminationTest.testAssignToExtern</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538965</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIncrementalReassignmentInForLoops</span><a href="DeadAssignmentsEliminationTest_testIncrementalReassignmentInForLoops_1lo.html">DeadAssignmentsEliminationTest.testIncrementalReassignmentInForLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748612</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384c</span><a href="DeadAssignmentsEliminationTest_testIssue384c_cnz.html">DeadAssignmentsEliminationTest.testIssue384c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393531</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsLhs</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpUsedAsLhs_55u.html">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsLhs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393618</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression_7xx.html">DeadAssignmentsEliminationTest.testMutipleDeadAssignmentsButAlivePartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538736</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadIncrement</span><a href="DeadAssignmentsEliminationTest_testDeadIncrement_a7c.html">DeadAssignmentsEliminationTest.testDeadIncrement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393638</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignToExtern</span><a href="DeadAssignmentsEliminationTest_testAssignToExtern_80a.html">DeadAssignmentsEliminationTest.testAssignToExtern</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748624</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384a</span><a href="DeadAssignmentsEliminationTest_testIssue384a_2g1.html">DeadAssignmentsEliminationTest.testIssue384a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538859</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentInReturn</span><a href="DeadAssignmentsEliminationTest_testAssignmentInReturn_9d7.html">DeadAssignmentsEliminationTest.testAssignmentInReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748421</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testLoops</span><a href="DeadAssignmentsEliminationTest_testLoops_7zp.html">DeadAssignmentsEliminationTest.testLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538476</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadVarDeclarations</span><a href="DeadAssignmentsEliminationTest_testDeadVarDeclarations_b02.html">DeadAssignmentsEliminationTest.testDeadVarDeclarations</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748462</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testUsedAsConditions</span><a href="DeadAssignmentsEliminationTest_testUsedAsConditions_27c.html">DeadAssignmentsEliminationTest.testUsedAsConditions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393538</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOp</span><a href="DeadAssignmentsEliminationTest_testAssignmentOp_796.html">DeadAssignmentsEliminationTest.testAssignmentOp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393612</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignAndReadInCondition</span><a href="DeadAssignmentsEliminationTest_testAssignAndReadInCondition_7nf.html">DeadAssignmentsEliminationTest.testAssignAndReadInCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538431</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297h</span><a href="DeadAssignmentsEliminationTest_testIssue297h_3s7.html">DeadAssignmentsEliminationTest.testIssue297h</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393499</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testUsedAsConditionsInSwitchStatements</span><a href="DeadAssignmentsEliminationTest_testUsedAsConditionsInSwitchStatements_4cu.html">DeadAssignmentsEliminationTest.testUsedAsConditionsInSwitchStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538803</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentInReturn</span><a href="DeadAssignmentsEliminationTest_testAssignmentInReturn_a3a.html">DeadAssignmentsEliminationTest.testAssignmentInReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538578</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testParameters</span><a href="DeadAssignmentsEliminationTest_testParameters_abl.html">DeadAssignmentsEliminationTest.testParameters</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538570</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpChain</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpChain_e31.html">DeadAssignmentsEliminationTest.testAssignmentOpChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393658</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297g</span><a href="DeadAssignmentsEliminationTest_testIssue297g_2e9.html">DeadAssignmentsEliminationTest.testIssue297g</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748633</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testMultiPaths</span><a href="DeadAssignmentsEliminationTest_testMultiPaths_53b.html">DeadAssignmentsEliminationTest.testMultiPaths</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748364</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testUsedAsConditionsInSwitchStatements</span><a href="DeadAssignmentsEliminationTest_testUsedAsConditionsInSwitchStatements_81h.html">DeadAssignmentsEliminationTest.testUsedAsConditionsInSwitchStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393601</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSimple</span><a href="DeadAssignmentsEliminationTest_testSimple_7d9.html">DeadAssignmentsEliminationTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538949</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIncDecInSubExpressions</span><a href="DeadAssignmentsEliminationTest_testIncDecInSubExpressions_6ke.html">DeadAssignmentsEliminationTest.testIncDecInSubExpressions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748553</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297e</span><a href="DeadAssignmentsEliminationTest_testIssue297e_9wl.html">DeadAssignmentsEliminationTest.testIssue297e</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748627</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testErrorHandling</span><a href="DeadAssignmentsEliminationTest_testErrorHandling_9aq.html">DeadAssignmentsEliminationTest.testErrorHandling</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538879</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testUsedAsConditions</span><a href="DeadAssignmentsEliminationTest_testUsedAsConditions_y2.html">DeadAssignmentsEliminationTest.testUsedAsConditions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538370</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.045</span>0.045</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384d</span><a href="DeadAssignmentsEliminationTest_testIssue384d_5o1.html">DeadAssignmentsEliminationTest.testIssue384d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393533</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpChain</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpChain_4s5.html">DeadAssignmentsEliminationTest.testAssignmentOpChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538927</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentSamples</span><a href="DeadAssignmentsEliminationTest_testAssignmentSamples_3gh.html">DeadAssignmentsEliminationTest.testAssignmentSamples</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748425</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testUsedAsConditionsInSwitchStatements</span><a href="DeadAssignmentsEliminationTest_testUsedAsConditionsInSwitchStatements_b7p.html">DeadAssignmentsEliminationTest.testUsedAsConditionsInSwitchStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748409</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignToExtern</span><a href="DeadAssignmentsEliminationTest_testAssignToExtern_dcc.html">DeadAssignmentsEliminationTest.testAssignToExtern</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393711</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testLoops</span><a href="DeadAssignmentsEliminationTest_testLoops_c8h.html">DeadAssignmentsEliminationTest.testLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393579</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIncrementalReassignmentInForLoops</span><a href="DeadAssignmentsEliminationTest_testIncrementalReassignmentInForLoops_5yh.html">DeadAssignmentsEliminationTest.testIncrementalReassignmentInForLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538547</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testNestedReassignments</span><a href="DeadAssignmentsEliminationTest_testNestedReassignments_ajm.html">DeadAssignmentsEliminationTest.testNestedReassignments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538968</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.054</span>0.054</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384b</span><a href="DeadAssignmentsEliminationTest_testIssue384b_aoa.html">DeadAssignmentsEliminationTest.testIssue384b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538865</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInnerFunctions2</span><a href="DeadAssignmentsEliminationTest_testInnerFunctions2_4ji.html">DeadAssignmentsEliminationTest.testInnerFunctions2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393577</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testForIn</span><a href="DeadAssignmentsEliminationTest_testForIn_569.html">DeadAssignmentsEliminationTest.testForIn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748702</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297e</span><a href="DeadAssignmentsEliminationTest_testIssue297e_3z0.html">DeadAssignmentsEliminationTest.testIssue297e</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393492</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsLhs</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpUsedAsLhs_ck6.html">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsLhs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748479</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testMultiPaths</span><a href="DeadAssignmentsEliminationTest_testMultiPaths_6ty.html">DeadAssignmentsEliminationTest.testMultiPaths</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538717</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentInArgs</span><a href="DeadAssignmentsEliminationTest_testAssignmentInArgs_75j.html">DeadAssignmentsEliminationTest.testAssignmentInArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538354</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testBug8730257</span><a href="DeadAssignmentsEliminationTest_testBug8730257_30n.html">DeadAssignmentsEliminationTest.testBug8730257</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393592</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297d</span><a href="DeadAssignmentsEliminationTest_testIssue297d_9um.html">DeadAssignmentsEliminationTest.testIssue297d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538837</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignAndReadInCondition</span><a href="DeadAssignmentsEliminationTest_testAssignAndReadInCondition_sw.html">DeadAssignmentsEliminationTest.testAssignAndReadInCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393560</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadButAlivePartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testDeadButAlivePartiallyWithinTheExpression_b00.html">DeadAssignmentsEliminationTest.testDeadButAlivePartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393641</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsCondition</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpUsedAsCondition_37x.html">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748482</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297c</span><a href="DeadAssignmentsEliminationTest_testIssue297c_75s.html">DeadAssignmentsEliminationTest.testIssue297c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748385</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSelfReAssignment</span><a href="DeadAssignmentsEliminationTest_testSelfReAssignment_7kj.html">DeadAssignmentsEliminationTest.testSelfReAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538523</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIdentityAssignments</span><a href="DeadAssignmentsEliminationTest_testIdentityAssignments_6s9.html">DeadAssignmentsEliminationTest.testIdentityAssignments</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393710</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOp</span><a href="DeadAssignmentsEliminationTest_testAssignmentOp_60h.html">DeadAssignmentsEliminationTest.testAssignmentOp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538541</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInExpression1</span><a href="DeadAssignmentsEliminationTest_testInExpression1_y4.html">DeadAssignmentsEliminationTest.testInExpression1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393502</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384a</span><a href="DeadAssignmentsEliminationTest_testIssue384a_a8d.html">DeadAssignmentsEliminationTest.testIssue384a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393525</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadIncrement</span><a href="DeadAssignmentsEliminationTest_testDeadIncrement_akh.html">DeadAssignmentsEliminationTest.testDeadIncrement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748512</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadButAlivePartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testDeadButAlivePartiallyWithinTheExpression_7sx.html">DeadAssignmentsEliminationTest.testDeadButAlivePartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538415</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIncDecInSubExpressions</span><a href="DeadAssignmentsEliminationTest_testIncDecInSubExpressions_6sc.html">DeadAssignmentsEliminationTest.testIncDecInSubExpressions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538661</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.051</span>0.051</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297a</span><a href="DeadAssignmentsEliminationTest_testIssue297a_5u8.html">DeadAssignmentsEliminationTest.testIssue297a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393535</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadButAlivePartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testDeadButAlivePartiallyWithinTheExpression_54g.html">DeadAssignmentsEliminationTest.testDeadButAlivePartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748517</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297d</span><a href="DeadAssignmentsEliminationTest_testIssue297d_ekd.html">DeadAssignmentsEliminationTest.testIssue297d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393717</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignAndReadInCondition</span><a href="DeadAssignmentsEliminationTest_testAssignAndReadInCondition_43m.html">DeadAssignmentsEliminationTest.testAssignAndReadInCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748439</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentInArgs</span><a href="DeadAssignmentsEliminationTest_testAssignmentInArgs_84d.html">DeadAssignmentsEliminationTest.testAssignmentInArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393557</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentInReturn</span><a href="DeadAssignmentsEliminationTest_testAssignmentInReturn_1vg.html">DeadAssignmentsEliminationTest.testAssignmentInReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393548</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpChain</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpChain_23f.html">DeadAssignmentsEliminationTest.testAssignmentOpChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748545</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384d</span><a href="DeadAssignmentsEliminationTest_testIssue384d_4nr.html">DeadAssignmentsEliminationTest.testIssue384d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538875</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSimple</span><a href="DeadAssignmentsEliminationTest_testSimple_77j.html">DeadAssignmentsEliminationTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393719</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297f</span><a href="DeadAssignmentsEliminationTest_testIssue297f_4oi.html">DeadAssignmentsEliminationTest.testIssue297f</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748630</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInnerFunctions2</span><a href="DeadAssignmentsEliminationTest_testInnerFunctions2_8h3.html">DeadAssignmentsEliminationTest.testInnerFunctions2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748470</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsCondition</span><a href="DeadAssignmentsEliminationTest_testAssignmentOpUsedAsCondition_37y.html">DeadAssignmentsEliminationTest.testAssignmentOpUsedAsCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393620</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297a</span><a href="DeadAssignmentsEliminationTest_testIssue297a_6fb.html">DeadAssignmentsEliminationTest.testIssue297a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538822</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297g</span><a href="DeadAssignmentsEliminationTest_testIssue297g_3w4.html">DeadAssignmentsEliminationTest.testIssue297g</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393497</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue384b</span><a href="DeadAssignmentsEliminationTest_testIssue384b_a8c.html">DeadAssignmentsEliminationTest.testIssue384b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393528</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testBug8730257</span><a href="DeadAssignmentsEliminationTest_testBug8730257_2id.html">DeadAssignmentsEliminationTest.testBug8730257</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538528</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297h</span><a href="DeadAssignmentsEliminationTest_testIssue297h_1l6.html">DeadAssignmentsEliminationTest.testIssue297h</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538855</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadIncrement</span><a href="DeadAssignmentsEliminationTest_testDeadIncrement_a36.html">DeadAssignmentsEliminationTest.testDeadIncrement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538443</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSelfReAssignment</span><a href="DeadAssignmentsEliminationTest_testSelfReAssignment_9wn.html">DeadAssignmentsEliminationTest.testSelfReAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748473</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testSelfReAssignment</span><a href="DeadAssignmentsEliminationTest_testSelfReAssignment_3bv.html">DeadAssignmentsEliminationTest.testSelfReAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393614</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297d</span><a href="DeadAssignmentsEliminationTest_testIssue297d_1ku.html">DeadAssignmentsEliminationTest.testIssue297d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748359</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testInExpression2</span><a href="DeadAssignmentsEliminationTest_testInExpression2_5d4.html">DeadAssignmentsEliminationTest.testInExpression2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748650</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297e</span><a href="DeadAssignmentsEliminationTest_testIssue297e_2zv.html">DeadAssignmentsEliminationTest.testIssue297e</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538842</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testDeadPartiallyWithinTheExpression</span><a href="DeadAssignmentsEliminationTest_testDeadPartiallyWithinTheExpression_5wx.html">DeadAssignmentsEliminationTest.testDeadPartiallyWithinTheExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697538656</span>2 Jan 15:12:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DeadAssignmentsEliminationTest.testIssue297b</span><a href="DeadAssignmentsEliminationTest_testIssue297b_ej1.html">DeadAssignmentsEliminationTest.testIssue297b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393713</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

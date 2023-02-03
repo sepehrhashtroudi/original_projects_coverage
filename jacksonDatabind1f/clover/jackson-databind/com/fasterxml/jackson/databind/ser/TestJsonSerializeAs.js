@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":59,"id":30840,"methods":[{"el":48,"sc":5,"sl":45},{"el":53,"sc":5,"sl":50},{"el":58,"sc":5,"sl":55}],"name":"TestJsonSerializeAs","sl":8},{"el":14,"id":30840,"methods":[],"name":"TestJsonSerializeAs.Fooable","sl":12},{"el":22,"id":30840,"methods":[{"el":20,"sc":9,"sl":19},{"el":21,"sc":9,"sl":21}],"name":"TestJsonSerializeAs.FooImpl","sl":18},{"el":28,"id":30844,"methods":[{"el":27,"sc":9,"sl":25}],"name":"TestJsonSerializeAs.Fooables","sl":24},{"el":34,"id":30846,"methods":[{"el":33,"sc":9,"sl":31}],"name":"TestJsonSerializeAs.FooableWrapper","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1035":{"methods":[{"sl":19},{"sl":31},{"sl":55}],"name":"testSerializeAsForSimpleProp","pass":true,"statements":[{"sl":20},{"sl":32},{"sl":57}]},"test_1125":{"methods":[{"sl":19},{"sl":45}],"name":"testSerializeAsInClass","pass":true,"statements":[{"sl":20},{"sl":47}]},"test_1714":{"methods":[{"sl":19},{"sl":25},{"sl":50}],"name":"testSerializeAsForArrayProp","pass":true,"statements":[{"sl":20},{"sl":26},{"sl":52}]},"test_45":{"methods":[{"sl":19},{"sl":31},{"sl":55}],"name":"testSerializeAsForSimpleProp","pass":true,"statements":[{"sl":20},{"sl":32},{"sl":57}]},"test_806":{"methods":[{"sl":19},{"sl":45}],"name":"testSerializeAsInClass","pass":true,"statements":[{"sl":20},{"sl":47}]},"test_831":{"methods":[{"sl":19},{"sl":25},{"sl":50}],"name":"testSerializeAsForArrayProp","pass":true,"statements":[{"sl":20},{"sl":26},{"sl":52}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [45, 1714, 806, 1125, 1035, 831], [45, 1714, 806, 1125, 1035, 831], [], [], [], [], [1714, 831], [1714, 831], [], [], [], [], [45, 1035], [45, 1035], [], [], [], [], [], [], [], [], [], [], [], [], [806, 1125], [], [806, 1125], [], [], [1714, 831], [], [1714, 831], [], [], [45, 1035], [], [45, 1035], [], []]

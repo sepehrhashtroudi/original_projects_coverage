@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class ConstCheckTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="ConstCheckTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>ConstCheckTest</td>
+        <td class="testPasses"><span class="sortValue">84</span>84</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.476</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostDecremented1</span><a href="ConstCheckTest_testConstantPostDecremented1_4sd.html">ConstCheckTest.testConstantPostDecremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747877</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostIncremented2</span><a href="ConstCheckTest_testConstantPostIncremented2_gb.html">ConstCheckTest.testConstantPostIncremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535610</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScope1</span><a href="ConstCheckTest_testConstantRedefinedInLocalScope1_b2g.html">ConstCheckTest.testConstantRedefinedInLocalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747930</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostDecremented1</span><a href="ConstCheckTest_testConstantPostDecremented1_bkf.html">ConstCheckTest.testConstantPostDecremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535704</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantDefinition1</span><a href="ConstCheckTest_testConstantDefinition1_5s6.html">ConstCheckTest.testConstantDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747872</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedArithmeticAssignment1</span><a href="ConstCheckTest_testAbbreviatedArithmeticAssignment1_93y.html">ConstCheckTest.testAbbreviatedArithmeticAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393122</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectRedefined1</span><a href="ConstCheckTest_testObjectRedefined1_4rr.html">ConstCheckTest.testObjectRedefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747924</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostIncremented1</span><a href="ConstCheckTest_testConstantPostIncremented1_3j.html">ConstCheckTest.testConstantPostIncremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393109</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectPropertyInitializedLate</span><a href="ConstCheckTest_testObjectPropertyInitializedLate_3pw.html">ConstCheckTest.testObjectPropertyInitializedLate</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747919</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefined1</span><a href="ConstCheckTest_testConstantRedefined1_1u2.html">ConstCheckTest.testConstantRedefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535675</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreDecremented2</span><a href="ConstCheckTest_testConstantPreDecremented2_a46.html">ConstCheckTest.testConstantPreDecremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535686</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostDecremented2</span><a href="ConstCheckTest_testConstantPostDecremented2_1qj.html">ConstCheckTest.testConstantPostDecremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393117</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScope2</span><a href="ConstCheckTest_testConstantRedefinedInLocalScope2_xz.html">ConstCheckTest.testConstantRedefinedInLocalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393106</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedBitAssignment2</span><a href="ConstCheckTest_testAbbreviatedBitAssignment2_9mg.html">ConstCheckTest.testAbbreviatedBitAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747894</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectRedefined1</span><a href="ConstCheckTest_testObjectRedefined1_9l2.html">ConstCheckTest.testObjectRedefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535621</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreIncremented1</span><a href="ConstCheckTest_testConstantPreIncremented1_brc.html">ConstCheckTest.testConstantPreIncremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535584</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectPropertyInitializedLate</span><a href="ConstCheckTest_testObjectPropertyInitializedLate_8er.html">ConstCheckTest.testObjectPropertyInitializedLate</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535569</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostIncremented1</span><a href="ConstCheckTest_testConstantPostIncremented1_7r.html">ConstCheckTest.testConstantPostIncremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535607</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScope2</span><a href="ConstCheckTest_testConstantRedefinedInLocalScope2_de3.html">ConstCheckTest.testConstantRedefinedInLocalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747939</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstSuppression</span><a href="ConstCheckTest_testConstSuppression_9uy.html">ConstCheckTest.testConstSuppression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535628</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedShiftAssignment1</span><a href="ConstCheckTest_testAbbreviatedShiftAssignment1_1ph.html">ConstCheckTest.testAbbreviatedShiftAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535348</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.215</span>0.215</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedBitAssignment2</span><a href="ConstCheckTest_testAbbreviatedBitAssignment2_mu.html">ConstCheckTest.testAbbreviatedBitAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535650</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantInitializedInAnonymousNamespace1</span><a href="ConstCheckTest_testConstantInitializedInAnonymousNamespace1_4kx.html">ConstCheckTest.testConstantInitializedInAnonymousNamespace1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747909</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostIncremented2</span><a href="ConstCheckTest_testConstantPostIncremented2_bxc.html">ConstCheckTest.testConstantPostIncremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747952</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantInitializedInAnonymousNamespace2</span><a href="ConstCheckTest_testConstantInitializedInAnonymousNamespace2_ly.html">ConstCheckTest.testConstantInitializedInAnonymousNamespace2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535668</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstSuppression</span><a href="ConstCheckTest_testConstSuppression_7qn.html">ConstCheckTest.testConstSuppression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393048</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedShiftAssignment2</span><a href="ConstCheckTest_testAbbreviatedShiftAssignment2_1o8.html">ConstCheckTest.testAbbreviatedShiftAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535563</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostDecremented2</span><a href="ConstCheckTest_testConstantPostDecremented2_2hj.html">ConstCheckTest.testConstantPostDecremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535708</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedArithmeticAssignment1</span><a href="ConstCheckTest_testAbbreviatedArithmeticAssignment1_bih.html">ConstCheckTest.testAbbreviatedArithmeticAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535654</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedArithmeticAssignment2</span><a href="ConstCheckTest_testAbbreviatedArithmeticAssignment2_3kl.html">ConstCheckTest.testAbbreviatedArithmeticAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535658</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreIncremented2</span><a href="ConstCheckTest_testConstantPreIncremented2_ajh.html">ConstCheckTest.testConstantPreIncremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393114</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedShiftAssignment2</span><a href="ConstCheckTest_testAbbreviatedShiftAssignment2_b60.html">ConstCheckTest.testAbbreviatedShiftAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747898</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScopeOutOfOrder</span><a href="ConstCheckTest_testConstantRedefinedInLocalScopeOutOfOrder_6qa.html">ConstCheckTest.testConstantRedefinedInLocalScopeOutOfOrder</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535625</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedShiftAssignment1</span><a href="ConstCheckTest_testAbbreviatedShiftAssignment1_3jz.html">ConstCheckTest.testAbbreviatedShiftAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747896</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedBitAssignment1</span><a href="ConstCheckTest_testAbbreviatedBitAssignment1_73w.html">ConstCheckTest.testAbbreviatedBitAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393125</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreIncremented1</span><a href="ConstCheckTest_testConstantPreIncremented1_50m.html">ConstCheckTest.testConstantPreIncremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747954</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefined2</span><a href="ConstCheckTest_testConstantRedefined2_dzb.html">ConstCheckTest.testConstantRedefined2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747929</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostDecremented1</span><a href="ConstCheckTest_testConstantPostDecremented1_8qw.html">ConstCheckTest.testConstantPostDecremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393116</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstSuppression</span><a href="ConstCheckTest_testConstSuppression_5e2.html">ConstCheckTest.testConstSuppression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747903</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreDecremented1</span><a href="ConstCheckTest_testConstantPreDecremented1_6kr.html">ConstCheckTest.testConstantPreDecremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747881</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScope2</span><a href="ConstCheckTest_testConstantRedefinedInLocalScope2_1cy.html">ConstCheckTest.testConstantRedefinedInLocalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535618</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreDecremented1</span><a href="ConstCheckTest_testConstantPreDecremented1_7f2.html">ConstCheckTest.testConstantPreDecremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535682</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreIncremented1</span><a href="ConstCheckTest_testConstantPreIncremented1_5x1.html">ConstCheckTest.testConstantPreIncremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393112</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreDecremented2</span><a href="ConstCheckTest_testConstantPreDecremented2_7ar.html">ConstCheckTest.testConstantPreDecremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393120</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostIncremented1</span><a href="ConstCheckTest_testConstantPostIncremented1_5uh.html">ConstCheckTest.testConstantPostIncremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747950</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreDecremented1</span><a href="ConstCheckTest_testConstantPreDecremented1_kx.html">ConstCheckTest.testConstantPreDecremented1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393119</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedShiftAssignment1</span><a href="ConstCheckTest_testAbbreviatedShiftAssignment1_1v6.html">ConstCheckTest.testAbbreviatedShiftAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393128</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefined1</span><a href="ConstCheckTest_testConstantRedefined1_drd.html">ConstCheckTest.testConstantRedefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747926</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantDefinition2</span><a href="ConstCheckTest_testConstantDefinition2_ay4.html">ConstCheckTest.testConstantDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747906</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScopeOutOfOrder</span><a href="ConstCheckTest_testConstantRedefinedInLocalScopeOutOfOrder_4zj.html">ConstCheckTest.testConstantRedefinedInLocalScopeOutOfOrder</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393108</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantDefinition2</span><a href="ConstCheckTest_testConstantDefinition2_77l.html">ConstCheckTest.testConstantDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535602</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstAnnotation</span><a href="ConstCheckTest_testConstAnnotation_18u.html">ConstCheckTest.testConstAnnotation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393045</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreIncremented2</span><a href="ConstCheckTest_testConstantPreIncremented2_2pd.html">ConstCheckTest.testConstantPreIncremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747875</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostIncremented2</span><a href="ConstCheckTest_testConstantPostIncremented2_85v.html">ConstCheckTest.testConstantPostIncremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393111</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScopeOutOfOrder</span><a href="ConstCheckTest_testConstantRedefinedInLocalScopeOutOfOrder_acn.html">ConstCheckTest.testConstantRedefinedInLocalScopeOutOfOrder</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747944</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantDefinition2</span><a href="ConstCheckTest_testConstantDefinition2_39o.html">ConstCheckTest.testConstantDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393038</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedBitAssignment1</span><a href="ConstCheckTest_testAbbreviatedBitAssignment1_bkv.html">ConstCheckTest.testAbbreviatedBitAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535646</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedArithmeticAssignment2</span><a href="ConstCheckTest_testAbbreviatedArithmeticAssignment2_6rc.html">ConstCheckTest.testAbbreviatedArithmeticAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747889</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPostDecremented2</span><a href="ConstCheckTest_testConstantPostDecremented2_4x.html">ConstCheckTest.testConstantPostDecremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747879</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScope1</span><a href="ConstCheckTest_testConstantRedefinedInLocalScope1_djl.html">ConstCheckTest.testConstantRedefinedInLocalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393104</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectPropertyInitializedLate</span><a href="ConstCheckTest_testObjectPropertyInitializedLate_4b8.html">ConstCheckTest.testObjectPropertyInitializedLate</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393060</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.042</span>0.042</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantInitializedInAnonymousNamespace2</span><a href="ConstCheckTest_testConstantInitializedInAnonymousNamespace2_76y.html">ConstCheckTest.testConstantInitializedInAnonymousNamespace2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393056</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefined2</span><a href="ConstCheckTest_testConstantRedefined2_8wb.html">ConstCheckTest.testConstantRedefined2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535678</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedArithmeticAssignment1</span><a href="ConstCheckTest_testAbbreviatedArithmeticAssignment1_ds.html">ConstCheckTest.testAbbreviatedArithmeticAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747885</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstAnnotation</span><a href="ConstCheckTest_testConstAnnotation_1t6.html">ConstCheckTest.testConstAnnotation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747900</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantInitializedInAnonymousNamespace2</span><a href="ConstCheckTest_testConstantInitializedInAnonymousNamespace2_aro.html">ConstCheckTest.testConstantInitializedInAnonymousNamespace2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747913</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstAnnotation</span><a href="ConstCheckTest_testConstAnnotation_61e.html">ConstCheckTest.testConstAnnotation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535643</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectRedefined1</span><a href="ConstCheckTest_testObjectRedefined1_df.html">ConstCheckTest.testObjectRedefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393132</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedBitAssignment2</span><a href="ConstCheckTest_testAbbreviatedBitAssignment2_aii.html">ConstCheckTest.testAbbreviatedBitAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393127</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectModified</span><a href="ConstCheckTest_testObjectModified_33f.html">ConstCheckTest.testObjectModified</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393130</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedShiftAssignment2</span><a href="ConstCheckTest_testAbbreviatedShiftAssignment2_9z9.html">ConstCheckTest.testAbbreviatedShiftAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393042</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantDefinition1</span><a href="ConstCheckTest_testConstantDefinition1_eoy.html">ConstCheckTest.testConstantDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393134</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefined2</span><a href="ConstCheckTest_testConstantRedefined2_c0z.html">ConstCheckTest.testConstantRedefined2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393103</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreDecremented2</span><a href="ConstCheckTest_testConstantPreDecremented2_e51.html">ConstCheckTest.testConstantPreDecremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747883</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantDefinition1</span><a href="ConstCheckTest_testConstantDefinition1_7oi.html">ConstCheckTest.testConstantDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535595</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantPreIncremented2</span><a href="ConstCheckTest_testConstantPreIncremented2_6gl.html">ConstCheckTest.testConstantPreIncremented2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535590</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefinedInLocalScope1</span><a href="ConstCheckTest_testConstantRedefinedInLocalScope1_9tw.html">ConstCheckTest.testConstantRedefinedInLocalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535614</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedArithmeticAssignment2</span><a href="ConstCheckTest_testAbbreviatedArithmeticAssignment2_cd0.html">ConstCheckTest.testAbbreviatedArithmeticAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393123</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantRedefined1</span><a href="ConstCheckTest_testConstantRedefined1_1uu.html">ConstCheckTest.testConstantRedefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393136</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectModified</span><a href="ConstCheckTest_testObjectModified_9hb.html">ConstCheckTest.testObjectModified</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535689</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantInitializedInAnonymousNamespace1</span><a href="ConstCheckTest_testConstantInitializedInAnonymousNamespace1_19m.html">ConstCheckTest.testConstantInitializedInAnonymousNamespace1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697535662</span>2 Jan 15:12:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testConstantInitializedInAnonymousNamespace1</span><a href="ConstCheckTest_testConstantInitializedInAnonymousNamespace1_3n0.html">ConstCheckTest.testConstantInitializedInAnonymousNamespace1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393052</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testObjectModified</span><a href="ConstCheckTest_testObjectModified_4vw.html">ConstCheckTest.testObjectModified</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747916</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ConstCheckTest.testAbbreviatedBitAssignment1</span><a href="ConstCheckTest_testAbbreviatedBitAssignment1_4df.html">ConstCheckTest.testAbbreviatedBitAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697747891</span>2 Jan 15:15:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

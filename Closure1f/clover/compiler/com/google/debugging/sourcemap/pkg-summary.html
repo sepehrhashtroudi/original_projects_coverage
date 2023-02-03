@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.debugging.sourcemap">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package com.google.debugging.sourcemap
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+                <li class="menu-item active-tab">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">442</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">1,385</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">239</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">60</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">22</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">5,266</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">2,844</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">539</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">5.79</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3.98</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">2.26</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">442</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">1,385</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">239</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">60</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">22</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">5,266</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">2,844</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">539</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">5.79</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3.98</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">2.26</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+
+        
+        <table id="packageSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Package</th>
+                    <th colspan="1">
+                <label >Files</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">com.google.debugging.sourcemap</span>
+                    com.google.debugging.sourcemap
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2552302</span>
+            2.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">306.0</span>
+            306
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8518877</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8518877</span>85.2%</div><div style="display: table-cell">
+ <div title="85.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+
+        
+        <table id="packageClassesTable" class="aui aui-table-sortable">
+                        <thead>
+    <tr>
+        <th width="30%">Class</th>
+                            <th colspan="1">
+                <label >
+                    Methods
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">
+                    Uncovered Elements
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+            <tbody>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV3.DefaultSourceMapSupplier</span>
+                    <a href="SourceMapConsumerV3.html" title="SourceMapConsumerV3.DefaultSourceMapSupplier">SourceMapConsumerV3.DefaultSourceMapSupplier</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Util</span>
+                    <a href="Util.html" title="Util">Util</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.5</span>
+            6.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">56.0</span>
+            56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.27272728</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.27272728</span>27.3%</div><div style="display: table-cell">
+ <div title="27.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:27.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV3</span>
+                    <a href="SourceMapConsumerV3.html" title="SourceMapConsumerV3">SourceMapConsumerV3</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0625</span>
+            4.06
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">95.0</span>
+            95
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6122449</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6122449</span>61.2%</div><div style="display: table-cell">
+ <div title="61.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:61.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapSection</span>
+                    <a href="SourceMapSection.html" title="SourceMapSection">SourceMapSection</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">9.0</span>
+            9
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1111112</span>
+            1.11
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">9.0</span>
+            9
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.65384614</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.65384614</span>65.4%</div><div style="display: table-cell">
+ <div title="65.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:65.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV3.UnmappedEntry</span>
+                    <a href="SourceMapConsumerV3.html" title="SourceMapConsumerV3.UnmappedEntry">SourceMapConsumerV3.UnmappedEntry</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorFactory</span>
+                    <a href="SourceMapGeneratorFactory.html" title="SourceMapGeneratorFactory">SourceMapGeneratorFactory</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6923077</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6923077</span>69.2%</div><div style="display: table-cell">
+ <div title="69.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:69.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerFactory</span>
+                    <a href="SourceMapConsumerFactory.html" title="SourceMapConsumerFactory">SourceMapConsumerFactory</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.6666667</span>
+            2.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7241379</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7241379</span>72.4%</div><div style="display: table-cell">
+ <div title="72.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV1.SourceFile</span>
+                    <a href="SourceMapConsumerV1.html" title="SourceMapConsumerV1.SourceFile">SourceMapConsumerV1.SourceFile</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1666666</span>
+            1.17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7419355</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7419355</span>74.2%</div><div style="display: table-cell">
+ <div title="74.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:74.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV1</span>
+                    <a href="SourceMapGeneratorV1.html" title="SourceMapGeneratorV1">SourceMapGeneratorV1</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">9.0</span>
+            9
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2222223</span>
+            2.22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">22.0</span>
+            22
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7582418</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7582418</span>75.8%</div><div style="display: table-cell">
+ <div title="75.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Base64</span>
+                    <a href="Base64.html" title="Base64">Base64</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7916667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7916667</span>79.2%</div><div style="display: table-cell">
+ <div title="79.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:79.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV2</span>
+                    <a href="SourceMapGeneratorV2.html" title="SourceMapGeneratorV2">SourceMapGeneratorV2</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">18.0</span>
+            18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7777778</span>
+            1.78
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">28.0</span>
+            28
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.82822084</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.82822084</span>82.8%</div><div style="display: table-cell">
+ <div title="82.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:82.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV1.ParseState</span>
+                    <a href="SourceMapConsumerV1.html" title="SourceMapConsumerV1.ParseState">SourceMapConsumerV1.ParseState</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.8</span>
+            1.8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8666667</span>86.7%</div><div style="display: table-cell">
+ <div title="86.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:86.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV3</span>
+                    <a href="SourceMapGeneratorV3.html" title="SourceMapGeneratorV3">SourceMapGeneratorV3</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">20.0</span>
+            20
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.85</span>
+            1.85
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">17.0</span>
+            17
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9132653</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9132653</span>91.3%</div><div style="display: table-cell">
+ <div title="91.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:91.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV3.MappingBuilder</span>
+                    <a href="SourceMapConsumerV3.html" title="SourceMapConsumerV3.MappingBuilder">SourceMapConsumerV3.MappingBuilder</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.4285715</span>
+            2.43
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.92105263</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.92105263</span>92.1%</div><div style="display: table-cell">
+ <div title="92.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:92.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV2</span>
+                    <a href="SourceMapConsumerV2.html" title="SourceMapConsumerV2">SourceMapConsumerV2</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9220779</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9220779</span>92.2%</div><div style="display: table-cell">
+ <div title="92.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:92.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV1.LineMapper</span>
+                    <a href="SourceMapGeneratorV1.html" title="SourceMapGeneratorV1.LineMapper">SourceMapGeneratorV1.LineMapper</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.6666667</span>
+            2.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9245283</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9245283</span>92.5%</div><div style="display: table-cell">
+ <div title="92.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:92.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV1.MappingTraversal</span>
+                    <a href="SourceMapGeneratorV1.html" title="SourceMapGeneratorV1.MappingTraversal">SourceMapGeneratorV1.MappingTraversal</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.94736844</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.94736844</span>94.7%</div><div style="display: table-cell">
+ <div title="94.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:94.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV2.MappingTraversal</span>
+                    <a href="SourceMapGeneratorV2.html" title="SourceMapGeneratorV2.MappingTraversal">SourceMapGeneratorV2.MappingTraversal</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.94736844</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.94736844</span>94.7%</div><div style="display: table-cell">
+ <div title="94.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:94.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV3.MappingTraversal</span>
+                    <a href="SourceMapGeneratorV3.html" title="SourceMapGeneratorV3.MappingTraversal">SourceMapGeneratorV3.MappingTraversal</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.94736844</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.94736844</span>94.7%</div><div style="display: table-cell">
+ <div title="94.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:94.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV2.LineMapper</span>
+                    <a href="SourceMapGeneratorV2.html" title="SourceMapGeneratorV2.LineMapper">SourceMapGeneratorV2.LineMapper</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.95454544</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.95454544</span>95.5%</div><div style="display: table-cell">
+ <div title="95.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:95.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV2.MappingWriter</span>
+                    <a href="SourceMapGeneratorV2.html" title="SourceMapGeneratorV2.MappingWriter">SourceMapGeneratorV2.MappingWriter</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.96</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.96</span>96%</div><div style="display: table-cell">
+ <div title="96% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV1</span>
+                    <a href="SourceMapConsumerV1.html" title="SourceMapConsumerV1">SourceMapConsumerV1</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.875</span>
+            4.88
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.96174866</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.96174866</span>96.2%</div><div style="display: table-cell">
+ <div title="96.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV3.LineMapper</span>
+                    <a href="SourceMapGeneratorV3.html" title="SourceMapGeneratorV3.LineMapper">SourceMapGeneratorV3.LineMapper</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.8333333</span>
+            2.83
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9692308</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9692308</span>96.9%</div><div style="display: table-cell">
+ <div title="96.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:96.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV1.MappingWriter</span>
+                    <a href="SourceMapGeneratorV1.html" title="SourceMapGeneratorV1.MappingWriter">SourceMapGeneratorV1.MappingWriter</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.969697</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.969697</span>97%</div><div style="display: table-cell">
+ <div title="97% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapTestCase</span>
+                    <a href="SourceMapTestCase.html" title="SourceMapTestCase">SourceMapTestCase</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">16.0</span>
+            16
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9701493</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9701493</span>97%</div><div style="display: table-cell">
+ <div title="97% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Base64VLQ</span>
+                    <a href="Base64VLQ.html" title="Base64VLQ">Base64VLQ</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.974359</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.974359</span>97.4%</div><div style="display: table-cell">
+ <div title="97.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapLineDecoder</span>
+                    <a href="SourceMapLineDecoder.html" title="SourceMapLineDecoder">SourceMapLineDecoder</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.98333335</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.98333335</span>98.3%</div><div style="display: table-cell">
+ <div title="98.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:98.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">FilePosition</span>
+                    <a href="FilePosition.html" title="FilePosition">FilePosition</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV1.FileName</span>
+                    <a href="SourceMapConsumerV1.html" title="SourceMapConsumerV1.FileName">SourceMapConsumerV1.FileName</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV1.LineFragment</span>
+                    <a href="SourceMapConsumerV1.html" title="SourceMapConsumerV1.LineFragment">SourceMapConsumerV1.LineFragment</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1.33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV1.SourceFile.Builder</span>
+                    <a href="SourceMapConsumerV1.html" title="SourceMapConsumerV1.SourceFile.Builder">SourceMapConsumerV1.SourceFile.Builder</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">8.0</span>
+            8
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV3.NamedEntry</span>
+                    <a href="SourceMapConsumerV3.html" title="SourceMapConsumerV3.NamedEntry">SourceMapConsumerV3.NamedEntry</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV3.StringCharIterator</span>
+                    <a href="SourceMapConsumerV3.html" title="SourceMapConsumerV3.StringCharIterator">SourceMapConsumerV3.StringCharIterator</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapConsumerV3.UnnamedEntry</span>
+                    <a href="SourceMapConsumerV3.html" title="SourceMapConsumerV3.UnnamedEntry">SourceMapConsumerV3.UnnamedEntry</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV1.UsedMappingCheck</span>
+                    <a href="SourceMapGeneratorV1.html" title="SourceMapGeneratorV1.UsedMappingCheck">SourceMapGeneratorV1.UsedMappingCheck</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV2.LineMapEncoder</span>
+                    <a href="SourceMapGeneratorV2.html" title="SourceMapGeneratorV2.LineMapEncoder">SourceMapGeneratorV2.LineMapEncoder</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.25</span>
+            3.25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV2.UsedMappingCheck</span>
+                    <a href="SourceMapGeneratorV2.html" title="SourceMapGeneratorV2.UsedMappingCheck">SourceMapGeneratorV2.UsedMappingCheck</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV3.ConsumerEntryVisitor</span>
+                    <a href="SourceMapGeneratorV3.html" title="SourceMapGeneratorV3.ConsumerEntryVisitor">SourceMapGeneratorV3.ConsumerEntryVisitor</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapGeneratorV3.UsedMappingCheck</span>
+                    <a href="SourceMapGeneratorV3.html" title="SourceMapGeneratorV3.UsedMappingCheck">SourceMapGeneratorV3.UsedMappingCheck</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapLineDecoder.LineEntry</span>
+                    <a href="SourceMapLineDecoder.html" title="SourceMapLineDecoder.LineEntry">SourceMapLineDecoder.LineEntry</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapLineDecoder.StringParser</span>
+                    <a href="SourceMapLineDecoder.html" title="SourceMapLineDecoder.StringParser">SourceMapLineDecoder.StringParser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapParseException</span>
+                    <a href="SourceMapParseException.html" title="SourceMapParseException">SourceMapParseException</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">SourceMapTestCase.Token</span>
+                    <a href="SourceMapTestCase.html" title="SourceMapTestCase.Token">SourceMapTestCase.Token</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                </tbody>
+        </table>
+                    <div>
+                <small>
+                    This package contains 17 empty classes or
+                    interfaces which are not listed.
+                </small>
+            </div>
+        
+    </div> <!-- tabs-pane active-pane -->
+</div>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

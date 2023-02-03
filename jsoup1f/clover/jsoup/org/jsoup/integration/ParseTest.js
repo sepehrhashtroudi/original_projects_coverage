@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":87,"id":2269,"methods":[{"el":32,"sc":5,"sl":22},{"el":47,"sc":5,"sl":34},{"el":59,"sc":5,"sl":49},{"el":66,"sc":5,"sl":61},{"el":76,"sc":5,"sl":68},{"el":86,"sc":5,"sl":78}],"name":"ParseTest","sl":20}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_102":{"methods":[{"sl":61},{"sl":78}],"name":"testBinary","pass":true,"statements":[{"sl":62},{"sl":63},{"sl":65},{"sl":79},{"sl":80},{"sl":81}]},"test_126":{"methods":[{"sl":68},{"sl":78}],"name":"testYahooJp","pass":true,"statements":[{"sl":69},{"sl":70},{"sl":71},{"sl":72},{"sl":73},{"sl":75},{"sl":79},{"sl":80},{"sl":81}]},"test_35":{"methods":[{"sl":49},{"sl":78}],"name":"testGoogleSearchIpod","pass":true,"statements":[{"sl":50},{"sl":51},{"sl":52},{"sl":53},{"sl":54},{"sl":55},{"sl":57},{"sl":79},{"sl":80},{"sl":81}]},"test_82":{"methods":[{"sl":22},{"sl":78}],"name":"testSmhBizArticle","pass":true,"statements":[{"sl":23},{"sl":24},{"sl":25},{"sl":26},{"sl":28},{"sl":29},{"sl":79},{"sl":80},{"sl":81}]},"test_84":{"methods":[{"sl":34},{"sl":78}],"name":"testNewsHomepage","pass":true,"statements":[{"sl":35},{"sl":36},{"sl":37},{"sl":38},{"sl":40},{"sl":41},{"sl":42},{"sl":44},{"sl":45},{"sl":46},{"sl":79},{"sl":80},{"sl":81}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [82], [82], [82], [82], [82], [], [82], [82], [], [], [], [], [84], [84], [84], [84], [84], [], [84], [84], [84], [], [84], [84], [84], [], [], [35], [35], [35], [35], [35], [35], [35], [], [35], [], [], [], [102], [102], [102], [], [102], [], [], [126], [126], [126], [126], [126], [126], [], [126], [], [], [82, 102, 35, 84, 126], [82, 102, 35, 84, 126], [82, 102, 35, 84, 126], [82, 102, 35, 84, 126], [], [], [], [], [], []]

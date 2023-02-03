@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class ScopedAliasesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="ScopedAliasesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>ScopedAliasesTest</td>
+        <td class="testPasses"><span class="sortValue">98</span>98</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.931</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testOverridden</span><a href="ScopedAliasesTest_testOverridden_5dx.html">ScopedAliasesTest.testOverridden</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779580</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testBadParameters</span><a href="ScopedAliasesTest_testBadParameters_c8j.html">ScopedAliasesTest.testBadParameters</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628616</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocSubType</span><a href="ScopedAliasesTest_testJsDocSubType_96n.html">ScopedAliasesTest.testJsDocSubType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779640</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedThis</span><a href="ScopedAliasesTest_testScopedThis_cvz.html">ScopedAliasesTest.testScopedThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779523</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocType</span><a href="ScopedAliasesTest_testJsDocType_11l.html">ScopedAliasesTest.testJsDocType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779618</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testFourLevel</span><a href="ScopedAliasesTest_testFourLevel_8b7.html">ScopedAliasesTest.testFourLevel</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628522</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testWorksInClosures</span><a href="ScopedAliasesTest_testWorksInClosures_2nl.html">ScopedAliasesTest.testWorksInClosures</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779577</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocParameter</span><a href="ScopedAliasesTest_testJsDocParameter_7mv.html">ScopedAliasesTest.testJsDocParameter</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779621</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testRecordMultipleAliases</span><a href="ScopedAliasesTest_testRecordMultipleAliases_2z2.html">ScopedAliasesTest.testRecordMultipleAliases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628371</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testNullType</span><a href="ScopedAliasesTest_testNullType_i0.html">ScopedAliasesTest.testNullType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779682</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testNoGoogScope</span><a href="ScopedAliasesTest_testNoGoogScope_1em.html">ScopedAliasesTest.testNoGoogScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628212</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testForwardJsDoc</span><a href="ScopedAliasesTest_testForwardJsDoc_33k.html">ScopedAliasesTest.testForwardJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628507</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testUsingObjectLiteralToEscapeScoping</span><a href="ScopedAliasesTest_testUsingObjectLiteralToEscapeScoping_bm.html">ScopedAliasesTest.testUsingObjectLiteralToEscapeScoping</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628357</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testOneLevel</span><a href="ScopedAliasesTest_testOneLevel_bed.html">ScopedAliasesTest.testOneLevel</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628245</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testFunctionJsDoc</span><a href="ScopedAliasesTest_testFunctionJsDoc_5zo.html">ScopedAliasesTest.testFunctionJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779664</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocReturn</span><a href="ScopedAliasesTest_testJsDocReturn_7z8.html">ScopedAliasesTest.testJsDocReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628253</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocTypedef</span><a href="ScopedAliasesTest_testJsDocTypedef_9ye.html">ScopedAliasesTest.testJsDocTypedef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628379</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocExtends</span><a href="ScopedAliasesTest_testJsDocExtends_5cb.html">ScopedAliasesTest.testJsDocExtends</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628297</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTestTypes</span><a href="ScopedAliasesTest_testTestTypes_29g.html">ScopedAliasesTest.testTestTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779678</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedThrow</span><a href="ScopedAliasesTest_testScopedThrow_4zg.html">ScopedAliasesTest.testScopedThrow</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779540</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testNonAliasLocal</span><a href="ScopedAliasesTest_testNonAliasLocal_32e.html">ScopedAliasesTest.testNonAliasLocal</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628532</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testFourLevel</span><a href="ScopedAliasesTest_testFourLevel_189.html">ScopedAliasesTest.testFourLevel</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779517</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedThis</span><a href="ScopedAliasesTest_testScopedThis_5xy.html">ScopedAliasesTest.testScopedThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628324</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testOverridden</span><a href="ScopedAliasesTest_testOverridden_xh.html">ScopedAliasesTest.testOverridden</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628642</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testUnionJsDoc</span><a href="ScopedAliasesTest_testUnionJsDoc_89m.html">ScopedAliasesTest.testUnionJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628676</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testArrayJsDoc</span><a href="ScopedAliasesTest_testArrayJsDoc_17m.html">ScopedAliasesTest.testArrayJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628204</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTwoLevel</span><a href="ScopedAliasesTest_testTwoLevel_8gt.html">ScopedAliasesTest.testTwoLevel</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779511</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testIssue772</span><a href="ScopedAliasesTest_testIssue772_byp.html">ScopedAliasesTest.testIssue772</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628578</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testRecordOneAlias</span><a href="ScopedAliasesTest_testRecordOneAlias_c17.html">ScopedAliasesTest.testRecordOneAlias</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628479</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTestTypes</span><a href="ScopedAliasesTest_testTestTypes_cry.html">ScopedAliasesTest.testTestTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628386</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testPropertiesNotChanged</span><a href="ScopedAliasesTest_testPropertiesNotChanged_7lc.html">ScopedAliasesTest.testPropertiesNotChanged</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697627889</span>2 Jan 15:13:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.241</span>0.241</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testShadowedScopedVar</span><a href="ScopedAliasesTest_testShadowedScopedVar_bzg.html">ScopedAliasesTest.testShadowedScopedVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628277</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testShadowedScopedVarTwoScopes</span><a href="ScopedAliasesTest_testShadowedScopedVarTwoScopes_lt.html">ScopedAliasesTest.testShadowedScopedVarTwoScopes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628424</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTwoLevel</span><a href="ScopedAliasesTest_testTwoLevel_2u3.html">ScopedAliasesTest.testTwoLevel</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628220</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testUnionJsDoc</span><a href="ScopedAliasesTest_testUnionJsDoc_6g8.html">ScopedAliasesTest.testUnionJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779660</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testBadParameters</span><a href="ScopedAliasesTest_testBadParameters_43l.html">ScopedAliasesTest.testBadParameters</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779544</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testShadowedScopedVarTwoScopes</span><a href="ScopedAliasesTest_testShadowedScopedVarTwoScopes_3ke.html">ScopedAliasesTest.testShadowedScopedVarTwoScopes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779611</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTransitive</span><a href="ScopedAliasesTest_testTransitive_dau.html">ScopedAliasesTest.testTransitive</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628659</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testRecordOneAlias</span><a href="ScopedAliasesTest_testRecordOneAlias_70y.html">ScopedAliasesTest.testRecordOneAlias</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779562</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testAliasNonRedefinition</span><a href="ScopedAliasesTest_testAliasNonRedefinition_apq.html">ScopedAliasesTest.testAliasNonRedefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628668</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocReturn</span><a href="ScopedAliasesTest_testJsDocReturn_a6p.html">ScopedAliasesTest.testJsDocReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779632</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocEnum</span><a href="ScopedAliasesTest_testJsDocEnum_etw.html">ScopedAliasesTest.testJsDocEnum</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779629</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTwoSymbolsInTwoScopes</span><a href="ScopedAliasesTest_testTwoSymbolsInTwoScopes_1yk.html">ScopedAliasesTest.testTwoSymbolsInTwoScopes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628313</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedFunctionReturnThis</span><a href="ScopedAliasesTest_testScopedFunctionReturnThis_4c4.html">ScopedAliasesTest.testScopedFunctionReturnThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779593</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testMultipleTransitive</span><a href="ScopedAliasesTest_testMultipleTransitive_77s.html">ScopedAliasesTest.testMultipleTransitive</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628468</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testNullType</span><a href="ScopedAliasesTest_testNullType_43s.html">ScopedAliasesTest.testNullType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628269</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testObjectJsDoc</span><a href="ScopedAliasesTest_testObjectJsDoc_71b.html">ScopedAliasesTest.testObjectJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628131</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.073</span>0.073</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocThis</span><a href="ScopedAliasesTest_testJsDocThis_90p.html">ScopedAliasesTest.testJsDocThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628449</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTransitiveInSameVar</span><a href="ScopedAliasesTest_testTransitiveInSameVar_cp6.html">ScopedAliasesTest.testTransitiveInSameVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628340</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testIssue772</span><a href="ScopedAliasesTest_testIssue772_831.html">ScopedAliasesTest.testIssue772</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779520</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocImplements</span><a href="ScopedAliasesTest_testJsDocImplements_83v.html">ScopedAliasesTest.testJsDocImplements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628497</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocExtends</span><a href="ScopedAliasesTest_testJsDocExtends_8bf.html">ScopedAliasesTest.testJsDocExtends</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779624</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTwoSymbolsInTwoScopes</span><a href="ScopedAliasesTest_testTwoSymbolsInTwoScopes_576.html">ScopedAliasesTest.testTwoSymbolsInTwoScopes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779587</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testRecordMultipleAliases</span><a href="ScopedAliasesTest_testRecordMultipleAliases_drn.html">ScopedAliasesTest.testRecordMultipleAliases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779565</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocType</span><a href="ScopedAliasesTest_testJsDocType_3nx.html">ScopedAliasesTest.testJsDocType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628459</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocTypedef</span><a href="ScopedAliasesTest_testJsDocTypedef_b1o.html">ScopedAliasesTest.testJsDocTypedef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779644</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedThrow</span><a href="ScopedAliasesTest_testScopedThrow_7n3.html">ScopedAliasesTest.testScopedThrow</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628694</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTwoScopes</span><a href="ScopedAliasesTest_testTwoScopes_296.html">ScopedAliasesTest.testTwoScopes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779584</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testAliasNonRedefinition</span><a href="ScopedAliasesTest_testAliasNonRedefinition_bgo.html">ScopedAliasesTest.testAliasNonRedefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779530</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testWorksInClosures</span><a href="ScopedAliasesTest_testWorksInClosures_3n6.html">ScopedAliasesTest.testWorksInClosures</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628236</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testOneLevel</span><a href="ScopedAliasesTest_testOneLevel_a4a.html">ScopedAliasesTest.testOneLevel</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779507</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testUsingObjectLiteralToEscapeScoping</span><a href="ScopedAliasesTest_testUsingObjectLiteralToEscapeScoping_543.html">ScopedAliasesTest.testUsingObjectLiteralToEscapeScoping</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779615</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testShadowedVar</span><a href="ScopedAliasesTest_testShadowedVar_6z6.html">ScopedAliasesTest.testShadowedVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628684</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testShadowedVar</span><a href="ScopedAliasesTest_testShadowedVar_2r1.html">ScopedAliasesTest.testShadowedVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779604</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testObjectJsDoc</span><a href="ScopedAliasesTest_testObjectJsDoc_3a7.html">ScopedAliasesTest.testObjectJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779653</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocSubType</span><a href="ScopedAliasesTest_testJsDocSubType_690.html">ScopedAliasesTest.testJsDocSubType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628228</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedFunctionAssignsToVar</span><a href="ScopedAliasesTest_testScopedFunctionAssignsToVar_amx.html">ScopedAliasesTest.testScopedFunctionAssignsToVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779596</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocImplements</span><a href="ScopedAliasesTest_testJsDocImplements_42.html">ScopedAliasesTest.testJsDocImplements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779627</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testAliasRedefinition</span><a href="ScopedAliasesTest_testAliasRedefinition_c3r.html">ScopedAliasesTest.testAliasRedefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779528</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testShadowedScopedVar</span><a href="ScopedAliasesTest_testShadowedScopedVar_12f.html">ScopedAliasesTest.testShadowedScopedVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779607</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedReturn</span><a href="ScopedAliasesTest_testScopedReturn_9ox.html">ScopedAliasesTest.testScopedReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779534</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testMultipleTransitive</span><a href="ScopedAliasesTest_testMultipleTransitive_4wa.html">ScopedAliasesTest.testMultipleTransitive</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779574</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testAliasRedefinition</span><a href="ScopedAliasesTest_testAliasRedefinition_50t.html">ScopedAliasesTest.testAliasRedefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628305</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testRecordAliasFromMultipleGoogScope</span><a href="ScopedAliasesTest_testRecordAliasFromMultipleGoogScope_3zu.html">ScopedAliasesTest.testRecordAliasFromMultipleGoogScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628347</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testNonAliasLocal</span><a href="ScopedAliasesTest_testNonAliasLocal_90e.html">ScopedAliasesTest.testNonAliasLocal</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779551</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedFunctionReturnThis</span><a href="ScopedAliasesTest_testScopedFunctionReturnThis_u6.html">ScopedAliasesTest.testScopedFunctionReturnThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628417</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testAliasOfSymbolInGoogScope</span><a href="ScopedAliasesTest_testAliasOfSymbolInGoogScope_acr.html">ScopedAliasesTest.testAliasOfSymbolInGoogScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628410</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTransitive</span><a href="ScopedAliasesTest_testTransitive_bm8.html">ScopedAliasesTest.testTransitive</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779514</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedFunctionAssignsToVar</span><a href="ScopedAliasesTest_testScopedFunctionAssignsToVar_2nm.html">ScopedAliasesTest.testScopedFunctionAssignsToVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628606</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTransitiveInSameVar</span><a href="ScopedAliasesTest_testTransitiveInSameVar_2yo.html">ScopedAliasesTest.testTransitiveInSameVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779572</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocParameter</span><a href="ScopedAliasesTest_testJsDocParameter_1qf.html">ScopedAliasesTest.testJsDocParameter</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628597</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testPropertiesNotChanged</span><a href="ScopedAliasesTest_testPropertiesNotChanged_97u.html">ScopedAliasesTest.testPropertiesNotChanged</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779602</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testUsedImproperly</span><a href="ScopedAliasesTest_testUsedImproperly_do9.html">ScopedAliasesTest.testUsedImproperly</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628367</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testRecordAliasFromMultipleGoogScope</span><a href="ScopedAliasesTest_testRecordAliasFromMultipleGoogScope_ajg.html">ScopedAliasesTest.testRecordAliasFromMultipleGoogScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779569</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocThis</span><a href="ScopedAliasesTest_testJsDocThis_30w.html">ScopedAliasesTest.testJsDocThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779635</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testNoGoogScope</span><a href="ScopedAliasesTest_testNoGoogScope_5m5.html">ScopedAliasesTest.testNoGoogScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779559</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedFunctionThrows</span><a href="ScopedAliasesTest_testScopedFunctionThrows_chp.html">ScopedAliasesTest.testScopedFunctionThrows</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628588</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testForwardJsDoc</span><a href="ScopedAliasesTest_testForwardJsDoc_39f.html">ScopedAliasesTest.testForwardJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779672</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocThrows</span><a href="ScopedAliasesTest_testJsDocThrows_c9b.html">ScopedAliasesTest.testJsDocThrows</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779637</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocThrows</span><a href="ScopedAliasesTest_testJsDocThrows_7go.html">ScopedAliasesTest.testJsDocThrows</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628260</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testFunctionJsDoc</span><a href="ScopedAliasesTest_testFunctionJsDoc_b8s.html">ScopedAliasesTest.testFunctionJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628395</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testArrayJsDoc</span><a href="ScopedAliasesTest_testArrayJsDoc_9q.html">ScopedAliasesTest.testArrayJsDoc</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779648</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testAliasOfSymbolInGoogScope</span><a href="ScopedAliasesTest_testAliasOfSymbolInGoogScope_5fb.html">ScopedAliasesTest.testAliasOfSymbolInGoogScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779590</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testJsDocEnum</span><a href="ScopedAliasesTest_testJsDocEnum_80c.html">ScopedAliasesTest.testJsDocEnum</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628439</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testUsedImproperly</span><a href="ScopedAliasesTest_testUsedImproperly_eb2.html">ScopedAliasesTest.testUsedImproperly</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779542</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedReturn</span><a href="ScopedAliasesTest_testScopedReturn_czo.html">ScopedAliasesTest.testScopedReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628565</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testScopedFunctionThrows</span><a href="ScopedAliasesTest_testScopedFunctionThrows_c13.html">ScopedAliasesTest.testScopedFunctionThrows</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697779599</span>2 Jan 15:16:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ScopedAliasesTest.testTwoScopes</span><a href="ScopedAliasesTest_testTwoScopes_ja.html">ScopedAliasesTest.testTwoScopes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697628488</span>2 Jan 15:13:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

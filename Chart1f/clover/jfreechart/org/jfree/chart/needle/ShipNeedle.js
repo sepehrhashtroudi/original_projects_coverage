@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":136,"id":64276,"methods":[{"el":93,"sc":5,"sl":73},{"el":113,"sc":5,"sl":102},{"el":122,"sc":5,"sl":120},{"el":134,"sc":5,"sl":132}],"name":"ShipNeedle","sl":59}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_118":{"methods":[{"sl":102},{"sl":132}],"name":"testCloning","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110},{"sl":133}]},"test_1448":{"methods":[{"sl":102}],"name":"testEquals","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]},"test_1616":{"methods":[{"sl":102}],"name":"testSerialization","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]},"test_1658":{"methods":[{"sl":102}],"name":"testSerialization","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]},"test_1908":{"methods":[{"sl":102},{"sl":132}],"name":"testCloning","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110},{"sl":133}]},"test_309":{"methods":[{"sl":102}],"name":"testEquals","pass":true,"statements":[{"sl":103},{"sl":106},{"sl":109},{"sl":110}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1616, 309, 1908, 1658, 1448, 118], [1616, 309, 1908, 1658, 1448, 118], [], [], [1616, 309, 1908, 1658, 1448, 118], [], [], [1616, 309, 1908, 1658, 1448, 118], [1616, 309, 1908, 1658, 1448, 118], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1908, 118], [1908, 118], [], [], [], []]

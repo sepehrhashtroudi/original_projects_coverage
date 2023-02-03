@@ -1,0 +1,2778 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jfreechart</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">jfreechart-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jfreechart
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Sat Dec 3 2022 22:44:35 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">20,866</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">47,972</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">8,412</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">709</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">687</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">66</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">233,977</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">97,602</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">19,867</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.41</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">5.7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">11.86</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">10.74</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.36</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">20,866</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">47,972</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">8,412</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">709</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">687</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">66</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">233,977</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">97,602</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">19,867</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.41</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">5.7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">11.86</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">10.74</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">2.36</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+        <table id="projectSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Project</th>
+                    <th colspan="1">
+                <label >Packages</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">Clover&#160;database&#160;Sat&#160;Dec&#160;3&#160;2022&#160;22:44:35&#160;MST</span>
+                    Clover&#160;database&#160;Sat&#160;Dec&#160;3&#160;2022&#160;22:44:35&#160;MST
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">66.0</span>
+            66
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.361745</span>
+            2.36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">35782.0</span>
+            35,782
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5368026</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5368026</span>53.7%</div><div style="display: table-cell">
+ <div title="53.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:53.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+                <div>
+    Metrics from sub-packages:
+            <p class="aui-buttons">
+        <a href="pkg-summary.html"
+           class="aui-button"
+           id="simple-tooltip"
+           title="Calculate code metrics from sub-packages separately">
+            Separated
+        </a>
+        <a href="agg-pkgs.html"
+           class="aui-button active"
+           id="simple-tooltip"
+           title="Calculate a sum of metrics from a given package and all its sub-packages">
+            Aggregated
+        </a>
+    </p>
+</div>
+        
+        <table id="aggregatedPacakgesTable" class="aui aui-table-sortable">
+                        <thead>
+    <tr>
+        <th width="30%">Package (aggregated)</th>
+                            <th colspan="1">
+                <label >
+                    Packages
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">
+                    Uncovered Elements
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+            <tbody>
+                <!-- render list of package coverage bargraphs -->
+                                                                                                            <tr>
+    <td>
+                <span class="sortValue">org.jfree.experimental.chart</span>
+                    org.jfree.experimental.chart
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.75</span>
+            5.75
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">111.0</span>
+            111
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.demo</span>
+                    <a href="org/jfree/chart/demo/pkg-summary.html" title="org.jfree.chart.demo">org.jfree.chart.demo</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0714285</span>
+            1.07
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">164.0</span>
+            164
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.editor</span>
+                    <a href="org/jfree/chart/editor/pkg-summary.html" title="org.jfree.chart.editor">org.jfree.chart.editor</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.231884</span>
+            2.23
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">782.0</span>
+            782
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.encoders</span>
+                    <a href="org/jfree/chart/encoders/pkg-summary.html" title="org.jfree.chart.encoders">org.jfree.chart.encoders</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3214285</span>
+            1.32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">118.0</span>
+            118
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.experimental</span>
+                    org.jfree.experimental
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.75</span>
+            5.75
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">111.0</span>
+            111
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.io</span>
+                    <a href="org/jfree/data/io/pkg-summary.html" title="org.jfree.data.io">org.jfree.data.io</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.6666667</span>
+            2.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">74.0</span>
+            74
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.jdbc</span>
+                    <a href="org/jfree/data/jdbc/pkg-summary.html" title="org.jfree.data.jdbc">org.jfree.data.jdbc</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.193548</span>
+            4.19
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">367.0</span>
+            367
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.experimental.chart.renderer</span>
+                    org.jfree.experimental.chart.renderer
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.75</span>
+            5.75
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">111.0</span>
+            111
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.servlet</span>
+                    <a href="org/jfree/chart/servlet/pkg-summary.html" title="org.jfree.chart.servlet">org.jfree.chart.servlet</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">206.0</span>
+            206
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.xml</span>
+                    <a href="org/jfree/data/xml/pkg-summary.html" title="org.jfree.data.xml">org.jfree.data.xml</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7272727</span>
+            1.73
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">246.0</span>
+            246
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.experimental.chart.renderer.xy</span>
+                    <a href="org/jfree/experimental/chart/renderer/xy/pkg-summary.html" title="org.jfree.experimental.chart.renderer.xy">org.jfree.experimental.chart.renderer.xy</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.75</span>
+            5.75
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">111.0</span>
+            111
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.panel</span>
+                    <a href="org/jfree/chart/panel/pkg-summary.html" title="org.jfree.chart.panel">org.jfree.chart.panel</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.0714285</span>
+            3.07
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">711.0</span>
+            711
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0125</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0125</span>1.3%</div><div style="display: table-cell">
+ <div title="1.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:1.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.general.junit</span>
+                    <a href="org/jfree/data/general/junit/pkg-summary.html" title="org.jfree.data.general.junit">org.jfree.data.general.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4285715</span>
+            1.43
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">150.0</span>
+            150
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0625</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0625</span>6.2%</div><div style="display: table-cell">
+ <div title="6.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:6.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.ui</span>
+                    <a href="org/jfree/chart/ui/pkg-summary.html" title="org.jfree.chart.ui">org.jfree.chart.ui</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.695122</span>
+            1.7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">491.0</span>
+            491
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.077067666</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.077067666</span>7.7%</div><div style="display: table-cell">
+ <div title="7.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:7.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.resources</span>
+                    <a href="org/jfree/data/resources/pkg-summary.html" title="org.jfree.data.resources">org.jfree.data.resources</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.16666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.16666667</span>16.7%</div><div style="display: table-cell">
+ <div title="16.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:16.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.needle</span>
+                    <a href="org/jfree/chart/needle/pkg-summary.html" title="org.jfree.chart.needle">org.jfree.chart.needle</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.121212</span>
+            2.12
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">361.0</span>
+            361
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.34003657</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.34003657</span>34%</div><div style="display: table-cell">
+ <div title="34% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:34%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.entity</span>
+                    <a href="org/jfree/chart/entity/pkg-summary.html" title="org.jfree.chart.entity">org.jfree.chart.entity</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.688</span>
+            1.69
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">448.0</span>
+            448
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.3581662</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.3581662</span>35.8%</div><div style="display: table-cell">
+ <div title="35.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:35.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.renderer.xy</span>
+                    <a href="org/jfree/chart/renderer/xy/pkg-summary.html" title="org.jfree.chart.renderer.xy">org.jfree.chart.renderer.xy</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.9486754</span>
+            2.95
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4658.0</span>
+            4,658
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.38959506</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.38959506</span>39%</div><div style="display: table-cell">
+ <div title="39% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:39%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.renderer.category</span>
+                    <a href="org/jfree/chart/renderer/category/pkg-summary.html" title="org.jfree.chart.renderer.category">org.jfree.chart.renderer.category</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.2627907</span>
+            3.26
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3677.0</span>
+            3,677
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4213094</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4213094</span>42.1%</div><div style="display: table-cell">
+ <div title="42.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:42.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.renderer</span>
+                    <a href="org/jfree/chart/renderer/pkg-summary.html" title="org.jfree.chart.renderer">org.jfree.chart.renderer</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.8372781</span>
+            2.84
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">9265.0</span>
+            9,265
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.42702535</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.42702535</span>42.7%</div><div style="display: table-cell">
+ <div title="42.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:42.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.event</span>
+                    <a href="org/jfree/chart/event/pkg-summary.html" title="org.jfree.chart.event">org.jfree.chart.event</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1764706</span>
+            1.18
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">59.0</span>
+            59
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.43809524</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.43809524</span>43.8%</div><div style="display: table-cell">
+ <div title="43.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:43.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.pie</span>
+                    <a href="org/jfree/data/pie/pkg-summary.html" title="org.jfree.data.pie">org.jfree.data.pie</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5555556</span>
+            1.56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">100.0</span>
+            100
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.4623656</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.4623656</span>46.2%</div><div style="display: table-cell">
+ <div title="46.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:46.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart</span>
+                    <a href="org/jfree/chart/pkg-summary.html" title="org.jfree.chart">org.jfree.chart</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">41.0</span>
+            41
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.4411056</span>
+            2.44
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">29495.0</span>
+            29,495
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5150763</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5150763</span>51.5%</div><div style="display: table-cell">
+ <div title="51.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:51.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.event</span>
+                    <a href="org/jfree/data/event/pkg-summary.html" title="org.jfree.data.event">org.jfree.data.event</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.1428572</span>
+            1.14
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.52380955</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.52380955</span>52.4%</div><div style="display: table-cell">
+ <div title="52.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:52.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.title</span>
+                    <a href="org/jfree/chart/title/pkg-summary.html" title="org.jfree.chart.title">org.jfree.chart.title</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.313433</span>
+            2.31
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">832.0</span>
+            832
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5312676</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5312676</span>53.1%</div><div style="display: table-cell">
+ <div title="53.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:53.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree</span>
+                    org.jfree
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">66.0</span>
+            66
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.361745</span>
+            2.36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">35782.0</span>
+            35,782
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5368026</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5368026</span>53.7%</div><div style="display: table-cell">
+ <div title="53.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:53.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org</span>
+                    org
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">66.0</span>
+            66
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.361745</span>
+            2.36
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">35782.0</span>
+            35,782
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5368026</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5368026</span>53.7%</div><div style="display: table-cell">
+ <div title="53.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:53.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.axis</span>
+                    <a href="org/jfree/chart/axis/pkg-summary.html" title="org.jfree.chart.axis">org.jfree.chart.axis</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.569797</span>
+            2.57
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3792.0</span>
+            3,792
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5448872</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5448872</span>54.5%</div><div style="display: table-cell">
+ <div title="54.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:54.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.junit</span>
+                    <a href="org/jfree/chart/junit/pkg-summary.html" title="org.jfree.chart.junit">org.jfree.chart.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.75</span>
+            1.75
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">31.0</span>
+            31
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5507246</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5507246</span>55.1%</div><div style="display: table-cell">
+ <div title="55.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:55.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.plot.dial</span>
+                    <a href="org/jfree/chart/plot/dial/pkg-summary.html" title="org.jfree.chart.plot.dial">org.jfree.chart.plot.dial</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7152542</span>
+            1.72
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">869.0</span>
+            869
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5536723</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5536723</span>55.4%</div><div style="display: table-cell">
+ <div title="55.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:55.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.time</span>
+                    <a href="org/jfree/data/time/pkg-summary.html" title="org.jfree.data.time">org.jfree.data.time</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0528924</span>
+            2.05
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1897.0</span>
+            1,897
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5653071</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5653071</span>56.5%</div><div style="display: table-cell">
+ <div title="56.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:56.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.labels</span>
+                    <a href="org/jfree/chart/labels/pkg-summary.html" title="org.jfree.chart.labels">org.jfree.chart.labels</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0765307</span>
+            2.08
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">632.0</span>
+            632
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5746972</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5746972</span>57.5%</div><div style="display: table-cell">
+ <div title="57.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:57.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.annotations</span>
+                    <a href="org/jfree/chart/annotations/pkg-summary.html" title="org.jfree.chart.annotations">org.jfree.chart.annotations</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0170941</span>
+            2.02
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">805.0</span>
+            805
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.59074736</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.59074736</span>59.1%</div><div style="display: table-cell">
+ <div title="59.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:59.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.imagemap</span>
+                    <a href="org/jfree/chart/imagemap/pkg-summary.html" title="org.jfree.chart.imagemap">org.jfree.chart.imagemap</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">53.0</span>
+            53
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.5954198</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.5954198</span>59.5%</div><div style="display: table-cell">
+ <div title="59.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:59.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.gantt</span>
+                    <a href="org/jfree/data/gantt/pkg-summary.html" title="org.jfree.data.gantt">org.jfree.data.gantt</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.65625</span>
+            1.66
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">283.0</span>
+            283
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6047486</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6047486</span>60.5%</div><div style="display: table-cell">
+ <div title="60.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.general</span>
+                    <a href="org/jfree/data/general/pkg-summary.html" title="org.jfree.data.general">org.jfree.data.general</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.8860104</span>
+            2.89
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">800.0</span>
+            800
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6089932</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6089932</span>60.9%</div><div style="display: table-cell">
+ <div title="60.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.plot</span>
+                    <a href="org/jfree/chart/plot/pkg-summary.html" title="org.jfree.chart.plot">org.jfree.chart.plot</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.3652422</span>
+            2.37
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6291.0</span>
+            6,291
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.61416745</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.61416745</span>61.4%</div><div style="display: table-cell">
+ <div title="61.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:61.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.util</span>
+                    <a href="org/jfree/chart/util/pkg-summary.html" title="org.jfree.chart.util">org.jfree.chart.util</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.4771428</span>
+            2.48
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1233.0</span>
+            1,233
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.61909175</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.61909175</span>61.9%</div><div style="display: table-cell">
+ <div title="61.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:61.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data</span>
+                    <a href="org/jfree/data/pkg-summary.html" title="org.jfree.data">org.jfree.data</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">24.0</span>
+            24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.1295195</span>
+            2.13
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6176.0</span>
+            6,176
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6214526</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6214526</span>62.1%</div><div style="display: table-cell">
+ <div title="62.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:62.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.time.ohlc.junit</span>
+                    <a href="org/jfree/data/time/ohlc/junit/pkg-summary.html" title="org.jfree.data.time.ohlc.junit">org.jfree.data.time.ohlc.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6363636</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6363636</span>63.6%</div><div style="display: table-cell">
+ <div title="63.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:63.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.function.junit</span>
+                    <a href="org/jfree/data/function/junit/pkg-summary.html" title="org.jfree.data.function.junit">org.jfree.data.function.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6363636</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6363636</span>63.6%</div><div style="display: table-cell">
+ <div title="63.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:63.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.category.junit</span>
+                    <a href="org/jfree/data/category/junit/pkg-summary.html" title="org.jfree.data.category.junit">org.jfree.data.category.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6363636</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6363636</span>63.6%</div><div style="display: table-cell">
+ <div title="63.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:63.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.time.ohlc</span>
+                    <a href="org/jfree/data/time/ohlc/pkg-summary.html" title="org.jfree.data.time.ohlc">org.jfree.data.time.ohlc</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.56</span>
+            1.56
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">90.0</span>
+            90
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.64426875</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.64426875</span>64.4%</div><div style="display: table-cell">
+ <div title="64.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:64.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.imagemap.junit</span>
+                    <a href="org/jfree/chart/imagemap/junit/pkg-summary.html" title="org.jfree.chart.imagemap.junit">org.jfree.chart.imagemap.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.gantt.junit</span>
+                    <a href="org/jfree/data/gantt/junit/pkg-summary.html" title="org.jfree.data.gantt.junit">org.jfree.data.gantt.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.xy</span>
+                    <a href="org/jfree/data/xy/pkg-summary.html" title="org.jfree.data.xy">org.jfree.data.xy</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.7805755</span>
+            1.78
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1078.0</span>
+            1,078
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6775352</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6775352</span>67.8%</div><div style="display: table-cell">
+ <div title="67.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:67.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.block</span>
+                    <a href="org/jfree/chart/block/pkg-summary.html" title="org.jfree.chart.block">org.jfree.chart.block</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.3823528</span>
+            2.38
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">610.0</span>
+            610
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6796219</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6796219</span>68%</div><div style="display: table-cell">
+ <div title="68% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.statistics</span>
+                    <a href="org/jfree/data/statistics/pkg-summary.html" title="org.jfree.data.statistics">org.jfree.data.statistics</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.4040816</span>
+            2.4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">698.0</span>
+            698
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6857272</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6857272</span>68.6%</div><div style="display: table-cell">
+ <div title="68.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.text</span>
+                    <a href="org/jfree/chart/text/pkg-summary.html" title="org.jfree.chart.text">org.jfree.chart.text</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">3.2</span>
+            3.2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">285.0</span>
+            285
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7</span>70%</div><div style="display: table-cell">
+ <div title="70% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.urls.junit</span>
+                    <a href="org/jfree/chart/urls/junit/pkg-summary.html" title="org.jfree.chart.urls.junit">org.jfree.chart.urls.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.71428573</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.71428573</span>71.4%</div><div style="display: table-cell">
+ <div title="71.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.entity.junit</span>
+                    <a href="org/jfree/chart/entity/junit/pkg-summary.html" title="org.jfree.chart.entity.junit">org.jfree.chart.entity.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.71428573</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.71428573</span>71.4%</div><div style="display: table-cell">
+ <div title="71.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.category</span>
+                    <a href="org/jfree/data/category/pkg-summary.html" title="org.jfree.data.category">org.jfree.data.category</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.2424242</span>
+            2.24
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">194.0</span>
+            194
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7316736</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7316736</span>73.2%</div><div style="display: table-cell">
+ <div title="73.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:73.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.urls</span>
+                    <a href="org/jfree/chart/urls/pkg-summary.html" title="org.jfree.chart.urls">org.jfree.chart.urls</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.6792452</span>
+            2.68
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">135.0</span>
+            135
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7418738</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7418738</span>74.2%</div><div style="display: table-cell">
+ <div title="74.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:74.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.title.junit</span>
+                    <a href="org/jfree/chart/title/junit/pkg-summary.html" title="org.jfree.chart.title.junit">org.jfree.chart.title.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.75</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.75</span>75%</div><div style="display: table-cell">
+ <div title="75% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.plot.dial.junit</span>
+                    <a href="org/jfree/chart/plot/dial/junit/pkg-summary.html" title="org.jfree.chart.plot.dial.junit">org.jfree.chart.plot.dial.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.75</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.75</span>75%</div><div style="display: table-cell">
+ <div title="75% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.function</span>
+                    <a href="org/jfree/data/function/pkg-summary.html" title="org.jfree.data.function">org.jfree.data.function</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4814814</span>
+            1.48
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">32.0</span>
+            32
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7557252</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7557252</span>75.6%</div><div style="display: table-cell">
+ <div title="75.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.needle.junit</span>
+                    <a href="org/jfree/chart/needle/junit/pkg-summary.html" title="org.jfree.chart.needle.junit">org.jfree.chart.needle.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7647059</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7647059</span>76.5%</div><div style="display: table-cell">
+ <div title="76.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:76.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.block.junit</span>
+                    <a href="org/jfree/chart/block/junit/pkg-summary.html" title="org.jfree.chart.block.junit">org.jfree.chart.block.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7894737</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7894737</span>78.9%</div><div style="display: table-cell">
+ <div title="78.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:78.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.util.junit</span>
+                    <a href="org/jfree/chart/util/junit/pkg-summary.html" title="org.jfree.chart.util.junit">org.jfree.chart.util.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7894737</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7894737</span>78.9%</div><div style="display: table-cell">
+ <div title="78.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:78.9%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.junit</span>
+                    <a href="org/jfree/data/junit/pkg-summary.html" title="org.jfree.data.junit">org.jfree.data.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.statistics.junit</span>
+                    <a href="org/jfree/data/statistics/junit/pkg-summary.html" title="org.jfree.data.statistics.junit">org.jfree.data.statistics.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.annotations.junit</span>
+                    <a href="org/jfree/chart/annotations/junit/pkg-summary.html" title="org.jfree.chart.annotations.junit">org.jfree.chart.annotations.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.labels.junit</span>
+                    <a href="org/jfree/chart/labels/junit/pkg-summary.html" title="org.jfree.chart.labels.junit">org.jfree.chart.labels.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8518519</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8518519</span>85.2%</div><div style="display: table-cell">
+ <div title="85.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.plot.junit</span>
+                    <a href="org/jfree/chart/plot/junit/pkg-summary.html" title="org.jfree.chart.plot.junit">org.jfree.chart.plot.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.85365856</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.85365856</span>85.4%</div><div style="display: table-cell">
+ <div title="85.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.time.junit</span>
+                    <a href="org/jfree/data/time/junit/pkg-summary.html" title="org.jfree.data.time.junit">org.jfree.data.time.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.85714287</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.85714287</span>85.7%</div><div style="display: table-cell">
+ <div title="85.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.renderer.category.junit</span>
+                    <a href="org/jfree/chart/renderer/category/junit/pkg-summary.html" title="org.jfree.chart.renderer.category.junit">org.jfree.chart.renderer.category.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.87096775</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.87096775</span>87.1%</div><div style="display: table-cell">
+ <div title="87.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:87.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.renderer.junit</span>
+                    <a href="org/jfree/chart/renderer/junit/pkg-summary.html" title="org.jfree.chart.renderer.junit">org.jfree.chart.renderer.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9</span>90%</div><div style="display: table-cell">
+ <div title="90% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.data.xy.junit</span>
+                    <a href="org/jfree/data/xy/junit/pkg-summary.html" title="org.jfree.data.xy.junit">org.jfree.data.xy.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.902439</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.902439</span>90.2%</div><div style="display: table-cell">
+ <div title="90.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.axis.junit</span>
+                    <a href="org/jfree/chart/axis/junit/pkg-summary.html" title="org.jfree.chart.axis.junit">org.jfree.chart.axis.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.902439</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.902439</span>90.2%</div><div style="display: table-cell">
+ <div title="90.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.renderer.xy.junit</span>
+                    <a href="org/jfree/chart/renderer/xy/junit/pkg-summary.html" title="org.jfree.chart.renderer.xy.junit">org.jfree.chart.renderer.xy.junit</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9310345</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9310345</span>93.1%</div><div style="display: table-cell">
+ <div title="93.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:93.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                <span class="sortValue">org.jfree.chart.resources</span>
+                    <a href="org/jfree/chart/resources/pkg-summary.html" title="org.jfree.chart.resources">org.jfree.chart.resources</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                </tbody>
+        </table>
+
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Sat Dec 3 2022 22:45:25 MST using coverage data from Sat Dec 3 2022 22:45:21 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

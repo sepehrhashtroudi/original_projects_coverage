@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.debugging.sourcemap">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.debugging.sourcemap</a></li>
+     <li><a href="test-SourceMapGeneratorV2Test.html">Class SourceMapGeneratorV2Test</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+                        
+            Test testGoldenOutput5
+            </h1>
+
+
+<table class="aui">
+    <thead>
+        <tr>
+            <th>Test</th>
+                        <th><label title="The test result. Either a Pass, Fail or Error.">Status</label></th>
+            <th><label title="When the test execution was started">Start time</label></th>
+            <th><label title="The total time in seconds taken to run this test.">Time (seconds)</label></th>
+            <th><label title="A failure or error message if the test is not successful.">Message</label></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <a  href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorV2Test.html?line=256#src-256" >testGoldenOutput5</a>
+            </td>
+                        <td>
+                                          <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+                              </td>
+            <td>
+                2 Jan 15:11:54
+            </td>
+            <td>
+                0.025            </td>
+            <td>
+                <div></div>
+                <div class="errorMessage"></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div>&#160;</div>
+
+    <table class="aui aui-table-sortable">
+        <thead>
+            <tr>
+                <th style="white-space:nowrap;"><label title="A class that was directly hit by this test.">Target Class</label></th>
+                                <th colspan="4"><label title="The percentage of coverage contributed by each single test.">Coverage contributed by</label> testGoldenOutput5</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.WarningsGuard</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/WarningsGuard.html?id=9806#WarningsGuard"             title="WarningsGuard" name="sl-45">com.google.javascript.jscomp.WarningsGuard</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CompilerOptions.TracerMode</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CompilerOptions.html?id=9806#CompilerOptions.TracerMode"             title="CompilerOptions.TracerMode" name="sl-2075">com.google.javascript.jscomp.CompilerOptions.TracerMode</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CompilerOptions.TweakProcessing</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CompilerOptions.html?id=9806#CompilerOptions.TweakProcessing"             title="CompilerOptions.TweakProcessing" name="sl-2086">com.google.javascript.jscomp.CompilerOptions.TweakProcessing</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PhaseOptimizer.NamedPass</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PhaseOptimizer.html?id=9806#PhaseOptimizer.NamedPass"             title="PhaseOptimizer.NamedPass" name="sl-272">com.google.javascript.jscomp.PhaseOptimizer.NamedPass</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PhaseOptimizer.ProgressRange</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PhaseOptimizer.html?id=9806#PhaseOptimizer.ProgressRange"             title="PhaseOptimizer.ProgressRange" name="sl-409">com.google.javascript.jscomp.PhaseOptimizer.ProgressRange</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PassConfig.State</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PassConfig.html?id=9806#PassConfig.State"             title="PassConfig.State" name="sl-282">com.google.javascript.jscomp.PassConfig.State</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CheckLevel</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CheckLevel.html?id=9806#CheckLevel"             title="CheckLevel" name="sl-24">com.google.javascript.jscomp.CheckLevel</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.NodeTraversal.AbstractPostOrderCallback</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/NodeTraversal.html?id=9806#NodeTraversal.AbstractPostOrderCallback"             title="NodeTraversal.AbstractPostOrderCallback" name="sl-129">com.google.javascript.jscomp.NodeTraversal.AbstractPostOrderCallback</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.ComposeWarningsGuard.GuardComparator</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/ComposeWarningsGuard.html?id=9806#ComposeWarningsGuard.GuardComparator"             title="ComposeWarningsGuard.GuardComparator" name="sl-52">com.google.javascript.jscomp.ComposeWarningsGuard.GuardComparator</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SourceFile.Preloaded</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SourceFile.html?id=9806#SourceFile.Preloaded"             title="SourceFile.Preloaded" name="sl-418">com.google.javascript.jscomp.SourceFile.Preloaded</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SourceMap.DetailLevel</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SourceMap.html?id=9806#SourceMap.DetailLevel"             title="SourceMap.DetailLevel" name="sl-76">com.google.javascript.jscomp.SourceMap.DetailLevel</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.Node.AbstractPropListItem</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/Node.html?id=9806#Node.AbstractPropListItem"             title="Node.AbstractPropListItem" name="sl-261">com.google.javascript.rhino.Node.AbstractPropListItem</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.JSDocInfo.TrimmedStringPosition</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/JSDocInfo.html?id=9806#JSDocInfo.TrimmedStringPosition"             title="JSDocInfo.TrimmedStringPosition" name="sl-134">com.google.javascript.rhino.JSDocInfo.TrimmedStringPosition</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.ParserRunner.ParseResult</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/ParserRunner.html?id=9806#ParserRunner.ParseResult"             title="ParserRunner.ParseResult" name="sl-159">com.google.javascript.jscomp.parsing.ParserRunner.ParseResult</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.JsDocInfoParser.ExtractionInfo</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/JsDocInfoParser.html?id=9806#JsDocInfoParser.ExtractionInfo"             title="JsDocInfoParser.ExtractionInfo" name="sl-1286">com.google.javascript.jscomp.parsing.JsDocInfoParser.ExtractionInfo</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.Config</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/Config.html?id=9806#Config"             title="Config" name="sl-30">com.google.javascript.jscomp.parsing.Config</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapGeneratorV2.UsedMappingCheck</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorV2.html?id=9806#SourceMapGeneratorV2.UsedMappingCheck"             title="SourceMapGeneratorV2.UsedMappingCheck" name="sl-730">com.google.debugging.sourcemap.SourceMapGeneratorV2.UsedMappingCheck</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapLineDecoder.LineEntry</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapLineDecoder.html?id=9806#SourceMapLineDecoder.LineEntry"             title="SourceMapLineDecoder.LineEntry" name="sl-124">com.google.debugging.sourcemap.SourceMapLineDecoder.LineEntry</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.FilePosition</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/FilePosition.html?id=9806#FilePosition"             title="FilePosition" name="sl-23">com.google.debugging.sourcemap.FilePosition</a>
+        </td>
+                <td>
+            <span class="sortValue">1.0</span>100%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapGeneratorV2.MappingWriter</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorV2.html?id=9806#SourceMapGeneratorV2.MappingWriter"             title="SourceMapGeneratorV2.MappingWriter" name="sl-487">com.google.debugging.sourcemap.SourceMapGeneratorV2.MappingWriter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.96</span>96%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="96% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:96%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapGeneratorV2.LineMapper</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorV2.html?id=9806#SourceMapGeneratorV2.LineMapper"             title="SourceMapGeneratorV2.LineMapper" name="sl-535">com.google.debugging.sourcemap.SourceMapGeneratorV2.LineMapper</a>
+        </td>
+                <td>
+            <span class="sortValue">0.95454544</span>95.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="95.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:95.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapGeneratorV2.MappingTraversal</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorV2.html?id=9806#SourceMapGeneratorV2.MappingTraversal"             title="SourceMapGeneratorV2.MappingTraversal" name="sl-761">com.google.debugging.sourcemap.SourceMapGeneratorV2.MappingTraversal</a>
+        </td>
+                <td>
+            <span class="sortValue">0.9298246</span>93%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="93% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:93%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapGeneratorV2.LineMapEncoder</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorV2.html?id=9806#SourceMapGeneratorV2.LineMapEncoder"             title="SourceMapGeneratorV2.LineMapEncoder" name="sl-622">com.google.debugging.sourcemap.SourceMapGeneratorV2.LineMapEncoder</a>
+        </td>
+                <td>
+            <span class="sortValue">0.9</span>90%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="90% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SyntheticAst</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SyntheticAst.html?id=9806#SyntheticAst"             title="SyntheticAst" name="sl-29">com.google.javascript.jscomp.SyntheticAst</a>
+        </td>
+                <td>
+            <span class="sortValue">0.875</span>87.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="87.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:87.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.Result</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/Result.html?id=9806#Result"             title="Result" name="sl-24">com.google.javascript.jscomp.Result</a>
+        </td>
+                <td>
+            <span class="sortValue">0.875</span>87.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="87.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:87.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.Node.FileLevelJsDocBuilder</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/Node.html?id=9806#Node.FileLevelJsDocBuilder"             title="Node.FileLevelJsDocBuilder" name="sl-1828">com.google.javascript.rhino.Node.FileLevelJsDocBuilder</a>
+        </td>
+                <td>
+            <span class="sortValue">0.84615386</span>84.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="84.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:84.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapGeneratorV2</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorV2.html?id=9806#SourceMapGeneratorV2"             title="SourceMapGeneratorV2" name="sl-39">com.google.debugging.sourcemap.SourceMapGeneratorV2</a>
+        </td>
+                <td>
+            <span class="sortValue">0.8220859</span>82.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="82.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:82.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PassFactory</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PassFactory.html?id=9806#PassFactory"             title="PassFactory" name="sl-27">com.google.javascript.jscomp.PassFactory</a>
+        </td>
+                <td>
+            <span class="sortValue">0.7777778</span>77.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="77.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:77.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodePrinter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodePrinter.html?id=9806#CodePrinter"             title="CodePrinter" name="sl-35">com.google.javascript.jscomp.CodePrinter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.7619048</span>76.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="76.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:76.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapLineDecoder.StringParser</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapLineDecoder.html?id=9806#SourceMapLineDecoder.StringParser"             title="SourceMapLineDecoder.StringParser" name="sl-137">com.google.debugging.sourcemap.SourceMapLineDecoder.StringParser</a>
+        </td>
+                <td>
+            <span class="sortValue">0.75</span>75%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.JsAst</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/JsAst.html?id=9806#JsAst"             title="JsAst" name="sl-34">com.google.javascript.jscomp.JsAst</a>
+        </td>
+                <td>
+            <span class="sortValue">0.7352941</span>73.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="73.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:73.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapLineDecoder</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapLineDecoder.html?id=9806#SourceMapLineDecoder"             title="SourceMapLineDecoder" name="sl-29">com.google.debugging.sourcemap.SourceMapLineDecoder</a>
+        </td>
+                <td>
+            <span class="sortValue">0.73333335</span>73.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="73.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:73.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.Compiler.CodeBuilder</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/Compiler.html?id=9806#Compiler.CodeBuilder"             title="Compiler.CodeBuilder" name="sl-1815">com.google.javascript.jscomp.Compiler.CodeBuilder</a>
+        </td>
+                <td>
+            <span class="sortValue">0.7037037</span>70.4%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="70.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:70.4%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodingConventions</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodingConventions.html?id=9806#CodingConventions"             title="CodingConventions" name="sl-36">com.google.javascript.jscomp.CodingConventions</a>
+        </td>
+                <td>
+            <span class="sortValue">0.6666667</span>66.7%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="66.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.7%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodeChangeHandler.RecentChange</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodeChangeHandler.html?id=9806#CodeChangeHandler.RecentChange"             title="CodeChangeHandler.RecentChange" name="sl-35">com.google.javascript.jscomp.CodeChangeHandler.RecentChange</a>
+        </td>
+                <td>
+            <span class="sortValue">0.6666667</span>66.7%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="66.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.7%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PhaseOptimizer</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PhaseOptimizer.html?id=9806#PhaseOptimizer"             title="PhaseOptimizer" name="sl-36">com.google.javascript.jscomp.PhaseOptimizer</a>
+        </td>
+                <td>
+            <span class="sortValue">0.64893615</span>64.9%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="64.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:64.9%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SuppressDocWarningsGuard</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SuppressDocWarningsGuard.html?id=9806#SuppressDocWarningsGuard"             title="SuppressDocWarningsGuard" name="sl-30">com.google.javascript.jscomp.SuppressDocWarningsGuard</a>
+        </td>
+                <td>
+            <span class="sortValue">0.62222224</span>62.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="62.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:62.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.DiagnosticGroupWarningsGuard</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/DiagnosticGroupWarningsGuard.html?id=9806#DiagnosticGroupWarningsGuard"             title="DiagnosticGroupWarningsGuard" name="sl-26">com.google.javascript.jscomp.DiagnosticGroupWarningsGuard</a>
+        </td>
+                <td>
+            <span class="sortValue">0.61904764</span>61.9%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="61.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:61.9%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.VarCheck</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/VarCheck.html?id=9806#VarCheck"             title="VarCheck" name="sl-35">com.google.javascript.jscomp.VarCheck</a>
+        </td>
+                <td>
+            <span class="sortValue">0.6041667</span>60.4%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="60.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.4%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.ComposeWarningsGuard</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/ComposeWarningsGuard.html?id=9806#ComposeWarningsGuard"             title="ComposeWarningsGuard" name="sl-40">com.google.javascript.jscomp.ComposeWarningsGuard</a>
+        </td>
+                <td>
+            <span class="sortValue">0.60294116</span>60.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="60.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.ParserRunner</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/ParserRunner.html?id=9806#ParserRunner"             title="ParserRunner" name="sl-37">com.google.javascript.jscomp.parsing.ParserRunner</a>
+        </td>
+                <td>
+            <span class="sortValue">0.6</span>60%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="60% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodePrinter.MappedCodePrinter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodePrinter.html?id=9806#CodePrinter.MappedCodePrinter"             title="CodePrinter.MappedCodePrinter" name="sl-47">com.google.javascript.jscomp.CodePrinter.MappedCodePrinter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.58536583</span>58.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="58.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:58.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodePrinter.Builder</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodePrinter.html?id=9806#CodePrinter.Builder"             title="CodePrinter.Builder" name="sl-545">com.google.javascript.jscomp.CodePrinter.Builder</a>
+        </td>
+                <td>
+            <span class="sortValue">0.57575756</span>57.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="57.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:57.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.JsDocTokenStream</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/JsDocTokenStream.html?id=9806#JsDocTokenStream"             title="JsDocTokenStream" name="sl-28">com.google.javascript.jscomp.parsing.JsDocTokenStream</a>
+        </td>
+                <td>
+            <span class="sortValue">0.5407855</span>54.1%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="54.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:54.1%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.Node.ObjectPropListItem</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/Node.html?id=9806#Node.ObjectPropListItem"             title="Node.ObjectPropListItem" name="sl-288">com.google.javascript.rhino.Node.ObjectPropListItem</a>
+        </td>
+                <td>
+            <span class="sortValue">0.53846157</span>53.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="53.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:53.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.DefaultPassConfig.HotSwapPassFactory</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/DefaultPassConfig.html?id=9806#DefaultPassConfig.HotSwapPassFactory"             title="DefaultPassConfig.HotSwapPassFactory" name="sl-2305">com.google.javascript.jscomp.DefaultPassConfig.HotSwapPassFactory</a>
+        </td>
+                <td>
+            <span class="sortValue">0.5</span>50%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.SourcePosition</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/SourcePosition.html?id=9806#SourcePosition"             title="SourcePosition" name="sl-47">com.google.javascript.rhino.SourcePosition</a>
+        </td>
+                <td>
+            <span class="sortValue">0.5</span>50%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.GlobalNamespace</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/GlobalNamespace.html?id=9806#GlobalNamespace"             title="GlobalNamespace" name="sl-51">com.google.javascript.jscomp.GlobalNamespace</a>
+        </td>
+                <td>
+            <span class="sortValue">0.49253732</span>49.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="49.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:49.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SourceMap</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SourceMap.html?id=9806#SourceMap"             title="SourceMap" name="sl-43">com.google.javascript.jscomp.SourceMap</a>
+        </td>
+                <td>
+            <span class="sortValue">0.49019608</span>49%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="49% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:49%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.RhinoErrorReporter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/RhinoErrorReporter.html?id=9806#RhinoErrorReporter"             title="RhinoErrorReporter" name="sl-32">com.google.javascript.jscomp.RhinoErrorReporter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.47619048</span>47.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="47.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.BasicErrorManager</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/BasicErrorManager.html?id=9806#BasicErrorManager"             title="BasicErrorManager" name="sl-37">com.google.javascript.jscomp.BasicErrorManager</a>
+        </td>
+                <td>
+            <span class="sortValue">0.4722222</span>47.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="47.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:47.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.Node.IntPropListItem</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/Node.html?id=9806#Node.IntPropListItem"             title="Node.IntPropListItem" name="sl-321">com.google.javascript.rhino.Node.IntPropListItem</a>
+        </td>
+                <td>
+            <span class="sortValue">0.45454547</span>45.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="45.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:45.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.ProcessDefines</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/ProcessDefines.html?id=9806#ProcessDefines"             title="ProcessDefines" name="sl-47">com.google.javascript.jscomp.ProcessDefines</a>
+        </td>
+                <td>
+            <span class="sortValue">0.44594595</span>44.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="44.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SyntacticScopeCreator</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SyntacticScopeCreator.html?id=9806#SyntacticScopeCreator"             title="SyntacticScopeCreator" name="sl-33">com.google.javascript.jscomp.SyntacticScopeCreator</a>
+        </td>
+                <td>
+            <span class="sortValue">0.4051724</span>40.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodePrinter.CompactCodePrinter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodePrinter.html?id=9806#CodePrinter.CompactCodePrinter"             title="CodePrinter.CompactCodePrinter" name="sl-402">com.google.javascript.jscomp.CodePrinter.CompactCodePrinter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.39473686</span>39.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="39.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:39.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.NodeTraversal</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/NodeTraversal.html?id=9806#NodeTraversal"             title="NodeTraversal" name="sl-38">com.google.javascript.jscomp.NodeTraversal</a>
+        </td>
+                <td>
+            <span class="sortValue">0.38848922</span>38.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="38.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.Scope</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/Scope.html?id=9806#Scope"             title="Scope" name="sl-54">com.google.javascript.jscomp.Scope</a>
+        </td>
+                <td>
+            <span class="sortValue">0.3853211</span>38.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="38.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.DiagnosticGroup</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/DiagnosticGroup.html?id=9806#DiagnosticGroup"             title="DiagnosticGroup" name="sl-33">com.google.javascript.jscomp.DiagnosticGroup</a>
+        </td>
+                <td>
+            <span class="sortValue">0.3846154</span>38.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="38.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SourceInformationAnnotator</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SourceInformationAnnotator.html?id=9806#SourceInformationAnnotator"             title="SourceInformationAnnotator" name="sl-42">com.google.javascript.jscomp.SourceInformationAnnotator</a>
+        </td>
+                <td>
+            <span class="sortValue">0.3783784</span>37.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="37.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.LoggerErrorManager</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/LoggerErrorManager.html?id=9806#LoggerErrorManager"             title="LoggerErrorManager" name="sl-30">com.google.javascript.jscomp.LoggerErrorManager</a>
+        </td>
+                <td>
+            <span class="sortValue">0.37037036</span>37%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="37% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.RhinoErrorReporter.OldRhinoErrorReporter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/RhinoErrorReporter.html?id=9806#RhinoErrorReporter.OldRhinoErrorReporter"             title="RhinoErrorReporter.OldRhinoErrorReporter" name="sl-140">com.google.javascript.jscomp.RhinoErrorReporter.OldRhinoErrorReporter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.33333334</span>33.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="33.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:33.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CheckSideEffects</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CheckSideEffects.html?id=9806#CheckSideEffects"             title="CheckSideEffects" name="sl-40">com.google.javascript.jscomp.CheckSideEffects</a>
+        </td>
+                <td>
+            <span class="sortValue">0.32394367</span>32.4%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="32.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.4%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.Compiler</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/Compiler.html?id=9806#Compiler"             title="Compiler" name="sl-83">com.google.javascript.jscomp.Compiler</a>
+        </td>
+                <td>
+            <span class="sortValue">0.3212268</span>32.1%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="32.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.1%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapGeneratorFactory</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapGeneratorFactory.html?id=9806#SourceMapGeneratorFactory"             title="SourceMapGeneratorFactory" name="sl-21">com.google.debugging.sourcemap.SourceMapGeneratorFactory</a>
+        </td>
+                <td>
+            <span class="sortValue">0.30769232</span>30.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="30.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.IRFactory</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/IRFactory.html?id=9806#IRFactory"             title="IRFactory" name="sl-81">com.google.javascript.jscomp.parsing.IRFactory</a>
+        </td>
+                <td>
+            <span class="sortValue">0.28605768</span>28.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="28.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:28.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodeConsumer</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodeConsumer.html?id=9806#CodeConsumer"             title="CodeConsumer" name="sl-29">com.google.javascript.jscomp.CodeConsumer</a>
+        </td>
+                <td>
+            <span class="sortValue">0.28481013</span>28.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="28.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:28.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.InputId</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/InputId.html?id=9806#InputId"             title="InputId" name="sl-47">com.google.javascript.rhino.InputId</a>
+        </td>
+                <td>
+            <span class="sortValue">0.27272728</span>27.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="27.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:27.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.Util</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/Util.html?id=9806#Util"             title="Util" name="sl-24">com.google.debugging.sourcemap.Util</a>
+        </td>
+                <td>
+            <span class="sortValue">0.27272728</span>27.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="27.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:27.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PrepareAst</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PrepareAst.html?id=9806#PrepareAst"             title="PrepareAst" name="sl-34">com.google.javascript.jscomp.PrepareAst</a>
+        </td>
+                <td>
+            <span class="sortValue">0.26530612</span>26.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="26.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:26.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.SourceMapTestCase</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/SourceMapTestCase.html?id=9806#SourceMapTestCase"             title="SourceMapTestCase" name="sl-40">com.google.debugging.sourcemap.SourceMapTestCase</a>
+        </td>
+                <td>
+            <span class="sortValue">0.26119402</span>26.1%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="26.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:26.1%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CompilerOptions</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CompilerOptions.html?id=9806#CompilerOptions"             title="CompilerOptions" name="sl-40">com.google.javascript.jscomp.CompilerOptions</a>
+        </td>
+                <td>
+            <span class="sortValue">0.2552504</span>25.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="25.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:25.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.ErrorFormat</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/ErrorFormat.html?id=9806#ErrorFormat"             title="ErrorFormat" name="sl-24">com.google.javascript.jscomp.ErrorFormat</a>
+        </td>
+                <td>
+            <span class="sortValue">0.25</span>25%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="25% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:25%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SourceMap.Format</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SourceMap.html?id=9806#SourceMap.Format"             title="SourceMap.Format" name="sl-45">com.google.javascript.jscomp.SourceMap.Format</a>
+        </td>
+                <td>
+            <span class="sortValue">0.25</span>25%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="25% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:25%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.Node.StringNode</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/Node.html?id=9806#Node.StringNode"             title="Node.StringNode" name="sl-183">com.google.javascript.rhino.Node.StringNode</a>
+        </td>
+                <td>
+            <span class="sortValue">0.25</span>25%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="25% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:25%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CompilerInput</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CompilerInput.html?id=9806#CompilerInput"             title="CompilerInput" name="sl-39">com.google.javascript.jscomp.CompilerInput</a>
+        </td>
+                <td>
+            <span class="sortValue">0.24793388</span>24.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="24.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:24.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.GlobalNamespace.BuildGlobalNamespace</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/GlobalNamespace.html?id=9806#GlobalNamespace.BuildGlobalNamespace"             title="GlobalNamespace.BuildGlobalNamespace" name="sl-284">com.google.javascript.jscomp.GlobalNamespace.BuildGlobalNamespace</a>
+        </td>
+                <td>
+            <span class="sortValue">0.22606383</span>22.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="22.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:22.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.JSError</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/JSError.html?id=9806#JSError"             title="JSError" name="sl-26">com.google.javascript.jscomp.JSError</a>
+        </td>
+                <td>
+            <span class="sortValue">0.2090909</span>20.9%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="20.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:20.9%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.debugging.sourcemap.Base64</span>
+            &#160;&#160;<a             href="../../../../com/google/debugging/sourcemap/Base64.html?id=9806#Base64"             title="Base64" name="sl-25">com.google.debugging.sourcemap.Base64</a>
+        </td>
+                <td>
+            <span class="sortValue">0.20833333</span>20.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="20.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:20.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.Node</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/Node.html?id=9806#Node"             title="Node" name="sl-63">com.google.javascript.rhino.Node</a>
+        </td>
+                <td>
+            <span class="sortValue">0.2023487</span>20.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="20.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:20.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.JSDocInfo.Marker</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/JSDocInfo.html?id=9806#JSDocInfo.Marker"             title="JSDocInfo.Marker" name="sl-177">com.google.javascript.rhino.JSDocInfo.Marker</a>
+        </td>
+                <td>
+            <span class="sortValue">0.2</span>20%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="20% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:20%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.ProcessDefines.CollectDefines</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/ProcessDefines.html?id=9806#ProcessDefines.CollectDefines"             title="ProcessDefines.CollectDefines" name="sl-221">com.google.javascript.jscomp.ProcessDefines.CollectDefines</a>
+        </td>
+                <td>
+            <span class="sortValue">0.19548872</span>19.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="19.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.GlobalNamespace.Ref</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/GlobalNamespace.html?id=9806#GlobalNamespace.Ref"             title="GlobalNamespace.Ref" name="sl-1165">com.google.javascript.jscomp.GlobalNamespace.Ref</a>
+        </td>
+                <td>
+            <span class="sortValue">0.18367347</span>18.4%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="18.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.4%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.AbstractMessageFormatter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/AbstractMessageFormatter.html?id=9806#AbstractMessageFormatter"             title="AbstractMessageFormatter" name="sl-28">com.google.javascript.jscomp.AbstractMessageFormatter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.18181819</span>18.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="18.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.DiagnosticType</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/DiagnosticType.html?id=9806#DiagnosticType"             title="DiagnosticType" name="sl-27">com.google.javascript.jscomp.DiagnosticType</a>
+        </td>
+                <td>
+            <span class="sortValue">0.17391305</span>17.4%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="17.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:17.4%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodeGenerator</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodeGenerator.html?id=9806#CodeGenerator"             title="CodeGenerator" name="sl-36">com.google.javascript.jscomp.CodeGenerator</a>
+        </td>
+                <td>
+            <span class="sortValue">0.17121047</span>17.1%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="17.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:17.1%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.GlobalNamespace.Name</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/GlobalNamespace.html?id=9806#GlobalNamespace.Name"             title="GlobalNamespace.Name" name="sl-855">com.google.javascript.jscomp.GlobalNamespace.Name</a>
+        </td>
+                <td>
+            <span class="sortValue">0.16923077</span>16.9%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="16.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:16.9%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SourceFile.Builder</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SourceFile.html?id=9806#SourceFile.Builder"             title="SourceFile.Builder" name="sl-364">com.google.javascript.jscomp.SourceFile.Builder</a>
+        </td>
+                <td>
+            <span class="sortValue">0.15789473</span>15.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="15.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:15.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PrepareAst.PrepareAnnotations</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PrepareAst.html?id=9806#PrepareAst.PrepareAnnotations"             title="PrepareAst.PrepareAnnotations" name="sl-118">com.google.javascript.jscomp.PrepareAst.PrepareAnnotations</a>
+        </td>
+                <td>
+            <span class="sortValue">0.14285715</span>14.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="14.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:14.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.Tracer</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/Tracer.html?id=9806#Tracer"             title="Tracer" name="sl-161">com.google.javascript.jscomp.Tracer</a>
+        </td>
+                <td>
+            <span class="sortValue">0.140625</span>14.1%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="14.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:14.1%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.DiagnosticGroups</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/DiagnosticGroups.html?id=9806#DiagnosticGroups"             title="DiagnosticGroups" name="sl-29">com.google.javascript.jscomp.DiagnosticGroups</a>
+        </td>
+                <td>
+            <span class="sortValue">0.13636364</span>13.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="13.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:13.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.IRFactory.TransformDispatcher</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/IRFactory.html?id=9806#IRFactory.TransformDispatcher"             title="IRFactory.TransformDispatcher" name="sl-473">com.google.javascript.jscomp.parsing.IRFactory.TransformDispatcher</a>
+        </td>
+                <td>
+            <span class="sortValue">0.12008733</span>12%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="12% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.SourceFile</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/SourceFile.html?id=9806#SourceFile"             title="SourceFile" name="sl-43">com.google.javascript.jscomp.SourceFile</a>
+        </td>
+                <td>
+            <span class="sortValue">0.116883114</span>11.7%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="11.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:11.7%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.TypeSafeDispatcher</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/TypeSafeDispatcher.html?id=9806#TypeSafeDispatcher"             title="TypeSafeDispatcher" name="sl-74">com.google.javascript.jscomp.parsing.TypeSafeDispatcher</a>
+        </td>
+                <td>
+            <span class="sortValue">0.1125</span>11.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="11.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:11.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.Scope.Var</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/Scope.html?id=9806#Scope.Var"             title="Scope.Var" name="sl-77">com.google.javascript.jscomp.Scope.Var</a>
+        </td>
+                <td>
+            <span class="sortValue">0.11235955</span>11.2%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="11.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:11.2%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.JSDocInfo</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/JSDocInfo.html?id=9806#JSDocInfo"             title="JSDocInfo" name="sl-68">com.google.javascript.rhino.JSDocInfo</a>
+        </td>
+                <td>
+            <span class="sortValue">0.109612145</span>11%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="11% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:11%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.DefaultPassConfig</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/DefaultPassConfig.html?id=9806#DefaultPassConfig"             title="DefaultPassConfig" name="sl-52">com.google.javascript.jscomp.DefaultPassConfig</a>
+        </td>
+                <td>
+            <span class="sortValue">0.10907128</span>10.9%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="10.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:10.9%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.parsing.JsDocInfoParser</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/parsing/JsDocInfoParser.html?id=9806#JsDocInfoParser"             title="JsDocInfoParser" name="sl-48">com.google.javascript.jscomp.parsing.JsDocInfoParser</a>
+        </td>
+                <td>
+            <span class="sortValue">0.106080204</span>10.6%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="10.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:10.6%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.LightweightMessageFormatter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/LightweightMessageFormatter.html?id=9806#LightweightMessageFormatter"             title="LightweightMessageFormatter" name="sl-31">com.google.javascript.jscomp.LightweightMessageFormatter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.10526316</span>10.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="10.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:10.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.VarCheck.NameRefInExternsCheck</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/VarCheck.html?id=9806#VarCheck.NameRefInExternsCheck"             title="VarCheck.NameRefInExternsCheck" name="sl-232">com.google.javascript.jscomp.VarCheck.NameRefInExternsCheck</a>
+        </td>
+                <td>
+            <span class="sortValue">0.1</span>10%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="10% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:10%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.JSDocInfoBuilder</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/JSDocInfoBuilder.html?id=9806#JSDocInfoBuilder"             title="JSDocInfoBuilder" name="sl-56">com.google.javascript.rhino.JSDocInfoBuilder</a>
+        </td>
+                <td>
+            <span class="sortValue">0.092672415</span>9.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="9.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:9.3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.JSModule</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/JSModule.html?id=9806#JSModule"             title="JSModule" name="sl-40">com.google.javascript.jscomp.JSModule</a>
+        </td>
+                <td>
+            <span class="sortValue">0.09090909</span>9.1%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="9.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:9.1%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.DependencyOptions</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/DependencyOptions.html?id=9806#DependencyOptions"             title="DependencyOptions" name="sl-39">com.google.javascript.jscomp.DependencyOptions</a>
+        </td>
+                <td>
+            <span class="sortValue">0.08695652</span>8.7%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="8.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:8.7%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.IR</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/IR.html?id=9806#IR"             title="IR" name="sl-49">com.google.javascript.rhino.IR</a>
+        </td>
+                <td>
+            <span class="sortValue">0.075418994</span>7.5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="7.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.RhinoErrorReporter.NewRhinoErrorReporter</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/RhinoErrorReporter.html?id=9806#RhinoErrorReporter.NewRhinoErrorReporter"             title="RhinoErrorReporter.NewRhinoErrorReporter" name="sl-160">com.google.javascript.jscomp.RhinoErrorReporter.NewRhinoErrorReporter</a>
+        </td>
+                <td>
+            <span class="sortValue">0.071428575</span>7.1%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="7.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.1%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodingConventions.Proxy</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodingConventions.html?id=9806#CodingConventions.Proxy"             title="CodingConventions.Proxy" name="sl-55">com.google.javascript.jscomp.CodingConventions.Proxy</a>
+        </td>
+                <td>
+            <span class="sortValue">0.05882353</span>5.9%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="5.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.9%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.NodeUtil</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/NodeUtil.html?id=9806#NodeUtil"             title="NodeUtil" name="sl-48">com.google.javascript.jscomp.NodeUtil</a>
+        </td>
+                <td>
+            <span class="sortValue">0.049582463</span>5%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.CodingConventions.DefaultCodingConvention</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/CodingConventions.html?id=9806#CodingConventions.DefaultCodingConvention"             title="CodingConventions.DefaultCodingConvention" name="sl-249">com.google.javascript.jscomp.CodingConventions.DefaultCodingConvention</a>
+        </td>
+                <td>
+            <span class="sortValue">0.03773585</span>3.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="3.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:3.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.rhino.ScriptRuntime</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/rhino/ScriptRuntime.html?id=9806#ScriptRuntime"             title="ScriptRuntime" name="sl-58">com.google.javascript.rhino.ScriptRuntime</a>
+        </td>
+                <td>
+            <span class="sortValue">0.037162162</span>3.7%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="3.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:3.7%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.ClosureCodingConvention</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/ClosureCodingConvention.html?id=9806#ClosureCodingConvention"             title="ClosureCodingConvention" name="sl-39">com.google.javascript.jscomp.ClosureCodingConvention</a>
+        </td>
+                <td>
+            <span class="sortValue">0.030303031</span>3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:3%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.PassConfig</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/PassConfig.html?id=9806#PassConfig"             title="PassConfig" name="sl-35">com.google.javascript.jscomp.PassConfig</a>
+        </td>
+                <td>
+            <span class="sortValue">0.028169014</span>2.8%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="2.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:2.8%"></div></div></div>        </td>
+    </tr>
+
+        <tr>
+        <td>
+            <span class="sortValue">com.google.javascript.jscomp.Tracer.ThreadTrace</span>
+            &#160;&#160;<a             href="../../../../com/google/javascript/jscomp/Tracer.html?id=9806#Tracer.ThreadTrace"             title="Tracer.ThreadTrace" name="sl-702">com.google.javascript.jscomp.Tracer.ThreadTrace</a>
+        </td>
+                <td>
+            <span class="sortValue">0.012903226</span>1.3%
+        </td>
+        <td class="align-middle" style="width: 100%" colspan="3">
+                        <div>
+<div title="1.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:1.3%"></div></div></div>        </td>
+    </tr>
+ 
+        </tbody>
+    </table>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

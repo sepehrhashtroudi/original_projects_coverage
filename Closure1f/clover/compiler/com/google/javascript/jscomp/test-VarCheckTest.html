@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class VarCheckTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="VarCheckTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>VarCheckTest</td>
+        <td class="testPasses"><span class="sortValue">84</span>84</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.577</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">VarCheckTest.testPropReferenceInExterns1</span><a href="VarCheckTest_testPropReferenceInExterns1_94y.html">VarCheckTest.testPropReferenceInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659118</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testViolatedModuleDependencySkipNonStrict</span><a href="VarCheckTest_testViolatedModuleDependencySkipNonStrict_53j.html">VarCheckTest.testViolatedModuleDependencySkipNonStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659214</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVarReferenceInExterns</span><a href="VarCheckTest_testVarReferenceInExterns_dbr.html">VarCheckTest.testVarReferenceInExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791992</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testForwardVarReferenceInLocalScope1</span><a href="VarCheckTest_testForwardVarReferenceInLocalScope1_7u.html">VarCheckTest.testForwardVarReferenceInLocalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791974</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars2</span><a href="VarCheckTest_testMultiplyDeclaredVars2_ei.html">VarCheckTest.testMultiplyDeclaredVars2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659022</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMissingModuleDependencySkipNonStrict</span><a href="VarCheckTest_testMissingModuleDependencySkipNonStrict_2yq.html">VarCheckTest.testMissingModuleDependencySkipNonStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659148</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testRecursiveFunction</span><a href="VarCheckTest_testRecursiveFunction_cg6.html">VarCheckTest.testRecursiveFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658716</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.299</span>0.299</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars3</span><a href="VarCheckTest_testMultiplyDeclaredVars3_47e.html">VarCheckTest.testMultiplyDeclaredVars3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659031</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testContinue</span><a href="VarCheckTest_testContinue_5n2.html">VarCheckTest.testContinue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659151</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testNoCreateVarsForLabels</span><a href="VarCheckTest_testNoCreateVarsForLabels_83a.html">VarCheckTest.testNoCreateVarsForLabels</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792035</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testRecursiveFunction2</span><a href="VarCheckTest_testRecursiveFunction2_et.html">VarCheckTest.testRecursiveFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792029</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testLegalVarReferenceBetweenModules</span><a href="VarCheckTest_testLegalVarReferenceBetweenModules_8mo.html">VarCheckTest.testLegalVarReferenceBetweenModules</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792021</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMissingModuleDependencyDefault</span><a href="VarCheckTest_testMissingModuleDependencyDefault_cjj.html">VarCheckTest.testMissingModuleDependencyDefault</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659115</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns2</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns2_afo.html">VarCheckTest.testVariableInNormalCodeUsedInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659087</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testPropReferenceInExterns1</span><a href="VarCheckTest_testPropReferenceInExterns1_781.html">VarCheckTest.testPropReferenceInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791996</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testInnerFunctionLocalVar</span><a href="VarCheckTest_testInnerFunctionLocalVar_alf.html">VarCheckTest.testInnerFunctionLocalVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659181</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testIndependentStrictModuleDependencyCheck</span><a href="VarCheckTest_testIndependentStrictModuleDependencyCheck_9ie.html">VarCheckTest.testIndependentStrictModuleDependencyCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659204</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarNotDefined</span><a href="VarCheckTest_testReferencedVarNotDefined_bg9.html">VarCheckTest.testReferencedVarNotDefined</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792067</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns4</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns4_jm.html">VarCheckTest.testVariableInNormalCodeUsedInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792041</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testForwardVarReferenceInLocalScope2</span><a href="VarCheckTest_testForwardVarReferenceInLocalScope2_2fc.html">VarCheckTest.testForwardVarReferenceInLocalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659063</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars1</span><a href="VarCheckTest_testMultiplyDeclaredVars1_5v9.html">VarCheckTest.testMultiplyDeclaredVars1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792055</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testSimpleSanityCheck</span><a href="VarCheckTest_testSimpleSanityCheck_cyk.html">VarCheckTest.testSimpleSanityCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791979</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testViolatedModuleDependencyDefault</span><a href="VarCheckTest_testViolatedModuleDependencyDefault_8n0.html">VarCheckTest.testViolatedModuleDependencyDefault</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659109</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testLocalVar</span><a href="VarCheckTest_testLocalVar_cm0.html">VarCheckTest.testLocalVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659052</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testStarStrictModuleDependencyCheck</span><a href="VarCheckTest_testStarStrictModuleDependencyCheck_9w7.html">VarCheckTest.testStarStrictModuleDependencyCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791971</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars3</span><a href="VarCheckTest_testMultiplyDeclaredVars3_me.html">VarCheckTest.testMultiplyDeclaredVars3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792063</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarDefined2</span><a href="VarCheckTest_testReferencedVarDefined2_3ud.html">VarCheckTest.testReferencedVarDefined2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659189</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testContinue</span><a href="VarCheckTest_testContinue_ar4.html">VarCheckTest.testContinue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792079</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testViolatedModuleDependencyNonStrictNotPromoted</span><a href="VarCheckTest_testViolatedModuleDependencyNonStrictNotPromoted_fq.html">VarCheckTest.testViolatedModuleDependencyNonStrictNotPromoted</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791984</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMissingModuleDependencySkipNonStrict</span><a href="VarCheckTest_testMissingModuleDependencySkipNonStrict_e4e.html">VarCheckTest.testMissingModuleDependencySkipNonStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792027</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testSimpleSanityCheck</span><a href="VarCheckTest_testSimpleSanityCheck_edw.html">VarCheckTest.testSimpleSanityCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659110</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testCallInExterns</span><a href="VarCheckTest_testCallInExterns_60o.html">VarCheckTest.testCallInExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792070</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testBreak</span><a href="VarCheckTest_testBreak_243.html">VarCheckTest.testBreak</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792075</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testPropReferenceInExterns2</span><a href="VarCheckTest_testPropReferenceInExterns2_6jv.html">VarCheckTest.testPropReferenceInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659125</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testForwardVarReferenceInLocalScope1</span><a href="VarCheckTest_testForwardVarReferenceInLocalScope1_acu.html">VarCheckTest.testForwardVarReferenceInLocalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659056</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testParameter</span><a href="VarCheckTest_testParameter_7f3.html">VarCheckTest.testParameter</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659055</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns3</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns3_boy.html">VarCheckTest.testVariableInNormalCodeUsedInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792039</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testLegalVarReferenceBetweenModules</span><a href="VarCheckTest_testLegalVarReferenceBetweenModules_awi.html">VarCheckTest.testLegalVarReferenceBetweenModules</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659207</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarDefined2</span><a href="VarCheckTest_testReferencedVarDefined2_4wx.html">VarCheckTest.testReferencedVarDefined2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792047</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testForwardVarReferenceInLocalScope2</span><a href="VarCheckTest_testForwardVarReferenceInLocalScope2_e2h.html">VarCheckTest.testForwardVarReferenceInLocalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791976</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarNotDefined</span><a href="VarCheckTest_testReferencedVarNotDefined_8dm.html">VarCheckTest.testReferencedVarNotDefined</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659160</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMissingModuleDependencySkipNonStrictNotPromoted</span><a href="VarCheckTest_testMissingModuleDependencySkipNonStrictNotPromoted_e8u.html">VarCheckTest.testMissingModuleDependencySkipNonStrictNotPromoted</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791982</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testRecursiveFunction</span><a href="VarCheckTest_testRecursiveFunction_7jn.html">VarCheckTest.testRecursiveFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792018</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testBreak</span><a href="VarCheckTest_testBreak_3mn.html">VarCheckTest.testBreak</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659077</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testDependentStrictModuleDependencyCheck</span><a href="VarCheckTest_testDependentStrictModuleDependencyCheck_erg.html">VarCheckTest.testDependentStrictModuleDependencyCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791986</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testSimple</span><a href="VarCheckTest_testSimple_6u4.html">VarCheckTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792084</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testPropReferenceInExterns3</span><a href="VarCheckTest_testPropReferenceInExterns3_e1u.html">VarCheckTest.testPropReferenceInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792003</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns1</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns1_3ce.html">VarCheckTest.testVariableInNormalCodeUsedInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792037</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testStarStrictModuleDependencyCheck</span><a href="VarCheckTest_testStarStrictModuleDependencyCheck_43z.html">VarCheckTest.testStarStrictModuleDependencyCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659100</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns3</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns3_8zm.html">VarCheckTest.testVariableInNormalCodeUsedInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659089</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testIndependentStrictModuleDependencyCheck</span><a href="VarCheckTest_testIndependentStrictModuleDependencyCheck_3z1.html">VarCheckTest.testIndependentStrictModuleDependencyCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791988</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars4</span><a href="VarCheckTest_testMultiplyDeclaredVars4_953.html">VarCheckTest.testMultiplyDeclaredVars4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659037</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testSimple</span><a href="VarCheckTest_testSimple_93i.html">VarCheckTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659211</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testViolatedModuleDependencySkipNonStrict</span><a href="VarCheckTest_testViolatedModuleDependencySkipNonStrict_60n.html">VarCheckTest.testViolatedModuleDependencySkipNonStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791980</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testLocalVar</span><a href="VarCheckTest_testLocalVar_8au.html">VarCheckTest.testLocalVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792074</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testRecursiveFunction2</span><a href="VarCheckTest_testRecursiveFunction2_7f6.html">VarCheckTest.testRecursiveFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659045</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testViolatedModuleDependencyNonStrictNotPromoted</span><a href="VarCheckTest_testViolatedModuleDependencyNonStrictNotPromoted_a0c.html">VarCheckTest.testViolatedModuleDependencyNonStrictNotPromoted</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659169</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testCallInExterns</span><a href="VarCheckTest_testCallInExterns_8rj.html">VarCheckTest.testCallInExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659217</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarsExternallyDefined</span><a href="VarCheckTest_testReferencedVarsExternallyDefined_2dy.html">VarCheckTest.testReferencedVarsExternallyDefined</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792051</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarDefined1</span><a href="VarCheckTest_testReferencedVarDefined1_30v.html">VarCheckTest.testReferencedVarDefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659183</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns2</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns2_ebb.html">VarCheckTest.testVariableInNormalCodeUsedInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792038</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testPropReferenceInExterns2</span><a href="VarCheckTest_testPropReferenceInExterns2_6a.html">VarCheckTest.testPropReferenceInExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792000</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarDefined1</span><a href="VarCheckTest_testReferencedVarDefined1_dth.html">VarCheckTest.testReferencedVarDefined1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792044</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testViolatedModuleDependencyDefault</span><a href="VarCheckTest_testViolatedModuleDependencyDefault_67k.html">VarCheckTest.testViolatedModuleDependencyDefault</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792026</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns1</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns1_48a.html">VarCheckTest.testVariableInNormalCodeUsedInExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659085</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars1</span><a href="VarCheckTest_testMultiplyDeclaredVars1_kr.html">VarCheckTest.testMultiplyDeclaredVars1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659016</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testPropReferenceInExterns3</span><a href="VarCheckTest_testPropReferenceInExterns3_ang.html">VarCheckTest.testPropReferenceInExterns3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659130</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVarInWithBlock</span><a href="VarCheckTest_testVarInWithBlock_631.html">VarCheckTest.testVarInWithBlock</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792011</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMissingModuleDependencySkipNonStrictNotPromoted</span><a href="VarCheckTest_testMissingModuleDependencySkipNonStrictNotPromoted_6ws.html">VarCheckTest.testMissingModuleDependencySkipNonStrictNotPromoted</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659067</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testParameter</span><a href="VarCheckTest_testParameter_dog.html">VarCheckTest.testParameter</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792083</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testValidFunctionExpr</span><a href="VarCheckTest_testValidFunctionExpr_8cf.html">VarCheckTest.testValidFunctionExpr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659094</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testNoCreateVarsForLabels</span><a href="VarCheckTest_testNoCreateVarsForLabels_byt.html">VarCheckTest.testNoCreateVarsForLabels</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659168</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVarReferenceInExterns</span><a href="VarCheckTest_testVarReferenceInExterns_3te.html">VarCheckTest.testVarReferenceInExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659173</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testTwoLocalVars</span><a href="VarCheckTest_testTwoLocalVars_d4.html">VarCheckTest.testTwoLocalVars</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659158</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testTwoLocalVars</span><a href="VarCheckTest_testTwoLocalVars_96h.html">VarCheckTest.testTwoLocalVars</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792042</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars4</span><a href="VarCheckTest_testMultiplyDeclaredVars4_djh.html">VarCheckTest.testMultiplyDeclaredVars4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791989</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMissingModuleDependencyDefault</span><a href="VarCheckTest_testMissingModuleDependencyDefault_307.html">VarCheckTest.testMissingModuleDependencyDefault</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792024</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVariableInNormalCodeUsedInExterns4</span><a href="VarCheckTest_testVariableInNormalCodeUsedInExterns4_cu3.html">VarCheckTest.testVariableInNormalCodeUsedInExterns4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659092</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testValidFunctionExpr</span><a href="VarCheckTest_testValidFunctionExpr_2vx.html">VarCheckTest.testValidFunctionExpr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792014</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testVarInWithBlock</span><a href="VarCheckTest_testVarInWithBlock_6d8.html">VarCheckTest.testVarInWithBlock</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659070</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testMultiplyDeclaredVars2</span><a href="VarCheckTest_testMultiplyDeclaredVars2_7zq.html">VarCheckTest.testMultiplyDeclaredVars2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792058</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testDependentStrictModuleDependencyCheck</span><a href="VarCheckTest_testDependentStrictModuleDependencyCheck_3kz.html">VarCheckTest.testDependentStrictModuleDependencyCheck</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659113</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testReferencedVarsExternallyDefined</span><a href="VarCheckTest_testReferencedVarsExternallyDefined_17p.html">VarCheckTest.testReferencedVarsExternallyDefined</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697659196</span>2 Jan 15:14:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">VarCheckTest.testInnerFunctionLocalVar</span><a href="VarCheckTest_testInnerFunctionLocalVar_55w.html">VarCheckTest.testInnerFunctionLocalVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697792033</span>2 Jan 15:16:32</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

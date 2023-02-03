@@ -1,0 +1,2 @@
+processClover (  {"children":["com/google/gson/stream/","com/google/gson/","com/google/gson/annotations/","com/google/gson/reflect/"],"name":"Clover database Thu Jan 5 2023 21:35:55 MST","stats":{"AvgMethodComplexity":2.0032206,"Complexity":1244,"ErroneousTests":0,"FailingTests":0,"FilteredElements":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":4,"TotalPercentageCovered":76.40276,"TotalStatements":2432,"UncoveredElements":921},"title":"Gson 1.6"}
+ ); 

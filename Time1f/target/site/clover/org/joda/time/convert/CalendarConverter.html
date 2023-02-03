@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>Joda-Time 2.4-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('Joda-Time 2.4-SNAPSHOT: org.joda.time.convert.CalendarConverter.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://www.joda.org/joda-time/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://www.joda.org/joda-time/" target="_top">
+                                        Joda-Time 2.4-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="org.joda.time.convert">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Wed Dec 28 2022 16:43:51 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package org.joda.time.convert</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File CalendarConverter.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../img/srcFileCovDistChart10.png" alt="../../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="96 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,56,98,66" title="18 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,56,89,66" title="18 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,62,80,66" title="8 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,59,71,66" title="13 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="2 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,63,54,66" title="5 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,66,45,67" title="0 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="1 file has 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="0 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,65,18,66" title="3 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">23</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">135</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">54</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">11</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.48</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4.6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">5</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2.2</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">23</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">135</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">54</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">11</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.48</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">4.6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">5</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2.2</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="CalendarConverter">
+        <span><a href="#37" title="CalendarConverter" onclick="closeDialogAndScrollTo('dialog-CalendarConverter', '37');">CalendarConverter</a></span>
+</td>
+<td>37<a name="sl-37"></a></td>
+    <td class="">23</td>
+    <td class="">0%</td>
+    <td class="">11</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-CalendarConverter" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-CalendarConverter" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class CalendarConverter</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-CalendarConverter-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-CalendarConverter-methods-body', 'dialog-CalendarConverter-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                            
+                    <thead>
+                                                 <tr> <th id="CalendarConverter">
+    Class<br/>    <span><a href="#37" title="CalendarConverter" onclick="closeDialogAndScrollTo('dialog-CalendarConverter', '37');">CalendarConverter</a></span>
+</th>
+<th>Line #<br/>37<a name="sl-37"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>23</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>11</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-CalendarConverter-methods-body">
+                                                                                                            <tr id="CalendarConverter-1">
+<td id="summary-48-5">
+ <span class="sortValue">CalendarConverter()</span>
+&#160;&#160;<a href="?line=29#48" title="CalendarConverter()" name="sl-48" onclick="closeDialogAndScrollTo('dialog-CalendarConverter', '48');">CalendarConverter()</a>
+</td>
+<td align="right"><span class="sortValue">48</span>48</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CalendarConverter-2">
+<td id="summary-67-5">
+ <span class="sortValue">getChronology(Object,Chronology)&#160;:&#160;Chronology</span>
+&#160;&#160;<a href="?line=29#67" title="getChronology(Object,Chronology)&#160;:&#160;Chronology" name="sl-67" onclick="closeDialogAndScrollTo('dialog-CalendarConverter', '67');">getChronology(Object,Chronology)&#160;:&#160;Chronology</a>
+</td>
+<td align="right"><span class="sortValue">67</span>67</td>
+<td class="" align="right"><span class="sortValue">8.0</span>8</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CalendarConverter-3">
+<td id="summary-93-5">
+ <span class="sortValue">getChronology(Object,DateTimeZone)&#160;:&#160;Chronology</span>
+&#160;&#160;<a href="?line=29#93" title="getChronology(Object,DateTimeZone)&#160;:&#160;Chronology" name="sl-93" onclick="closeDialogAndScrollTo('dialog-CalendarConverter', '93');">getChronology(Object,DateTimeZone)&#160;:&#160;Chronology</a>
+</td>
+<td align="right"><span class="sortValue">93</span>93</td>
+<td class="" align="right"><span class="sortValue">11.0</span>11</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CalendarConverter-4">
+<td id="summary-120-5">
+ <span class="sortValue">getInstantMillis(Object,Chronology)&#160;:&#160;long</span>
+&#160;&#160;<a href="?line=29#120" title="getInstantMillis(Object,Chronology)&#160;:&#160;long" name="sl-120" onclick="closeDialogAndScrollTo('dialog-CalendarConverter', '120');">getInstantMillis(Object,Chronology)&#160;:&#160;long</a>
+</td>
+<td align="right"><span class="sortValue">120</span>120</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CalendarConverter-5">
+<td id="summary-131-5">
+ <span class="sortValue">getSupportedType()&#160;:&#160;Class&lt;?&gt;</span>
+&#160;&#160;<a href="?line=29#131" title="getSupportedType()&#160;:&#160;Class&lt;?&gt;" name="sl-131" onclick="closeDialogAndScrollTo('dialog-CalendarConverter', '131');">getSupportedType()&#160;:&#160;Class&lt;?&gt;</a>
+</td>
+<td align="right"><span class="sortValue">131</span>131</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-CalendarConverter">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 52 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-2144">
+<td><a name="testA-2144"></a><input type="checkbox" id="cb-2144" value="2144" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_nullChronology_1nk.html';">
+<span class="sortValue">0.7631579</span>
+<div>
+<div title="76.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:76.3%"></div></div></div></td>
+<td id="tc-2144">  <span class="sortValue">org.joda.time.convert.TestCalendarConverter.testGetChronology_Object_nullChronology</span><a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_nullChronology_1nk.html" title="View Test Summary Page">org.joda.time.convert.TestCalendarConverter.testGetChronology_Object_nullChronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestCalendarConverter.html?line=130#src-130" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_nullChronology_1nk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2886">
+<td><a name="testA-2886"></a><input type="checkbox" id="cb-2886" value="2886" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTimeComparator_testBasicComps5_286.html';">
+<span class="sortValue">0.65789473</span>
+<div>
+<div title="65.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:65.8%"></div></div></div></td>
+<td id="tc-2886">  <span class="sortValue">org.joda.time.TestDateTimeComparator.testBasicComps5</span><a href="../../../../org/joda/time/TestDateTimeComparator_testBasicComps5_286.html" title="View Test Summary Page">org.joda.time.TestDateTimeComparator.testBasicComps5</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTimeComparator.html?line=400#src-400" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTimeComparator_testBasicComps5_286.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-4">
+<td><a name="testA-4"></a><input type="checkbox" id="cb-4" value="4" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestLocalTime_Constructors_testConstructor_Object2_4.html';">
+<span class="sortValue">0.65789473</span>
+<div>
+<div title="65.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:65.8%"></div></div></div></td>
+<td id="tc-4">  <span class="sortValue">org.joda.time.TestLocalTime_Constructors.testConstructor_Object2</span><a href="../../../../org/joda/time/TestLocalTime_Constructors_testConstructor_Object2_4.html" title="View Test Summary Page">org.joda.time.TestLocalTime_Constructors.testConstructor_Object2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestLocalTime_Constructors.html?line=342#src-342" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestLocalTime_Constructors_testConstructor_Object2_4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2322">
+<td><a name="testA-2322"></a><input type="checkbox" id="cb-2322" value="2322" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestTimeOfDay_Constructors_testConstructor_Object2_1si.html';">
+<span class="sortValue">0.6052632</span>
+<div>
+<div title="60.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:60.5%"></div></div></div></td>
+<td id="tc-2322">  <span class="sortValue">org.joda.time.TestTimeOfDay_Constructors.testConstructor_Object2</span><a href="../../../../org/joda/time/TestTimeOfDay_Constructors_testConstructor_Object2_1si.html" title="View Test Summary Page">org.joda.time.TestTimeOfDay_Constructors.testConstructor_Object2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestTimeOfDay_Constructors.html?line=328#src-328" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestTimeOfDay_Constructors_testConstructor_Object2_1si.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-877">
+<td><a name="testA-877"></a><input type="checkbox" id="cb-877" value="877" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_Zone_od.html';">
+<span class="sortValue">0.5263158</span>
+<div>
+<div title="52.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:52.6%"></div></div></div></td>
+<td id="tc-877">  <span class="sortValue">org.joda.time.convert.TestCalendarConverter.testGetChronology_Object_Zone</span><a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_Zone_od.html" title="View Test Summary Page">org.joda.time.convert.TestCalendarConverter.testGetChronology_Object_Zone</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestCalendarConverter.html?line=99#src-99" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_Zone_od.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3521">
+<td><a name="testA-3521"></a><input type="checkbox" id="cb-3521" value="3521" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestInstant_Constructors_testConstructor_badconverterObject_2pt.html';">
+<span class="sortValue">0.10526316</span>
+<div>
+<div title="10.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:10.5%"></div></div></div></td>
+<td id="tc-3521">  <span class="sortValue">org.joda.time.TestInstant_Constructors.testConstructor_badconverterObject</span><a href="../../../../org/joda/time/TestInstant_Constructors_testConstructor_badconverterObject_2pt.html" title="View Test Summary Page">org.joda.time.TestInstant_Constructors.testConstructor_badconverterObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestInstant_Constructors.html?line=171#src-171" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestInstant_Constructors_testConstructor_badconverterObject_2pt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3145">
+<td><a name="testA-3145"></a><input type="checkbox" id="cb-3145" value="3145" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_Chronology_2fd.html';">
+<span class="sortValue">0.10526316</span>
+<div>
+<div title="10.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:10.5%"></div></div></div></td>
+<td id="tc-3145">  <span class="sortValue">org.joda.time.convert.TestCalendarConverter.testGetChronology_Object_Chronology</span><a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_Chronology_2fd.html" title="View Test Summary Page">org.joda.time.convert.TestCalendarConverter.testGetChronology_Object_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestCalendarConverter.html?line=161#src-161" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetChronology_Object_Chronology_2fd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1610">
+<td><a name="testA-1610"></a><input type="checkbox" id="cb-1610" value="1610" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestCalendarConverter_testGetPartialValues_18q.html';">
+<span class="sortValue">0.078947365</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-1610">  <span class="sortValue">org.joda.time.convert.TestCalendarConverter.testGetPartialValues</span><a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetPartialValues_18q.html" title="View Test Summary Page">org.joda.time.convert.TestCalendarConverter.testGetPartialValues</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestCalendarConverter.html?line=167#src-167" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetPartialValues_18q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3434">
+<td><a name="testA-3434"></a><input type="checkbox" id="cb-3434" value="3434" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestCalendarConverter_testGetInstantMillis_Object_Chronology_2ne.html';">
+<span class="sortValue">0.078947365</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-3434">  <span class="sortValue">org.joda.time.convert.TestCalendarConverter.testGetInstantMillis_Object_Chronology</span><a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetInstantMillis_Object_Chronology_2ne.html" title="View Test Summary Page">org.joda.time.convert.TestCalendarConverter.testGetInstantMillis_Object_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestCalendarConverter.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestCalendarConverter_testGetInstantMillis_Object_Chronology_2ne.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3027">
+<td><a name="testA-3027"></a><input type="checkbox" id="cb-3027" value="3027" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testRemoveInstantConverter1_2c3.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3027">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testRemoveInstantConverter1</span><a href="../../../../org/joda/time/convert/TestConverterManager_testRemoveInstantConverter1_2c3.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testRemoveInstantConverter1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=282#src-282" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testRemoveInstantConverter1_2c3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1453">
+<td><a name="testA-1453"></a><input type="checkbox" id="cb-1453" value="1453" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverter_14d.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1453">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetPartialConverter</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverter_14d.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetPartialConverter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=333#src-333" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverter_14d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2930">
+<td><a name="testA-2930"></a><input type="checkbox" id="cb-2930" value="2930" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Constructors_testConstructor_invalidObject_Chronology_29e.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2930">  <span class="sortValue">org.joda.time.TestDateTime_Constructors.testConstructor_invalidObject_Chronology</span><a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_invalidObject_Chronology_29e.html" title="View Test Summary Page">org.joda.time.TestDateTime_Constructors.testConstructor_invalidObject_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Constructors.html?line=507#src-507" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_invalidObject_Chronology_29e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-600">
+<td><a name="testA-600"></a><input type="checkbox" id="cb-600" value="600" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_go.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-600">  <span class="sortValue">org.joda.time.TestMutableDateTime_Constructors.testConstructor_badconverterObject</span><a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_go.html" title="View Test Summary Page">org.joda.time.TestMutableDateTime_Constructors.testConstructor_badconverterObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestMutableDateTime_Constructors.html?line=318#src-318" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_go.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2742">
+<td><a name="testA-2742"></a><input type="checkbox" id="cb-2742" value="2742" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testAddInstantConverter1_246.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2742">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testAddInstantConverter1</span><a href="../../../../org/joda/time/convert/TestConverterManager_testAddInstantConverter1_246.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testAddInstantConverter1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=215#src-215" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testAddInstantConverter1_246.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1965">
+<td><a name="testA-1965"></a><input type="checkbox" id="cb-1965" value="1965" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectLocalDate_1il.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1965">  <span class="sortValue">org.joda.time.TestLocalDateTime_Constructors.testConstructor_ObjectLocalDate</span><a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectLocalDate_1il.html" title="View Test Summary Page">org.joda.time.TestLocalDateTime_Constructors.testConstructor_ObjectLocalDate</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestLocalDateTime_Constructors.html?line=482#src-482" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectLocalDate_1il.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3416">
+<td><a name="testA-3416"></a><input type="checkbox" id="cb-3416" value="3416" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterOKMultipleMatches_2mw.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3416">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetPartialConverterOKMultipleMatches</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterOKMultipleMatches_2mw.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetPartialConverterOKMultipleMatches</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=374#src-374" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterOKMultipleMatches_2mw.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-460">
+<td><a name="testA-460"></a><input type="checkbox" id="cb-460" value="460" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterBadMultipleMatches_cs.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-460">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetPartialConverterBadMultipleMatches</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterBadMultipleMatches_cs.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetPartialConverterBadMultipleMatches</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=393#src-393" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterBadMultipleMatches_cs.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1455">
+<td><a name="testA-1455"></a><input type="checkbox" id="cb-1455" value="1455" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestCalendarConverter_testToString_14f.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1455">  <span class="sortValue">org.joda.time.convert.TestCalendarConverter.testToString</span><a href="../../../../org/joda/time/convert/TestCalendarConverter_testToString_14f.html" title="View Test Summary Page">org.joda.time.convert.TestCalendarConverter.testToString</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestCalendarConverter.html?line=177#src-177" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestCalendarConverter_testToString_14f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2863">
+<td><a name="testA-2863"></a><input type="checkbox" id="cb-2863" value="2863" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestInstant_Constructors_testConstructor_invalidObject_27j.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2863">  <span class="sortValue">org.joda.time.TestInstant_Constructors.testConstructor_invalidObject</span><a href="../../../../org/joda/time/TestInstant_Constructors_testConstructor_invalidObject_27j.html" title="View Test Summary Page">org.joda.time.TestInstant_Constructors.testConstructor_invalidObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestInstant_Constructors.html?line=152#src-152" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestInstant_Constructors_testConstructor_invalidObject_27j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1937">
+<td><a name="testA-1937"></a><input type="checkbox" id="cb-1937" value="1937" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_DateTimeZone_1ht.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1937">  <span class="sortValue">org.joda.time.TestMutableDateTime_Constructors.testConstructor_badconverterObject_DateTimeZone</span><a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_DateTimeZone_1ht.html" title="View Test Summary Page">org.joda.time.TestMutableDateTime_Constructors.testConstructor_badconverterObject_DateTimeZone</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestMutableDateTime_Constructors.html?line=380#src-380" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_DateTimeZone_1ht.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1525">
+<td><a name="testA-1525"></a><input type="checkbox" id="cb-1525" value="1525" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_invalidObject_Chronology_16d.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1525">  <span class="sortValue">org.joda.time.TestMutableDateTime_Constructors.testConstructor_invalidObject_Chronology</span><a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_invalidObject_Chronology_16d.html" title="View Test Summary Page">org.joda.time.TestMutableDateTime_Constructors.testConstructor_invalidObject_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestMutableDateTime_Constructors.html?line=404#src-404" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_invalidObject_Chronology_16d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2732">
+<td><a name="testA-2732"></a><input type="checkbox" id="cb-2732" value="2732" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_Chronology_23w.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2732">  <span class="sortValue">org.joda.time.TestMutableDateTime_Constructors.testConstructor_badconverterObject_Chronology</span><a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_Chronology_23w.html" title="View Test Summary Page">org.joda.time.TestMutableDateTime_Constructors.testConstructor_badconverterObject_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestMutableDateTime_Constructors.html?line=442#src-442" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_badconverterObject_Chronology_23w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1193">
+<td><a name="testA-1193"></a><input type="checkbox" id="cb-1193" value="1193" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterBadMultipleMatches_x5.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1193">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetInstantConverterBadMultipleMatches</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterBadMultipleMatches_x5.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetInstantConverterBadMultipleMatches</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=187#src-187" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterBadMultipleMatches_x5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-415">
+<td><a name="testA-415"></a><input type="checkbox" id="cb-415" value="415" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Basics_testToDateMidnight_bj.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-415">  <span class="sortValue">org.joda.time.TestDateTime_Basics.testToDateMidnight</span><a href="../../../../org/joda/time/TestDateTime_Basics_testToDateMidnight_bj.html" title="View Test Summary Page">org.joda.time.TestDateTime_Basics.testToDateMidnight</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Basics.html?line=711#src-711" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Basics_testToDateMidnight_bj.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-152">
+<td><a name="testA-152"></a><input type="checkbox" id="cb-152" value="152" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestLocalTime_Constructors_testConstructor_ObjectTimeOfDay_48.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-152">  <span class="sortValue">org.joda.time.TestLocalTime_Constructors.testConstructor_ObjectTimeOfDay</span><a href="../../../../org/joda/time/TestLocalTime_Constructors_testConstructor_ObjectTimeOfDay_48.html" title="View Test Summary Page">org.joda.time.TestLocalTime_Constructors.testConstructor_ObjectTimeOfDay</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestLocalTime_Constructors.html?line=488#src-488" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestLocalTime_Constructors_testConstructor_ObjectTimeOfDay_48.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-638">
+<td><a name="testA-638"></a><input type="checkbox" id="cb-638" value="638" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestInterval_Constructors_testConstructor_RP_RI2_hq.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-638">  <span class="sortValue">org.joda.time.TestInterval_Constructors.testConstructor_RP_RI2</span><a href="../../../../org/joda/time/TestInterval_Constructors_testConstructor_RP_RI2_hq.html" title="View Test Summary Page">org.joda.time.TestInterval_Constructors.testConstructor_RP_RI2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestInterval_Constructors.html?line=364#src-364" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestInterval_Constructors_testConstructor_RP_RI2_hq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2769">
+<td><a name="testA-2769"></a><input type="checkbox" id="cb-2769" value="2769" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_Chronology_24x.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2769">  <span class="sortValue">org.joda.time.TestDateTime_Constructors.testConstructor_badconverterObject_Chronology</span><a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_Chronology_24x.html" title="View Test Summary Page">org.joda.time.TestDateTime_Constructors.testConstructor_badconverterObject_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Constructors.html?line=545#src-545" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_Chronology_24x.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-566">
+<td><a name="testA-566"></a><input type="checkbox" id="cb-566" value="566" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Constructors_testConstructor_ObjectString1_fq.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-566">  <span class="sortValue">org.joda.time.TestDateTime_Constructors.testConstructor_ObjectString1</span><a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_ObjectString1_fq.html" title="View Test Summary Page">org.joda.time.TestDateTime_Constructors.testConstructor_ObjectString1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Constructors.html?line=329#src-329" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_ObjectString1_fq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2792">
+<td><a name="testA-2792"></a><input type="checkbox" id="cb-2792" value="2792" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testRemovePartialConverter1_25k.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2792">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testRemovePartialConverter1</span><a href="../../../../org/joda/time/convert/TestConverterManager_testRemovePartialConverter1_25k.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testRemovePartialConverter1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=491#src-491" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testRemovePartialConverter1_25k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3401">
+<td><a name="testA-3401"></a><input type="checkbox" id="cb-3401" value="3401" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_DateTimeZone_2mh.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3401">  <span class="sortValue">org.joda.time.TestDateMidnight_Constructors.testConstructor_badconverterObject_DateTimeZone</span><a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_DateTimeZone_2mh.html" title="View Test Summary Page">org.joda.time.TestDateMidnight_Constructors.testConstructor_badconverterObject_DateTimeZone</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateMidnight_Constructors.html?line=399#src-399" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_DateTimeZone_2mh.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1743">
+<td><a name="testA-1743"></a><input type="checkbox" id="cb-1743" value="1743" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestCalendarConverter_testSupportedType_1cf.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1743">  <span class="sortValue">org.joda.time.convert.TestCalendarConverter.testSupportedType</span><a href="../../../../org/joda/time/convert/TestCalendarConverter_testSupportedType_1cf.html" title="View Test Summary Page">org.joda.time.convert.TestCalendarConverter.testSupportedType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestCalendarConverter.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestCalendarConverter_testSupportedType_1cf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1001">
+<td><a name="testA-1001"></a><input type="checkbox" id="cb-1001" value="1001" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_rt.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1001">  <span class="sortValue">org.joda.time.TestDateMidnight_Constructors.testConstructor_badconverterObject</span><a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_rt.html" title="View Test Summary Page">org.joda.time.TestDateMidnight_Constructors.testConstructor_badconverterObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateMidnight_Constructors.html?line=337#src-337" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_rt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2250">
+<td><a name="testA-2250"></a><input type="checkbox" id="cb-2250" value="2250" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_1qi.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2250">  <span class="sortValue">org.joda.time.TestDateTime_Constructors.testConstructor_badconverterObject</span><a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_1qi.html" title="View Test Summary Page">org.joda.time.TestDateTime_Constructors.testConstructor_badconverterObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Constructors.html?line=318#src-318" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_1qi.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1550">
+<td><a name="testA-1550"></a><input type="checkbox" id="cb-1550" value="1550" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverter_172.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1550">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetInstantConverter</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverter_172.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetInstantConverter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=131#src-131" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverter_172.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3152">
+<td><a name="testA-3152"></a><input type="checkbox" id="cb-3152" value="3152" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testAddPartialConverter1_2fk.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3152">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testAddPartialConverter1</span><a href="../../../../org/joda/time/convert/TestConverterManager_testAddPartialConverter1_2fk.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testAddPartialConverter1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=422#src-422" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testAddPartialConverter1_2fk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1609">
+<td><a name="testA-1609"></a><input type="checkbox" id="cb-1609" value="1609" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterRemovedNull_18p.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1609">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetPartialConverterRemovedNull</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterRemovedNull_18p.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetPartialConverterRemovedNull</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=361#src-361" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetPartialConverterRemovedNull_18p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1061">
+<td><a name="testA-1061"></a><input type="checkbox" id="cb-1061" value="1061" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_DateTimeZone_th.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1061">  <span class="sortValue">org.joda.time.TestDateTime_Constructors.testConstructor_badconverterObject_DateTimeZone</span><a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_DateTimeZone_th.html" title="View Test Summary Page">org.joda.time.TestDateTime_Constructors.testConstructor_badconverterObject_DateTimeZone</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Constructors.html?line=483#src-483" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_badconverterObject_DateTimeZone_th.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3468">
+<td><a name="testA-3468"></a><input type="checkbox" id="cb-3468" value="3468" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectLocalTime_2oc.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3468">  <span class="sortValue">org.joda.time.TestLocalDateTime_Constructors.testConstructor_ObjectLocalTime</span><a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectLocalTime_2oc.html" title="View Test Summary Page">org.joda.time.TestLocalDateTime_Constructors.testConstructor_ObjectLocalTime</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestLocalDateTime_Constructors.html?line=490#src-490" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectLocalTime_2oc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2126">
+<td><a name="testA-2126"></a><input type="checkbox" id="cb-2126" value="2126" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTimeComparator_testSecond_1n2.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2126">  <span class="sortValue">org.joda.time.TestDateTimeComparator.testSecond</span><a href="../../../../org/joda/time/TestDateTimeComparator_testSecond_1n2.html" title="View Test Summary Page">org.joda.time.TestDateTimeComparator.testSecond</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTimeComparator.html?line=435#src-435" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTimeComparator_testSecond_1n2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-836">
+<td><a name="testA-836"></a><input type="checkbox" id="cb-836" value="836" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestLocalDate_Constructors_testConstructor_ObjectYearMonthDay_n8.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-836">  <span class="sortValue">org.joda.time.TestLocalDate_Constructors.testConstructor_ObjectYearMonthDay</span><a href="../../../../org/joda/time/TestLocalDate_Constructors_testConstructor_ObjectYearMonthDay_n8.html" title="View Test Summary Page">org.joda.time.TestLocalDate_Constructors.testConstructor_ObjectYearMonthDay</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestLocalDate_Constructors.html?line=431#src-431" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestLocalDate_Constructors_testConstructor_ObjectYearMonthDay_n8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3881">
+<td><a name="testA-3881"></a><input type="checkbox" id="cb-3881" value="3881" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_invalidObject_Chronology_2zt.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3881">  <span class="sortValue">org.joda.time.TestDateMidnight_Constructors.testConstructor_invalidObject_Chronology</span><a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_invalidObject_Chronology_2zt.html" title="View Test Summary Page">org.joda.time.TestDateMidnight_Constructors.testConstructor_invalidObject_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateMidnight_Constructors.html?line=423#src-423" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_invalidObject_Chronology_2zt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-981">
+<td><a name="testA-981"></a><input type="checkbox" id="cb-981" value="981" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_invalidObject_r9.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-981">  <span class="sortValue">org.joda.time.TestDateMidnight_Constructors.testConstructor_invalidObject</span><a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_invalidObject_r9.html" title="View Test Summary Page">org.joda.time.TestDateMidnight_Constructors.testConstructor_invalidObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateMidnight_Constructors.html?line=318#src-318" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_invalidObject_r9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-337">
+<td><a name="testA-337"></a><input type="checkbox" id="cb-337" value="337" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Constructors_testConstructor_invalidObject_9d.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-337">  <span class="sortValue">org.joda.time.TestDateTime_Constructors.testConstructor_invalidObject</span><a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_invalidObject_9d.html" title="View Test Summary Page">org.joda.time.TestDateTime_Constructors.testConstructor_invalidObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Constructors.html?line=299#src-299" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_invalidObject_9d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3599">
+<td><a name="testA-3599"></a><input type="checkbox" id="cb-3599" value="3599" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectStringEx1_2rz.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3599">  <span class="sortValue">org.joda.time.TestLocalDateTime_Constructors.testConstructor_ObjectStringEx1</span><a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectStringEx1_2rz.html" title="View Test Summary Page">org.joda.time.TestLocalDateTime_Constructors.testConstructor_ObjectStringEx1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestLocalDateTime_Constructors.html?line=427#src-427" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_ObjectStringEx1_2rz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2858">
+<td><a name="testA-2858"></a><input type="checkbox" id="cb-2858" value="2858" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testAddPartialConverter2_27e.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2858">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testAddPartialConverter2</span><a href="../../../../org/joda/time/convert/TestConverterManager_testAddPartialConverter2_27e.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testAddPartialConverter2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=441#src-441" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testAddPartialConverter2_27e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-688">
+<td><a name="testA-688"></a><input type="checkbox" id="cb-688" value="688" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateTime_Constructors_testConstructor_ObjectString5_j4.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-688">  <span class="sortValue">org.joda.time.TestDateTime_Constructors.testConstructor_ObjectString5</span><a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_ObjectString5_j4.html" title="View Test Summary Page">org.joda.time.TestDateTime_Constructors.testConstructor_ObjectString5</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateTime_Constructors.html?line=377#src-377" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateTime_Constructors_testConstructor_ObjectString5_j4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1511">
+<td><a name="testA-1511"></a><input type="checkbox" id="cb-1511" value="1511" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterRemovedNull_15z.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-1511">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetInstantConverterRemovedNull</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterRemovedNull_15z.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetInstantConverterRemovedNull</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=156#src-156" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterRemovedNull_15z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3927">
+<td><a name="testA-3927"></a><input type="checkbox" id="cb-3927" value="3927" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testAddInstantConverter2_313.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3927">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testAddInstantConverter2</span><a href="../../../../org/joda/time/convert/TestConverterManager_testAddInstantConverter2_313.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testAddInstantConverter2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=233#src-233" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testAddInstantConverter2_313.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3410">
+<td><a name="testA-3410"></a><input type="checkbox" id="cb-3410" value="3410" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_Chronology_2mq.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3410">  <span class="sortValue">org.joda.time.TestDateMidnight_Constructors.testConstructor_badconverterObject_Chronology</span><a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_Chronology_2mq.html" title="View Test Summary Page">org.joda.time.TestDateMidnight_Constructors.testConstructor_badconverterObject_Chronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestDateMidnight_Constructors.html?line=461#src-461" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestDateMidnight_Constructors_testConstructor_badconverterObject_Chronology_2mq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2947">
+<td><a name="testA-2947"></a><input type="checkbox" id="cb-2947" value="2947" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterOKMultipleMatches_29v.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2947">  <span class="sortValue">org.joda.time.convert.TestConverterManager.testGetInstantConverterOKMultipleMatches</span><a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterOKMultipleMatches_29v.html" title="View Test Summary Page">org.joda.time.convert.TestConverterManager.testGetInstantConverterOKMultipleMatches</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/convert/TestConverterManager.html?line=169#src-169" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/convert/TestConverterManager_testGetInstantConverterOKMultipleMatches_29v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2478">
+<td><a name="testA-2478"></a><input type="checkbox" id="cb-2478" value="2478" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_invalidObject_1wu.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-2478">  <span class="sortValue">org.joda.time.TestMutableDateTime_Constructors.testConstructor_invalidObject</span><a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_invalidObject_1wu.html" title="View Test Summary Page">org.joda.time.TestMutableDateTime_Constructors.testConstructor_invalidObject</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestMutableDateTime_Constructors.html?line=299#src-299" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestMutableDateTime_Constructors_testConstructor_invalidObject_1wu.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3634">
+<td><a name="testA-3634"></a><input type="checkbox" id="cb-3634" value="3634" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_Object_Chronology_crossChronology_2sy.html';">
+<span class="sortValue">0.05263158</span>
+<div>
+<div title="5.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:5.3%"></div></div></div></td>
+<td id="tc-3634">  <span class="sortValue">org.joda.time.TestLocalDateTime_Constructors.testConstructor_Object_Chronology_crossChronology</span><a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_Object_Chronology_crossChronology_2sy.html" title="View Test Summary Page">org.joda.time.TestLocalDateTime_Constructors.testConstructor_Object_Chronology_crossChronology</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../org/joda/time/TestLocalDateTime_Constructors.html?line=591#src-591" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../org/joda/time/TestLocalDateTime_Constructors_testConstructor_Object_Chronology_crossChronology_2sy.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> *  Copyright 2001-2009 Stephen Colebourne</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> *  you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> *  You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> *      http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> *  Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> *  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> *  See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> *  limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="keyword">package</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../convert/pkg-summary.html">convert</a>;</span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="keyword">import</span> java.util.Calendar;</span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> java.util.GregorianCalendar;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../../../../org/joda/time/Chronology.html#Chronology">Chronology</a>;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../chrono/pkg-summary.html">chrono</a>.<a href="../../../../org/joda/time/chrono/BuddhistChronology.html#BuddhistChronology">BuddhistChronology</a>;</span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../chrono/pkg-summary.html">chrono</a>.<a href="../../../../org/joda/time/chrono/GJChronology.html#GJChronology">GJChronology</a>;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../chrono/pkg-summary.html">chrono</a>.<a href="../../../../org/joda/time/chrono/GregorianChronology.html#GregorianChronology">GregorianChronology</a>;</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../chrono/pkg-summary.html">chrono</a>.<a href="../../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../../time/pkg-summary.html">time</a>.<a href="../chrono/pkg-summary.html">chrono</a>.<a href="../../../../org/joda/time/chrono/JulianChronology.html#JulianChronology">JulianChronology</a>;</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment"> * CalendarConverter converts a java util Calendar to an instant or partial.</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="comment"> * The Calendar is converted to milliseconds and the chronology that best</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="comment"> * matches the calendar.</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Stephen Colebourne</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="comment"> * </span><span class="javadoc">@since</span><span class="comment"> 1.0</span></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="37" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-37' onclick="toggleInlineStats(this, 'inlinestats-37');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-37" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-37'), 'inlinestats-37');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (38)</td>
+                <td class="inlineStat">Complexity: 11</td>
+                <td class="inlineStat">Complexity Density: 0.48</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 37, 'Tests that hit CalendarConverter');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-37"><span class="spacer"></span><span id="src-37" class="srcLine"><span class="keyword">final</span> <span class="keyword">class</span> <a href="../../../../org/joda/time/convert/CalendarConverter.html#CalendarConverter">CalendarConverter</a> <span class="keyword">extends</span> <a href="../../../../org/joda/time/convert/AbstractConverter.html#AbstractConverter">AbstractConverter</a></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine">        <span class="keyword">implements</span> <a href="../../../../org/joda/time/convert/InstantConverter.html#InstantConverter">InstantConverter</a>, <a href="../../../../org/joda/time/convert/PartialConverter.html#PartialConverter">PartialConverter</a> {</span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"><span class="comment">     * Singleton instance.</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">    <span class="keyword">static</span> <span class="keyword">final</span> <a href="../../../../org/joda/time/convert/CalendarConverter.html#CalendarConverter">CalendarConverter</a> INSTANCE = <span class="keyword">new</span> <a href="../../../../org/joda/time/convert/CalendarConverter.html#CalendarConverter">CalendarConverter</a>();</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="comment">     * Restricted constructor.</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="48" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-48' onclick="toggleInlineStats(this, 'inlinestats-48');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-48" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-48'), 'inlinestats-48');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit CalendarConverter()');" ><span title="Line 48, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-48"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 48,50);" id="img-48" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 5: method entered 1 time.">    <span class="keyword">protected</span> <a href="../../../../org/joda/time/convert/CalendarConverter.html#CalendarConverter">CalendarConverter</a>() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-48'), 48,50);" id="e48" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 9: statement executed 1 time.">        <span class="keyword">super</span>();</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"><span class="comment">     * Gets the chronology.</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"><span class="comment">     * &lt;p&gt;</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="comment">     * If a chronology is specified then it is used.</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"><span class="comment">     * Otherwise, it is the GJChronology if a GregorianCalendar is used,</span></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"><span class="comment">     * BuddhistChronology if a BuddhistCalendar is used or ISOChronology otherwise.</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine"><span class="comment">     * The time zone is extracted from the calendar if possible, default used if not.</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> object  the Calendar to convert, must not be null</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> chrono  the chronology to use, null means use Calendar</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> the chronology, never null</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="comment">     * </span><span class="javadoc">@throws</span><span class="comment"> NullPointerException if the object is null</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"><span class="comment">     * </span><span class="javadoc">@throws</span><span class="comment"> ClassCastException if the object is an invalid type</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="67" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-67' onclick="toggleInlineStats(this, 'inlinestats-67');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-67" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-67'), 'inlinestats-67');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (10)</td>
+                <td class="inlineStat">Complexity: 3</td>
+                <td class="inlineStat">Complexity Density: 0.38</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l67">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 67, 'Tests that hit getChronology(Object,Chronology)&#160;:&#160;Chronology');" ><span title="Line 67, Col 5: method entered 36 times." class="nolink">&#160;36</span></td>
+<td class=" methodStart  srcCell" id="id-67"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 67,80);" id="img-67" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-67" class="srcLine"><span class="nolink" title="Line 67, Col 5: method entered 36 times.">    <span class="keyword">public</span> <a href="../../../../org/joda/time/Chronology.html#Chronology">Chronology</a> getChronology(Object object, <a href="../../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-67'), 67,80);" id="e67" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 68, 'Tests that hit line # 68');" ><span title="Line 68, Col 12: true branch executed 1 time, false branch executed 35 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine"><span class="nolink" title="Line 68, Col 12: true branch executed 1 time, false branch executed 35 times.">        <span class="keyword">if</span> (chrono != <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 69, 'Tests that hit line # 69');" ><span title="Line 69, Col 13: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"><span class="nolink" title="Line 69, Col 13: statement executed 1 time.">            <span class="keyword">return</span> chrono;</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit line # 71');" ><span title="Line 71, Col 9: statement executed 35 times." class="nolink">&#160;35</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 9: statement executed 35 times.">        Calendar cal = (Calendar) object;</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 72, 'Tests that hit line # 72');" ><span title="Line 72, Col 9: statement executed 35 times." class="nolink">&#160;35</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="nolink" title="Line 72, Col 9: statement executed 35 times.">        <a href="../../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a> zone = <span class="keyword">null</span>;</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 73, 'Tests that hit line # 73');" ><span title="Line 73, Col 9: statement executed 35 times." class="nolink">&#160;35</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="nolink" title="Line 73, Col 9: statement executed 35 times.">        <span class="keyword">try</span> {</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 74, 'Tests that hit line # 74');" ><span title="Line 74, Col 13: statement executed 35 times." class="nolink">&#160;35</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine"><span class="nolink" title="Line 74, Col 13: statement executed 35 times.">            zone = <a href="../../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.forTimeZone(cal.getTimeZone());</span></span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine">            </span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine">        } <span class="keyword">catch</span> (IllegalArgumentException ex) {</span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 77, 'Tests that hit line # 77');" ><span title="Line 77, Col 13: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="nolink" title="Line 77, Col 13: statement executed 1 time.">            zone = <a href="../../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.getDefault();</span></span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 79, 'Tests that hit line # 79');" ><span title="Line 79, Col 9: statement executed 35 times." class="nolink">&#160;35</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"><span class="nolink" title="Line 79, Col 9: statement executed 35 times.">        <span class="keyword">return</span> getChronology(cal, zone);</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="comment">     * Gets the chronology, which is the GJChronology if a GregorianCalendar is used,</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine"><span class="comment">     * BuddhistChronology if a BuddhistCalendar is used or ISOChronology otherwise.</span></span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine"><span class="comment">     * The time zone specified is used in preference to that on the calendar.</span></span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> object  the Calendar to convert, must not be null</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> zone  the specified zone to use, null means default zone</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> the chronology, never null</span></span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"><span class="comment">     * </span><span class="javadoc">@throws</span><span class="comment"> NullPointerException if the object is null</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="comment">     * </span><span class="javadoc">@throws</span><span class="comment"> ClassCastException if the object is an invalid type</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="93" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-93' onclick="toggleInlineStats(this, 'inlinestats-93');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-93" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-93'), 'inlinestats-93');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (19)</td>
+                <td class="inlineStat">Complexity: 5</td>
+                <td class="inlineStat">Complexity Density: 0.45</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l93">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 93, 'Tests that hit getChronology(Object,DateTimeZone)&#160;:&#160;Chronology');" ><span title="Line 93, Col 5: method entered 42 times." class="nolink">&#160;42</span></td>
+<td class=" methodStart  srcCell" id="id-93"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 93,109);" id="img-93" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-93" class="srcLine"><span class="nolink" title="Line 93, Col 5: method entered 42 times.">    <span class="keyword">public</span> <a href="../../../../org/joda/time/Chronology.html#Chronology">Chronology</a> getChronology(Object object, <a href="../../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a> zone) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-93'), 93,109);" id="e93" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 12: true branch executed 2 times, false branch executed 40 times." class="nolink">&#160;42</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 12: true branch executed 2 times, false branch executed 40 times.">        <span class="keyword">if</span> (object.getClass().getName().endsWith(<span class="string">&quot;.BuddhistCalendar&quot;</span>)) {</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 95, 'Tests that hit line # 95');" ><span title="Line 95, Col 13: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine"><span class="nolink" title="Line 95, Col 13: statement executed 2 times.">            <span class="keyword">return</span> <a href="../../../../org/joda/time/chrono/BuddhistChronology.html#BuddhistChronology">BuddhistChronology</a>.getInstance(zone);</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 96, 'Tests that hit line # 96');" ><span title="Line 96, Col 19: true branch executed 38 times, false branch executed 2 times." class="nolink">&#160;40</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="nolink" title="Line 96, Col 19: true branch executed 38 times, false branch executed 2 times.">        } <span class="keyword">else</span> <span class="keyword">if</span> (object <span class="keyword">instanceof</span> GregorianCalendar) {</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 97, 'Tests that hit line # 97');" ><span title="Line 97, Col 13: statement executed 38 times." class="nolink">&#160;38</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 13: statement executed 38 times.">            GregorianCalendar gc = (GregorianCalendar) object;</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 98, 'Tests that hit line # 98');" ><span title="Line 98, Col 13: statement executed 38 times." class="nolink">&#160;38</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine"><span class="nolink" title="Line 98, Col 13: statement executed 38 times.">            <span class="keyword">long</span> cutover = gc.getGregorianChange().getTime();</span></span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 99, 'Tests that hit line # 99');" ><span title="Line 99, Col 16: true branch executed 2 times, false branch executed 36 times." class="nolink">&#160;38</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"><span class="nolink" title="Line 99, Col 16: true branch executed 2 times, false branch executed 36 times.">            <span class="keyword">if</span> (cutover == Long.MIN_VALUE) {</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 100, 'Tests that hit line # 100');" ><span title="Line 100, Col 17: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"><span class="nolink" title="Line 100, Col 17: statement executed 2 times.">                <span class="keyword">return</span> <a href="../../../../org/joda/time/chrono/GregorianChronology.html#GregorianChronology">GregorianChronology</a>.getInstance(zone);</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 101, 'Tests that hit line # 101');" ><span title="Line 101, Col 23: true branch executed 2 times, false branch executed 34 times." class="nolink">&#160;36</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 23: true branch executed 2 times, false branch executed 34 times.">            } <span class="keyword">else</span> <span class="keyword">if</span> (cutover == Long.MAX_VALUE) {</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 102, 'Tests that hit line # 102');" ><span title="Line 102, Col 17: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"><span class="nolink" title="Line 102, Col 17: statement executed 2 times.">                <span class="keyword">return</span> <a href="../../../../org/joda/time/chrono/JulianChronology.html#JulianChronology">JulianChronology</a>.getInstance(zone);</span></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine">            } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 104, 'Tests that hit line # 104');" ><span title="Line 104, Col 17: statement executed 34 times." class="nolink">&#160;34</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"><span class="nolink" title="Line 104, Col 17: statement executed 34 times.">                <span class="keyword">return</span> <a href="../../../../org/joda/time/chrono/GJChronology.html#GJChronology">GJChronology</a>.getInstance(zone, cutover, 4);</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine">        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 107, 'Tests that hit line # 107');" ><span title="Line 107, Col 13: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"><span class="nolink" title="Line 107, Col 13: statement executed 2 times.">            <span class="keyword">return</span> <a href="../../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstance(zone);</span></span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine"></span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine"><span class="comment">     * Gets the millis, which is the Calendar millis value.</span></span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> object  the Calendar to convert, must not be null</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> chrono  the chronology result from getChronology, non-null</span></span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> the millisecond value</span></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine"><span class="comment">     * </span><span class="javadoc">@throws</span><span class="comment"> NullPointerException if the object is null</span></span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine"><span class="comment">     * </span><span class="javadoc">@throws</span><span class="comment"> ClassCastException if the object is an invalid type</span></span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="120" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-120' onclick="toggleInlineStats(this, 'inlinestats-120');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-120" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-120'), 'inlinestats-120');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l120">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 120, 'Tests that hit getInstantMillis(Object,Chronology)&#160;:&#160;long');" ><span title="Line 120, Col 5: method entered 30 times." class="nolink">&#160;30</span></td>
+<td class=" methodStart  srcCell" id="id-120"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 120,123);" id="img-120" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-120" class="srcLine"><span class="nolink" title="Line 120, Col 5: method entered 30 times.">    <span class="keyword">public</span> <span class="keyword">long</span> getInstantMillis(Object object, <a href="../../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-120'), 120,123);" id="e120" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 121, 'Tests that hit line # 121');" ><span title="Line 121, Col 9: statement executed 30 times." class="nolink">&#160;30</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine"><span class="nolink" title="Line 121, Col 9: statement executed 30 times.">        Calendar calendar = (Calendar) object;</span></span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 122, 'Tests that hit line # 122');" ><span title="Line 122, Col 9: statement executed 30 times." class="nolink">&#160;30</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLine"><span class="nolink" title="Line 122, Col 9: statement executed 30 times.">        <span class="keyword">return</span> calendar.getTime().getTime();</span></span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l124">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-124" class="srcLine"></span></td>
+</tr>
+ <tr id="l125">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-125" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+ <tr id="l126">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=126#src-126">126</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-126" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l127">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=127#src-127">127</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-127" class="srcLine"><span class="comment">     * Returns Calendar.class.</span></span></td>
+</tr>
+ <tr id="l128">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=128#src-128">128</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-128" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l129">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=129#src-129">129</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-129" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> Calendar.class</span></span></td>
+</tr>
+ <tr id="l130">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=130#src-130">130</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-130" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="131" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-131' onclick="toggleInlineStats(this, 'inlinestats-131');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-131" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-131'), 'inlinestats-131');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l131">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=131#src-131">131</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 131, 'Tests that hit getSupportedType()&#160;:&#160;Class&lt;?&gt;');" ><span title="Line 131, Col 5: method entered 61 times." class="nolink">&#160;61</span></td>
+<td class=" methodStart  srcCell" id="id-131"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 131,133);" id="img-131" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-131" class="srcLine"><span class="nolink" title="Line 131, Col 5: method entered 61 times.">    <span class="keyword">public</span> Class&lt;?&gt; getSupportedType() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-131'), 131,133);" id="e131" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l132">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=132#src-132">132</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 132, 'Tests that hit line # 132');" ><span title="Line 132, Col 9: statement executed 61 times." class="nolink">&#160;61</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-132" class="srcLine"><span class="nolink" title="Line 132, Col 9: statement executed 61 times.">        <span class="keyword">return</span> Calendar.<span class="keyword">class</span>;</span></span></td>
+</tr>
+ <tr id="l133">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=133#src-133">133</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-133" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l134">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=134#src-134">134</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-134" class="srcLine"></span></td>
+</tr>
+ <tr id="l135">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=135#src-135">135</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-135" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="CalendarConverter.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Wed Dec 28 2022 16:44:45 MST using coverage data from Wed Dec 28 2022 16:44:38 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

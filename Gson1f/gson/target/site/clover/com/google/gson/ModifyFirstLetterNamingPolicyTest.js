@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":87,"id":4800,"methods":[{"el":33,"sc":3,"sl":28},{"el":40,"sc":3,"sl":35},{"el":47,"sc":3,"sl":42},{"el":54,"sc":3,"sl":49},{"el":61,"sc":3,"sl":56},{"el":68,"sc":3,"sl":63},{"el":77,"sc":3,"sl":70},{"el":86,"sc":3,"sl":79}],"name":"ModifyFirstLetterNamingPolicyTest","sl":26}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_187":{"methods":[{"sl":28}],"name":"testInvalidConstruction","pass":true,"statements":[{"sl":29},{"sl":30}]},"test_265":{"methods":[{"sl":35}],"name":"testLowerCaseFirstLetter","pass":true,"statements":[{"sl":36},{"sl":38},{"sl":39}]},"test_278":{"methods":[{"sl":63}],"name":"testFieldStartsWithUnderscoreFollowedBySingleLetter","pass":true,"statements":[{"sl":64},{"sl":66},{"sl":67}]},"test_287":{"methods":[{"sl":79}],"name":"testFieldHasNoLetters","pass":true,"statements":[{"sl":80},{"sl":82},{"sl":84},{"sl":85}]},"test_355":{"methods":[{"sl":49}],"name":"testSingleCharacterField","pass":true,"statements":[{"sl":50},{"sl":52},{"sl":53}]},"test_52":{"methods":[{"sl":70}],"name":"testFieldHasSingleNonLetter","pass":true,"statements":[{"sl":71},{"sl":73},{"sl":75},{"sl":76}]},"test_590":{"methods":[{"sl":42}],"name":"testUpperCaseFirstLetter","pass":true,"statements":[{"sl":43},{"sl":45},{"sl":46}]},"test_648":{"methods":[{"sl":56}],"name":"testFieldStartsWithUnderscore","pass":true,"statements":[{"sl":57},{"sl":59},{"sl":60}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [187], [187], [187], [], [], [], [], [265], [265], [], [265], [265], [], [], [590], [590], [], [590], [590], [], [], [355], [355], [], [355], [355], [], [], [648], [648], [], [648], [648], [], [], [278], [278], [], [278], [278], [], [], [52], [52], [], [52], [], [52], [52], [], [], [287], [287], [], [287], [], [287], [287], [], []]

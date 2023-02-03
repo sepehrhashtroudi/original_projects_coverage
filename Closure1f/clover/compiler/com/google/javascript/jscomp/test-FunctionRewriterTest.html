@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class FunctionRewriterTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="FunctionRewriterTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>FunctionRewriterTest</td>
+        <td class="testPasses"><span class="sortValue">45</span>45</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.537</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction1</span><a href="FunctionRewriterTest_testReplaceEmptyFunction1_9yk.html">FunctionRewriterTest.testReplaceEmptyFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548378</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction1</span><a href="FunctionRewriterTest_testReplaceEmptyFunction1_mq.html">FunctionRewriterTest.testReplaceEmptyFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396124</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction3</span><a href="FunctionRewriterTest_testReplaceEmptyFunction3_ecc.html">FunctionRewriterTest.testReplaceEmptyFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751294</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceIdentityFunction1</span><a href="FunctionRewriterTest_testReplaceIdentityFunction1_1uo.html">FunctionRewriterTest.testReplaceIdentityFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751299</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter2</span><a href="FunctionRewriterTest_testReplaceSetter2_edc.html">FunctionRewriterTest.testReplaceSetter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751268</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst2</span><a href="FunctionRewriterTest_testReplaceReturnConst2_ag6.html">FunctionRewriterTest.testReplaceReturnConst2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396145</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceIdentityFunction1</span><a href="FunctionRewriterTest_testReplaceIdentityFunction1_bo3.html">FunctionRewriterTest.testReplaceIdentityFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697547979</span>2 Jan 15:12:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.232</span>0.232</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction2</span><a href="FunctionRewriterTest_testReplaceEmptyFunction2_bsx.html">FunctionRewriterTest.testReplaceEmptyFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548390</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter4</span><a href="FunctionRewriterTest_testReplaceSetter4_6m6.html">FunctionRewriterTest.testReplaceSetter4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548337</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter2</span><a href="FunctionRewriterTest_testReplaceSetter2_816.html">FunctionRewriterTest.testReplaceSetter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548313</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceGetter1</span><a href="FunctionRewriterTest_testReplaceGetter1_58v.html">FunctionRewriterTest.testReplaceGetter1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548277</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst3</span><a href="FunctionRewriterTest_testReplaceReturnConst3_dl2.html">FunctionRewriterTest.testReplaceReturnConst3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751256</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst1</span><a href="FunctionRewriterTest_testReplaceReturnConst1_yr.html">FunctionRewriterTest.testReplaceReturnConst1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548233</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst1</span><a href="FunctionRewriterTest_testReplaceReturnConst1_6v0.html">FunctionRewriterTest.testReplaceReturnConst1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396142</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter1</span><a href="FunctionRewriterTest_testReplaceSetter1_7by.html">FunctionRewriterTest.testReplaceSetter1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396101</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testIssue538</span><a href="FunctionRewriterTest_testIssue538_7l0.html">FunctionRewriterTest.testIssue538</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548349</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter4</span><a href="FunctionRewriterTest_testReplaceSetter4_7p6.html">FunctionRewriterTest.testReplaceSetter4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751279</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter1</span><a href="FunctionRewriterTest_testReplaceSetter1_ard.html">FunctionRewriterTest.testReplaceSetter1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751262</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceIdentityFunction2</span><a href="FunctionRewriterTest_testReplaceIdentityFunction2_afw.html">FunctionRewriterTest.testReplaceIdentityFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396138</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter1</span><a href="FunctionRewriterTest_testReplaceSetter1_1m2.html">FunctionRewriterTest.testReplaceSetter1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548301</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter3</span><a href="FunctionRewriterTest_testReplaceSetter3_2sx.html">FunctionRewriterTest.testReplaceSetter3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751274</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceIdentityFunction2</span><a href="FunctionRewriterTest_testReplaceIdentityFunction2_568.html">FunctionRewriterTest.testReplaceIdentityFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548213</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceGetter2</span><a href="FunctionRewriterTest_testReplaceGetter2_9kj.html">FunctionRewriterTest.testReplaceGetter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396097</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testIssue538</span><a href="FunctionRewriterTest_testIssue538_bx6.html">FunctionRewriterTest.testIssue538</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751223</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst2</span><a href="FunctionRewriterTest_testReplaceReturnConst2_aw8.html">FunctionRewriterTest.testReplaceReturnConst2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548252</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst2</span><a href="FunctionRewriterTest_testReplaceReturnConst2_7su.html">FunctionRewriterTest.testReplaceReturnConst2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751251</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceIdentityFunction2</span><a href="FunctionRewriterTest_testReplaceIdentityFunction2_9xm.html">FunctionRewriterTest.testReplaceIdentityFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751241</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceGetter2</span><a href="FunctionRewriterTest_testReplaceGetter2_5k7.html">FunctionRewriterTest.testReplaceGetter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751236</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction1</span><a href="FunctionRewriterTest_testReplaceEmptyFunction1_dqo.html">FunctionRewriterTest.testReplaceEmptyFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751285</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter3</span><a href="FunctionRewriterTest_testReplaceSetter3_8v2.html">FunctionRewriterTest.testReplaceSetter3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396115</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst3</span><a href="FunctionRewriterTest_testReplaceReturnConst3_3sg.html">FunctionRewriterTest.testReplaceReturnConst3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548264</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceGetter1</span><a href="FunctionRewriterTest_testReplaceGetter1_40h.html">FunctionRewriterTest.testReplaceGetter1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751230</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testIssue538</span><a href="FunctionRewriterTest_testIssue538_aua.html">FunctionRewriterTest.testIssue538</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396092</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction3</span><a href="FunctionRewriterTest_testReplaceEmptyFunction3_b8z.html">FunctionRewriterTest.testReplaceEmptyFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396131</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter2</span><a href="FunctionRewriterTest_testReplaceSetter2_4hv.html">FunctionRewriterTest.testReplaceSetter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396109</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst1</span><a href="FunctionRewriterTest_testReplaceReturnConst1_4pb.html">FunctionRewriterTest.testReplaceReturnConst1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751246</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction3</span><a href="FunctionRewriterTest_testReplaceEmptyFunction3_4ho.html">FunctionRewriterTest.testReplaceEmptyFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548396</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction2</span><a href="FunctionRewriterTest_testReplaceEmptyFunction2_3sy.html">FunctionRewriterTest.testReplaceEmptyFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396129</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceReturnConst3</span><a href="FunctionRewriterTest_testReplaceReturnConst3_dvs.html">FunctionRewriterTest.testReplaceReturnConst3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396148</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter4</span><a href="FunctionRewriterTest_testReplaceSetter4_9eb.html">FunctionRewriterTest.testReplaceSetter4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396120</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceGetter1</span><a href="FunctionRewriterTest_testReplaceGetter1_44p.html">FunctionRewriterTest.testReplaceGetter1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396152</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceIdentityFunction1</span><a href="FunctionRewriterTest_testReplaceIdentityFunction1_2hd.html">FunctionRewriterTest.testReplaceIdentityFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697396134</span>2 Jan 15:09:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceEmptyFunction2</span><a href="FunctionRewriterTest_testReplaceEmptyFunction2_1qv.html">FunctionRewriterTest.testReplaceEmptyFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697751291</span>2 Jan 15:15:51</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceSetter3</span><a href="FunctionRewriterTest_testReplaceSetter3_bvi.html">FunctionRewriterTest.testReplaceSetter3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548327</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">FunctionRewriterTest.testReplaceGetter2</span><a href="FunctionRewriterTest_testReplaceGetter2_38w.html">FunctionRewriterTest.testReplaceGetter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697548290</span>2 Jan 15:12:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

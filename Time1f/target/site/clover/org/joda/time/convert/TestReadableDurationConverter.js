@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":131,"id":54883,"methods":[{"el":52,"sc":5,"sl":50},{"el":56,"sc":5,"sl":54},{"el":60,"sc":5,"sl":58},{"el":69,"sc":5,"sl":62},{"el":75,"sc":5,"sl":71},{"el":92,"sc":5,"sl":78},{"el":97,"sc":5,"sl":95},{"el":102,"sc":5,"sl":100},{"el":108,"sc":5,"sl":105},{"el":124,"sc":5,"sl":110},{"el":129,"sc":5,"sl":127}],"name":"TestReadableDurationConverter","sl":40}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1222":{"methods":[{"sl":78}],"name":"testSingleton","pass":true,"statements":[{"sl":79},{"sl":80},{"sl":81},{"sl":82},{"sl":84},{"sl":85},{"sl":86},{"sl":88},{"sl":89},{"sl":90},{"sl":91}]},"test_136":{"methods":[{"sl":95}],"name":"testSupportedType","pass":true,"statements":[{"sl":96}]},"test_2010":{"methods":[{"sl":100}],"name":"testGetDurationMillis_Object","pass":true,"statements":[{"sl":101}]},"test_406":{"methods":[{"sl":105}],"name":"testGetPeriodType_Object","pass":true,"statements":[{"sl":106}]},"test_814":{"methods":[{"sl":127}],"name":"testToString","pass":true,"statements":[{"sl":128}]},"test_857":{"methods":[{"sl":110}],"name":"testSetInto_Object","pass":true,"statements":[{"sl":111},{"sl":112},{"sl":116},{"sl":117},{"sl":118},{"sl":119},{"sl":120},{"sl":121},{"sl":122},{"sl":123}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1222], [1222], [1222], [1222], [1222], [], [1222], [1222], [1222], [], [1222], [1222], [1222], [1222], [], [], [], [136], [136], [], [], [], [2010], [2010], [], [], [], [406], [406], [], [], [], [857], [857], [857], [], [], [], [857], [857], [857], [857], [857], [857], [857], [857], [], [], [], [814], [814], [], [], []]

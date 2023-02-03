@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../style.css');
+        @import url('../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../" data-package-name="com.google.javascript.rhino.jstype">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.rhino.jstype</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class JSTypeTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="JSTypeTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>JSTypeTest</td>
+        <td class="testPasses"><span class="sortValue">288</span>288</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.831</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">JSTypeTest.testUnknownType</span><a href="JSTypeTest_testUnknownType_amg.html">JSTypeTest.testUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668607</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality3</span><a href="JSTypeTest_testGetTypesUnderEquality3_dww.html">JSTypeTest.testGetTypesUnderEquality3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796615</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetAndSetJSDocInfoWithNoType</span><a href="JSTypeTest_testGetAndSetJSDocInfoWithNoType_8gf.html">JSTypeTest.testGetAndSetJSDocInfoWithNoType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797373</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType3</span><a href="JSTypeTest_testRecordTypeLeastSuperType3_azy.html">JSTypeTest.testRecordTypeLeastSuperType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668265</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testJSDocOnPrototypeProperty</span><a href="JSTypeTest_testJSDocOnPrototypeProperty_dj4.html">JSTypeTest.testJSDocOnPrototypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796462</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringEnumType</span><a href="JSTypeTest_testStringEnumType_5pt.html">JSTypeTest.testStringEnumType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668145</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTemplatizedType</span><a href="JSTypeTest_testTemplatizedType_88.html">JSTypeTest.testTemplatizedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668038</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testReflexivityOfGreatestSubtype</span><a href="JSTypeTest_testReflexivityOfGreatestSubtype_ka.html">JSTypeTest.testReflexivityOfGreatestSubtype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668750</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGreatestSubtypeSimpleTypes</span><a href="JSTypeTest_testGreatestSubtypeSimpleTypes_1ac.html">JSTypeTest.testGreatestSubtypeSimpleTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797328</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTypeOfThisIsProxied</span><a href="JSTypeTest_testTypeOfThisIsProxied_a68.html">JSTypeTest.testTypeOfThisIsProxied</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797438</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionUnionSubtypeChain</span><a href="JSTypeTest_testFunctionUnionSubtypeChain_def.html">JSTypeTest.testFunctionUnionSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796506</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.036</span>0.036</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionFixedArgs</span><a href="JSTypeTest_testSubtypingFunctionFixedArgs_enq.html">JSTypeTest.testSubtypingFunctionFixedArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796339</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTestForEquality</span><a href="JSTypeTest_testTestForEquality_6os.html">JSTypeTest.testTestForEquality</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797073</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionFixedArgs</span><a href="JSTypeTest_testSubtypingFunctionFixedArgs_903.html">JSTypeTest.testSubtypingFunctionFixedArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668159</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedArrayChain</span><a href="JSTypeTest_testParameterizedArrayChain_a07.html">JSTypeTest.testParameterizedArrayChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668553</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSymmetryOfTestForEquality</span><a href="JSTypeTest_testSymmetryOfTestForEquality_7rh.html">JSTypeTest.testSymmetryOfTestForEquality</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796830</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.067</span>0.067</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionVariableArgsBoth</span><a href="JSTypeTest_testSubtypingFunctionVariableArgsBoth_dwu.html">JSTypeTest.testSubtypingFunctionVariableArgsBoth</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796324</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testVoidType</span><a href="JSTypeTest_testVoidType_2tf.html">JSTypeTest.testVoidType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667836</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testImplementingType</span><a href="JSTypeTest_testImplementingType_4sf.html">JSTypeTest.testImplementingType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668246</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSupertypeOfProxiedFunctionTypes</span><a href="JSTypeTest_testSupertypeOfProxiedFunctionTypes_57e.html">JSTypeTest.testSupertypeOfProxiedFunctionTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668151</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testPartiallyTemplatizedType</span><a href="JSTypeTest_testPartiallyTemplatizedType_8qk.html">JSTypeTest.testPartiallyTemplatizedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668276</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetAndSetJSDocInfoWithObjectTypes</span><a href="JSTypeTest_testGetAndSetJSDocInfoWithObjectTypes_d31.html">JSTypeTest.testGetAndSetJSDocInfoWithObjectTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797371</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionInstanceType</span><a href="JSTypeTest_testFunctionInstanceType_3v.html">JSTypeTest.testFunctionInstanceType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668185</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedSubtypeChain</span><a href="JSTypeTest_testNamedSubtypeChain_71d.html">JSTypeTest.testNamedSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668780</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testMixedParameterizedTypeChain</span><a href="JSTypeTest_testMixedParameterizedTypeChain_6j9.html">JSTypeTest.testMixedParameterizedTypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667738</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testForwardDeclaredNamedTypeEquals</span><a href="JSTypeTest_testForwardDeclaredNamedTypeEquals_85k.html">JSTypeTest.testForwardDeclaredNamedTypeEquals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667341</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testIsTemplatedType</span><a href="JSTypeTest_testIsTemplatedType_ejs.html">JSTypeTest.testIsTemplatedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796279</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality4</span><a href="JSTypeTest_testGetTypesUnderInequality4_cdv.html">JSTypeTest.testGetTypesUnderInequality4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668124</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionFixedArgsNotMatching</span><a href="JSTypeTest_testSubtypingFunctionFixedArgsNotMatching_9ob.html">JSTypeTest.testSubtypingFunctionFixedArgsNotMatching</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796348</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testEnumType</span><a href="JSTypeTest_testEnumType_6oe.html">JSTypeTest.testEnumType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667769</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedGoogBar</span><a href="JSTypeTest_testNamedGoogBar_6i0.html">JSTypeTest.testNamedGoogBar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669128</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionMultipleFixedArgs</span><a href="JSTypeTest_testSubtypingFunctionMultipleFixedArgs_blz.html">JSTypeTest.testSubtypingFunctionMultipleFixedArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668970</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordAndObjectChain3</span><a href="JSTypeTest_testRecordAndObjectChain3_6hf.html">JSTypeTest.testRecordAndObjectChain3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669153</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringObjectEnumType</span><a href="JSTypeTest_testStringObjectEnumType_25d.html">JSTypeTest.testStringObjectEnumType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667844</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNullableNamedTypeChain</span><a href="JSTypeTest_testNullableNamedTypeChain_513.html">JSTypeTest.testNullableNamedTypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797253</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.066</span>0.066</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRestrictedTypeGivenToBoolean</span><a href="JSTypeTest_testRestrictedTypeGivenToBoolean_2tg.html">JSTypeTest.testRestrictedTypeGivenToBoolean</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668526</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedTypeSubtypes</span><a href="JSTypeTest_testParameterizedTypeSubtypes_c9w.html">JSTypeTest.testParameterizedTypeSubtypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668205</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypeUnderEquality1</span><a href="JSTypeTest_testGetTypeUnderEquality1_5lt.html">JSTypeTest.testGetTypeUnderEquality1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668511</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateOptionalType</span><a href="JSTypeTest_testCreateOptionalType_ccq.html">JSTypeTest.testCreateOptionalType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797410</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRegisterProperty</span><a href="JSTypeTest_testRegisterProperty_b8j.html">JSTypeTest.testRegisterProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796406</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedTypeEquals</span><a href="JSTypeTest_testNamedTypeEquals_9e5.html">JSTypeTest.testNamedTypeEquals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797057</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateAnonymousObjectType2</span><a href="JSTypeTest_testCreateAnonymousObjectType2_6gr.html">JSTypeTest.testCreateAnonymousObjectType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796292</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality5</span><a href="JSTypeTest_testGetTypesUnderEquality5_8t.html">JSTypeTest.testGetTypesUnderEquality5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796622</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedArrayChain</span><a href="JSTypeTest_testParameterizedArrayChain_3th.html">JSTypeTest.testParameterizedArrayChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797135</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType2</span><a href="JSTypeTest_testRecordTypeGreatestSubType2_66e.html">JSTypeTest.testRecordTypeGreatestSubType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797428</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCanTestForEqualityWithCornerCases</span><a href="JSTypeTest_testCanTestForEqualityWithCornerCases_1v3.html">JSTypeTest.testCanTestForEqualityWithCornerCases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797070</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingMostGeneralFunction</span><a href="JSTypeTest_testSubtypingMostGeneralFunction_54f.html">JSTypeTest.testSubtypingMostGeneralFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796327</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringObjectType</span><a href="JSTypeTest_testStringObjectType_80k.html">JSTypeTest.testStringObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668519</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRestrictedTypeGivenToBoolean</span><a href="JSTypeTest_testRestrictedTypeGivenToBoolean_6ue.html">JSTypeTest.testRestrictedTypeGivenToBoolean</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797359</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testProxiedFunctionTypeRelationships</span><a href="JSTypeTest_testProxiedFunctionTypeRelationships_6tz.html">JSTypeTest.testProxiedFunctionTypeRelationships</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667941</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBooleanObjectType</span><a href="JSTypeTest_testBooleanObjectType_3dv.html">JSTypeTest.testBooleanObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796567</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCallOfDateMethod</span><a href="JSTypeTest_testCallOfDateMethod_5b9.html">JSTypeTest.testCallOfDateMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797092</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectTypePropertiesCount</span><a href="JSTypeTest_testObjectTypePropertiesCount_81f.html">JSTypeTest.testObjectTypePropertiesCount</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796589</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionFixedArgsNotMatching</span><a href="JSTypeTest_testSubtypingFunctionFixedArgsNotMatching_esh.html">JSTypeTest.testSubtypingFunctionFixedArgsNotMatching</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668409</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionPrototypeAndImplicitPrototype1</span><a href="JSTypeTest_testFunctionPrototypeAndImplicitPrototype1_ayc.html">JSTypeTest.testFunctionPrototypeAndImplicitPrototype1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667948</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNumberObjectType</span><a href="JSTypeTest_testNumberObjectType_8yc.html">JSTypeTest.testNumberObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668743</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionPrototypeAndImplicitPrototype1</span><a href="JSTypeTest_testFunctionPrototypeAndImplicitPrototype1_21x.html">JSTypeTest.testFunctionPrototypeAndImplicitPrototype1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796456</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateObjectType</span><a href="JSTypeTest_testCreateObjectType_955.html">JSTypeTest.testCreateObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796295</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordSubtypeChain</span><a href="JSTypeTest_testRecordSubtypeChain_bgb.html">JSTypeTest.testRecordSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668414</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.063</span>0.063</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNumberValueType</span><a href="JSTypeTest_testNumberValueType_6lv.html">JSTypeTest.testNumberValueType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668504</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType1</span><a href="JSTypeTest_testRecordTypeGreatestSubType1_1dt.html">JSTypeTest.testRecordTypeGreatestSubType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667862</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNoResolvedType</span><a href="JSTypeTest_testNoResolvedType_dm2.html">JSTypeTest.testNoResolvedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796424</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionPrototypeType</span><a href="JSTypeTest_testSubtypingFunctionPrototypeType_eir.html">JSTypeTest.testSubtypingFunctionPrototypeType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669108</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInvalidTemplatizedType</span><a href="JSTypeTest_testInvalidTemplatizedType_2qa.html">JSTypeTest.testInvalidTemplatizedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668220</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType3</span><a href="JSTypeTest_testRecordTypeLeastSuperType3_3d9.html">JSTypeTest.testRecordTypeLeastSuperType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797418</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectType</span><a href="JSTypeTest_testObjectType_bul.html">JSTypeTest.testObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796583</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInterfaceInstanceSubtypeChain</span><a href="JSTypeTest_testInterfaceInstanceSubtypeChain_bou.html">JSTypeTest.testInterfaceInstanceSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796360</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNoObjectType</span><a href="JSTypeTest_testNoObjectType_6cw.html">JSTypeTest.testNoObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797347</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testIsTemplatedType</span><a href="JSTypeTest_testIsTemplatedType_60c.html">JSTypeTest.testIsTemplatedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669072</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedArrayChain2</span><a href="JSTypeTest_testParameterizedArrayChain2_9xv.html">JSTypeTest.testParameterizedArrayChain2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797144</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testConstructorWithArgSubtypeChain</span><a href="JSTypeTest_testConstructorWithArgSubtypeChain_f3u.html">JSTypeTest.testConstructorWithArgSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796354</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionPrototypeType</span><a href="JSTypeTest_testSubtypingFunctionPrototypeType_950.html">JSTypeTest.testSubtypingFunctionPrototypeType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796336</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNoType</span><a href="JSTypeTest_testNoType_7km.html">JSTypeTest.testNoType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797350</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInvalidTemplatizedType</span><a href="JSTypeTest_testInvalidTemplatizedType_9m.html">JSTypeTest.testInvalidTemplatizedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797444</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testEnumElementType</span><a href="JSTypeTest_testEnumElementType_2ni.html">JSTypeTest.testEnumElementType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668758</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetAndSetJSDocInfoWithNamedType</span><a href="JSTypeTest_testGetAndSetJSDocInfoWithNamedType_68o.html">JSTypeTest.testGetAndSetJSDocInfoWithNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797368</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetAndSetJSDocInfoWithObjectTypes</span><a href="JSTypeTest_testGetAndSetJSDocInfoWithObjectTypes_fp.html">JSTypeTest.testGetAndSetJSDocInfoWithObjectTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668575</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGoogBarSubtypeChain</span><a href="JSTypeTest_testGoogBarSubtypeChain_i7.html">JSTypeTest.testGoogBarSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669093</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testEnumTypeChain</span><a href="JSTypeTest_testEnumTypeChain_bq8.html">JSTypeTest.testEnumTypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796473</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType6</span><a href="JSTypeTest_testRecordTypeGreatestSubType6_34m.html">JSTypeTest.testRecordTypeGreatestSubType6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667904</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality1</span><a href="JSTypeTest_testGetTypesUnderInequality1_7c9.html">JSTypeTest.testGetTypesUnderInequality1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668102</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionUnionSubtypeChain</span><a href="JSTypeTest_testFunctionUnionSubtypeChain_9qq.html">JSTypeTest.testFunctionUnionSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668297</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.059</span>0.059</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNullType</span><a href="JSTypeTest_testNullType_4wo.html">JSTypeTest.testNullType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667851</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testForwardDeclaredNamedTypeEquals</span><a href="JSTypeTest_testForwardDeclaredNamedTypeEquals_8i2.html">JSTypeTest.testForwardDeclaredNamedTypeEquals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797322</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInterfaceHasOwnProperty</span><a href="JSTypeTest_testInterfaceHasOwnProperty_bom.html">JSTypeTest.testInterfaceHasOwnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797362</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCanCastTo</span><a href="JSTypeTest_testCanCastTo_4sl.html">JSTypeTest.testCanCastTo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668387</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality1</span><a href="JSTypeTest_testGetTypesUnderInequality1_dbq.html">JSTypeTest.testGetTypesUnderInequality1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796630</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBug903110</span><a href="JSTypeTest_testBug903110_a6i.html">JSTypeTest.testBug903110</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796634</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringValueType</span><a href="JSTypeTest_testStringValueType_1wd.html">JSTypeTest.testStringValueType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797481</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubclassOfUnresolvedNamedType</span><a href="JSTypeTest_testSubclassOfUnresolvedNamedType_e98.html">JSTypeTest.testSubclassOfUnresolvedNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668069</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testAllType</span><a href="JSTypeTest_testAllType_caq.html">JSTypeTest.testAllType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796441</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordType</span><a href="JSTypeTest_testRecordType_8ub.html">JSTypeTest.testRecordType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668232</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNumberObjectType</span><a href="JSTypeTest_testNumberObjectType_2t8.html">JSTypeTest.testNumberObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797383</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordAndObjectChain2</span><a href="JSTypeTest_testRecordAndObjectChain2_8ox.html">JSTypeTest.testRecordAndObjectChain2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669145</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCheckedUnknownType</span><a href="JSTypeTest_testCheckedUnknownType_45a.html">JSTypeTest.testCheckedUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796438</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedSubtypeChain</span><a href="JSTypeTest_testNamedSubtypeChain_8ku.html">JSTypeTest.testNamedSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797168</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.033</span>0.033</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testAnonymousObjectChain</span><a href="JSTypeTest_testAnonymousObjectChain_3w9.html">JSTypeTest.testAnonymousObjectChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797116</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordType</span><a href="JSTypeTest_testRecordType_eqh.html">JSTypeTest.testRecordType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797484</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNoResolvedType</span><a href="JSTypeTest_testNoResolvedType_cd1.html">JSTypeTest.testNoResolvedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668777</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testAnonymousEnumElementChain</span><a href="JSTypeTest_testAnonymousEnumElementChain_41m.html">JSTypeTest.testAnonymousEnumElementChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797126</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedTypeEquals2</span><a href="JSTypeTest_testNamedTypeEquals2_ccs.html">JSTypeTest.testNamedTypeEquals2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797060</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLeastSupertypeUnresolvedNamedType3</span><a href="JSTypeTest_testLeastSupertypeUnresolvedNamedType3_3tg.html">JSTypeTest.testLeastSupertypeUnresolvedNamedType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797114</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType1</span><a href="JSTypeTest_testRecordTypeLeastSuperType1_9t.html">JSTypeTest.testRecordTypeLeastSuperType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796647</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingDerivedExtendsNamedBaseType</span><a href="JSTypeTest_testSubtypingDerivedExtendsNamedBaseType_cxj.html">JSTypeTest.testSubtypingDerivedExtendsNamedBaseType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797332</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testPartiallyTemplatizedType</span><a href="JSTypeTest_testPartiallyTemplatizedType_2n1.html">JSTypeTest.testPartiallyTemplatizedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797441</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectGetSubTypes</span><a href="JSTypeTest_testObjectGetSubTypes_5xk.html">JSTypeTest.testObjectGetSubTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668612</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedGoogBar</span><a href="JSTypeTest_testNamedGoogBar_36s.html">JSTypeTest.testNamedGoogBar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796601</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingSimpleTypes</span><a href="JSTypeTest_testSubtypingSimpleTypes_y9.html">JSTypeTest.testSubtypingSimpleTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797077</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateRecordType</span><a href="JSTypeTest_testCreateRecordType_8w8.html">JSTypeTest.testCreateRecordType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668966</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedArrayChain2</span><a href="JSTypeTest_testParameterizedArrayChain2_4vl.html">JSTypeTest.testParameterizedArrayChain2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668533</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectTypePropertiesCount</span><a href="JSTypeTest_testObjectTypePropertiesCount_dq4.html">JSTypeTest.testObjectTypePropertiesCount</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668762</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateAnonymousObjectType2</span><a href="JSTypeTest_testCreateAnonymousObjectType2_bxe.html">JSTypeTest.testCreateAnonymousObjectType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668240</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType2</span><a href="JSTypeTest_testRecordTypeGreatestSubType2_68y.html">JSTypeTest.testRecordTypeGreatestSubType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667872</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionInstanceType</span><a href="JSTypeTest_testFunctionInstanceType_398.html">JSTypeTest.testFunctionInstanceType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797354</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateRecordType</span><a href="JSTypeTest_testCreateRecordType_874.html">JSTypeTest.testCreateRecordType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797407</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSymmetryOfLeastSupertype</span><a href="JSTypeTest_testSymmetryOfLeastSupertype_9ub.html">JSTypeTest.testSymmetryOfLeastSupertype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667357</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.346</span>0.346</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testWeirdBug</span><a href="JSTypeTest_testWeirdBug_chn.html">JSTypeTest.testWeirdBug</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668362</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality2</span><a href="JSTypeTest_testGetTypesUnderInequality2_6j.html">JSTypeTest.testGetTypesUnderInequality2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797397</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionVariableArgsBoth</span><a href="JSTypeTest_testSubtypingFunctionVariableArgsBoth_7n7.html">JSTypeTest.testSubtypingFunctionVariableArgsBoth</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669081</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType3</span><a href="JSTypeTest_testRecordTypeGreatestSubType3_9rj.html">JSTypeTest.testRecordTypeGreatestSubType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667881</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionSubtypeChain</span><a href="JSTypeTest_testFunctionSubtypeChain_e8o.html">JSTypeTest.testFunctionSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796481</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingObjectTopOfObjects</span><a href="JSTypeTest_testSubtypingObjectTopOfObjects_481.html">JSTypeTest.testSubtypingObjectTopOfObjects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668165</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGoodSetPrototypeBasedOn</span><a href="JSTypeTest_testGoodSetPrototypeBasedOn_1s6.html">JSTypeTest.testGoodSetPrototypeBasedOn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796422</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testEnumTypeChain</span><a href="JSTypeTest_testEnumTypeChain_7ea.html">JSTypeTest.testEnumTypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669136</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testReflexivityOfGreatestSubtype</span><a href="JSTypeTest_testReflexivityOfGreatestSubtype_1jk.html">JSTypeTest.testReflexivityOfGreatestSubtype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796826</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectGetSubTypes</span><a href="JSTypeTest_testObjectGetSubTypes_ekc.html">JSTypeTest.testObjectGetSubTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796274</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testWeirdBug</span><a href="JSTypeTest_testWeirdBug_824.html">JSTypeTest.testWeirdBug</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797054</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType4</span><a href="JSTypeTest_testRecordTypeGreatestSubType4_1gd.html">JSTypeTest.testRecordTypeGreatestSubType4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667889</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCheckedUnknownType</span><a href="JSTypeTest_testCheckedUnknownType_re.html">JSTypeTest.testCheckedUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669068</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testArrayType</span><a href="JSTypeTest_testArrayType_42w.html">JSTypeTest.testArrayType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668083</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionTypeRelationships</span><a href="JSTypeTest_testFunctionTypeRelationships_5z2.html">JSTypeTest.testFunctionTypeRelationships</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667791</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGreatestSubtypeWithProperty</span><a href="JSTypeTest_testGreatestSubtypeWithProperty_d5l.html">JSTypeTest.testGreatestSubtypeWithProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796418</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType2</span><a href="JSTypeTest_testRecordTypeLeastSuperType2_bat.html">JSTypeTest.testRecordTypeLeastSuperType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668259</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringEnumType</span><a href="JSTypeTest_testStringEnumType_92s.html">JSTypeTest.testStringEnumType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796577</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLateSetPrototypeBasedOn</span><a href="JSTypeTest_testLateSetPrototypeBasedOn_22z.html">JSTypeTest.testLateSetPrototypeBasedOn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668487</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubclassOfUnresolvedNamedType</span><a href="JSTypeTest_testSubclassOfUnresolvedNamedType_e5e.html">JSTypeTest.testSubclassOfUnresolvedNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797432</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality2</span><a href="JSTypeTest_testGetTypesUnderEquality2_40m.html">JSTypeTest.testGetTypesUnderEquality2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796612</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNoType</span><a href="JSTypeTest_testNoType_9n4.html">JSTypeTest.testNoType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668974</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testApplyOfDateMethod</span><a href="JSTypeTest_testApplyOfDateMethod_10.html">JSTypeTest.testApplyOfDateMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797088</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetAndSetJSDocInfoWithNoType</span><a href="JSTypeTest_testGetAndSetJSDocInfoWithNoType_bcg.html">JSTypeTest.testGetAndSetJSDocInfoWithNoType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668602</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLeastSupertypeUnresolvedNamedType2</span><a href="JSTypeTest_testLeastSupertypeUnresolvedNamedType2_dhx.html">JSTypeTest.testLeastSupertypeUnresolvedNamedType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797111</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSupertypeOfProxiedFunctionTypes</span><a href="JSTypeTest_testSupertypeOfProxiedFunctionTypes_732.html">JSTypeTest.testSupertypeOfProxiedFunctionTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797435</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCallOfDateMethod</span><a href="JSTypeTest_testCallOfDateMethod_b3k.html">JSTypeTest.testCallOfDateMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668585</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringObjectType</span><a href="JSTypeTest_testStringObjectType_1b9.html">JSTypeTest.testStringObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797475</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionTypeRelationships</span><a href="JSTypeTest_testFunctionTypeRelationships_3ck.html">JSTypeTest.testFunctionTypeRelationships</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797099</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType7</span><a href="JSTypeTest_testRecordTypeGreatestSubType7_1j8.html">JSTypeTest.testRecordTypeGreatestSubType7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797081</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testAnonymousObjectChain</span><a href="JSTypeTest_testAnonymousObjectChain_aaf.html">JSTypeTest.testAnonymousObjectChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668281</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingObjectTopOfObjects</span><a href="JSTypeTest_testSubtypingObjectTopOfObjects_ekw.html">JSTypeTest.testSubtypingObjectTopOfObjects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796332</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTypeOfThisIsProxied</span><a href="JSTypeTest_testTypeOfThisIsProxied_2kh.html">JSTypeTest.testTypeOfThisIsProxied</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668549</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testUnknownType</span><a href="JSTypeTest_testUnknownType_br6.html">JSTypeTest.testUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797375</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testReflexivityOfLeastSupertype</span><a href="JSTypeTest_testReflexivityOfLeastSupertype_9o9.html">JSTypeTest.testReflexivityOfLeastSupertype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667964</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality2</span><a href="JSTypeTest_testGetTypesUnderInequality2_cnm.html">JSTypeTest.testGetTypesUnderInequality2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668109</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypeUnderEquality1</span><a href="JSTypeTest_testGetTypeUnderEquality1_2u1.html">JSTypeTest.testGetTypeUnderEquality1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796607</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType7</span><a href="JSTypeTest_testRecordTypeGreatestSubType7_1fs.html">JSTypeTest.testRecordTypeGreatestSubType7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667911</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testPrototypeChaining</span><a href="JSTypeTest_testPrototypeChaining_c2i.html">JSTypeTest.testPrototypeChaining</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667347</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInterfaceInheritanceSubtypeChain</span><a href="JSTypeTest_testInterfaceInheritanceSubtypeChain_api.html">JSTypeTest.testInterfaceInheritanceSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669051</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateAnonymousObjectType</span><a href="JSTypeTest_testCreateAnonymousObjectType_8hh.html">JSTypeTest.testCreateAnonymousObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668616</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBug904123</span><a href="JSTypeTest_testBug904123_1nf.html">JSTypeTest.testBug904123</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668404</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionPrototypeAndImplicitPrototype2</span><a href="JSTypeTest_testFunctionPrototypeAndImplicitPrototype2_e6q.html">JSTypeTest.testFunctionPrototypeAndImplicitPrototype2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796459</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType4</span><a href="JSTypeTest_testRecordTypeLeastSuperType4_3ox.html">JSTypeTest.testRecordTypeLeastSuperType4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797422</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringValueType</span><a href="JSTypeTest_testStringValueType_84b.html">JSTypeTest.testStringValueType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667722</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordAndObjectChain3</span><a href="JSTypeTest_testRecordAndObjectChain3_739.html">JSTypeTest.testRecordAndObjectChain3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797245</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSymmetryOfGreatestSubtype</span><a href="JSTypeTest_testSymmetryOfGreatestSubtype_ks.html">JSTypeTest.testSymmetryOfGreatestSubtype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668820</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.13</span>0.13</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTheObjectType</span><a href="JSTypeTest_testTheObjectType_8y5.html">JSTypeTest.testTheObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797378</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLeastSupertypeUnresolvedNamedType2</span><a href="JSTypeTest_testLeastSupertypeUnresolvedNamedType2_t3.html">JSTypeTest.testLeastSupertypeUnresolvedNamedType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667927</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSymmetryOfLeastSupertype</span><a href="JSTypeTest_testSymmetryOfLeastSupertype_7m.html">JSTypeTest.testSymmetryOfLeastSupertype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796900</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.151</span>0.151</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality3</span><a href="JSTypeTest_testGetTypesUnderInequality3_7th.html">JSTypeTest.testGetTypesUnderInequality3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797400</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInterfaceHasOwnProperty</span><a href="JSTypeTest_testInterfaceHasOwnProperty_c6u.html">JSTypeTest.testInterfaceHasOwnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668094</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInstanceFunctionChaining</span><a href="JSTypeTest_testInstanceFunctionChaining_1ld.html">JSTypeTest.testInstanceFunctionChaining</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797067</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testEnumType</span><a href="JSTypeTest_testEnumType_d24.html">JSTypeTest.testEnumType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796469</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testJSDocOnPrototypeProperty</span><a href="JSTypeTest_testJSDocOnPrototypeProperty_bqf.html">JSTypeTest.testJSDocOnPrototypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669112</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRegisterProperty</span><a href="JSTypeTest_testRegisterProperty_2sq.html">JSTypeTest.testRegisterProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669116</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTemplatizedType</span><a href="JSTypeTest_testTemplatizedType_6ri.html">JSTypeTest.testTemplatizedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796282</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType8</span><a href="JSTypeTest_testRecordTypeGreatestSubType8_azf.html">JSTypeTest.testRecordTypeGreatestSubType8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797085</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedTypeHasOwnProperty</span><a href="JSTypeTest_testNamedTypeHasOwnProperty_9jy.html">JSTypeTest.testNamedTypeHasOwnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796644</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionSubTypeRelationships</span><a href="JSTypeTest_testFunctionSubTypeRelationships_le.html">JSTypeTest.testFunctionSubTypeRelationships</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669100</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateOptionalType</span><a href="JSTypeTest_testCreateOptionalType_9zc.html">JSTypeTest.testCreateOptionalType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669132</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testDefineProperties</span><a href="JSTypeTest_testDefineProperties_cl8.html">JSTypeTest.testDefineProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796593</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordAndObjectChain2</span><a href="JSTypeTest_testRecordAndObjectChain2_cdr.html">JSTypeTest.testRecordAndObjectChain2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797236</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGreatestSubtypeWithProperty</span><a href="JSTypeTest_testGreatestSubtypeWithProperty_5iw.html">JSTypeTest.testGreatestSubtypeWithProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669124</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInterfaceInheritanceSubtypeChain</span><a href="JSTypeTest_testInterfaceInheritanceSubtypeChain_7bg.html">JSTypeTest.testInterfaceInheritanceSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796388</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeSubtyping</span><a href="JSTypeTest_testRecordTypeSubtyping_cyv.html">JSTypeTest.testRecordTypeSubtyping</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797335</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testStringObjectEnumType</span><a href="JSTypeTest_testStringObjectEnumType_5i4.html">JSTypeTest.testStringObjectEnumType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796580</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGoodSetPrototypeBasedOn</span><a href="JSTypeTest_testGoodSetPrototypeBasedOn_atm.html">JSTypeTest.testGoodSetPrototypeBasedOn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668130</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetPropertyNames</span><a href="JSTypeTest_testGetPropertyNames_dnp.html">JSTypeTest.testGetPropertyNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797365</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectTypePropertiesCountWithShadowing</span><a href="JSTypeTest_testObjectTypePropertiesCountWithShadowing_7ey.html">JSTypeTest.testObjectTypePropertiesCountWithShadowing</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796597</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetPropertyNames</span><a href="JSTypeTest_testGetPropertyNames_9zp.html">JSTypeTest.testGetPropertyNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668739</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType1</span><a href="JSTypeTest_testRecordTypeLeastSuperType1_12m.html">JSTypeTest.testRecordTypeLeastSuperType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668253</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionPrototypeAndImplicitPrototype2</span><a href="JSTypeTest_testFunctionPrototypeAndImplicitPrototype2_bfp.html">JSTypeTest.testFunctionPrototypeAndImplicitPrototype2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667954</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testArrayType</span><a href="JSTypeTest_testArrayType_bjf.html">JSTypeTest.testArrayType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796431</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testPrototypeChaining</span><a href="JSTypeTest_testPrototypeChaining_47u.html">JSTypeTest.testPrototypeChaining</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797064</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testUniversalConstructorType</span><a href="JSTypeTest_testUniversalConstructorType_34i.html">JSTypeTest.testUniversalConstructorType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797341</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLeastSupertypeUnresolvedNamedType</span><a href="JSTypeTest_testLeastSupertypeUnresolvedNamedType_2zh.html">JSTypeTest.testLeastSupertypeUnresolvedNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668774</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testDateType</span><a href="JSTypeTest_testDateType_de0.html">JSTypeTest.testDateType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797464</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testDateType</span><a href="JSTypeTest_testDateType_a17.html">JSTypeTest.testDateType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667710</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRegExpType</span><a href="JSTypeTest_testRegExpType_97v.html">JSTypeTest.testRegExpType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668211</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingMostGeneralFunction</span><a href="JSTypeTest_testSubtypingMostGeneralFunction_bzh.html">JSTypeTest.testSubtypingMostGeneralFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668393</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testAnonymousEnumElementChain</span><a href="JSTypeTest_testAnonymousEnumElementChain_6hr.html">JSTypeTest.testAnonymousEnumElementChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668372</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType4</span><a href="JSTypeTest_testRecordTypeGreatestSubType4_2th.html">JSTypeTest.testRecordTypeGreatestSubType4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797158</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSymmetryOfGreatestSubtype</span><a href="JSTypeTest_testSymmetryOfGreatestSubtype_as7.html">JSTypeTest.testSymmetryOfGreatestSubtype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796654</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.163</span>0.163</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInstanceFunctionChaining</span><a href="JSTypeTest_testInstanceFunctionChaining_6qi.html">JSTypeTest.testInstanceFunctionChaining</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668137</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNumberValueType</span><a href="JSTypeTest_testNumberValueType_5q7.html">JSTypeTest.testNumberValueType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797389</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType2</span><a href="JSTypeTest_testRecordTypeLeastSuperType2_858.html">JSTypeTest.testRecordTypeLeastSuperType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796650</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionTypeRepresentation</span><a href="JSTypeTest_testFunctionTypeRepresentation_30p.html">JSTypeTest.testFunctionTypeRepresentation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797096</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testConstructorWithArgSubtypeChain</span><a href="JSTypeTest_testConstructorWithArgSubtypeChain_bjo.html">JSTypeTest.testConstructorWithArgSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667778</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGoogBar</span><a href="JSTypeTest_testGoogBar_47d.html">JSTypeTest.testGoogBar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668199</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testMixedParameterizedTypeChain</span><a href="JSTypeTest_testMixedParameterizedTypeChain_769.html">JSTypeTest.testMixedParameterizedTypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796307</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedTypeHasOwnProperty</span><a href="JSTypeTest_testNamedTypeHasOwnProperty_che.html">JSTypeTest.testNamedTypeHasOwnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668367</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRegisterPropertyMemoization</span><a href="JSTypeTest_testRegisterPropertyMemoization_bye.html">JSTypeTest.testRegisterPropertyMemoization</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667352</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedTypeRelations</span><a href="JSTypeTest_testParameterizedTypeRelations_8pw.html">JSTypeTest.testParameterizedTypeRelations</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797460</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testConstructorSubtypeChain</span><a href="JSTypeTest_testConstructorSubtypeChain_1nu.html">JSTypeTest.testConstructorSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668954</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCanCastTo</span><a href="JSTypeTest_testCanCastTo_942.html">JSTypeTest.testCanCastTo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797453</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedTypeEquals2</span><a href="JSTypeTest_testNamedTypeEquals2_a05.html">JSTypeTest.testNamedTypeEquals2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668597</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedTypeRelations</span><a href="JSTypeTest_testParameterizedTypeRelations_6w5.html">JSTypeTest.testParameterizedTypeRelations</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668046</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality4</span><a href="JSTypeTest_testGetTypesUnderEquality4_aaa.html">JSTypeTest.testGetTypesUnderEquality4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796619</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionType</span><a href="JSTypeTest_testFunctionType_dt3.html">JSTypeTest.testFunctionType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797393</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNullType</span><a href="JSTypeTest_testNullType_b5c.html">JSTypeTest.testNullType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797413</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingSimpleTypes</span><a href="JSTypeTest_testSubtypingSimpleTypes_6l2.html">JSTypeTest.testSubtypingSimpleTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667819</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeSubtyping</span><a href="JSTypeTest_testRecordTypeSubtyping_3gr.html">JSTypeTest.testRecordTypeSubtyping</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668226</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNoObjectType</span><a href="JSTypeTest_testNoObjectType_2oi.html">JSTypeTest.testNoObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668076</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType6</span><a href="JSTypeTest_testRecordTypeGreatestSubType6_7gj.html">JSTypeTest.testRecordTypeGreatestSubType6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797165</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType8</span><a href="JSTypeTest_testRecordTypeGreatestSubType8_38l.html">JSTypeTest.testRecordTypeGreatestSubType8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667919</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBooleanObjectType</span><a href="JSTypeTest_testBooleanObjectType_5mv.html">JSTypeTest.testBooleanObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668498</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testProxiedFunctionTypeRelationships</span><a href="JSTypeTest_testProxiedFunctionTypeRelationships_1hj.html">JSTypeTest.testProxiedFunctionTypeRelationships</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796444</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testHasOwnProperty</span><a href="JSTypeTest_testHasOwnProperty_qi.html">JSTypeTest.testHasOwnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668755</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNullableNamedTypeChain</span><a href="JSTypeTest_testNullableNamedTypeChain_8sr.html">JSTypeTest.testNullableNamedTypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668626</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.075</span>0.075</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectType</span><a href="JSTypeTest_testObjectType_486.html">JSTypeTest.testObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668482</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionType</span><a href="JSTypeTest_testFunctionType_acp.html">JSTypeTest.testFunctionType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668590</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testImplementingType</span><a href="JSTypeTest_testImplementingType_evy.html">JSTypeTest.testImplementingType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796276</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBug904123</span><a href="JSTypeTest_testBug904123_2k2.html">JSTypeTest.testBug904123</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796637</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality3</span><a href="JSTypeTest_testGetTypesUnderInequality3_7vd.html">JSTypeTest.testGetTypesUnderInequality3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668116</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testInterfaceInstanceSubtypeChain</span><a href="JSTypeTest_testInterfaceInstanceSubtypeChain_9je.html">JSTypeTest.testInterfaceInstanceSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667972</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordSubtypeChain</span><a href="JSTypeTest_testRecordSubtypeChain_4t.html">JSTypeTest.testRecordSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797204</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionSubtypeChain</span><a href="JSTypeTest_testFunctionSubtypeChain_6im.html">JSTypeTest.testFunctionSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668706</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testApplyOfDateMethod</span><a href="JSTypeTest_testApplyOfDateMethod_k5.html">JSTypeTest.testApplyOfDateMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668764</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRegExpType</span><a href="JSTypeTest_testRegExpType_e76.html">JSTypeTest.testRegExpType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797470</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeSubtypingWithInferredProperties</span><a href="JSTypeTest_testRecordTypeSubtypingWithInferredProperties_dtd.html">JSTypeTest.testRecordTypeSubtypingWithInferredProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797338</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality3</span><a href="JSTypeTest_testGetTypesUnderEquality3_a42.html">JSTypeTest.testGetTypesUnderEquality3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668011</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedObjectChain</span><a href="JSTypeTest_testParameterizedObjectChain_1zo.html">JSTypeTest.testParameterizedObjectChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796298</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testReflexivityOfLeastSupertype</span><a href="JSTypeTest_testReflexivityOfLeastSupertype_8e9.html">JSTypeTest.testReflexivityOfLeastSupertype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796822</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality6</span><a href="JSTypeTest_testGetTypesUnderEquality6_2w9.html">JSTypeTest.testGetTypesUnderEquality6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668031</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTestForEquality</span><a href="JSTypeTest_testTestForEquality_1bf.html">JSTypeTest.testTestForEquality</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668620</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateAnonymousObjectType</span><a href="JSTypeTest_testCreateAnonymousObjectType_87d.html">JSTypeTest.testCreateAnonymousObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796288</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testAllType</span><a href="JSTypeTest_testAllType_61.html">JSTypeTest.testAllType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667811</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeSubtypingWithInferredProperties</span><a href="JSTypeTest_testRecordTypeSubtypingWithInferredProperties_9.html">JSTypeTest.testRecordTypeSubtypingWithInferredProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668580</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedObjectChain</span><a href="JSTypeTest_testParameterizedObjectChain_9qe.html">JSTypeTest.testParameterizedObjectChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668053</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType5</span><a href="JSTypeTest_testRecordTypeGreatestSubType5_32t.html">JSTypeTest.testRecordTypeGreatestSubType5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797161</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testDefineProperties</span><a href="JSTypeTest_testDefineProperties_5qk.html">JSTypeTest.testDefineProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669085</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testParameterizedTypeSubtypes</span><a href="JSTypeTest_testParameterizedTypeSubtypes_c85.html">JSTypeTest.testParameterizedTypeSubtypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796321</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testForwardDeclaredNamedType</span><a href="JSTypeTest_testForwardDeclaredNamedType_2f6.html">JSTypeTest.testForwardDeclaredNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667730</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testUniversalConstructorType</span><a href="JSTypeTest_testUniversalConstructorType_av6.html">JSTypeTest.testUniversalConstructorType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668770</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testObjectTypePropertiesCountWithShadowing</span><a href="JSTypeTest_testObjectTypePropertiesCountWithShadowing_4om.html">JSTypeTest.testObjectTypePropertiesCountWithShadowing</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668767</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBooleanValueType</span><a href="JSTypeTest_testBooleanValueType_53k.html">JSTypeTest.testBooleanValueType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668815</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testForwardDeclaredNamedType</span><a href="JSTypeTest_testForwardDeclaredNamedType_8cs.html">JSTypeTest.testForwardDeclaredNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797325</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionVariableArgsOneOnly</span><a href="JSTypeTest_testSubtypingFunctionVariableArgsOneOnly_9jp.html">JSTypeTest.testSubtypingFunctionVariableArgsOneOnly</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667762</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testConstructorSubtypeChain</span><a href="JSTypeTest_testConstructorSubtypeChain_d8a.html">JSTypeTest.testConstructorSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796545</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetAndSetJSDocInfoWithNamedType</span><a href="JSTypeTest_testGetAndSetJSDocInfoWithNamedType_4vy.html">JSTypeTest.testGetAndSetJSDocInfoWithNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668566</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testTheObjectType</span><a href="JSTypeTest_testTheObjectType_697.html">JSTypeTest.testTheObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668492</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType3</span><a href="JSTypeTest_testRecordTypeGreatestSubType3_86t.html">JSTypeTest.testRecordTypeGreatestSubType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797154</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLeastSupertypeUnresolvedNamedType</span><a href="JSTypeTest_testLeastSupertypeUnresolvedNamedType_7or.html">JSTypeTest.testLeastSupertypeUnresolvedNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797108</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality4</span><a href="JSTypeTest_testGetTypesUnderEquality4_2dk.html">JSTypeTest.testGetTypesUnderEquality4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668018</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCanTestForEqualityWithCornerCases</span><a href="JSTypeTest_testCanTestForEqualityWithCornerCases_56c.html">JSTypeTest.testCanTestForEqualityWithCornerCases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668171</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality5</span><a href="JSTypeTest_testGetTypesUnderEquality5_2b2.html">JSTypeTest.testGetTypesUnderEquality5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668025</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionMultipleFixedArgs</span><a href="JSTypeTest_testSubtypingFunctionMultipleFixedArgs_7zr.html">JSTypeTest.testSubtypingFunctionMultipleFixedArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796345</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testEnumElementType</span><a href="JSTypeTest_testEnumElementType_354.html">JSTypeTest.testEnumElementType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796572</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType5</span><a href="JSTypeTest_testRecordTypeGreatestSubType5_4b4.html">JSTypeTest.testRecordTypeGreatestSubType5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667896</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGoogBar</span><a href="JSTypeTest_testGoogBar_6pr.html">JSTypeTest.testGoogBar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796586</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testHasOwnProperty</span><a href="JSTypeTest_testHasOwnProperty_bge.html">JSTypeTest.testHasOwnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796640</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionSubTypeRelationships</span><a href="JSTypeTest_testFunctionSubTypeRelationships_38s.html">JSTypeTest.testFunctionSubTypeRelationships</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796448</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality6</span><a href="JSTypeTest_testGetTypesUnderEquality6_6b2.html">JSTypeTest.testGetTypesUnderEquality6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796627</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testCreateObjectType</span><a href="JSTypeTest_testCreateObjectType_8p3.html">JSTypeTest.testCreateObjectType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669077</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testNamedTypeEquals</span><a href="JSTypeTest_testNamedTypeEquals_eyf.html">JSTypeTest.testNamedTypeEquals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668177</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testVoidType</span><a href="JSTypeTest_testVoidType_e7.html">JSTypeTest.testVoidType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796465</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingFunctionVariableArgsOneOnly</span><a href="JSTypeTest_testSubtypingFunctionVariableArgsOneOnly_f2b.html">JSTypeTest.testSubtypingFunctionVariableArgsOneOnly</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796351</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGreatestSubtypeSimpleTypes</span><a href="JSTypeTest_testGreatestSubtypeSimpleTypes_bci.html">JSTypeTest.testGreatestSubtypeSimpleTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667828</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderEquality2</span><a href="JSTypeTest_testGetTypesUnderEquality2_120.html">JSTypeTest.testGetTypesUnderEquality2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668003</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSymmetryOfTestForEquality</span><a href="JSTypeTest_testSymmetryOfTestForEquality_65m.html">JSTypeTest.testSymmetryOfTestForEquality</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668978</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.069</span>0.069</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBooleanValueType</span><a href="JSTypeTest_testBooleanValueType_1fd.html">JSTypeTest.testBooleanValueType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796563</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLateSetPrototypeBasedOn</span><a href="JSTypeTest_testLateSetPrototypeBasedOn_9nc.html">JSTypeTest.testLateSetPrototypeBasedOn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796604</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGetTypesUnderInequality4</span><a href="JSTypeTest_testGetTypesUnderInequality4_ng.html">JSTypeTest.testGetTypesUnderInequality4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797404</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testSubtypingDerivedExtendsNamedBaseType</span><a href="JSTypeTest_testSubtypingDerivedExtendsNamedBaseType_a15.html">JSTypeTest.testSubtypingDerivedExtendsNamedBaseType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697669089</span>2 Jan 15:14:29</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeGreatestSubType1</span><a href="JSTypeTest_testRecordTypeGreatestSubType1_9pn.html">JSTypeTest.testRecordTypeGreatestSubType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697797425</span>2 Jan 15:16:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRegisterPropertyMemoization</span><a href="JSTypeTest_testRegisterPropertyMemoization_c7j.html">JSTypeTest.testRegisterPropertyMemoization</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796415</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testRecordTypeLeastSuperType4</span><a href="JSTypeTest_testRecordTypeLeastSuperType4_10e.html">JSTypeTest.testRecordTypeLeastSuperType4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668271</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testFunctionTypeRepresentation</span><a href="JSTypeTest_testFunctionTypeRepresentation_ay0.html">JSTypeTest.testFunctionTypeRepresentation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668193</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testGoogBarSubtypeChain</span><a href="JSTypeTest_testGoogBarSubtypeChain_agz.html">JSTypeTest.testGoogBarSubtypeChain</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697796558</span>2 Jan 15:16:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testBug903110</span><a href="JSTypeTest_testBug903110_4l7.html">JSTypeTest.testBug903110</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697668399</span>2 Jan 15:14:28</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JSTypeTest.testLeastSupertypeUnresolvedNamedType3</span><a href="JSTypeTest_testLeastSupertypeUnresolvedNamedType3_4j2.html">JSTypeTest.testLeastSupertypeUnresolvedNamedType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697667934</span>2 Jan 15:14:27</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

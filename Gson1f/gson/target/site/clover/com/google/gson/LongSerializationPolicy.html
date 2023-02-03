@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>Gson 1.6</title>
+    </head>
+
+<body  onload="onLoad('Gson 1.6: com.google.gson.LongSerializationPolicy.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://code.google.com/p/google-gson/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://code.google.com/p/google-gson/" target="_top">
+                                        Gson 1.6
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="com.google.gson">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Thu Jan 5 2023 21:35:55 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.google.gson</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File LongSerializationPolicy.java
+    </h1>
+
+
+
+
+
+
+
+
+                
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../img/srcFileCovDistChart10.png" alt="../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="36 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,45,98,65" title="13 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,45,89,65" title="13 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,62,80,66" title="3 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,63,71,66" title="2 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="1 file has 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,62,54,66" title="3 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,65,45,66" title="1 file has 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,65,36,66" title="1 file has 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="0 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,60,18,66" title="4 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">74</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">25</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">74</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">25</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="LongSerializationPolicy">
+        <span><a href="#27" title="LongSerializationPolicy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy', '27');">LongSerializationPolicy</a></span>
+</td>
+<td>27<a name="sl-27"></a></td>
+    <td class="">2</td>
+    <td class="">0%</td>
+    <td class="">2</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-LongSerializationPolicy" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                               <tr> <td id="LongSerializationPolicy.Strategy">
+        <span><a href="#59" title="LongSerializationPolicy.Strategy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy_Strategy', '59');">LongSerializationPolicy.Strategy</a></span>
+</td>
+<td>59<a name="sl-59"></a></td>
+    <td class="">0</td>
+    <td class=""> - </td>
+    <td class="">0</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:200px;"></div></div></div></td>
+    <td><button data-dialog-id="dialog-LongSerializationPolicy_Strategy" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                               <tr> <td id="LongSerializationPolicy.DefaultStrategy">
+        <span><a href="#63" title="LongSerializationPolicy.DefaultStrategy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy_DefaultStrategy', '63');">LongSerializationPolicy.DefaultStrategy</a></span>
+</td>
+<td>63<a name="sl-63"></a></td>
+    <td class="">1</td>
+    <td class="">0%</td>
+    <td class="">1</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-LongSerializationPolicy_DefaultStrategy" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                               <tr> <td id="LongSerializationPolicy.StringStrategy">
+        <span><a href="#69" title="LongSerializationPolicy.StringStrategy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy_StringStrategy', '69');">LongSerializationPolicy.StringStrategy</a></span>
+</td>
+<td>69<a name="sl-69"></a></td>
+    <td class="">1</td>
+    <td class="">0%</td>
+    <td class="">1</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-LongSerializationPolicy_StringStrategy" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-LongSerializationPolicy" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class LongSerializationPolicy</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-LongSerializationPolicy-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-LongSerializationPolicy-methods-body', 'dialog-LongSerializationPolicy-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="LongSerializationPolicy">
+    Class<br/>    <span><a href="#27" title="LongSerializationPolicy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy', '27');">LongSerializationPolicy</a></span>
+</th>
+<th>Line #<br/>27<a name="sl-27"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>2</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>2</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-LongSerializationPolicy-methods-body">
+                                                                                                            <tr id="LongSerializationPolicy-1">
+<td id="summary-45-3">
+ <span class="sortValue">LongSerializationPolicy(Strategy)</span>
+&#160;&#160;<a href="?line=29#45" title="LongSerializationPolicy(Strategy)" name="sl-45" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy', '45');">LongSerializationPolicy(Strategy)</a>
+</td>
+<td align="right"><span class="sortValue">45</span>45</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="LongSerializationPolicy-2">
+<td id="summary-55-3">
+ <span class="sortValue">serialize(Long)&#160;:&#160;JsonElement</span>
+&#160;&#160;<a href="?line=29#55" title="serialize(Long)&#160;:&#160;JsonElement" name="sl-55" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy', '55');">serialize(Long)&#160;:&#160;JsonElement</a>
+</td>
+<td align="right"><span class="sortValue">55</span>55</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-LongSerializationPolicy">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+        <section role="dialog" id="dialog-LongSerializationPolicy_Strategy" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class LongSerializationPolicy.Strategy</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-LongSerializationPolicy.Strategy-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-LongSerializationPolicy.Strategy-methods-body', 'dialog-LongSerializationPolicy.Strategy-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                        
+                    <thead>
+                                                 <tr> <th id="LongSerializationPolicy.Strategy">
+    Class<br/>    <span><a href="#59" title="LongSerializationPolicy.Strategy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy_Strategy', '59');">LongSerializationPolicy.Strategy</a></span>
+</th>
+<th>Line #<br/>59<a name="sl-59"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>0</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/> - </th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>0</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:200px;"></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-LongSerializationPolicy.Strategy-methods-body">
+                                                                     </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-LongSerializationPolicy_Strategy">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+        <section role="dialog" id="dialog-LongSerializationPolicy_DefaultStrategy" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class LongSerializationPolicy.DefaultStrategy</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-LongSerializationPolicy.DefaultStrategy-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-LongSerializationPolicy.DefaultStrategy-methods-body', 'dialog-LongSerializationPolicy.DefaultStrategy-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                            
+                    <thead>
+                                                 <tr> <th id="LongSerializationPolicy.DefaultStrategy">
+    Class<br/>    <span><a href="#63" title="LongSerializationPolicy.DefaultStrategy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy_DefaultStrategy', '63');">LongSerializationPolicy.DefaultStrategy</a></span>
+</th>
+<th>Line #<br/>63<a name="sl-63"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>1</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>1</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-LongSerializationPolicy.DefaultStrategy-methods-body">
+                                                                                                            <tr id="LongSerializationPolicy.DefaultStrategy-1">
+<td id="summary-64-5">
+ <span class="sortValue">serialize(Long)&#160;:&#160;JsonElement</span>
+&#160;&#160;<a href="?line=29#64" title="serialize(Long)&#160;:&#160;JsonElement" name="sl-64" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy.DefaultStrategy', '64');">serialize(Long)&#160;:&#160;JsonElement</a>
+</td>
+<td align="right"><span class="sortValue">64</span>64</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-LongSerializationPolicy_DefaultStrategy">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+        <section role="dialog" id="dialog-LongSerializationPolicy_StringStrategy" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class LongSerializationPolicy.StringStrategy</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-LongSerializationPolicy.StringStrategy-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-LongSerializationPolicy.StringStrategy-methods-body', 'dialog-LongSerializationPolicy.StringStrategy-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                            
+                    <thead>
+                                                 <tr> <th id="LongSerializationPolicy.StringStrategy">
+    Class<br/>    <span><a href="#69" title="LongSerializationPolicy.StringStrategy" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy_StringStrategy', '69');">LongSerializationPolicy.StringStrategy</a></span>
+</th>
+<th>Line #<br/>69<a name="sl-69"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>1</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>1</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-LongSerializationPolicy.StringStrategy-methods-body">
+                                                                                                            <tr id="LongSerializationPolicy.StringStrategy-1">
+<td id="summary-70-5">
+ <span class="sortValue">serialize(Long)&#160;:&#160;JsonElement</span>
+&#160;&#160;<a href="?line=29#70" title="serialize(Long)&#160;:&#160;JsonElement" name="sl-70" onclick="closeDialogAndScrollTo('dialog-LongSerializationPolicy.StringStrategy', '70');">serialize(Long)&#160;:&#160;JsonElement</a>
+</td>
+<td align="right"><span class="sortValue">70</span>70</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-LongSerializationPolicy_StringStrategy">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 39 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-147">
+<td><a name="testA-147"></a><input type="checkbox" id="cb-147" value="147" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/LongSerializationPolicyTest_testDefaultLongSerialization_43.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-147">  <span class="sortValue">com.google.gson.LongSerializationPolicyTest.testDefaultLongSerialization</span><a href="../../../com/google/gson/LongSerializationPolicyTest_testDefaultLongSerialization_43.html" title="View Test Summary Page">com.google.gson.LongSerializationPolicyTest.testDefaultLongSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/LongSerializationPolicyTest.html?line=29#src-29" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/LongSerializationPolicyTest_testDefaultLongSerialization_43.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18">
+<td><a name="testA-18"></a><input type="checkbox" id="cb-18" value="18" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ArrayTest_testArrayOfPrimitivesAsObjectsSerialization_i.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-18">  <span class="sortValue">com.google.gson.functional.ArrayTest.testArrayOfPrimitivesAsObjectsSerialization</span><a href="../../../com/google/gson/functional/ArrayTest_testArrayOfPrimitivesAsObjectsSerialization_i.html" title="View Test Summary Page">com.google.gson.functional.ArrayTest.testArrayOfPrimitivesAsObjectsSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ArrayTest.html?line=200#src-200" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ArrayTest_testArrayOfPrimitivesAsObjectsSerialization_i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3">
+<td><a name="testA-3"></a><input type="checkbox" id="cb-3" value="3" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testArrayOfObjectsSerialization_3.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-3">  <span class="sortValue">com.google.gson.functional.ObjectTest.testArrayOfObjectsSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testArrayOfObjectsSerialization_3.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testArrayOfObjectsSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=166#src-166" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testArrayOfObjectsSerialization_3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-425">
+<td><a name="testA-425"></a><input type="checkbox" id="cb-425" value="425" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ReadersWritersTest_testReadWriteTwoObjects_bt.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-425">  <span class="sortValue">com.google.gson.functional.ReadersWritersTest.testReadWriteTwoObjects</span><a href="../../../com/google/gson/functional/ReadersWritersTest_testReadWriteTwoObjects_bt.html" title="View Test Summary Page">com.google.gson.functional.ReadersWritersTest.testReadWriteTwoObjects</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ReadersWritersTest.html?line=101#src-101" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ReadersWritersTest_testReadWriteTwoObjects_bt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-208">
+<td><a name="testA-208"></a><input type="checkbox" id="cb-208" value="208" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testArrayOfArraysSerialization_5s.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-208">  <span class="sortValue">com.google.gson.functional.ObjectTest.testArrayOfArraysSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testArrayOfArraysSerialization_5s.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testArrayOfArraysSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=177#src-177" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testArrayOfArraysSerialization_5s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-616">
+<td><a name="testA-616"></a><input type="checkbox" id="cb-616" value="616" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testNullFieldsSerialization_h4.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-616">  <span class="sortValue">com.google.gson.functional.ObjectTest.testNullFieldsSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testNullFieldsSerialization_h4.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testNullFieldsSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=154#src-154" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testNullFieldsSerialization_h4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-687">
+<td><a name="testA-687"></a><input type="checkbox" id="cb-687" value="687" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/SecurityTest_testNonExecutableJsonSerialization_j3.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-687">  <span class="sortValue">com.google.gson.functional.SecurityTest.testNonExecutableJsonSerialization</span><a href="../../../com/google/gson/functional/SecurityTest_testNonExecutableJsonSerialization_j3.html" title="View Test Summary Page">com.google.gson.functional.SecurityTest.testNonExecutableJsonSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/SecurityTest.html?line=44#src-44" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/SecurityTest_testNonExecutableJsonSerialization_j3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-718">
+<td><a name="testA-718"></a><input type="checkbox" id="cb-718" value="718" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrimitiveTest_testPrimitiveLongAutoboxedSerialization_jy.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-718">  <span class="sortValue">com.google.gson.functional.PrimitiveTest.testPrimitiveLongAutoboxedSerialization</span><a href="../../../com/google/gson/functional/PrimitiveTest_testPrimitiveLongAutoboxedSerialization_jy.html" title="View Test Summary Page">com.google.gson.functional.PrimitiveTest.testPrimitiveLongAutoboxedSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrimitiveTest.html?line=83#src-83" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrimitiveTest_testPrimitiveLongAutoboxedSerialization_jy.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-682">
+<td><a name="testA-682"></a><input type="checkbox" id="cb-682" value="682" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testClassWithTransientFieldsSerialization_iy.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-682">  <span class="sortValue">com.google.gson.functional.ObjectTest.testClassWithTransientFieldsSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testClassWithTransientFieldsSerialization_iy.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testClassWithTransientFieldsSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=95#src-95" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testClassWithTransientFieldsSerialization_iy.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-658">
+<td><a name="testA-658"></a><input type="checkbox" id="cb-658" value="658" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/CollectionTest_testWildcardCollectionField_ia.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-658">  <span class="sortValue">com.google.gson.functional.CollectionTest.testWildcardCollectionField</span><a href="../../../com/google/gson/functional/CollectionTest_testWildcardCollectionField_ia.html" title="View Test Summary Page">com.google.gson.functional.CollectionTest.testWildcardCollectionField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/CollectionTest.html?line=260#src-260" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/CollectionTest_testWildcardCollectionField_ia.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-489">
+<td><a name="testA-489"></a><input type="checkbox" id="cb-489" value="489" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/JsonTreeTest_testJsonTreeToString_dl.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-489">  <span class="sortValue">com.google.gson.functional.JsonTreeTest.testJsonTreeToString</span><a href="../../../com/google/gson/functional/JsonTreeTest_testJsonTreeToString_dl.html" title="View Test Summary Page">com.google.gson.functional.JsonTreeTest.testJsonTreeToString</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/JsonTreeTest.html?line=57#src-57" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/JsonTreeTest_testJsonTreeToString_dl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-400">
+<td><a name="testA-400"></a><input type="checkbox" id="cb-400" value="400" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ArrayTest_testObjectArrayWithNonPrimitivesSerialization_b4.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-400">  <span class="sortValue">com.google.gson.functional.ArrayTest.testObjectArrayWithNonPrimitivesSerialization</span><a href="../../../com/google/gson/functional/ArrayTest_testObjectArrayWithNonPrimitivesSerialization_b4.html" title="View Test Summary Page">com.google.gson.functional.ArrayTest.testObjectArrayWithNonPrimitivesSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ArrayTest.html?line=235#src-235" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ArrayTest_testObjectArrayWithNonPrimitivesSerialization_b4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-440">
+<td><a name="testA-440"></a><input type="checkbox" id="cb-440" value="440" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/CollectionTest_testCollectionOfBagOfPrimitivesSerialization_c8.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-440">  <span class="sortValue">com.google.gson.functional.CollectionTest.testCollectionOfBagOfPrimitivesSerialization</span><a href="../../../com/google/gson/functional/CollectionTest_testCollectionOfBagOfPrimitivesSerialization_c8.html" title="View Test Summary Page">com.google.gson.functional.CollectionTest.testCollectionOfBagOfPrimitivesSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/CollectionTest.html?line=175#src-175" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/CollectionTest_testCollectionOfBagOfPrimitivesSerialization_c8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10">
+<td><a name="testA-10"></a><input type="checkbox" id="cb-10" value="10" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrimitiveTest_testNumberSerialization_a.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-10">  <span class="sortValue">com.google.gson.functional.PrimitiveTest.testNumberSerialization</span><a href="../../../com/google/gson/functional/PrimitiveTest_testNumberSerialization_a.html" title="View Test Summary Page">com.google.gson.functional.PrimitiveTest.testNumberSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrimitiveTest.html?line=145#src-145" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrimitiveTest_testNumberSerialization_a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-309">
+<td><a name="testA-309"></a><input type="checkbox" id="cb-309" value="309" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testBagOfPrimitiveWrappersSerialization_8l.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-309">  <span class="sortValue">com.google.gson.functional.ObjectTest.testBagOfPrimitiveWrappersSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testBagOfPrimitiveWrappersSerialization_8l.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testBagOfPrimitiveWrappersSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=83#src-83" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testBagOfPrimitiveWrappersSerialization_8l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-639">
+<td><a name="testA-639"></a><input type="checkbox" id="cb-639" value="639" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrimitiveTest_testLongAsStringSerialization_hr.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-639">  <span class="sortValue">com.google.gson.functional.PrimitiveTest.testLongAsStringSerialization</span><a href="../../../com/google/gson/functional/PrimitiveTest_testLongAsStringSerialization_hr.html" title="View Test Summary Page">com.google.gson.functional.PrimitiveTest.testLongAsStringSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrimitiveTest.html?line=541#src-541" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrimitiveTest_testLongAsStringSerialization_hr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-123">
+<td><a name="testA-123"></a><input type="checkbox" id="cb-123" value="123" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/LongSerializationPolicyTest_testStringLongSerialization_3f.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-123">  <span class="sortValue">com.google.gson.LongSerializationPolicyTest.testStringLongSerialization</span><a href="../../../com/google/gson/LongSerializationPolicyTest_testStringLongSerialization_3f.html" title="View Test Summary Page">com.google.gson.LongSerializationPolicyTest.testStringLongSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/LongSerializationPolicyTest.html?line=39#src-39" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/LongSerializationPolicyTest_testStringLongSerialization_3f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-690">
+<td><a name="testA-690"></a><input type="checkbox" id="cb-690" value="690" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrimitiveTest_testReallyLongValuesSerialization_j6.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-690">  <span class="sortValue">com.google.gson.functional.PrimitiveTest.testReallyLongValuesSerialization</span><a href="../../../com/google/gson/functional/PrimitiveTest_testReallyLongValuesSerialization_j6.html" title="View Test Summary Page">com.google.gson.functional.PrimitiveTest.testReallyLongValuesSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrimitiveTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrimitiveTest_testReallyLongValuesSerialization_j6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-363">
+<td><a name="testA-363"></a><input type="checkbox" id="cb-363" value="363" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testTypesWithMultipleParametersSerialization_a3.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-363">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testTypesWithMultipleParametersSerialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testTypesWithMultipleParametersSerialization_a3.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testTypesWithMultipleParametersSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=75#src-75" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testTypesWithMultipleParametersSerialization_a3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-275">
+<td><a name="testA-275"></a><input type="checkbox" id="cb-275" value="275" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrettyPrintingTest_testPrettyPrintArrayOfObjects_7n.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-275">  <span class="sortValue">com.google.gson.functional.PrettyPrintingTest.testPrettyPrintArrayOfObjects</span><a href="../../../com/google/gson/functional/PrettyPrintingTest_testPrettyPrintArrayOfObjects_7n.html" title="View Test Summary Page">com.google.gson.functional.PrettyPrintingTest.testPrettyPrintArrayOfObjects</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrettyPrintingTest.html?line=64#src-64" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrettyPrintingTest_testPrettyPrintArrayOfObjects_7n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-352">
+<td><a name="testA-352"></a><input type="checkbox" id="cb-352" value="352" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/VersioningTest_testVersionedGsonWithUnversionedClassesSerialization_9s.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-352">  <span class="sortValue">com.google.gson.functional.VersioningTest.testVersionedGsonWithUnversionedClassesSerialization</span><a href="../../../com/google/gson/functional/VersioningTest_testVersionedGsonWithUnversionedClassesSerialization_9s.html" title="View Test Summary Page">com.google.gson.functional.VersioningTest.testVersionedGsonWithUnversionedClassesSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/VersioningTest.html?line=100#src-100" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/VersioningTest_testVersionedGsonWithUnversionedClassesSerialization_9s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-471">
+<td><a name="testA-471"></a><input type="checkbox" id="cb-471" value="471" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/EscapingTest_testGsonAcceptsEscapedAndNonEscapedJsonDeserialization_d3.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-471">  <span class="sortValue">com.google.gson.functional.EscapingTest.testGsonAcceptsEscapedAndNonEscapedJsonDeserialization</span><a href="../../../com/google/gson/functional/EscapingTest_testGsonAcceptsEscapedAndNonEscapedJsonDeserialization_d3.html" title="View Test Summary Page">com.google.gson.functional.EscapingTest.testGsonAcceptsEscapedAndNonEscapedJsonDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/EscapingTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/EscapingTest_testGsonAcceptsEscapedAndNonEscapedJsonDeserialization_d3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-389">
+<td><a name="testA-389"></a><input type="checkbox" id="cb-389" value="389" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/JsonTreeTest_testToJsonTree_at.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-389">  <span class="sortValue">com.google.gson.functional.JsonTreeTest.testToJsonTree</span><a href="../../../com/google/gson/functional/JsonTreeTest_testToJsonTree_at.html" title="View Test Summary Page">com.google.gson.functional.JsonTreeTest.testToJsonTree</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/JsonTreeTest.html?line=31#src-31" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/JsonTreeTest_testToJsonTree_at.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-432">
+<td><a name="testA-432"></a><input type="checkbox" id="cb-432" value="432" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/UncategorizedTest_testStaticFieldsAreNotSerialized_c0.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-432">  <span class="sortValue">com.google.gson.functional.UncategorizedTest.testStaticFieldsAreNotSerialized</span><a href="../../../com/google/gson/functional/UncategorizedTest_testStaticFieldsAreNotSerialized_c0.html" title="View Test Summary Page">com.google.gson.functional.UncategorizedTest.testStaticFieldsAreNotSerialized</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/UncategorizedTest.html?line=67#src-67" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/UncategorizedTest_testStaticFieldsAreNotSerialized_c0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-625">
+<td><a name="testA-625"></a><input type="checkbox" id="cb-625" value="625" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrimitiveTest_testPrimitiveLongAutoboxedInASingleElementArraySerialization_hd.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-625">  <span class="sortValue">com.google.gson.functional.PrimitiveTest.testPrimitiveLongAutoboxedInASingleElementArraySerialization</span><a href="../../../com/google/gson/functional/PrimitiveTest_testPrimitiveLongAutoboxedInASingleElementArraySerialization_hd.html" title="View Test Summary Page">com.google.gson.functional.PrimitiveTest.testPrimitiveLongAutoboxedInASingleElementArraySerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrimitiveTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrimitiveTest_testPrimitiveLongAutoboxedInASingleElementArraySerialization_hd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-158">
+<td><a name="testA-158"></a><input type="checkbox" id="cb-158" value="158" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrintFormattingTest_testCompactFormattingLeavesNoWhiteSpace_4e.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-158">  <span class="sortValue">com.google.gson.functional.PrintFormattingTest.testCompactFormattingLeavesNoWhiteSpace</span><a href="../../../com/google/gson/functional/PrintFormattingTest_testCompactFormattingLeavesNoWhiteSpace_4e.html" title="View Test Summary Page">com.google.gson.functional.PrintFormattingTest.testCompactFormattingLeavesNoWhiteSpace</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrintFormattingTest.html?line=48#src-48" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrintFormattingTest_testCompactFormattingLeavesNoWhiteSpace_4e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-301">
+<td><a name="testA-301"></a><input type="checkbox" id="cb-301" value="301" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/JsonParserTest_testReadWriteTwoObjects_8d.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-301">  <span class="sortValue">com.google.gson.JsonParserTest.testReadWriteTwoObjects</span><a href="../../../com/google/gson/JsonParserTest_testReadWriteTwoObjects_8d.html" title="View Test Summary Page">com.google.gson.JsonParserTest.testReadWriteTwoObjects</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/JsonParserTest.html?line=79#src-79" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/JsonParserTest_testReadWriteTwoObjects_8d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-670">
+<td><a name="testA-670"></a><input type="checkbox" id="cb-670" value="670" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/EscapingTest_testEscapingObjectFields_im.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-670">  <span class="sortValue">com.google.gson.functional.EscapingTest.testEscapingObjectFields</span><a href="../../../com/google/gson/functional/EscapingTest_testEscapingObjectFields_im.html" title="View Test Summary Page">com.google.gson.functional.EscapingTest.testEscapingObjectFields</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/EscapingTest.html?line=61#src-61" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/EscapingTest_testEscapingObjectFields_im.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-589">
+<td><a name="testA-589"></a><input type="checkbox" id="cb-589" value="589" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategySerialization_gd.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-589">  <span class="sortValue">com.google.gson.functional.ExclusionStrategyFunctionalTest.testExclusionStrategySerialization</span><a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategySerialization_gd.html" title="View Test Summary Page">com.google.gson.functional.ExclusionStrategyFunctionalTest.testExclusionStrategySerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategySerialization_gd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-613">
+<td><a name="testA-613"></a><input type="checkbox" id="cb-613" value="613" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrettyPrintingTest_testPrettyPrintList_h1.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-613">  <span class="sortValue">com.google.gson.functional.PrettyPrintingTest.testPrettyPrintList</span><a href="../../../com/google/gson/functional/PrettyPrintingTest_testPrettyPrintList_h1.html" title="View Test Summary Page">com.google.gson.functional.PrettyPrintingTest.testPrettyPrintList</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrettyPrintingTest.html?line=53#src-53" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrettyPrintingTest_testPrettyPrintList_h1.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-581">
+<td><a name="testA-581"></a><input type="checkbox" id="cb-581" value="581" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testBagOfPrimitivesSerialization_g5.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-581">  <span class="sortValue">com.google.gson.functional.ObjectTest.testBagOfPrimitivesSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testBagOfPrimitivesSerialization_g5.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testBagOfPrimitivesSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=71#src-71" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testBagOfPrimitivesSerialization_g5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-131">
+<td><a name="testA-131"></a><input type="checkbox" id="cb-131" value="131" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InheritanceTest_testSubClassSerialization_3n.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-131">  <span class="sortValue">com.google.gson.functional.InheritanceTest.testSubClassSerialization</span><a href="../../../com/google/gson/functional/InheritanceTest_testSubClassSerialization_3n.html" title="View Test Summary Page">com.google.gson.functional.InheritanceTest.testSubClassSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InheritanceTest.html?line=55#src-55" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InheritanceTest_testSubClassSerialization_3n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-272">
+<td><a name="testA-272"></a><input type="checkbox" id="cb-272" value="272" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/CollectionTest_testRawCollectionSerialization_7k.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-272">  <span class="sortValue">com.google.gson.functional.CollectionTest.testRawCollectionSerialization</span><a href="../../../com/google/gson/functional/CollectionTest_testRawCollectionSerialization_7k.html" title="View Test Summary Page">com.google.gson.functional.CollectionTest.testRawCollectionSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/CollectionTest.html?line=204#src-204" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/CollectionTest_testRawCollectionSerialization_7k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-315">
+<td><a name="testA-315"></a><input type="checkbox" id="cb-315" value="315" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testNestedSerialization_8r.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-315">  <span class="sortValue">com.google.gson.functional.ObjectTest.testNestedSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testNestedSerialization_8r.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testNestedSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=126#src-126" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testNestedSerialization_8r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-57">
+<td><a name="testA-57"></a><input type="checkbox" id="cb-57" value="57" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ReadersWritersTest_testWriterForSerialization_1l.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-57">  <span class="sortValue">com.google.gson.functional.ReadersWritersTest.testWriterForSerialization</span><a href="../../../com/google/gson/functional/ReadersWritersTest_testWriterForSerialization_1l.html" title="View Test Summary Page">com.google.gson.functional.ReadersWritersTest.testWriterForSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ReadersWritersTest.html?line=48#src-48" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ReadersWritersTest_testWriterForSerialization_1l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-86">
+<td><a name="testA-86"></a><input type="checkbox" id="cb-86" value="86" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testPrimitiveArrayFieldSerialization_2e.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-86">  <span class="sortValue">com.google.gson.functional.ObjectTest.testPrimitiveArrayFieldSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testPrimitiveArrayFieldSerialization_2e.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testPrimitiveArrayFieldSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=265#src-265" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testPrimitiveArrayFieldSerialization_2e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-54">
+<td><a name="testA-54"></a><input type="checkbox" id="cb-54" value="54" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/JsonTreeTest_testToJsonTreeObjectType_1i.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-54">  <span class="sortValue">com.google.gson.functional.JsonTreeTest.testToJsonTreeObjectType</span><a href="../../../com/google/gson/functional/JsonTreeTest_testToJsonTreeObjectType_1i.html" title="View Test Summary Page">com.google.gson.functional.JsonTreeTest.testToJsonTreeObjectType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/JsonTreeTest.html?line=44#src-44" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/JsonTreeTest_testToJsonTreeObjectType_1i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-170">
+<td><a name="testA-170"></a><input type="checkbox" id="cb-170" value="170" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionSerialization_4q.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-170">  <span class="sortValue">com.google.gson.functional.InheritanceTest.testSubInterfacesOfCollectionSerialization</span><a href="../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionSerialization_4q.html" title="View Test Summary Page">com.google.gson.functional.InheritanceTest.testSubInterfacesOfCollectionSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InheritanceTest.html?line=145#src-145" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionSerialization_4q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-125">
+<td><a name="testA-125"></a><input type="checkbox" id="cb-125" value="125" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testArrayOfObjectsAsFields_3h.html';">
+<span class="sortValue">0.5</span>
+<div>
+<div title="50% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:50%"></div></div></div></td>
+<td id="tc-125">  <span class="sortValue">com.google.gson.functional.ObjectTest.testArrayOfObjectsAsFields</span><a href="../../../com/google/gson/functional/ObjectTest_testArrayOfObjectsAsFields_3h.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testArrayOfObjectsAsFields</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=188#src-188" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testArrayOfObjectsAsFields_3h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright (C) 2009 Google Inc.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="keyword">package</span> com.google.<a href="../gson/pkg-summary.html">gson</a>;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="comment"> * Defines the expected format for a {</span><span class="comment">@code long} or {</span><span class="comment">@code Long} type when its serialized.</span></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="comment"> * </span><span class="javadoc">@since</span><span class="comment"> 1.3</span></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Inderjeet Singh</span></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Joel Leitch</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="27" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-27' onclick="toggleInlineStats(this, 'inlinestats-27');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-27" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-27'), 'inlinestats-27');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 27, 'Tests that hit LongSerializationPolicy');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-27"><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">public</span> enum <a href="../../../com/google/gson/LongSerializationPolicy.html#LongSerializationPolicy">LongSerializationPolicy</a> {</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment">   * This is the &quot;default&quot; serialization policy that will output a {</span><span class="comment">@code long} object as a JSON</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment">   * number.  For example, assume an object has a long field named &quot;f&quot; then the serialized output</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="comment">   * would be:</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="comment">   * {</span><span class="comment">@code {&quot;f&quot;:123}}.</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine">  DEFAULT(<span class="keyword">new</span> DefaultStrategy()),</span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">  </span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="comment">   * Serializes a long value as a quoted string.  For example, assume an object has a long field </span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="comment">   * named &quot;f&quot; then the serialized output would be:</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="comment">   * {</span><span class="comment">@code {&quot;f&quot;:&quot;123&quot;}}.</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine">  STRING(<span class="keyword">new</span> StringStrategy());</span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine">  </span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">  <span class="keyword">private</span> <span class="keyword">final</span> Strategy strategy;</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine">  </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="45" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-45' onclick="toggleInlineStats(this, 'inlinestats-45');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-45" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-45'), 'inlinestats-45');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l45">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit LongSerializationPolicy(Strategy)');" ><span title="Line 45, Col 3: method entered 2 times." class="nolink">&#160;2</span></td>
+<td class=" methodStart  srcCell" id="id-45"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 45,47);" id="img-45" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-45" class="srcLine"><span class="nolink" title="Line 45, Col 3: method entered 2 times.">  <span class="keyword">private</span> <a href="../../../com/google/gson/LongSerializationPolicy.html#LongSerializationPolicy">LongSerializationPolicy</a>(Strategy strategy) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-45'), 45,47);" id="e45" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 5: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 5: statement executed 2 times.">    <span class="keyword">this</span>.strategy = strategy;</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"><span class="comment">   * Serialize this {</span><span class="comment">@code value} using this serialization policy.</span></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"><span class="comment">   *</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="comment">   * </span><span class="javadoc">@param</span><span class="comment"> value the long value to be serialized into a {</span><span class="javadoc">@link</span><span class="comment"> JsonElement}</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"><span class="comment">   * </span><span class="javadoc">@return</span><span class="comment"> the serialized version of {</span><span class="comment">@code value}</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="55" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-55' onclick="toggleInlineStats(this, 'inlinestats-55');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-55" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-55'), 'inlinestats-55');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit serialize(Long)&#160;:&#160;JsonElement');" ><span title="Line 55, Col 3: method entered 87 times." class="nolink">&#160;87</span></td>
+<td class=" methodStart  srcCell" id="id-55"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 55,57);" id="img-55" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 3: method entered 87 times.">  <span class="keyword">public</span> <a href="../../../com/google/gson/JsonElement.html#JsonElement">JsonElement</a> serialize(Long value) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-55'), 55,57);" id="e55" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 56, 'Tests that hit line # 56');" ><span title="Line 56, Col 5: statement executed 87 times." class="nolink">&#160;87</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="nolink" title="Line 56, Col 5: statement executed 87 times.">    <span class="keyword">return</span> strategy.serialize(value);</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine">  </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="59" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-59' onclick="toggleInlineStats(this, 'inlinestats-59');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-59" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-59'), 'inlinestats-59');return true;">
+                <td><div>
+<div title="Empty" class="barEmpty" style="min-width:40px;"></div>
+</div></td><td> - </td>
+                <td class="inlineStat">Uncovered Elements: 0 (0)</td>
+                <td class="inlineStat">Complexity: 0</td>
+                <td class="inlineStat">Complexity Density: -</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" id="id-59"><span class="spacer"></span><span id="src-59" class="srcLine">  <span class="keyword">private</span> <span class="keyword">interface</span> Strategy {</span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine">    <a href="../../../com/google/gson/JsonElement.html#JsonElement">JsonElement</a> serialize(Long value);</span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine">  </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="63" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-63' onclick="toggleInlineStats(this, 'inlinestats-63');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-63" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-63'), 'inlinestats-63');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 63, 'Tests that hit LongSerializationPolicy.DefaultStrategy');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-63"><span class="spacer"></span><span id="src-63" class="srcLine">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> DefaultStrategy <span class="keyword">implements</span> Strategy {</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="64" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-64' onclick="toggleInlineStats(this, 'inlinestats-64');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-64" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-64'), 'inlinestats-64');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit serialize(Long)&#160;:&#160;JsonElement');" ><span title="Line 64, Col 5: method entered 85 times." class="nolink">&#160;85</span></td>
+<td class=" methodStart  srcCell" id="id-64"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 64,66);" id="img-64" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 5: method entered 85 times.">    <span class="keyword">public</span> <a href="../../../com/google/gson/JsonElement.html#JsonElement">JsonElement</a> serialize(Long value) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-64'), 64,66);" id="e64" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 65, 'Tests that hit line # 65');" ><span title="Line 65, Col 7: statement executed 85 times." class="nolink">&#160;85</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"><span class="nolink" title="Line 65, Col 7: statement executed 85 times.">      <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../com/google/gson/JsonPrimitive.html#JsonPrimitive">JsonPrimitive</a>(value);</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine">  </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="69" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-69' onclick="toggleInlineStats(this, 'inlinestats-69');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-69" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-69'), 'inlinestats-69');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 69, 'Tests that hit LongSerializationPolicy.StringStrategy');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-69"><span class="spacer"></span><span id="src-69" class="srcLine">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">class</span> StringStrategy <span class="keyword">implements</span> Strategy {</span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="70" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-70' onclick="toggleInlineStats(this, 'inlinestats-70');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-70" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-70'), 'inlinestats-70');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l70">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 70, 'Tests that hit serialize(Long)&#160;:&#160;JsonElement');" ><span title="Line 70, Col 5: method entered 2 times." class="nolink">&#160;2</span></td>
+<td class=" methodStart  srcCell" id="id-70"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 70,72);" id="img-70" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-70" class="srcLine"><span class="nolink" title="Line 70, Col 5: method entered 2 times.">    <span class="keyword">public</span> <a href="../../../com/google/gson/JsonElement.html#JsonElement">JsonElement</a> serialize(Long value) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-70'), 70,72);" id="e70" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit line # 71');" ><span title="Line 71, Col 7: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 7: statement executed 2 times.">      <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../com/google/gson/JsonPrimitive.html#JsonPrimitive">JsonPrimitive</a>(String.valueOf(value));</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="LongSerializationPolicy.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 5 2023 21:36:04 MST using coverage data from Thu Jan 5 2023 21:36:02 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

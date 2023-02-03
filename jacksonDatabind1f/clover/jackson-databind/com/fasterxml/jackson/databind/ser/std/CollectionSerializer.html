@@ -1,0 +1,2275 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../../style.css');
+        @import url('../../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>jackson-databind</title>
+    </head>
+
+<body  onload="onLoad('jackson-databind: com.fasterxml.jackson.databind.ser.std.CollectionSerializer.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../../../historical.html">jackson-databind-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jackson-databind
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../../" data-package-name="com.fasterxml.jackson.databind.ser.std">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../../../dashboard.html">Project Clover database Thu Jan 5 2023 23:38:46 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.fasterxml.jackson.databind.ser.std</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File CollectionSerializer.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../../../img/srcFileCovDistChart9.png" alt="../../../../../../img/srcFileCovDistChart9.png"
+                         usemap="#srcFileCovDistChart9.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart9.png" name="srcFileCovDistChart9.png">
+<area shape="rect" coords="100,30,107,66" title="40 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,19,98,66" title="52 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,8,89,65" title="64 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,25,80,66" title="46 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,43,71,66" title="26 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,48,63,66" title="20 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,50,54,66" title="18 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,65,45,66" title="1 file has 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,64,36,66" title="3 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,65,27,66" title="2 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,36,18,66" title="34 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>13% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">24</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">50</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">158</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">119</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">22</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.44</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.25</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2.75</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">24</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">50</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">158</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">119</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">22</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.44</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.25</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2.75</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="CollectionSerializer">
+        <span><a href="#23" title="CollectionSerializer" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '23');">CollectionSerializer</a></span>
+</td>
+<td>23<a name="sl-23"></a></td>
+    <td class="">50</td>
+    <td class="">22</td>
+    <td class="">12</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.85365856</span>85.4%</div><div style="display: table-cell">
+ <div title="85.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.4%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-CollectionSerializer" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-CollectionSerializer" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class CollectionSerializer</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-CollectionSerializer-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-CollectionSerializer-methods-body', 'dialog-CollectionSerializer-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <thead>
+                                                 <tr> <th id="CollectionSerializer">
+    Class<br/>    <span><a href="#23" title="CollectionSerializer" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '23');">CollectionSerializer</a></span>
+</th>
+<th>Line #<br/>23<a name="sl-23"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>50</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>22</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>12</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.85365856</span>85.4%</div><div style="display: table-cell">
+ <div title="85.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.4%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-CollectionSerializer-methods-body">
+                                                                                                            <tr id="CollectionSerializer-1">
+<td id="summary-32-5">
+ <span class="sortValue">CollectionSerializer(JavaType,boolean,TypeSerializer,BeanProperty,JsonSerializer&lt;Object&gt;)</span>
+&#160;&#160;<a href="?line=29#32" title="CollectionSerializer(JavaType,boolean,TypeSerializer,BeanProperty,JsonSerializer&lt;Object&gt;)" name="sl-32" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '32');">CollectionSerializer(JavaType,boolean,TypeSerializer,BeanProperty,JsonSerializer&lt;Object&gt;)</a>
+</td>
+<td align="right"><span class="sortValue">32</span>32</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CollectionSerializer-2">
+<td id="summary-38-5">
+ <span class="sortValue">CollectionSerializer(CollectionSerializer,BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)</span>
+&#160;&#160;<a href="?line=29#38" title="CollectionSerializer(CollectionSerializer,BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)" name="sl-38" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '38');">CollectionSerializer(CollectionSerializer,BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)</a>
+</td>
+<td align="right"><span class="sortValue">38</span>38</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CollectionSerializer-3">
+<td id="summary-44-5">
+ <span class="sortValue">_withValueTypeSerializer(TypeSerializer)&#160;:&#160;ContainerSerializer&lt;?&gt;</span>
+&#160;&#160;<a href="?line=29#44" title="_withValueTypeSerializer(TypeSerializer)&#160;:&#160;ContainerSerializer&lt;?&gt;" name="sl-44" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '44');">_withValueTypeSerializer(TypeSerializer)&#160;:&#160;ContainerSerializer&lt;?&gt;</a>
+</td>
+<td align="right"><span class="sortValue">44</span>44</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CollectionSerializer-4">
+<td id="summary-49-5">
+ <span class="sortValue">withResolved(BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)&#160;:&#160;CollectionSerializer</span>
+&#160;&#160;<a href="?line=29#49" title="withResolved(BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)&#160;:&#160;CollectionSerializer" name="sl-49" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '49');">withResolved(BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)&#160;:&#160;CollectionSerializer</a>
+</td>
+<td align="right"><span class="sortValue">49</span>49</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CollectionSerializer-5">
+<td id="summary-61-5">
+ <span class="sortValue">isEmpty(Collection&lt;?&gt;)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#61" title="isEmpty(Collection&lt;?&gt;)&#160;:&#160;boolean" name="sl-61" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '61');">isEmpty(Collection&lt;?&gt;)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">61</span>61</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CollectionSerializer-6">
+<td id="summary-66-5">
+ <span class="sortValue">hasSingleElement(Collection&lt;?&gt;)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#66" title="hasSingleElement(Collection&lt;?&gt;)&#160;:&#160;boolean" name="sl-66" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '66');">hasSingleElement(Collection&lt;?&gt;)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">66</span>66</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.71428573</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.71428573</span>71.4%</div><div style="display: table-cell">
+ <div title="71.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.4%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CollectionSerializer-7">
+<td id="summary-82-5">
+ <span class="sortValue">serializeContents(Collection&lt;?&gt;,JsonGenerator,SerializerProvider)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#82" title="serializeContents(Collection&lt;?&gt;,JsonGenerator,SerializerProvider)&#160;:&#160;void" name="sl-82" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '82');">serializeContents(Collection&lt;?&gt;,JsonGenerator,SerializerProvider)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">82</span>82</td>
+<td class="" align="right"><span class="sortValue">26.0</span>26</td>
+<td class="" align="right"><span class="sortValue">9.0</span>9</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.975</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.975</span>97.5%</div><div style="display: table-cell">
+ <div title="97.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97.5%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="CollectionSerializer-8">
+<td id="summary-130-5">
+ <span class="sortValue">serializeContentsUsing(Collection&lt;?&gt;,JsonGenerator,SerializerProvider,JsonSerializer&lt;Object&gt;)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#130" title="serializeContentsUsing(Collection&lt;?&gt;,JsonGenerator,SerializerProvider,JsonSerializer&lt;Object&gt;)&#160;:&#160;void" name="sl-130" onclick="closeDialogAndScrollTo('dialog-CollectionSerializer', '130');">serializeContentsUsing(Collection&lt;?&gt;,JsonGenerator,SerializerProvider,JsonSerializer&lt;Object&gt;)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">130</span>130</td>
+<td class="" align="right"><span class="sortValue">14.0</span>14</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">0.6818182</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6818182</span>68.2%</div><div style="display: table-cell">
+ <div title="68.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68.2%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-CollectionSerializer">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 44 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-556">
+<td><a name="testA-556"></a><input type="checkbox" id="cb-556" value="556" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization_testIssue508_fg.html';">
+<span class="sortValue">0.63414633</span>
+<div>
+<div title="63.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.4%"></div></div></div></td>
+<td id="tc-556">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedContainerSerialization.testIssue508</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization_testIssue508_fg.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedContainerSerialization.testIssue508</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization.html?line=141#src-141" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization_testIssue508_fg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-270">
+<td><a name="testA-270"></a><input type="checkbox" id="cb-270" value="270" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization_testIssue508_7i.html';">
+<span class="sortValue">0.63414633</span>
+<div>
+<div title="63.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:63.4%"></div></div></div></td>
+<td id="tc-270">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedContainerSerialization.testIssue508</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization_testIssue508_7i.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedContainerSerialization.testIssue508</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization.html?line=141#src-141" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedContainerSerialization_testIssue508_7i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2054">
+<td><a name="testA-2054"></a><input type="checkbox" id="cb-2054" value="2054" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811_1l2.html';">
+<span class="sortValue">0.46341464</span>
+<div>
+<div title="46.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.3%"></div></div></div></td>
+<td id="tc-2054">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testIssue811</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811_1l2.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testIssue811</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic.html?line=135#src-135" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811_1l2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2036">
+<td><a name="testA-2036"></a><input type="checkbox" id="cb-2036" value="2036" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811_1kk.html';">
+<span class="sortValue">0.46341464</span>
+<div>
+<div title="46.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46.3%"></div></div></div></td>
+<td id="tc-2036">  <span class="sortValue">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testIssue811</span><a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811_1kk.html" title="View Test Summary Page">com.fasterxml.jackson.databind.struct.TestObjectIdWithPolymorphic.testIssue811</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic.html?line=135#src-135" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/struct/TestObjectIdWithPolymorphic_testIssue811_1kk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1355">
+<td><a name="testA-1355"></a><input type="checkbox" id="cb-1355" value="1355" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId_testIssue877_11n.html';">
+<span class="sortValue">0.4512195</span>
+<div>
+<div title="45.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:45.1%"></div></div></div></td>
+<td id="tc-1355">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestAbstractWithObjectId.testIssue877</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId_testIssue877_11n.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestAbstractWithObjectId.testIssue877</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId.html?line=39#src-39" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId_testIssue877_11n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-907">
+<td><a name="testA-907"></a><input type="checkbox" id="cb-907" value="907" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson387_p7.html';">
+<span class="sortValue">0.4512195</span>
+<div>
+<div title="45.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:45.1%"></div></div></div></td>
+<td id="tc-907">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson387</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson387_p7.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson387</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics.html?line=153#src-153" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson387_p7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-218">
+<td><a name="testA-218"></a><input type="checkbox" id="cb-218" value="218" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization_testEnumPolymorphicSerializationTest_62.html';">
+<span class="sortValue">0.4512195</span>
+<div>
+<div title="45.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:45.1%"></div></div></div></td>
+<td id="tc-218">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestMapDeserialization.testEnumPolymorphicSerializationTest</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization_testEnumPolymorphicSerializationTest_62.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestMapDeserialization.testEnumPolymorphicSerializationTest</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization.html?line=333#src-333" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization_testEnumPolymorphicSerializationTest_62.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1155">
+<td><a name="testA-1155"></a><input type="checkbox" id="cb-1155" value="1155" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization_testEnumPolymorphicSerializationTest_w3.html';">
+<span class="sortValue">0.4512195</span>
+<div>
+<div title="45.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:45.1%"></div></div></div></td>
+<td id="tc-1155">  <span class="sortValue">com.fasterxml.jackson.databind.deser.TestMapDeserialization.testEnumPolymorphicSerializationTest</span><a href="../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization_testEnumPolymorphicSerializationTest_w3.html" title="View Test Summary Page">com.fasterxml.jackson.databind.deser.TestMapDeserialization.testEnumPolymorphicSerializationTest</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization.html?line=333#src-333" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/deser/TestMapDeserialization_testEnumPolymorphicSerializationTest_w3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2158">
+<td><a name="testA-2158"></a><input type="checkbox" id="cb-2158" value="2158" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson387_1ny.html';">
+<span class="sortValue">0.4512195</span>
+<div>
+<div title="45.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:45.1%"></div></div></div></td>
+<td id="tc-2158">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson387</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson387_1ny.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson387</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics.html?line=153#src-153" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson387_1ny.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-273">
+<td><a name="testA-273"></a><input type="checkbox" id="cb-273" value="273" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId_testIssue877_7l.html';">
+<span class="sortValue">0.4512195</span>
+<div>
+<div title="45.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:45.1%"></div></div></div></td>
+<td id="tc-273">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestAbstractWithObjectId.testIssue877</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId_testIssue877_7l.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestAbstractWithObjectId.testIssue877</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId.html?line=39#src-39" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractWithObjectId_testIssue877_7l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1221">
+<td><a name="testA-1221"></a><input type="checkbox" id="cb-1221" value="1221" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testDateTypes_xx.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-1221">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testDateTypes</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testDateTypes_xx.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testDateTypes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists.html?line=108#src-108" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testDateTypes_xx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1090">
+<td><a name="testA-1090"></a><input type="checkbox" id="cb-1090" value="1090" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames_testEmptyCollection_ua.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-1090">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames.testEmptyCollection</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames_testEmptyCollection_ua.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames.testEmptyCollection</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames.html?line=99#src-99" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames_testEmptyCollection_ua.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-382">
+<td><a name="testA-382"></a><input type="checkbox" id="cb-382" value="382" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testListOfNumbers_am.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-382">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testListOfNumbers</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testListOfNumbers_am.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testListOfNumbers</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists.html?line=92#src-92" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testListOfNumbers_am.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1465">
+<td><a name="testA-1465"></a><input type="checkbox" id="cb-1465" value="1465" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames_testEmptyCollection_14p.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-1465">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames.testEmptyCollection</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames_testEmptyCollection_14p.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestAbstractTypeNames.testEmptyCollection</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames.html?line=99#src-99" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestAbstractTypeNames_testEmptyCollection_14p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1650">
+<td><a name="testA-1650"></a><input type="checkbox" id="cb-1650" value="1650" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization_testSubTypesFor356_19u.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-1650">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization.testSubTypesFor356</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization_testSubTypesFor356_19u.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization.testSubTypesFor356</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization.html?line=50#src-50" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization_testSubTypesFor356_19u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1350">
+<td><a name="testA-1350"></a><input type="checkbox" id="cb-1350" value="1350" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testDateTypes_11i.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-1350">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testDateTypes</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testDateTypes_11i.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testDateTypes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists.html?line=108#src-108" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testDateTypes_11i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-766">
+<td><a name="testA-766"></a><input type="checkbox" id="cb-766" value="766" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization_testSubTypesFor356_la.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-766">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization.testSubTypesFor356</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization_testSubTypesFor356_la.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestGenericListSerialization.testSubTypesFor356</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization.html?line=50#src-50" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestGenericListSerialization_testSubTypesFor356_la.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1215">
+<td><a name="testA-1215"></a><input type="checkbox" id="cb-1215" value="1215" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testListWithPolymorphic_xr.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-1215">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testListWithPolymorphic</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testListWithPolymorphic_xr.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testListWithPolymorphic</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization.html?line=73#src-73" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testListWithPolymorphic_xr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-546">
+<td><a name="testA-546"></a><input type="checkbox" id="cb-546" value="546" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testListWithPolymorphic_f6.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-546">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testListWithPolymorphic</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testListWithPolymorphic_f6.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testListWithPolymorphic</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization.html?line=73#src-73" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testListWithPolymorphic_f6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-322">
+<td><a name="testA-322"></a><input type="checkbox" id="cb-322" value="322" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testListOfNumbers_8y.html';">
+<span class="sortValue">0.4390244</span>
+<div>
+<div title="43.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.9%"></div></div></div></td>
+<td id="tc-322">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testListOfNumbers</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testListOfNumbers_8y.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestDefaultForLists.testListOfNumbers</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists.html?line=92#src-92" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestDefaultForLists_testListOfNumbers_8y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1216">
+<td><a name="testA-1216"></a><input type="checkbox" id="cb-1216" value="1216" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson430_xs.html';">
+<span class="sortValue">0.42682928</span>
+<div>
+<div title="42.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.7%"></div></div></div></td>
+<td id="tc-1216">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson430</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson430_xs.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson430</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics.html?line=188#src-188" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson430_xs.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1908">
+<td><a name="testA-1908"></a><input type="checkbox" id="cb-1908" value="1908" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures_testSingleElementCollections_1h0.html';">
+<span class="sortValue">0.42682928</span>
+<div>
+<div title="42.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.7%"></div></div></div></td>
+<td id="tc-1908">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestFeatures.testSingleElementCollections</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures_testSingleElementCollections_1h0.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestFeatures.testSingleElementCollections</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures.html?line=238#src-238" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures_testSingleElementCollections_1h0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1294">
+<td><a name="testA-1294"></a><input type="checkbox" id="cb-1294" value="1294" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures_testSingleElementCollections_zy.html';">
+<span class="sortValue">0.42682928</span>
+<div>
+<div title="42.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.7%"></div></div></div></td>
+<td id="tc-1294">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestFeatures.testSingleElementCollections</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures_testSingleElementCollections_zy.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestFeatures.testSingleElementCollections</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures.html?line=238#src-238" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestFeatures_testSingleElementCollections_zy.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2006">
+<td><a name="testA-2006"></a><input type="checkbox" id="cb-2006" value="2006" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson430_1jq.html';">
+<span class="sortValue">0.42682928</span>
+<div>
+<div title="42.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.7%"></div></div></div></td>
+<td id="tc-2006">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson430</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson430_1jq.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestWithGenerics.testJackson430</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics.html?line=188#src-188" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestWithGenerics_testJackson430_1jq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1944">
+<td><a name="testA-1944"></a><input type="checkbox" id="cb-1944" value="1944" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testStringListAsObjectWrapper_1i0.html';">
+<span class="sortValue">0.40243903</span>
+<div>
+<div title="40.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.2%"></div></div></div></td>
+<td id="tc-1944">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testStringListAsObjectWrapper</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testStringListAsObjectWrapper_1i0.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testStringListAsObjectWrapper</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization.html?line=105#src-105" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testStringListAsObjectWrapper_1i0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2016">
+<td><a name="testA-2016"></a><input type="checkbox" id="cb-2016" value="2016" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testStringListAsObjectWrapper_1k0.html';">
+<span class="sortValue">0.40243903</span>
+<div>
+<div title="40.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.2%"></div></div></div></td>
+<td id="tc-2016">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testStringListAsObjectWrapper</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testStringListAsObjectWrapper_1k0.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedArraySerialization.testStringListAsObjectWrapper</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization.html?line=105#src-105" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedArraySerialization_testStringListAsObjectWrapper_1k0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1212">
+<td><a name="testA-1212"></a><input type="checkbox" id="cb-1212" value="1212" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization_testCollections_xo.html';">
+<span class="sortValue">0.37804878</span>
+<div>
+<div title="37.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37.8%"></div></div></div></td>
+<td id="tc-1212">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestCollectionSerialization.testCollections</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization_testCollections_xo.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestCollectionSerialization.testCollections</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization.html?line=146#src-146" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization_testCollections_xo.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1470">
+<td><a name="testA-1470"></a><input type="checkbox" id="cb-1470" value="1470" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization_testCollections_14u.html';">
+<span class="sortValue">0.37804878</span>
+<div>
+<div title="37.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:37.8%"></div></div></div></td>
+<td id="tc-1470">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestCollectionSerialization.testCollections</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization_testCollections_14u.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestCollectionSerialization.testCollections</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization.html?line=146#src-146" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCollectionSerialization_testCollections_14u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-460">
+<td><a name="testA-460"></a><input type="checkbox" id="cb-460" value="460" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization_testMapKeyValueSerialization_cs.html';">
+<span class="sortValue">0.35365853</span>
+<div>
+<div title="35.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.4%"></div></div></div></td>
+<td id="tc-460">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestMapSerialization.testMapKeyValueSerialization</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization_testMapKeyValueSerialization_cs.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestMapSerialization.testMapKeyValueSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization_testMapKeyValueSerialization_cs.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1421">
+<td><a name="testA-1421"></a><input type="checkbox" id="cb-1421" value="1421" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization_testTypedMaps_13h.html';">
+<span class="sortValue">0.35365853</span>
+<div>
+<div title="35.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.4%"></div></div></div></td>
+<td id="tc-1421">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedSerialization.testTypedMaps</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization_testTypedMaps_13h.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedSerialization.testTypedMaps</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization.html?line=192#src-192" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization_testTypedMaps_13h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-479">
+<td><a name="testA-479"></a><input type="checkbox" id="cb-479" value="479" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization_testMapKeyValueSerialization_db.html';">
+<span class="sortValue">0.35365853</span>
+<div>
+<div title="35.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.4%"></div></div></div></td>
+<td id="tc-479">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestMapSerialization.testMapKeyValueSerialization</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization_testMapKeyValueSerialization_db.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestMapSerialization.testMapKeyValueSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestMapSerialization_testMapKeyValueSerialization_db.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1145">
+<td><a name="testA-1145"></a><input type="checkbox" id="cb-1145" value="1145" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization_testTypedMaps_vt.html';">
+<span class="sortValue">0.35365853</span>
+<div>
+<div title="35.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.4%"></div></div></div></td>
+<td id="tc-1145">  <span class="sortValue">com.fasterxml.jackson.databind.jsontype.TestTypedSerialization.testTypedMaps</span><a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization_testTypedMaps_vt.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsontype.TestTypedSerialization.testTypedMaps</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization.html?line=192#src-192" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TestTypedSerialization_testTypedMaps_vt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-524">
+<td><a name="testA-524"></a><input type="checkbox" id="cb-524" value="524" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization_testTypedLists_ek.html';">
+<span class="sortValue">0.3292683</span>
+<div>
+<div title="32.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.9%"></div></div></div></td>
+<td id="tc-524">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization.testTypedLists</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization_testTypedLists_ek.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization.testTypedLists</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization_testTypedLists_ek.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-726">
+<td><a name="testA-726"></a><input type="checkbox" id="cb-726" value="726" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization_testTypedLists_k6.html';">
+<span class="sortValue">0.3292683</span>
+<div>
+<div title="32.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.9%"></div></div></div></td>
+<td id="tc-726">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization.testTypedLists</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization_testTypedLists_k6.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestTypedRootValueSerialization.testTypedLists</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestTypedRootValueSerialization_testTypedLists_k6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-508">
+<td><a name="testA-508"></a><input type="checkbox" id="cb-508" value="508" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize_testStaticTypingWithLinkedList_e4.html';">
+<span class="sortValue">0.3292683</span>
+<div>
+<div title="32.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.9%"></div></div></div></td>
+<td id="tc-508">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestJsonSerialize.testStaticTypingWithLinkedList</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize_testStaticTypingWithLinkedList_e4.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestJsonSerialize.testStaticTypingWithLinkedList</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize.html?line=208#src-208" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize_testStaticTypingWithLinkedList_e4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-823">
+<td><a name="testA-823"></a><input type="checkbox" id="cb-823" value="823" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize_testStaticTypingWithLinkedList_mv.html';">
+<span class="sortValue">0.3292683</span>
+<div>
+<div title="32.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:32.9%"></div></div></div></td>
+<td id="tc-823">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestJsonSerialize.testStaticTypingWithLinkedList</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize_testStaticTypingWithLinkedList_mv.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestJsonSerialize.testStaticTypingWithLinkedList</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize.html?line=208#src-208" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestJsonSerialize_testStaticTypingWithLinkedList_mv.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1846">
+<td><a name="testA-1846"></a><input type="checkbox" id="cb-1846" value="1846" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testSchemaSerialization_1fa.html';">
+<span class="sortValue">0.07317073</span>
+<div>
+<div title="7.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.3%"></div></div></div></td>
+<td id="tc-1846">  <span class="sortValue">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testSchemaSerialization</span><a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testSchemaSerialization_1fa.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testSchemaSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema.html?line=181#src-181" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testSchemaSerialization_1fa.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2099">
+<td><a name="testA-2099"></a><input type="checkbox" id="cb-2099" value="2099" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testSchemaSerialization_1mb.html';">
+<span class="sortValue">0.07317073</span>
+<div>
+<div title="7.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.3%"></div></div></div></td>
+<td id="tc-2099">  <span class="sortValue">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testSchemaSerialization</span><a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testSchemaSerialization_1mb.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testSchemaSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema.html?line=181#src-181" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testSchemaSerialization_1mb.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-567">
+<td><a name="testA-567"></a><input type="checkbox" id="cb-567" value="567" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema_testDeserializeSimple_fr.html';">
+<span class="sortValue">0.07317073</span>
+<div>
+<div title="7.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.3%"></div></div></div></td>
+<td id="tc-567">  <span class="sortValue">com.fasterxml.jackson.databind.jsonschema.TestReadJsonSchema.testDeserializeSimple</span><a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema_testDeserializeSimple_fr.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsonschema.TestReadJsonSchema.testDeserializeSimple</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema.html?line=51#src-51" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema_testDeserializeSimple_fr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1121">
+<td><a name="testA-1121"></a><input type="checkbox" id="cb-1121" value="1121" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testGeneratingJsonSchema_v5.html';">
+<span class="sortValue">0.07317073</span>
+<div>
+<div title="7.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.3%"></div></div></div></td>
+<td id="tc-1121">  <span class="sortValue">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testGeneratingJsonSchema</span><a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testGeneratingJsonSchema_v5.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testGeneratingJsonSchema</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema.html?line=108#src-108" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testGeneratingJsonSchema_v5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-197">
+<td><a name="testA-197"></a><input type="checkbox" id="cb-197" value="197" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testGeneratingJsonSchema_5h.html';">
+<span class="sortValue">0.07317073</span>
+<div>
+<div title="7.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.3%"></div></div></div></td>
+<td id="tc-197">  <span class="sortValue">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testGeneratingJsonSchema</span><a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testGeneratingJsonSchema_5h.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsonschema.TestGenerateJsonSchema.testGeneratingJsonSchema</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema.html?line=108#src-108" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestGenerateJsonSchema_testGeneratingJsonSchema_5h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1829">
+<td><a name="testA-1829"></a><input type="checkbox" id="cb-1829" value="1829" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema_testDeserializeSimple_1et.html';">
+<span class="sortValue">0.07317073</span>
+<div>
+<div title="7.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.3%"></div></div></div></td>
+<td id="tc-1829">  <span class="sortValue">com.fasterxml.jackson.databind.jsonschema.TestReadJsonSchema.testDeserializeSimple</span><a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema_testDeserializeSimple_1et.html" title="View Test Summary Page">com.fasterxml.jackson.databind.jsonschema.TestReadJsonSchema.testDeserializeSimple</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema.html?line=51#src-51" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/jsonschema/TestReadJsonSchema_testDeserializeSimple_1et.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2105">
+<td><a name="testA-2105"></a><input type="checkbox" id="cb-2105" value="2105" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers_testCustomLists_1mh.html';">
+<span class="sortValue">0.024390243</span>
+<div>
+<div title="2.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:2.4%"></div></div></div></td>
+<td id="tc-2105">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestCustomSerializers.testCustomLists</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers_testCustomLists_1mh.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestCustomSerializers.testCustomLists</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers.html?line=66#src-66" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers_testCustomLists_1mh.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2072">
+<td><a name="testA-2072"></a><input type="checkbox" id="cb-2072" value="2072" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers_testCustomLists_1lk.html';">
+<span class="sortValue">0.024390243</span>
+<div>
+<div title="2.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:2.4%"></div></div></div></td>
+<td id="tc-2072">  <span class="sortValue">com.fasterxml.jackson.databind.ser.TestCustomSerializers.testCustomLists</span><a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers_testCustomLists_1lk.html" title="View Test Summary Page">com.fasterxml.jackson.databind.ser.TestCustomSerializers.testCustomLists</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers.html?line=66#src-66" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../../com/fasterxml/jackson/databind/ser/TestCustomSerializers_testCustomLists_1lk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../ser/pkg-summary.html">ser</a>.<a href="../std/pkg-summary.html">std</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> java.io.IOException;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="keyword">import</span> java.util.Collection;</span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="keyword">import</span> java.util.Iterator;</span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.core.*;</span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../../../../../com/fasterxml/jackson/databind/BeanProperty.html#BeanProperty">BeanProperty</a>;</span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../../../../../com/fasterxml/jackson/databind/JavaType.html#JavaType">JavaType</a>;</span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../../../../../com/fasterxml/jackson/databind/JsonSerializer.html#JsonSerializer">JsonSerializer</a>;</span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../../../../../com/fasterxml/jackson/databind/SerializerProvider.html#SerializerProvider">SerializerProvider</a>;</span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../jsontype/pkg-summary.html">jsontype</a>.<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TypeSerializer.html#TypeSerializer">TypeSerializer</a>;</span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../ser/pkg-summary.html">ser</a>.<a href="../../../../../../com/fasterxml/jackson/databind/ser/ContainerSerializer.html#ContainerSerializer">ContainerSerializer</a>;</span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="keyword">import</span> com.fasterxml.jackson.<a href="../../../databind/pkg-summary.html">databind</a>.<a href="../../ser/pkg-summary.html">ser</a>.<a href="../impl/pkg-summary.html">impl</a>.<a href="../../../../../../com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap">PropertySerializerMap</a>;</span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="comment"> * Fallback serializer for cases where Collection is not known to be</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="comment"> * of type for which more specializer serializer exists (such as</span></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="comment"> * index-accessible List).</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="comment"> * If so, we will just construct an {</span><span class="javadoc">@link</span><span class="comment"> java.util.Iterator}</span></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="comment"> * to iterate over elements.</span></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="23" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-23' onclick="toggleInlineStats(this, 'inlinestats-23');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-23" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-23'), 'inlinestats-23');return true;">
+                <td><div>
+<div title="85.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:85.4%"></div></div></div></td><td>85.4%</td>
+                <td class="inlineStat">Uncovered Elements: 12 (82)</td>
+                <td class="inlineStat">Complexity: 22</td>
+                <td class="inlineStat">Complexity Density: 0.44</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 23, 'Tests that hit CollectionSerializer');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-23"><span class="spacer"></span><span id="src-23" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer">CollectionSerializer</a></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine">    <span class="keyword">extends</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/std/AsArraySerializerBase.html#AsArraySerializerBase">AsArraySerializerBase</a>&lt;Collection&lt;?&gt;&gt;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine">{</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine">    <span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="comment">    /**********************************************************</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="comment">    /* Life-cycle</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment">    /**********************************************************</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="32" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-32' onclick="toggleInlineStats(this, 'inlinestats-32');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-32" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-32'), 'inlinestats-32');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l32">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 32, 'Tests that hit CollectionSerializer(JavaType,boolean,TypeSerializer,BeanProperty,JsonSerializer&lt;Object&gt;)');" ><span title="Line 32, Col 5: method entered 94 times." class="nolink">&#160;94</span></td>
+<td class=" methodStart  srcCell" id="id-32"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 32,36);" id="img-32" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-32" class="srcLine"><span class="nolink" title="Line 32, Col 5: method entered 94 times.">    <span class="keyword">public</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer">CollectionSerializer</a>(<a href="../../../../../../com/fasterxml/jackson/databind/JavaType.html#JavaType">JavaType</a> elemType, <span class="keyword">boolean</span> staticTyping, <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TypeSerializer.html#TypeSerializer">TypeSerializer</a> vts,</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-32'), 32,36);" id="e32" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine">            <a href="../../../../../../com/fasterxml/jackson/databind/BeanProperty.html#BeanProperty">BeanProperty</a> property, <a href="../../../../../../com/fasterxml/jackson/databind/JsonSerializer.html#JsonSerializer">JsonSerializer</a>&lt;Object&gt; valueSerializer)</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine">    {</span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 35, 'Tests that hit line # 35');" ><span title="Line 35, Col 9: statement executed 94 times." class="nolink">&#160;94</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="nolink" title="Line 35, Col 9: statement executed 94 times.">        <span class="keyword">super</span>(Collection.<span class="keyword">class</span>, elemType, staticTyping, vts, property, valueSerializer);</span></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="38" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-38' onclick="toggleInlineStats(this, 'inlinestats-38');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-38" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-38'), 'inlinestats-38');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l38">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 38, 'Tests that hit CollectionSerializer(CollectionSerializer,BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)');" ><span title="Line 38, Col 5: method entered 42 times." class="nolink">&#160;42</span></td>
+<td class=" methodStart  srcCell" id="id-38"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 38,42);" id="img-38" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-38" class="srcLine"><span class="nolink" title="Line 38, Col 5: method entered 42 times.">    <span class="keyword">public</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer">CollectionSerializer</a>(<a href="../../../../../../com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer">CollectionSerializer</a> src,</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-38'), 38,42);" id="e38" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine">            <a href="../../../../../../com/fasterxml/jackson/databind/BeanProperty.html#BeanProperty">BeanProperty</a> property, <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TypeSerializer.html#TypeSerializer">TypeSerializer</a> vts, <a href="../../../../../../com/fasterxml/jackson/databind/JsonSerializer.html#JsonSerializer">JsonSerializer</a>&lt;?&gt; valueSerializer)</span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">    {</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 41, 'Tests that hit line # 41');" ><span title="Line 41, Col 9: statement executed 42 times." class="nolink">&#160;42</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"><span class="nolink" title="Line 41, Col 9: statement executed 42 times.">        <span class="keyword">super</span>(src, property, vts, valueSerializer);</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">    </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="44" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-44' onclick="toggleInlineStats(this, 'inlinestats-44');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-44" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-44'), 'inlinestats-44');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l44">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 44, 'Tests that hit _withValueTypeSerializer(TypeSerializer)&#160;:&#160;ContainerSerializer&lt;?&gt;');" ><span title="Line 44, Col 5: method entered 30 times." class="nolink">&#160;30</span></td>
+<td class=" methodStart  srcCell" id="id-44"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 44,47);" id="img-44" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-44" class="srcLine"><span class="nolink" title="Line 44, Col 5: method entered 30 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-44'), 44,47);" id="e44" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">    <span class="keyword">public</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/ContainerSerializer.html#ContainerSerializer">ContainerSerializer</a>&lt;?&gt; _withValueTypeSerializer(<a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TypeSerializer.html#TypeSerializer">TypeSerializer</a> vts) {</span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 9: statement executed 30 times." class="nolink">&#160;30</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 9: statement executed 30 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer">CollectionSerializer</a>(_elementType, _staticTyping, vts, _property, _elementSerializer);</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="49" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-49' onclick="toggleInlineStats(this, 'inlinestats-49');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-49" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-49'), 'inlinestats-49');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit withResolved(BeanProperty,TypeSerializer,JsonSerializer&lt;?&gt;)&#160;:&#160;CollectionSerializer');" ><span title="Line 49, Col 5: method entered 42 times." class="nolink">&#160;42</span></td>
+<td class=" methodStart  srcCell" id="id-49"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 49,53);" id="img-49" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 5: method entered 42 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-49'), 49,53);" id="e49" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">    <span class="keyword">public</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer">CollectionSerializer</a> withResolved(<a href="../../../../../../com/fasterxml/jackson/databind/BeanProperty.html#BeanProperty">BeanProperty</a> property,</span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">            <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TypeSerializer.html#TypeSerializer">TypeSerializer</a> vts, <a href="../../../../../../com/fasterxml/jackson/databind/JsonSerializer.html#JsonSerializer">JsonSerializer</a>&lt;?&gt; elementSerializer) {</span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 9: statement executed 42 times." class="nolink">&#160;42</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 9: statement executed 42 times.">        <span class="keyword">return</span> <span class="keyword">new</span> <a href="../../../../../../com/fasterxml/jackson/databind/ser/std/CollectionSerializer.html#CollectionSerializer">CollectionSerializer</a>(<span class="keyword">this</span>, property, vts, elementSerializer);</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine">    <span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="comment">    /**********************************************************</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"><span class="comment">    /* Accessors</span></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"><span class="comment">    /**********************************************************</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="61" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-61' onclick="toggleInlineStats(this, 'inlinestats-61');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-61" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-61'), 'inlinestats-61');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l61">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 61, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-61"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 61,64);" id="img-61" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-61" class="srcLineHilight"><span class="nolink" title="Line 61, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-61'), 61,64);" id="e61" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> isEmpty(Collection&lt;?&gt; value) {</span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 63, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLineHilight"><span class="nolink" title="Line 63, Col 9: statement not executed.">        <span class="keyword">return</span> (value == <span class="keyword">null</span>) || value.isEmpty();</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="66" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-66' onclick="toggleInlineStats(this, 'inlinestats-66');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-66" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-66'), 'inlinestats-66');return true;">
+                <td><div>
+<div title="71.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:71.4%"></div></div></div></td><td>71.4%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (7)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.4</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l66">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 66, 'Tests that hit hasSingleElement(Collection&lt;?&gt;)&#160;:&#160;boolean');" ><span title="Line 66, Col 5: method entered 2 times." class="nolink">&#160;2</span></td>
+<td class=" methodStart  srcCell" id="id-66"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 66,74);" id="img-66" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-66" class="srcLine"><span class="nolink" title="Line 66, Col 5: method entered 2 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-66'), 66,74);" id="e66" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> hasSingleElement(Collection&lt;?&gt; value) {</span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 68, 'Tests that hit line # 68');" ><span title="Line 68, Col 9: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine"><span class="nolink" title="Line 68, Col 9: statement executed 2 times.">        Iterator&lt;?&gt; it = value.iterator();</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 69, 'Tests that hit line # 69');" ><span title="Line 69, Col 12: true branch executed 0 times, false branch executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLineHilight"><span class="nolink" title="Line 69, Col 12: true branch executed 0 times, false branch executed 2 times.">        <span class="keyword">if</span> (!it.hasNext()) {</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 70, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLineHilight"><span class="nolink" title="Line 70, Col 13: statement not executed.">            <span class="keyword">return</span> <span class="keyword">false</span>;</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 72, 'Tests that hit line # 72');" ><span title="Line 72, Col 9: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="nolink" title="Line 72, Col 9: statement executed 2 times.">        it.next();</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 73, 'Tests that hit line # 73');" ><span title="Line 73, Col 9: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="nolink" title="Line 73, Col 9: statement executed 2 times.">        <span class="keyword">return</span> !it.hasNext();</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine">    </span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine">    <span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="comment">    /**********************************************************</span></span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine"><span class="comment">    /* Actual serialization</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"><span class="comment">    /**********************************************************</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine">    </span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="82" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-82' onclick="toggleInlineStats(this, 'inlinestats-82');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-82" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-82'), 'inlinestats-82');return true;">
+                <td><div>
+<div title="97.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:97.5%"></div></div></div></td><td>97.5%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (40)</td>
+                <td class="inlineStat">Complexity: 9</td>
+                <td class="inlineStat">Complexity Density: 0.35</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l82">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 82, 'Tests that hit serializeContents(Collection&lt;?&gt;,JsonGenerator,SerializerProvider)&#160;:&#160;void');" ><span title="Line 82, Col 5: method entered 62 times." class="nolink">&#160;62</span></td>
+<td class=" methodStart  srcCell" id="id-82"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 82,128);" id="img-82" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-82" class="srcLine"><span class="nolink" title="Line 82, Col 5: method entered 62 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-82'), 82,128);" id="e82" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> serializeContents(Collection&lt;?&gt; value, JsonGenerator jgen, <a href="../../../../../../com/fasterxml/jackson/databind/SerializerProvider.html#SerializerProvider">SerializerProvider</a> provider)</span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine">        <span class="keyword">throws</span> IOException, JsonGenerationException</span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine">    {</span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 86, 'Tests that hit line # 86');" ><span title="Line 86, Col 12: true branch executed 6 times, false branch executed 56 times." class="nolink">&#160;62</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"><span class="nolink" title="Line 86, Col 12: true branch executed 6 times, false branch executed 56 times.">        <span class="keyword">if</span> (_elementSerializer != <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 87, 'Tests that hit line # 87');" ><span title="Line 87, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"><span class="nolink" title="Line 87, Col 13: statement executed 6 times.">            serializeContentsUsing(value, jgen, provider, _elementSerializer);</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 88, 'Tests that hit line # 88');" ><span title="Line 88, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"><span class="nolink" title="Line 88, Col 13: statement executed 6 times.">            <span class="keyword">return</span>;</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 90, 'Tests that hit line # 90');" ><span title="Line 90, Col 9: statement executed 56 times." class="nolink">&#160;56</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"><span class="nolink" title="Line 90, Col 9: statement executed 56 times.">        Iterator&lt;?&gt; it = value.iterator();</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit line # 91');" ><span title="Line 91, Col 12: true branch executed 2 times, false branch executed 54 times." class="nolink">&#160;56</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 12: true branch executed 2 times, false branch executed 54 times.">        <span class="keyword">if</span> (!it.hasNext()) {</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 92, 'Tests that hit line # 92');" ><span title="Line 92, Col 13: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="nolink" title="Line 92, Col 13: statement executed 2 times.">            <span class="keyword">return</span>;</span></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 9: statement executed 54 times." class="nolink">&#160;54</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 9: statement executed 54 times.">        <a href="../../../../../../com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.html#PropertySerializerMap">PropertySerializerMap</a> serializers = _dynamicSerializers;</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 95, 'Tests that hit line # 95');" ><span title="Line 95, Col 9: statement executed 54 times." class="nolink">&#160;54</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine"><span class="nolink" title="Line 95, Col 9: statement executed 54 times.">        <span class="keyword">final</span> <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TypeSerializer.html#TypeSerializer">TypeSerializer</a> typeSer = _valueTypeSerializer;</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 97, 'Tests that hit line # 97');" ><span title="Line 97, Col 9: statement executed 54 times." class="nolink">&#160;54</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 9: statement executed 54 times.">        <span class="keyword">int</span> i = 0;</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 98, 'Tests that hit line # 98');" ><span title="Line 98, Col 9: statement executed 54 times." class="nolink">&#160;54</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine"><span class="nolink" title="Line 98, Col 9: statement executed 54 times.">        <span class="keyword">try</span> {</span></span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 99, 'Tests that hit line # 99');" ><span title="Line 99, Col 13: statement executed 54 times." class="nolink">&#160;54</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"><span class="nolink" title="Line 99, Col 13: statement executed 54 times.">            <span class="keyword">do</span> {</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 100, 'Tests that hit line # 100');" ><span title="Line 100, Col 17: statement executed 470 times." class="nolink">&#160;470</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"><span class="nolink" title="Line 100, Col 17: statement executed 470 times.">                Object elem = it.next();</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 101, 'Tests that hit line # 101');" ><span title="Line 101, Col 20: true branch executed 2 times, false branch executed 468 times." class="nolink">&#160;470</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 20: true branch executed 2 times, false branch executed 468 times.">                <span class="keyword">if</span> (elem == <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 102, 'Tests that hit line # 102');" ><span title="Line 102, Col 21: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"><span class="nolink" title="Line 102, Col 21: statement executed 2 times.">                    provider.defaultSerializeNull(jgen);</span></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine">                } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 104, 'Tests that hit line # 104');" ><span title="Line 104, Col 21: statement executed 468 times." class="nolink">&#160;468</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"><span class="nolink" title="Line 104, Col 21: statement executed 468 times.">                    Class&lt;?&gt; cc = elem.getClass();</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 105, 'Tests that hit line # 105');" ><span title="Line 105, Col 21: statement executed 468 times." class="nolink">&#160;468</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine"><span class="nolink" title="Line 105, Col 21: statement executed 468 times.">                    <a href="../../../../../../com/fasterxml/jackson/databind/JsonSerializer.html#JsonSerializer">JsonSerializer</a>&lt;Object&gt; serializer = serializers.serializerFor(cc);</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 106, 'Tests that hit line # 106');" ><span title="Line 106, Col 24: true branch executed 64 times, false branch executed 404 times." class="nolink">&#160;468</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 24: true branch executed 64 times, false branch executed 404 times.">                    <span class="keyword">if</span> (serializer == <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine">                        <span class="comment">// To fix [JACKSON-508]</span></span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 108, 'Tests that hit line # 108');" ><span title="Line 108, Col 28: true branch executed 4 times, false branch executed 60 times." class="nolink">&#160;64</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine"><span class="nolink" title="Line 108, Col 28: true branch executed 4 times, false branch executed 60 times.">                        <span class="keyword">if</span> (_elementType.hasGenericTypes()) {</span></span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 109, 'Tests that hit line # 109');" ><span title="Line 109, Col 29: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine"><span class="nolink" title="Line 109, Col 29: statement executed 4 times.">                            serializer = _findAndAddDynamic(serializers,</span></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine">                                    provider.constructSpecializedType(_elementType, cc), provider);</span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLine">                        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 112, 'Tests that hit line # 112');" ><span title="Line 112, Col 29: statement executed 60 times." class="nolink">&#160;60</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine"><span class="nolink" title="Line 112, Col 29: statement executed 60 times.">                            serializer = _findAndAddDynamic(serializers, cc, provider);</span></span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine">                        }</span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 25: statement executed 64 times." class="nolink">&#160;64</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 25: statement executed 64 times.">                        serializers = _dynamicSerializers;</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine">                    }</span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 116, 'Tests that hit line # 116');" ><span title="Line 116, Col 24: true branch executed 410 times, false branch executed 58 times." class="nolink">&#160;468</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"><span class="nolink" title="Line 116, Col 24: true branch executed 410 times, false branch executed 58 times.">                    <span class="keyword">if</span> (typeSer == <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 117, 'Tests that hit line # 117');" ><span title="Line 117, Col 25: statement executed 410 times." class="nolink">&#160;410</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine"><span class="nolink" title="Line 117, Col 25: statement executed 410 times.">                        serializer.serialize(elem, jgen, provider);</span></span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine">                    } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 119, 'Tests that hit line # 119');" ><span title="Line 119, Col 25: statement executed 58 times." class="nolink">&#160;58</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine"><span class="nolink" title="Line 119, Col 25: statement executed 58 times.">                        serializer.serializeWithType(elem, jgen, provider, typeSer);</span></span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine">                    }</span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine">                }</span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 122, 'Tests that hit line # 122');" ><span title="Line 122, Col 17: statement executed 470 times." class="nolink">&#160;470</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLine"><span class="nolink" title="Line 122, Col 17: statement executed 470 times.">                ++i;</span></span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 123, 'Tests that hit line # 123');" ><span title="Line 123, Col 21: true branch executed 416 times, false branch executed 54 times." class="nolink">&#160;470</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLine"><span class="nolink" title="Line 123, Col 21: true branch executed 416 times, false branch executed 54 times.">            } <span class="keyword">while</span> (it.hasNext());</span></span></td>
+</tr>
+ <tr id="l124">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-124" class="srcLine">        } <span class="keyword">catch</span> (Exception e) {</span></td>
+</tr>
+ <tr id="l125">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-125" class="srcLine">            <span class="comment">// [JACKSON-55] Need to add reference information</span></span></td>
+</tr>
+ <tr id="l126">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=126#src-126">126</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 126, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-126" class="srcLineHilight"><span class="nolink" title="Line 126, Col 13: statement not executed.">            wrapAndThrow(provider, e, value, i);</span></span></td>
+</tr>
+ <tr id="l127">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=127#src-127">127</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-127" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l128">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=128#src-128">128</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-128" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l129">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=129#src-129">129</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-129" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="130" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-130' onclick="toggleInlineStats(this, 'inlinestats-130');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-130" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-130'), 'inlinestats-130');return true;">
+                <td><div>
+<div title="68.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:68.2%"></div></div></div></td><td>68.2%</td>
+                <td class="inlineStat">Uncovered Elements: 7 (22)</td>
+                <td class="inlineStat">Complexity: 6</td>
+                <td class="inlineStat">Complexity Density: 0.43</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l130">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=130#src-130">130</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 130, 'Tests that hit serializeContentsUsing(Collection&lt;?&gt;,JsonGenerator,SerializerProvider,JsonSerializer&lt;Object&gt;)&#160;:&#160;void');" ><span title="Line 130, Col 5: method entered 6 times." class="nolink">&#160;6</span></td>
+<td class=" methodStart  srcCell" id="id-130"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 130,157);" id="img-130" src="../../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-130" class="srcLine"><span class="nolink" title="Line 130, Col 5: method entered 6 times.">    <span class="keyword">public</span> <span class="keyword">void</span> serializeContentsUsing(Collection&lt;?&gt; value, JsonGenerator jgen, <a href="../../../../../../com/fasterxml/jackson/databind/SerializerProvider.html#SerializerProvider">SerializerProvider</a> provider,</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-130'), 130,157);" id="e130" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l131">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=131#src-131">131</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-131" class="srcLine">            <a href="../../../../../../com/fasterxml/jackson/databind/JsonSerializer.html#JsonSerializer">JsonSerializer</a>&lt;Object&gt; ser)</span></td>
+</tr>
+ <tr id="l132">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=132#src-132">132</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-132" class="srcLine">        <span class="keyword">throws</span> IOException, JsonGenerationException</span></td>
+</tr>
+ <tr id="l133">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=133#src-133">133</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-133" class="srcLine">    {</span></td>
+</tr>
+ <tr id="l134">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=134#src-134">134</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 134, 'Tests that hit line # 134');" ><span title="Line 134, Col 9: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-134" class="srcLine"><span class="nolink" title="Line 134, Col 9: statement executed 6 times.">        Iterator&lt;?&gt; it = value.iterator();</span></span></td>
+</tr>
+ <tr id="l135">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=135#src-135">135</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 135, 'Tests that hit line # 135');" ><span title="Line 135, Col 12: true branch executed 6 times, false branch executed 0 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-135" class="srcLineHilight"><span class="nolink" title="Line 135, Col 12: true branch executed 6 times, false branch executed 0 times.">        <span class="keyword">if</span> (it.hasNext()) {</span></span></td>
+</tr>
+ <tr id="l136">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=136#src-136">136</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 136, 'Tests that hit line # 136');" ><span title="Line 136, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-136" class="srcLine"><span class="nolink" title="Line 136, Col 13: statement executed 6 times.">            <a href="../../../../../../com/fasterxml/jackson/databind/jsontype/TypeSerializer.html#TypeSerializer">TypeSerializer</a> typeSer = _valueTypeSerializer;</span></span></td>
+</tr>
+ <tr id="l137">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=137#src-137">137</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 137, 'Tests that hit line # 137');" ><span title="Line 137, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-137" class="srcLine"><span class="nolink" title="Line 137, Col 13: statement executed 6 times.">            <span class="keyword">int</span> i = 0;</span></span></td>
+</tr>
+ <tr id="l138">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=138#src-138">138</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 138, 'Tests that hit line # 138');" ><span title="Line 138, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-138" class="srcLine"><span class="nolink" title="Line 138, Col 13: statement executed 6 times.">            <span class="keyword">do</span> {</span></span></td>
+</tr>
+ <tr id="l139">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=139#src-139">139</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 139, 'Tests that hit line # 139');" ><span title="Line 139, Col 17: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-139" class="srcLine"><span class="nolink" title="Line 139, Col 17: statement executed 6 times.">                Object elem = it.next();</span></span></td>
+</tr>
+ <tr id="l140">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=140#src-140">140</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 140, 'Tests that hit line # 140');" ><span title="Line 140, Col 17: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-140" class="srcLine"><span class="nolink" title="Line 140, Col 17: statement executed 6 times.">                <span class="keyword">try</span> {</span></span></td>
+</tr>
+ <tr id="l141">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=141#src-141">141</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 141, 'Tests that hit line # 141');" ><span title="Line 141, Col 24: true branch executed 0 times, false branch executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-141" class="srcLineHilight"><span class="nolink" title="Line 141, Col 24: true branch executed 0 times, false branch executed 6 times.">                    <span class="keyword">if</span> (elem == <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l142">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=142#src-142">142</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 142, Col 25: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-142" class="srcLineHilight"><span class="nolink" title="Line 142, Col 25: statement not executed.">                        provider.defaultSerializeNull(jgen);</span></span></td>
+</tr>
+ <tr id="l143">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=143#src-143">143</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-143" class="srcLine">                    } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l144">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=144#src-144">144</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 144, 'Tests that hit line # 144');" ><span title="Line 144, Col 28: true branch executed 6 times, false branch executed 0 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-144" class="srcLineHilight"><span class="nolink" title="Line 144, Col 28: true branch executed 6 times, false branch executed 0 times.">                        <span class="keyword">if</span> (typeSer == <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l145">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=145#src-145">145</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 145, 'Tests that hit line # 145');" ><span title="Line 145, Col 29: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-145" class="srcLine"><span class="nolink" title="Line 145, Col 29: statement executed 6 times.">                            ser.serialize(elem, jgen, provider);</span></span></td>
+</tr>
+ <tr id="l146">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=146#src-146">146</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-146" class="srcLine">                        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l147">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=147#src-147">147</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 147, Col 29: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-147" class="srcLineHilight"><span class="nolink" title="Line 147, Col 29: statement not executed.">                            ser.serializeWithType(elem, jgen, provider, typeSer);</span></span></td>
+</tr>
+ <tr id="l148">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=148#src-148">148</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-148" class="srcLine">                        }</span></td>
+</tr>
+ <tr id="l149">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=149#src-149">149</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-149" class="srcLine">                    }</span></td>
+</tr>
+ <tr id="l150">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=150#src-150">150</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 150, 'Tests that hit line # 150');" ><span title="Line 150, Col 21: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-150" class="srcLine"><span class="nolink" title="Line 150, Col 21: statement executed 6 times.">                    ++i;</span></span></td>
+</tr>
+ <tr id="l151">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=151#src-151">151</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-151" class="srcLine">                } <span class="keyword">catch</span> (Exception e) {</span></td>
+</tr>
+ <tr id="l152">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=152#src-152">152</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-152" class="srcLine">                    <span class="comment">// [JACKSON-55] Need to add reference information</span></span></td>
+</tr>
+ <tr id="l153">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=153#src-153">153</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 153, Col 21: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-153" class="srcLineHilight"><span class="nolink" title="Line 153, Col 21: statement not executed.">                    wrapAndThrow(provider, e, value, i);</span></span></td>
+</tr>
+ <tr id="l154">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=154#src-154">154</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-154" class="srcLine">                }</span></td>
+</tr>
+ <tr id="l155">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=155#src-155">155</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 155, Col 21: true branch executed 0 times, false branch executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-155" class="srcLineHilight"><span class="nolink" title="Line 155, Col 21: true branch executed 0 times, false branch executed 6 times.">            } <span class="keyword">while</span> (it.hasNext());</span></span></td>
+</tr>
+ <tr id="l156">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=156#src-156">156</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-156" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l157">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=157#src-157">157</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-157" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l158">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=158#src-158">158</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-158" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="CollectionSerializer.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 5 2023 23:41:52 MST using coverage data from Thu Jan 5 2023 23:41:49 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

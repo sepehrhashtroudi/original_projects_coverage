@@ -1,0 +1,2193 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body  onload="onLoad('compiler: com.google.javascript.jscomp.RemoveUnusedClassProperties.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.google.javascript.jscomp</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File RemoveUnusedClassProperties.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../img/srcFileCovDistChart10.png" alt="../../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="203 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,43,98,66" title="83 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,58,89,66" title="29 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,63,80,66" title="13 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,64,71,65" title="7 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="6 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,65,54,66" title="5 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,64,45,65" title="7 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="2 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="3 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,62,18,66" title="17 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">22</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">40</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">146</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">91</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">25</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.62</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">4.17</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">22</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">40</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">146</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">91</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">25</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.62</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">4.17</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="RemoveUnusedClassProperties">
+        <span><a href="#38" title="RemoveUnusedClassProperties" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '38');">RemoveUnusedClassProperties</a></span>
+</td>
+<td>38<a name="sl-38"></a></td>
+    <td class="">40</td>
+    <td class="">25</td>
+    <td class="">3</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9558824</span>95.6%</div><div style="display: table-cell">
+ <div title="95.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:95.6%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-RemoveUnusedClassProperties" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-RemoveUnusedClassProperties" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class RemoveUnusedClassProperties</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-RemoveUnusedClassProperties-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-RemoveUnusedClassProperties-methods-body', 'dialog-RemoveUnusedClassProperties-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="RemoveUnusedClassProperties">
+    Class<br/>    <span><a href="#38" title="RemoveUnusedClassProperties" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '38');">RemoveUnusedClassProperties</a></span>
+</th>
+<th>Line #<br/>38<a name="sl-38"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>40</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>25</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>3</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9558824</span>95.6%</div><div style="display: table-cell">
+ <div title="95.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:95.6%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-RemoveUnusedClassProperties-methods-body">
+                                                                                                            <tr id="RemoveUnusedClassProperties-1">
+<td id="summary-45-3">
+ <span class="sortValue">RemoveUnusedClassProperties(AbstractCompiler)</span>
+&#160;&#160;<a href="?line=29#45" title="RemoveUnusedClassProperties(AbstractCompiler)" name="sl-45" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '45');">RemoveUnusedClassProperties(AbstractCompiler)</a>
+</td>
+<td align="right"><span class="sortValue">45</span>45</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="RemoveUnusedClassProperties-2">
+<td id="summary-49-3">
+ <span class="sortValue">process(Node,Node)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#49" title="process(Node,Node)&#160;:&#160;void" name="sl-49" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '49');">process(Node,Node)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">49</span>49</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="RemoveUnusedClassProperties-3">
+<td id="summary-55-3">
+ <span class="sortValue">removeUnused()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#55" title="removeUnused()&#160;:&#160;void" name="sl-55" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '55');">removeUnused()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">55</span>55</td>
+<td class="" align="right"><span class="sortValue">12.0</span>12</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.8888889</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8888889</span>88.9%</div><div style="display: table-cell">
+ <div title="88.9% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.9%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="RemoveUnusedClassProperties-4">
+<td id="summary-78-3">
+ <span class="sortValue">shouldTraverse(NodeTraversal,Node,Node)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#78" title="shouldTraverse(NodeTraversal,Node,Node)&#160;:&#160;boolean" name="sl-78" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '78');">shouldTraverse(NodeTraversal,Node,Node)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">78</span>78</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="RemoveUnusedClassProperties-5">
+<td id="summary-86-3">
+ <span class="sortValue">visit(NodeTraversal,Node,Node)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#86" title="visit(NodeTraversal,Node,Node)&#160;:&#160;void" name="sl-86" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '86');">visit(NodeTraversal,Node,Node)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">86</span>86</td>
+<td class="" align="right"><span class="sortValue">15.0</span>15</td>
+<td class="" align="right"><span class="sortValue">10.0</span>10</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.95652175</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.95652175</span>95.7%</div><div style="display: table-cell">
+ <div title="95.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:95.7%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="RemoveUnusedClassProperties-6">
+<td id="summary-121-3">
+ <span class="sortValue">isPinningPropertyUse(Node)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#121" title="isPinningPropertyUse(Node)&#160;:&#160;boolean" name="sl-121" onclick="closeDialogAndScrollTo('dialog-RemoveUnusedClassProperties', '121');">isPinningPropertyUse(Node)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">121</span>121</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-RemoveUnusedClassProperties">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 46 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-9366">
+<td><a name="testA-9366"></a><input type="checkbox" id="cb-9366" value="9366" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_786.html';">
+<span class="sortValue">0.8088235</span>
+<div>
+<div title="80.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80.9%"></div></div></div></td>
+<td id="tc-9366">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testIssue730</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_786.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testIssue730</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1701#src-1701" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_786.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7454">
+<td><a name="testA-7454"></a><input type="checkbox" id="cb-7454" value="7454" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_5r2.html';">
+<span class="sortValue">0.8088235</span>
+<div>
+<div title="80.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80.9%"></div></div></div></td>
+<td id="tc-7454">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testIssue730</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_5r2.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testIssue730</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1701#src-1701" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_5r2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12478">
+<td><a name="testA-12478"></a><input type="checkbox" id="cb-12478" value="12478" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_9mm.html';">
+<span class="sortValue">0.8088235</span>
+<div>
+<div title="80.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80.9%"></div></div></div></td>
+<td id="tc-12478">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testIssue730</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_9mm.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testIssue730</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1701#src-1701" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testIssue730_9mm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1016">
+<td><a name="testA-1016"></a><input type="checkbox" id="cb-1016" value="1016" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testIssue730_s8.html';">
+<span class="sortValue">0.8088235</span>
+<div>
+<div title="80.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80.9%"></div></div></div></td>
+<td id="tc-1016">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testIssue730</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testIssue730_s8.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testIssue730</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=146#src-146" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testIssue730_s8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-277">
+<td><a name="testA-277"></a><input type="checkbox" id="cb-277" value="277" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testIssue730_7p.html';">
+<span class="sortValue">0.8088235</span>
+<div>
+<div title="80.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80.9%"></div></div></div></td>
+<td id="tc-277">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testIssue730</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testIssue730_7p.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testIssue730</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=146#src-146" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testIssue730_7p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7177">
+<td><a name="testA-7177"></a><input type="checkbox" id="cb-7177" value="7177" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_5jd.html';">
+<span class="sortValue">0.7941176</span>
+<div>
+<div title="79.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:79.4%"></div></div></div></td>
+<td id="tc-7177">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass3</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_5jd.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2273#src-2273" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_5jd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7044">
+<td><a name="testA-7044"></a><input type="checkbox" id="cb-7044" value="7044" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_5fo.html';">
+<span class="sortValue">0.7941176</span>
+<div>
+<div title="79.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:79.4%"></div></div></div></td>
+<td id="tc-7044">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass3</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_5fo.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2273#src-2273" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_5fo.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1302">
+<td><a name="testA-1302"></a><input type="checkbox" id="cb-1302" value="1302" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_106.html';">
+<span class="sortValue">0.7941176</span>
+<div>
+<div title="79.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:79.4%"></div></div></div></td>
+<td id="tc-1302">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass3</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_106.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2273#src-2273" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass3_106.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1597">
+<td><a name="testA-1597"></a><input type="checkbox" id="cb-1597" value="1597" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple3_18d.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-1597">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple3</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple3_18d.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple3_18d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-4728">
+<td><a name="testA-4728"></a><input type="checkbox" id="cb-4728" value="4728" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjectKeys_3nc.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-4728">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjectKeys</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjectKeys_3nc.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjectKeys</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=139#src-139" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjectKeys_3nc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7079">
+<td><a name="testA-7079"></a><input type="checkbox" id="cb-7079" value="7079" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple3_5gn.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-7079">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple3</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple3_5gn.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple3_5gn.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-4619">
+<td><a name="testA-4619"></a><input type="checkbox" id="cb-4619" value="4619" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjectKeys_3kb.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-4619">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjectKeys</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjectKeys_3kb.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjectKeys</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=139#src-139" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjectKeys_3kb.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3808">
+<td><a name="testA-3808"></a><input type="checkbox" id="cb-3808" value="3808" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjLit_2xs.html';">
+<span class="sortValue">0.7352941</span>
+<div>
+<div title="73.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:73.5%"></div></div></div></td>
+<td id="tc-3808">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjLit</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjLit_2xs.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjLit</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=63#src-63" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjLit_2xs.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8866">
+<td><a name="testA-8866"></a><input type="checkbox" id="cb-8866" value="8866" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjLit_6ua.html';">
+<span class="sortValue">0.7352941</span>
+<div>
+<div title="73.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:73.5%"></div></div></div></td>
+<td id="tc-8866">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjLit</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjLit_6ua.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testObjLit</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=63#src-63" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testObjLit_6ua.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5983">
+<td><a name="testA-5983"></a><input type="checkbox" id="cb-5983" value="5983" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp2_4m7.html';">
+<span class="sortValue">0.7205882</span>
+<div>
+<div title="72.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:72.1%"></div></div></div></td>
+<td id="tc-5983">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp2</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp2_4m7.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=94#src-94" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp2_4m7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2604">
+<td><a name="testA-2604"></a><input type="checkbox" id="cb-2604" value="2604" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc2_20c.html';">
+<span class="sortValue">0.7205882</span>
+<div>
+<div title="72.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:72.1%"></div></div></div></td>
+<td id="tc-2604">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc2</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc2_20c.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=114#src-114" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc2_20c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8852">
+<td><a name="testA-8852"></a><input type="checkbox" id="cb-8852" value="8852" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp2_6tw.html';">
+<span class="sortValue">0.7205882</span>
+<div>
+<div title="72.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:72.1%"></div></div></div></td>
+<td id="tc-8852">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp2</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp2_6tw.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=94#src-94" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp2_6tw.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7216">
+<td><a name="testA-7216"></a><input type="checkbox" id="cb-7216" value="7216" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc2_5kg.html';">
+<span class="sortValue">0.7205882</span>
+<div>
+<div title="72.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:72.1%"></div></div></div></td>
+<td id="tc-7216">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc2</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc2_5kg.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=114#src-114" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc2_5kg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8508">
+<td><a name="testA-8508"></a><input type="checkbox" id="cb-8508" value="8508" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp1_6kc.html';">
+<span class="sortValue">0.7058824</span>
+<div>
+<div title="70.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:70.6%"></div></div></div></td>
+<td id="tc-8508">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp1</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp1_6kc.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=84#src-84" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp1_6kc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1275">
+<td><a name="testA-1275"></a><input type="checkbox" id="cb-1275" value="1275" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp1_zf.html';">
+<span class="sortValue">0.7058824</span>
+<div>
+<div title="70.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:70.6%"></div></div></div></td>
+<td id="tc-1275">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp1</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp1_zf.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testAssignOp1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=84#src-84" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testAssignOp1_zf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1739">
+<td><a name="testA-1739"></a><input type="checkbox" id="cb-1739" value="1739" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc1_1cb.html';">
+<span class="sortValue">0.6911765</span>
+<div>
+<div title="69.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:69.1%"></div></div></div></td>
+<td id="tc-1739">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc1</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc1_1cb.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=102#src-102" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc1_1cb.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1311">
+<td><a name="testA-1311"></a><input type="checkbox" id="cb-1311" value="1311" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testForIn_10f.html';">
+<span class="sortValue">0.6911765</span>
+<div>
+<div title="69.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:69.1%"></div></div></div></td>
+<td id="tc-1311">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testForIn</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testForIn_10f.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testForIn</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=132#src-132" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testForIn_10f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18113">
+<td><a name="testA-18113"></a><input type="checkbox" id="cb-18113" value="18113" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc1_dz5.html';">
+<span class="sortValue">0.6911765</span>
+<div>
+<div title="69.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:69.1%"></div></div></div></td>
+<td id="tc-18113">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc1</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc1_dz5.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testInc1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=102#src-102" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testInc1_dz5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12261">
+<td><a name="testA-12261"></a><input type="checkbox" id="cb-12261" value="12261" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple2_9gl.html';">
+<span class="sortValue">0.6911765</span>
+<div>
+<div title="69.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:69.1%"></div></div></div></td>
+<td id="tc-12261">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple2</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple2_9gl.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=46#src-46" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple2_9gl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-16080">
+<td><a name="testA-16080"></a><input type="checkbox" id="cb-16080" value="16080" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testForIn_ceo.html';">
+<span class="sortValue">0.6911765</span>
+<div>
+<div title="69.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:69.1%"></div></div></div></td>
+<td id="tc-16080">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testForIn</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testForIn_ceo.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testForIn</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=132#src-132" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testForIn_ceo.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1175">
+<td><a name="testA-1175"></a><input type="checkbox" id="cb-1175" value="1175" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple2_wn.html';">
+<span class="sortValue">0.6911765</span>
+<div>
+<div title="69.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:69.1%"></div></div></div></td>
+<td id="tc-1175">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple2</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple2_wn.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=46#src-46" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple2_wn.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18263">
+<td><a name="testA-18263"></a><input type="checkbox" id="cb-18263" value="18263" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_e3b.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-18263">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testInlineProperties</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_e3b.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testInlineProperties</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2219#src-2219" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_e3b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15956">
+<td><a name="testA-15956"></a><input type="checkbox" id="cb-15956" value="15956" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_cb8.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-15956">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testInlineProperties</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_cb8.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testInlineProperties</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2219#src-2219" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_cb8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-6388">
+<td><a name="testA-6388"></a><input type="checkbox" id="cb-6388" value="6388" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_4xg.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-6388">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass2</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_4xg.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2255#src-2255" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_4xg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17244">
+<td><a name="testA-17244"></a><input type="checkbox" id="cb-17244" value="17244" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_db0.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-17244">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass1</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_db0.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2236#src-2236" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_db0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15015">
+<td><a name="testA-15015"></a><input type="checkbox" id="cb-15015" value="15015" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_bl3.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-15015">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass1</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_bl3.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2236#src-2236" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_bl3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8699">
+<td><a name="testA-8699"></a><input type="checkbox" id="cb-8699" value="8699" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple1_6pn.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-8699">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple1</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple1_6pn.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=39#src-39" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple1_6pn.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18726">
+<td><a name="testA-18726"></a><input type="checkbox" id="cb-18726" value="18726" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_eg6.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-18726">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass2</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_eg6.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2255#src-2255" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_eg6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14729">
+<td><a name="testA-14729"></a><input type="checkbox" id="cb-14729" value="14729" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_bd5.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-14729">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass2</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_bd5.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2255#src-2255" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass2_bd5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13574">
+<td><a name="testA-13574"></a><input type="checkbox" id="cb-13574" value="13574" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_ah2.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-13574">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass1</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_ah2.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testGoogDefineClass1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2236#src-2236" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testGoogDefineClass1_ah2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1164">
+<td><a name="testA-1164"></a><input type="checkbox" id="cb-1164" value="1164" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_wc.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-1164">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testInlineProperties</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_wc.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testInlineProperties</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=2219#src-2219" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testInlineProperties_wc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1865">
+<td><a name="testA-1865"></a><input type="checkbox" id="cb-1865" value="1865" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple1_1ft.html';">
+<span class="sortValue">0.6617647</span>
+<div>
+<div title="66.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:66.2%"></div></div></div></td>
+<td id="tc-1865">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple1</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple1_1ft.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testSimple1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=39#src-39" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testSimple1_1ft.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3419">
+<td><a name="testA-3419"></a><input type="checkbox" id="cb-3419" value="3419" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testJSCompiler_renameProperty_2mz.html';">
+<span class="sortValue">0.64705884</span>
+<div>
+<div title="64.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:64.7%"></div></div></div></td>
+<td id="tc-3419">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testJSCompiler_renameProperty</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testJSCompiler_renameProperty_2mz.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testJSCompiler_renameProperty</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=126#src-126" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testJSCompiler_renameProperty_2mz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9115">
+<td><a name="testA-9115"></a><input type="checkbox" id="cb-9115" value="9115" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testJSCompiler_renameProperty_717.html';">
+<span class="sortValue">0.64705884</span>
+<div>
+<div title="64.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:64.7%"></div></div></div></td>
+<td id="tc-9115">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testJSCompiler_renameProperty</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testJSCompiler_renameProperty_717.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testJSCompiler_renameProperty</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=126#src-126" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testJSCompiler_renameProperty_717.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9944">
+<td><a name="testA-9944"></a><input type="checkbox" id="cb-9944" value="9944" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_7o8.html';">
+<span class="sortValue">0.5882353</span>
+<div>
+<div title="58.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:58.8%"></div></div></div></td>
+<td id="tc-9944">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testTypedAdvanced</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_7o8.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testTypedAdvanced</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=221#src-221" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_7o8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12306">
+<td><a name="testA-12306"></a><input type="checkbox" id="cb-12306" value="12306" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_9hu.html';">
+<span class="sortValue">0.5882353</span>
+<div>
+<div title="58.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:58.8%"></div></div></div></td>
+<td id="tc-12306">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testTypedAdvanced</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_9hu.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testTypedAdvanced</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=221#src-221" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_9hu.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8432">
+<td><a name="testA-8432"></a><input type="checkbox" id="cb-8432" value="8432" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_6i8.html';">
+<span class="sortValue">0.5882353</span>
+<div>
+<div title="58.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:58.8%"></div></div></div></td>
+<td id="tc-8432">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testTypedAdvanced</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_6i8.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testTypedAdvanced</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=221#src-221" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testTypedAdvanced_6i8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-128">
+<td><a name="testA-128"></a><input type="checkbox" id="cb-128" value="128" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExport_3k.html';">
+<span class="sortValue">0.5441176</span>
+<div>
+<div title="54.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:54.4%"></div></div></div></td>
+<td id="tc-128">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExport</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExport_3k.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExport</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=77#src-77" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExport_3k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11253">
+<td><a name="testA-11253"></a><input type="checkbox" id="cb-11253" value="11253" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExport_8ol.html';">
+<span class="sortValue">0.5441176</span>
+<div>
+<div title="54.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:54.4%"></div></div></div></td>
+<td id="tc-11253">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExport</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExport_8ol.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExport</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=77#src-77" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExport_8ol.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15269">
+<td><a name="testA-15269"></a><input type="checkbox" id="cb-15269" value="15269" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExtern_bs5.html';">
+<span class="sortValue">0.5147059</span>
+<div>
+<div title="51.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.5%"></div></div></div></td>
+<td id="tc-15269">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExtern</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExtern_bs5.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExtern</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExtern_bs5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9450">
+<td><a name="testA-9450"></a><input type="checkbox" id="cb-9450" value="9450" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExtern_7ai.html';">
+<span class="sortValue">0.5147059</span>
+<div>
+<div title="51.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.5%"></div></div></div></td>
+<td id="tc-9450">  <span class="sortValue">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExtern</span><a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExtern_7ai.html" title="View Test Summary Page">com.google.javascript.jscomp.RemoveUnusedClassPropertiesTest.testExtern</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassPropertiesTest_testExtern_7ai.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright 2011 The Closure Compiler Authors.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="keyword">package</span> com.google.javascript.<a href="../jscomp/pkg-summary.html">jscomp</a>;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> com.google.common.base.Preconditions;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="keyword">import</span> com.google.common.collect.Lists;</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> com.google.common.collect.Sets;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">import</span> com.google.javascript.<a href="../rhino/pkg-summary.html">rhino</a>.<a href="../../../../com/google/javascript/rhino/IR.html#IR">IR</a>;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="keyword">import</span> com.google.javascript.<a href="../rhino/pkg-summary.html">rhino</a>.<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a>;</span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="keyword">import</span> com.google.javascript.<a href="../rhino/pkg-summary.html">rhino</a>.<a href="../../../../com/google/javascript/rhino/Token.html#Token">Token</a>;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="keyword">import</span> java.util.List;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">import</span> java.util.Set;</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment"> * Look for internal properties set using &quot;this&quot; but never read.  Explicitly</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="comment"> * ignored is the possibility that these properties</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="comment"> * may be indirectly referenced using &quot;for-in&quot; or &quot;Object.keys&quot;.  This is the</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="comment"> * same assumption used with RemoveUnusedPrototypeProperties but is by slightly</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="comment"> * wider in scope.</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> johnlenz</span><span class="comment">@google.com (John Lenz)</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="38" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-38' onclick="toggleInlineStats(this, 'inlinestats-38');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-38" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-38'), 'inlinestats-38');return true;">
+                <td><div>
+<div title="95.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:95.6%"></div></div></div></td><td>95.6%</td>
+                <td class="inlineStat">Uncovered Elements: 3 (68)</td>
+                <td class="inlineStat">Complexity: 25</td>
+                <td class="inlineStat">Complexity Density: 0.62</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 38, 'Tests that hit RemoveUnusedClassProperties');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-38"><span class="spacer"></span><span id="src-38" class="srcLine"><span class="keyword">class</span> <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassProperties.html#RemoveUnusedClassProperties">RemoveUnusedClassProperties</a></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine">    <span class="keyword">implements</span> <a href="../../../../com/google/javascript/jscomp/CompilerPass.html#CompilerPass">CompilerPass</a>, <a href="../../../../com/google/javascript/jscomp/NodeTraversal.html#NodeTraversal">NodeTraversal</a>.Callback {</span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">  <span class="keyword">final</span> <a href="../../../../com/google/javascript/jscomp/AbstractCompiler.html#AbstractCompiler">AbstractCompiler</a> compiler;</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine">  <span class="keyword">private</span> <span class="keyword">boolean</span> inExterns;</span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine">  <span class="keyword">private</span> Set&lt;String&gt; used = Sets.newHashSet();</span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">  <span class="keyword">private</span> List&lt;<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a>&gt; candidates = Lists.newArrayList();</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="45" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-45' onclick="toggleInlineStats(this, 'inlinestats-45');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-45" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-45'), 'inlinestats-45');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l45">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit RemoveUnusedClassProperties(AbstractCompiler)');" ><span title="Line 45, Col 3: method entered 228 times." class="nolink">&#160;228</span></td>
+<td class=" methodStart  srcCell" id="id-45"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 45,47);" id="img-45" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-45" class="srcLine"><span class="nolink" title="Line 45, Col 3: method entered 228 times.">  <a href="../../../../com/google/javascript/jscomp/RemoveUnusedClassProperties.html#RemoveUnusedClassProperties">RemoveUnusedClassProperties</a>(<a href="../../../../com/google/javascript/jscomp/AbstractCompiler.html#AbstractCompiler">AbstractCompiler</a> compiler) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-45'), 45,47);" id="e45" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 5: statement executed 228 times." class="nolink">&#160;228</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 5: statement executed 228 times.">    <span class="keyword">this</span>.compiler = compiler;</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="49" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-49' onclick="toggleInlineStats(this, 'inlinestats-49');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-49" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-49'), 'inlinestats-49');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit process(Node,Node)&#160;:&#160;void');" ><span title="Line 49, Col 3: method entered 228 times." class="nolink">&#160;228</span></td>
+<td class=" methodStart  srcCell" id="id-49"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 49,53);" id="img-49" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 3: method entered 228 times.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-49'), 49,53);" id="e49" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">  <span class="keyword">public</span> <span class="keyword">void</span> process(<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> externs, <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> root) {</span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit line # 51');" ><span title="Line 51, Col 5: statement executed 228 times." class="nolink">&#160;228</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"><span class="nolink" title="Line 51, Col 5: statement executed 228 times.">    <a href="../../../../com/google/javascript/jscomp/NodeTraversal.html#NodeTraversal">NodeTraversal</a>.traverseRoots(compiler, <span class="keyword">this</span>, externs, root);</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 5: statement executed 228 times." class="nolink">&#160;228</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 5: statement executed 228 times.">    removeUnused();</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="55" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-55' onclick="toggleInlineStats(this, 'inlinestats-55');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-55" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-55'), 'inlinestats-55');return true;">
+                <td><div>
+<div title="88.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:88.9%"></div></div></div></td><td>88.9%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (18)</td>
+                <td class="inlineStat">Complexity: 5</td>
+                <td class="inlineStat">Complexity Density: 0.42</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit removeUnused()&#160;:&#160;void');" ><span title="Line 55, Col 3: method entered 228 times." class="nolink">&#160;228</span></td>
+<td class=" methodStart  srcCell" id="id-55"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 55,76);" id="img-55" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 3: method entered 228 times.">  <span class="keyword">private</span> <span class="keyword">void</span> removeUnused() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-55'), 55,76);" id="e55" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 56, 'Tests that hit line # 56');" ><span title="Line 56, Col 5: statement executed 228 times." class="nolink">&#160;228</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="nolink" title="Line 56, Col 5: statement executed 228 times.">    <span class="keyword">for</span> (<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> n : candidates) {</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 57, 'Tests that hit line # 57');" ><span title="Line 57, Col 7: statement executed 135 times." class="nolink">&#160;135</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"><span class="nolink" title="Line 57, Col 7: statement executed 135 times.">      Preconditions.checkState(n.isGetProp());</span></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 58, 'Tests that hit line # 58');" ><span title="Line 58, Col 10: true branch executed 44 times, false branch executed 91 times." class="nolink">&#160;135</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"><span class="nolink" title="Line 58, Col 10: true branch executed 44 times, false branch executed 91 times.">      <span class="keyword">if</span> (!used.contains(n.getLastChild().getString())) {</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 59, 'Tests that hit line # 59');" ><span title="Line 59, Col 9: statement executed 44 times." class="nolink">&#160;44</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine"><span class="nolink" title="Line 59, Col 9: statement executed 44 times.">        <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> parent = n.getParent();</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 60, 'Tests that hit line # 60');" ><span title="Line 60, Col 12: true branch executed 32 times, false branch executed 12 times." class="nolink">&#160;44</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"><span class="nolink" title="Line 60, Col 12: true branch executed 32 times, false branch executed 12 times.">        <span class="keyword">if</span> (<a href="../../../../com/google/javascript/jscomp/NodeUtil.html#NodeUtil">NodeUtil</a>.isAssignmentOp(parent)) {</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 61, 'Tests that hit line # 61');" ><span title="Line 61, Col 11: statement executed 32 times." class="nolink">&#160;32</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine"><span class="nolink" title="Line 61, Col 11: statement executed 32 times.">          <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> assign = parent;</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 62, 'Tests that hit line # 62');" ><span title="Line 62, Col 11: statement executed 32 times." class="nolink">&#160;32</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="nolink" title="Line 62, Col 11: statement executed 32 times.">          Preconditions.checkState(assign != <span class="keyword">null</span></span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine">              &amp;&amp; <a href="../../../../com/google/javascript/jscomp/NodeUtil.html#NodeUtil">NodeUtil</a>.isAssignmentOp(assign)</span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine">              &amp;&amp; assign.getFirstChild() == n);</span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine">          <span class="comment">// 'this.x = y' to 'y'</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 66, 'Tests that hit line # 66');" ><span title="Line 66, Col 11: statement executed 32 times." class="nolink">&#160;32</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"><span class="nolink" title="Line 66, Col 11: statement executed 32 times.">          assign.getParent().replaceChild(assign,</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine">              assign.getLastChild().detachFromParent());</span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 68, 'Tests that hit line # 68');" ><span title="Line 68, Col 19: true branch executed 12 times, false branch executed 0 times." class="nolink">&#160;12</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLineHilight"><span class="nolink" title="Line 68, Col 19: true branch executed 12 times, false branch executed 0 times.">        } <span class="keyword">else</span> <span class="keyword">if</span> (parent.isInc() || parent.isDec()) {</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 69, 'Tests that hit line # 69');" ><span title="Line 69, Col 11: statement executed 12 times." class="nolink">&#160;12</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"><span class="nolink" title="Line 69, Col 11: statement executed 12 times.">          parent.getParent().replaceChild(parent, <a href="../../../../com/google/javascript/rhino/IR.html#IR">IR</a>.number(0));</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine">        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 71, Col 11: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLineHilight"><span class="nolink" title="Line 71, Col 11: statement not executed.">          <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">&quot;unexpected: &quot;</span>+ parent);</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 73, 'Tests that hit line # 73');" ><span title="Line 73, Col 9: statement executed 44 times." class="nolink">&#160;44</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="nolink" title="Line 73, Col 9: statement executed 44 times.">        compiler.reportCodeChange();</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="78" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-78' onclick="toggleInlineStats(this, 'inlinestats-78');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-78" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-78'), 'inlinestats-78');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (5)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.67</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit shouldTraverse(NodeTraversal,Node,Node)&#160;:&#160;boolean');" ><span title="Line 78, Col 3: method entered 10,722 times." class="nolink">&#160;10722</span></td>
+<td class=" methodStart  srcCell" id="id-78"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 78,84);" id="img-78" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 3: method entered 10,722 times.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-78'), 78,84);" id="e78" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine">  <span class="keyword">public</span> <span class="keyword">boolean</span> shouldTraverse(<a href="../../../../com/google/javascript/jscomp/NodeTraversal.html#NodeTraversal">NodeTraversal</a> t, <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> n, <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> parent) {</span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 80, 'Tests that hit line # 80');" ><span title="Line 80, Col 8: true branch executed 456 times, false branch executed 10,266 times." class="nolink">&#160;10722</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"><span class="nolink" title="Line 80, Col 8: true branch executed 456 times, false branch executed 10,266 times.">    <span class="keyword">if</span> (n.isScript()) {</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 81, 'Tests that hit line # 81');" ><span title="Line 81, Col 7: statement executed 456 times." class="nolink">&#160;456</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"><span class="nolink" title="Line 81, Col 7: statement executed 456 times.">      <span class="keyword">this</span>.inExterns = n.getStaticSourceFile().isExtern();</span></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 83, 'Tests that hit line # 83');" ><span title="Line 83, Col 5: statement executed 10,722 times." class="nolink">&#160;10722</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="nolink" title="Line 83, Col 5: statement executed 10,722 times.">    <span class="keyword">return</span> <span class="keyword">true</span>;</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="86" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-86' onclick="toggleInlineStats(this, 'inlinestats-86');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-86" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-86'), 'inlinestats-86');return true;">
+                <td><div>
+<div title="95.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:95.7%"></div></div></div></td><td>95.7%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (23)</td>
+                <td class="inlineStat">Complexity: 10</td>
+                <td class="inlineStat">Complexity Density: 0.67</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l86">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 86, 'Tests that hit visit(NodeTraversal,Node,Node)&#160;:&#160;void');" ><span title="Line 86, Col 3: method entered 10,722 times." class="nolink">&#160;10722</span></td>
+<td class=" methodStart  srcCell" id="id-86"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 86,116);" id="img-86" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-86" class="srcLine"><span class="nolink" title="Line 86, Col 3: method entered 10,722 times.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-86'), 86,116);" id="e86" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine">  <span class="keyword">public</span> <span class="keyword">void</span> visit(<a href="../../../../com/google/javascript/jscomp/NodeTraversal.html#NodeTraversal">NodeTraversal</a> t, <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> n, <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> parent) {</span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 88, 'Tests that hit line # 88');" ><span title="Line 88, Col 6: statement executed 10,722 times." class="nolink">&#160;10722</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"><span class="nolink" title="Line 88, Col 6: statement executed 10,722 times.">     <span class="keyword">switch</span> (n.getType()) {</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 89, 'Tests that hit line # 89');" ><span title="Line 89, Col 8: statement executed 1,050 times." class="nolink">&#160;1050</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine"><span class="nolink" title="Line 89, Col 8: statement executed 1,050 times.">       <span class="keyword">case</span> <a href="../../../../com/google/javascript/rhino/Token.html#Token">Token</a>.GETPROP: {</span></span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 90, 'Tests that hit line # 90');" ><span title="Line 90, Col 10: statement executed 1,050 times." class="nolink">&#160;1050</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"><span class="nolink" title="Line 90, Col 10: statement executed 1,050 times.">         String propName = n.getLastChild().getString();</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit line # 91');" ><span title="Line 91, Col 13: true branch executed 862 times, false branch executed 188 times." class="nolink">&#160;1050</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 13: true branch executed 862 times, false branch executed 188 times.">         <span class="keyword">if</span> (inExterns || isPinningPropertyUse(n)) {</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 92, 'Tests that hit line # 92');" ><span title="Line 92, Col 12: statement executed 862 times." class="nolink">&#160;862</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="nolink" title="Line 92, Col 12: statement executed 862 times.">           used.add(propName);</span></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine">         } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine">           <span class="comment">// This is a definition of a property but it is only removable</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine">           <span class="comment">// if it is defined on &quot;this&quot;.</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 96, 'Tests that hit line # 96');" ><span title="Line 96, Col 15: true branch executed 135 times, false branch executed 53 times." class="nolink">&#160;188</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="nolink" title="Line 96, Col 15: true branch executed 135 times, false branch executed 53 times.">           <span class="keyword">if</span> (n.getFirstChild().isThis()) {</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 97, 'Tests that hit line # 97');" ><span title="Line 97, Col 14: statement executed 135 times." class="nolink">&#160;135</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 14: statement executed 135 times.">             candidates.add(n);</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine">           }</span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine">         }</span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 100, 'Tests that hit line # 100');" ><span title="Line 100, Col 10: statement executed 1,050 times." class="nolink">&#160;1050</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"><span class="nolink" title="Line 100, Col 10: statement executed 1,050 times.">         <span class="keyword">break</span>;</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine">       }</span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 103, 'Tests that hit line # 103');" ><span title="Line 103, Col 8: statement executed 177 times." class="nolink">&#160;177</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine"><span class="nolink" title="Line 103, Col 8: statement executed 177 times.">       <span class="keyword">case</span> <a href="../../../../com/google/javascript/rhino/Token.html#Token">Token</a>.CALL:</span></span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine">         <span class="comment">// Look for properties referenced through &quot;JSCompiler_propertyRename&quot;.</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 105, 'Tests that hit line # 105');" ><span title="Line 105, Col 10: statement executed 177 times." class="nolink">&#160;177</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine"><span class="nolink" title="Line 105, Col 10: statement executed 177 times.">         <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> target = n.getFirstChild();</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 106, 'Tests that hit line # 106');" ><span title="Line 106, Col 13: true branch executed 8 times, false branch executed 169 times." class="nolink">&#160;177</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 13: true branch executed 8 times, false branch executed 169 times.">         <span class="keyword">if</span> (n.hasMoreThanOneChild()</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine">             &amp;&amp; target.isName()</span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine">             &amp;&amp; target.getString().equals(<a href="../../../../com/google/javascript/jscomp/NodeUtil.html#NodeUtil">NodeUtil</a>.JSC_PROPERTY_NAME_FN)) {</span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 109, 'Tests that hit line # 109');" ><span title="Line 109, Col 12: statement executed 8 times." class="nolink">&#160;8</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine"><span class="nolink" title="Line 109, Col 12: statement executed 8 times.">           <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> propName = target.getNext();</span></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 110, 'Tests that hit line # 110');" ><span title="Line 110, Col 15: true branch executed 8 times, false branch executed 0 times." class="nolink">&#160;8</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLineHilight"><span class="nolink" title="Line 110, Col 15: true branch executed 8 times, false branch executed 0 times.">           <span class="keyword">if</span> (propName.isString()) {</span></span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 111, 'Tests that hit line # 111');" ><span title="Line 111, Col 14: statement executed 8 times." class="nolink">&#160;8</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLine"><span class="nolink" title="Line 111, Col 14: statement executed 8 times.">             used.add(propName.getString());</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine">           }</span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine">         }</span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 10: statement executed 177 times." class="nolink">&#160;177</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 10: statement executed 177 times.">         <span class="keyword">break</span>;</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine">     }</span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine"></span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine"><span class="comment">   * </span><span class="javadoc">@return</span><span class="comment"> Whether the property is used in a way that prevents its removal.</span></span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="121" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-121' onclick="toggleInlineStats(this, 'inlinestats-121');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-121" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-121'), 'inlinestats-121');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (13)</td>
+                <td class="inlineStat">Complexity: 6</td>
+                <td class="inlineStat">Complexity Density: 0.86</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l121">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 121, 'Tests that hit isPinningPropertyUse(Node)&#160;:&#160;boolean');" ><span title="Line 121, Col 3: method entered 378 times." class="nolink">&#160;378</span></td>
+<td class=" methodStart  srcCell" id="id-121"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 121,145);" id="img-121" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-121" class="srcLine"><span class="nolink" title="Line 121, Col 3: method entered 378 times.">  <span class="keyword">private</span> <span class="keyword">boolean</span> isPinningPropertyUse(<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> n) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-121'), 121,145);" id="e121" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLine">    <span class="comment">// Rather than looking for cases that are uses, we assume all references are</span></span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLine">    <span class="comment">// pinning uses unless they are:</span></span></td>
+</tr>
+ <tr id="l124">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-124" class="srcLine">    <span class="comment">//  - a simple assignment (x.a = 1)</span></span></td>
+</tr>
+ <tr id="l125">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-125" class="srcLine">    <span class="comment">//  - a compound assignment or increment (x++, x += 1) whose result is</span></span></td>
+</tr>
+ <tr id="l126">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=126#src-126">126</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-126" class="srcLine">    <span class="comment">//    otherwise unused</span></span></td>
+</tr>
+ <tr id="l127">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=127#src-127">127</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-127" class="srcLine"></span></td>
+</tr>
+ <tr id="l128">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=128#src-128">128</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 128, 'Tests that hit line # 128');" ><span title="Line 128, Col 5: statement executed 378 times." class="nolink">&#160;378</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-128" class="srcLine"><span class="nolink" title="Line 128, Col 5: statement executed 378 times.">    <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> parent = n.getParent();</span></span></td>
+</tr>
+ <tr id="l129">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=129#src-129">129</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 129, 'Tests that hit line # 129');" ><span title="Line 129, Col 8: true branch executed 319 times, false branch executed 59 times." class="nolink">&#160;378</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-129" class="srcLine"><span class="nolink" title="Line 129, Col 8: true branch executed 319 times, false branch executed 59 times.">    <span class="keyword">if</span> (n == parent.getFirstChild()) {</span></span></td>
+</tr>
+ <tr id="l130">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=130#src-130">130</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 130, 'Tests that hit line # 130');" ><span title="Line 130, Col 10: true branch executed 138 times, false branch executed 181 times." class="nolink">&#160;319</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-130" class="srcLine"><span class="nolink" title="Line 130, Col 10: true branch executed 138 times, false branch executed 181 times.">      <span class="keyword">if</span> (parent.isAssign()) {</span></span></td>
+</tr>
+ <tr id="l131">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=131#src-131">131</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-131" class="srcLine">        <span class="comment">// A simple assignment doesn't pin the property.</span></span></td>
+</tr>
+ <tr id="l132">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=132#src-132">132</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 132, 'Tests that hit line # 132');" ><span title="Line 132, Col 9: statement executed 138 times." class="nolink">&#160;138</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-132" class="srcLine"><span class="nolink" title="Line 132, Col 9: statement executed 138 times.">        <span class="keyword">return</span> <span class="keyword">false</span>;</span></span></td>
+</tr>
+ <tr id="l133">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=133#src-133">133</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 133, 'Tests that hit line # 133');" ><span title="Line 133, Col 17: true branch executed 74 times, false branch executed 107 times." class="nolink">&#160;181</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-133" class="srcLine"><span class="nolink" title="Line 133, Col 17: true branch executed 74 times, false branch executed 107 times.">      } <span class="keyword">else</span> <span class="keyword">if</span> (<a href="../../../../com/google/javascript/jscomp/NodeUtil.html#NodeUtil">NodeUtil</a>.isAssignmentOp(parent)</span></span></td>
+</tr>
+ <tr id="l134">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=134#src-134">134</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-134" class="srcLine">            || parent.isInc() || parent.isDec()) {</span></td>
+</tr>
+ <tr id="l135">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=135#src-135">135</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-135" class="srcLine">        <span class="comment">// In general, compound assignments are both reads and writes, but</span></span></td>
+</tr>
+ <tr id="l136">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=136#src-136">136</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-136" class="srcLine">        <span class="comment">// if the property is never otherwise read we can consider it simply</span></span></td>
+</tr>
+ <tr id="l137">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=137#src-137">137</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-137" class="srcLine">        <span class="comment">// a write.</span></span></td>
+</tr>
+ <tr id="l138">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=138#src-138">138</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-138" class="srcLine">        <span class="comment">// However if the assign expression is used as part of a larger</span></span></td>
+</tr>
+ <tr id="l139">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=139#src-139">139</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-139" class="srcLine">        <span class="comment">// expression, we much consider it a read. For example:</span></span></td>
+</tr>
+ <tr id="l140">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=140#src-140">140</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-140" class="srcLine">        <span class="comment">//    x = (y.a += 1);</span></span></td>
+</tr>
+ <tr id="l141">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=141#src-141">141</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 141, 'Tests that hit line # 141');" ><span title="Line 141, Col 9: statement executed 74 times." class="nolink">&#160;74</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-141" class="srcLine"><span class="nolink" title="Line 141, Col 9: statement executed 74 times.">        <span class="keyword">return</span> <a href="../../../../com/google/javascript/jscomp/NodeUtil.html#NodeUtil">NodeUtil</a>.isExpressionResultUsed(parent);</span></span></td>
+</tr>
+ <tr id="l142">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=142#src-142">142</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-142" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l143">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=143#src-143">143</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-143" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l144">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=144#src-144">144</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 144, 'Tests that hit line # 144');" ><span title="Line 144, Col 5: statement executed 166 times." class="nolink">&#160;166</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-144" class="srcLine"><span class="nolink" title="Line 144, Col 5: statement executed 166 times.">    <span class="keyword">return</span> <span class="keyword">true</span>;</span></span></td>
+</tr>
+ <tr id="l145">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=145#src-145">145</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-145" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l146">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=146#src-146">146</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-146" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="RemoveUnusedClassProperties.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

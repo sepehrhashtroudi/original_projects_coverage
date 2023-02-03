@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>Gson 1.6</title>
+    </head>
+
+<body  onload="onLoad('Gson 1.6: com.google.gson.ParameterizedTypeImpl.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://code.google.com/p/google-gson/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://code.google.com/p/google-gson/" target="_top">
+                                        Gson 1.6
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="com.google.gson">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Thu Jan 5 2023 21:35:55 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.google.gson</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File ParameterizedTypeImpl.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../img/srcFileCovDistChart8.png" alt="../../../img/srcFileCovDistChart8.png"
+                         usemap="#srcFileCovDistChart8.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart8.png" name="srcFileCovDistChart8.png">
+<area shape="rect" coords="100,8,107,65" title="36 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,45,98,65" title="13 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,45,89,65" title="13 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,62,80,66" title="3 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,63,71,66" title="2 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="1 file has 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,62,54,66" title="3 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,65,45,66" title="1 file has 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,65,36,66" title="1 file has 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="0 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,60,18,66" title="4 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>63% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">91</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">44</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">91</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">44</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">6</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="ParameterizedTypeImpl">
+        <span><a href="#43" title="ParameterizedTypeImpl" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '43');">ParameterizedTypeImpl</a></span>
+</td>
+<td>43<a name="sl-43"></a></td>
+    <td class="">15</td>
+    <td class="">0%</td>
+    <td class="">12</td>
+    <td class="">8</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.75757575</span>75.8%</div><div style="display: table-cell">
+ <div title="75.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.8%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-ParameterizedTypeImpl" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-ParameterizedTypeImpl" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class ParameterizedTypeImpl</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-ParameterizedTypeImpl-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-ParameterizedTypeImpl-methods-body', 'dialog-ParameterizedTypeImpl-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="ParameterizedTypeImpl">
+    Class<br/>    <span><a href="#43" title="ParameterizedTypeImpl" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '43');">ParameterizedTypeImpl</a></span>
+</th>
+<th>Line #<br/>43<a name="sl-43"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>15</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>12</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>8</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.75757575</span>75.8%</div><div style="display: table-cell">
+ <div title="75.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.8%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-ParameterizedTypeImpl-methods-body">
+                                                                                                            <tr id="ParameterizedTypeImpl-1">
+<td id="summary-49-3">
+ <span class="sortValue">ParameterizedTypeImpl(Type,Type[],Type)</span>
+&#160;&#160;<a href="?line=29#49" title="ParameterizedTypeImpl(Type,Type[],Type)" name="sl-49" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '49');">ParameterizedTypeImpl(Type,Type[],Type)</a>
+</td>
+<td align="right"><span class="sortValue">49</span>49</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ParameterizedTypeImpl-2">
+<td id="summary-55-3">
+ <span class="sortValue">getRawType()&#160;:&#160;Type</span>
+&#160;&#160;<a href="?line=29#55" title="getRawType()&#160;:&#160;Type" name="sl-55" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '55');">getRawType()&#160;:&#160;Type</a>
+</td>
+<td align="right"><span class="sortValue">55</span>55</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ParameterizedTypeImpl-3">
+<td id="summary-59-3">
+ <span class="sortValue">getActualTypeArguments()&#160;:&#160;Type[]</span>
+&#160;&#160;<a href="?line=29#59" title="getActualTypeArguments()&#160;:&#160;Type[]" name="sl-59" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '59');">getActualTypeArguments()&#160;:&#160;Type[]</a>
+</td>
+<td align="right"><span class="sortValue">59</span>59</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ParameterizedTypeImpl-4">
+<td id="summary-63-3">
+ <span class="sortValue">getOwnerType()&#160;:&#160;Type</span>
+&#160;&#160;<a href="?line=29#63" title="getOwnerType()&#160;:&#160;Type" name="sl-63" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '63');">getOwnerType()&#160;:&#160;Type</a>
+</td>
+<td align="right"><span class="sortValue">63</span>63</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ParameterizedTypeImpl-5">
+<td id="summary-67-3">
+ <span class="sortValue">equals(Object)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#67" title="equals(Object)&#160;:&#160;boolean" name="sl-67" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '67');">equals(Object)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">67</span>67</td>
+<td class="" align="right"><span class="sortValue">8.0</span>8</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">0.625</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.625</span>62.5%</div><div style="display: table-cell">
+ <div title="62.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:62.5%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ParameterizedTypeImpl-6">
+<td id="summary-85-3">
+ <span class="sortValue">hashCode()&#160;:&#160;int</span>
+&#160;&#160;<a href="?line=29#85" title="hashCode()&#160;:&#160;int" name="sl-85" onclick="closeDialogAndScrollTo('dialog-ParameterizedTypeImpl', '85');">hashCode()&#160;:&#160;int</a>
+</td>
+<td align="right"><span class="sortValue">85</span>85</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.6</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6</span>60%</div><div style="display: table-cell">
+ <div title="60% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:60%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-ParameterizedTypeImpl">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 40 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-79">
+<td><a name="testA-79"></a><input type="checkbox" id="cb-79" value="79" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/ParameterizedTypeImplTest_testNotEquals_27.html';">
+<span class="sortValue">0.5151515</span>
+<div>
+<div title="51.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.5%"></div></div></div></td>
+<td id="tc-79">  <span class="sortValue">com.google.gson.ParameterizedTypeImplTest.testNotEquals</span><a href="../../../com/google/gson/ParameterizedTypeImplTest_testNotEquals_27.html" title="View Test Summary Page">com.google.gson.ParameterizedTypeImplTest.testNotEquals</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/ParameterizedTypeImplTest.html?line=52#src-52" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/ParameterizedTypeImplTest_testNotEquals_27.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-230">
+<td><a name="testA-230"></a><input type="checkbox" id="cb-230" value="230" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeFieldsAndGenericArraysSerialization_6e.html';">
+<span class="sortValue">0.42424244</span>
+<div>
+<div title="42.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.4%"></div></div></div></td>
+<td id="tc-230">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeFieldsAndGenericArraysSerialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeFieldsAndGenericArraysSerialization_6e.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeFieldsAndGenericArraysSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=160#src-160" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeFieldsAndGenericArraysSerialization_6e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-685">
+<td><a name="testA-685"></a><input type="checkbox" id="cb-685" value="685" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeGenericArraysDeserialization_j1.html';">
+<span class="sortValue">0.42424244</span>
+<div>
+<div title="42.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.4%"></div></div></div></td>
+<td id="tc-685">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testParameterizedTypeGenericArraysDeserialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeGenericArraysDeserialization_j1.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testParameterizedTypeGenericArraysDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=245#src-245" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeGenericArraysDeserialization_j1.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-524">
+<td><a name="testA-524"></a><input type="checkbox" id="cb-524" value="524" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeFieldsAndGenericArraysDeserialization_ek.html';">
+<span class="sortValue">0.42424244</span>
+<div>
+<div title="42.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.4%"></div></div></div></td>
+<td id="tc-524">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeFieldsAndGenericArraysDeserialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeFieldsAndGenericArraysDeserialization_ek.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeFieldsAndGenericArraysDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=177#src-177" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeFieldsAndGenericArraysDeserialization_ek.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-470">
+<td><a name="testA-470"></a><input type="checkbox" id="cb-470" value="470" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeGenericArraysSerialization_d2.html';">
+<span class="sortValue">0.42424244</span>
+<div>
+<div title="42.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.4%"></div></div></div></td>
+<td id="tc-470">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testParameterizedTypeGenericArraysSerialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeGenericArraysSerialization_d2.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testParameterizedTypeGenericArraysSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=231#src-231" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeGenericArraysSerialization_d2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-568">
+<td><a name="testA-568"></a><input type="checkbox" id="cb-568" value="568" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeWithVariableTypeDeserialization_fs.html';">
+<span class="sortValue">0.42424244</span>
+<div>
+<div title="42.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:42.4%"></div></div></div></td>
+<td id="tc-568">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testParameterizedTypeWithVariableTypeDeserialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeWithVariableTypeDeserialization_fs.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testParameterizedTypeWithVariableTypeDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=217#src-217" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testParameterizedTypeWithVariableTypeDeserialization_fs.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-399">
+<td><a name="testA-399"></a><input type="checkbox" id="cb-399" value="399" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionDeserialization_b3.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-399">  <span class="sortValue">com.google.gson.functional.InheritanceTest.testSubInterfacesOfCollectionDeserialization</span><a href="../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionDeserialization_b3.html" title="View Test Summary Page">com.google.gson.functional.InheritanceTest.testSubInterfacesOfCollectionDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InheritanceTest.html?line=171#src-171" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionDeserialization_b3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-277">
+<td><a name="testA-277"></a><input type="checkbox" id="cb-277" value="277" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/CircularReferenceTest_testDirectedAcyclicGraphDeserialization_7p.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-277">  <span class="sortValue">com.google.gson.functional.CircularReferenceTest.testDirectedAcyclicGraphDeserialization</span><a href="../../../com/google/gson/functional/CircularReferenceTest_testDirectedAcyclicGraphDeserialization_7p.html" title="View Test Summary Page">com.google.gson.functional.CircularReferenceTest.testDirectedAcyclicGraphDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/CircularReferenceTest.html?line=112#src-112" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/CircularReferenceTest_testDirectedAcyclicGraphDeserialization_7p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-49">
+<td><a name="testA-49"></a><input type="checkbox" id="cb-49" value="49" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/PrettyPrintingTest_testEmptyMapField_1d.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-49">  <span class="sortValue">com.google.gson.functional.PrettyPrintingTest.testEmptyMapField</span><a href="../../../com/google/gson/functional/PrettyPrintingTest_testEmptyMapField_1d.html" title="View Test Summary Page">com.google.gson.functional.PrettyPrintingTest.testEmptyMapField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/PrettyPrintingTest.html?line=101#src-101" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/PrettyPrintingTest_testEmptyMapField_1d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-356">
+<td><a name="testA-356"></a><input type="checkbox" id="cb-356" value="356" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/TypeVariableTest_testSingle_9w.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-356">  <span class="sortValue">com.google.gson.functional.TypeVariableTest.testSingle</span><a href="../../../com/google/gson/functional/TypeVariableTest_testSingle_9w.html" title="View Test Summary Page">com.google.gson.functional.TypeVariableTest.testSingle</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/TypeVariableTest.html?line=33#src-33" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/TypeVariableTest_testSingle_9w.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-50">
+<td><a name="testA-50"></a><input type="checkbox" id="cb-50" value="50" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/MapTest_testMapSerializationWithNullValues_1e.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-50">  <span class="sortValue">com.google.gson.functional.MapTest.testMapSerializationWithNullValues</span><a href="../../../com/google/gson/functional/MapTest_testMapSerializationWithNullValues_1e.html" title="View Test Summary Page">com.google.gson.functional.MapTest.testMapSerializationWithNullValues</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/MapTest.html?line=216#src-216" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/MapTest_testMapSerializationWithNullValues_1e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-658">
+<td><a name="testA-658"></a><input type="checkbox" id="cb-658" value="658" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/CollectionTest_testWildcardCollectionField_ia.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-658">  <span class="sortValue">com.google.gson.functional.CollectionTest.testWildcardCollectionField</span><a href="../../../com/google/gson/functional/CollectionTest_testWildcardCollectionField_ia.html" title="View Test Summary Page">com.google.gson.functional.CollectionTest.testWildcardCollectionField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/CollectionTest.html?line=260#src-260" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/CollectionTest_testWildcardCollectionField_ia.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-313">
+<td><a name="testA-313"></a><input type="checkbox" id="cb-313" value="313" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testEmptyCollectionInAnObjectDeserialization_8p.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-313">  <span class="sortValue">com.google.gson.functional.ObjectTest.testEmptyCollectionInAnObjectDeserialization</span><a href="../../../com/google/gson/functional/ObjectTest_testEmptyCollectionInAnObjectDeserialization_8p.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testEmptyCollectionInAnObjectDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=222#src-222" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testEmptyCollectionInAnObjectDeserialization_8p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-28">
+<td><a name="testA-28"></a><input type="checkbox" id="cb-28" value="28" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testSingletonLists_s.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-28">  <span class="sortValue">com.google.gson.functional.ObjectTest.testSingletonLists</span><a href="../../../com/google/gson/functional/ObjectTest_testSingletonLists_s.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testSingletonLists</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=423#src-423" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testSingletonLists_s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-101">
+<td><a name="testA-101"></a><input type="checkbox" id="cb-101" value="101" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/CircularReferenceTest_testCircularSerialization_2t.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-101">  <span class="sortValue">com.google.gson.functional.CircularReferenceTest.testCircularSerialization</span><a href="../../../com/google/gson/functional/CircularReferenceTest_testCircularSerialization_2t.html" title="View Test Summary Page">com.google.gson.functional.CircularReferenceTest.testCircularSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/CircularReferenceTest.html?line=47#src-47" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/CircularReferenceTest_testCircularSerialization_2t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-677">
+<td><a name="testA-677"></a><input type="checkbox" id="cb-677" value="677" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/CircularReferenceTest_testDirectedAcyclicGraphSerialization_it.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-677">  <span class="sortValue">com.google.gson.functional.CircularReferenceTest.testDirectedAcyclicGraphSerialization</span><a href="../../../com/google/gson/functional/CircularReferenceTest_testDirectedAcyclicGraphSerialization_it.html" title="View Test Summary Page">com.google.gson.functional.CircularReferenceTest.testDirectedAcyclicGraphSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/CircularReferenceTest.html?line=102#src-102" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/CircularReferenceTest_testDirectedAcyclicGraphSerialization_it.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-338">
+<td><a name="testA-338"></a><input type="checkbox" id="cb-338" value="338" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/MapTest_testMapSerializationWithNullValuesSerialized_9e.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-338">  <span class="sortValue">com.google.gson.functional.MapTest.testMapSerializationWithNullValuesSerialized</span><a href="../../../com/google/gson/functional/MapTest_testMapSerializationWithNullValuesSerialized_9e.html" title="View Test Summary Page">com.google.gson.functional.MapTest.testMapSerializationWithNullValuesSerialized</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/MapTest.html?line=228#src-228" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/MapTest_testMapSerializationWithNullValuesSerialized_9e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-567">
+<td><a name="testA-567"></a><input type="checkbox" id="cb-567" value="567" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ObjectTest_testEmptyCollectionInAnObjectSerialization_fr.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-567">  <span class="sortValue">com.google.gson.functional.ObjectTest.testEmptyCollectionInAnObjectSerialization</span><a href="../../../com/google/gson/functional/ObjectTest_testEmptyCollectionInAnObjectSerialization_fr.html" title="View Test Summary Page">com.google.gson.functional.ObjectTest.testEmptyCollectionInAnObjectSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ObjectTest.html?line=248#src-248" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ObjectTest_testEmptyCollectionInAnObjectSerialization_fr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-170">
+<td><a name="testA-170"></a><input type="checkbox" id="cb-170" value="170" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionSerialization_4q.html';">
+<span class="sortValue">0.36363637</span>
+<div>
+<div title="36.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:36.4%"></div></div></div></td>
+<td id="tc-170">  <span class="sortValue">com.google.gson.functional.InheritanceTest.testSubInterfacesOfCollectionSerialization</span><a href="../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionSerialization_4q.html" title="View Test Summary Page">com.google.gson.functional.InheritanceTest.testSubInterfacesOfCollectionSerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/InheritanceTest.html?line=145#src-145" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/InheritanceTest_testSubInterfacesOfCollectionSerialization_4q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-477">
+<td><a name="testA-477"></a><input type="checkbox" id="cb-477" value="477" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testGenericArrayTypeField_d9.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-477">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testGenericArrayTypeField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testGenericArrayTypeField_d9.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testGenericArrayTypeField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testGenericArrayTypeField_d9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-257">
+<td><a name="testA-257"></a><input type="checkbox" id="cb-257" value="257" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testListTypeVariableWildcardField_75.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-257">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testListTypeVariableWildcardField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testListTypeVariableWildcardField_75.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testListTypeVariableWildcardField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=204#src-204" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testListTypeVariableWildcardField_75.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-417">
+<td><a name="testA-417"></a><input type="checkbox" id="cb-417" value="417" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testNestedParameterizedTypeField_bl.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-417">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testNestedParameterizedTypeField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testNestedParameterizedTypeField_bl.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testNestedParameterizedTypeField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=75#src-75" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testNestedParameterizedTypeField_bl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-375">
+<td><a name="testA-375"></a><input type="checkbox" id="cb-375" value="375" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/ParameterizedTypeImplTest_testOurTypeFunctionality_af.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-375">  <span class="sortValue">com.google.gson.ParameterizedTypeImplTest.testOurTypeFunctionality</span><a href="../../../com/google/gson/ParameterizedTypeImplTest_testOurTypeFunctionality_af.html" title="View Test Summary Page">com.google.gson.ParameterizedTypeImplTest.testOurTypeFunctionality</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/ParameterizedTypeImplTest.html?line=44#src-44" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/ParameterizedTypeImplTest_testOurTypeFunctionality_af.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-160">
+<td><a name="testA-160"></a><input type="checkbox" id="cb-160" value="160" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeVariableArrayField_4g.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-160">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testParameterizedTypeVariableArrayField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeVariableArrayField_4g.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testParameterizedTypeVariableArrayField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=149#src-149" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeVariableArrayField_4g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-109">
+<td><a name="testA-109"></a><input type="checkbox" id="cb-109" value="109" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeField_31.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-109">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testParameterizedTypeField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeField_31.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testParameterizedTypeField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=64#src-64" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeField_31.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2">
+<td><a name="testA-2"></a><input type="checkbox" id="cb-2" value="2" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeDeserialization_2.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-2">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeDeserialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeDeserialization_2.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=195#src-195" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeDeserialization_2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-76">
+<td><a name="testA-76"></a><input type="checkbox" id="cb-76" value="76" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeVariableField_24.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-76">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testParameterizedTypeVariableField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeVariableField_24.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testParameterizedTypeVariableField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=127#src-127" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testParameterizedTypeVariableField_24.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-659">
+<td><a name="testA-659"></a><input type="checkbox" id="cb-659" value="659" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeArrayDeserialization_ib.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-659">  <span class="sortValue">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeArrayDeserialization</span><a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeArrayDeserialization_ib.html" title="View Test Summary Page">com.google.gson.functional.ParameterizedTypesTest.testVariableTypeArrayDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ParameterizedTypesTest.html?line=205#src-205" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ParameterizedTypesTest_testVariableTypeArrayDeserialization_ib.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-304">
+<td><a name="testA-304"></a><input type="checkbox" id="cb-304" value="304" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testArrayOfListTypeVariableWildcardField_8g.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-304">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testArrayOfListTypeVariableWildcardField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testArrayOfListTypeVariableWildcardField_8g.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testArrayOfListTypeVariableWildcardField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=215#src-215" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testArrayOfListTypeVariableWildcardField_8g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-224">
+<td><a name="testA-224"></a><input type="checkbox" id="cb-224" value="224" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testWildcardField_68.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-224">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testWildcardField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testWildcardField_68.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testWildcardField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=160#src-160" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testWildcardField_68.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-239">
+<td><a name="testA-239"></a><input type="checkbox" id="cb-239" value="239" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testArrayOfListStringWildcardField_6n.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-239">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testArrayOfListStringWildcardField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testArrayOfListStringWildcardField_6n.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testArrayOfListStringWildcardField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=193#src-193" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testArrayOfListStringWildcardField_6n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-377">
+<td><a name="testA-377"></a><input type="checkbox" id="cb-377" value="377" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testListStringWildcardField_ah.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-377">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testListStringWildcardField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testListStringWildcardField_ah.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testListStringWildcardField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=182#src-182" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testListStringWildcardField_ah.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-589">
+<td><a name="testA-589"></a><input type="checkbox" id="cb-589" value="589" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategySerialization_gd.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-589">  <span class="sortValue">com.google.gson.functional.ExclusionStrategyFunctionalTest.testExclusionStrategySerialization</span><a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategySerialization_gd.html" title="View Test Summary Page">com.google.gson.functional.ExclusionStrategyFunctionalTest.testExclusionStrategySerialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategySerialization_gd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-516">
+<td><a name="testA-516"></a><input type="checkbox" id="cb-516" value="516" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testNestedParameterizedTypeVariableField_ec.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-516">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testNestedParameterizedTypeVariableField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testNestedParameterizedTypeVariableField_ec.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testNestedParameterizedTypeVariableField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=138#src-138" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testNestedParameterizedTypeVariableField_ec.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-600">
+<td><a name="testA-600"></a><input type="checkbox" id="cb-600" value="600" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/TypeInfoFactoryTest_testArrayOfWildcardField_go.html';">
+<span class="sortValue">0.3030303</span>
+<div>
+<div title="30.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:30.3%"></div></div></div></td>
+<td id="tc-600">  <span class="sortValue">com.google.gson.TypeInfoFactoryTest.testArrayOfWildcardField</span><a href="../../../com/google/gson/TypeInfoFactoryTest_testArrayOfWildcardField_go.html" title="View Test Summary Page">com.google.gson.TypeInfoFactoryTest.testArrayOfWildcardField</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/TypeInfoFactoryTest.html?line=171#src-171" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/TypeInfoFactoryTest_testArrayOfWildcardField_go.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-618">
+<td><a name="testA-618"></a><input type="checkbox" id="cb-618" value="618" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullCollectionMembers_h6.html';">
+<span class="sortValue">0.18181819</span>
+<div>
+<div title="18.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.2%"></div></div></div></td>
+<td id="tc-618">  <span class="sortValue">com.google.gson.functional.NullObjectAndFieldTest.testExplicitSerializationOfNullCollectionMembers</span><a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullCollectionMembers_h6.html" title="View Test Summary Page">com.google.gson.functional.NullObjectAndFieldTest.testExplicitSerializationOfNullCollectionMembers</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/NullObjectAndFieldTest.html?line=107#src-107" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullCollectionMembers_h6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-491">
+<td><a name="testA-491"></a><input type="checkbox" id="cb-491" value="491" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullStringMembers_dn.html';">
+<span class="sortValue">0.18181819</span>
+<div>
+<div title="18.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.2%"></div></div></div></td>
+<td id="tc-491">  <span class="sortValue">com.google.gson.functional.NullObjectAndFieldTest.testExplicitSerializationOfNullStringMembers</span><a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullStringMembers_dn.html" title="View Test Summary Page">com.google.gson.functional.NullObjectAndFieldTest.testExplicitSerializationOfNullStringMembers</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/NullObjectAndFieldTest.html?line=114#src-114" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullStringMembers_dn.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-414">
+<td><a name="testA-414"></a><input type="checkbox" id="cb-414" value="414" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullArrayMembers_bi.html';">
+<span class="sortValue">0.18181819</span>
+<div>
+<div title="18.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.2%"></div></div></div></td>
+<td id="tc-414">  <span class="sortValue">com.google.gson.functional.NullObjectAndFieldTest.testExplicitSerializationOfNullArrayMembers</span><a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullArrayMembers_bi.html" title="View Test Summary Page">com.google.gson.functional.NullObjectAndFieldTest.testExplicitSerializationOfNullArrayMembers</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/NullObjectAndFieldTest.html?line=80#src-80" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testExplicitSerializationOfNullArrayMembers_bi.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-273">
+<td><a name="testA-273"></a><input type="checkbox" id="cb-273" value="273" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategyDeserialization_7l.html';">
+<span class="sortValue">0.18181819</span>
+<div>
+<div title="18.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.2%"></div></div></div></td>
+<td id="tc-273">  <span class="sortValue">com.google.gson.functional.ExclusionStrategyFunctionalTest.testExclusionStrategyDeserialization</span><a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategyDeserialization_7l.html" title="View Test Summary Page">com.google.gson.functional.ExclusionStrategyFunctionalTest.testExclusionStrategyDeserialization</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest.html?line=61#src-61" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/ExclusionStrategyFunctionalTest_testExclusionStrategyDeserialization_7l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-468">
+<td><a name="testA-468"></a><input type="checkbox" id="cb-468" value="468" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../com/google/gson/functional/NullObjectAndFieldTest_testPrintPrintingObjectWithNulls_d0.html';">
+<span class="sortValue">0.18181819</span>
+<div>
+<div title="18.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.2%"></div></div></div></td>
+<td id="tc-468">  <span class="sortValue">com.google.gson.functional.NullObjectAndFieldTest.testPrintPrintingObjectWithNulls</span><a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testPrintPrintingObjectWithNulls_d0.html" title="View Test Summary Page">com.google.gson.functional.NullObjectAndFieldTest.testPrintPrintingObjectWithNulls</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../com/google/gson/functional/NullObjectAndFieldTest.html?line=130#src-130" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../com/google/gson/functional/NullObjectAndFieldTest_testPrintPrintingObjectWithNulls_d0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright (C) 2008 Google Inc.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="keyword">package</span> com.google.<a href="../gson/pkg-summary.html">gson</a>;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> java.lang.reflect.ParameterizedType;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="keyword">import</span> java.lang.reflect.Type;</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> java.util.Arrays;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment"> * An immutable implementation of the {</span><span class="javadoc">@link</span><span class="comment"> ParameterizedType} interface.  This object allows</span></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="comment"> * us to build a reflective {</span><span class="javadoc">@link</span><span class="comment"> Type} objects on demand.  This object is used to support</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="comment"> * serialization and deserialization of classes with an {</span><span class="comment">@code ParameterizedType} field where</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="comment"> * as least one of the actual type parameters is a {</span><span class="comment">@code TypeVariable}.</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment"> * &lt;p&gt;Here's an example class:</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment"> * &lt;pre&gt;</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="comment"> * class Foo&lt;T&gt; {</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="comment"> *   private List&lt;T&gt; someList;</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="comment"> *   Foo(List&lt;T&gt; list) {</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="comment"> *     this.someList = list;</span></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"><span class="comment"> *   }</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="comment"> * }</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="comment"> * &lt;/pre&gt;</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Inderjeet Singh</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Joel Leitch</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="43" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-43' onclick="toggleInlineStats(this, 'inlinestats-43');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-43" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-43'), 'inlinestats-43');return true;">
+                <td><div>
+<div title="75.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:75.8%"></div></div></div></td><td>75.8%</td>
+                <td class="inlineStat">Uncovered Elements: 8 (33)</td>
+                <td class="inlineStat">Complexity: 12</td>
+                <td class="inlineStat">Complexity Density: 0.8</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 43, 'Tests that hit ParameterizedTypeImpl');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-43"><span class="spacer"></span><span id="src-43" class="srcLine"><span class="keyword">final</span> <span class="keyword">class</span> <a href="../../../com/google/gson/ParameterizedTypeImpl.html#ParameterizedTypeImpl">ParameterizedTypeImpl</a> <span class="keyword">implements</span> ParameterizedType {</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">  <span class="keyword">private</span> <span class="keyword">final</span> Type rawType;</span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine">  <span class="keyword">private</span> <span class="keyword">final</span> Type[] actualTypeArguments;</span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">  <span class="keyword">private</span> <span class="keyword">final</span> Type owner;</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="49" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-49' onclick="toggleInlineStats(this, 'inlinestats-49');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-49" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-49'), 'inlinestats-49');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit ParameterizedTypeImpl(Type,Type[],Type)');" ><span title="Line 49, Col 3: method entered 118 times." class="nolink">&#160;118</span></td>
+<td class=" methodStart  srcCell" id="id-49"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 49,53);" id="img-49" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 3: method entered 118 times.">  <span class="keyword">public</span> <a href="../../../com/google/gson/ParameterizedTypeImpl.html#ParameterizedTypeImpl">ParameterizedTypeImpl</a>(Type rawType, Type[] actualTypeArguments, Type owner) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-49'), 49,53);" id="e49" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 50, 'Tests that hit line # 50');" ><span title="Line 50, Col 5: statement executed 118 times." class="nolink">&#160;118</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"><span class="nolink" title="Line 50, Col 5: statement executed 118 times.">    <span class="keyword">this</span>.rawType = rawType;</span></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit line # 51');" ><span title="Line 51, Col 5: statement executed 118 times." class="nolink">&#160;118</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"><span class="nolink" title="Line 51, Col 5: statement executed 118 times.">    <span class="keyword">this</span>.actualTypeArguments = actualTypeArguments;</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 5: statement executed 118 times." class="nolink">&#160;118</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 5: statement executed 118 times.">    <span class="keyword">this</span>.owner = owner;</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="55" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-55' onclick="toggleInlineStats(this, 'inlinestats-55');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-55" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-55'), 'inlinestats-55');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit getRawType()&#160;:&#160;Type');" ><span title="Line 55, Col 3: method entered 457 times." class="nolink">&#160;457</span></td>
+<td class=" methodStart  srcCell" id="id-55"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 55,57);" id="img-55" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 3: method entered 457 times.">  <span class="keyword">public</span> Type getRawType() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-55'), 55,57);" id="e55" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 56, 'Tests that hit line # 56');" ><span title="Line 56, Col 5: statement executed 457 times." class="nolink">&#160;457</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="nolink" title="Line 56, Col 5: statement executed 457 times.">    <span class="keyword">return</span> rawType;</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="59" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-59' onclick="toggleInlineStats(this, 'inlinestats-59');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-59" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-59'), 'inlinestats-59');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l59">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 59, 'Tests that hit getActualTypeArguments()&#160;:&#160;Type[]');" ><span title="Line 59, Col 3: method entered 125 times." class="nolink">&#160;125</span></td>
+<td class=" methodStart  srcCell" id="id-59"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 59,61);" id="img-59" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-59" class="srcLine"><span class="nolink" title="Line 59, Col 3: method entered 125 times.">  <span class="keyword">public</span> Type[] getActualTypeArguments() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-59'), 59,61);" id="e59" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 60, 'Tests that hit line # 60');" ><span title="Line 60, Col 5: statement executed 125 times." class="nolink">&#160;125</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"><span class="nolink" title="Line 60, Col 5: statement executed 125 times.">    <span class="keyword">return</span> actualTypeArguments;</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="63" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-63' onclick="toggleInlineStats(this, 'inlinestats-63');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-63" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-63'), 'inlinestats-63');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l63">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 63, 'Tests that hit getOwnerType()&#160;:&#160;Type');" ><span title="Line 63, Col 3: method entered 45 times." class="nolink">&#160;45</span></td>
+<td class=" methodStart  srcCell" id="id-63"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 63,65);" id="img-63" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-63" class="srcLine"><span class="nolink" title="Line 63, Col 3: method entered 45 times.">  <span class="keyword">public</span> Type getOwnerType() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-63'), 63,65);" id="e63" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit line # 64');" ><span title="Line 64, Col 5: statement executed 45 times." class="nolink">&#160;45</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 5: statement executed 45 times.">    <span class="keyword">return</span> owner;</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="67" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-67' onclick="toggleInlineStats(this, 'inlinestats-67');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-67" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-67'), 'inlinestats-67');return true;">
+                <td><div>
+<div title="62.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:62.5%"></div></div></div></td><td>62.5%</td>
+                <td class="inlineStat">Uncovered Elements: 6 (16)</td>
+                <td class="inlineStat">Complexity: 5</td>
+                <td class="inlineStat">Complexity Density: 0.62</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l67">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 67, 'Tests that hit equals(Object)&#160;:&#160;boolean');" ><span title="Line 67, Col 3: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-67"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 67,83);" id="img-67" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-67" class="srcLine"><span class="nolink" title="Line 67, Col 3: method entered 1 time.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-67'), 67,83);" id="e67" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine">  <span class="keyword">public</span> <span class="keyword">boolean</span> equals(Object o) {</span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 69, 'Tests that hit line # 69');" ><span title="Line 69, Col 8: true branch executed 0 times, false branch executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLineHilight"><span class="nolink" title="Line 69, Col 8: true branch executed 0 times, false branch executed 1 time.">    <span class="keyword">if</span> (!(o <span class="keyword">instanceof</span>  ParameterizedType)) {</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 70, Col 7: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLineHilight"><span class="nolink" title="Line 70, Col 7: statement not executed.">      <span class="keyword">return</span> <span class="keyword">false</span>;</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">    <span class="comment">// Check that information is equivalent</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 73, 'Tests that hit line # 73');" ><span title="Line 73, Col 5: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="nolink" title="Line 73, Col 5: statement executed 1 time.">    ParameterizedType that = (ParameterizedType) o;</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 74, 'Tests that hit line # 74');" ><span title="Line 74, Col 8: true branch executed 0 times, false branch executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLineHilight"><span class="nolink" title="Line 74, Col 8: true branch executed 0 times, false branch executed 1 time.">    <span class="keyword">if</span> (<span class="keyword">this</span>  == that) {</span></span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 75, Col 7: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLineHilight"><span class="nolink" title="Line 75, Col 7: statement not executed.">      <span class="keyword">return</span> <span class="keyword">true</span>;</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 77, 'Tests that hit line # 77');" ><span title="Line 77, Col 5: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="nolink" title="Line 77, Col 5: statement executed 1 time.">    Type thatOwner = that.getOwnerType();</span></span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit line # 78');" ><span title="Line 78, Col 5: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 5: statement executed 1 time.">    Type thatRawType = that.getRawType();</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 80, 'Tests that hit line # 80');" ><span title="Line 80, Col 12: true branch executed 1 time, false branch executed 0 times." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLineHilight"><span class="nolink" title="Line 80, Col 12: true branch executed 1 time, false branch executed 0 times.">    <span class="keyword">return</span> (owner == <span class="keyword">null</span> ? thatOwner == <span class="keyword">null</span> : owner.equals(thatOwner))</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 81, Col 10: true branch executed 0 times, false branch executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLineHilight"><span class="nolink" title="Line 81, Col 10: true branch executed 0 times, false branch executed 1 time.">      &amp;&amp; (rawType == <span class="keyword">null</span> ? thatRawType == <span class="keyword">null</span> : rawType.equals(thatRawType))</span></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine">      &amp;&amp; Arrays.equals(actualTypeArguments, that.getActualTypeArguments());</span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="85" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-85' onclick="toggleInlineStats(this, 'inlinestats-85');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-85" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-85'), 'inlinestats-85');return true;">
+                <td><div>
+<div title="60% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:60%"></div></div></div></td><td>60%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (5)</td>
+                <td class="inlineStat">Complexity: 3</td>
+                <td class="inlineStat">Complexity Density: 3</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l85">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 85, 'Tests that hit hashCode()&#160;:&#160;int');" ><span title="Line 85, Col 3: method entered 141 times." class="nolink">&#160;141</span></td>
+<td class=" methodStart  srcCell" id="id-85"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 85,90);" id="img-85" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-85" class="srcLine"><span class="nolink" title="Line 85, Col 3: method entered 141 times.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-85'), 85,90);" id="e85" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine">  <span class="keyword">public</span> <span class="keyword">int</span> hashCode() {</span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 87, 'Tests that hit line # 87');" ><span title="Line 87, Col 5: statement executed 141 times." class="nolink">&#160;141</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"><span class="nolink" title="Line 87, Col 5: statement executed 141 times.">    <span class="keyword">return</span> Arrays.hashCode(actualTypeArguments)</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 88, 'Tests that hit line # 88');" ><span title="Line 88, Col 11: true branch executed 141 times, false branch executed 0 times." class="nolink">&#160;141</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLineHilight"><span class="nolink" title="Line 88, Col 11: true branch executed 141 times, false branch executed 0 times.">        ^ (owner == <span class="keyword">null</span> ? 0 : owner.hashCode())</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 89, Col 11: true branch executed 0 times, false branch executed 141 times." class="nolink">&#160;141</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLineHilight"><span class="nolink" title="Line 89, Col 11: true branch executed 0 times, false branch executed 141 times.">        ^ (rawType == <span class="keyword">null</span> ? 0 : rawType.hashCode());</span></span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="ParameterizedTypeImpl.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 5 2023 21:36:04 MST using coverage data from Thu Jan 5 2023 21:36:02 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

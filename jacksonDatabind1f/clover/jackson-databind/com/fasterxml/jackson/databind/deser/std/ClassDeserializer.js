@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":37,"id":14433,"methods":[{"el":19,"sc":5,"sl":19},{"el":36,"sc":5,"sl":21}],"name":"ClassDeserializer","sl":12}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1062":{"methods":[{"sl":19},{"sl":21}],"name":"testPolymorphicCreatorBean","pass":true,"statements":[{"sl":19},{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]},"test_1281":{"methods":[{"sl":19},{"sl":21}],"name":"testClass","pass":true,"statements":[{"sl":19},{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]},"test_2000":{"methods":[{"sl":19},{"sl":21}],"name":"testClass","pass":true,"statements":[{"sl":19},{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]},"test_2089":{"methods":[{"sl":19},{"sl":21}],"name":"testPolymorphicCreatorBean","pass":true,"statements":[{"sl":19},{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]},"test_268":{"methods":[{"sl":19},{"sl":21}],"name":"testClass","pass":true,"statements":[{"sl":19},{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]},"test_410":{"methods":[{"sl":19},{"sl":21}],"name":"testClassWithParams","pass":true,"statements":[{"sl":19},{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]},"test_465":{"methods":[{"sl":21}],"name":"testClassWithParams","pass":true,"statements":[{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]},"test_91":{"methods":[{"sl":21}],"name":"testClass","pass":true,"statements":[{"sl":25},{"sl":27},{"sl":28},{"sl":29},{"sl":30}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1062, 268, 410, 1281, 2000, 2089], [], [465, 1062, 91, 268, 410, 1281, 2000, 2089], [], [], [], [465, 1062, 91, 268, 410, 1281, 2000, 2089], [], [465, 1062, 91, 268, 410, 1281, 2000, 2089], [465, 1062, 91, 268, 410, 1281, 2000, 2089], [465, 1062, 91, 268, 410, 1281, 2000, 2089], [465, 1062, 91, 268, 410, 1281, 2000, 2089], [], [], [], [], [], [], []]

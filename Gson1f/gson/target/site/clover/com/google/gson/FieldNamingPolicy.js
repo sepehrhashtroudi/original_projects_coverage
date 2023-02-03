@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":99,"id":671,"methods":[{"el":94,"sc":3,"sl":92},{"el":98,"sc":3,"sl":96}],"name":"FieldNamingPolicy","sl":28}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_214":{"methods":[{"sl":96}],"name":"testGsonWithUpperCamelCaseSpacesPolicySerialiation","pass":true,"statements":[{"sl":97}]},"test_255":{"methods":[{"sl":96}],"name":"testGsonWithLowerCaseDashPolicyDeserialiation","pass":true,"statements":[{"sl":97}]},"test_427":{"methods":[{"sl":96}],"name":"testGsonWithUpperCamelCaseSpacesPolicyDeserialiation","pass":true,"statements":[{"sl":97}]},"test_430":{"methods":[{"sl":92},{"sl":96}],"name":"testGsonWithNonDefaultFieldNamingPolicySerialization","pass":true,"statements":[{"sl":93},{"sl":97}]},"test_509":{"methods":[{"sl":96}],"name":"testGsonWithNonDefaultFieldNamingPolicyDeserialiation","pass":true,"statements":[{"sl":97}]},"test_519":{"methods":[{"sl":96}],"name":"testGsonWithLowerCaseDashPolicySerialization","pass":true,"statements":[{"sl":97}]},"test_642":{"methods":[{"sl":96}],"name":"testGsonWithLowerCaseUnderscorePolicyDeserialiation","pass":true,"statements":[{"sl":97}]},"test_657":{"methods":[{"sl":96}],"name":"testGsonWithLowerCaseUnderscorePolicySerialization","pass":true,"statements":[{"sl":97}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [430], [430], [], [], [255, 519, 642, 430, 657, 509, 427, 214], [255, 519, 642, 430, 657, 509, 427, 214], [], []]

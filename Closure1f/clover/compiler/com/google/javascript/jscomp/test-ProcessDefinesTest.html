@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class ProcessDefinesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="ProcessDefinesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>ProcessDefinesTest</td>
+        <td class="testPasses"><span class="sortValue">80</span>80</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.588</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testBasicDefine3</span><a href="ProcessDefinesTest_testBasicDefine3_ud.html">ProcessDefinesTest.testBasicDefine3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772255</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine2c</span><a href="ProcessDefinesTest_testNamespacedDefine2c_7av.html">ProcessDefinesTest.testNamespacedDefine2c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772268</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString0</span><a href="ProcessDefinesTest_testOverridingString0_d2w.html">ProcessDefinesTest.testOverridingString0</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772302</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testAssignInNonGlobalScope</span><a href="ProcessDefinesTest_testAssignInNonGlobalScope_ba1.html">ProcessDefinesTest.testAssignInNonGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604624</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testWithNoDefines</span><a href="ProcessDefinesTest_testWithNoDefines_5zn.html">ProcessDefinesTest.testWithNoDefines</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604531</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testAssignBeforeDeclaration2</span><a href="ProcessDefinesTest_testAssignBeforeDeclaration2_2d9.html">ProcessDefinesTest.testAssignBeforeDeclaration2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772333</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDuplicateVar</span><a href="ProcessDefinesTest_testDuplicateVar_1r6.html">ProcessDefinesTest.testDuplicateVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604637</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine4</span><a href="ProcessDefinesTest_testNamespacedDefine4_bru.html">ProcessDefinesTest.testNamespacedDefine4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772272</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverriding2</span><a href="ProcessDefinesTest_testOverriding2_f1z.html">ProcessDefinesTest.testOverriding2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772297</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testSimpleReassign2</span><a href="ProcessDefinesTest_testSimpleReassign2_cca.html">ProcessDefinesTest.testSimpleReassign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604607</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString3</span><a href="ProcessDefinesTest_testOverridingString3_7ka.html">ProcessDefinesTest.testOverridingString3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604416</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testAssignBeforeDeclaration1</span><a href="ProcessDefinesTest_testAssignBeforeDeclaration1_11u.html">ProcessDefinesTest.testAssignBeforeDeclaration1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772330</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testBasicDefine2</span><a href="ProcessDefinesTest_testBasicDefine2_a57.html">ProcessDefinesTest.testBasicDefine2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772314</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testCompiledIsKnownDefine</span><a href="ProcessDefinesTest_testCompiledIsKnownDefine_1aw.html">ProcessDefinesTest.testCompiledIsKnownDefine</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604434</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDuplicateVar</span><a href="ProcessDefinesTest_testDuplicateVar_cyr.html">ProcessDefinesTest.testDuplicateVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772328</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithBadValue2</span><a href="ProcessDefinesTest_testDefineWithBadValue2_5n3.html">ProcessDefinesTest.testDefineWithBadValue2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772282</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testBasicDefine1</span><a href="ProcessDefinesTest_testBasicDefine1_2zq.html">ProcessDefinesTest.testBasicDefine1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604502</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine2a</span><a href="ProcessDefinesTest_testNamespacedDefine2a_c3l.html">ProcessDefinesTest.testNamespacedDefine2a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772263</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString0</span><a href="ProcessDefinesTest_testOverridingString0_4il.html">ProcessDefinesTest.testOverridingString0</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604390</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testSimpleReassign3</span><a href="ProcessDefinesTest_testSimpleReassign3_17b.html">ProcessDefinesTest.testSimpleReassign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772326</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterRef</span><a href="ProcessDefinesTest_testReassignAfterRef_228.html">ProcessDefinesTest.testReassignAfterRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772339</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testAssignInNonGlobalScope</span><a href="ProcessDefinesTest_testAssignInNonGlobalScope_644.html">ProcessDefinesTest.testAssignInNonGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772348</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testEmptyDeclaration</span><a href="ProcessDefinesTest_testEmptyDeclaration_a6n.html">ProcessDefinesTest.testEmptyDeclaration</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604631</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testAssignBeforeDeclaration2</span><a href="ProcessDefinesTest_testAssignBeforeDeclaration2_490.html">ProcessDefinesTest.testAssignBeforeDeclaration2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604595</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine2b</span><a href="ProcessDefinesTest_testNamespacedDefine2b_af.html">ProcessDefinesTest.testNamespacedDefine2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772265</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverriding1</span><a href="ProcessDefinesTest_testOverriding1_cno.html">ProcessDefinesTest.testOverriding1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604481</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignWithExpr</span><a href="ProcessDefinesTest_testReassignWithExpr_e7m.html">ProcessDefinesTest.testReassignWithExpr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772341</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testSimpleReassign2</span><a href="ProcessDefinesTest_testSimpleReassign2_76b.html">ProcessDefinesTest.testSimpleReassign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772323</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine1</span><a href="ProcessDefinesTest_testNamespacedDefine1_6wx.html">ProcessDefinesTest.testNamespacedDefine1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772260</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterNonGlobalRef</span><a href="ProcessDefinesTest_testReassignAfterNonGlobalRef_9h8.html">ProcessDefinesTest.testReassignAfterNonGlobalRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604582</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testBasicDefine2</span><a href="ProcessDefinesTest_testBasicDefine2_6j2.html">ProcessDefinesTest.testBasicDefine2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604511</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithBadValue1</span><a href="ProcessDefinesTest_testDefineWithBadValue1_7hx.html">ProcessDefinesTest.testDefineWithBadValue1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772279</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testCompiledIsKnownDefine</span><a href="ProcessDefinesTest_testCompiledIsKnownDefine_2dx.html">ProcessDefinesTest.testCompiledIsKnownDefine</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772319</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithBadValue1</span><a href="ProcessDefinesTest_testDefineWithBadValue1_5cz.html">ProcessDefinesTest.testDefineWithBadValue1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604423</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString2</span><a href="ProcessDefinesTest_testOverridingString2_bo0.html">ProcessDefinesTest.testOverridingString2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604409</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineAssignmentInLoop</span><a href="ProcessDefinesTest_testDefineAssignmentInLoop_4h0.html">ProcessDefinesTest.testDefineAssignmentInLoop</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604526</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterRefInConditional</span><a href="ProcessDefinesTest_testReassignAfterRefInConditional_49z.html">ProcessDefinesTest.testReassignAfterRefInConditional</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772346</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverriding1</span><a href="ProcessDefinesTest_testOverriding1_8l2.html">ProcessDefinesTest.testOverriding1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772294</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterRefInConditional</span><a href="ProcessDefinesTest_testReassignAfterRefInConditional_3wf.html">ProcessDefinesTest.testReassignAfterRefInConditional</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604644</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString1</span><a href="ProcessDefinesTest_testOverridingString1_5dy.html">ProcessDefinesTest.testOverridingString1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772304</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testSimpleReassign1</span><a href="ProcessDefinesTest_testSimpleReassign1_4eh.html">ProcessDefinesTest.testSimpleReassign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604601</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine3</span><a href="ProcessDefinesTest_testNamespacedDefine3_8nj.html">ProcessDefinesTest.testNamespacedDefine3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772270</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine4</span><a href="ProcessDefinesTest_testNamespacedDefine4_4rc.html">ProcessDefinesTest.testNamespacedDefine4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604560</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithInvalidDependentValue</span><a href="ProcessDefinesTest_testDefineWithInvalidDependentValue_3zr.html">ProcessDefinesTest.testDefineWithInvalidDependentValue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604123</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.257</span>0.257</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testBasicDefine1</span><a href="ProcessDefinesTest_testBasicDefine1_8jy.html">ProcessDefinesTest.testBasicDefine1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772312</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine2a</span><a href="ProcessDefinesTest_testNamespacedDefine2a_7hy.html">ProcessDefinesTest.testNamespacedDefine2a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604451</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverrideAfterAlias</span><a href="ProcessDefinesTest_testOverrideAfterAlias_8va.html">ProcessDefinesTest.testOverrideAfterAlias</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772275</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine3</span><a href="ProcessDefinesTest_testNamespacedDefine3_2q7.html">ProcessDefinesTest.testNamespacedDefine3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604553</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testBasicDefine3</span><a href="ProcessDefinesTest_testBasicDefine3_6dp.html">ProcessDefinesTest.testBasicDefine3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604519</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString3</span><a href="ProcessDefinesTest_testOverridingString3_cnx.html">ProcessDefinesTest.testOverridingString3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772309</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDeclareInNonGlobalScope</span><a href="ProcessDefinesTest_testDeclareInNonGlobalScope_dsf.html">ProcessDefinesTest.testDeclareInNonGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772351</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testMisspelledOverride</span><a href="ProcessDefinesTest_testMisspelledOverride_b3f.html">ProcessDefinesTest.testMisspelledOverride</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604655</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine1</span><a href="ProcessDefinesTest_testNamespacedDefine1_3km.html">ProcessDefinesTest.testNamespacedDefine1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604547</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testMisspelledOverride</span><a href="ProcessDefinesTest_testMisspelledOverride_28t.html">ProcessDefinesTest.testMisspelledOverride</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772316</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterNonGlobalRef</span><a href="ProcessDefinesTest_testReassignAfterNonGlobalRef_5jh.html">ProcessDefinesTest.testReassignAfterNonGlobalRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772344</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterRef</span><a href="ProcessDefinesTest_testReassignAfterRef_7uo.html">ProcessDefinesTest.testReassignAfterRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604537</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithDependentValue</span><a href="ProcessDefinesTest_testDefineWithDependentValue_62d.html">ProcessDefinesTest.testDefineWithDependentValue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604567</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverrideAfterAlias</span><a href="ProcessDefinesTest_testOverrideAfterAlias_9w4.html">ProcessDefinesTest.testOverrideAfterAlias</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604474</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine2c</span><a href="ProcessDefinesTest_testNamespacedDefine2c_dgh.html">ProcessDefinesTest.testNamespacedDefine2c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604467</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverriding2</span><a href="ProcessDefinesTest_testOverriding2_dhr.html">ProcessDefinesTest.testOverriding2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604489</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverriding3</span><a href="ProcessDefinesTest_testOverriding3_73y.html">ProcessDefinesTest.testOverriding3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604497</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterCall</span><a href="ProcessDefinesTest_testReassignAfterCall_881.html">ProcessDefinesTest.testReassignAfterCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772337</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString2</span><a href="ProcessDefinesTest_testOverridingString2_7v5.html">ProcessDefinesTest.testOverridingString2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772307</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineBadType</span><a href="ProcessDefinesTest_testDefineBadType_2y4.html">ProcessDefinesTest.testDefineBadType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604542</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testSimpleReassign1</span><a href="ProcessDefinesTest_testSimpleReassign1_4ty.html">ProcessDefinesTest.testSimpleReassign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772321</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testAssignBeforeDeclaration1</span><a href="ProcessDefinesTest_testAssignBeforeDeclaration1_1ol.html">ProcessDefinesTest.testAssignBeforeDeclaration1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604590</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithBadValue2</span><a href="ProcessDefinesTest_testDefineWithBadValue2_crd.html">ProcessDefinesTest.testDefineWithBadValue2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604428</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverriding3</span><a href="ProcessDefinesTest_testOverriding3_1is.html">ProcessDefinesTest.testOverriding3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772300</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDeclareInNonGlobalScope</span><a href="ProcessDefinesTest_testDeclareInNonGlobalScope_8vu.html">ProcessDefinesTest.testDeclareInNonGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604381</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignWithExpr</span><a href="ProcessDefinesTest_testReassignWithExpr_1hu.html">ProcessDefinesTest.testReassignWithExpr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604440</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithDependentValue</span><a href="ProcessDefinesTest_testDefineWithDependentValue_7xl.html">ProcessDefinesTest.testDefineWithDependentValue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772285</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineBadType</span><a href="ProcessDefinesTest_testDefineBadType_mj.html">ProcessDefinesTest.testDefineBadType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772355</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testEmptyDeclaration</span><a href="ProcessDefinesTest_testEmptyDeclaration_1dd.html">ProcessDefinesTest.testEmptyDeclaration</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772335</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineWithInvalidDependentValue</span><a href="ProcessDefinesTest_testDefineWithInvalidDependentValue_cy.html">ProcessDefinesTest.testDefineWithInvalidDependentValue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772291</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testDefineAssignmentInLoop</span><a href="ProcessDefinesTest_testDefineAssignmentInLoop_mr.html">ProcessDefinesTest.testDefineAssignmentInLoop</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772353</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testReassignAfterCall</span><a href="ProcessDefinesTest_testReassignAfterCall_bgg.html">ProcessDefinesTest.testReassignAfterCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604446</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testOverridingString1</span><a href="ProcessDefinesTest_testOverridingString1_9vl.html">ProcessDefinesTest.testOverridingString1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604402</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testNamespacedDefine2b</span><a href="ProcessDefinesTest_testNamespacedDefine2b_2qk.html">ProcessDefinesTest.testNamespacedDefine2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604459</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testSimpleReassign3</span><a href="ProcessDefinesTest_testSimpleReassign3_170.html">ProcessDefinesTest.testSimpleReassign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697604615</span>2 Jan 15:13:24</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessDefinesTest.testWithNoDefines</span><a href="ProcessDefinesTest_testWithNoDefines_b8l.html">ProcessDefinesTest.testWithNoDefines</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772258</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

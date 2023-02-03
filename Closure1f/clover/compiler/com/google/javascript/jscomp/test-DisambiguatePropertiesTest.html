@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class DisambiguatePropertiesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="DisambiguatePropertiesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>DisambiguatePropertiesTest</td>
+        <td class="testPasses"><span class="sortValue">177</span>177</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>2.971</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralLends</span><a href="DisambiguatePropertiesTest_testObjectLiteralLends_a0i.html">DisambiguatePropertiesTest.testObjectLiteralLends</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394273</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testPrototypeAndInstance2</span><a href="DisambiguatePropertiesTest_testPrototypeAndInstance2_3jb.html">DisambiguatePropertiesTest.testPrototypeAndInstance2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542260</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType_aa3.html">DisambiguatePropertiesTest.testIgnoreUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541546</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMultipleInterfaces</span><a href="DisambiguatePropertiesTest_testMultipleInterfaces_6zf.html">DisambiguatePropertiesTest.testMultipleInterfaces</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541887</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInvalidatingInterface</span><a href="DisambiguatePropertiesTest_testInvalidatingInterface_bbw.html">DisambiguatePropertiesTest.testInvalidatingInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749170</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoSeparateFieldsTwoTypes</span><a href="DisambiguatePropertiesTest_testTwoSeparateFieldsTwoTypes_81x.html">DisambiguatePropertiesTest.testTwoSeparateFieldsTwoTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540642</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.327</span>0.327</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testDeterministicNaming</span><a href="DisambiguatePropertiesTest_testDeterministicNaming_ctn.html">DisambiguatePropertiesTest.testDeterministicNaming</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394422</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.055</span>0.055</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchInvalidation</span><a href="DisambiguatePropertiesTest_testMismatchInvalidation_a7h.html">DisambiguatePropertiesTest.testMismatchInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394410</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceWithSupertypeImplementor</span><a href="DisambiguatePropertiesTest_testInterfaceWithSupertypeImplementor_5ah.html">DisambiguatePropertiesTest.testInterfaceWithSupertypeImplementor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541577</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralNotRenamed</span><a href="DisambiguatePropertiesTest_testObjectLiteralNotRenamed_4i7.html">DisambiguatePropertiesTest.testObjectLiteralNotRenamed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394256</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testDeterministicNaming</span><a href="DisambiguatePropertiesTest_testDeterministicNaming_9nh.html">DisambiguatePropertiesTest.testDeterministicNaming</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749263</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.079</span>0.079</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionAndExternTypes</span><a href="DisambiguatePropertiesTest_testUnionAndExternTypes_4jr.html">DisambiguatePropertiesTest.testUnionAndExternTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749694</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterface</span><a href="DisambiguatePropertiesTest_testInterface_ey0.html">DisambiguatePropertiesTest.testInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394332</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceWithSupertypeImplementor</span><a href="DisambiguatePropertiesTest_testInterfaceWithSupertypeImplementor_149.html">DisambiguatePropertiesTest.testInterfaceWithSupertypeImplementor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394372</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testPrototypeAndInstance</span><a href="DisambiguatePropertiesTest_testPrototypeAndInstance_7ej.html">DisambiguatePropertiesTest.testPrototypeAndInstance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393941</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteral</span><a href="DisambiguatePropertiesTest_testObjectLiteral_3yc.html">DisambiguatePropertiesTest.testObjectLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749343</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeTwoFields</span><a href="DisambiguatePropertiesTest_testUnionTypeTwoFields_7xy.html">DisambiguatePropertiesTest.testUnionTypeTwoFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749523</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoFields</span><a href="DisambiguatePropertiesTest_testTwoFields_ju.html">DisambiguatePropertiesTest.testTwoFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393995</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType_lk.html">DisambiguatePropertiesTest.testIgnoreUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394035</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testScopedType</span><a href="DisambiguatePropertiesTest_testScopedType_9nx.html">DisambiguatePropertiesTest.testScopedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394128</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeInvalidation</span><a href="DisambiguatePropertiesTest_testUnionTypeInvalidation_215.html">DisambiguatePropertiesTest.testUnionTypeInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749677</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionType</span><a href="DisambiguatePropertiesTest_testUnionType_a9u.html">DisambiguatePropertiesTest.testUnionType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541802</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnum</span><a href="DisambiguatePropertiesTest_testEnum_4z.html">DisambiguatePropertiesTest.testEnum</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749634</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteral</span><a href="DisambiguatePropertiesTest_testObjectLiteral_ex9.html">DisambiguatePropertiesTest.testObjectLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394478</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSubtypesWithSameField</span><a href="DisambiguatePropertiesTest_testSubtypesWithSameField_4hp.html">DisambiguatePropertiesTest.testSubtypesWithSameField</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541254</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUntypedExterns</span><a href="DisambiguatePropertiesTest_testUntypedExterns_2yy.html">DisambiguatePropertiesTest.testUntypedExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749652</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testNamedType</span><a href="DisambiguatePropertiesTest_testNamedType_abv.html">DisambiguatePropertiesTest.testNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542377</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation</span><a href="DisambiguatePropertiesTest_testMismatchForbiddenInvalidation_679.html">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541171</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSubtypesWithSameField</span><a href="DisambiguatePropertiesTest_testSubtypesWithSameField_58m.html">DisambiguatePropertiesTest.testSubtypesWithSameField</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394249</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testClosureInherits</span><a href="DisambiguatePropertiesTest_testClosureInherits_1io.html">DisambiguatePropertiesTest.testClosureInherits</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542117</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.045</span>0.045</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testExternInterfaceUnionWithCtor</span><a href="DisambiguatePropertiesTest_testExternInterfaceUnionWithCtor_2yb.html">DisambiguatePropertiesTest.testExternInterfaceUnionWithCtor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749231</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnusedTypeInExterns</span><a href="DisambiguatePropertiesTest_testUnusedTypeInExterns_5nb.html">DisambiguatePropertiesTest.testUnusedTypeInExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394325</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchInvalidation</span><a href="DisambiguatePropertiesTest_testMismatchInvalidation_l9.html">DisambiguatePropertiesTest.testMismatchInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749246</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInvalidatingInterface</span><a href="DisambiguatePropertiesTest_testInvalidatingInterface_bad.html">DisambiguatePropertiesTest.testInvalidatingInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394355</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTypedExterns</span><a href="DisambiguatePropertiesTest_testTypedExterns_cbx.html">DisambiguatePropertiesTest.testTypedExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749705</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testExtendNativeType</span><a href="DisambiguatePropertiesTest_testExtendNativeType_cgg.html">DisambiguatePropertiesTest.testExtendNativeType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394308</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType1</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType1_4ma.html">DisambiguatePropertiesTest.testIgnoreUnknownType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749490</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnknownType</span><a href="DisambiguatePropertiesTest_testUnknownType_96r.html">DisambiguatePropertiesTest.testUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749618</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes3</span><a href="DisambiguatePropertiesTest_testTwoTypes3_dxw.html">DisambiguatePropertiesTest.testTwoTypes3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749414</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testCustomInherits</span><a href="DisambiguatePropertiesTest_testCustomInherits_5iv.html">DisambiguatePropertiesTest.testCustomInherits</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394486</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralReflected</span><a href="DisambiguatePropertiesTest_testObjectLiteralReflected_cw7.html">DisambiguatePropertiesTest.testObjectLiteralReflected</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394262</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeObjectMethod</span><a href="DisambiguatePropertiesTest_testSkipNativeObjectMethod_c2n.html">DisambiguatePropertiesTest.testSkipNativeObjectMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749102</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testBadCast</span><a href="DisambiguatePropertiesTest_testBadCast_beo.html">DisambiguatePropertiesTest.testBadCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541489</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnresolvedType</span><a href="DisambiguatePropertiesTest_testUnresolvedType_6zh.html">DisambiguatePropertiesTest.testUnresolvedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541003</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.08</span>0.08</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnusedTypeInExterns</span><a href="DisambiguatePropertiesTest_testUnusedTypeInExterns_d8u.html">DisambiguatePropertiesTest.testUnusedTypeInExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749136</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnresolvedType</span><a href="DisambiguatePropertiesTest_testUnresolvedType_d9s.html">DisambiguatePropertiesTest.testUnresolvedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749585</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType1</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType1_eqn.html">DisambiguatePropertiesTest.testIgnoreUnknownType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541743</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSupertypeWithSameField</span><a href="DisambiguatePropertiesTest_testSupertypeWithSameField_72j.html">DisambiguatePropertiesTest.testSupertypeWithSameField</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749560</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMultipleInterfaces</span><a href="DisambiguatePropertiesTest_testMultipleInterfaces_3q9.html">DisambiguatePropertiesTest.testMultipleInterfaces</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749182</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeFunctionStaticProperty</span><a href="DisambiguatePropertiesTest_testSkipNativeFunctionStaticProperty_23r.html">DisambiguatePropertiesTest.testSkipNativeFunctionStaticProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541461</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSuperInterface</span><a href="DisambiguatePropertiesTest_testSuperInterface_3pe.html">DisambiguatePropertiesTest.testSuperInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394381</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMultipleInterfaces</span><a href="DisambiguatePropertiesTest_testMultipleInterfaces_ag1.html">DisambiguatePropertiesTest.testMultipleInterfaces</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394364</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType2</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType2_2db.html">DisambiguatePropertiesTest.testIgnoreUnknownType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749506</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testDeterministicNaming</span><a href="DisambiguatePropertiesTest_testDeterministicNaming_6xs.html">DisambiguatePropertiesTest.testDeterministicNaming</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541604</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.121</span>0.121</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects</span><a href="DisambiguatePropertiesTest_testEnumOfObjects_3o3.html">DisambiguatePropertiesTest.testEnumOfObjects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541835</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStaticProperty</span><a href="DisambiguatePropertiesTest_testStaticProperty_7pm.html">DisambiguatePropertiesTest.testStaticProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541596</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoInterfacesWithSomeInheritance</span><a href="DisambiguatePropertiesTest_testTwoInterfacesWithSomeInheritance_52v.html">DisambiguatePropertiesTest.testTwoInterfacesWithSomeInheritance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541855</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeFunctionStaticProperty</span><a href="DisambiguatePropertiesTest_testSkipNativeFunctionStaticProperty_17s.html">DisambiguatePropertiesTest.testSkipNativeFunctionStaticProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394493</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeInvalidation</span><a href="DisambiguatePropertiesTest_testUnionTypeInvalidation_4si.html">DisambiguatePropertiesTest.testUnionTypeInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394217</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnum</span><a href="DisambiguatePropertiesTest_testEnum_8ap.html">DisambiguatePropertiesTest.testEnum</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541441</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testCustomInherits</span><a href="DisambiguatePropertiesTest_testCustomInherits_cwa.html">DisambiguatePropertiesTest.testCustomInherits</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749353</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeObjectMethod</span><a href="DisambiguatePropertiesTest_testSkipNativeObjectMethod_zy.html">DisambiguatePropertiesTest.testSkipNativeObjectMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394301</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects2</span><a href="DisambiguatePropertiesTest_testEnumOfObjects2_7lu.html">DisambiguatePropertiesTest.testEnumOfObjects2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394532</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeFunctionMethod</span><a href="DisambiguatePropertiesTest_testSkipNativeFunctionMethod_aze.html">DisambiguatePropertiesTest.testSkipNativeFunctionMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542368</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testConstructorFields</span><a href="DisambiguatePropertiesTest_testConstructorFields_9pc.html">DisambiguatePropertiesTest.testConstructorFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749547</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testBadCast</span><a href="DisambiguatePropertiesTest_testBadCast_3hw.html">DisambiguatePropertiesTest.testBadCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394418</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnresolvedType</span><a href="DisambiguatePropertiesTest_testUnresolvedType_72s.html">DisambiguatePropertiesTest.testUnresolvedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394137</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceUnionWithCtor</span><a href="DisambiguatePropertiesTest_testInterfaceUnionWithCtor_5yg.html">DisambiguatePropertiesTest.testInterfaceUnionWithCtor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749216</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType1</span><a href="DisambiguatePropertiesTest_testOneType1_55n.html">DisambiguatePropertiesTest.testOneType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541191</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceOfSuperclass</span><a href="DisambiguatePropertiesTest_testInterfaceOfSuperclass_8hr.html">DisambiguatePropertiesTest.testInterfaceOfSuperclass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394339</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSupertypeWithSameField</span><a href="DisambiguatePropertiesTest_testSupertypeWithSameField_2ux.html">DisambiguatePropertiesTest.testSupertypeWithSameField</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394118</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoFields</span><a href="DisambiguatePropertiesTest_testTwoFields_35y.html">DisambiguatePropertiesTest.testTwoFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541820</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testBadCast</span><a href="DisambiguatePropertiesTest_testBadCast_8k3.html">DisambiguatePropertiesTest.testBadCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749257</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTypedExterns</span><a href="DisambiguatePropertiesTest_testTypedExterns_x1.html">DisambiguatePropertiesTest.testTypedExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394242</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType2</span><a href="DisambiguatePropertiesTest_testOneType2_c6p.html">DisambiguatePropertiesTest.testOneType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541211</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralReflected</span><a href="DisambiguatePropertiesTest_testObjectLiteralReflected_4y0.html">DisambiguatePropertiesTest.testObjectLiteralReflected</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749037</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStringFunction</span><a href="DisambiguatePropertiesTest_testStringFunction_6td.html">DisambiguatePropertiesTest.testStringFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541344</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTypedExterns</span><a href="DisambiguatePropertiesTest_testTypedExterns_au6.html">DisambiguatePropertiesTest.testTypedExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541930</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes2</span><a href="DisambiguatePropertiesTest_testTwoTypes2_cu2.html">DisambiguatePropertiesTest.testTwoTypes2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393971</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoSeparateFieldsTwoTypes</span><a href="DisambiguatePropertiesTest_testTwoSeparateFieldsTwoTypes_djb.html">DisambiguatePropertiesTest.testTwoSeparateFieldsTwoTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749438</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testErrorOnProtectedProperty</span><a href="DisambiguatePropertiesTest_testErrorOnProtectedProperty_9b3.html">DisambiguatePropertiesTest.testErrorOnProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542392</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testPrototypeAndInstance2</span><a href="DisambiguatePropertiesTest_testPrototypeAndInstance2_cpq.html">DisambiguatePropertiesTest.testPrototypeAndInstance2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749381</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUntypedExterns</span><a href="DisambiguatePropertiesTest_testUntypedExterns_bzk.html">DisambiguatePropertiesTest.testUntypedExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394198</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoInterfacesWithSomeInheritance</span><a href="DisambiguatePropertiesTest_testTwoInterfacesWithSomeInheritance_469.html">DisambiguatePropertiesTest.testTwoInterfacesWithSomeInheritance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394347</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty</span><a href="DisambiguatePropertiesTest_testSupertypeReferenceOfSubtypeProperty_cr2.html">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749023</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterface</span><a href="DisambiguatePropertiesTest_testInterface_3pv.html">DisambiguatePropertiesTest.testInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749714</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoFields</span><a href="DisambiguatePropertiesTest_testTwoFields_bx3.html">DisambiguatePropertiesTest.testTwoFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749429</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterface</span><a href="DisambiguatePropertiesTest_testInterface_31.html">DisambiguatePropertiesTest.testInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542163</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSupertypeWithSameField</span><a href="DisambiguatePropertiesTest_testSupertypeWithSameField_12a.html">DisambiguatePropertiesTest.testSupertypeWithSameField</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542302</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.039</span>0.039</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeTwoFields</span><a href="DisambiguatePropertiesTest_testUnionTypeTwoFields_1v5.html">DisambiguatePropertiesTest.testUnionTypeTwoFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394082</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoSeparateFieldsTwoTypes</span><a href="DisambiguatePropertiesTest_testTwoSeparateFieldsTwoTypes_58w.html">DisambiguatePropertiesTest.testTwoSeparateFieldsTwoTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394005</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testExternInterfaceUnionWithCtor</span><a href="DisambiguatePropertiesTest_testExternInterfaceUnionWithCtor_19q.html">DisambiguatePropertiesTest.testExternInterfaceUnionWithCtor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394401</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeInvalidation</span><a href="DisambiguatePropertiesTest_testUnionTypeInvalidation_9z6.html">DisambiguatePropertiesTest.testUnionTypeInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541904</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStaticProperty</span><a href="DisambiguatePropertiesTest_testStaticProperty_37h.html">DisambiguatePropertiesTest.testStaticProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749556</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralNotRenamed</span><a href="DisambiguatePropertiesTest_testObjectLiteralNotRenamed_9qt.html">DisambiguatePropertiesTest.testObjectLiteralNotRenamed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541125</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteral</span><a href="DisambiguatePropertiesTest_testObjectLiteral_6ln.html">DisambiguatePropertiesTest.testObjectLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541296</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnknownType</span><a href="DisambiguatePropertiesTest_testUnknownType_dbl.html">DisambiguatePropertiesTest.testUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394165</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStaticProperty</span><a href="DisambiguatePropertiesTest_testStaticProperty_84p.html">DisambiguatePropertiesTest.testStaticProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394114</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceOfSuperclass</span><a href="DisambiguatePropertiesTest_testInterfaceOfSuperclass_1y7.html">DisambiguatePropertiesTest.testInterfaceOfSuperclass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541084</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceOfSuperclass</span><a href="DisambiguatePropertiesTest_testInterfaceOfSuperclass_cpa.html">DisambiguatePropertiesTest.testInterfaceOfSuperclass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749147</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects</span><a href="DisambiguatePropertiesTest_testEnumOfObjects_bnc.html">DisambiguatePropertiesTest.testEnumOfObjects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394193</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects2</span><a href="DisambiguatePropertiesTest_testEnumOfObjects2_3s6.html">DisambiguatePropertiesTest.testEnumOfObjects2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541368</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType_1m3.html">DisambiguatePropertiesTest.testIgnoreUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749469</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testCustomInherits</span><a href="DisambiguatePropertiesTest_testCustomInherits_3ok.html">DisambiguatePropertiesTest.testCustomInherits</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541844</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInvalidatingInterface</span><a href="DisambiguatePropertiesTest_testInvalidatingInterface_77z.html">DisambiguatePropertiesTest.testInvalidatingInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542231</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testNamedType</span><a href="DisambiguatePropertiesTest_testNamedType_4pu.html">DisambiguatePropertiesTest.testNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394156</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType2</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType2_9t0.html">DisambiguatePropertiesTest.testIgnoreUnknownType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394065</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes1</span><a href="DisambiguatePropertiesTest_testTwoTypes1_666.html">DisambiguatePropertiesTest.testTwoTypes1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541947</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionTypeTwoFields</span><a href="DisambiguatePropertiesTest_testUnionTypeTwoFields_8u.html">DisambiguatePropertiesTest.testUnionTypeTwoFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542342</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes3</span><a href="DisambiguatePropertiesTest_testTwoTypes3_1s9.html">DisambiguatePropertiesTest.testTwoTypes3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541983</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes1</span><a href="DisambiguatePropertiesTest_testTwoTypes1_3f6.html">DisambiguatePropertiesTest.testTwoTypes1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393962</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType3</span><a href="DisambiguatePropertiesTest_testOneType3_4uv.html">DisambiguatePropertiesTest.testOneType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394516</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects</span><a href="DisambiguatePropertiesTest_testEnumOfObjects_64p.html">DisambiguatePropertiesTest.testEnumOfObjects</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749646</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeFunctionMethod</span><a href="DisambiguatePropertiesTest_testSkipNativeFunctionMethod_6bu.html">DisambiguatePropertiesTest.testSkipNativeFunctionMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749096</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType3</span><a href="DisambiguatePropertiesTest_testOneType3_1m5.html">DisambiguatePropertiesTest.testOneType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541230</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnusedTypeInExterns</span><a href="DisambiguatePropertiesTest_testUnusedTypeInExterns_12h.html">DisambiguatePropertiesTest.testUnusedTypeInExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542282</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeObjectMethod</span><a href="DisambiguatePropertiesTest_testSkipNativeObjectMethod_66.html">DisambiguatePropertiesTest.testSkipNativeObjectMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541873</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceUnionWithCtor</span><a href="DisambiguatePropertiesTest_testInterfaceUnionWithCtor_68i.html">DisambiguatePropertiesTest.testInterfaceUnionWithCtor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541315</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionAndExternTypes</span><a href="DisambiguatePropertiesTest_testUnionAndExternTypes_7pe.html">DisambiguatePropertiesTest.testUnionAndExternTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540970</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType1</span><a href="DisambiguatePropertiesTest_testOneType1_24c.html">DisambiguatePropertiesTest.testOneType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749732</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSuperInterface</span><a href="DisambiguatePropertiesTest_testSuperInterface_6ng.html">DisambiguatePropertiesTest.testSuperInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541275</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralNotRenamed</span><a href="DisambiguatePropertiesTest_testObjectLiteralNotRenamed_cu4.html">DisambiguatePropertiesTest.testObjectLiteralNotRenamed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749029</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSuperInterface</span><a href="DisambiguatePropertiesTest_testSuperInterface_2om.html">DisambiguatePropertiesTest.testSuperInterface</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749205</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType2</span><a href="DisambiguatePropertiesTest_testOneType2_2n0.html">DisambiguatePropertiesTest.testOneType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749723</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceUnionWithCtor</span><a href="DisambiguatePropertiesTest_testInterfaceUnionWithCtor_axt.html">DisambiguatePropertiesTest.testInterfaceUnionWithCtor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394390</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testCast</span><a href="DisambiguatePropertiesTest_testCast_49o.html">DisambiguatePropertiesTest.testCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394095</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation</span><a href="DisambiguatePropertiesTest_testMismatchForbiddenInvalidation_60l.html">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749369</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testNamedType</span><a href="DisambiguatePropertiesTest_testNamedType_2ox.html">DisambiguatePropertiesTest.testNamedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749607</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType3</span><a href="DisambiguatePropertiesTest_testOneType3_25y.html">DisambiguatePropertiesTest.testOneType3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749741</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType2</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType2_6wb.html">DisambiguatePropertiesTest.testIgnoreUnknownType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541771</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation</span><a href="DisambiguatePropertiesTest_testMismatchForbiddenInvalidation_7tw.html">DisambiguatePropertiesTest.testMismatchForbiddenInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394500</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralReflected</span><a href="DisambiguatePropertiesTest_testObjectLiteralReflected_4we.html">DisambiguatePropertiesTest.testObjectLiteralReflected</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542084</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralLends</span><a href="DisambiguatePropertiesTest_testObjectLiteralLends_26h.html">DisambiguatePropertiesTest.testObjectLiteralLends</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541144</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testScopedType</span><a href="DisambiguatePropertiesTest_testScopedType_8q3.html">DisambiguatePropertiesTest.testScopedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749572</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects3</span><a href="DisambiguatePropertiesTest_testEnumOfObjects3_6nc.html">DisambiguatePropertiesTest.testEnumOfObjects3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541384</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes2</span><a href="DisambiguatePropertiesTest_testTwoTypes2_7n6.html">DisambiguatePropertiesTest.testTwoTypes2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749402</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSubtypesWithSameField</span><a href="DisambiguatePropertiesTest_testSubtypesWithSameField_161.html">DisambiguatePropertiesTest.testSubtypesWithSameField</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749001</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes2</span><a href="DisambiguatePropertiesTest_testTwoTypes2_bvy.html">DisambiguatePropertiesTest.testTwoTypes2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541965</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes3</span><a href="DisambiguatePropertiesTest_testTwoTypes3_ddi.html">DisambiguatePropertiesTest.testTwoTypes3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393981</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testCast</span><a href="DisambiguatePropertiesTest_testCast_clg.html">DisambiguatePropertiesTest.testCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749536</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testIgnoreUnknownType1</span><a href="DisambiguatePropertiesTest_testIgnoreUnknownType1_92h.html">DisambiguatePropertiesTest.testIgnoreUnknownType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394052</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testCast</span><a href="DisambiguatePropertiesTest_testCast_926.html">DisambiguatePropertiesTest.testCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541422</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testErrorOnProtectedProperty</span><a href="DisambiguatePropertiesTest_testErrorOnProtectedProperty_dl6.html">DisambiguatePropertiesTest.testErrorOnProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749366</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeFunctionMethod</span><a href="DisambiguatePropertiesTest_testSkipNativeFunctionMethod_8mw.html">DisambiguatePropertiesTest.testSkipNativeFunctionMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394297</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testExtendNativeType</span><a href="DisambiguatePropertiesTest_testExtendNativeType_bg3.html">DisambiguatePropertiesTest.testExtendNativeType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749112</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStringFunction</span><a href="DisambiguatePropertiesTest_testStringFunction_8ho.html">DisambiguatePropertiesTest.testStringFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394316</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoTypes1</span><a href="DisambiguatePropertiesTest_testTwoTypes1_47h.html">DisambiguatePropertiesTest.testTwoTypes1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749389</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testExternInterfaceUnionWithCtor</span><a href="DisambiguatePropertiesTest_testExternInterfaceUnionWithCtor_6io.html">DisambiguatePropertiesTest.testExternInterfaceUnionWithCtor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541398</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testClosureInherits</span><a href="DisambiguatePropertiesTest_testClosureInherits_3hf.html">DisambiguatePropertiesTest.testClosureInherits</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394282</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testPrototypeAndInstance</span><a href="DisambiguatePropertiesTest_testPrototypeAndInstance_5ho.html">DisambiguatePropertiesTest.testPrototypeAndInstance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541515</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testScopedType</span><a href="DisambiguatePropertiesTest_testScopedType_8fk.html">DisambiguatePropertiesTest.testScopedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541470</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects3</span><a href="DisambiguatePropertiesTest_testEnumOfObjects3_2yz.html">DisambiguatePropertiesTest.testEnumOfObjects3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394537</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty</span><a href="DisambiguatePropertiesTest_testSupertypeReferenceOfSubtypeProperty_r2.html">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541112</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty</span><a href="DisambiguatePropertiesTest_testSupertypeReferenceOfSubtypeProperty_1la.html">DisambiguatePropertiesTest.testSupertypeReferenceOfSubtypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394503</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testPrototypeAndInstance2</span><a href="DisambiguatePropertiesTest_testPrototypeAndInstance2_4tu.html">DisambiguatePropertiesTest.testPrototypeAndInstance2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393955</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testErrorOnProtectedProperty</span><a href="DisambiguatePropertiesTest_testErrorOnProtectedProperty_5hz.html">DisambiguatePropertiesTest.testErrorOnProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394498</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testSkipNativeFunctionStaticProperty</span><a href="DisambiguatePropertiesTest_testSkipNativeFunctionStaticProperty_5h9.html">DisambiguatePropertiesTest.testSkipNativeFunctionStaticProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749360</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testInterfaceWithSupertypeImplementor</span><a href="DisambiguatePropertiesTest_testInterfaceWithSupertypeImplementor_ayg.html">DisambiguatePropertiesTest.testInterfaceWithSupertypeImplementor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749193</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testPrototypeAndInstance</span><a href="DisambiguatePropertiesTest_testPrototypeAndInstance_c2k.html">DisambiguatePropertiesTest.testPrototypeAndInstance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749373</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects2</span><a href="DisambiguatePropertiesTest_testEnumOfObjects2_hf.html">DisambiguatePropertiesTest.testEnumOfObjects2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749752</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnknownType</span><a href="DisambiguatePropertiesTest_testUnknownType_vu.html">DisambiguatePropertiesTest.testUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542031</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.052</span>0.052</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUntypedExterns</span><a href="DisambiguatePropertiesTest_testUntypedExterns_4od.html">DisambiguatePropertiesTest.testUntypedExterns</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697542176</span>2 Jan 15:12:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.054</span>0.054</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnum</span><a href="DisambiguatePropertiesTest_testEnum_6l3.html">DisambiguatePropertiesTest.testEnum</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394181</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testEnumOfObjects3</span><a href="DisambiguatePropertiesTest_testEnumOfObjects3_5vm.html">DisambiguatePropertiesTest.testEnumOfObjects3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749760</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionAndExternTypes</span><a href="DisambiguatePropertiesTest_testUnionAndExternTypes_dbu.html">DisambiguatePropertiesTest.testUnionAndExternTypes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394234</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testObjectLiteralLends</span><a href="DisambiguatePropertiesTest_testObjectLiteralLends_ha.html">DisambiguatePropertiesTest.testObjectLiteralLends</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749053</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testStringFunction</span><a href="DisambiguatePropertiesTest_testStringFunction_8m2.html">DisambiguatePropertiesTest.testStringFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749122</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType2</span><a href="DisambiguatePropertiesTest_testOneType2_dk2.html">DisambiguatePropertiesTest.testOneType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394509</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionType</span><a href="DisambiguatePropertiesTest_testUnionType_3tn.html">DisambiguatePropertiesTest.testUnionType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394020</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testExtendNativeType</span><a href="DisambiguatePropertiesTest_testExtendNativeType_4ze.html">DisambiguatePropertiesTest.testExtendNativeType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541726</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testClosureInherits</span><a href="DisambiguatePropertiesTest_testClosureInherits_c6g.html">DisambiguatePropertiesTest.testClosureInherits</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749066</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testMismatchInvalidation</span><a href="DisambiguatePropertiesTest_testMismatchInvalidation_4ow.html">DisambiguatePropertiesTest.testMismatchInvalidation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541529</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testTwoInterfacesWithSomeInheritance</span><a href="DisambiguatePropertiesTest_testTwoInterfacesWithSomeInheritance_a7n.html">DisambiguatePropertiesTest.testTwoInterfacesWithSomeInheritance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749158</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testConstructorFields</span><a href="DisambiguatePropertiesTest_testConstructorFields_3nb.html">DisambiguatePropertiesTest.testConstructorFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697541498</span>2 Jan 15:12:21</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testConstructorFields</span><a href="DisambiguatePropertiesTest_testConstructorFields_13j.html">DisambiguatePropertiesTest.testConstructorFields</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394106</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testOneType1</span><a href="DisambiguatePropertiesTest_testOneType1_aot.html">DisambiguatePropertiesTest.testOneType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697394524</span>2 Jan 15:09:54</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DisambiguatePropertiesTest.testUnionType</span><a href="DisambiguatePropertiesTest_testUnionType_f30.html">DisambiguatePropertiesTest.testUnionType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697749453</span>2 Jan 15:15:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

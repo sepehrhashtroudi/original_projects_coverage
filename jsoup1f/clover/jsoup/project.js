@@ -1,0 +1,2 @@
+processClover (  {"children":["org/jsoup/nodes/","org/jsoup/safety/","org/jsoup/parser/","org/jsoup/select/","org/jsoup/","org/jsoup/examples/","org/jsoup/integration/"],"name":"Clover database Thu Jan 5 2023 23:53:29 MST","stats":{"AvgMethodComplexity":1.7195767,"Complexity":650,"ErroneousTests":0,"FailingTests":0,"PassingTests":0,"PcErroneousTests":-1,"PcFailingTests":-1,"PcPassingTests":-1,"TestExecutionTime":0,"Tests":0,"TotalChildren":7,"TotalPercentageCovered":85.45292,"TotalStatements":1407,"UncoveredElements":326},"title":"jsoup"}
+ ); 

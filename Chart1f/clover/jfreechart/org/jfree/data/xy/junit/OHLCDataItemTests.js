@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":131,"id":94606,"methods":[{"el":69,"sc":5,"sl":67},{"el":78,"sc":5,"sl":76},{"el":92,"sc":5,"sl":83},{"el":102,"sc":5,"sl":97},{"el":129,"sc":5,"sl":107}],"name":"OHLCDataItemTests","sl":60}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1768":{"methods":[{"sl":97}],"name":"testCloning","pass":true,"statements":[{"sl":98},{"sl":101}]},"test_2195":{"methods":[{"sl":83}],"name":"testEquals","pass":true,"statements":[{"sl":84},{"sl":87},{"sl":90},{"sl":91}]},"test_2475":{"methods":[{"sl":83}],"name":"testEquals","pass":true,"statements":[{"sl":84},{"sl":87},{"sl":90},{"sl":91}]},"test_2970":{"methods":[{"sl":107}],"name":"testSerialization","pass":true,"statements":[{"sl":108},{"sl":111},{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":117},{"sl":119},{"sl":122},{"sl":123},{"sl":128}]},"test_412":{"methods":[{"sl":107}],"name":"testSerialization","pass":true,"statements":[{"sl":108},{"sl":111},{"sl":113},{"sl":114},{"sl":115},{"sl":116},{"sl":117},{"sl":119},{"sl":122},{"sl":123},{"sl":128}]},"test_4147":{"methods":[{"sl":97}],"name":"testCloning","pass":true,"statements":[{"sl":98},{"sl":101}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [2475, 2195], [2475, 2195], [], [], [2475, 2195], [], [], [2475, 2195], [2475, 2195], [], [], [], [], [], [4147, 1768], [4147, 1768], [], [], [4147, 1768], [], [], [], [], [], [412, 2970], [412, 2970], [], [], [412, 2970], [], [412, 2970], [412, 2970], [412, 2970], [412, 2970], [412, 2970], [], [412, 2970], [], [], [412, 2970], [412, 2970], [], [], [], [], [412, 2970], [], [], []]

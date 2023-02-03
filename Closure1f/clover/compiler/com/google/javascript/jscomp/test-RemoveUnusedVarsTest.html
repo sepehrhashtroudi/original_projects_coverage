@@ -1,0 +1,1733 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class RemoveUnusedVarsTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="RemoveUnusedVarsTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>RemoveUnusedVarsTest</td>
+        <td class="testPasses"><span class="sortValue">166</span>166</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.929</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign2</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign2_byw.html">RemoveUnusedVarsTest.testUnusedPropAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776271</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_ObjectPropertyString</span><a href="RemoveUnusedVarsTest_testDoNotOptimizeJSCompiler_ObjectPropertyString_7xf.html">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_ObjectPropertyString</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616066</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign2</span><a href="RemoveUnusedVarsTest_testUnusedAssign2_9rs.html">RemoveUnusedVarsTest.testUnusedAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615545</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass12</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass12_3if.html">RemoveUnusedVarsTest.testRemoveInheritedClass12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615367</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testCallSiteInteraction</span><a href="RemoveUnusedVarsTest_testCallSiteInteraction_buc.html">RemoveUnusedVarsTest.testCallSiteInteraction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776432</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.049</span>0.049</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign5b</span><a href="RemoveUnusedVarsTest_testUnusedAssign5b_2kc.html">RemoveUnusedVarsTest.testUnusedAssign5b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615686</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionArgRemoval</span><a href="RemoveUnusedVarsTest_testFunctionArgRemoval_8cn.html">RemoveUnusedVarsTest.testFunctionArgRemoval</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776158</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testCallSiteInteraction_contructors</span><a href="RemoveUnusedVarsTest_testCallSiteInteraction_contructors_6xu.html">RemoveUnusedVarsTest.testCallSiteInteraction_contructors</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615316</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass2</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass2_dp4.html">RemoveUnusedVarsTest.testRemoveInheritedClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616091</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign3</span><a href="RemoveUnusedVarsTest_testUsedPropAssign3_39a.html">RemoveUnusedVarsTest.testUsedPropAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615620</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionWithName2</span><a href="RemoveUnusedVarsTest_testFunctionWithName2_157.html">RemoveUnusedVarsTest.testFunctionWithName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615729</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass4</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass4_10z.html">RemoveUnusedVarsTest.testRemoveInheritedClass4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616105</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign1b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign1b_7ky.html">RemoveUnusedVarsTest.testUnusedPropAssign1b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776268</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRecursiveFunction2</span><a href="RemoveUnusedVarsTest_testRecursiveFunction2_3kh.html">RemoveUnusedVarsTest.testRecursiveFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776147</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testNestedAssign2</span><a href="RemoveUnusedVarsTest_testNestedAssign2_6fj.html">RemoveUnusedVarsTest.testNestedAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776152</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_ObjectPropertyString</span><a href="RemoveUnusedVarsTest_testDoNotOptimizeJSCompiler_ObjectPropertyString_60.html">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_ObjectPropertyString</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776141</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies2c</span><a href="RemoveUnusedVarsTest_testDependencies2c_5b7.html">RemoveUnusedVarsTest.testDependencies2c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776417</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testVarInControlStructure</span><a href="RemoveUnusedVarsTest_testVarInControlStructure_1bo.html">RemoveUnusedVarsTest.testVarInControlStructure</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776182</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue168a</span><a href="RemoveUnusedVarsTest_testIssue168a_9z8.html">RemoveUnusedVarsTest.testIssue168a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615852</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass7</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass7_cr1.html">RemoveUnusedVarsTest.testRemoveInheritedClass7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616135</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionWithName1</span><a href="RemoveUnusedVarsTest_testFunctionWithName1_iw.html">RemoveUnusedVarsTest.testFunctionWithName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776209</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue168b</span><a href="RemoveUnusedVarsTest_testIssue168b_4w1.html">RemoveUnusedVarsTest.testIssue168b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776321</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testReflectedMethods</span><a href="RemoveUnusedVarsTest_testReflectedMethods_css.html">RemoveUnusedVarsTest.testReflectedMethods</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776301</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveSingletonClass1</span><a href="RemoveUnusedVarsTest_testRemoveSingletonClass1_gc.html">RemoveUnusedVarsTest.testRemoveSingletonClass1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615679</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign5b</span><a href="RemoveUnusedVarsTest_testUnusedAssign5b_294.html">RemoveUnusedVarsTest.testUnusedAssign5b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776251</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass8</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass8_e40.html">RemoveUnusedVarsTest.testRemoveInheritedClass8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616144</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionWithName2</span><a href="RemoveUnusedVarsTest_testFunctionWithName2_bpb.html">RemoveUnusedVarsTest.testFunctionWithName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776214</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign6</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign6_39n.html">RemoveUnusedVarsTest.testUnusedPropAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776287</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue618_2</span><a href="RemoveUnusedVarsTest_testIssue618_2_c8x.html">RemoveUnusedVarsTest.testIssue618_2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615779</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign8</span><a href="RemoveUnusedVarsTest_testUsedPropAssign8_dbp.html">RemoveUnusedVarsTest.testUsedPropAssign8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615663</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign1</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign1_9ge.html">RemoveUnusedVarsTest.testUnusedPropAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776266</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign4</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign4_4h5.html">RemoveUnusedVarsTest.testUnusedPropAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615826</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal3</span><a href="RemoveUnusedVarsTest_testRemoveGlobal3_69c.html">RemoveUnusedVarsTest.testRemoveGlobal3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776227</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass10</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass10_6mn.html">RemoveUnusedVarsTest.testRemoveInheritedClass10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776544</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign1</span><a href="RemoveUnusedVarsTest_testUnusedAssign1_36t.html">RemoveUnusedVarsTest.testUnusedAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776237</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign3b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign3b_8ul.html">RemoveUnusedVarsTest.testUnusedPropAssign3b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615891</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign3</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign3_4ol.html">RemoveUnusedVarsTest.testUnusedPropAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776276</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testNestedAssign3</span><a href="RemoveUnusedVarsTest_testNestedAssign3_82l.html">RemoveUnusedVarsTest.testNestedAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615530</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies1b</span><a href="RemoveUnusedVarsTest_testDependencies1b_57n.html">RemoveUnusedVarsTest.testDependencies1b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776405</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign5</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign5_3pa.html">RemoveUnusedVarsTest.testUnusedPropAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615832</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign3</span><a href="RemoveUnusedVarsTest_testUnusedAssign3_8pp.html">RemoveUnusedVarsTest.testUnusedAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776242</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign2</span><a href="RemoveUnusedVarsTest_testUnusedAssign2_4gx.html">RemoveUnusedVarsTest.testUnusedAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776239</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionArgRemovalFromCallSites</span><a href="RemoveUnusedVarsTest_testFunctionArgRemovalFromCallSites_6eb.html">RemoveUnusedVarsTest.testFunctionArgRemovalFromCallSites</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776307</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRecursiveFunction1</span><a href="RemoveUnusedVarsTest_testRecursiveFunction1_8qe.html">RemoveUnusedVarsTest.testRecursiveFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776144</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign1</span><a href="RemoveUnusedVarsTest_testUsedPropAssign1_27o.html">RemoveUnusedVarsTest.testUsedPropAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776298</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign8</span><a href="RemoveUnusedVarsTest_testUnusedAssign8_9dd.html">RemoveUnusedVarsTest.testUnusedAssign8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776262</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies2c</span><a href="RemoveUnusedVarsTest_testDependencies2c_9vq.html">RemoveUnusedVarsTest.testDependencies2c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616186</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue618_1</span><a href="RemoveUnusedVarsTest_testIssue618_1_934.html">RemoveUnusedVarsTest.testIssue618_1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615769</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRecursiveFunction1</span><a href="RemoveUnusedVarsTest_testRecursiveFunction1_4h1.html">RemoveUnusedVarsTest.testRecursiveFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615281</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies1c</span><a href="RemoveUnusedVarsTest_testDependencies1c_2lv.html">RemoveUnusedVarsTest.testDependencies1c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776408</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign6</span><a href="RemoveUnusedVarsTest_testUnusedAssign6_1mu.html">RemoveUnusedVarsTest.testUnusedAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615579</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign1</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign1_aaq.html">RemoveUnusedVarsTest.testUnusedPropAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615808</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testReflectedMethods</span><a href="RemoveUnusedVarsTest_testReflectedMethods_4mq.html">RemoveUnusedVarsTest.testReflectedMethods</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615914</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar1</span><a href="RemoveUnusedVarsTest_testLocalVarReferencesGlobalVar1_7cp.html">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776423</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass2</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass2_9s7.html">RemoveUnusedVarsTest.testRemoveInheritedClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776511</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass8</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass8_2t9.html">RemoveUnusedVarsTest.testRemoveInheritedClass8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776538</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies1c</span><a href="RemoveUnusedVarsTest_testDependencies1c_asc.html">RemoveUnusedVarsTest.testDependencies1c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616167</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testVarInControlStructure</span><a href="RemoveUnusedVarsTest_testVarInControlStructure_brn.html">RemoveUnusedVarsTest.testVarInControlStructure</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615232</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.049</span>0.049</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign5</span><a href="RemoveUnusedVarsTest_testUsedPropAssign5_3ed.html">RemoveUnusedVarsTest.testUsedPropAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615638</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testNestedAssign2</span><a href="RemoveUnusedVarsTest_testNestedAssign2_p7.html">RemoveUnusedVarsTest.testNestedAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615521</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass4</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass4_2x6.html">RemoveUnusedVarsTest.testRemoveInheritedClass4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776520</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionArgRemoval</span><a href="RemoveUnusedVarsTest_testFunctionArgRemoval_6ob.html">RemoveUnusedVarsTest.testFunctionArgRemoval</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616194</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.036</span>0.036</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign3</span><a href="RemoveUnusedVarsTest_testUnusedAssign3_31u.html">RemoveUnusedVarsTest.testUnusedAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615554</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign5</span><a href="RemoveUnusedVarsTest_testUsedPropAssign5_5co.html">RemoveUnusedVarsTest.testUsedPropAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776387</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionArgRemovalFromCallSites</span><a href="RemoveUnusedVarsTest_testFunctionArgRemovalFromCallSites_bf7.html">RemoveUnusedVarsTest.testFunctionArgRemovalFromCallSites</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615436</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign2</span><a href="RemoveUnusedVarsTest_testUsedPropAssign2_ccn.html">RemoveUnusedVarsTest.testUsedPropAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615612</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal2</span><a href="RemoveUnusedVarsTest_testRemoveGlobal2_n1.html">RemoveUnusedVarsTest.testRemoveGlobal2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776223</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDoNotOptimizeSetters</span><a href="RemoveUnusedVarsTest_testDoNotOptimizeSetters_3fh.html">RemoveUnusedVarsTest.testDoNotOptimizeSetters</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776499</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass5</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass5_i9.html">RemoveUnusedVarsTest.testRemoveInheritedClass5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616116</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveUnusedVars</span><a href="RemoveUnusedVarsTest_testRemoveUnusedVars_det.html">RemoveUnusedVarsTest.testRemoveUnusedVars</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776335</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.042</span>0.042</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass10</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass10_bjq.html">RemoveUnusedVarsTest.testRemoveInheritedClass10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615331</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign7</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign7_9mq.html">RemoveUnusedVarsTest.testUnusedPropAssign7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615846</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal3</span><a href="RemoveUnusedVarsTest_testRemoveGlobal3_6ye.html">RemoveUnusedVarsTest.testRemoveGlobal3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615406</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign4</span><a href="RemoveUnusedVarsTest_testUnusedAssign4_4j0.html">RemoveUnusedVarsTest.testUnusedAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615562</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue618_2</span><a href="RemoveUnusedVarsTest_testIssue618_2_ag2.html">RemoveUnusedVarsTest.testIssue618_2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776328</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign8</span><a href="RemoveUnusedVarsTest_testUsedPropAssign8_akj.html">RemoveUnusedVarsTest.testUsedPropAssign8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776396</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies2</span><a href="RemoveUnusedVarsTest_testDependencies2_46o.html">RemoveUnusedVarsTest.testDependencies2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615708</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies1</span><a href="RemoveUnusedVarsTest_testDependencies1_3vo.html">RemoveUnusedVarsTest.testDependencies1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776403</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign8</span><a href="RemoveUnusedVarsTest_testUnusedAssign8_72g.html">RemoveUnusedVarsTest.testUnusedAssign8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615594</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass11</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass11_5ow.html">RemoveUnusedVarsTest.testRemoveInheritedClass11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776548</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign1</span><a href="RemoveUnusedVarsTest_testUnusedAssign1_dhm.html">RemoveUnusedVarsTest.testUnusedAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615538</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign2</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign2_806.html">RemoveUnusedVarsTest.testUnusedPropAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615814</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass11</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass11_75c.html">RemoveUnusedVarsTest.testRemoveInheritedClass11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615355</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign5</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign5_bfr.html">RemoveUnusedVarsTest.testUnusedPropAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776284</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass12</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass12_6dh.html">RemoveUnusedVarsTest.testRemoveInheritedClass12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776552</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign5</span><a href="RemoveUnusedVarsTest_testUnusedAssign5_84r.html">RemoveUnusedVarsTest.testUnusedAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615571</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign3b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign3b_aan.html">RemoveUnusedVarsTest.testUnusedPropAssign3b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776278</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveUnusedVars</span><a href="RemoveUnusedVarsTest_testRemoveUnusedVars_1eg.html">RemoveUnusedVarsTest.testRemoveUnusedVars</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615929</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.137</span>0.137</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies2</span><a href="RemoveUnusedVarsTest_testDependencies2_cpr.html">RemoveUnusedVarsTest.testDependencies2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776411</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionsDeadButEscaped</span><a href="RemoveUnusedVarsTest_testFunctionsDeadButEscaped_oh.html">RemoveUnusedVarsTest.testFunctionsDeadButEscaped</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776172</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRecursiveFunction2</span><a href="RemoveUnusedVarsTest_testRecursiveFunction2_f0s.html">RemoveUnusedVarsTest.testRecursiveFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615289</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testNestedAssign1</span><a href="RemoveUnusedVarsTest_testNestedAssign1_a9i.html">RemoveUnusedVarsTest.testNestedAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615513</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign6</span><a href="RemoveUnusedVarsTest_testUsedPropAssign6_5wv.html">RemoveUnusedVarsTest.testUsedPropAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615646</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign4</span><a href="RemoveUnusedVarsTest_testUsedPropAssign4_a9l.html">RemoveUnusedVarsTest.testUsedPropAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776384</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign7b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign7b_8tv.html">RemoveUnusedVarsTest.testUnusedPropAssign7b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776292</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testNestedAssign3</span><a href="RemoveUnusedVarsTest_testNestedAssign3_7ws.html">RemoveUnusedVarsTest.testNestedAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776155</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies2b</span><a href="RemoveUnusedVarsTest_testDependencies2b_2im.html">RemoveUnusedVarsTest.testDependencies2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776414</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_renameProperty</span><a href="RemoveUnusedVarsTest_testDoNotOptimizeJSCompiler_renameProperty_4l8.html">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_renameProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776137</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_renameProperty</span><a href="RemoveUnusedVarsTest_testDoNotOptimizeJSCompiler_renameProperty_54e.html">RemoveUnusedVarsTest.testDoNotOptimizeJSCompiler_renameProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615307</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testCallSiteInteraction</span><a href="RemoveUnusedVarsTest_testCallSiteInteraction_8k6.html">RemoveUnusedVarsTest.testCallSiteInteraction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697614649</span>2 Jan 15:13:34</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.579</span>0.579</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign7b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign7b_15d.html">RemoveUnusedVarsTest.testUnusedPropAssign7b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615899</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass3</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass3_45n.html">RemoveUnusedVarsTest.testRemoveInheritedClass3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616098</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDoNotOptimizeSetters</span><a href="RemoveUnusedVarsTest_testDoNotOptimizeSetters_a3.html">RemoveUnusedVarsTest.testDoNotOptimizeSetters</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615871</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign7</span><a href="RemoveUnusedVarsTest_testUnusedAssign7_1o0.html">RemoveUnusedVarsTest.testUnusedAssign7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615585</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass9</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass9_a7s.html">RemoveUnusedVarsTest.testRemoveInheritedClass9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776541</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass9</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass9_6b1.html">RemoveUnusedVarsTest.testRemoveInheritedClass9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616151</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass6</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass6_58z.html">RemoveUnusedVarsTest.testRemoveInheritedClass6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776531</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionsDeadButEscaped</span><a href="RemoveUnusedVarsTest_testFunctionsDeadButEscaped_18m.html">RemoveUnusedVarsTest.testFunctionsDeadButEscaped</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615743</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies1b</span><a href="RemoveUnusedVarsTest_testDependencies1b_1j7.html">RemoveUnusedVarsTest.testDependencies1b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616160</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testGlobalVarReferencesLocalVar</span><a href="RemoveUnusedVarsTest_testGlobalVarReferencesLocalVar_74t.html">RemoveUnusedVarsTest.testGlobalVarReferencesLocalVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616231</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRValueHoisting</span><a href="RemoveUnusedVarsTest_testRValueHoisting_c3b.html">RemoveUnusedVarsTest.testRValueHoisting</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776201</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign2b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign2b_z7.html">RemoveUnusedVarsTest.testUnusedPropAssign2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776273</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign7</span><a href="RemoveUnusedVarsTest_testUsedPropAssign7_z5.html">RemoveUnusedVarsTest.testUsedPropAssign7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776394</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRValueHoisting</span><a href="RemoveUnusedVarsTest_testRValueHoisting_ra.html">RemoveUnusedVarsTest.testRValueHoisting</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615788</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign3</span><a href="RemoveUnusedVarsTest_testUsedPropAssign3_45q.html">RemoveUnusedVarsTest.testUsedPropAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776381</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass7</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass7_atc.html">RemoveUnusedVarsTest.testRemoveInheritedClass7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776535</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign6b</span><a href="RemoveUnusedVarsTest_testUnusedAssign6b_4px.html">RemoveUnusedVarsTest.testUnusedAssign6b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615694</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal4</span><a href="RemoveUnusedVarsTest_testRemoveGlobal4_3em.html">RemoveUnusedVarsTest.testRemoveGlobal4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615422</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass5</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass5_88n.html">RemoveUnusedVarsTest.testRemoveInheritedClass5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776526</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign4</span><a href="RemoveUnusedVarsTest_testUsedPropAssign4_5g8.html">RemoveUnusedVarsTest.testUsedPropAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615628</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal1</span><a href="RemoveUnusedVarsTest_testRemoveGlobal1_131.html">RemoveUnusedVarsTest.testRemoveGlobal1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615377</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign7</span><a href="RemoveUnusedVarsTest_testUnusedAssign7_2g2.html">RemoveUnusedVarsTest.testUnusedAssign7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776259</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign3</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign3_bf3.html">RemoveUnusedVarsTest.testUnusedPropAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615820</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal1</span><a href="RemoveUnusedVarsTest_testRemoveGlobal1_1z3.html">RemoveUnusedVarsTest.testRemoveGlobal1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776219</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar2</span><a href="RemoveUnusedVarsTest_testLocalVarReferencesGlobalVar2_408.html">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615494</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal2</span><a href="RemoveUnusedVarsTest_testRemoveGlobal2_cua.html">RemoveUnusedVarsTest.testRemoveGlobal2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615393</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass1</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass1_7pr.html">RemoveUnusedVarsTest.testRemoveInheritedClass1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616083</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue168b</span><a href="RemoveUnusedVarsTest_testIssue168b_65p.html">RemoveUnusedVarsTest.testIssue168b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615862</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testModule</span><a href="RemoveUnusedVarsTest_testModule_23w.html">RemoveUnusedVarsTest.testModule</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776556</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar2</span><a href="RemoveUnusedVarsTest_testLocalVarReferencesGlobalVar2_4cf.html">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776426</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign6b</span><a href="RemoveUnusedVarsTest_testUnusedAssign6b_3dg.html">RemoveUnusedVarsTest.testUnusedAssign6b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776257</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign5</span><a href="RemoveUnusedVarsTest_testUnusedAssign5_3cx.html">RemoveUnusedVarsTest.testUnusedAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776248</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testNestedAssign1</span><a href="RemoveUnusedVarsTest_testNestedAssign1_8n2.html">RemoveUnusedVarsTest.testNestedAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776150</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveSingletonClass1</span><a href="RemoveUnusedVarsTest_testRemoveSingletonClass1_yx.html">RemoveUnusedVarsTest.testRemoveSingletonClass1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776503</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testCallSiteInteraction_contructors</span><a href="RemoveUnusedVarsTest_testCallSiteInteraction_contructors_aox.html">RemoveUnusedVarsTest.testCallSiteInteraction_contructors</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776482</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign6</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign6_1um.html">RemoveUnusedVarsTest.testUnusedPropAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615840</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionArgRemovalCausingInconsistency</span><a href="RemoveUnusedVarsTest_testFunctionArgRemovalCausingInconsistency_9d4.html">RemoveUnusedVarsTest.testFunctionArgRemovalCausingInconsistency</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776488</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testModule</span><a href="RemoveUnusedVarsTest_testModule_7ol.html">RemoveUnusedVarsTest.testModule</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616073</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies1</span><a href="RemoveUnusedVarsTest_testDependencies1_6zv.html">RemoveUnusedVarsTest.testDependencies1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615701</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveUnusedVarsPossibleNpeCase</span><a href="RemoveUnusedVarsTest_testRemoveUnusedVarsPossibleNpeCase_5c8.html">RemoveUnusedVarsTest.testRemoveUnusedVarsPossibleNpeCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616240</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign9</span><a href="RemoveUnusedVarsTest_testUsedPropAssign9_5s.html">RemoveUnusedVarsTest.testUsedPropAssign9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776399</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue618_1</span><a href="RemoveUnusedVarsTest_testIssue618_1_7qq.html">RemoveUnusedVarsTest.testIssue618_1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776331</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionArgRemovalCausingInconsistency</span><a href="RemoveUnusedVarsTest_testFunctionArgRemovalCausingInconsistency_1ou.html">RemoveUnusedVarsTest.testFunctionArgRemovalCausingInconsistency</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615297</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass6</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass6_dm.html">RemoveUnusedVarsTest.testRemoveInheritedClass6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616126</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign2b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign2b_4cg.html">RemoveUnusedVarsTest.testUnusedPropAssign2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615884</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testFunctionWithName1</span><a href="RemoveUnusedVarsTest_testFunctionWithName1_7z6.html">RemoveUnusedVarsTest.testFunctionWithName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615715</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign9</span><a href="RemoveUnusedVarsTest_testUsedPropAssign9_557.html">RemoveUnusedVarsTest.testUsedPropAssign9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615671</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign4</span><a href="RemoveUnusedVarsTest_testUnusedAssign4_ami.html">RemoveUnusedVarsTest.testUnusedAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776245</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar1</span><a href="RemoveUnusedVarsTest_testLocalVarReferencesGlobalVar1_1xe.html">RemoveUnusedVarsTest.testLocalVarReferencesGlobalVar1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615484</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass3</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass3_8xm.html">RemoveUnusedVarsTest.testRemoveInheritedClass3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776515</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign4</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign4_dko.html">RemoveUnusedVarsTest.testUnusedPropAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776281</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign1b</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign1b_3hq.html">RemoveUnusedVarsTest.testUnusedPropAssign1b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615878</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign6</span><a href="RemoveUnusedVarsTest_testUsedPropAssign6_9dn.html">RemoveUnusedVarsTest.testUsedPropAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776390</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign1</span><a href="RemoveUnusedVarsTest_testUsedPropAssign1_d9i.html">RemoveUnusedVarsTest.testUsedPropAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615603</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign7</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign7_8nq.html">RemoveUnusedVarsTest.testUnusedPropAssign7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776289</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveInheritedClass1</span><a href="RemoveUnusedVarsTest_testRemoveInheritedClass1_bz8.html">RemoveUnusedVarsTest.testRemoveInheritedClass1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776507</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign2</span><a href="RemoveUnusedVarsTest_testUsedPropAssign2_euc.html">RemoveUnusedVarsTest.testUsedPropAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776378</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testIssue168a</span><a href="RemoveUnusedVarsTest_testIssue168a_9gd.html">RemoveUnusedVarsTest.testIssue168a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776325</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedAssign6</span><a href="RemoveUnusedVarsTest_testUnusedAssign6_1wn.html">RemoveUnusedVarsTest.testUnusedAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776254</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveUnusedVarsPossibleNpeCase</span><a href="RemoveUnusedVarsTest_testRemoveUnusedVarsPossibleNpeCase_csy.html">RemoveUnusedVarsTest.testRemoveUnusedVarsPossibleNpeCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776493</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign7c</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign7c_1xw.html">RemoveUnusedVarsTest.testUnusedPropAssign7c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776295</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testRemoveGlobal4</span><a href="RemoveUnusedVarsTest_testRemoveGlobal4_2r6.html">RemoveUnusedVarsTest.testRemoveGlobal4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776233</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUnusedPropAssign7c</span><a href="RemoveUnusedVarsTest_testUnusedPropAssign7c_2zt.html">RemoveUnusedVarsTest.testUnusedPropAssign7c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615906</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testGlobalVarReferencesLocalVar</span><a href="RemoveUnusedVarsTest_testGlobalVarReferencesLocalVar_a4h.html">RemoveUnusedVarsTest.testGlobalVarReferencesLocalVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776420</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testUsedPropAssign7</span><a href="RemoveUnusedVarsTest_testUsedPropAssign7_ur.html">RemoveUnusedVarsTest.testUsedPropAssign7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697615655</span>2 Jan 15:13:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RemoveUnusedVarsTest.testDependencies2b</span><a href="RemoveUnusedVarsTest_testDependencies2b_kt.html">RemoveUnusedVarsTest.testDependencies2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697616178</span>2 Jan 15:13:36</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

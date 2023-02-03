@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>commons-jxpath</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">commons-jxpath-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        commons-jxpath
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Thu Jan 5 2023 23:55:43 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        186 classes,
+                        12,844 /
+                        18,307 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7015896</span>70.2%</div><div style="display: table-cell">
+ <div title="70.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:70.2%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        1,598 /
+                        1,598 tests
+                        31.72 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">5,282</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">11,334</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">1,691</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">186</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">181</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">16</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">30,578</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">20,347</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">6,083</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.54</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">9.09</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">11.62</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">3.6</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="288,24,310,206" title="39 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="263,15,285,206" title="41 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="238,76,260,206" title="28 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="213,127,235,206" title="17 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="188,183,210,206" title="5 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="163,174,185,206" title="7 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="138,197,160,206" title="2 classes have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="88,192,110,206" title="3 classes have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,99,60,206" title="23 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="240,208,238,211,235,208,238,206,240,208,240,208" title="Complexity: 7; Coverage: 79%; Class: TestBeanFactory" alt="" href="org/apache/commons/jxpath/ri/model/beans/TestBeanFactory.html#TestBeanFactory"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 2; Coverage: 100%; Class: TestIndexedPropertyBean" alt="" href="org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean.html#TestIndexedPropertyBean"/>
+<area shape="poly" coords="266,203,264,206,261,203,264,201,266,203,266,203" title="Complexity: 61; Coverage: 90%; Class: PropertyIterator" alt="" href="org/apache/commons/jxpath/ri/model/beans/PropertyIterator.html#PropertyIterator"/>
+<area shape="poly" coords="250,209,247,211,245,209,247,206,250,209,250,209" title="Complexity: 4; Coverage: 83%; Class: BeanPointerFactory" alt="" href="org/apache/commons/jxpath/ri/model/beans/BeanPointerFactory.html#BeanPointerFactory"/>
+<area shape="poly" coords="259,204,257,206,254,204,257,201,259,204,259,204" title="Complexity: 52; Coverage: 87%; Class: BeanPropertyPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/BeanPropertyPointer.html#BeanPropertyPointer"/>
+<area shape="poly" coords="172,206,169,209,167,206,169,204,172,206,172,206" title="Complexity: 26; Coverage: 50%; Class: NullElementPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/NullElementPointer.html#NullElementPointer"/>
+<area shape="poly" coords="255,206,252,208,250,206,252,203,255,206,255,206" title="Complexity: 34; Coverage: 85%; Class: BeanPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/BeanPointer.html#BeanPointer"/>
+<area shape="poly" coords="174,207,171,209,169,207,171,204,174,207,174,207" title="Complexity: 24; Coverage: 51%; Class: NullPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/NullPointer.html#NullPointer"/>
+<area shape="poly" coords="228,206,226,208,223,206,226,203,228,206,228,206" title="Complexity: 36; Coverage: 74%; Class: NullPropertyPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/NullPropertyPointer.html#NullPropertyPointer"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 2; Coverage: 100%; Class: TestIndexedPropertyBean" alt="" href="org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean.html#TestIndexedPropertyBean"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 5; Coverage: 100%; Class: CollectionPointerFactory" alt="" href="org/apache/commons/jxpath/ri/model/beans/CollectionPointerFactory.html#CollectionPointerFactory"/>
+<area shape="poly" coords="84,207,81,210,79,207,81,205,84,207,84,207" title="Complexity: 19; Coverage: 13%; Class: LangAttributePointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/LangAttributePointer.html#LangAttributePointer"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 2; Coverage: 100%; Class: TestIndexedPropertyBean" alt="" href="org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean.html#TestIndexedPropertyBean"/>
+<area shape="poly" coords="238,205,235,208,233,205,235,203,238,205,238,205" title="Complexity: 41; Coverage: 78%; Class: PropertyPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/PropertyPointer.html#PropertyPointer"/>
+<area shape="poly" coords="212,205,209,207,207,205,209,202,212,205,212,205" title="Complexity: 45; Coverage: 67%; Class: CollectionPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/CollectionPointer.html#CollectionPointer"/>
+<area shape="poly" coords="207,207,205,210,202,207,205,205,207,207,207,207" title="Complexity: 16; Coverage: 65%; Class: CollectionNodeIterator" alt="" href="org/apache/commons/jxpath/ri/model/beans/CollectionNodeIterator.html#CollectionNodeIterator"/>
+<area shape="poly" coords="290,208,288,210,285,208,288,205,290,208,290,208" title="Complexity: 11; Coverage: 100%; Class: BeanAttributeIterator" alt="" href="org/apache/commons/jxpath/ri/model/beans/BeanAttributeIterator.html#BeanAttributeIterator"/>
+<area shape="poly" coords="224,207,221,209,219,207,221,204,224,207,224,207" title="Complexity: 25; Coverage: 72%; Class: PropertyOwnerPointer" alt="" href="org/apache/commons/jxpath/ri/model/beans/PropertyOwnerPointer.html#PropertyOwnerPointer"/>
+<area shape="poly" coords="264,208,262,210,259,208,262,205,264,208,264,208" title="Complexity: 11; Coverage: 89%; Class: TestDOMFactory" alt="" href="org/apache/commons/jxpath/ri/model/dom/TestDOMFactory.html#TestDOMFactory"/>
+<area shape="poly" coords="169,207,167,209,164,207,167,204,169,207,169,207" title="Complexity: 21; Coverage: 49%; Class: NamespacePointer" alt="" href="org/apache/commons/jxpath/ri/model/dom/NamespacePointer.html#NamespacePointer"/>
+<area shape="poly" coords="247,207,245,210,242,207,245,205,247,207,247,207" title="Complexity: 18; Coverage: 82%; Class: DOMNamespaceIterator" alt="" href="org/apache/commons/jxpath/ri/model/dom/DOMNamespaceIterator.html#DOMNamespaceIterator"/>
+<area shape="poly" coords="257,206,254,208,252,206,254,203,257,206,257,206" title="Complexity: 33; Coverage: 86%; Class: DOMAttributeIterator" alt="" href="org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.html#DOMAttributeIterator"/>
+<area shape="poly" coords="188,206,186,209,183,206,186,204,188,206,188,206" title="Complexity: 26; Coverage: 57%; Class: DOMAttributePointer" alt="" href="org/apache/commons/jxpath/ri/model/dom/DOMAttributePointer.html#DOMAttributePointer"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 5; Coverage: 100%; Class: CollectionPointerFactory" alt="" href="org/apache/commons/jxpath/ri/model/beans/CollectionPointerFactory.html#CollectionPointerFactory"/>
+<area shape="poly" coords="240,192,238,195,235,192,238,190,240,192,240,192" title="Complexity: 171; Coverage: 79%; Class: DOMNodePointer" alt="" href="org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.html#DOMNodePointer"/>
+<area shape="poly" coords="255,206,252,209,250,206,252,204,255,206,255,206" title="Complexity: 30; Coverage: 85%; Class: DOMNodeIterator" alt="" href="org/apache/commons/jxpath/ri/model/dom/DOMNodeIterator.html#DOMNodeIterator"/>
+<area shape="poly" coords="238,208,235,211,233,208,235,206,238,208,238,208" title="Complexity: 7; Coverage: 78%; Class: TestDynaBeanFactory" alt="" href="org/apache/commons/jxpath/ri/model/dynabeans/TestDynaBeanFactory.html#TestDynaBeanFactory"/>
+<area shape="poly" coords="214,206,212,209,209,206,212,204,214,206,214,206" title="Complexity: 26; Coverage: 68%; Class: DynaBeanPointer" alt="" href="org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointer.html#DynaBeanPointer"/>
+<area shape="poly" coords="255,209,252,211,250,209,252,206,255,209,255,209" title="Complexity: 5; Coverage: 85%; Class: DynaBeanPointerFactory" alt="" href="org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPointerFactory.html#DynaBeanPointerFactory"/>
+<area shape="poly" coords="240,205,238,207,235,205,238,202,240,205,240,205" title="Complexity: 45; Coverage: 79%; Class: DynaBeanPropertyPointer" alt="" href="org/apache/commons/jxpath/ri/model/dynabeans/DynaBeanPropertyPointer.html#DynaBeanPropertyPointer"/>
+<area shape="poly" coords="259,208,257,211,254,208,257,206,259,208,259,208" title="Complexity: 9; Coverage: 87%; Class: TestMixedModelFactory" alt="" href="org/apache/commons/jxpath/ri/model/TestMixedModelFactory.html#TestMixedModelFactory"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 3; Coverage: 100%; Class: ExceptionPropertyTestBean" alt="" href="org/apache/commons/jxpath/ri/model/ExceptionPropertyTestBean.html#ExceptionPropertyTestBean"/>
+<area shape="poly" coords="233,203,231,205,228,203,231,200,233,203,233,203" title="Complexity: 66; Coverage: 76%; Class: VariablePointer" alt="" href="org/apache/commons/jxpath/ri/model/VariablePointer.html#VariablePointer"/>
+<area shape="poly" coords="236,198,233,201,231,198,233,196,236,198,236,198" title="Complexity: 110; Coverage: 77%; Class: NodePointer" alt="" href="org/apache/commons/jxpath/ri/model/NodePointer.html#NodePointer"/>
+<area shape="poly" coords="53,208,50,210,48,208,50,205,53,208,53,208" title="Complexity: 14; Coverage: 0%; Class: BasicTypeConverter.ValuePointer" alt="" href="org/apache/commons/jxpath/util/BasicTypeConverter.html#BasicTypeConverter.ValuePointer"/>
+<area shape="poly" coords="53,208,50,211,48,208,50,206,53,208,53,208" title="Complexity: 6; Coverage: 0%; Class: BasicTypeConverter.ValueNodeSet" alt="" href="org/apache/commons/jxpath/util/BasicTypeConverter.html#BasicTypeConverter.ValueNodeSet"/>
+<area shape="poly" coords="217,197,214,199,212,197,214,194,217,197,217,197" title="Complexity: 129; Coverage: 69%; Class: BasicTypeConverter" alt="" href="org/apache/commons/jxpath/util/BasicTypeConverter.html#BasicTypeConverter"/>
+<area shape="poly" coords="172,209,169,211,167,209,169,206,172,209,172,209" title="Complexity: 4; Coverage: 50%; Class: TypeUtils" alt="" href="org/apache/commons/jxpath/util/TypeUtils.html#TypeUtils"/>
+<area shape="poly" coords="238,203,235,206,233,203,235,201,238,203,238,203" title="Complexity: 58; Coverage: 78%; Class: MethodLookupUtils" alt="" href="org/apache/commons/jxpath/util/MethodLookupUtils.html#MethodLookupUtils"/>
+<area shape="poly" coords="217,199,214,202,212,199,214,197,217,199,217,199" title="Complexity: 100; Coverage: 69%; Class: ValueUtils" alt="" href="org/apache/commons/jxpath/util/ValueUtils.html#ValueUtils"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 5; Coverage: 100%; Class: CollectionPointerFactory" alt="" href="org/apache/commons/jxpath/ri/model/beans/CollectionPointerFactory.html#CollectionPointerFactory"/>
+<area shape="poly" coords="202,206,200,209,197,206,200,204,202,206,202,206" title="Complexity: 29; Coverage: 63%; Class: ContainerPointer" alt="" href="org/apache/commons/jxpath/ri/model/container/ContainerPointer.html#ContainerPointer"/>
+<area shape="poly" coords="264,208,262,210,259,208,262,205,264,208,264,208" title="Complexity: 12; Coverage: 89%; Class: TestJDOMFactory" alt="" href="org/apache/commons/jxpath/ri/model/jdom/TestJDOMFactory.html#TestJDOMFactory"/>
+<area shape="poly" coords="247,207,245,210,242,207,245,205,247,207,247,207" title="Complexity: 17; Coverage: 82%; Class: JDOMAttributeIterator" alt="" href="org/apache/commons/jxpath/ri/model/jdom/JDOMAttributeIterator.html#JDOMAttributeIterator"/>
+<area shape="poly" coords="224,192,221,194,219,192,221,189,224,192,224,192" title="Complexity: 181; Coverage: 72%; Class: JDOMNodePointer" alt="" href="org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.html#JDOMNodePointer"/>
+<area shape="poly" coords="245,206,243,209,240,206,243,204,245,206,245,206" title="Complexity: 30; Coverage: 81%; Class: JDOMNodeIterator" alt="" href="org/apache/commons/jxpath/ri/model/jdom/JDOMNodeIterator.html#JDOMNodeIterator"/>
+<area shape="poly" coords="172,207,169,210,167,207,169,205,172,207,172,207" title="Complexity: 20; Coverage: 50%; Class: JDOMNamespacePointer" alt="" href="org/apache/commons/jxpath/ri/model/jdom/JDOMNamespacePointer.html#JDOMNamespacePointer"/>
+<area shape="poly" coords="266,208,264,211,261,208,264,206,266,208,266,208" title="Complexity: 7; Coverage: 90%; Class: JDOMPointerFactory" alt="" href="org/apache/commons/jxpath/ri/model/jdom/JDOMPointerFactory.html#JDOMPointerFactory"/>
+<area shape="poly" coords="195,207,193,209,190,207,193,204,195,207,195,207" title="Complexity: 23; Coverage: 60%; Class: JDOMAttributePointer" alt="" href="org/apache/commons/jxpath/ri/model/jdom/JDOMAttributePointer.html#JDOMAttributePointer"/>
+<area shape="poly" coords="243,207,240,210,238,207,240,205,243,207,243,207" title="Complexity: 17; Coverage: 80%; Class: JDOMNamespaceIterator" alt="" href="org/apache/commons/jxpath/ri/model/jdom/JDOMNamespaceIterator.html#JDOMNamespaceIterator"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 4; Coverage: 0%; Class: ServletRequestAndContext" alt="" href="org/apache/commons/jxpath/servlet/ServletRequestAndContext.html#ServletRequestAndContext"/>
+<area shape="poly" coords="53,208,50,211,48,208,50,206,53,208,53,208" title="Complexity: 8; Coverage: 0%; Class: HttpSessionHandler" alt="" href="org/apache/commons/jxpath/servlet/HttpSessionHandler.html#HttpSessionHandler"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 3; Coverage: 0%; Class: HttpSessionAndServletContext" alt="" href="org/apache/commons/jxpath/servlet/HttpSessionAndServletContext.html#HttpSessionAndServletContext"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 5; Coverage: 0%; Class: ServletContextHandler" alt="" href="org/apache/commons/jxpath/servlet/ServletContextHandler.html#ServletContextHandler"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 4; Coverage: 0%; Class: ServletRequestAndContext" alt="" href="org/apache/commons/jxpath/servlet/ServletRequestAndContext.html#ServletRequestAndContext"/>
+<area shape="poly" coords="53,208,50,210,48,208,50,205,53,208,53,208" title="Complexity: 12; Coverage: 0%; Class: JXPathServletContexts" alt="" href="org/apache/commons/jxpath/servlet/JXPathServletContexts.html#JXPathServletContexts"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 4; Coverage: 0%; Class: ServletRequestAndContext" alt="" href="org/apache/commons/jxpath/servlet/ServletRequestAndContext.html#ServletRequestAndContext"/>
+<area shape="poly" coords="53,208,50,211,48,208,50,206,53,208,53,208" title="Complexity: 9; Coverage: 0%; Class: ServletRequestHandler" alt="" href="org/apache/commons/jxpath/servlet/ServletRequestHandler.html#ServletRequestHandler"/>
+<area shape="poly" coords="53,208,50,211,48,208,50,206,53,208,53,208" title="Complexity: 6; Coverage: 0%; Class: BasicTypeConverter.ValueNodeSet" alt="" href="org/apache/commons/jxpath/util/BasicTypeConverter.html#BasicTypeConverter.ValueNodeSet"/>
+<area shape="poly" coords="53,208,50,211,48,208,50,206,53,208,53,208" title="Complexity: 7; Coverage: 0%; Class: PageContextHandler" alt="" href="org/apache/commons/jxpath/servlet/PageContextHandler.html#PageContextHandler"/>
+<area shape="poly" coords="93,208,91,210,88,208,91,205,93,208,93,208" title="Complexity: 14; Coverage: 17%; Class: JXPathCompiledExpression" alt="" href="org/apache/commons/jxpath/ri/JXPathCompiledExpression.html#JXPathCompiledExpression"/>
+<area shape="poly" coords="240,203,238,206,235,203,238,201,240,203,240,203" title="Complexity: 60; Coverage: 79%; Class: EvalContext" alt="" href="org/apache/commons/jxpath/ri/EvalContext.html#EvalContext"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 2; Coverage: 100%; Class: TestIndexedPropertyBean" alt="" href="org/apache/commons/jxpath/ri/model/beans/TestIndexedPropertyBean.html#TestIndexedPropertyBean"/>
+<area shape="poly" coords="233,205,231,208,228,205,231,203,233,205,233,205" title="Complexity: 38; Coverage: 76%; Class: InfoSetUtil" alt="" href="org/apache/commons/jxpath/ri/InfoSetUtil.html#InfoSetUtil"/>
+<area shape="poly" coords="266,207,264,210,261,207,264,205,266,207,266,207" title="Complexity: 16; Coverage: 90%; Class: QName" alt="" href="org/apache/commons/jxpath/ri/QName.html#QName"/>
+<area shape="poly" coords="247,199,245,201,242,199,245,196,247,199,247,199" title="Complexity: 108; Coverage: 82%; Class: JXPathContextReferenceImpl" alt="" href="org/apache/commons/jxpath/ri/JXPathContextReferenceImpl.html#JXPathContextReferenceImpl"/>
+<area shape="poly" coords="138,208,136,211,133,208,136,206,138,208,138,208" title="Complexity: 7; Coverage: 36%; Class: Parser" alt="" href="org/apache/commons/jxpath/ri/Parser.html#Parser"/>
+<area shape="poly" coords="259,206,257,209,254,206,257,204,259,206,259,206" title="Complexity: 26; Coverage: 87%; Class: NamespaceResolver" alt="" href="org/apache/commons/jxpath/ri/NamespaceResolver.html#NamespaceResolver"/>
+<area shape="poly" coords="250,208,247,211,245,208,247,206,250,208,250,208" title="Complexity: 9; Coverage: 83%; Class: ConstructorFunction" alt="" href="org/apache/commons/jxpath/functions/ConstructorFunction.html#ConstructorFunction"/>
+<area shape="poly" coords="257,208,254,210,252,208,254,205,257,208,257,208" title="Complexity: 15; Coverage: 86%; Class: MethodFunction" alt="" href="org/apache/commons/jxpath/functions/MethodFunction.html#MethodFunction"/>
+<area shape="poly" coords="276,208,273,211,271,208,273,206,276,208,276,208" title="Complexity: 8; Coverage: 94%; Class: VariableFactory" alt="" href="org/apache/commons/jxpath/ri/compiler/VariableFactory.html#VariableFactory"/>
+<area shape="poly" coords="259,207,257,209,254,207,257,204,259,207,259,207" title="Complexity: 24; Coverage: 87%; Class: TestFunctions" alt="" href="org/apache/commons/jxpath/ri/compiler/TestFunctions.html#TestFunctions"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 1; Coverage: 100%; Class: TestFunctions2" alt="" href="org/apache/commons/jxpath/ri/compiler/TestFunctions2.html#TestFunctions2"/>
+<area shape="poly" coords="283,208,281,210,278,208,281,205,283,208,283,208" title="Complexity: 13; Coverage: 97%; Class: LocationPath" alt="" href="org/apache/commons/jxpath/ri/compiler/LocationPath.html#LocationPath"/>
+<area shape="poly" coords="283,205,281,208,278,205,281,203,283,205,283,205" title="Complexity: 40; Coverage: 97%; Class: TreeCompiler" alt="" href="org/apache/commons/jxpath/ri/compiler/TreeCompiler.html#TreeCompiler"/>
+<area shape="poly" coords="221,208,219,211,216,208,219,206,221,208,221,208" title="Complexity: 7; Coverage: 71%; Class: VariableReference" alt="" href="org/apache/commons/jxpath/ri/compiler/VariableReference.html#VariableReference"/>
+<area shape="poly" coords="250,208,247,211,245,208,247,206,250,208,250,208" title="Complexity: 6; Coverage: 83%; Class: CoreOperationNotEqual" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationNotEqual.html#CoreOperationNotEqual"/>
+<area shape="poly" coords="250,208,247,211,245,208,247,206,250,208,250,208" title="Complexity: 6; Coverage: 83%; Class: CoreOperationNotEqual" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationNotEqual.html#CoreOperationNotEqual"/>
+<area shape="poly" coords="271,208,269,211,266,208,269,206,271,208,271,208" title="Complexity: 6; Coverage: 92%; Class: CoreOperationLessThanOrEqual" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationLessThanOrEqual.html#CoreOperationLessThanOrEqual"/>
+<area shape="poly" coords="219,206,216,208,214,206,216,203,219,206,219,206" title="Complexity: 35; Coverage: 70%; Class: CoreOperationCompare" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationCompare.html#CoreOperationCompare"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 6; Coverage: 100%; Class: CoreOperationGreaterThan" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.html#CoreOperationGreaterThan"/>
+<area shape="poly" coords="269,208,266,211,264,208,266,206,269,208,269,208" title="Complexity: 9; Coverage: 91%; Class: Constant" alt="" href="org/apache/commons/jxpath/ri/compiler/Constant.html#Constant"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 6; Coverage: 100%; Class: CoreOperationGreaterThan" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.html#CoreOperationGreaterThan"/>
+<area shape="poly" coords="262,208,259,211,257,208,259,206,262,208,262,208" title="Complexity: 7; Coverage: 88%; Class: CoreOperationAnd" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationAnd.html#CoreOperationAnd"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 5; Coverage: 100%; Class: CollectionPointerFactory" alt="" href="org/apache/commons/jxpath/ri/model/beans/CollectionPointerFactory.html#CollectionPointerFactory"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 6; Coverage: 100%; Class: CoreOperationGreaterThan" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.html#CoreOperationGreaterThan"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 3; Coverage: 100%; Class: ExceptionPropertyTestBean" alt="" href="org/apache/commons/jxpath/ri/model/ExceptionPropertyTestBean.html#ExceptionPropertyTestBean"/>
+<area shape="poly" coords="217,209,214,211,212,209,214,206,217,209,217,209" title="Complexity: 5; Coverage: 69%; Class: Expression.ValueIterator" alt="" href="org/apache/commons/jxpath/ri/compiler/Expression.html#Expression.ValueIterator"/>
+<area shape="poly" coords="245,209,243,211,240,209,243,206,245,209,245,209" title="Complexity: 4; Coverage: 81%; Class: Expression.PointerIterator" alt="" href="org/apache/commons/jxpath/ri/compiler/Expression.html#Expression.PointerIterator"/>
+<area shape="poly" coords="271,208,269,211,266,208,269,206,271,208,271,208" title="Complexity: 7; Coverage: 92%; Class: Expression" alt="" href="org/apache/commons/jxpath/ri/compiler/Expression.html#Expression"/>
+<area shape="poly" coords="262,208,259,211,257,208,259,206,262,208,262,208" title="Complexity: 7; Coverage: 88%; Class: CoreOperationAnd" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationAnd.html#CoreOperationAnd"/>
+<area shape="poly" coords="290,208,288,210,285,208,288,205,290,208,290,208" title="Complexity: 12; Coverage: 100%; Class: CoreOperation" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperation.html#CoreOperation"/>
+<area shape="poly" coords="250,190,247,193,245,190,247,188,250,190,250,190" title="Complexity: 195; Coverage: 83%; Class: CoreFunction" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreFunction.html#CoreFunction"/>
+<area shape="poly" coords="243,208,240,211,238,208,240,206,243,208,243,208" title="Complexity: 7; Coverage: 80%; Class: CoreOperationUnion" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationUnion.html#CoreOperationUnion"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 6; Coverage: 100%; Class: CoreOperationGreaterThan" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.html#CoreOperationGreaterThan"/>
+<area shape="poly" coords="245,209,243,211,240,209,243,206,245,209,245,209" title="Complexity: 5; Coverage: 81%; Class: CoreOperationNegate" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationNegate.html#CoreOperationNegate"/>
+<area shape="poly" coords="250,209,247,211,245,209,247,206,250,209,250,209" title="Complexity: 5; Coverage: 83%; Class: CoreOperationDivide" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationDivide.html#CoreOperationDivide"/>
+<area shape="poly" coords="209,209,207,211,204,209,207,206,209,209,209,209" title="Complexity: 3; Coverage: 66%; Class: NameAttributeTest" alt="" href="org/apache/commons/jxpath/ri/compiler/NameAttributeTest.html#NameAttributeTest"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 6; Coverage: 100%; Class: CoreOperationGreaterThan" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.html#CoreOperationGreaterThan"/>
+<area shape="poly" coords="269,208,266,210,264,208,266,205,269,208,269,208" title="Complexity: 14; Coverage: 91%; Class: ExtensionFunction" alt="" href="org/apache/commons/jxpath/ri/compiler/ExtensionFunction.html#ExtensionFunction"/>
+<area shape="poly" coords="276,203,273,206,271,203,273,201,276,203,276,203" title="Complexity: 61; Coverage: 94%; Class: Path" alt="" href="org/apache/commons/jxpath/ri/compiler/Path.html#Path"/>
+<area shape="poly" coords="276,208,273,211,271,208,273,206,276,208,276,208" title="Complexity: 8; Coverage: 94%; Class: VariableFactory" alt="" href="org/apache/commons/jxpath/ri/compiler/VariableFactory.html#VariableFactory"/>
+<area shape="poly" coords="274,205,271,208,269,205,271,203,274,205,274,205" title="Complexity: 38; Coverage: 93%; Class: Step" alt="" href="org/apache/commons/jxpath/ri/compiler/Step.html#Step"/>
+<area shape="poly" coords="233,206,231,208,228,206,231,203,233,206,233,206" title="Complexity: 34; Coverage: 76%; Class: ExpressionPath" alt="" href="org/apache/commons/jxpath/ri/compiler/ExpressionPath.html#ExpressionPath"/>
+<area shape="poly" coords="250,209,247,211,245,209,247,206,250,209,250,209" title="Complexity: 5; Coverage: 83%; Class: CoreOperationDivide" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationDivide.html#CoreOperationDivide"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 6; Coverage: 100%; Class: CoreOperationGreaterThan" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.html#CoreOperationGreaterThan"/>
+<area shape="poly" coords="250,209,247,211,245,209,247,206,250,209,250,209" title="Complexity: 5; Coverage: 83%; Class: CoreOperationDivide" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationDivide.html#CoreOperationDivide"/>
+<area shape="poly" coords="266,209,264,211,261,209,264,206,266,209,266,209" title="Complexity: 2; Coverage: 90%; Class: DOMParser" alt="" href="org/apache/commons/jxpath/xml/DOMParser.html#DOMParser"/>
+<area shape="poly" coords="290,208,288,210,285,208,288,205,290,208,290,208" title="Complexity: 12; Coverage: 100%; Class: CoreOperation" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperation.html#CoreOperation"/>
+<area shape="poly" coords="233,207,231,210,228,207,231,205,233,207,233,207" title="Complexity: 18; Coverage: 76%; Class: DocumentContainer" alt="" href="org/apache/commons/jxpath/xml/DocumentContainer.html#DocumentContainer"/>
+<area shape="poly" coords="231,209,228,211,226,209,228,206,231,209,231,209" title="Complexity: 3; Coverage: 75%; Class: JDOMParser" alt="" href="org/apache/commons/jxpath/xml/JDOMParser.html#JDOMParser"/>
+<area shape="poly" coords="228,206,226,208,223,206,226,203,228,206,228,206" title="Complexity: 35; Coverage: 74%; Class: JXPathTestCase" alt="" href="org/apache/commons/jxpath/JXPathTestCase.html#JXPathTestCase"/>
+<area shape="poly" coords="281,207,278,209,276,207,278,204,281,207,281,207" title="Complexity: 23; Coverage: 96%; Class: TestBean" alt="" href="org/apache/commons/jxpath/TestBean.html#TestBean"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 10; Coverage: 100%; Class: TestMixedModelBean" alt="" href="org/apache/commons/jxpath/TestMixedModelBean.html#TestMixedModelBean"/>
+<area shape="poly" coords="252,208,250,211,247,208,250,206,252,208,252,208" title="Complexity: 10; Coverage: 84%; Class: NestedTestBean" alt="" href="org/apache/commons/jxpath/NestedTestBean.html#NestedTestBean"/>
+<area shape="poly" coords="231,209,228,211,226,209,228,206,231,209,231,209" title="Complexity: 5; Coverage: 75%; Class: TestNull" alt="" href="org/apache/commons/jxpath/TestNull.html#TestNull"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 3; Coverage: 0%; Class: HttpSessionAndServletContext" alt="" href="org/apache/commons/jxpath/servlet/HttpSessionAndServletContext.html#HttpSessionAndServletContext"/>
+<area shape="poly" coords="53,208,50,211,48,208,50,206,53,208,53,208" title="Complexity: 8; Coverage: 0%; Class: HttpSessionHandler" alt="" href="org/apache/commons/jxpath/servlet/HttpSessionHandler.html#HttpSessionHandler"/>
+<area shape="poly" coords="236,208,233,210,231,208,233,205,236,208,236,208" title="Complexity: 15; Coverage: 77%; Class: FunctionLibrary" alt="" href="org/apache/commons/jxpath/FunctionLibrary.html#FunctionLibrary"/>
+<area shape="poly" coords="221,208,219,211,216,208,219,206,221,208,221,208" title="Complexity: 6; Coverage: 71%; Class: BasicVariables" alt="" href="org/apache/commons/jxpath/BasicVariables.html#BasicVariables"/>
+<area shape="poly" coords="207,207,205,209,202,207,205,204,207,207,207,207" title="Complexity: 24; Coverage: 65%; Class: PackageFunctions" alt="" href="org/apache/commons/jxpath/PackageFunctions.html#PackageFunctions"/>
+<area shape="poly" coords="266,206,264,209,261,206,264,204,266,206,266,206" title="Complexity: 26; Coverage: 90%; Class: JXPathIntrospector" alt="" href="org/apache/commons/jxpath/JXPathIntrospector.html#JXPathIntrospector"/>
+<area shape="poly" coords="183,208,181,210,178,208,181,205,183,208,183,208" title="Complexity: 11; Coverage: 55%; Class: BasicNodeSet" alt="" href="org/apache/commons/jxpath/BasicNodeSet.html#BasicNodeSet"/>
+<area shape="poly" coords="209,207,207,209,204,207,207,204,209,207,209,207" title="Complexity: 22; Coverage: 66%; Class: JXPathBasicBeanInfo" alt="" href="org/apache/commons/jxpath/JXPathBasicBeanInfo.html#JXPathBasicBeanInfo"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 1; Coverage: 100%; Class: TestFunctions2" alt="" href="org/apache/commons/jxpath/ri/compiler/TestFunctions2.html#TestFunctions2"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 4; Coverage: 100%; Class: MapDynamicPropertyHandler" alt="" href="org/apache/commons/jxpath/MapDynamicPropertyHandler.html#MapDynamicPropertyHandler"/>
+<area shape="poly" coords="290,209,288,211,285,209,288,206,290,209,290,209" title="Complexity: 1; Coverage: 100%; Class: TestFunctions2" alt="" href="org/apache/commons/jxpath/ri/compiler/TestFunctions2.html#TestFunctions2"/>
+<area shape="poly" coords="172,209,169,211,167,209,169,206,172,209,172,209" title="Complexity: 2; Coverage: 50%; Class: JXPathTypeConversionException" alt="" href="org/apache/commons/jxpath/JXPathTypeConversionException.html#JXPathTypeConversionException"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 2; Coverage: 0%; Class: JXPathInvalidAccessException" alt="" href="org/apache/commons/jxpath/JXPathInvalidAccessException.html#JXPathInvalidAccessException"/>
+<area shape="poly" coords="93,208,91,210,88,208,91,205,93,208,93,208" title="Complexity: 11; Coverage: 17%; Class: JXPathException" alt="" href="org/apache/commons/jxpath/JXPathException.html#JXPathException"/>
+<area shape="poly" coords="150,207,148,209,145,207,148,204,150,207,150,207" title="Complexity: 25; Coverage: 41%; Class: JXPathContextFactory" alt="" href="org/apache/commons/jxpath/JXPathContextFactory.html#JXPathContextFactory"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 2; Coverage: 0%; Class: JXPathInvalidAccessException" alt="" href="org/apache/commons/jxpath/JXPathInvalidAccessException.html#JXPathInvalidAccessException"/>
+<area shape="poly" coords="266,208,264,211,261,208,264,206,266,208,266,208" title="Complexity: 9; Coverage: 90%; Class: ClassFunctions" alt="" href="org/apache/commons/jxpath/ClassFunctions.html#ClassFunctions"/>
+<area shape="poly" coords="53,208,50,211,48,208,50,206,53,208,53,208" title="Complexity: 10; Coverage: 0%; Class: XMLDocumentContainer" alt="" href="org/apache/commons/jxpath/XMLDocumentContainer.html#XMLDocumentContainer"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 1; Coverage: 0%; Class: JXPathFunctionNotFoundException" alt="" href="org/apache/commons/jxpath/JXPathFunctionNotFoundException.html#JXPathFunctionNotFoundException"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 1; Coverage: 0%; Class: JXPathFunctionNotFoundException" alt="" href="org/apache/commons/jxpath/JXPathFunctionNotFoundException.html#JXPathFunctionNotFoundException"/>
+<area shape="poly" coords="209,204,207,206,204,204,207,201,209,204,209,204" title="Complexity: 55; Coverage: 66%; Class: JXPathContext" alt="" href="org/apache/commons/jxpath/JXPathContext.html#JXPathContext"/>
+<area shape="poly" coords="262,208,259,211,257,208,259,206,262,208,262,208" title="Complexity: 8; Coverage: 88%; Class: TestDynamicPropertyFactory" alt="" href="org/apache/commons/jxpath/ri/model/dynamic/TestDynamicPropertyFactory.html#TestDynamicPropertyFactory"/>
+<area shape="poly" coords="259,207,257,210,254,207,257,205,259,207,259,207" title="Complexity: 17; Coverage: 87%; Class: DynamicPointer" alt="" href="org/apache/commons/jxpath/ri/model/dynamic/DynamicPointer.html#DynamicPointer"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 1; Coverage: 0%; Class: JXPathFunctionNotFoundException" alt="" href="org/apache/commons/jxpath/JXPathFunctionNotFoundException.html#JXPathFunctionNotFoundException"/>
+<area shape="poly" coords="53,209,50,211,48,209,50,206,53,209,53,209" title="Complexity: 2; Coverage: 0%; Class: JXPathInvalidAccessException" alt="" href="org/apache/commons/jxpath/JXPathInvalidAccessException.html#JXPathInvalidAccessException"/>
+<area shape="poly" coords="238,204,235,207,233,204,235,202,238,204,238,204" title="Complexity: 51; Coverage: 78%; Class: DynamicPropertyPointer" alt="" href="org/apache/commons/jxpath/ri/model/dynamic/DynamicPropertyPointer.html#DynamicPropertyPointer"/>
+<area shape="poly" coords="290,208,288,211,285,208,288,206,290,208,290,208" title="Complexity: 6; Coverage: 100%; Class: CoreOperationGreaterThan" alt="" href="org/apache/commons/jxpath/ri/compiler/CoreOperationGreaterThan.html#CoreOperationGreaterThan"/>
+<area shape="poly" coords="209,209,207,211,204,209,207,206,209,209,209,209" title="Complexity: 2; Coverage: 66%; Class: Token" alt="" href="org/apache/commons/jxpath/ri/parser/Token.html#Token"/>
+<area shape="poly" coords="138,203,136,206,133,203,136,201,138,203,138,203" title="Complexity: 59; Coverage: 36%; Class: SimpleCharStream" alt="" href="org/apache/commons/jxpath/ri/parser/SimpleCharStream.html#SimpleCharStream"/>
+<area shape="poly" coords="209,18,207,20,204,18,207,15,209,18,209,18" title="Complexity: 1,983; Coverage: 66%; Class: XPathParser" alt="" href="org/apache/commons/jxpath/ri/parser/XPathParser.html#XPathParser"/>
+<area shape="poly" coords="53,207,50,209,48,207,50,204,53,207,53,207" title="Complexity: 21; Coverage: 0%; Class: TokenMgrError" alt="" href="org/apache/commons/jxpath/ri/parser/TokenMgrError.html#TokenMgrError"/>
+<area shape="poly" coords="53,206,50,209,48,206,50,204,53,206,53,206" title="Complexity: 26; Coverage: 0%; Class: ParseException" alt="" href="org/apache/commons/jxpath/ri/parser/ParseException.html#ParseException"/>
+<area shape="poly" coords="190,152,188,155,185,152,188,150,190,152,190,152" title="Complexity: 588; Coverage: 58%; Class: XPathParserTokenManager" alt="" href="org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.html#XPathParserTokenManager"/>
+<area shape="poly" coords="233,208,231,211,228,208,231,206,233,208,233,208" title="Complexity: 6; Coverage: 76%; Class: TestBeanWithNode" alt="" href="org/apache/commons/jxpath/ri/axes/TestBeanWithNode.html#TestBeanWithNode"/>
+<area shape="poly" coords="255,208,252,211,250,208,252,206,255,208,255,208" title="Complexity: 7; Coverage: 85%; Class: RecursiveBean" alt="" href="org/apache/commons/jxpath/ri/axes/RecursiveBean.html#RecursiveBean"/>
+<area shape="poly" coords="264,208,262,210,259,208,262,205,264,208,264,208" title="Complexity: 14; Coverage: 89%; Class: AncestorContext" alt="" href="org/apache/commons/jxpath/ri/axes/AncestorContext.html#AncestorContext"/>
+<area shape="poly" coords="255,206,252,209,250,206,252,204,255,206,255,206" title="Complexity: 26; Coverage: 85%; Class: PrecedingOrFollowingContext" alt="" href="org/apache/commons/jxpath/ri/axes/PrecedingOrFollowingContext.html#PrecedingOrFollowingContext"/>
+<area shape="poly" coords="283,208,281,210,278,208,281,205,283,208,283,208" title="Complexity: 12; Coverage: 97%; Class: InitialContext" alt="" href="org/apache/commons/jxpath/ri/axes/InitialContext.html#InitialContext"/>
+<area shape="poly" coords="217,206,214,208,212,206,214,203,217,206,217,206" title="Complexity: 34; Coverage: 69%; Class: PredicateContext" alt="" href="org/apache/commons/jxpath/ri/axes/PredicateContext.html#PredicateContext"/>
+<area shape="poly" coords="198,208,195,210,193,208,195,205,198,208,198,208" title="Complexity: 12; Coverage: 61%; Class: AttributeContext" alt="" href="org/apache/commons/jxpath/ri/axes/AttributeContext.html#AttributeContext"/>
+<area shape="poly" coords="274,199,271,202,269,199,271,197,274,199,274,199" title="Complexity: 100; Coverage: 93%; Class: SimplePathInterpreter" alt="" href="org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.html#SimplePathInterpreter"/>
+<area shape="poly" coords="167,207,164,209,162,207,164,204,167,207,167,207" title="Complexity: 25; Coverage: 48%; Class: RootContext" alt="" href="org/apache/commons/jxpath/ri/axes/RootContext.html#RootContext"/>
+<area shape="poly" coords="243,208,240,210,238,208,240,205,243,208,243,208" title="Complexity: 11; Coverage: 80%; Class: SelfContext" alt="" href="org/apache/commons/jxpath/ri/axes/SelfContext.html#SelfContext"/>
+<area shape="poly" coords="243,208,240,211,238,208,240,206,243,208,243,208" title="Complexity: 9; Coverage: 80%; Class: NodeSetContext" alt="" href="org/apache/commons/jxpath/ri/axes/NodeSetContext.html#NodeSetContext"/>
+<area shape="poly" coords="281,208,278,211,276,208,278,206,281,208,281,208" title="Complexity: 9; Coverage: 96%; Class: UnionContext" alt="" href="org/apache/commons/jxpath/ri/axes/UnionContext.html#UnionContext"/>
+<area shape="poly" coords="250,207,247,210,245,207,247,205,250,207,250,207" title="Complexity: 18; Coverage: 83%; Class: ChildContext" alt="" href="org/apache/commons/jxpath/ri/axes/ChildContext.html#ChildContext"/>
+<area shape="poly" coords="252,208,250,210,247,208,250,205,252,208,252,208" title="Complexity: 12; Coverage: 84%; Class: ParentContext" alt="" href="org/apache/commons/jxpath/ri/axes/ParentContext.html#ParentContext"/>
+<area shape="poly" coords="236,207,233,209,231,207,233,204,236,207,236,207" title="Complexity: 25; Coverage: 77%; Class: DescendantContext" alt="" href="org/apache/commons/jxpath/ri/axes/DescendantContext.html#DescendantContext"/>
+<area shape="poly" coords="205,208,202,210,200,208,202,205,205,208,205,208" title="Complexity: 14; Coverage: 64%; Class: NamespaceContext" alt="" href="org/apache/commons/jxpath/ri/axes/NamespaceContext.html#NamespaceContext"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/compiler/Path.html"
+                            style="font-size: 17px;color:#89c495"
+                            title="Average Method Complexity - 5.545 , Coverage - 94.3% ">Path</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/compiler/Step.html"
+                            style="font-size: 17px;color:#89c495"
+                            title="Average Method Complexity - 5.429 , Coverage - 93.3% ">Step</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/model/beans/PropertyIterator.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 6.1 , Coverage - 90.1% ">PropertyIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/axes/SimplePathInterpreter.html"
+                            style="font-size: 16px;color:#89c495"
+                            title="Average Method Complexity - 4.545 , Coverage - 93.6% ">SimplePathInterpreter</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/compiler/VariableFactory.html"
+                            style="font-size: 15px;color:#89c495"
+                            title="Average Method Complexity - 4 , Coverage - 94.3% ">VariableFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/axes/UnionContext.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 3 , Coverage - 97% ">UnionContext</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/model/TestMixedModelFactory.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 4.5 , Coverage - 87.2% ">TestMixedModelFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/functions/MethodFunction.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 5 , Coverage - 86.8% ">MethodFunction</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/JXPathIntrospector.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 3.714 , Coverage - 90.2% ">JXPathIntrospector</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/model/jdom/TestJDOMFactory.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 4 , Coverage - 89.7% ">TestJDOMFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/model/dom/DOMAttributeIterator.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 4.714 , Coverage - 87% ">DOMAttributeIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/model/dynamic/TestDynamicPropertyFactory.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 4 , Coverage - 88.2% ">TestDynamicPropertyFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/model/dom/TestDOMFactory.html"
+                            style="font-size: 15px;color:#14892c"
+                            title="Average Method Complexity - 3.667 , Coverage - 89.5% ">TestDOMFactory</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/axes/PrecedingOrFollowingContext.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 4.333 , Coverage - 85.9% ">PrecedingOrFollowingContext</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/model/dom/DOMNodeIterator.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 4.286 , Coverage - 85.3% ">DOMNodeIterator</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/compiler/CoreFunction.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 4.643 , Coverage - 83.1% ">CoreFunction</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ClassFunctions.html"
+                            style="font-size: 14px;color:#14892c"
+                            title="Average Method Complexity - 3 , Coverage - 90.9% ">ClassFunctions</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/functions/ConstructorFunction.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 4.5 , Coverage - 83.3% ">ConstructorFunction</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/util/MethodLookupUtils.html"
+                            style="font-size: 23px;color:#fae1a0"
+                            title="Average Method Complexity - 11.6 , Coverage - 78.5% ">MethodLookupUtils</a>
+                                    
+                                                                <a class="tag" href="org/apache/commons/jxpath/ri/compiler/LocationPath.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 2.167 , Coverage - 97.6% ">LocationPath</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6182067</span>61.8%</div><div style="display: table-cell">
+ <div title="61.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:61.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/jxpath/ri/parser/pkg-summary.html">org.apache.commons.jxpath.ri.parser</a>
+                                <span class="aui-badge" title="Package complexity">2679</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.87293446</span>87.3%</div><div style="display: table-cell">
+ <div title="87.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:87.3%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/jxpath/ri/compiler/pkg-summary.html">org.apache.commons.jxpath.ri.compiler</a>
+                                <span class="aui-badge" title="Package complexity">621</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.757764</span>75.8%</div><div style="display: table-cell">
+ <div title="75.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:75.8%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/jxpath/ri/model/beans/pkg-summary.html">org.apache.commons.jxpath.ri.model.beans</a>
+                                <span class="aui-badge" title="Package complexity">412</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.82283795</span>82.3%</div><div style="display: table-cell">
+ <div title="82.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:82.3%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/jxpath/ri/axes/pkg-summary.html">org.apache.commons.jxpath.ri.axes</a>
+                                <span class="aui-badge" title="Package complexity">334</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6630533</span>66.3%</div><div style="display: table-cell">
+ <div title="66.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.3%"></div></div></div></div></td>
+                            <td>
+                                <a href="org/apache/commons/jxpath/pkg-summary.html">org.apache.commons.jxpath</a>
+                                <span class="aui-badge" title="Package complexity">322</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6622439</span>66.2%</div><div style="display: table-cell">
+ <div title="66.2% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.2%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/jxpath/ri/parser/XPathParser.html"  title="org.apache.commons.jxpath.ri.parser.XPathParser">XPathParser</a>
+                                <span class="aui-badge" title="Class complexity">1983</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.580518</span>58.1%</div><div style="display: table-cell">
+ <div title="58.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:58.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.html"  title="org.apache.commons.jxpath.ri.parser.XPathParserTokenManager">XPathParserTokenManager</a>
+                                <span class="aui-badge" title="Class complexity">588</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8313253</span>83.1%</div><div style="display: table-cell">
+ <div title="83.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:83.1%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/jxpath/ri/compiler/CoreFunction.html"  title="org.apache.commons.jxpath.ri.compiler.CoreFunction">CoreFunction</a>
+                                <span class="aui-badge" title="Class complexity">195</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7278481</span>72.8%</div><div style="display: table-cell">
+ <div title="72.8% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:72.8%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.html"  title="org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer">JDOMNodePointer</a>
+                                <span class="aui-badge" title="Class complexity">181</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.79571664</span>79.6%</div><div style="display: table-cell">
+ <div title="79.6% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:79.6%"></div></div></div></div></td>
+                            <td>
+                                <a  href="org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.html"  title="org.apache.commons.jxpath.ri.model.dom.DOMNodePointer">DOMNodePointer</a>
+                                <span class="aui-badge" title="Class complexity">171</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="XPathParserTokenManager.jjCanMove_2(int,int,int,long,long)&#160;:&#160;boolean" href="org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.html?line=1658#src-1658">XPathParserTokenManager.jjCanMove_2(int,int,int,long,long)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">26</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="XPathParserTokenManager.jjCanMove_1(int,int,int,long,long)&#160;:&#160;boolean" href="org/apache/commons/jxpath/ri/parser/XPathParserTokenManager.html?line=1602#src-1602">XPathParserTokenManager.jjCanMove_1(int,int,int,long,long)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">25</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="XPathParser.generateParseException()&#160;:&#160;ParseException" href="org/apache/commons/jxpath/ri/parser/XPathParser.html?line=3689#src-3689">XPathParser.generateParseException()&#160;:&#160;ParseException</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ParseException.getMessage()&#160;:&#160;String" href="org/apache/commons/jxpath/ri/parser/ParseException.html?line=97#src-97">ParseException.getMessage()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="XPathParser.jj_add_error_token(int,int)&#160;:&#160;void" href="org/apache/commons/jxpath/ri/parser/XPathParser.html?line=3661#src-3661">XPathParser.jj_add_error_token(int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ParseException.add_escapes(String)&#160;:&#160;String" href="org/apache/commons/jxpath/ri/parser/ParseException.html?line=147#src-147">ParseException.add_escapes(String)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="TokenMgrError.addEscapes(String)&#160;:&#160;String" href="org/apache/commons/jxpath/ri/parser/TokenMgrError.html?line=43#src-43">TokenMgrError.addEscapes(String)&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">13</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="XPathParser.jj_rescan_token()&#160;:&#160;void" href="org/apache/commons/jxpath/ri/parser/XPathParser.html?line=3737#src-3737">XPathParser.jj_rescan_token()&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="SimpleCharStream.adjustBeginLineColumn(int,int)&#160;:&#160;void" href="org/apache/commons/jxpath/ri/parser/SimpleCharStream.html?line=356#src-356">SimpleCharStream.adjustBeginLineColumn(int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JDOMNodePointer.addContent(List)&#160;:&#160;void" href="org/apache/commons/jxpath/ri/model/jdom/JDOMNodePointer.html?line=310#src-310">JDOMNodePointer.addContent(List)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="DOMNodePointer.getDefaultNamespaceURI()&#160;:&#160;String" href="org/apache/commons/jxpath/ri/model/dom/DOMNodePointer.html?line=243#src-243">DOMNodePointer.getDefaultNamespaceURI()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="SimpleCharStream.ExpandBuff(boolean)&#160;:&#160;void" href="org/apache/commons/jxpath/ri/parser/SimpleCharStream.html?line=31#src-31">SimpleCharStream.ExpandBuff(boolean)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">3</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BasicTypeConverter.ValuePointer.asPath()&#160;:&#160;String" href="org/apache/commons/jxpath/util/BasicTypeConverter.html?line=495#src-495">BasicTypeConverter.ValuePointer.asPath()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JXPathServletContexts.getRequestContext(ServletRequest,ServletContext)&#160;:&#160;JXPathContext" href="org/apache/commons/jxpath/servlet/JXPathServletContexts.html?line=116#src-116">JXPathServletContexts.getRequestContext(ServletRequest,ServletContext)&#160;:&#160;JXPathContext</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="PageContextHandler.getPropertyNames(Object)&#160;:&#160;String[]" href="org/apache/commons/jxpath/servlet/PageContextHandler.html?line=35#src-35">PageContextHandler.getPropertyNames(Object)&#160;:&#160;String[]</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JXPathBasicBeanInfo.toString()&#160;:&#160;String" href="org/apache/commons/jxpath/JXPathBasicBeanInfo.html?line=133#src-133">JXPathBasicBeanInfo.toString()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">4</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ServletRequestHandler.getProperty(Object,String)&#160;:&#160;Object" href="org/apache/commons/jxpath/servlet/ServletRequestHandler.html?line=47#src-47">ServletRequestHandler.getProperty(Object,String)&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="XMLDocumentContainer.getValue()&#160;:&#160;Object" href="org/apache/commons/jxpath/XMLDocumentContainer.html?line=70#src-70">XMLDocumentContainer.getValue()&#160;:&#160;Object</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JXPathException.getMessage()&#160;:&#160;String" href="org/apache/commons/jxpath/JXPathException.html?line=87#src-87">JXPathException.getMessage()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JXPathTestSuite.suite()&#160;:&#160;Test" href="org/apache/commons/jxpath/JXPathTestSuite.html?line=75#src-75">JXPathTestSuite.suite()&#160;:&#160;Test</a>
+                            <span class="aui-badge" title="Method complexity">1</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Jan 5 2023 23:58:19 MST using coverage data from Thu Jan 5 2023 23:58:18 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

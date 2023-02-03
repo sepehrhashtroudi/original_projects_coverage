@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class RenameVarsTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="RenameVarsTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>RenameVarsTest</td>
+        <td class="testPasses"><span class="sortValue">80</span>80</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.945</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testNamingBasedOnOrderOfOccurrence</span><a href="RenameVarsTest_testNamingBasedOnOrderOfOccurrence_5c4.html">RenameVarsTest.testNamingBasedOnOrderOfOccurrence</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619357</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithNameOverlap</span><a href="RenameVarsTest_testStableRenameWithNameOverlap_8jd.html">RenameVarsTest.testStableRenameWithNameOverlap</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619233</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameRedeclaredGlobals</span><a href="RenameVarsTest_testRenameRedeclaredGlobals_acc.html">RenameVarsTest.testRenameRedeclaredGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619040</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testDollarSignSuperExport1</span><a href="RenameVarsTest_testDollarSignSuperExport1_b0j.html">RenameVarsTest.testDollarSignSuperExport1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697618747</span>2 Jan 15:13:38</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.248</span>0.248</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameLocalsClashingWithGlobals</span><a href="RenameVarsTest_testStableRenameLocalsClashingWithGlobals_504.html">RenameVarsTest.testStableRenameLocalsClashingWithGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776969</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testNamingBasedOnOrderOfOccurrence</span><a href="RenameVarsTest_testNamingBasedOnOrderOfOccurrence_73l.html">RenameVarsTest.testNamingBasedOnOrderOfOccurrence</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776943</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRecursiveFunctions2</span><a href="RenameVarsTest_testRecursiveFunctions2_bev.html">RenameVarsTest.testRecursiveFunctions2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619309</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithAnonymousFunctions</span><a href="RenameVarsTest_testStableRenameWithAnonymousFunctions_47c.html">RenameVarsTest.testStableRenameWithAnonymousFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619438</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithNameOverlap</span><a href="RenameVarsTest_testRenameWithNameOverlap_1z1.html">RenameVarsTest.testRenameWithNameOverlap</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619172</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testDollarSignSuperExport2</span><a href="RenameVarsTest_testDollarSignSuperExport2_8ba.html">RenameVarsTest.testDollarSignSuperExport2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777073</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameGlobals</span><a href="RenameVarsTest_testStableRenameGlobals_325.html">RenameVarsTest.testStableRenameGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619531</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithNameOverlap</span><a href="RenameVarsTest_testStableRenameWithNameOverlap_4kl.html">RenameVarsTest.testStableRenameWithNameOverlap</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776992</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithPrefix1AndUnstableLocalNames</span><a href="RenameVarsTest_testStableRenameWithPrefix1AndUnstableLocalNames_b9o.html">RenameVarsTest.testStableRenameWithPrefix1AndUnstableLocalNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619218</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testPseudoNames</span><a href="RenameVarsTest_testPseudoNames_3v7.html">RenameVarsTest.testPseudoNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619385</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameLocalsClashingWithGlobals</span><a href="RenameVarsTest_testRenameLocalsClashingWithGlobals_6rz.html">RenameVarsTest.testRenameLocalsClashingWithGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619031</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameGlobals</span><a href="RenameVarsTest_testRenameGlobals_cb1.html">RenameVarsTest.testRenameGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619160</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithPrefix3</span><a href="RenameVarsTest_testRenameWithPrefix3_7l.html">RenameVarsTest.testRenameWithPrefix3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777098</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameLocalsClashingWithGlobals</span><a href="RenameVarsTest_testStableRenameLocalsClashingWithGlobals_9if.html">RenameVarsTest.testStableRenameLocalsClashingWithGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619501</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testBleedingRecursiveFunctions2</span><a href="RenameVarsTest_testBleedingRecursiveFunctions2_34o.html">RenameVarsTest.testBleedingRecursiveFunctions2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776934</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithPrefix1AndUnstableLocalNames</span><a href="RenameVarsTest_testStableRenameWithPrefix1AndUnstableLocalNames_b0g.html">RenameVarsTest.testStableRenameWithPrefix1AndUnstableLocalNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777022</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameSimple</span><a href="RenameVarsTest_testRenameSimple_7az.html">RenameVarsTest.testRenameSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619485</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithExterns2</span><a href="RenameVarsTest_testRenameWithExterns2_309.html">RenameVarsTest.testRenameWithExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777086</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testBleedingRecursiveFunctions3</span><a href="RenameVarsTest_testBleedingRecursiveFunctions3_xk.html">RenameVarsTest.testBleedingRecursiveFunctions3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619345</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimpleGlobalNameExterned</span><a href="RenameVarsTest_testStableRenameSimpleGlobalNameExterned_6u.html">RenameVarsTest.testStableRenameSimpleGlobalNameExterned</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777016</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameGlobals</span><a href="RenameVarsTest_testRenameGlobals_91t.html">RenameVarsTest.testRenameGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777102</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testExportToNonStringDoesntExplode</span><a href="RenameVarsTest_testExportToNonStringDoesntExplode_88z.html">RenameVarsTest.testExportToNonStringDoesntExplode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777061</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimpleLocalNameExterned</span><a href="RenameVarsTest_testStableRenameSimpleLocalNameExterned_3ht.html">RenameVarsTest.testStableRenameSimpleLocalNameExterned</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619267</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRecursiveFunctions1</span><a href="RenameVarsTest_testRecursiveFunctions1_57p.html">RenameVarsTest.testRecursiveFunctions1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619292</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithExterns2</span><a href="RenameVarsTest_testStableRenameWithExterns2_b1q.html">RenameVarsTest.testStableRenameWithExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776986</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testBleedingRecursiveFunctions2</span><a href="RenameVarsTest_testBleedingRecursiveFunctions2_7wr.html">RenameVarsTest.testBleedingRecursiveFunctions2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619335</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimpleExternsChanges</span><a href="RenameVarsTest_testStableRenameSimpleExternsChanges_8xy.html">RenameVarsTest.testStableRenameSimpleExternsChanges</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619135</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testExportComplexSymbolReservesName</span><a href="RenameVarsTest_testExportComplexSymbolReservesName_aao.html">RenameVarsTest.testExportComplexSymbolReservesName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619190</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithPointlesslyAnonymousFunctions</span><a href="RenameVarsTest_testStableRenameWithPointlesslyAnonymousFunctions_4hb.html">RenameVarsTest.testStableRenameWithPointlesslyAnonymousFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776963</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimple</span><a href="RenameVarsTest_testStableRenameSimple_4dg.html">RenameVarsTest.testStableRenameSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776952</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameLocals</span><a href="RenameVarsTest_testRenameLocals_5iq.html">RenameVarsTest.testRenameLocals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776909</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithExterns2</span><a href="RenameVarsTest_testRenameWithExterns2_4jl.html">RenameVarsTest.testRenameWithExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619524</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testBleedingRecursiveFunctions1</span><a href="RenameVarsTest_testBleedingRecursiveFunctions1_4im.html">RenameVarsTest.testBleedingRecursiveFunctions1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776930</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testDollarSignSuperExport1</span><a href="RenameVarsTest_testDollarSignSuperExport1_5ys.html">RenameVarsTest.testDollarSignSuperExport1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777065</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testExportSimpleSymbolReservesName</span><a href="RenameVarsTest_testExportSimpleSymbolReservesName_2ov.html">RenameVarsTest.testExportSimpleSymbolReservesName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619205</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testBleedingRecursiveFunctions3</span><a href="RenameVarsTest_testBleedingRecursiveFunctions3_2lt.html">RenameVarsTest.testBleedingRecursiveFunctions3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776938</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimple</span><a href="RenameVarsTest_testStableRenameSimple_aat.html">RenameVarsTest.testStableRenameSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619148</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithExterns1</span><a href="RenameVarsTest_testStableRenameWithExterns1_ayu.html">RenameVarsTest.testStableRenameWithExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619097</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testContrivedExampleWhereConsistentRenamingIsWorse</span><a href="RenameVarsTest_testContrivedExampleWhereConsistentRenamingIsWorse_637.html">RenameVarsTest.testContrivedExampleWhereConsistentRenamingIsWorse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619493</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithPrefix2</span><a href="RenameVarsTest_testRenameWithPrefix2_8h9.html">RenameVarsTest.testRenameWithPrefix2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619075</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameGlobals</span><a href="RenameVarsTest_testStableRenameGlobals_zz.html">RenameVarsTest.testStableRenameGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776957</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithNameOverlap</span><a href="RenameVarsTest_testRenameWithNameOverlap_8y.html">RenameVarsTest.testRenameWithNameOverlap</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777090</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithPrefix1</span><a href="RenameVarsTest_testRenameWithPrefix1_1v4.html">RenameVarsTest.testRenameWithPrefix1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619069</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimpleLocalNameExterned</span><a href="RenameVarsTest_testStableRenameSimpleLocalNameExterned_744.html">RenameVarsTest.testStableRenameSimpleLocalNameExterned</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777010</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimpleGlobalNameExterned</span><a href="RenameVarsTest_testStableRenameSimpleGlobalNameExterned_654.html">RenameVarsTest.testStableRenameSimpleGlobalNameExterned</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619250</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithPrefix2</span><a href="RenameVarsTest_testStableRenameWithPrefix2_ddn.html">RenameVarsTest.testStableRenameWithPrefix2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777033</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testExportComplexSymbolReservesName</span><a href="RenameVarsTest_testExportComplexSymbolReservesName_de9.html">RenameVarsTest.testExportComplexSymbolReservesName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777055</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testBleedingRecursiveFunctions1</span><a href="RenameVarsTest_testBleedingRecursiveFunctions1_66p.html">RenameVarsTest.testBleedingRecursiveFunctions1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619325</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithPrefix3</span><a href="RenameVarsTest_testRenameWithPrefix3_6jx.html">RenameVarsTest.testRenameWithPrefix3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619084</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testPseudoNames</span><a href="RenameVarsTest_testPseudoNames_13q.html">RenameVarsTest.testPseudoNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776913</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithPointlesslyAnonymousFunctions</span><a href="RenameVarsTest_testStableRenameWithPointlesslyAnonymousFunctions_305.html">RenameVarsTest.testStableRenameWithPointlesslyAnonymousFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619179</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testDoNotRenameExportedName</span><a href="RenameVarsTest_testDoNotRenameExportedName_98x.html">RenameVarsTest.testDoNotRenameExportedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777088</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testDoNotRenameExportedName</span><a href="RenameVarsTest_testDoNotRenameExportedName_931.html">RenameVarsTest.testDoNotRenameExportedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619167</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameSimple</span><a href="RenameVarsTest_testRenameSimple_cnk.html">RenameVarsTest.testRenameSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777104</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRecursiveFunctions1</span><a href="RenameVarsTest_testRecursiveFunctions1_bp3.html">RenameVarsTest.testRecursiveFunctions1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776921</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameNested</span><a href="RenameVarsTest_testStableRenameNested_6q5.html">RenameVarsTest.testStableRenameNested</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776975</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameLocals</span><a href="RenameVarsTest_testRenameLocals_3ir.html">RenameVarsTest.testRenameLocals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619454</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameNested</span><a href="RenameVarsTest_testRenameNested_969.html">RenameVarsTest.testRenameNested</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777107</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testExportToNonStringDoesntExplode</span><a href="RenameVarsTest_testExportToNonStringDoesntExplode_3g2.html">RenameVarsTest.testExportToNonStringDoesntExplode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619284</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithExterns1</span><a href="RenameVarsTest_testRenameWithExterns1_74y.html">RenameVarsTest.testRenameWithExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619517</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameNested</span><a href="RenameVarsTest_testStableRenameNested_4x3.html">RenameVarsTest.testStableRenameNested</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619121</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameNested</span><a href="RenameVarsTest_testRenameNested_2ra.html">RenameVarsTest.testRenameNested</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619470</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithExterns2</span><a href="RenameVarsTest_testStableRenameWithExterns2_4nc.html">RenameVarsTest.testStableRenameWithExterns2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619109</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testDollarSignSuperExport2</span><a href="RenameVarsTest_testDollarSignSuperExport2_91z.html">RenameVarsTest.testDollarSignSuperExport2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697618995</span>2 Jan 15:13:38</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.036</span>0.036</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameRedeclaredGlobals</span><a href="RenameVarsTest_testRenameRedeclaredGlobals_2qr.html">RenameVarsTest.testRenameRedeclaredGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776918</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithPrefix2</span><a href="RenameVarsTest_testStableRenameWithPrefix2_ate.html">RenameVarsTest.testStableRenameWithPrefix2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697619407</span>2 Jan 15:13:39</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithExterns1</span><a href="RenameVarsTest_testRenameWithExterns1_9ae.html">RenameVarsTest.testRenameWithExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777083</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithPrefix2</span><a href="RenameVarsTest_testRenameWithPrefix2_b5z.html">RenameVarsTest.testRenameWithPrefix2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777095</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRecursiveFunctions2</span><a href="RenameVarsTest_testRecursiveFunctions2_6ze.html">RenameVarsTest.testRecursiveFunctions2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776925</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testExportSimpleSymbolReservesName</span><a href="RenameVarsTest_testExportSimpleSymbolReservesName_9be.html">RenameVarsTest.testExportSimpleSymbolReservesName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777049</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameWithPrefix1</span><a href="RenameVarsTest_testRenameWithPrefix1_29w.html">RenameVarsTest.testRenameWithPrefix1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777093</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testContrivedExampleWhereConsistentRenamingIsWorse</span><a href="RenameVarsTest_testContrivedExampleWhereConsistentRenamingIsWorse_a70.html">RenameVarsTest.testContrivedExampleWhereConsistentRenamingIsWorse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777045</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testRenameLocalsClashingWithGlobals</span><a href="RenameVarsTest_testRenameLocalsClashingWithGlobals_9k.html">RenameVarsTest.testRenameLocalsClashingWithGlobals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777081</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameSimpleExternsChanges</span><a href="RenameVarsTest_testStableRenameSimpleExternsChanges_4ok.html">RenameVarsTest.testStableRenameSimpleExternsChanges</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697777005</span>2 Jan 15:16:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithExterns1</span><a href="RenameVarsTest_testStableRenameWithExterns1_8j0.html">RenameVarsTest.testStableRenameWithExterns1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776981</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenameVarsTest.testStableRenameWithAnonymousFunctions</span><a href="RenameVarsTest_testStableRenameWithAnonymousFunctions_1fz.html">RenameVarsTest.testStableRenameWithAnonymousFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776998</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class CheckGlobalThisTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="CheckGlobalThisTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>CheckGlobalThisTest</td>
+        <td class="testPasses"><span class="sortValue">144</span>144</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.678</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor3</span><a href="CheckGlobalThisTest_testConstructor3_3uf.html">CheckGlobalThisTest.testConstructor3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388161</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor3</span><a href="CheckGlobalThisTest_testConstructor3_ati.html">CheckGlobalThisTest.testConstructor3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523089</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction8</span><a href="CheckGlobalThisTest_testStaticFunction8_bp7.html">CheckGlobalThisTest.testStaticFunction8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743480</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation1</span><a href="CheckGlobalThisTest_testLendsAnnotation1_duk.html">CheckGlobalThisTest.testLendsAnnotation1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743452</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction4</span><a href="CheckGlobalThisTest_testStaticFunction4_eaq.html">CheckGlobalThisTest.testStaticFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743482</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testPropertyOfMethod</span><a href="CheckGlobalThisTest_testPropertyOfMethod_5lb.html">CheckGlobalThisTest.testPropertyOfMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388181</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod3</span><a href="CheckGlobalThisTest_testMethod3_70z.html">CheckGlobalThisTest.testMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523170</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182a</span><a href="CheckGlobalThisTest_testIssue182a_43h.html">CheckGlobalThisTest.testIssue182a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743522</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182a</span><a href="CheckGlobalThisTest_testIssue182a_6s7.html">CheckGlobalThisTest.testIssue182a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523179</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunctionInMethod1</span><a href="CheckGlobalThisTest_testStaticFunctionInMethod1_427.html">CheckGlobalThisTest.testStaticFunctionInMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523094</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction2</span><a href="CheckGlobalThisTest_testInnerFunction2_ph.html">CheckGlobalThisTest.testInnerFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388196</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethodInStaticFunction</span><a href="CheckGlobalThisTest_testMethodInStaticFunction_1oy.html">CheckGlobalThisTest.testMethodInStaticFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743486</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod1</span><a href="CheckGlobalThisTest_testMethod1_jf.html">CheckGlobalThisTest.testMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523160</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod1</span><a href="CheckGlobalThisTest_testStaticMethod1_c34.html">CheckGlobalThisTest.testStaticMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523105</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod3</span><a href="CheckGlobalThisTest_testStaticMethod3_4gr.html">CheckGlobalThisTest.testStaticMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523115</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis5</span><a href="CheckGlobalThisTest_testGlobalThis5_f9v.html">CheckGlobalThisTest.testGlobalThis5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388297</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor2</span><a href="CheckGlobalThisTest_testConstructor2_66b.html">CheckGlobalThisTest.testConstructor2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523084</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc1</span><a href="CheckGlobalThisTest_testThisJSDoc1_6xl.html">CheckGlobalThisTest.testThisJSDoc1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743433</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testSuppressWarning</span><a href="CheckGlobalThisTest_testSuppressWarning_6i9.html">CheckGlobalThisTest.testSuppressWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388263</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod1</span><a href="CheckGlobalThisTest_testStaticMethod1_b62.html">CheckGlobalThisTest.testStaticMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388199</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182d</span><a href="CheckGlobalThisTest_testIssue182d_28u.html">CheckGlobalThisTest.testIssue182d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388230</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction4</span><a href="CheckGlobalThisTest_testInnerFunction4_90x.html">CheckGlobalThisTest.testInnerFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743518</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction7</span><a href="CheckGlobalThisTest_testStaticFunction7_4aa.html">CheckGlobalThisTest.testStaticFunction7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743478</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethodInStaticFunction</span><a href="CheckGlobalThisTest_testMethodInStaticFunction_6to.html">CheckGlobalThisTest.testMethodInStaticFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523136</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod3</span><a href="CheckGlobalThisTest_testMethod3_beh.html">CheckGlobalThisTest.testMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743425</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis6</span><a href="CheckGlobalThisTest_testGlobalThis6_4qq.html">CheckGlobalThisTest.testGlobalThis6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743395</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction6</span><a href="CheckGlobalThisTest_testStaticFunction6_cf2.html">CheckGlobalThisTest.testStaticFunction6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522986</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testSuppressWarning</span><a href="CheckGlobalThisTest_testSuppressWarning_eqx.html">CheckGlobalThisTest.testSuppressWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743472</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod4</span><a href="CheckGlobalThisTest_testMethod4_8u9.html">CheckGlobalThisTest.testMethod4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743428</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc2</span><a href="CheckGlobalThisTest_testThisJSDoc2_5ib.html">CheckGlobalThisTest.testThisJSDoc2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388268</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182c</span><a href="CheckGlobalThisTest_testIssue182c_bwl.html">CheckGlobalThisTest.testIssue182c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388226</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInterface1</span><a href="CheckGlobalThisTest_testInterface1_69m.html">CheckGlobalThisTest.testInterface1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523216</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis4</span><a href="CheckGlobalThisTest_testGlobalThis4_7b5.html">CheckGlobalThisTest.testGlobalThis4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743468</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis2</span><a href="CheckGlobalThisTest_testGlobalThis2_2a2.html">CheckGlobalThisTest.testGlobalThis2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388294</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunctionInMethod2</span><a href="CheckGlobalThisTest_testStaticFunctionInMethod2_em2.html">CheckGlobalThisTest.testStaticFunctionInMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388188</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction3</span><a href="CheckGlobalThisTest_testStaticFunction3_80u.html">CheckGlobalThisTest.testStaticFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388288</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis7</span><a href="CheckGlobalThisTest_testGlobalThis7_89v.html">CheckGlobalThisTest.testGlobalThis7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523075</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction4</span><a href="CheckGlobalThisTest_testInnerFunction4_875.html">CheckGlobalThisTest.testInnerFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388216</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182c</span><a href="CheckGlobalThisTest_testIssue182c_9kw.html">CheckGlobalThisTest.testIssue182c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743447</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod2</span><a href="CheckGlobalThisTest_testMethod2_285.html">CheckGlobalThisTest.testMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523165</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc4</span><a href="CheckGlobalThisTest_testThisJSDoc4_2c3.html">CheckGlobalThisTest.testThisJSDoc4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743440</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc2</span><a href="CheckGlobalThisTest_testThisJSDoc2_10m.html">CheckGlobalThisTest.testThisJSDoc2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523030</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction3</span><a href="CheckGlobalThisTest_testInnerFunction3_a3z.html">CheckGlobalThisTest.testInnerFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388213</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182d</span><a href="CheckGlobalThisTest_testIssue182d_591.html">CheckGlobalThisTest.testIssue182d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743449</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction1</span><a href="CheckGlobalThisTest_testStaticFunction1_989.html">CheckGlobalThisTest.testStaticFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743498</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation3</span><a href="CheckGlobalThisTest_testLendsAnnotation3_b24.html">CheckGlobalThisTest.testLendsAnnotation3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523211</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor1</span><a href="CheckGlobalThisTest_testConstructor1_1vq.html">CheckGlobalThisTest.testConstructor1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743457</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod2</span><a href="CheckGlobalThisTest_testMethod2_adu.html">CheckGlobalThisTest.testMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388170</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation3</span><a href="CheckGlobalThisTest_testLendsAnnotation3_3n8.html">CheckGlobalThisTest.testLendsAnnotation3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743470</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis1</span><a href="CheckGlobalThisTest_testGlobalThis1_crz.html">CheckGlobalThisTest.testGlobalThis1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388164</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation2</span><a href="CheckGlobalThisTest_testLendsAnnotation2_8mb.html">CheckGlobalThisTest.testLendsAnnotation2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743454</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction2</span><a href="CheckGlobalThisTest_testInnerFunction2_e00.html">CheckGlobalThisTest.testInnerFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743511</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation2</span><a href="CheckGlobalThisTest_testLendsAnnotation2_b81.html">CheckGlobalThisTest.testLendsAnnotation2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523206</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInterface1</span><a href="CheckGlobalThisTest_testInterface1_auh.html">CheckGlobalThisTest.testInterface1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388241</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction3</span><a href="CheckGlobalThisTest_testStaticFunction3_711.html">CheckGlobalThisTest.testStaticFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522967</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182d</span><a href="CheckGlobalThisTest_testIssue182d_53q.html">CheckGlobalThisTest.testIssue182d</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523195</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis5</span><a href="CheckGlobalThisTest_testGlobalThis5_ata.html">CheckGlobalThisTest.testGlobalThis5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743388</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction1</span><a href="CheckGlobalThisTest_testInnerFunction1_5f.html">CheckGlobalThisTest.testInnerFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743495</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod2</span><a href="CheckGlobalThisTest_testMethod2_6z.html">CheckGlobalThisTest.testMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743422</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod3</span><a href="CheckGlobalThisTest_testStaticMethod3_52o.html">CheckGlobalThisTest.testStaticMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388206</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction2</span><a href="CheckGlobalThisTest_testStaticFunction2_2zx.html">CheckGlobalThisTest.testStaticFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388285</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor1</span><a href="CheckGlobalThisTest_testConstructor1_axp.html">CheckGlobalThisTest.testConstructor1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388154</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis1</span><a href="CheckGlobalThisTest_testGlobalThis1_8r.html">CheckGlobalThisTest.testGlobalThis1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523046</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunctionInMethod1</span><a href="CheckGlobalThisTest_testStaticFunctionInMethod1_66g.html">CheckGlobalThisTest.testStaticFunctionInMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388185</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor2</span><a href="CheckGlobalThisTest_testConstructor2_29i.html">CheckGlobalThisTest.testConstructor2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388158</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis5</span><a href="CheckGlobalThisTest_testGlobalThis5_btv.html">CheckGlobalThisTest.testGlobalThis5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523065</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction3</span><a href="CheckGlobalThisTest_testInnerFunction3_c1j.html">CheckGlobalThisTest.testInnerFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743514</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc4</span><a href="CheckGlobalThisTest_testThisJSDoc4_boc.html">CheckGlobalThisTest.testThisJSDoc4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388275</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis4</span><a href="CheckGlobalThisTest_testGlobalThis4_bl1.html">CheckGlobalThisTest.testGlobalThis4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388292</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod1</span><a href="CheckGlobalThisTest_testStaticMethod1_s4.html">CheckGlobalThisTest.testStaticMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743405</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction1</span><a href="CheckGlobalThisTest_testInnerFunction1_83d.html">CheckGlobalThisTest.testInnerFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523141</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction1</span><a href="CheckGlobalThisTest_testStaticFunction1_3e1.html">CheckGlobalThisTest.testStaticFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522735</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.224</span>0.224</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethodInStaticFunction</span><a href="CheckGlobalThisTest_testMethodInStaticFunction_22.html">CheckGlobalThisTest.testMethodInStaticFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388209</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testOverride1</span><a href="CheckGlobalThisTest_testOverride1_5vs.html">CheckGlobalThisTest.testOverride1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743431</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction5</span><a href="CheckGlobalThisTest_testStaticFunction5_blq.html">CheckGlobalThisTest.testStaticFunction5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522979</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction5</span><a href="CheckGlobalThisTest_testStaticFunction5_2to.html">CheckGlobalThisTest.testStaticFunction5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743484</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod3</span><a href="CheckGlobalThisTest_testMethod3_2zm.html">CheckGlobalThisTest.testMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388174</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc5</span><a href="CheckGlobalThisTest_testThisJSDoc5_49n.html">CheckGlobalThisTest.testThisJSDoc5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523042</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction7</span><a href="CheckGlobalThisTest_testStaticFunction7_5y6.html">CheckGlobalThisTest.testStaticFunction7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522993</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction5</span><a href="CheckGlobalThisTest_testStaticFunction5_cin.html">CheckGlobalThisTest.testStaticFunction5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388151</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod2</span><a href="CheckGlobalThisTest_testStaticMethod2_e3t.html">CheckGlobalThisTest.testStaticMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388202</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation2</span><a href="CheckGlobalThisTest_testLendsAnnotation2_e7s.html">CheckGlobalThisTest.testLendsAnnotation2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388237</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction2</span><a href="CheckGlobalThisTest_testStaticFunction2_2zc.html">CheckGlobalThisTest.testStaticFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743501</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInterface1</span><a href="CheckGlobalThisTest_testInterface1_eb8.html">CheckGlobalThisTest.testInterface1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743464</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis7</span><a href="CheckGlobalThisTest_testGlobalThis7_9au.html">CheckGlobalThisTest.testGlobalThis7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388139</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction6</span><a href="CheckGlobalThisTest_testStaticFunction6_ft.html">CheckGlobalThisTest.testStaticFunction6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743476</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc3</span><a href="CheckGlobalThisTest_testThisJSDoc3_9bx.html">CheckGlobalThisTest.testThisJSDoc3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388272</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testPropertyOfMethod</span><a href="CheckGlobalThisTest_testPropertyOfMethod_cy1.html">CheckGlobalThisTest.testPropertyOfMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743401</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testOverride1</span><a href="CheckGlobalThisTest_testOverride1_awb.html">CheckGlobalThisTest.testOverride1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388244</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunctionInMethod2</span><a href="CheckGlobalThisTest_testStaticFunctionInMethod2_ic.html">CheckGlobalThisTest.testStaticFunctionInMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743492</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182b</span><a href="CheckGlobalThisTest_testIssue182b_23j.html">CheckGlobalThisTest.testIssue182b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523186</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis3</span><a href="CheckGlobalThisTest_testGlobalThis3_8zn.html">CheckGlobalThisTest.testGlobalThis3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523056</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction4</span><a href="CheckGlobalThisTest_testStaticFunction4_b6j.html">CheckGlobalThisTest.testStaticFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388147</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis4</span><a href="CheckGlobalThisTest_testGlobalThis4_baq.html">CheckGlobalThisTest.testGlobalThis4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523061</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc5</span><a href="CheckGlobalThisTest_testThisJSDoc5_5ao.html">CheckGlobalThisTest.testThisJSDoc5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388278</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction3</span><a href="CheckGlobalThisTest_testInnerFunction3_aix.html">CheckGlobalThisTest.testInnerFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523150</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction2</span><a href="CheckGlobalThisTest_testInnerFunction2_5sf.html">CheckGlobalThisTest.testInnerFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523145</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction4</span><a href="CheckGlobalThisTest_testInnerFunction4_7ge.html">CheckGlobalThisTest.testInnerFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523155</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testPropertyOfMethod</span><a href="CheckGlobalThisTest_testPropertyOfMethod_1q.html">CheckGlobalThisTest.testPropertyOfMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523004</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis2</span><a href="CheckGlobalThisTest_testGlobalThis2_169.html">CheckGlobalThisTest.testGlobalThis2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523051</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis2</span><a href="CheckGlobalThisTest_testGlobalThis2_6vf.html">CheckGlobalThisTest.testGlobalThis2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743509</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc2</span><a href="CheckGlobalThisTest_testThisJSDoc2_2wd.html">CheckGlobalThisTest.testThisJSDoc2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743436</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction6</span><a href="CheckGlobalThisTest_testStaticFunction6_9rp.html">CheckGlobalThisTest.testStaticFunction6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388250</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation3</span><a href="CheckGlobalThisTest_testLendsAnnotation3_1ym.html">CheckGlobalThisTest.testLendsAnnotation3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388260</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc3</span><a href="CheckGlobalThisTest_testThisJSDoc3_1x0.html">CheckGlobalThisTest.testThisJSDoc3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523035</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunctionInMethod1</span><a href="CheckGlobalThisTest_testStaticFunctionInMethod1_ar.html">CheckGlobalThisTest.testStaticFunctionInMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743489</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunctionInMethod2</span><a href="CheckGlobalThisTest_testStaticFunctionInMethod2_8sy.html">CheckGlobalThisTest.testStaticFunctionInMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523100</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis6</span><a href="CheckGlobalThisTest_testGlobalThis6_93a.html">CheckGlobalThisTest.testGlobalThis6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388144</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod4</span><a href="CheckGlobalThisTest_testMethod4_3s2.html">CheckGlobalThisTest.testMethod4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523174</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis3</span><a href="CheckGlobalThisTest_testGlobalThis3_4l9.html">CheckGlobalThisTest.testGlobalThis3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743466</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod1</span><a href="CheckGlobalThisTest_testMethod1_av5.html">CheckGlobalThisTest.testMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388167</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod4</span><a href="CheckGlobalThisTest_testMethod4_nh.html">CheckGlobalThisTest.testMethod4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388178</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis1</span><a href="CheckGlobalThisTest_testGlobalThis1_8dy.html">CheckGlobalThisTest.testGlobalThis1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743506</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182b</span><a href="CheckGlobalThisTest_testIssue182b_bv.html">CheckGlobalThisTest.testIssue182b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743445</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction7</span><a href="CheckGlobalThisTest_testStaticFunction7_3zz.html">CheckGlobalThisTest.testStaticFunction7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388254</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction3</span><a href="CheckGlobalThisTest_testStaticFunction3_8av.html">CheckGlobalThisTest.testStaticFunction3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743503</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis7</span><a href="CheckGlobalThisTest_testGlobalThis7_c76.html">CheckGlobalThisTest.testGlobalThis7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743398</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc4</span><a href="CheckGlobalThisTest_testThisJSDoc4_503.html">CheckGlobalThisTest.testThisJSDoc4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523038</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc5</span><a href="CheckGlobalThisTest_testThisJSDoc5_90n.html">CheckGlobalThisTest.testThisJSDoc5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743443</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction8</span><a href="CheckGlobalThisTest_testStaticFunction8_3s9.html">CheckGlobalThisTest.testStaticFunction8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388257</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testOverride1</span><a href="CheckGlobalThisTest_testOverride1_7nh.html">CheckGlobalThisTest.testOverride1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523130</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod2</span><a href="CheckGlobalThisTest_testStaticMethod2_82g.html">CheckGlobalThisTest.testStaticMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743409</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc3</span><a href="CheckGlobalThisTest_testThisJSDoc3_clq.html">CheckGlobalThisTest.testThisJSDoc3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743438</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction4</span><a href="CheckGlobalThisTest_testStaticFunction4_75r.html">CheckGlobalThisTest.testStaticFunction4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522973</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc1</span><a href="CheckGlobalThisTest_testThisJSDoc1_86d.html">CheckGlobalThisTest.testThisJSDoc1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388247</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182b</span><a href="CheckGlobalThisTest_testIssue182b_b5.html">CheckGlobalThisTest.testIssue182b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388223</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor1</span><a href="CheckGlobalThisTest_testConstructor1_aws.html">CheckGlobalThisTest.testConstructor1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523079</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182a</span><a href="CheckGlobalThisTest_testIssue182a_59q.html">CheckGlobalThisTest.testIssue182a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388220</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis3</span><a href="CheckGlobalThisTest_testGlobalThis3_4ds.html">CheckGlobalThisTest.testGlobalThis3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388301</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testIssue182c</span><a href="CheckGlobalThisTest_testIssue182c_axa.html">CheckGlobalThisTest.testIssue182c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523190</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod3</span><a href="CheckGlobalThisTest_testStaticMethod3_2e1.html">CheckGlobalThisTest.testStaticMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743412</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testMethod1</span><a href="CheckGlobalThisTest_testMethod1_f90.html">CheckGlobalThisTest.testMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743418</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testThisJSDoc1</span><a href="CheckGlobalThisTest_testThisJSDoc1_90z.html">CheckGlobalThisTest.testThisJSDoc1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523011</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor2</span><a href="CheckGlobalThisTest_testConstructor2_3by.html">CheckGlobalThisTest.testConstructor2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743460</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticMethod2</span><a href="CheckGlobalThisTest_testStaticMethod2_bjk.html">CheckGlobalThisTest.testStaticMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523110</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction1</span><a href="CheckGlobalThisTest_testStaticFunction1_8ni.html">CheckGlobalThisTest.testStaticFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388282</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation1</span><a href="CheckGlobalThisTest_testLendsAnnotation1_2aw.html">CheckGlobalThisTest.testLendsAnnotation1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523201</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction8</span><a href="CheckGlobalThisTest_testStaticFunction8_6rn.html">CheckGlobalThisTest.testStaticFunction8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522999</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testGlobalThis6</span><a href="CheckGlobalThisTest_testGlobalThis6_vi.html">CheckGlobalThisTest.testGlobalThis6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523070</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testSuppressWarning</span><a href="CheckGlobalThisTest_testSuppressWarning_s3.html">CheckGlobalThisTest.testSuppressWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697523120</span>2 Jan 15:12:03</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testConstructor3</span><a href="CheckGlobalThisTest_testConstructor3_a1h.html">CheckGlobalThisTest.testConstructor3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743462</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testStaticFunction2</span><a href="CheckGlobalThisTest_testStaticFunction2_1eu.html">CheckGlobalThisTest.testStaticFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522960</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testLendsAnnotation1</span><a href="CheckGlobalThisTest_testLendsAnnotation1_5pg.html">CheckGlobalThisTest.testLendsAnnotation1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388233</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalThisTest.testInnerFunction1</span><a href="CheckGlobalThisTest_testInnerFunction1_bkq.html">CheckGlobalThisTest.testInnerFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388193</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

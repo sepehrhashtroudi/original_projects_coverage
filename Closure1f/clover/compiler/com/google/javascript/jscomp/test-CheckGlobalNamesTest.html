@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class CheckGlobalNamesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="CheckGlobalNamesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>CheckGlobalNamesTest</td>
+        <td class="testPasses"><span class="sortValue">135</span>135</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.117</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName1</span><a href="CheckGlobalNamesTest_testLateDefinedName1_e62.html">CheckGlobalNamesTest.testLateDefinedName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387876</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty2</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty2_3qw.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743274</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName2</span><a href="CheckGlobalNamesTest_testLateDefinedName2_1bj.html">CheckGlobalNamesTest.testLateDefinedName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387881</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testInterfaceFunctionPropRef</span><a href="CheckGlobalNamesTest_testInterfaceFunctionPropRef_wv.html">CheckGlobalNamesTest.testInterfaceFunctionPropRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387932</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testTypedefGivesNoWarning</span><a href="CheckGlobalNamesTest_testTypedefGivesNoWarning_5qx.html">CheckGlobalNamesTest.testTypedefGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388039</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testFunctionPrototypeProperties</span><a href="CheckGlobalNamesTest_testFunctionPrototypeProperties_3dz.html">CheckGlobalNamesTest.testFunctionPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387946</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testObjectPrototypeProperties</span><a href="CheckGlobalNamesTest_testObjectPrototypeProperties_8ai.html">CheckGlobalNamesTest.testObjectPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743195</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties2</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties2_d09.html">CheckGlobalNamesTest.testRefToDefinedProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388093</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty4</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty4_9ug.html">CheckGlobalNamesTest.testRefToUndefinedProperty4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388005</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNamespaceInjection</span><a href="CheckGlobalNamesTest_testNamespaceInjection_bo4.html">CheckGlobalNamesTest.testNamespaceInjection</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743302</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testCallUndefinedFunctionGivesNoWaring</span><a href="CheckGlobalNamesTest_testCallUndefinedFunctionGivesNoWaring_drx.html">CheckGlobalNamesTest.testCallUndefinedFunctionGivesNoWaring</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387872</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName1</span><a href="CheckGlobalNamesTest_testLateDefinedName1_6nb.html">CheckGlobalNamesTest.testLateDefinedName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743368</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testCustomObjectPrototypeProperties</span><a href="CheckGlobalNamesTest_testCustomObjectPrototypeProperties_8x.html">CheckGlobalNamesTest.testCustomObjectPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522634</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testUndefinedModuleDep1</span><a href="CheckGlobalNamesTest_testUndefinedModuleDep1_aus.html">CheckGlobalNamesTest.testUndefinedModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522534</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testPathologicalCaseThatsOkAnyway</span><a href="CheckGlobalNamesTest_testPathologicalCaseThatsOkAnyway_ib.html">CheckGlobalNamesTest.testPathologicalCaseThatsOkAnyway</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743175</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkLateDefinedName2</span><a href="CheckGlobalNamesTest_testOkLateDefinedName2_2fp.html">CheckGlobalNamesTest.testOkLateDefinedName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743171</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testSuppressionOfUndefinedNamesWarning</span><a href="CheckGlobalNamesTest_testSuppressionOfUndefinedNamesWarning_67m.html">CheckGlobalNamesTest.testSuppressionOfUndefinedNamesWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743307</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedPropertyGivesCorrectWarning</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedPropertyGivesCorrectWarning_779.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedPropertyGivesCorrectWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388044</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToMethod2</span><a href="CheckGlobalNamesTest_testRefToMethod2_cb9.html">CheckGlobalNamesTest.testRefToMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743373</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty1</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty1_24f.html">CheckGlobalNamesTest.testRefToUndefinedProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743236</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testGoogInheritsAlias2</span><a href="CheckGlobalNamesTest_testGoogInheritsAlias2_14u.html">CheckGlobalNamesTest.testGoogInheritsAlias2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387962</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testSuppressionOfUndefinedNamesWarning</span><a href="CheckGlobalNamesTest_testSuppressionOfUndefinedNamesWarning_2ua.html">CheckGlobalNamesTest.testSuppressionOfUndefinedNamesWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388053</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty1</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty1_cmy.html">CheckGlobalNamesTest.testRefToUndefinedProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387982</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testSelfModuleDep</span><a href="CheckGlobalNamesTest_testSelfModuleDep_cw6.html">CheckGlobalNamesTest.testSelfModuleDep</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388074</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testSelfModuleDep</span><a href="CheckGlobalNamesTest_testSelfModuleDep_bc1.html">CheckGlobalNamesTest.testSelfModuleDep</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522442</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkLateDefinedName1</span><a href="CheckGlobalNamesTest_testOkLateDefinedName1_dpy.html">CheckGlobalNamesTest.testOkLateDefinedName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743166</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testGoogInheritsAlias</span><a href="CheckGlobalNamesTest_testGoogInheritsAlias_7ne.html">CheckGlobalNamesTest.testGoogInheritsAlias</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743213</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName4</span><a href="CheckGlobalNamesTest_testLateDefinedName4_q1.html">CheckGlobalNamesTest.testLateDefinedName4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522310</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNamespaceInjection</span><a href="CheckGlobalNamesTest_testNamespaceInjection_93h.html">CheckGlobalNamesTest.testNamespaceInjection</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522627</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToMethod2</span><a href="CheckGlobalNamesTest_testRefToMethod2_1g1.html">CheckGlobalNamesTest.testRefToMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522552</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty3</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty3_auy.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522407</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName5</span><a href="CheckGlobalNamesTest_testLateDefinedName5_9xw.html">CheckGlobalNamesTest.testLateDefinedName5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522320</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForGoodModuleDep1</span><a href="CheckGlobalNamesTest_testNoWarningForGoodModuleDep1_eho.html">CheckGlobalNamesTest.testNoWarningForGoodModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522416</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testPathologicalCaseThatsOkAnyway</span><a href="CheckGlobalNamesTest_testPathologicalCaseThatsOkAnyway_5f2.html">CheckGlobalNamesTest.testPathologicalCaseThatsOkAnyway</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387918</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty3</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty3_crh.html">CheckGlobalNamesTest.testRefToUndefinedProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743246</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testComplexPropAssignGivesNoWarning</span><a href="CheckGlobalNamesTest_testComplexPropAssignGivesNoWarning_1mv.html">CheckGlobalNamesTest.testComplexPropAssignGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743288</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testCallUndefinedFunctionGivesNoWaring</span><a href="CheckGlobalNamesTest_testCallUndefinedFunctionGivesNoWaring_23z.html">CheckGlobalNamesTest.testCallUndefinedFunctionGivesNoWaring</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743126</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testGoogInheritsAlias</span><a href="CheckGlobalNamesTest_testGoogInheritsAlias_1dg.html">CheckGlobalNamesTest.testGoogInheritsAlias</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387957</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName3</span><a href="CheckGlobalNamesTest_testLateDefinedName3_bc.html">CheckGlobalNamesTest.testLateDefinedName3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387886</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadModuleDep1</span><a href="CheckGlobalNamesTest_testBadModuleDep1_dg0.html">CheckGlobalNamesTest.testBadModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743323</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty2</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty2_8sp.html">CheckGlobalNamesTest.testRefToUndefinedProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522658</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName5</span><a href="CheckGlobalNamesTest_testLateDefinedName5_3g9.html">CheckGlobalNamesTest.testLateDefinedName5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387897</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty3</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty3_18s.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388026</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testIndirectlyDeclaredProperties</span><a href="CheckGlobalNamesTest_testIndirectlyDeclaredProperties_d2x.html">CheckGlobalNamesTest.testIndirectlyDeclaredProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387951</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testGoogInheritsAlias2</span><a href="CheckGlobalNamesTest_testGoogInheritsAlias2_9z0.html">CheckGlobalNamesTest.testGoogInheritsAlias2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522598</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testUndefinedModuleDep1</span><a href="CheckGlobalNamesTest_testUndefinedModuleDep1_9ho.html">CheckGlobalNamesTest.testUndefinedModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743334</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.033</span>0.033</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testCallUndefinedFunctionGivesNoWaring</span><a href="CheckGlobalNamesTest_testCallUndefinedFunctionGivesNoWaring_3j4.html">CheckGlobalNamesTest.testCallUndefinedFunctionGivesNoWaring</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522593</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testInterfaceFunctionPropRef</span><a href="CheckGlobalNamesTest_testInterfaceFunctionPropRef_1a1.html">CheckGlobalNamesTest.testInterfaceFunctionPropRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743190</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testGoogInheritsAlias2</span><a href="CheckGlobalNamesTest_testGoogInheritsAlias2_dvg.html">CheckGlobalNamesTest.testGoogInheritsAlias2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743219</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadModuleDep1</span><a href="CheckGlobalNamesTest_testBadModuleDep1_ep.html">CheckGlobalNamesTest.testBadModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388068</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties1</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties1_87q.html">CheckGlobalNamesTest.testRefToDefinedProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388081</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName6</span><a href="CheckGlobalNamesTest_testLateDefinedName6_6v1.html">CheckGlobalNamesTest.testLateDefinedName6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522330</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName4</span><a href="CheckGlobalNamesTest_testLateDefinedName4_bmh.html">CheckGlobalNamesTest.testLateDefinedName4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743148</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testTypedefGivesNoWarning</span><a href="CheckGlobalNamesTest_testTypedefGivesNoWarning_5j3.html">CheckGlobalNamesTest.testTypedefGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743293</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName3</span><a href="CheckGlobalNamesTest_testLateDefinedName3_dbg.html">CheckGlobalNamesTest.testLateDefinedName3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522299</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkGlobalDeclExpr</span><a href="CheckGlobalNamesTest_testOkGlobalDeclExpr_f7p.html">CheckGlobalNamesTest.testOkGlobalDeclExpr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743181</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadInterfacePropRef</span><a href="CheckGlobalNamesTest_testBadInterfacePropRef_2ee.html">CheckGlobalNamesTest.testBadInterfacePropRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387928</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty2</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty2_3or.html">CheckGlobalNamesTest.testRefToUndefinedProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387988</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties1</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties1_82w.html">CheckGlobalNamesTest.testRefToDefinedProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522471</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkLateDefinedName1</span><a href="CheckGlobalNamesTest_testOkLateDefinedName1_5js.html">CheckGlobalNamesTest.testOkLateDefinedName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387909</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties1</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties1_6sn.html">CheckGlobalNamesTest.testRefToDefinedProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743083</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties3</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties3_c8m.html">CheckGlobalNamesTest.testRefToDefinedProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388120</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testCustomObjectPrototypeProperties</span><a href="CheckGlobalNamesTest_testCustomObjectPrototypeProperties_duy.html">CheckGlobalNamesTest.testCustomObjectPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743199</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadInterfacePropRef</span><a href="CheckGlobalNamesTest_testBadInterfacePropRef_92d.html">CheckGlobalNamesTest.testBadInterfacePropRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522357</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties3</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties3_dwm.html">CheckGlobalNamesTest.testRefToDefinedProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743114</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty4</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty4_cx3.html">CheckGlobalNamesTest.testRefToUndefinedProperty4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743257</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkGlobalDeclExpr</span><a href="CheckGlobalNamesTest_testOkGlobalDeclExpr_bau.html">CheckGlobalNamesTest.testOkGlobalDeclExpr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387924</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty1</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty1_77.html">CheckGlobalNamesTest.testRefToUndefinedProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522652</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty3</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty3_e13.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743279</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty2</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty2_agc.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388021</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToPropertyOfAliasedName</span><a href="CheckGlobalNamesTest_testRefToPropertyOfAliasedName_7vw.html">CheckGlobalNamesTest.testRefToPropertyOfAliasedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522364</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToMethod1</span><a href="CheckGlobalNamesTest_testRefToMethod1_9pa.html">CheckGlobalNamesTest.testRefToMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522545</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty1</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty1_38e.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388017</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadModuleDep2</span><a href="CheckGlobalNamesTest_testBadModuleDep2_4l3.html">CheckGlobalNamesTest.testBadModuleDep2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522568</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName3</span><a href="CheckGlobalNamesTest_testLateDefinedName3_8vy.html">CheckGlobalNamesTest.testLateDefinedName3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743142</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testSuppressionOfUndefinedNamesWarning</span><a href="CheckGlobalNamesTest_testSuppressionOfUndefinedNamesWarning_avm.html">CheckGlobalNamesTest.testSuppressionOfUndefinedNamesWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522381</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testFunctionPrototypeProperties</span><a href="CheckGlobalNamesTest_testFunctionPrototypeProperties_5k3.html">CheckGlobalNamesTest.testFunctionPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522641</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName2</span><a href="CheckGlobalNamesTest_testLateDefinedName2_dtf.html">CheckGlobalNamesTest.testLateDefinedName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743137</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty2</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty2_7eo.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522400</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName6</span><a href="CheckGlobalNamesTest_testLateDefinedName6_afa.html">CheckGlobalNamesTest.testLateDefinedName6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387902</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkLateDefinedName1</span><a href="CheckGlobalNamesTest_testOkLateDefinedName1_47m.html">CheckGlobalNamesTest.testOkLateDefinedName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522574</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep2</span><a href="CheckGlobalNamesTest_testNoWarningForSimpleVarModuleDep2_dvu.html">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388062</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testUndefinedModuleDep1</span><a href="CheckGlobalNamesTest_testUndefinedModuleDep1_ahd.html">CheckGlobalNamesTest.testUndefinedModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388077</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testPathologicalCaseThatsOkAnyway</span><a href="CheckGlobalNamesTest_testPathologicalCaseThatsOkAnyway_3xr.html">CheckGlobalNamesTest.testPathologicalCaseThatsOkAnyway</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522347</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForGoodModuleDep1</span><a href="CheckGlobalNamesTest_testNoWarningForGoodModuleDep1_cyy.html">CheckGlobalNamesTest.testNoWarningForGoodModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388065</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties2</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties2_b3m.html">CheckGlobalNamesTest.testRefToDefinedProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522494</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep2</span><a href="CheckGlobalNamesTest_testNoWarningForSimpleVarModuleDep2_d40.html">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743316</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep1</span><a href="CheckGlobalNamesTest_testNoWarningForSimpleVarModuleDep1_399.html">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388058</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testInterfaceFunctionPropRef</span><a href="CheckGlobalNamesTest_testInterfaceFunctionPropRef_53m.html">CheckGlobalNamesTest.testInterfaceFunctionPropRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522558</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testComplexPropAssignGivesNoWarning</span><a href="CheckGlobalNamesTest_testComplexPropAssignGivesNoWarning_zg.html">CheckGlobalNamesTest.testComplexPropAssignGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388035</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToPropertyOfAliasedName</span><a href="CheckGlobalNamesTest_testRefToPropertyOfAliasedName_bvq.html">CheckGlobalNamesTest.testRefToPropertyOfAliasedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387977</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkLateDefinedName2</span><a href="CheckGlobalNamesTest_testOkLateDefinedName2_67b.html">CheckGlobalNamesTest.testOkLateDefinedName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387913</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadInterfacePropRef</span><a href="CheckGlobalNamesTest_testBadInterfacePropRef_99b.html">CheckGlobalNamesTest.testBadInterfacePropRef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743185</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkLateDefinedName2</span><a href="CheckGlobalNamesTest_testOkLateDefinedName2_2f5.html">CheckGlobalNamesTest.testOkLateDefinedName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522579</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadModuleDep2</span><a href="CheckGlobalNamesTest_testBadModuleDep2_63l.html">CheckGlobalNamesTest.testBadModuleDep2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388071</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToMethod2</span><a href="CheckGlobalNamesTest_testRefToMethod2_e65.html">CheckGlobalNamesTest.testRefToMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387862</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testUndefinedPrototypeMethodRefGivesNoWarning</span><a href="CheckGlobalNamesTest_testUndefinedPrototypeMethodRefGivesNoWarning_634.html">CheckGlobalNamesTest.testUndefinedPrototypeMethodRefGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522452</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName4</span><a href="CheckGlobalNamesTest_testLateDefinedName4_82o.html">CheckGlobalNamesTest.testLateDefinedName4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387892</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadModuleDep1</span><a href="CheckGlobalNamesTest_testBadModuleDep1_a90.html">CheckGlobalNamesTest.testBadModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522564</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testOkGlobalDeclExpr</span><a href="CheckGlobalNamesTest_testOkGlobalDeclExpr_8xv.html">CheckGlobalNamesTest.testOkGlobalDeclExpr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522540</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToMethod1</span><a href="CheckGlobalNamesTest_testRefToMethod1_63i.html">CheckGlobalNamesTest.testRefToMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387867</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testGoogInheritsAlias</span><a href="CheckGlobalNamesTest_testGoogInheritsAlias_3ik.html">CheckGlobalNamesTest.testGoogInheritsAlias</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522585</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNamespaceInjection</span><a href="CheckGlobalNamesTest_testNamespaceInjection_51u.html">CheckGlobalNamesTest.testNamespaceInjection</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388048</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty4</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty4_26n.html">CheckGlobalNamesTest.testRefToUndefinedProperty4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522680</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testIndirectlyDeclaredProperties</span><a href="CheckGlobalNamesTest_testIndirectlyDeclaredProperties_959.html">CheckGlobalNamesTest.testIndirectlyDeclaredProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743208</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testUndefinedPrototypeMethodRefGivesNoWarning</span><a href="CheckGlobalNamesTest_testUndefinedPrototypeMethodRefGivesNoWarning_6m9.html">CheckGlobalNamesTest.testUndefinedPrototypeMethodRefGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697388031</span>2 Jan 15:09:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testUndefinedPrototypeMethodRefGivesNoWarning</span><a href="CheckGlobalNamesTest_testUndefinedPrototypeMethodRefGivesNoWarning_6p7.html">CheckGlobalNamesTest.testUndefinedPrototypeMethodRefGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743283</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty3</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty3_bre.html">CheckGlobalNamesTest.testRefToUndefinedProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387993</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testCustomObjectPrototypeProperties</span><a href="CheckGlobalNamesTest_testCustomObjectPrototypeProperties_bm6.html">CheckGlobalNamesTest.testCustomObjectPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387942</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties3</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties3_4ff.html">CheckGlobalNamesTest.testRefToDefinedProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522515</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep1</span><a href="CheckGlobalNamesTest_testNoWarningForSimpleVarModuleDep1_c0n.html">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522460</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testObjectPrototypeProperties</span><a href="CheckGlobalNamesTest_testObjectPrototypeProperties_9p6.html">CheckGlobalNamesTest.testObjectPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522339</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testFunctionPrototypeProperties</span><a href="CheckGlobalNamesTest_testFunctionPrototypeProperties_5ma.html">CheckGlobalNamesTest.testFunctionPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743204</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testComplexPropAssignGivesNoWarning</span><a href="CheckGlobalNamesTest_testComplexPropAssignGivesNoWarning_4mz.html">CheckGlobalNamesTest.testComplexPropAssignGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522704</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForGoodModuleDep1</span><a href="CheckGlobalNamesTest_testNoWarningForGoodModuleDep1_e7c.html">CheckGlobalNamesTest.testNoWarningForGoodModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743319</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName1</span><a href="CheckGlobalNamesTest_testLateDefinedName1_cm2.html">CheckGlobalNamesTest.testLateDefinedName1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522026</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.262</span>0.262</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDefinedProperties2</span><a href="CheckGlobalNamesTest_testRefToDefinedProperties2_bgt.html">CheckGlobalNamesTest.testRefToDefinedProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743101</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testTypedefGivesNoWarning</span><a href="CheckGlobalNamesTest_testTypedefGivesNoWarning_aez.html">CheckGlobalNamesTest.testTypedefGivesNoWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522698</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName6</span><a href="CheckGlobalNamesTest_testLateDefinedName6_1sd.html">CheckGlobalNamesTest.testLateDefinedName6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743161</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty2</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty2_3kk.html">CheckGlobalNamesTest.testRefToUndefinedProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743241</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty1</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty1_3ac.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522392</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep2</span><a href="CheckGlobalNamesTest_testNoWarningForSimpleVarModuleDep2_ce1.html">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522465</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedPropertyGivesCorrectWarning</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedPropertyGivesCorrectWarning_e16.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedPropertyGivesCorrectWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743297</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToPropertyOfAliasedName</span><a href="CheckGlobalNamesTest_testRefToPropertyOfAliasedName_bxh.html">CheckGlobalNamesTest.testRefToPropertyOfAliasedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743131</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testIndirectlyDeclaredProperties</span><a href="CheckGlobalNamesTest_testIndirectlyDeclaredProperties_5tg.html">CheckGlobalNamesTest.testIndirectlyDeclaredProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522372</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testSelfModuleDep</span><a href="CheckGlobalNamesTest_testSelfModuleDep_8fr.html">CheckGlobalNamesTest.testSelfModuleDep</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743330</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName2</span><a href="CheckGlobalNamesTest_testLateDefinedName2_2vb.html">CheckGlobalNamesTest.testLateDefinedName2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522288</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty1</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedProperty1_2oc.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743269</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToUndefinedProperty3</span><a href="CheckGlobalNamesTest_testRefToUndefinedProperty3_cfl.html">CheckGlobalNamesTest.testRefToUndefinedProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522664</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testLateDefinedName5</span><a href="CheckGlobalNamesTest_testLateDefinedName5_9cn.html">CheckGlobalNamesTest.testLateDefinedName5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743153</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testObjectPrototypeProperties</span><a href="CheckGlobalNamesTest_testObjectPrototypeProperties_q9.html">CheckGlobalNamesTest.testObjectPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387938</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToDescendantOfUndefinedPropertyGivesCorrectWarning</span><a href="CheckGlobalNamesTest_testRefToDescendantOfUndefinedPropertyGivesCorrectWarning_6rs.html">CheckGlobalNamesTest.testRefToDescendantOfUndefinedPropertyGivesCorrectWarning</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697522646</span>2 Jan 15:12:02</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testRefToMethod1</span><a href="CheckGlobalNamesTest_testRefToMethod1_ewu.html">CheckGlobalNamesTest.testRefToMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743232</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testBadModuleDep2</span><a href="CheckGlobalNamesTest_testBadModuleDep2_ezw.html">CheckGlobalNamesTest.testBadModuleDep2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743326</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep1</span><a href="CheckGlobalNamesTest_testNoWarningForSimpleVarModuleDep1_4ki.html">CheckGlobalNamesTest.testNoWarningForSimpleVarModuleDep1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743312</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

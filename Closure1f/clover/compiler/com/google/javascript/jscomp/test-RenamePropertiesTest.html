@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class RenamePropertiesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="RenamePropertiesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>RenamePropertiesTest</td>
+        <td class="testPasses"><span class="sortValue">78</span>78</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.136</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testExternedPropertyNameDefinedByObjectLiteral</span><a href="RenamePropertiesTest_testExternedPropertyNameDefinedByObjectLiteral_1he.html">RenamePropertiesTest.testExternedPropertyNameDefinedByObjectLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617365</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testAvoidingConflictsBetQuotedAndUnquotedPropertyNamesStable</span><a href="RenamePropertiesTest_testAvoidingConflictsBetQuotedAndUnquotedPropertyNamesStable_6bj.html">RenamePropertiesTest.testAvoidingConflictsBetQuotedAndUnquotedPropertyNamesStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617464</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testIncorrectAttemptToAccessQuotedProperty</span><a href="RenamePropertiesTest_testIncorrectAttemptToAccessQuotedProperty_1mo.html">RenamePropertiesTest.testIncorrectAttemptToAccessQuotedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697618040</span>2 Jan 15:13:38</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testSetQuotedPropertyOfThis</span><a href="RenamePropertiesTest_testSetQuotedPropertyOfThis_36w.html">RenamePropertiesTest.testSetQuotedPropertyOfThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617376</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testExternedPropertyName</span><a href="RenamePropertiesTest_testExternedPropertyName_c4r.html">RenamePropertiesTest.testExternedPropertyName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776782</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testReadPropertyOfThis</span><a href="RenamePropertiesTest_testReadPropertyOfThis_6j7.html">RenamePropertiesTest.testReadPropertyOfThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617569</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNames</span><a href="RenamePropertiesTest_testOverlappingOriginalAndGeneratedNames_23e.html">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776789</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNamesStable</span><a href="RenamePropertiesTest_testOverlappingOriginalAndGeneratedNamesStable_6az.html">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNamesStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617396</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testObjectLiteralInLocalScope</span><a href="RenamePropertiesTest_testObjectLiteralInLocalScope_12d.html">RenamePropertiesTest.testObjectLiteralInLocalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617385</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys2</span><a href="RenamePropertiesTest_testMixedQuotedAndUnquotedObjLitKeys2_9nr.html">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617834</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRemoveRenameFunctionStubs1</span><a href="RenamePropertiesTest_testRemoveRenameFunctionStubs1_145.html">RenamePropertiesTest.testRemoveRenameFunctionStubs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776673</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyOfObjectOfUnknownType</span><a href="RenamePropertiesTest_testPropertyOfObjectOfUnknownType_48p.html">RenamePropertiesTest.testPropertyOfObjectOfUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617426</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testStaticAndInstanceMethodWithSameName</span><a href="RenamePropertiesTest_testStaticAndInstanceMethodWithSameName_a1r.html">RenamePropertiesTest.testStaticAndInstanceMethodWithSameName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617448</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesStable</span><a href="RenamePropertiesTest_testPrototypePropertiesStable_5rq.html">RenamePropertiesTest.testPrototypePropertiesStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776699</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testIncorrectAttemptToAccessQuotedProperty</span><a href="RenamePropertiesTest_testIncorrectAttemptToAccessQuotedProperty_a19.html">RenamePropertiesTest.testIncorrectAttemptToAccessQuotedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776657</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testAvoidingConflictsBetweenQuotedAndUnquotedPropertyNames</span><a href="RenamePropertiesTest_testAvoidingConflictsBetweenQuotedAndUnquotedPropertyNames_3uu.html">RenamePropertiesTest.testAvoidingConflictsBetweenQuotedAndUnquotedPropertyNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617970</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAddedToObjectStable</span><a href="RenamePropertiesTest_testPropertyAddedToObjectStable_cq4.html">RenamePropertiesTest.testPropertyAddedToObjectStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617693</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAddedToObjectStable</span><a href="RenamePropertiesTest_testPropertyAddedToObjectStable_29k.html">RenamePropertiesTest.testPropertyAddedToObjectStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776739</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testSetQuotedPropertyOfThis</span><a href="RenamePropertiesTest_testSetQuotedPropertyOfThis_8x8.html">RenamePropertiesTest.testSetQuotedPropertyOfThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776780</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypeProperties</span><a href="RenamePropertiesTest_testPrototypeProperties_9su.html">RenamePropertiesTest.testPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776627</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testSamePropertyNameQuotedAndUnquoted</span><a href="RenamePropertiesTest_testSamePropertyNameQuotedAndUnquoted_7hm.html">RenamePropertiesTest.testSamePropertyNameQuotedAndUnquoted</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776663</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRemoveRenameFunctionStubs2</span><a href="RenamePropertiesTest_testRemoveRenameFunctionStubs2_3m3.html">RenamePropertiesTest.testRemoveRenameFunctionStubs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776676</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscoresStable</span><a href="RenamePropertiesTest_testRenamePropertiesWithLeadingUnderscoresStable_5wu.html">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscoresStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617946</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAffinity</span><a href="RenamePropertiesTest_testPropertyAffinity_2ys.html">RenamePropertiesTest.testPropertyAffinity</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617752</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.041</span>0.041</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testQuotedPrototypeProperty</span><a href="RenamePropertiesTest_testQuotedPrototypeProperty_lg.html">RenamePropertiesTest.testQuotedPrototypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776768</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesFunctionCallStable</span><a href="RenamePropertiesTest_testRenamePropertiesFunctionCallStable_2mo.html">RenamePropertiesTest.testRenamePropertiesFunctionCallStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776757</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testModules</span><a href="RenamePropertiesTest_testModules_2gw.html">RenamePropertiesTest.testModules</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617848</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.072</span>0.072</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testAvoidingConflictsBetweenQuotedAndUnquotedPropertyNames</span><a href="RenamePropertiesTest_testAvoidingConflictsBetweenQuotedAndUnquotedPropertyNames_4g9.html">RenamePropertiesTest.testAvoidingConflictsBetweenQuotedAndUnquotedPropertyNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776660</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAddedToFunction</span><a href="RenamePropertiesTest_testPropertyAddedToFunction_8ww.html">RenamePropertiesTest.testPropertyAddedToFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617921</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testGeneratePseudoNames</span><a href="RenamePropertiesTest_testGeneratePseudoNames_bce.html">RenamePropertiesTest.testGeneratePseudoNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776679</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesFunctionCall2</span><a href="RenamePropertiesTest_testRenamePropertiesFunctionCall2_1vw.html">RenamePropertiesTest.testRenamePropertiesFunctionCall2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776669</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testStaticAndInstanceMethodWithSameName</span><a href="RenamePropertiesTest_testStaticAndInstanceMethodWithSameName_42l.html">RenamePropertiesTest.testStaticAndInstanceMethodWithSameName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776805</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeysStable</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeysStable_5sb.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeysStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776707</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testGeneratePseudoNames</span><a href="RenamePropertiesTest_testGeneratePseudoNames_cgb.html">RenamePropertiesTest.testGeneratePseudoNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617645</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscoresStable</span><a href="RenamePropertiesTest_testRenamePropertiesWithLeadingUnderscoresStable_c0b.html">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscoresStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776732</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys3</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeys3_c3k.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617619</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys1</span><a href="RenamePropertiesTest_testMixedQuotedAndUnquotedObjLitKeys1_5ob.html">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617820</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesFunctionCall1</span><a href="RenamePropertiesTest_testRenamePropertiesFunctionCall1_3b3.html">RenamePropertiesTest.testRenamePropertiesFunctionCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776666</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys2</span><a href="RenamePropertiesTest_testMixedQuotedAndUnquotedObjLitKeys2_9yh.html">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776642</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRemoveRenameFunctionStubs2</span><a href="RenamePropertiesTest_testRemoveRenameFunctionStubs2_9zi.html">RenamePropertiesTest.testRemoveRenameFunctionStubs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617986</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyOfObjectOfUnknownType</span><a href="RenamePropertiesTest_testPropertyOfObjectOfUnknownType_dly.html">RenamePropertiesTest.testPropertyOfObjectOfUnknownType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776799</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypeProperties</span><a href="RenamePropertiesTest_testPrototypeProperties_5hu.html">RenamePropertiesTest.testPrototypeProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617436</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscores</span><a href="RenamePropertiesTest_testRenamePropertiesWithLeadingUnderscores_4bm.html">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscores</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617807</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesFunctionCall2</span><a href="RenamePropertiesTest_testRenamePropertiesFunctionCall2_2rb.html">RenamePropertiesTest.testRenamePropertiesFunctionCall2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617662</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testQuotedPrototypeProperty</span><a href="RenamePropertiesTest_testQuotedPrototypeProperty_7y7.html">RenamePropertiesTest.testQuotedPrototypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617713</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys1</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeys1_7ks.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617578</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testSetPropertyOfThis</span><a href="RenamePropertiesTest_testSetPropertyOfThis_5w7.html">RenamePropertiesTest.testSetPropertyOfThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617491</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNamesStable</span><a href="RenamePropertiesTest_testOverlappingOriginalAndGeneratedNamesStable_bv1.html">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNamesStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776720</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys1</span><a href="RenamePropertiesTest_testMixedQuotedAndUnquotedObjLitKeys1_3lo.html">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeys1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776638</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testReadPropertyOfThis</span><a href="RenamePropertiesTest_testReadPropertyOfThis_10q.html">RenamePropertiesTest.testReadPropertyOfThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776651</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscores</span><a href="RenamePropertiesTest_testRenamePropertiesWithLeadingUnderscores_1yz.html">RenamePropertiesTest.testRenamePropertiesWithLeadingUnderscores</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776645</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRemoveRenameFunctionStubs1</span><a href="RenamePropertiesTest_testRemoveRenameFunctionStubs1_xy.html">RenamePropertiesTest.testRemoveRenameFunctionStubs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617979</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAddedToFunction</span><a href="RenamePropertiesTest_testPropertyAddedToFunction_9xq.html">RenamePropertiesTest.testPropertyAddedToFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776777</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys1</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeys1_2ih.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776802</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testStableWithTrickyExternsChanges</span><a href="RenamePropertiesTest_testStableWithTrickyExternsChanges_5nt.html">RenamePropertiesTest.testStableWithTrickyExternsChanges</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617726</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAffinityOff</span><a href="RenamePropertiesTest_testPropertyAffinityOff_1t8.html">RenamePropertiesTest.testPropertyAffinityOff</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776691</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAffinityOff</span><a href="RenamePropertiesTest_testPropertyAffinityOff_6aa.html">RenamePropertiesTest.testPropertyAffinityOff</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617511</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesStable</span><a href="RenamePropertiesTest_testPrototypePropertiesStable_c4d.html">RenamePropertiesTest.testPrototypePropertiesStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697618015</span>2 Jan 15:13:38</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testExternedPropertyNameDefinedByObjectLiteral</span><a href="RenamePropertiesTest_testExternedPropertyNameDefinedByObjectLiteral_6qu.html">RenamePropertiesTest.testExternedPropertyNameDefinedByObjectLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776785</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeysStable</span><a href="RenamePropertiesTest_testMixedQuotedAndUnquotedObjLitKeysStable_aya.html">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeysStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617674</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAddedToObject</span><a href="RenamePropertiesTest_testPropertyAddedToObject_5he.html">RenamePropertiesTest.testPropertyAddedToObject</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776773</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testStableWithTrickyExternsChanges</span><a href="RenamePropertiesTest_testStableWithTrickyExternsChanges_e3.html">RenamePropertiesTest.testStableWithTrickyExternsChanges</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776726</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testExternedPropertyName</span><a href="RenamePropertiesTest_testExternedPropertyName_1pm.html">RenamePropertiesTest.testExternedPropertyName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617052</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.313</span>0.313</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys2</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeys2_7q2.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617588</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesFunctionCallStable</span><a href="RenamePropertiesTest_testRenamePropertiesFunctionCallStable_5kf.html">RenamePropertiesTest.testRenamePropertiesFunctionCallStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617995</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAddedToObject</span><a href="RenamePropertiesTest_testPropertyAddedToObject_175.html">RenamePropertiesTest.testPropertyAddedToObject</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617934</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testAvoidingConflictsBetQuotedAndUnquotedPropertyNamesStable</span><a href="RenamePropertiesTest_testAvoidingConflictsBetQuotedAndUnquotedPropertyNamesStable_792.html">RenamePropertiesTest.testAvoidingConflictsBetQuotedAndUnquotedPropertyNamesStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776747</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys2</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeys2_bg6.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776792</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testObjectLiteralInLocalScope</span><a href="RenamePropertiesTest_testObjectLiteralInLocalScope_1w8.html">RenamePropertiesTest.testObjectLiteralInLocalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776654</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testSamePropertyNameQuotedAndUnquoted</span><a href="RenamePropertiesTest_testSamePropertyNameQuotedAndUnquoted_1ww.html">RenamePropertiesTest.testSamePropertyNameQuotedAndUnquoted</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617794</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testSetPropertyOfThis</span><a href="RenamePropertiesTest_testSetPropertyOfThis_5vv.html">RenamePropertiesTest.testSetPropertyOfThis</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776648</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeysStable</span><a href="RenamePropertiesTest_testMixedQuotedAndUnquotedObjLitKeysStable_7xs.html">RenamePropertiesTest.testMixedQuotedAndUnquotedObjLitKeysStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776713</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeysStable</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeysStable_5wt.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeysStable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617541</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNames</span><a href="RenamePropertiesTest_testOverlappingOriginalAndGeneratedNames_1ds.html">RenamePropertiesTest.testOverlappingOriginalAndGeneratedNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617501</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPropertyAffinity</span><a href="RenamePropertiesTest_testPropertyAffinity_aqk.html">RenamePropertiesTest.testPropertyAffinity</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776682</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys3</span><a href="RenamePropertiesTest_testPrototypePropertiesAsObjLitKeys3_7z2.html">RenamePropertiesTest.testPrototypePropertiesAsObjLitKeys3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776630</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testRenamePropertiesFunctionCall1</span><a href="RenamePropertiesTest_testRenamePropertiesFunctionCall1_61z.html">RenamePropertiesTest.testRenamePropertiesFunctionCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697617653</span>2 Jan 15:13:37</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">RenamePropertiesTest.testModules</span><a href="RenamePropertiesTest_testModules_d10.html">RenamePropertiesTest.testModules</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697776623</span>2 Jan 15:16:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

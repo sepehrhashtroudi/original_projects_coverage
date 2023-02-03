@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class CoalesceVariableNamesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="CoalesceVariableNamesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>CoalesceVariableNamesTest</td>
+        <td class="testPasses"><span class="sortValue">84</span>84</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.061</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testBug1445366</span><a href="CoalesceVariableNamesTest_testBug1445366_3nv.html">CoalesceVariableNamesTest.testBug1445366</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744713</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testUsePseduoNames</span><a href="CoalesceVariableNamesTest_testUsePseduoNames_c9i.html">CoalesceVariableNamesTest.testUsePseduoNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389527</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testFor</span><a href="CoalesceVariableNamesTest_testFor_cev.html">CoalesceVariableNamesTest.testFor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744569</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDifferentBlock</span><a href="CoalesceVariableNamesTest_testDifferentBlock_8pb.html">CoalesceVariableNamesTest.testDifferentBlock</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744767</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testFor</span><a href="CoalesceVariableNamesTest_testFor_1gg.html">CoalesceVariableNamesTest.testFor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528645</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testCannotReuseAnyParamsBug</span><a href="CoalesceVariableNamesTest_testCannotReuseAnyParamsBug_55m.html">CoalesceVariableNamesTest.testCannotReuseAnyParamsBug</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744723</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testSimple</span><a href="CoalesceVariableNamesTest_testSimple_8rs.html">CoalesceVariableNamesTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389660</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDifferentBlock</span><a href="CoalesceVariableNamesTest_testDifferentBlock_u.html">CoalesceVariableNamesTest.testDifferentBlock</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528731</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testMergeThreeVarNames</span><a href="CoalesceVariableNamesTest_testMergeThreeVarNames_9ws.html">CoalesceVariableNamesTest.testMergeThreeVarNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744534</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode</span><a href="CoalesceVariableNamesTest_testLiveRangeChangeWithinCfgNode_76z.html">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389589</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testBug1401831</span><a href="CoalesceVariableNamesTest_testBug1401831_2rd.html">CoalesceVariableNamesTest.testBug1401831</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389468</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter2</span><a href="CoalesceVariableNamesTest_testParameter2_b4l.html">CoalesceVariableNamesTest.testParameter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389573</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter3</span><a href="CoalesceVariableNamesTest_testParameter3_bdi.html">CoalesceVariableNamesTest.testParameter3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528720</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLoops</span><a href="CoalesceVariableNamesTest_testLoops_6vy.html">CoalesceVariableNamesTest.testLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744601</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testVarLiveRangeCross</span><a href="CoalesceVariableNamesTest_testVarLiveRangeCross_1zp.html">CoalesceVariableNamesTest.testVarLiveRangeCross</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389486</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter4</span><a href="CoalesceVariableNamesTest_testParameter4_dkp.html">CoalesceVariableNamesTest.testParameter4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389581</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testForIn</span><a href="CoalesceVariableNamesTest_testForIn_482.html">CoalesceVariableNamesTest.testForIn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528651</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testSwitchCase</span><a href="CoalesceVariableNamesTest_testSwitchCase_20l.html">CoalesceVariableNamesTest.testSwitchCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744579</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testVarLiveRangeCross</span><a href="CoalesceVariableNamesTest_testVarLiveRangeCross_98f.html">CoalesceVariableNamesTest.testVarLiveRangeCross</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528814</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testFunctionNameReuse</span><a href="CoalesceVariableNamesTest_testFunctionNameReuse_f7k.html">CoalesceVariableNamesTest.testFunctionNameReuse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389604</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter</span><a href="CoalesceVariableNamesTest_testParameter_bcz.html">CoalesceVariableNamesTest.testParameter</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744575</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter4b</span><a href="CoalesceVariableNamesTest_testParameter4b_7j8.html">CoalesceVariableNamesTest.testParameter4b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744656</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter4</span><a href="CoalesceVariableNamesTest_testParameter4_5l8.html">CoalesceVariableNamesTest.testParameter4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744651</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDeterministic</span><a href="CoalesceVariableNamesTest_testDeterministic_9js.html">CoalesceVariableNamesTest.testDeterministic</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528798</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testEscaped</span><a href="CoalesceVariableNamesTest_testEscaped_gg.html">CoalesceVariableNamesTest.testEscaped</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744608</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testMergeThreeVarNames</span><a href="CoalesceVariableNamesTest_testMergeThreeVarNames_df9.html">CoalesceVariableNamesTest.testMergeThreeVarNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389611</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testForIn</span><a href="CoalesceVariableNamesTest_testForIn_c3o.html">CoalesceVariableNamesTest.testForIn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389604</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testCannotReuseAnyParamsBug</span><a href="CoalesceVariableNamesTest_testCannotReuseAnyParamsBug_dra.html">CoalesceVariableNamesTest.testCannotReuseAnyParamsBug</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389516</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testFor</span><a href="CoalesceVariableNamesTest_testFor_d08.html">CoalesceVariableNamesTest.testFor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389455</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testBug1445366</span><a href="CoalesceVariableNamesTest_testBug1445366_315.html">CoalesceVariableNamesTest.testBug1445366</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389508</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDuplicatedVar</span><a href="CoalesceVariableNamesTest_testDuplicatedVar_4s3.html">CoalesceVariableNamesTest.testDuplicatedVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744630</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDeterministic</span><a href="CoalesceVariableNamesTest_testDeterministic_5u7.html">CoalesceVariableNamesTest.testDeterministic</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389472</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDeadAssignment</span><a href="CoalesceVariableNamesTest_testDeadAssignment_20z.html">CoalesceVariableNamesTest.testDeadAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744640</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter4b</span><a href="CoalesceVariableNamesTest_testParameter4b_ess.html">CoalesceVariableNamesTest.testParameter4b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389585</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDeadAssignment</span><a href="CoalesceVariableNamesTest_testDeadAssignment_dmm.html">CoalesceVariableNamesTest.testDeadAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389563</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testTryCatch</span><a href="CoalesceVariableNamesTest_testTryCatch_45f.html">CoalesceVariableNamesTest.testTryCatch</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744563</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter</span><a href="CoalesceVariableNamesTest_testParameter_3zw.html">CoalesceVariableNamesTest.testParameter</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528601</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testBug1401831</span><a href="CoalesceVariableNamesTest_testBug1401831_4my.html">CoalesceVariableNamesTest.testBug1401831</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744680</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode</span><a href="CoalesceVariableNamesTest_testLiveRangeChangeWithinCfgNode_1ob.html">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744661</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter2</span><a href="CoalesceVariableNamesTest_testParameter2_8us.html">CoalesceVariableNamesTest.testParameter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744551</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testForInWithAssignment</span><a href="CoalesceVariableNamesTest_testForInWithAssignment_564.html">CoalesceVariableNamesTest.testForInWithAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528702</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter</span><a href="CoalesceVariableNamesTest_testParameter_j4.html">CoalesceVariableNamesTest.testParameter</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389644</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testMaxVars</span><a href="CoalesceVariableNamesTest_testMaxVars_38i.html">CoalesceVariableNamesTest.testMaxVars</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744747</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode2</span><a href="CoalesceVariableNamesTest_testLiveRangeChangeWithinCfgNode2_2t3.html">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528904</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLoopInductionVar</span><a href="CoalesceVariableNamesTest_testLoopInductionVar_16o.html">CoalesceVariableNamesTest.testLoopInductionVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744612</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testUsePseduoNames</span><a href="CoalesceVariableNamesTest_testUsePseduoNames_6f5.html">CoalesceVariableNamesTest.testUsePseduoNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528872</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testBug1445366</span><a href="CoalesceVariableNamesTest_testBug1445366_984.html">CoalesceVariableNamesTest.testBug1445366</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528892</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testSwitchCase</span><a href="CoalesceVariableNamesTest_testSwitchCase_3md.html">CoalesceVariableNamesTest.testSwitchCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389647</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter3</span><a href="CoalesceVariableNamesTest_testParameter3_tt.html">CoalesceVariableNamesTest.testParameter3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744559</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testFunctionNameReuse</span><a href="CoalesceVariableNamesTest_testFunctionNameReuse_f5h.html">CoalesceVariableNamesTest.testFunctionNameReuse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528797</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDifferentBlock</span><a href="CoalesceVariableNamesTest_testDifferentBlock_5sq.html">CoalesceVariableNamesTest.testDifferentBlock</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389624</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode</span><a href="CoalesceVariableNamesTest_testLiveRangeChangeWithinCfgNode_9dt.html">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528967</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLoopInductionVar</span><a href="CoalesceVariableNamesTest_testLoopInductionVar_9e8.html">CoalesceVariableNamesTest.testLoopInductionVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389628</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testSimple</span><a href="CoalesceVariableNamesTest_testSimple_xs.html">CoalesceVariableNamesTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528919</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.047</span>0.047</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testBug1401831</span><a href="CoalesceVariableNamesTest_testBug1401831_9b4.html">CoalesceVariableNamesTest.testBug1401831</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528866</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testTryCatch</span><a href="CoalesceVariableNamesTest_testTryCatch_bqv.html">CoalesceVariableNamesTest.testTryCatch</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389438</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testFunctionNameReuse</span><a href="CoalesceVariableNamesTest_testFunctionNameReuse_eds.html">CoalesceVariableNamesTest.testFunctionNameReuse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744680</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testForInWithAssignment</span><a href="CoalesceVariableNamesTest_testForInWithAssignment_8r7.html">CoalesceVariableNamesTest.testForInWithAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389522</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter3</span><a href="CoalesceVariableNamesTest_testParameter3_civ.html">CoalesceVariableNamesTest.testParameter3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389578</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testMergeThreeVarNames</span><a href="CoalesceVariableNamesTest_testMergeThreeVarNames_4gu.html">CoalesceVariableNamesTest.testMergeThreeVarNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528778</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode2</span><a href="CoalesceVariableNamesTest_testLiveRangeChangeWithinCfgNode2_7dd.html">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389650</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testSimple</span><a href="CoalesceVariableNamesTest_testSimple_499.html">CoalesceVariableNamesTest.testSimple</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744777</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testSwitchCase</span><a href="CoalesceVariableNamesTest_testSwitchCase_1g5.html">CoalesceVariableNamesTest.testSwitchCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528677</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testMaxVars</span><a href="CoalesceVariableNamesTest_testMaxVars_aht.html">CoalesceVariableNamesTest.testMaxVars</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389539</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLoops</span><a href="CoalesceVariableNamesTest_testLoops_8m0.html">CoalesceVariableNamesTest.testLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389615</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter4</span><a href="CoalesceVariableNamesTest_testParameter4_9r7.html">CoalesceVariableNamesTest.testParameter4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528725</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLoops</span><a href="CoalesceVariableNamesTest_testLoops_6op.html">CoalesceVariableNamesTest.testLoops</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528664</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testCannotReuseAnyParamsBug</span><a href="CoalesceVariableNamesTest_testCannotReuseAnyParamsBug_9o1.html">CoalesceVariableNamesTest.testCannotReuseAnyParamsBug</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528623</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDuplicatedVar</span><a href="CoalesceVariableNamesTest_testDuplicatedVar_aiy.html">CoalesceVariableNamesTest.testDuplicatedVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389560</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testEscaped</span><a href="CoalesceVariableNamesTest_testEscaped_4ww.html">CoalesceVariableNamesTest.testEscaped</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389620</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDeterministic</span><a href="CoalesceVariableNamesTest_testDeterministic_5e9.html">CoalesceVariableNamesTest.testDeterministic</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744685</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testVarLiveRangeCross</span><a href="CoalesceVariableNamesTest_testVarLiveRangeCross_8d8.html">CoalesceVariableNamesTest.testVarLiveRangeCross</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744698</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter4b</span><a href="CoalesceVariableNamesTest_testParameter4b_6oi.html">CoalesceVariableNamesTest.testParameter4b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528791</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLoopInductionVar</span><a href="CoalesceVariableNamesTest_testLoopInductionVar_9by.html">CoalesceVariableNamesTest.testLoopInductionVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528841</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testEscaped</span><a href="CoalesceVariableNamesTest_testEscaped_2xi.html">CoalesceVariableNamesTest.testEscaped</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528373</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.228</span>0.228</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testForInWithAssignment</span><a href="CoalesceVariableNamesTest_testForInWithAssignment_1sh.html">CoalesceVariableNamesTest.testForInWithAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744730</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testUsePseduoNames</span><a href="CoalesceVariableNamesTest_testUsePseduoNames_a80.html">CoalesceVariableNamesTest.testUsePseduoNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744735</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testForIn</span><a href="CoalesceVariableNamesTest_testForIn_24m.html">CoalesceVariableNamesTest.testForIn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744771</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testTryCatch</span><a href="CoalesceVariableNamesTest_testTryCatch_9x2.html">CoalesceVariableNamesTest.testTryCatch</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528610</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDuplicatedVar</span><a href="CoalesceVariableNamesTest_testDuplicatedVar_bf2.html">CoalesceVariableNamesTest.testDuplicatedVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528785</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testMaxVars</span><a href="CoalesceVariableNamesTest_testMaxVars_1jj.html">CoalesceVariableNamesTest.testMaxVars</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528737</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.041</span>0.041</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode2</span><a href="CoalesceVariableNamesTest_testLiveRangeChangeWithinCfgNode2_bhf.html">CoalesceVariableNamesTest.testLiveRangeChangeWithinCfgNode2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744584</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testDeadAssignment</span><a href="CoalesceVariableNamesTest_testDeadAssignment_75g.html">CoalesceVariableNamesTest.testDeadAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528685</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CoalesceVariableNamesTest.testParameter2</span><a href="CoalesceVariableNamesTest_testParameter2_7wx.html">CoalesceVariableNamesTest.testParameter2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697528709</span>2 Jan 15:12:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

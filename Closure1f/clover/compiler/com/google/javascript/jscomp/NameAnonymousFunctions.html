@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body  onload="onLoad('compiler: com.google.javascript.jscomp.NameAnonymousFunctions.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.google.javascript.jscomp</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File NameAnonymousFunctions.java
+    </h1>
+
+
+
+
+
+
+
+
+        
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../img/srcFileCovDistChart10.png" alt="../../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="203 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,43,98,66" title="83 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,58,89,66" title="29 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,63,80,66" title="13 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,64,71,65" title="7 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="6 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,65,54,66" title="5 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,64,45,65" title="7 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="2 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="3 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,62,18,66" title="17 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">102</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">49</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3.5</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">102</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">49</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">7</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.5</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3.5</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="NameAnonymousFunctions">
+        <span><a href="#36" title="NameAnonymousFunctions" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions', '36');">NameAnonymousFunctions</a></span>
+</td>
+<td>36<a name="sl-36"></a></td>
+    <td class="">4</td>
+    <td class="">2</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-NameAnonymousFunctions" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                               <tr> <td id="NameAnonymousFunctions.AnonymousFunctionNamer">
+        <span><a href="#66" title="NameAnonymousFunctions.AnonymousFunctionNamer" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions_AnonymousFunctionNamer', '66');">NameAnonymousFunctions.AnonymousFunctionNamer</a></span>
+</td>
+<td>66<a name="sl-66"></a></td>
+    <td class="">10</td>
+    <td class="">5</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-NameAnonymousFunctions_AnonymousFunctionNamer" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-NameAnonymousFunctions" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class NameAnonymousFunctions</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-NameAnonymousFunctions-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-NameAnonymousFunctions-methods-body', 'dialog-NameAnonymousFunctions-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                
+                    <thead>
+                                                 <tr> <th id="NameAnonymousFunctions">
+    Class<br/>    <span><a href="#36" title="NameAnonymousFunctions" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions', '36');">NameAnonymousFunctions</a></span>
+</th>
+<th>Line #<br/>36<a name="sl-36"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>4</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>2</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-NameAnonymousFunctions-methods-body">
+                                                                                                            <tr id="NameAnonymousFunctions-1">
+<td id="summary-47-3">
+ <span class="sortValue">NameAnonymousFunctions(AbstractCompiler)</span>
+&#160;&#160;<a href="?line=29#47" title="NameAnonymousFunctions(AbstractCompiler)" name="sl-47" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions', '47');">NameAnonymousFunctions(AbstractCompiler)</a>
+</td>
+<td align="right"><span class="sortValue">47</span>47</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="NameAnonymousFunctions-2">
+<td id="summary-51-3">
+ <span class="sortValue">process(Node,Node)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#51" title="process(Node,Node)&#160;:&#160;void" name="sl-51" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions', '51');">process(Node,Node)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">51</span>51</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-NameAnonymousFunctions">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+        <section role="dialog" id="dialog-NameAnonymousFunctions_AnonymousFunctionNamer" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class NameAnonymousFunctions.AnonymousFunctionNamer</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-NameAnonymousFunctions.AnonymousFunctionNamer-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-NameAnonymousFunctions.AnonymousFunctionNamer-methods-body', 'dialog-NameAnonymousFunctions.AnonymousFunctionNamer-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                            
+                    <thead>
+                                                 <tr> <th id="NameAnonymousFunctions.AnonymousFunctionNamer">
+    Class<br/>    <span><a href="#66" title="NameAnonymousFunctions.AnonymousFunctionNamer" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions_AnonymousFunctionNamer', '66');">NameAnonymousFunctions.AnonymousFunctionNamer</a></span>
+</th>
+<th>Line #<br/>66<a name="sl-66"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>10</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>5</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-NameAnonymousFunctions.AnonymousFunctionNamer-methods-body">
+                                                                                                            <tr id="NameAnonymousFunctions.AnonymousFunctionNamer-1">
+<td id="summary-70-5">
+ <span class="sortValue">AnonymousFunctionNamer()</span>
+&#160;&#160;<a href="?line=29#70" title="AnonymousFunctionNamer()" name="sl-70" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions.AnonymousFunctionNamer', '70');">AnonymousFunctionNamer()</a>
+</td>
+<td align="right"><span class="sortValue">70</span>70</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="NameAnonymousFunctions.AnonymousFunctionNamer-2">
+<td id="summary-78-5">
+ <span class="sortValue">getLikelyNonConflictingName(String)&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#78" title="getLikelyNonConflictingName(String)&#160;:&#160;String" name="sl-78" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions.AnonymousFunctionNamer', '78');">getLikelyNonConflictingName(String)&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">78</span>78</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="NameAnonymousFunctions.AnonymousFunctionNamer-3">
+<td id="summary-82-5">
+ <span class="sortValue">getName(Node)&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#82" title="getName(Node)&#160;:&#160;String" name="sl-82" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions.AnonymousFunctionNamer', '82');">getName(Node)&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">82</span>82</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="NameAnonymousFunctions.AnonymousFunctionNamer-4">
+<td id="summary-87-5">
+ <span class="sortValue">setFunctionName(String,Node)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#87" title="setFunctionName(String,Node)&#160;:&#160;void" name="sl-87" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions.AnonymousFunctionNamer', '87');">setFunctionName(String,Node)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">87</span>87</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="NameAnonymousFunctions.AnonymousFunctionNamer-5">
+<td id="summary-97-5">
+ <span class="sortValue">getCombinedName(String,String)&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#97" title="getCombinedName(String,String)&#160;:&#160;String" name="sl-97" onclick="closeDialogAndScrollTo('dialog-NameAnonymousFunctions.AnonymousFunctionNamer', '97');">getCombinedName(String,String)&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">97</span>97</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-NameAnonymousFunctions_AnonymousFunctionNamer">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 66 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-9777">
+<td><a name="testA-9777"></a><input type="checkbox" id="cb-9777" value="9777" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_7jl.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-9777">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testPrototypeInitializer</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_7jl.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testPrototypeInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_7jl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10226">
+<td><a name="testA-10226"></a><input type="checkbox" id="cb-10226" value="10226" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_7w2.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-10226">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testMultiplePrototypeInitializer</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_7w2.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testMultiplePrototypeInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=78#src-78" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_7w2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1874">
+<td><a name="testA-1874"></a><input type="checkbox" id="cb-1874" value="1874" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_1g2.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-1874">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testMultiplePrototypeInitializer</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_1g2.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testMultiplePrototypeInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=78#src-78" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_1g2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13098">
+<td><a name="testA-13098"></a><input type="checkbox" id="cb-13098" value="13098" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_a3u.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-13098">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testMultiplePrototypeInitializer</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_a3u.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testMultiplePrototypeInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=78#src-78" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testMultiplePrototypeInitializer_a3u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15963">
+<td><a name="testA-15963"></a><input type="checkbox" id="cb-15963" value="15963" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_cbf.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-15963">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testPrototypeInitializer</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_cbf.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testPrototypeInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_cbf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5981">
+<td><a name="testA-5981"></a><input type="checkbox" id="cb-5981" value="5981" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_4m5.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-5981">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testPrototypeInitializer</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_4m5.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testPrototypeInitializer</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testPrototypeInitializer_4m5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13895">
+<td><a name="testA-13895"></a><input type="checkbox" id="cb-13895" value="13895" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_apz.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-13895">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testRecursiveObjectLiteral</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_apz.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testRecursiveObjectLiteral</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_apz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13959">
+<td><a name="testA-13959"></a><input type="checkbox" id="cb-13959" value="13959" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_arr.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-13959">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testRecursiveObjectLiteral</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_arr.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testRecursiveObjectLiteral</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_arr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9966">
+<td><a name="testA-9966"></a><input type="checkbox" id="cb-9966" value="9966" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_7ou.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-9966">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testRecursiveObjectLiteral</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_7ou.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testRecursiveObjectLiteral</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testRecursiveObjectLiteral_7ou.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-4323">
+<td><a name="testA-4323"></a><input type="checkbox" id="cb-4323" value="4323" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_3c3.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-4323">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testGetElemWithDashes</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_3c3.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testGetElemWithDashes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=111#src-111" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_3c3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-993">
+<td><a name="testA-993"></a><input type="checkbox" id="cb-993" value="993" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_rl.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-993">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testRemoveUnusedVars2</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_rl.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testRemoveUnusedVars2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1020#src-1020" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_rl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-761">
+<td><a name="testA-761"></a><input type="checkbox" id="cb-761" value="761" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_l5.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-761">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctions</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_l5.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1113#src-1113" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_l5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14313">
+<td><a name="testA-14313"></a><input type="checkbox" id="cb-14313" value="14313" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_b1l.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-14313">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype2</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_b1l.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=51#src-51" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_b1l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7264">
+<td><a name="testA-7264"></a><input type="checkbox" id="cb-7264" value="7264" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_5ls.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-7264">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToProperty</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_5ls.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToProperty</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=40#src-40" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_5ls.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15589">
+<td><a name="testA-15589"></a><input type="checkbox" id="cb-15589" value="15589" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_c11.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-15589">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfCallReturnValue</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_c11.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfCallReturnValue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_c11.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-16194">
+<td><a name="testA-16194"></a><input type="checkbox" id="cb-16194" value="16194" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_chu.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-16194">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctionsWithVarRemoval</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_chu.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctionsWithVarRemoval</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1127#src-1127" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_chu.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7208">
+<td><a name="testA-7208"></a><input type="checkbox" id="cb-7208" value="7208" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_5k8.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-7208">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testRemoveUnusedVars2</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_5k8.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testRemoveUnusedVars2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1020#src-1020" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_5k8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5841">
+<td><a name="testA-5841"></a><input type="checkbox" id="cb-5841" value="5841" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_4i9.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-5841">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfCallReturnValue</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_4i9.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfCallReturnValue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_4i9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1509">
+<td><a name="testA-1509"></a><input type="checkbox" id="cb-1509" value="1509" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_15x.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-1509">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testGetElemWithDashes</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_15x.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testGetElemWithDashes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=111#src-111" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_15x.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-518">
+<td><a name="testA-518"></a><input type="checkbox" id="cb-518" value="518" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_ee.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-518">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_ee.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_ee.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-781">
+<td><a name="testA-781"></a><input type="checkbox" id="cb-781" value="781" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_lp.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-781">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfArrayElement</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_lp.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfArrayElement</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_lp.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5298">
+<td><a name="testA-5298"></a><input type="checkbox" id="cb-5298" value="5298" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_436.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-5298">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype2</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_436.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=51#src-51" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_436.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10273">
+<td><a name="testA-10273"></a><input type="checkbox" id="cb-10273" value="10273" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_7xd.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-10273">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfCallReturnValue</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_7xd.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfCallReturnValue</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfCallReturnValue_7xd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7170">
+<td><a name="testA-7170"></a><input type="checkbox" id="cb-7170" value="7170" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_5j6.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-7170">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfArrayElement</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_5j6.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfArrayElement</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_5j6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-4224">
+<td><a name="testA-4224"></a><input type="checkbox" id="cb-4224" value="4224" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_39c.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-4224">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype4</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_39c.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=66#src-66" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_39c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-16401">
+<td><a name="testA-16401"></a><input type="checkbox" id="cb-16401" value="16401" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_cnl.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-16401">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToProperty</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_cnl.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToProperty</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=40#src-40" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_cnl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-292">
+<td><a name="testA-292"></a><input type="checkbox" id="cb-292" value="292" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_84.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-292">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_84.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_84.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18406">
+<td><a name="testA-18406"></a><input type="checkbox" id="cb-18406" value="18406" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_e7a.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-18406">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctions</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_e7a.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1113#src-1113" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_e7a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1512">
+<td><a name="testA-1512"></a><input type="checkbox" id="cb-1512" value="1512" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_160.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-1512">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype3</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_160.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=60#src-60" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_160.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18478">
+<td><a name="testA-18478"></a><input type="checkbox" id="cb-18478" value="18478" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_e9a.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-18478">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testSimpleVarAssignment</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_e9a.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testSimpleVarAssignment</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=35#src-35" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_e9a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3755">
+<td><a name="testA-3755"></a><input type="checkbox" id="cb-3755" value="3755" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_2wb.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-3755">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype4</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_2wb.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=66#src-66" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_2wb.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10685">
+<td><a name="testA-10685"></a><input type="checkbox" id="cb-10685" value="10685" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_88t.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-10685">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctions</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_88t.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1113#src-1113" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctions_88t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3557">
+<td><a name="testA-3557"></a><input type="checkbox" id="cb-3557" value="3557" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_2qt.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-3557">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testSimpleVarAssignment</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_2qt.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testSimpleVarAssignment</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=35#src-35" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_2qt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11458">
+<td><a name="testA-11458"></a><input type="checkbox" id="cb-11458" value="11458" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_8ua.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-11458">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctionsWithVarRemoval</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_8ua.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctionsWithVarRemoval</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1127#src-1127" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_8ua.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5443">
+<td><a name="testA-5443"></a><input type="checkbox" id="cb-5443" value="5443" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_477.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-5443">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testWhatCausedIeToFail</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_477.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testWhatCausedIeToFail</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=116#src-116" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_477.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2915">
+<td><a name="testA-2915"></a><input type="checkbox" id="cb-2915" value="2915" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_28z.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-2915">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype4</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_28z.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=66#src-66" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype4_28z.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12196">
+<td><a name="testA-12196"></a><input type="checkbox" id="cb-12196" value="12196" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_9es.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-12196">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_9es.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype_9es.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10389">
+<td><a name="testA-10389"></a><input type="checkbox" id="cb-10389" value="10389" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_80l.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-10389">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testRemoveUnusedVars2</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_80l.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testRemoveUnusedVars2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1020#src-1020" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testRemoveUnusedVars2_80l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18954">
+<td><a name="testA-18954"></a><input type="checkbox" id="cb-18954" value="18954" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_emi.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-18954">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfArrayElement</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_emi.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPropertyOfArrayElement</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPropertyOfArrayElement_emi.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10167">
+<td><a name="testA-10167"></a><input type="checkbox" id="cb-10167" value="10167" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_7uf.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-10167">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype3</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_7uf.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=60#src-60" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_7uf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-19259">
+<td><a name="testA-19259"></a><input type="checkbox" id="cb-19259" value="19259" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_euz.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-19259">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype2</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_euz.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=51#src-51" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype2_euz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7725">
+<td><a name="testA-7725"></a><input type="checkbox" id="cb-7725" value="7725" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_5yl.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-7725">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testWhatCausedIeToFail</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_5yl.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testWhatCausedIeToFail</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=116#src-116" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_5yl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12705">
+<td><a name="testA-12705"></a><input type="checkbox" id="cb-12705" value="12705" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_9sx.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-12705">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testWhatCausedIeToFail</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_9sx.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testWhatCausedIeToFail</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=116#src-116" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testWhatCausedIeToFail_9sx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1087">
+<td><a name="testA-1087"></a><input type="checkbox" id="cb-1087" value="1087" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_u7.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-1087">  <span class="sortValue">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctionsWithVarRemoval</span><a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_u7.html" title="View Test Summary Page">com.google.javascript.jscomp.IntegrationTest.testNameAnonymousFunctionsWithVarRemoval</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/IntegrationTest.html?line=1127#src-1127" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/IntegrationTest_testNameAnonymousFunctionsWithVarRemoval_u7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7738">
+<td><a name="testA-7738"></a><input type="checkbox" id="cb-7738" value="7738" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_5yy.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-7738">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testSimpleVarAssignment</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_5yy.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testSimpleVarAssignment</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=35#src-35" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testSimpleVarAssignment_5yy.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11638">
+<td><a name="testA-11638"></a><input type="checkbox" id="cb-11638" value="11638" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_8za.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-11638">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToProperty</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_8za.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToProperty</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=40#src-40" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToProperty_8za.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3684">
+<td><a name="testA-3684"></a><input type="checkbox" id="cb-3684" value="3684" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_2uc.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-3684">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype3</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_2uc.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToPrototype3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=60#src-60" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToPrototype3_2uc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11182">
+<td><a name="testA-11182"></a><input type="checkbox" id="cb-11182" value="11182" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_8mm.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-11182">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToGetElem</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_8mm.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToGetElem</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=106#src-106" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_8mm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12767">
+<td><a name="testA-12767"></a><input type="checkbox" id="cb-12767" value="12767" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_9un.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-12767">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToGetElem</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_9un.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToGetElem</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=106#src-106" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_9un.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2115">
+<td><a name="testA-2115"></a><input type="checkbox" id="cb-2115" value="2115" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_1mr.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-2115">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToGetElem</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_1mr.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testAssignmentToGetElem</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=106#src-106" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testAssignmentToGetElem_1mr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12849">
+<td><a name="testA-12849"></a><input type="checkbox" id="cb-12849" value="12849" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_9wx.html';">
+<span class="sortValue">0.9047619</span>
+<div>
+<div title="90.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:90.5%"></div></div></div></td>
+<td id="tc-12849">  <span class="sortValue">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testGetElemWithDashes</span><a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_9wx.html" title="View Test Summary Page">com.google.javascript.jscomp.NameAnonymousFunctionsTest.testGetElemWithDashes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest.html?line=111#src-111" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctionsTest_testGetElemWithDashes_9wx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18043">
+<td><a name="testA-18043"></a><input type="checkbox" id="cb-18043" value="18043" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_dx7.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-18043">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag1</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_dx7.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=507#src-507" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_dx7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1958">
+<td><a name="testA-1958"></a><input type="checkbox" id="cb-1958" value="1958" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_1ie.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-1958">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag1</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_1ie.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=507#src-507" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_1ie.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8068">
+<td><a name="testA-8068"></a><input type="checkbox" id="cb-8068" value="8068" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_684.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-8068">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testGoogAssertStripping</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_684.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testGoogAssertStripping</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=992#src-992" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_684.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-19474">
+<td><a name="testA-19474"></a><input type="checkbox" id="cb-19474" value="19474" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_f0y.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-19474">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag2</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_f0y.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=514#src-514" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_f0y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14487">
+<td><a name="testA-14487"></a><input type="checkbox" id="cb-14487" value="14487" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_b6f.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-14487">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag4</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_b6f.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=497#src-497" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_b6f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13725">
+<td><a name="testA-13725"></a><input type="checkbox" id="cb-13725" value="13725" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_al9.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-13725">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag1</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_al9.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=507#src-507" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag1_al9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-7775">
+<td><a name="testA-7775"></a><input type="checkbox" id="cb-7775" value="7775" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_5zz.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-7775">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag2</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_5zz.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=480#src-480" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_5zz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1591">
+<td><a name="testA-1591"></a><input type="checkbox" id="cb-1591" value="1591" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_187.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-1591">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testGoogAssertStripping</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_187.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testGoogAssertStripping</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=992#src-992" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_187.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11823">
+<td><a name="testA-11823"></a><input type="checkbox" id="cb-11823" value="11823" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_94f.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-11823">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testGoogAssertStripping</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_94f.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testGoogAssertStripping</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=992#src-992" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testGoogAssertStripping_94f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1327">
+<td><a name="testA-1327"></a><input type="checkbox" id="cb-1327" value="1327" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_10v.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-1327">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag2</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_10v.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=514#src-514" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_10v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17594">
+<td><a name="testA-17594"></a><input type="checkbox" id="cb-17594" value="17594" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_dkq.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-17594">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag2</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_dkq.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=480#src-480" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_dkq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18540">
+<td><a name="testA-18540"></a><input type="checkbox" id="cb-18540" value="18540" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_eb0.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-18540">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag2</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_eb0.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testBooleanFlag2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=514#src-514" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testBooleanFlag2_eb0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11124">
+<td><a name="testA-11124"></a><input type="checkbox" id="cb-11124" value="11124" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_8l0.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-11124">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag4</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_8l0.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=497#src-497" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_8l0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9639">
+<td><a name="testA-9639"></a><input type="checkbox" id="cb-9639" value="9639" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_7fr.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-9639">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag4</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_7fr.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=497#src-497" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag4_7fr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-519">
+<td><a name="testA-519"></a><input type="checkbox" id="cb-519" value="519" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_ef.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-519">  <span class="sortValue">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag2</span><a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_ef.html" title="View Test Summary Page">com.google.javascript.jscomp.CommandLineRunnerTest.testDebugFlag2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest.html?line=480#src-480" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/CommandLineRunnerTest_testDebugFlag2_ef.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright 2004 The Closure Compiler Authors.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="keyword">package</span> com.google.javascript.<a href="../jscomp/pkg-summary.html">jscomp</a>;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> com.google.javascript.<a href="../rhino/pkg-summary.html">rhino</a>.<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a>;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> java.util.logging.*;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment"> * Gives anonymous function names. This makes it way easier to debug because</span></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="comment"> * debuggers and stack traces use the function names. So if you have</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="comment"> * goog.string.htmlEscape = function(str) {</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="comment"> * }</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment"> * It will become</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="comment"> * goog.string.htmlEscape = function $goog$string$htmlEscape$(str) {</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="comment"> * }</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="36" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-36' onclick="toggleInlineStats(this, 'inlinestats-36');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-36" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-36'), 'inlinestats-36');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (6)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 36, 'Tests that hit NameAnonymousFunctions');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-36"><span class="spacer"></span><span id="src-36" class="srcLine"><span class="keyword">class</span> <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctions.html#NameAnonymousFunctions">NameAnonymousFunctions</a> <span class="keyword">implements</span> <a href="../../../../com/google/javascript/jscomp/CompilerPass.html#CompilerPass">CompilerPass</a> {</span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Logger logger = Logger.getLogger(</span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine">      <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctions.html#NameAnonymousFunctions">NameAnonymousFunctions</a>.<span class="keyword">class</span>.getName());</span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">  <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">char</span> DELIMITER = '$';</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine">  <span class="keyword">private</span> <span class="keyword">final</span> <a href="../../../../com/google/javascript/jscomp/AbstractCompiler.html#AbstractCompiler">AbstractCompiler</a> compiler;</span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine"></span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine">  <span class="keyword">private</span> <span class="keyword">int</span> namedCount = 0;</span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">  <span class="keyword">private</span> <span class="keyword">int</span> bytesUsed = 0;</span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="47" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-47' onclick="toggleInlineStats(this, 'inlinestats-47');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-47" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-47'), 'inlinestats-47');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l47">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit NameAnonymousFunctions(AbstractCompiler)');" ><span title="Line 47, Col 3: method entered 120 times." class="nolink">&#160;120</span></td>
+<td class=" methodStart  srcCell" id="id-47"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 47,49);" id="img-47" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-47" class="srcLine"><span class="nolink" title="Line 47, Col 3: method entered 120 times.">  <a href="../../../../com/google/javascript/jscomp/NameAnonymousFunctions.html#NameAnonymousFunctions">NameAnonymousFunctions</a>(<a href="../../../../com/google/javascript/jscomp/AbstractCompiler.html#AbstractCompiler">AbstractCompiler</a> compiler) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-47'), 47,49);" id="e47" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 5: statement executed 120 times." class="nolink">&#160;120</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 5: statement executed 120 times.">    <span class="keyword">this</span>.compiler = compiler;</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="51" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-51' onclick="toggleInlineStats(this, 'inlinestats-51');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-51" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-51'), 'inlinestats-51');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l51">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit process(Node,Node)&#160;:&#160;void');" ><span title="Line 51, Col 3: method entered 120 times." class="nolink">&#160;120</span></td>
+<td class=" methodStart  srcCell" id="id-51"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 51,58);" id="img-51" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-51" class="srcLine"><span class="nolink" title="Line 51, Col 3: method entered 120 times.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-51'), 51,58);" id="e51" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine">  <span class="keyword">public</span> <span class="keyword">void</span> process(<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> externs, <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> root) {</span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 53, 'Tests that hit line # 53');" ><span title="Line 53, Col 5: statement executed 120 times." class="nolink">&#160;120</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"><span class="nolink" title="Line 53, Col 5: statement executed 120 times.">    <a href="../../../../com/google/javascript/jscomp/AnonymousFunctionNamingCallback.html#AnonymousFunctionNamingCallback">AnonymousFunctionNamingCallback</a> namingCallback =</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine">        <span class="keyword">new</span> <a href="../../../../com/google/javascript/jscomp/AnonymousFunctionNamingCallback.html#AnonymousFunctionNamingCallback">AnonymousFunctionNamingCallback</a>(<span class="keyword">new</span> AnonymousFunctionNamer());</span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit line # 55');" ><span title="Line 55, Col 5: statement executed 120 times." class="nolink">&#160;120</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 5: statement executed 120 times.">    <a href="../../../../com/google/javascript/jscomp/NodeTraversal.html#NodeTraversal">NodeTraversal</a>.traverse(compiler, root, namingCallback);</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 56, 'Tests that hit line # 56');" ><span title="Line 56, Col 5: statement executed 120 times." class="nolink">&#160;120</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="nolink" title="Line 56, Col 5: statement executed 120 times.">    logger.fine(<span class="string">&quot;Named &quot;</span> + namedCount + <span class="string">&quot; anon functions using &quot;</span> +</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">        bytesUsed + <span class="string">&quot; bytes&quot;</span>);</span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine"></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine"><span class="comment">   * Names anonymous functions. The function names don't have to be globally</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="comment">   * unique or even locally unique. We make them somewhat unique because of a</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="comment">   * bug in IE (and there may be other bugs we haven't found). See unit test for</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="comment">   * more info.</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="66" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-66' onclick="toggleInlineStats(this, 'inlinestats-66');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-66" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-66'), 'inlinestats-66');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (15)</td>
+                <td class="inlineStat">Complexity: 5</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 66, 'Tests that hit NameAnonymousFunctions.AnonymousFunctionNamer');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-66"><span class="spacer"></span><span id="src-66" class="srcLine">  <span class="keyword">private</span> <span class="keyword">class</span> AnonymousFunctionNamer</span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine">      <span class="keyword">implements</span> <a href="../../../../com/google/javascript/jscomp/AnonymousFunctionNamingCallback.html#AnonymousFunctionNamingCallback">AnonymousFunctionNamingCallback</a>.FunctionNamer {</span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine">    <span class="keyword">private</span> <a href="../../../../com/google/javascript/jscomp/NodeNameExtractor.html#NodeNameExtractor">NodeNameExtractor</a> nameExtractor;</span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="70" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-70' onclick="toggleInlineStats(this, 'inlinestats-70');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-70" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-70'), 'inlinestats-70');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l70">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 70, 'Tests that hit AnonymousFunctionNamer()');" ><span title="Line 70, Col 5: method entered 120 times." class="nolink">&#160;120</span></td>
+<td class=" methodStart  srcCell" id="id-70"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 70,72);" id="img-70" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-70" class="srcLine"><span class="nolink" title="Line 70, Col 5: method entered 120 times.">    AnonymousFunctionNamer() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-70'), 70,72);" id="e70" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit line # 71');" ><span title="Line 71, Col 7: statement executed 120 times." class="nolink">&#160;120</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 7: statement executed 120 times.">      <span class="keyword">this</span>.nameExtractor = <span class="keyword">new</span> <a href="../../../../com/google/javascript/jscomp/NodeNameExtractor.html#NodeNameExtractor">NodeNameExtractor</a>(DELIMITER);</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine"><span class="comment">     * Returns a likely not conflicting name to make IE happy. See unit test</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine"><span class="comment">     * for more info.</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="78" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-78' onclick="toggleInlineStats(this, 'inlinestats-78');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-78" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-78'), 'inlinestats-78');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit getLikelyNonConflictingName(String)&#160;:&#160;String');" ><span title="Line 78, Col 5: method entered 63 times." class="nolink">&#160;63</span></td>
+<td class=" methodStart  srcCell" id="id-78"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 78,80);" id="img-78" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 5: method entered 63 times.">    <span class="keyword">private</span> String getLikelyNonConflictingName(String name) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-78'), 78,80);" id="e78" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 79, 'Tests that hit line # 79');" ><span title="Line 79, Col 7: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"><span class="nolink" title="Line 79, Col 7: statement executed 63 times.">      <span class="keyword">return</span> DELIMITER + name + DELIMITER;</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="82" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-82' onclick="toggleInlineStats(this, 'inlinestats-82');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-82" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-82'), 'inlinestats-82');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l82">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 82, 'Tests that hit getName(Node)&#160;:&#160;String');" ><span title="Line 82, Col 5: method entered 99 times." class="nolink">&#160;99</span></td>
+<td class=" methodStart  srcCell" id="id-82"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 82,85);" id="img-82" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-82" class="srcLine"><span class="nolink" title="Line 82, Col 5: method entered 99 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-82'), 82,85);" id="e82" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine">    <span class="keyword">public</span> <span class="keyword">final</span> String getName(<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> node) {</span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 84, 'Tests that hit line # 84');" ><span title="Line 84, Col 7: statement executed 99 times." class="nolink">&#160;99</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine"><span class="nolink" title="Line 84, Col 7: statement executed 99 times.">      <span class="keyword">return</span> nameExtractor.getName(node);</span></span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="87" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-87' onclick="toggleInlineStats(this, 'inlinestats-87');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-87" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-87'), 'inlinestats-87');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (6)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.17</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l87">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 87, 'Tests that hit setFunctionName(String,Node)&#160;:&#160;void');" ><span title="Line 87, Col 5: method entered 63 times." class="nolink">&#160;63</span></td>
+<td class=" methodStart  srcCell" id="id-87"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 87,95);" id="img-87" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-87" class="srcLine"><span class="nolink" title="Line 87, Col 5: method entered 63 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-87'), 87,95);" id="e87" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine">    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> setFunctionName(String name, <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> fnNode) {</span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 89, 'Tests that hit line # 89');" ><span title="Line 89, Col 7: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine"><span class="nolink" title="Line 89, Col 7: statement executed 63 times.">      <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> fnNameNode = fnNode.getFirstChild();</span></span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 90, 'Tests that hit line # 90');" ><span title="Line 90, Col 7: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"><span class="nolink" title="Line 90, Col 7: statement executed 63 times.">      String uniqueName = getLikelyNonConflictingName(name);</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit line # 91');" ><span title="Line 91, Col 7: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 7: statement executed 63 times.">      fnNameNode.setString(uniqueName);</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 92, 'Tests that hit line # 92');" ><span title="Line 92, Col 7: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="nolink" title="Line 92, Col 7: statement executed 63 times.">      compiler.reportCodeChange();</span></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 93, 'Tests that hit line # 93');" ><span title="Line 93, Col 7: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine"><span class="nolink" title="Line 93, Col 7: statement executed 63 times.">      namedCount++;</span></span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 7: statement executed 63 times." class="nolink">&#160;63</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 7: statement executed 63 times.">      bytesUsed += uniqueName.length();</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="97" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-97' onclick="toggleInlineStats(this, 'inlinestats-97');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-97" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-97'), 'inlinestats-97');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 97, 'Tests that hit getCombinedName(String,String)&#160;:&#160;String');" ><span title="Line 97, Col 5: method entered 30 times." class="nolink">&#160;30</span></td>
+<td class=" methodStart  srcCell" id="id-97"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 97,100);" id="img-97" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 5: method entered 30 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-97'), 97,100);" id="e97" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine">    <span class="keyword">public</span> <span class="keyword">final</span> String getCombinedName(String lhs, String rhs) {</span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 99, 'Tests that hit line # 99');" ><span title="Line 99, Col 7: statement executed 30 times." class="nolink">&#160;30</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"><span class="nolink" title="Line 99, Col 7: statement executed 30 times.">      <span class="keyword">return</span> lhs + DELIMITER + rhs;</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="NameAnonymousFunctions.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

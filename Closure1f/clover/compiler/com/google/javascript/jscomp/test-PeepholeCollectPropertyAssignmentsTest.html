@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class PeepholeCollectPropertyAssignmentsTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="PeepholeCollectPropertyAssignmentsTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>PeepholeCollectPropertyAssignmentsTest</td>
+        <td class="testPasses"><span class="sortValue">68</span>68</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.545</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup1</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup1_204.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765799</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationWithAHole1_bn6.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765734</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex1</span><a href="PeepholeCollectPropertyAssignmentsTest_testFractionalArrayIndex1_40z.html">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588797</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationWithAHole1_bkg.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588744</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage1</span><a href="PeepholeCollectPropertyAssignmentsTest_testEarlyUsage1_cl7.html">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588592</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue1</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectReassignedInValue1_4d.html">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765792</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup4</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup4_e9p.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765810</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup5</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup5_c79.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588690</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue1</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectReassignedInValue1_a0j.html">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588763</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex2</span><a href="PeepholeCollectPropertyAssignmentsTest_testNegativeArrayIndex2_55q.html">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588758</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup3</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup3_7b8.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588674</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInSubsequentVar2_6cm.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588720</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimization1_u5.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588349</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.228</span>0.228</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testMultipleNames1</span><a href="PeepholeCollectPropertyAssignmentsTest_testMultipleNames1_ayr.html">PeepholeCollectPropertyAssignmentsTest.testMultipleNames1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588702</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimization2_c5c.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588577</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInValue1_4gm.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765764</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testCompoundAssignment</span><a href="PeepholeCollectPropertyAssignmentsTest_testCompoundAssignment_3k2.html">PeepholeCollectPropertyAssignmentsTest.testCompoundAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588726</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex2</span><a href="PeepholeCollectPropertyAssignmentsTest_testFractionalArrayIndex2_6xb.html">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765724</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue2</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectReassignedInValue2_91m.html">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588768</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testCompoundAssignment</span><a href="PeepholeCollectPropertyAssignmentsTest_testCompoundAssignment_79p.html">PeepholeCollectPropertyAssignmentsTest.testCompoundAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765710</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayTooSparseOptimization1_za.html">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588611</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testForwardReference1</span><a href="PeepholeCollectPropertyAssignmentsTest_testForwardReference1_9il.html">PeepholeCollectPropertyAssignmentsTest.testForwardReference1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588733</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup2</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup2_6ik.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588666</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex1</span><a href="PeepholeCollectPropertyAssignmentsTest_testNegativeArrayIndex1_1z5.html">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765714</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization1</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectOptimization1_ara.html">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588627</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationOfPartiallyBuiltArray2_3dw.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765731</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testMultipleNames2</span><a href="PeepholeCollectPropertyAssignmentsTest_testMultipleNames2_91h.html">PeepholeCollectPropertyAssignmentsTest.testMultipleNames2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588708</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInValue1_agh.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588643</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex2</span><a href="PeepholeCollectPropertyAssignmentsTest_testFractionalArrayIndex2_5zx.html">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588802</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization2</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectOptimization2_ee4.html">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765788</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayTooSparseOptimization1_23d.html">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765740</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup1</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup1_b4m.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588658</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationOfPartiallyBuiltArray2_805.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588812</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testForwardReference2</span><a href="PeepholeCollectPropertyAssignmentsTest_testForwardReference2_1p3.html">PeepholeCollectPropertyAssignmentsTest.testForwardReference2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765781</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage2</span><a href="PeepholeCollectPropertyAssignmentsTest_testEarlyUsage2_3xs.html">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588602</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationOfPartiallyBuiltArray1_c2y.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588807</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimization2_75w.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765703</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup2</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup2_65b.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765803</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup4</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup4_6cg.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588682</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInValue2_as3.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588650</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInSubsequentVar1_353.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765771</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex1</span><a href="PeepholeCollectPropertyAssignmentsTest_testFractionalArrayIndex1_ge.html">PeepholeCollectPropertyAssignmentsTest.testFractionalArrayIndex1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765721</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayTooSparseOptimization2_3uq.html">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588617</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInSubsequentVar1_c1i.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588714</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization2</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectOptimization2_21g.html">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588636</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup3</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup3_aeg.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765806</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testForwardReference2</span><a href="PeepholeCollectPropertyAssignmentsTest_testForwardReference2_3y7.html">PeepholeCollectPropertyAssignmentsTest.testForwardReference2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588739</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage1</span><a href="PeepholeCollectPropertyAssignmentsTest_testEarlyUsage1_70o.html">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765696</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup5</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectFunctionRollup5_bot.html">PeepholeCollectPropertyAssignmentsTest.testObjectFunctionRollup5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765814</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInSubsequentVar2_7d6.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInSubsequentVar2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765774</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayTooSparseOptimization2_a1s.html">PeepholeCollectPropertyAssignmentsTest.testArrayTooSparseOptimization2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765744</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization1</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectOptimization1_5eu.html">PeepholeCollectPropertyAssignmentsTest.testObjectOptimization1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765785</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue2</span><a href="PeepholeCollectPropertyAssignmentsTest_testObjectReassignedInValue2_6yx.html">PeepholeCollectPropertyAssignmentsTest.testObjectReassignedInValue2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765795</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testForwardReference1</span><a href="PeepholeCollectPropertyAssignmentsTest_testForwardReference1_3r8.html">PeepholeCollectPropertyAssignmentsTest.testForwardReference1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765778</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayReassignedInValue2_dd3.html">PeepholeCollectPropertyAssignmentsTest.testArrayReassignedInValue2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765767</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOutOfOrder</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOutOfOrder_jr.html">PeepholeCollectPropertyAssignmentsTest.testArrayOutOfOrder</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588774</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization3</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimization3_2nd.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765706</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationOfPartiallyBuiltArray1_c89.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationOfPartiallyBuiltArray1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765727</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization1</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimization1_bhb.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765699</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testMultipleNames1</span><a href="PeepholeCollectPropertyAssignmentsTest_testMultipleNames1_31w.html">PeepholeCollectPropertyAssignmentsTest.testMultipleNames1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765757</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationWithAHole2_9dp.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588748</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOutOfOrder</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOutOfOrder_6dm.html">PeepholeCollectPropertyAssignmentsTest.testArrayOutOfOrder</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765747</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex2</span><a href="PeepholeCollectPropertyAssignmentsTest_testNegativeArrayIndex2_9i2.html">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765717</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex1</span><a href="PeepholeCollectPropertyAssignmentsTest_testNegativeArrayIndex1_9kk.html">PeepholeCollectPropertyAssignmentsTest.testNegativeArrayIndex1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588753</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage2</span><a href="PeepholeCollectPropertyAssignmentsTest_testEarlyUsage2_84m.html">PeepholeCollectPropertyAssignmentsTest.testEarlyUsage2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765692</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole2</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimizationWithAHole2_bto.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimizationWithAHole2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765737</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization3</span><a href="PeepholeCollectPropertyAssignmentsTest_testArrayOptimization3_34d.html">PeepholeCollectPropertyAssignmentsTest.testArrayOptimization3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697588584</span>2 Jan 15:13:08</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeCollectPropertyAssignmentsTest.testMultipleNames2</span><a href="PeepholeCollectPropertyAssignmentsTest_testMultipleNames2_d8i.html">PeepholeCollectPropertyAssignmentsTest.testMultipleNames2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697765760</span>2 Jan 15:16:05</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

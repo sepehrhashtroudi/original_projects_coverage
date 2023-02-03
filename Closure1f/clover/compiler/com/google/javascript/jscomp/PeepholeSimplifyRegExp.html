@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body  onload="onLoad('compiler: com.google.javascript.jscomp.PeepholeSimplifyRegExp.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li> 
+        <li><a href="pkg-summary.html">        Package com.google.javascript.jscomp</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File PeepholeSimplifyRegExp.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../img/srcFileCovDistChart10.png" alt="../../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="203 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,43,98,66" title="83 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,58,89,66" title="29 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,63,80,66" title="13 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,64,71,65" title="7 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="6 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,65,54,66" title="5 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,64,45,65" title="7 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="2 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="3 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,62,18,66" title="17 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">16</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">78</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.79</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">16</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">78</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.79</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="PeepholeSimplifyRegExp">
+        <span><a href="#27" title="PeepholeSimplifyRegExp" onclick="closeDialogAndScrollTo('dialog-PeepholeSimplifyRegExp', '27');">PeepholeSimplifyRegExp</a></span>
+</td>
+<td>27<a name="sl-27"></a></td>
+    <td class="">19</td>
+    <td class="">15</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-PeepholeSimplifyRegExp" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-PeepholeSimplifyRegExp" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class PeepholeSimplifyRegExp</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-PeepholeSimplifyRegExp-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-PeepholeSimplifyRegExp-methods-body', 'dialog-PeepholeSimplifyRegExp-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                            
+                    <thead>
+                                                 <tr> <th id="PeepholeSimplifyRegExp">
+    Class<br/>    <span><a href="#27" title="PeepholeSimplifyRegExp" onclick="closeDialogAndScrollTo('dialog-PeepholeSimplifyRegExp', '27');">PeepholeSimplifyRegExp</a></span>
+</th>
+<th>Line #<br/>27<a name="sl-27"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>19</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>15</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-PeepholeSimplifyRegExp-methods-body">
+                                                                                                            <tr id="PeepholeSimplifyRegExp-1">
+<td id="summary-29-3">
+ <span class="sortValue">optimizeSubtree(Node)&#160;:&#160;Node</span>
+&#160;&#160;<a href="?line=29#29" title="optimizeSubtree(Node)&#160;:&#160;Node" name="sl-29" onclick="closeDialogAndScrollTo('dialog-PeepholeSimplifyRegExp', '29');">optimizeSubtree(Node)&#160;:&#160;Node</a>
+</td>
+<td align="right"><span class="sortValue">29</span>29</td>
+<td class="" align="right"><span class="sortValue">19.0</span>19</td>
+<td class="" align="right"><span class="sortValue">15.0</span>15</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-PeepholeSimplifyRegExp">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 30 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-10295">
+<td><a name="testA-10295"></a><input type="checkbox" id="cb-10295" value="10295" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetOptimizations_7xz.html';">
+<span class="sortValue">0.9444444</span>
+<div>
+<div title="94.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:94.4%"></div></div></div></td>
+<td id="tc-10295">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetOptimizations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetOptimizations_7xz.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetOptimizations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=32#src-32" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetOptimizations_7xz.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3569">
+<td><a name="testA-3569"></a><input type="checkbox" id="cb-3569" value="3569" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetOptimizations_2r5.html';">
+<span class="sortValue">0.9444444</span>
+<div>
+<div title="94.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:94.4%"></div></div></div></td>
+<td id="tc-3569">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetOptimizations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetOptimizations_2r5.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetOptimizations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=32#src-32" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetOptimizations_2r5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14830">
+<td><a name="testA-14830"></a><input type="checkbox" id="cb-14830" value="14830" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAnchors_bfy.html';">
+<span class="sortValue">0.9166667</span>
+<div>
+<div title="91.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:91.7%"></div></div></div></td>
+<td id="tc-14830">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAnchors</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAnchors_bfy.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAnchors</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=144#src-144" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAnchors_bfy.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1920">
+<td><a name="testA-1920"></a><input type="checkbox" id="cb-1920" value="1920" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAnchors_1hc.html';">
+<span class="sortValue">0.9166667</span>
+<div>
+<div title="91.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:91.7%"></div></div></div></td>
+<td id="tc-1920">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAnchors</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAnchors_1hc.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAnchors</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=144#src-144" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAnchors_1hc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5803">
+<td><a name="testA-5803"></a><input type="checkbox" id="cb-5803" value="5803" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testSingleCharAlterations_4h7.html';">
+<span class="sortValue">0.8611111</span>
+<div>
+<div title="86.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:86.1%"></div></div></div></td>
+<td id="tc-5803">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testSingleCharAlterations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testSingleCharAlterations_4h7.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testSingleCharAlterations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=116#src-116" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testSingleCharAlterations_4h7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17477">
+<td><a name="testA-17477"></a><input type="checkbox" id="cb-17477" value="17477" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreRegularExpression_dhh.html';">
+<span class="sortValue">0.8611111</span>
+<div>
+<div title="86.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:86.1%"></div></div></div></td>
+<td id="tc-17477">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreRegularExpression</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreRegularExpression_dhh.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreRegularExpression</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=244#src-244" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreRegularExpression_dhh.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17225">
+<td><a name="testA-17225"></a><input type="checkbox" id="cb-17225" value="17225" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testSingleCharAlterations_dah.html';">
+<span class="sortValue">0.8611111</span>
+<div>
+<div title="86.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:86.1%"></div></div></div></td>
+<td id="tc-17225">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testSingleCharAlterations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testSingleCharAlterations_dah.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testSingleCharAlterations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=116#src-116" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testSingleCharAlterations_dah.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17772">
+<td><a name="testA-17772"></a><input type="checkbox" id="cb-17772" value="17772" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreRegularExpression_dpo.html';">
+<span class="sortValue">0.8611111</span>
+<div>
+<div title="86.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:86.1%"></div></div></div></td>
+<td id="tc-17772">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreRegularExpression</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreRegularExpression_dpo.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreRegularExpression</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=244#src-244" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreRegularExpression_dpo.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13464">
+<td><a name="testA-13464"></a><input type="checkbox" id="cb-13464" value="13464" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetFixup_ae0.html';">
+<span class="sortValue">0.8333333</span>
+<div>
+<div title="83.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:83.3%"></div></div></div></td>
+<td id="tc-13464">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetFixup</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetFixup_ae0.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetFixup</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=69#src-69" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetFixup_ae0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17426">
+<td><a name="testA-17426"></a><input type="checkbox" id="cb-17426" value="17426" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testEscapeSequencesAndNonLatinChars_dg2.html';">
+<span class="sortValue">0.8333333</span>
+<div>
+<div title="83.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:83.3%"></div></div></div></td>
+<td id="tc-17426">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testEscapeSequencesAndNonLatinChars</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testEscapeSequencesAndNonLatinChars_dg2.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testEscapeSequencesAndNonLatinChars</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=136#src-136" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testEscapeSequencesAndNonLatinChars_dg2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9378">
+<td><a name="testA-9378"></a><input type="checkbox" id="cb-9378" value="9378" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testWaysOfMatchingEmptyString_78i.html';">
+<span class="sortValue">0.8333333</span>
+<div>
+<div title="83.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:83.3%"></div></div></div></td>
+<td id="tc-9378">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testWaysOfMatchingEmptyString</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testWaysOfMatchingEmptyString_78i.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testWaysOfMatchingEmptyString</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=23#src-23" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testWaysOfMatchingEmptyString_78i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1080">
+<td><a name="testA-1080"></a><input type="checkbox" id="cb-1080" value="1080" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetFixup_u0.html';">
+<span class="sortValue">0.8333333</span>
+<div>
+<div title="83.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:83.3%"></div></div></div></td>
+<td id="tc-1080">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetFixup</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetFixup_u0.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testCharsetFixup</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=69#src-69" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testCharsetFixup_u0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-6727">
+<td><a name="testA-6727"></a><input type="checkbox" id="cb-6727" value="6727" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testWaysOfMatchingEmptyString_56v.html';">
+<span class="sortValue">0.8333333</span>
+<div>
+<div title="83.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:83.3%"></div></div></div></td>
+<td id="tc-6727">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testWaysOfMatchingEmptyString</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testWaysOfMatchingEmptyString_56v.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testWaysOfMatchingEmptyString</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=23#src-23" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testWaysOfMatchingEmptyString_56v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3384">
+<td><a name="testA-3384"></a><input type="checkbox" id="cb-3384" value="3384" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testEscapeSequencesAndNonLatinChars_2m0.html';">
+<span class="sortValue">0.8333333</span>
+<div>
+<div title="83.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:83.3%"></div></div></div></td>
+<td id="tc-3384">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testEscapeSequencesAndNonLatinChars</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testEscapeSequencesAndNonLatinChars_2m0.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testEscapeSequencesAndNonLatinChars</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=136#src-136" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testEscapeSequencesAndNonLatinChars_2m0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13231">
+<td><a name="testA-13231"></a><input type="checkbox" id="cb-13231" value="13231" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAlterations_a7j.html';">
+<span class="sortValue">0.7777778</span>
+<div>
+<div title="77.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:77.8%"></div></div></div></td>
+<td id="tc-13231">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAlterations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAlterations_a7j.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAlterations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=125#src-125" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAlterations_a7j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3365">
+<td><a name="testA-3365"></a><input type="checkbox" id="cb-3365" value="3365" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreCharsets_2lh.html';">
+<span class="sortValue">0.7777778</span>
+<div>
+<div title="77.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:77.8%"></div></div></div></td>
+<td id="tc-3365">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreCharsets</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreCharsets_2lh.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreCharsets</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=204#src-204" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreCharsets_2lh.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1894">
+<td><a name="testA-1894"></a><input type="checkbox" id="cb-1894" value="1894" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAlterations_1gm.html';">
+<span class="sortValue">0.7777778</span>
+<div>
+<div title="77.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:77.8%"></div></div></div></td>
+<td id="tc-1894">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAlterations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAlterations_1gm.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testAlterations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=125#src-125" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testAlterations_1gm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-6593">
+<td><a name="testA-6593"></a><input type="checkbox" id="cb-6593" value="6593" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreCharsets_535.html';">
+<span class="sortValue">0.7777778</span>
+<div>
+<div title="77.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:77.8%"></div></div></div></td>
+<td id="tc-6593">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreCharsets</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreCharsets_535.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMoreCharsets</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=204#src-204" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMoreCharsets_535.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-16781">
+<td><a name="testA-16781"></a><input type="checkbox" id="cb-16781" value="16781" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testBackReferences_cy5.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-16781">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testBackReferences</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testBackReferences_cy5.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testBackReferences</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testBackReferences_cy5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-553">
+<td><a name="testA-553"></a><input type="checkbox" id="cb-553" value="553" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testRepetitions_fd.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-553">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testRepetitions</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testRepetitions_fd.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testRepetitions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=158#src-158" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testRepetitions_fd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11409">
+<td><a name="testA-11409"></a><input type="checkbox" id="cb-11409" value="11409" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testNestedAlterations_8sx.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-11409">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testNestedAlterations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testNestedAlterations_8sx.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testNestedAlterations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=132#src-132" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testNestedAlterations_8sx.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12421">
+<td><a name="testA-12421"></a><input type="checkbox" id="cb-12421" value="12421" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testBackReferences_9l1.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-12421">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testBackReferences</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testBackReferences_9l1.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testBackReferences</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testBackReferences_9l1.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11921">
+<td><a name="testA-11921"></a><input type="checkbox" id="cb-11921" value="11921" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testRepetitions_975.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-11921">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testRepetitions</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testRepetitions_975.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testRepetitions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=158#src-158" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testRepetitions_975.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11067">
+<td><a name="testA-11067"></a><input type="checkbox" id="cb-11067" value="11067" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testNestedAlterations_8jf.html';">
+<span class="sortValue">0.75</span>
+<div>
+<div title="75% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:75%"></div></div></div></td>
+<td id="tc-11067">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testNestedAlterations</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testNestedAlterations_8jf.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testNestedAlterations</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=132#src-132" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testNestedAlterations_8jf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8780">
+<td><a name="testA-8780"></a><input type="checkbox" id="cb-8780" value="8780" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testPrecedence_6rw.html';">
+<span class="sortValue">0.5555556</span>
+<div>
+<div title="55.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.6%"></div></div></div></td>
+<td id="tc-8780">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testPrecedence</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testPrecedence_6rw.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testPrecedence</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=300#src-300" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testPrecedence_6rw.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5512">
+<td><a name="testA-5512"></a><input type="checkbox" id="cb-5512" value="5512" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testGroups_494.html';">
+<span class="sortValue">0.5555556</span>
+<div>
+<div title="55.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.6%"></div></div></div></td>
+<td id="tc-5512">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testGroups</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testGroups_494.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testGroups</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=87#src-87" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testGroups_494.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9159">
+<td><a name="testA-9159"></a><input type="checkbox" id="cb-9159" value="9159" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testPrecedence_72f.html';">
+<span class="sortValue">0.5555556</span>
+<div>
+<div title="55.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.6%"></div></div></div></td>
+<td id="tc-9159">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testPrecedence</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testPrecedence_72f.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testPrecedence</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=300#src-300" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testPrecedence_72f.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-15991">
+<td><a name="testA-15991"></a><input type="checkbox" id="cb-15991" value="15991" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testGroups_cc7.html';">
+<span class="sortValue">0.5555556</span>
+<div>
+<div title="55.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:55.6%"></div></div></div></td>
+<td id="tc-15991">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testGroups</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testGroups_cc7.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testGroups</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=87#src-87" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testGroups_cc7.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9169">
+<td><a name="testA-9169"></a><input type="checkbox" id="cb-9169" value="9169" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMalformedRegularExpressions_72p.html';">
+<span class="sortValue">0.33333334</span>
+<div>
+<div title="33.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:33.3%"></div></div></div></td>
+<td id="tc-9169">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMalformedRegularExpressions</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMalformedRegularExpressions_72p.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMalformedRegularExpressions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=309#src-309" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMalformedRegularExpressions_72p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14473">
+<td><a name="testA-14473"></a><input type="checkbox" id="cb-14473" value="14473" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMalformedRegularExpressions_b61.html';">
+<span class="sortValue">0.33333334</span>
+<div>
+<div title="33.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:33.3%"></div></div></div></td>
+<td id="tc-14473">  <span class="sortValue">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMalformedRegularExpressions</span><a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMalformedRegularExpressions_b61.html" title="View Test Summary Page">com.google.javascript.jscomp.PeepholeSimplifyRegExpTest.testMalformedRegularExpressions</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest.html?line=309#src-309" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExpTest_testMalformedRegularExpressions_b61.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright 2011 The Closure Compiler Authors.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="keyword">package</span> com.google.javascript.<a href="../jscomp/pkg-summary.html">jscomp</a>;</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> com.google.javascript.<a href="../jscomp/pkg-summary.html">jscomp</a>.<a href="../jscomp/regex/pkg-summary.html">regex</a>.<a href="../../../../com/google/javascript/jscomp/regex/RegExpTree.html#RegExpTree">RegExpTree</a>;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="keyword">import</span> com.google.javascript.<a href="../rhino/pkg-summary.html">rhino</a>.<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a>;</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="comment"> * Simplifies regular expression patterns and flags.</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Mike Samuel &lt;mikesamuel</span><span class="comment">@gmail.com&gt;</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="27" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-27' onclick="toggleInlineStats(this, 'inlinestats-27');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-27" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-27'), 'inlinestats-27');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (36)</td>
+                <td class="inlineStat">Complexity: 15</td>
+                <td class="inlineStat">Complexity Density: 0.79</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 27, 'Tests that hit PeepholeSimplifyRegExp');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-27"><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">class</span> <a href="../../../../com/google/javascript/jscomp/PeepholeSimplifyRegExp.html#PeepholeSimplifyRegExp">PeepholeSimplifyRegExp</a> <span class="keyword">extends</span> <a href="../../../../com/google/javascript/jscomp/AbstractPeepholeOptimization.html#AbstractPeepholeOptimization">AbstractPeepholeOptimization</a> {</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="29" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-29' onclick="toggleInlineStats(this, 'inlinestats-29');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-29" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-29'), 'inlinestats-29');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (35)</td>
+                <td class="inlineStat">Complexity: 15</td>
+                <td class="inlineStat">Complexity Density: 0.79</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l29">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 29, 'Tests that hit optimizeSubtree(Node)&#160;:&#160;Node');" ><span title="Line 29, Col 3: method entered 4,482 times." class="nolink">&#160;4482</span></td>
+<td class=" methodStart  srcCell" id="id-29"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 29,77);" id="img-29" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-29" class="srcLine"><span class="nolink" title="Line 29, Col 3: method entered 4,482 times.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-29'), 29,77);" id="e29" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine">  <a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> optimizeSubtree(<a href="../../../../com/google/javascript/rhino/Node.html#Node">Node</a> subtree) {</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 31, 'Tests that hit line # 31');" ><span title="Line 31, Col 8: true branch executed 864 times, false branch executed 3,618 times." class="nolink">&#160;4482</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="nolink" title="Line 31, Col 8: true branch executed 864 times, false branch executed 3,618 times.">    <span class="keyword">if</span> (subtree.isRegExp()) {</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine">      <span class="comment">// Split regexp into pattern and flags.</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 33, 'Tests that hit line # 33');" ><span title="Line 33, Col 7: statement executed 864 times." class="nolink">&#160;864</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="nolink" title="Line 33, Col 7: statement executed 864 times.">      String pattern = subtree.getFirstChild().getString();</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 34, 'Tests that hit line # 34');" ><span title="Line 34, Col 21: true branch executed 282 times, false branch executed 582 times." class="nolink">&#160;864</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="nolink" title="Line 34, Col 21: true branch executed 282 times, false branch executed 582 times.">      String flags = subtree.getChildCount() == 2</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">          ? subtree.getLastChild().getString() : <span class="string">&quot;&quot;</span>;</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine">      <span class="comment">// Parse to an AST and optimize.</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 37, 'Tests that hit line # 37');" ><span title="Line 37, Col 7: statement executed 864 times." class="nolink">&#160;864</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="nolink" title="Line 37, Col 7: statement executed 864 times.">      <a href="../../../../com/google/javascript/jscomp/regex/RegExpTree.html#RegExpTree">RegExpTree</a> regexTree;</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 38, 'Tests that hit line # 38');" ><span title="Line 38, Col 7: statement executed 864 times." class="nolink">&#160;864</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="nolink" title="Line 38, Col 7: statement executed 864 times.">      <span class="keyword">try</span> {</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 39, 'Tests that hit line # 39');" ><span title="Line 39, Col 9: statement executed 864 times." class="nolink">&#160;864</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="nolink" title="Line 39, Col 9: statement executed 864 times.">        regexTree = <a href="../../../../com/google/javascript/jscomp/regex/RegExpTree.html#RegExpTree">RegExpTree</a>.parseRegExp(pattern, flags);</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">      } <span class="keyword">catch</span> (IllegalArgumentException ex) {</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine">        <span class="comment">// Warnings are propagated in the CheckRegExp pass.</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 42, 'Tests that hit line # 42');" ><span title="Line 42, Col 9: statement executed 20 times." class="nolink">&#160;20</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="nolink" title="Line 42, Col 9: statement executed 20 times.">        <span class="keyword">return</span> subtree;</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 44, 'Tests that hit line # 44');" ><span title="Line 44, Col 7: statement executed 844 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"><span class="nolink" title="Line 44, Col 7: statement executed 844 times.">      regexTree = regexTree.simplify(flags);</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">      <span class="comment">// Decompose the AST.</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 7: statement executed 844 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 7: statement executed 844 times.">      String literal = regexTree.toString();</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit line # 47');" ><span title="Line 47, Col 7: statement executed 844 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine"><span class="nolink" title="Line 47, Col 7: statement executed 844 times.">      String newPattern = literal.substring(1, literal.length() - 1);</span></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine">      <span class="comment">// Remove unnecessary flags and order them consistently for gzip.</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 7: statement executed 844 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 7: statement executed 844 times.">      String newFlags = (</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">          <span class="comment">// The g flags cannot match or replace more than one instance if it is</span></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">          <span class="comment">// anchored at the front and back as in /^foo$/ and if the anchors are</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine">          <span class="comment">// relative to the whole string.</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">          <span class="comment">// But if the regex has capturing groups, then the match operator</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine">          <span class="comment">// would return capturing groups without the g flag.</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit line # 55');" ><span title="Line 55, Col 11: true branch executed 104 times, false branch executed 740 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 11: true branch executed 104 times, false branch executed 740 times.">          (flags.contains(<span class="string">&quot;g&quot;</span>)</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">           &amp;&amp; (!<a href="../../../../com/google/javascript/jscomp/regex/RegExpTree.html#RegExpTree">RegExpTree</a>.matchesWholeInput(regexTree, flags)</span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">               || regexTree.hasCapturingGroup())</span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine">           ? <span class="string">&quot;g&quot;</span> : <span class="string">&quot;&quot;</span>)</span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine">          <span class="comment">// Remove the i flag if it doesn't have any effect.</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine">          <span class="comment">// E.g. /[a-z0-9_]/i -&gt; /\w/</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 61, 'Tests that hit line # 61');" ><span title="Line 61, Col 13: true branch executed 148 times, false branch executed 696 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine"><span class="nolink" title="Line 61, Col 13: true branch executed 148 times, false branch executed 696 times.">          + (flags.contains(<span class="string">&quot;i&quot;</span>) &amp;&amp; regexTree.isCaseSensitive() ? <span class="string">&quot;i&quot;</span> : <span class="string">&quot;&quot;</span>)</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine">          <span class="comment">// If the regular expression contains no anchors, then the m flag has</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine">          <span class="comment">// no effect.</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit line # 64');" ><span title="Line 64, Col 13: true branch executed 14 times, false branch executed 830 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 13: true branch executed 14 times, false branch executed 830 times.">          + (flags.contains(<span class="string">&quot;m&quot;</span>) &amp;&amp; regexTree.containsAnchor() ? <span class="string">&quot;m&quot;</span> : <span class="string">&quot;&quot;</span>));</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine">      <span class="comment">// Update the original if something was done.</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 66, 'Tests that hit line # 66');" ><span title="Line 66, Col 10: true branch executed 192 times, false branch executed 652 times." class="nolink">&#160;844</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"><span class="nolink" title="Line 66, Col 10: true branch executed 192 times, false branch executed 652 times.">      <span class="keyword">if</span> (!(newPattern.equals(pattern) &amp;&amp; newFlags.equals(flags))) {</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 67, 'Tests that hit line # 67');" ><span title="Line 67, Col 9: statement executed 192 times." class="nolink">&#160;192</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine"><span class="nolink" title="Line 67, Col 9: statement executed 192 times.">        subtree.getFirstChild().setString(newPattern);</span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 68, 'Tests that hit line # 68');" ><span title="Line 68, Col 12: true branch executed 76 times, false branch executed 116 times." class="nolink">&#160;192</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine"><span class="nolink" title="Line 68, Col 12: true branch executed 76 times, false branch executed 116 times.">        <span class="keyword">if</span> (!<span class="string">&quot;&quot;</span>.equals(newFlags)) {</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 69, 'Tests that hit line # 69');" ><span title="Line 69, Col 11: statement executed 76 times." class="nolink">&#160;76</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"><span class="nolink" title="Line 69, Col 11: statement executed 76 times.">          subtree.getLastChild().setString(newFlags);</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 70, 'Tests that hit line # 70');" ><span title="Line 70, Col 19: true branch executed 30 times, false branch executed 86 times." class="nolink">&#160;116</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine"><span class="nolink" title="Line 70, Col 19: true branch executed 30 times, false branch executed 86 times.">        } <span class="keyword">else</span> <span class="keyword">if</span> (subtree.getChildCount() == 2) {</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit line # 71');" ><span title="Line 71, Col 11: statement executed 30 times." class="nolink">&#160;30</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 11: statement executed 30 times.">          subtree.getLastChild().detachFromParent();</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 73, 'Tests that hit line # 73');" ><span title="Line 73, Col 9: statement executed 192 times." class="nolink">&#160;192</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="nolink" title="Line 73, Col 9: statement executed 192 times.">        reportCodeChange();</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">      }</span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 76, 'Tests that hit line # 76');" ><span title="Line 76, Col 5: statement executed 4,462 times." class="nolink">&#160;4462</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine"><span class="nolink" title="Line 76, Col 5: statement executed 4,462 times.">    <span class="keyword">return</span> subtree;</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="PeepholeSimplifyRegExp.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

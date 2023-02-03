@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class CheckAccessControlsTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="CheckAccessControlsTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>CheckAccessControlsTest</td>
+        <td class="testPasses"><span class="sortValue">258</span>258</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>3.297</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties1</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties1_dl7.html">CheckAccessControlsTest.testNoPrivateAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742252</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty14</span><a href="CheckAccessControlsTest_testConstantProperty14_1ho.html">CheckAccessControlsTest.testConstantProperty14</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387784</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForPrototypeCopying</span><a href="CheckAccessControlsTest_testNoWarningForPrototypeCopying_5n9.html">CheckAccessControlsTest.testNoWarningForPrototypeCopying</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743005</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForMethod2</span><a href="CheckAccessControlsTest_testWarningForMethod2_dn3.html">CheckAccessControlsTest.testWarningForMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386937</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedFunctionVariable</span><a href="CheckAccessControlsTest_testDeprecatedFunctionVariable_9ch.html">CheckAccessControlsTest.testDeprecatedFunctionVariable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520675</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.034</span>0.034</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties1</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties1_dku.html">CheckAccessControlsTest.testNoProtectedAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387502</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty1</span><a href="CheckAccessControlsTest_testConstantProperty1_cff.html">CheckAccessControlsTest.testConstantProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520150</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.261</span>0.261</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties1</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties1_844.html">CheckAccessControlsTest.testNoPrivateAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387356</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForNames</span><a href="CheckAccessControlsTest_testPrivateAccessForNames_cq5.html">CheckAccessControlsTest.testPrivateAccessForNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520829</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties2</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties2_6bn.html">CheckAccessControlsTest.testProtectedAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520906</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningInNormalClass</span><a href="CheckAccessControlsTest_testWarningInNormalClass_2eh.html">CheckAccessControlsTest.testWarningInNormalClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742549</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedSuperClass2</span><a href="CheckAccessControlsTest_testWarningForDeprecatedSuperClass2_9t2.html">CheckAccessControlsTest.testWarningForDeprecatedSuperClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521471</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNullableDeprecatedProperty</span><a href="CheckAccessControlsTest_testNullableDeprecatedProperty_2zr.html">CheckAccessControlsTest.testNullableDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742266</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAutoboxedPrivateProperty</span><a href="CheckAccessControlsTest_testAutoboxedPrivateProperty_aoz.html">CheckAccessControlsTest.testAutoboxedPrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387646</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties1</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties1_7l2.html">CheckAccessControlsTest.testPrivateAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520987</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningOnDeprecatedPrototype</span><a href="CheckAccessControlsTest_testNoWarningOnDeprecatedPrototype_6wo.html">CheckAccessControlsTest.testNoWarningOnDeprecatedPrototype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742913</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties6</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties6_uc.html">CheckAccessControlsTest.testProtectedAccessForProperties6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742706</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties1</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties1_d5b.html">CheckAccessControlsTest.testPrivateAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387285</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties5</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties5_89t.html">CheckAccessControlsTest.testNoProtectedAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742758</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAutoboxedDeprecatedProperty</span><a href="CheckAccessControlsTest_testAutoboxedDeprecatedProperty_4mf.html">CheckAccessControlsTest.testAutoboxedDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742424</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testSuppressConstantProperty2</span><a href="CheckAccessControlsTest_testSuppressConstantProperty2_67e.html">CheckAccessControlsTest.testSuppressConstantProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521493</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty7</span><a href="CheckAccessControlsTest_testConstantProperty7_23q.html">CheckAccessControlsTest.testConstantProperty7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520509</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.028</span>0.028</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForNumbers</span><a href="CheckAccessControlsTest_testNoWarningForNumbers_i2.html">CheckAccessControlsTest.testNoWarningForNumbers</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386896</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty7</span><a href="CheckAccessControlsTest_testConstantProperty7_9p3.html">CheckAccessControlsTest.testConstantProperty7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742348</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty3</span><a href="CheckAccessControlsTest_testConstantProperty3_c3h.html">CheckAccessControlsTest.testConstantProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520432</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningInStaticMethod</span><a href="CheckAccessControlsTest_testWarningInStaticMethod_7vl.html">CheckAccessControlsTest.testWarningInStaticMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387018</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties6</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties6_ehr.html">CheckAccessControlsTest.testProtectedAccessForProperties6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387489</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningOnDeprecatedConstVariable</span><a href="CheckAccessControlsTest_testWarningOnDeprecatedConstVariable_86j.html">CheckAccessControlsTest.testWarningOnDeprecatedConstVariable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386665</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadOverrideOfPrivateProperty</span><a href="CheckAccessControlsTest_testBadOverrideOfPrivateProperty_pv.html">CheckAccessControlsTest.testBadOverrideOfPrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521510</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedStaticMethod</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedStaticMethod_4iu.html">CheckAccessControlsTest.testNoWarningInDeprecatedStaticMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386995</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties2</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties2_c46.html">CheckAccessControlsTest.testNoPrivateAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742780</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForProperty1</span><a href="CheckAccessControlsTest_testWarningForProperty1_a54.html">CheckAccessControlsTest.testWarningForProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742834</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperclassMethod</span><a href="CheckAccessControlsTest_testWarningForSuperclassMethod_6f4.html">CheckAccessControlsTest.testWarningForSuperclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521355</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForNumbers</span><a href="CheckAccessControlsTest_testNoWarningForNumbers_1vp.html">CheckAccessControlsTest.testNoWarningForNumbers</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742578</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty13</span><a href="CheckAccessControlsTest_testConstantProperty13_3r.html">CheckAccessControlsTest.testConstantProperty13</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387776</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningOnDeprecatedPrototype</span><a href="CheckAccessControlsTest_testNoWarningOnDeprecatedPrototype_8kp.html">CheckAccessControlsTest.testNoWarningOnDeprecatedPrototype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387241</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedSuperClass2</span><a href="CheckAccessControlsTest_testWarningForDeprecatedSuperClass2_bma.html">CheckAccessControlsTest.testWarningForDeprecatedSuperClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742822</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForPrototypeProperty</span><a href="CheckAccessControlsTest_testWarningForPrototypeProperty_3s0.html">CheckAccessControlsTest.testWarningForPrototypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742563</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoExceptionsWithBadConstructors2</span><a href="CheckAccessControlsTest_testNoExceptionsWithBadConstructors2_c4h.html">CheckAccessControlsTest.testNoExceptionsWithBadConstructors2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387546</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testSuppressConstantProperty2</span><a href="CheckAccessControlsTest_testSuppressConstantProperty2_2ng.html">CheckAccessControlsTest.testSuppressConstantProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387802</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties2</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties2_6nu.html">CheckAccessControlsTest.testProtectedAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742459</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties2</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties2_ec5.html">CheckAccessControlsTest.testNoPrivateAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521052</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testInstanceofOfPrivateConstructor</span><a href="CheckAccessControlsTest_testInstanceofOfPrivateConstructor_7fj.html">CheckAccessControlsTest.testInstanceofOfPrivateConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742391</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty12</span><a href="CheckAccessControlsTest_testConstantProperty12_40t.html">CheckAccessControlsTest.testConstantProperty12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387766</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties1</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties1_89k.html">CheckAccessControlsTest.testNoPrivateAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521043</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForProperty2</span><a href="CheckAccessControlsTest_testWarningForProperty2_f86.html">CheckAccessControlsTest.testWarningForProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386794</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForPrototypeProperty</span><a href="CheckAccessControlsTest_testWarningForPrototypeProperty_4b1.html">CheckAccessControlsTest.testWarningForPrototypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521585</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties3</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties3_dw8.html">CheckAccessControlsTest.testNoPrivateAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742786</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningInNormalClass</span><a href="CheckAccessControlsTest_testWarningInNormalClass_7s2.html">CheckAccessControlsTest.testWarningInNormalClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521367</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties1</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties1_22f.html">CheckAccessControlsTest.testNoProtectedAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521215</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty2</span><a href="CheckAccessControlsTest_testConstantProperty2_4ap.html">CheckAccessControlsTest.testConstantProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520412</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInGlobalScope</span><a href="CheckAccessControlsTest_testNoWarningInGlobalScope_1r1.html">CheckAccessControlsTest.testNoWarningInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742904</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedFunction</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedFunction_5p5.html">CheckAccessControlsTest.testNoWarningInDeprecatedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742847</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedFunctionVariable</span><a href="CheckAccessControlsTest_testDeprecatedFunctionVariable_z8.html">CheckAccessControlsTest.testDeprecatedFunctionVariable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742798</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedFunctionVariable</span><a href="CheckAccessControlsTest_testDeprecatedFunctionVariable_c75.html">CheckAccessControlsTest.testDeprecatedFunctionVariable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386697</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties1</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties1_cqe.html">CheckAccessControlsTest.testProtectedAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520889</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testOkAssignmentOfDeprecatedProperty</span><a href="CheckAccessControlsTest_testOkAssignmentOfDeprecatedProperty_ar7.html">CheckAccessControlsTest.testOkAssignmentOfDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742401</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedClass2</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedClass2_d7n.html">CheckAccessControlsTest.testNoWarningInDeprecatedClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742530</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateQualifiedConstructor</span><a href="CheckAccessControlsTest_testAccessOfStaticMethodOnPrivateQualifiedConstructor_1dh.html">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateQualifiedConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387596</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedFunction</span><a href="CheckAccessControlsTest_testDeprecatedFunction_c0d.html">CheckAccessControlsTest.testDeprecatedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742946</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testSuppressConstantProperty</span><a href="CheckAccessControlsTest_testSuppressConstantProperty_asg.html">CheckAccessControlsTest.testSuppressConstantProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387792</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testSuppressConstantProperty</span><a href="CheckAccessControlsTest_testSuppressConstantProperty_ddl.html">CheckAccessControlsTest.testSuppressConstantProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742628</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testInstanceofOfPrivateConstructor</span><a href="CheckAccessControlsTest_testInstanceofOfPrivateConstructor_4c7.html">CheckAccessControlsTest.testInstanceofOfPrivateConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521381</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties4</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties4_dsq.html">CheckAccessControlsTest.testProtectedAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387466</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadReadOfDeprecatedProperty</span><a href="CheckAccessControlsTest_testBadReadOfDeprecatedProperty_3fk.html">CheckAccessControlsTest.testBadReadOfDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742411</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedFunction</span><a href="CheckAccessControlsTest_testDeprecatedFunction_9rw.html">CheckAccessControlsTest.testDeprecatedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386645</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties5</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties5_f5s.html">CheckAccessControlsTest.testNoPrivateAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387382</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testThatNumbersArentDeprecated</span><a href="CheckAccessControlsTest_testThatNumbersArentDeprecated_64x.html">CheckAccessControlsTest.testThatNumbersArentDeprecated</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742957</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadReadOfDeprecatedProperty</span><a href="CheckAccessControlsTest_testBadReadOfDeprecatedProperty_62l.html">CheckAccessControlsTest.testBadReadOfDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387625</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testGoodOverrideOfProtectedProperty</span><a href="CheckAccessControlsTest_testGoodOverrideOfProtectedProperty_c88.html">CheckAccessControlsTest.testGoodOverrideOfProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742867</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty8</span><a href="CheckAccessControlsTest_testConstantProperty8_460.html">CheckAccessControlsTest.testConstantProperty8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387733</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateConstructor</span><a href="CheckAccessControlsTest_testAccessOfStaticMethodOnPrivateConstructor_1gv.html">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387587</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty3</span><a href="CheckAccessControlsTest_testConstantProperty3_5pa.html">CheckAccessControlsTest.testConstantProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387691</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForBind</span><a href="CheckAccessControlsTest_testWarningForBind_ayh.html">CheckAccessControlsTest.testWarningForBind</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387181</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties2</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties2_aqf.html">CheckAccessControlsTest.testNoProtectedAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521224</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedClass2</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedClass2_3mp.html">CheckAccessControlsTest.testNoWarningInDeprecatedClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521296</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningInNormalClass</span><a href="CheckAccessControlsTest_testWarningInNormalClass_2kt.html">CheckAccessControlsTest.testWarningInNormalClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386759</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForNames</span><a href="CheckAccessControlsTest_testPrivateAccessForNames_9x.html">CheckAccessControlsTest.testPrivateAccessForNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742921</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties5</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties5_6c2.html">CheckAccessControlsTest.testProtectedAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520949</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningOnDeprecatedPrototype</span><a href="CheckAccessControlsTest_testNoWarningOnDeprecatedPrototype_abo.html">CheckAccessControlsTest.testNoWarningOnDeprecatedPrototype</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521431</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInGlobalScopeForCall</span><a href="CheckAccessControlsTest_testNoWarningInGlobalScopeForCall_4f6.html">CheckAccessControlsTest.testNoWarningInGlobalScopeForCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742715</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty2</span><a href="CheckAccessControlsTest_testConstantProperty2_49g.html">CheckAccessControlsTest.testConstantProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387682</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty4</span><a href="CheckAccessControlsTest_testConstantProperty4_bhj.html">CheckAccessControlsTest.testConstantProperty4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387700</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperclassMethod</span><a href="CheckAccessControlsTest_testWarningForSuperclassMethod_bm3.html">CheckAccessControlsTest.testWarningForSuperclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742737</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties2</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties2_cgw.html">CheckAccessControlsTest.testProtectedAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387440</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testSuppressConstantProperty2</span><a href="CheckAccessControlsTest_testSuppressConstantProperty2_cxd.html">CheckAccessControlsTest.testSuppressConstantProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742653</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty5</span><a href="CheckAccessControlsTest_testConstantProperty5_5g7.html">CheckAccessControlsTest.testConstantProperty5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520475</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty1</span><a href="CheckAccessControlsTest_testConstantProperty1_cc2.html">CheckAccessControlsTest.testConstantProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387672</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedFunction</span><a href="CheckAccessControlsTest_testDeprecatedFunction_gw.html">CheckAccessControlsTest.testDeprecatedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521483</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInGlobalScopeForCall</span><a href="CheckAccessControlsTest_testNoWarningInGlobalScopeForCall_3hh.html">CheckAccessControlsTest.testNoWarningInGlobalScopeForCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520599</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty11</span><a href="CheckAccessControlsTest_testConstantProperty11_2j6.html">CheckAccessControlsTest.testConstantProperty11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742596</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty10</span><a href="CheckAccessControlsTest_testConstantProperty10_776.html">CheckAccessControlsTest.testConstantProperty10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520750</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties8</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties8_c7s.html">CheckAccessControlsTest.testNoPrivateAccessForProperties8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742442</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAutoboxedPrivateProperty</span><a href="CheckAccessControlsTest_testAutoboxedPrivateProperty_p.html">CheckAccessControlsTest.testAutoboxedPrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521391</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForMethod1</span><a href="CheckAccessControlsTest_testWarningForMethod1_6nk.html">CheckAccessControlsTest.testWarningForMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742492</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedSuperClass2</span><a href="CheckAccessControlsTest_testWarningForDeprecatedSuperClass2_anz.html">CheckAccessControlsTest.testWarningForDeprecatedSuperClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386860</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties8</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties8_9e1.html">CheckAccessControlsTest.testNoPrivateAccessForProperties8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521114</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForMethod1</span><a href="CheckAccessControlsTest_testWarningForMethod1_cth.html">CheckAccessControlsTest.testWarningForMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521599</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty10</span><a href="CheckAccessControlsTest_testConstantProperty10_7it.html">CheckAccessControlsTest.testConstantProperty10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387751</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties2</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties2_dkz.html">CheckAccessControlsTest.testNoPrivateAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387363</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedStaticMethod</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedStaticMethod_8a7.html">CheckAccessControlsTest.testNoWarningInDeprecatedStaticMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520874</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperclassMethod2</span><a href="CheckAccessControlsTest_testWarningForSuperclassMethod2_9h9.html">CheckAccessControlsTest.testWarningForSuperclassMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521459</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoExceptionsWithBadConstructors1</span><a href="CheckAccessControlsTest_testNoExceptionsWithBadConstructors1_3fs.html">CheckAccessControlsTest.testNoExceptionsWithBadConstructors1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387537</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedClassInGlobalScope</span><a href="CheckAccessControlsTest_testWarningForDeprecatedClassInGlobalScope_461.html">CheckAccessControlsTest.testWarningForDeprecatedClassInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742992</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperclassMethod2</span><a href="CheckAccessControlsTest_testWarningForSuperclassMethod2_96z.html">CheckAccessControlsTest.testWarningForSuperclassMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742965</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedClass</span><a href="CheckAccessControlsTest_testWarningForDeprecatedClass_5lk.html">CheckAccessControlsTest.testWarningForDeprecatedClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742478</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAutoboxedDeprecatedProperty</span><a href="CheckAccessControlsTest_testAutoboxedDeprecatedProperty_4sk.html">CheckAccessControlsTest.testAutoboxedDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387639</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty11</span><a href="CheckAccessControlsTest_testConstantProperty11_dbk.html">CheckAccessControlsTest.testConstantProperty11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387759</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNullablePrivateProperty</span><a href="CheckAccessControlsTest_testNullablePrivateProperty_bvr.html">CheckAccessControlsTest.testNullablePrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742283</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInGlobalScope</span><a href="CheckAccessControlsTest_testNoWarningInGlobalScope_c4g.html">CheckAccessControlsTest.testNoWarningInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386716</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoExceptionsWithBadConstructors2</span><a href="CheckAccessControlsTest_testNoExceptionsWithBadConstructors2_e85.html">CheckAccessControlsTest.testNoExceptionsWithBadConstructors2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742772</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testFinalClassCannotBeSubclassed</span><a href="CheckAccessControlsTest_testFinalClassCannotBeSubclassed_t4.html">CheckAccessControlsTest.testFinalClassCannotBeSubclassed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521395</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties5</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties5_4ez.html">CheckAccessControlsTest.testNoProtectedAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521252</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForMethod2</span><a href="CheckAccessControlsTest_testWarningForMethod2_5z4.html">CheckAccessControlsTest.testWarningForMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742506</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties6</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties6_7de.html">CheckAccessControlsTest.testProtectedAccessForProperties6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520964</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedClass2</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedClass2_4a7.html">CheckAccessControlsTest.testNoWarningInDeprecatedClass2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386977</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty10</span><a href="CheckAccessControlsTest_testConstantProperty10_l7.html">CheckAccessControlsTest.testConstantProperty10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742587</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties7</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties7_87s.html">CheckAccessControlsTest.testNoPrivateAccessForProperties7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521103</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningOnDeprecatedConstVariable</span><a href="CheckAccessControlsTest_testWarningOnDeprecatedConstVariable_e6k.html">CheckAccessControlsTest.testWarningOnDeprecatedConstVariable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742429</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties1</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties1_ez3.html">CheckAccessControlsTest.testProtectedAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742449</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testOkAssignmentOfDeprecatedProperty</span><a href="CheckAccessControlsTest_testOkAssignmentOfDeprecatedProperty_3eb.html">CheckAccessControlsTest.testOkAssignmentOfDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387616</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testThatNumbersArentDeprecated</span><a href="CheckAccessControlsTest_testThatNumbersArentDeprecated_an5.html">CheckAccessControlsTest.testThatNumbersArentDeprecated</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386684</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties3</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties3_46v.html">CheckAccessControlsTest.testProtectedAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520920</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty9</span><a href="CheckAccessControlsTest_testConstantProperty9_d1.html">CheckAccessControlsTest.testConstantProperty9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742370</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedObjLitKey</span><a href="CheckAccessControlsTest_testDeprecatedObjLitKey_4fs.html">CheckAccessControlsTest.testDeprecatedObjLitKey</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521308</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty3</span><a href="CheckAccessControlsTest_testConstantProperty3_3lz.html">CheckAccessControlsTest.testConstantProperty3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742310</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateConstructor</span><a href="CheckAccessControlsTest_testAccessOfStaticMethodOnPrivateConstructor_434.html">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742896</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForPrototypeCopying</span><a href="CheckAccessControlsTest_testNoWarningForPrototypeCopying_5is.html">CheckAccessControlsTest.testNoWarningForPrototypeCopying</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387225</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperClassWithDeprecatedSubclassMethod</span><a href="CheckAccessControlsTest_testWarningForSuperClassWithDeprecatedSubclassMethod_ayv.html">CheckAccessControlsTest.testWarningForSuperClassWithDeprecatedSubclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521328</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedClass</span><a href="CheckAccessControlsTest_testWarningForDeprecatedClass_8nf.html">CheckAccessControlsTest.testWarningForDeprecatedClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521284</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties3</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties3_2n3.html">CheckAccessControlsTest.testNoProtectedAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742686</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testGoodOverrideOfProtectedProperty</span><a href="CheckAccessControlsTest_testGoodOverrideOfProtectedProperty_6.html">CheckAccessControlsTest.testGoodOverrideOfProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387556</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty12</span><a href="CheckAccessControlsTest_testConstantProperty12_7n1.html">CheckAccessControlsTest.testConstantProperty12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742604</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedFunction</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedFunction_3fa.html">CheckAccessControlsTest.testNoWarningInDeprecatedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520710</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty11</span><a href="CheckAccessControlsTest_testConstantProperty11_b40.html">CheckAccessControlsTest.testConstantProperty11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520768</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForProperty2</span><a href="CheckAccessControlsTest_testWarningForProperty2_5a6.html">CheckAccessControlsTest.testWarningForProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742855</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForProperty1</span><a href="CheckAccessControlsTest_testWarningForProperty1_7id.html">CheckAccessControlsTest.testWarningForProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386777</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty14</span><a href="CheckAccessControlsTest_testConstantProperty14_dc.html">CheckAccessControlsTest.testConstantProperty14</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742621</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedClass</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedClass_70l.html">CheckAccessControlsTest.testNoWarningInDeprecatedClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386962</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForProperty1</span><a href="CheckAccessControlsTest_testWarningForProperty1_269.html">CheckAccessControlsTest.testWarningForProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521406</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties3</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties3_dka.html">CheckAccessControlsTest.testPrivateAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387314</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty13</span><a href="CheckAccessControlsTest_testConstantProperty13_4vq.html">CheckAccessControlsTest.testConstantProperty13</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520802</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoExceptionsWithBadConstructors1</span><a href="CheckAccessControlsTest_testNoExceptionsWithBadConstructors1_dwj.html">CheckAccessControlsTest.testNoExceptionsWithBadConstructors1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742764</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForDeprecatedClassInstance</span><a href="CheckAccessControlsTest_testNoWarningForDeprecatedClassInstance_8hd.html">CheckAccessControlsTest.testNoWarningForDeprecatedClassInstance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742182</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties4</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties4_bum.html">CheckAccessControlsTest.testPrivateAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521029</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties5</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties5_96l.html">CheckAccessControlsTest.testNoPrivateAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521079</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testThatNumbersArentDeprecated</span><a href="CheckAccessControlsTest_testThatNumbersArentDeprecated_4g0.html">CheckAccessControlsTest.testThatNumbersArentDeprecated</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521561</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testFinalClassCannotBeSubclassed</span><a href="CheckAccessControlsTest_testFinalClassCannotBeSubclassed_c63.html">CheckAccessControlsTest.testFinalClassCannotBeSubclassed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742663</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties5</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties5_egt.html">CheckAccessControlsTest.testNoPrivateAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742126</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedObjLitKey</span><a href="CheckAccessControlsTest_testDeprecatedObjLitKey_30.html">CheckAccessControlsTest.testDeprecatedObjLitKey</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743026</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testOkAssignmentOfDeprecatedProperty</span><a href="CheckAccessControlsTest_testOkAssignmentOfDeprecatedProperty_27u.html">CheckAccessControlsTest.testOkAssignmentOfDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520580</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForProperty2</span><a href="CheckAccessControlsTest_testWarningForProperty2_1uw.html">CheckAccessControlsTest.testWarningForProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521419</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadOverrideOfProtectedProperty</span><a href="CheckAccessControlsTest_testBadOverrideOfProtectedProperty_ana.html">CheckAccessControlsTest.testBadOverrideOfProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520977</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties8</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties8_8zo.html">CheckAccessControlsTest.testNoPrivateAccessForProperties8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387406</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties3</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties3_f6v.html">CheckAccessControlsTest.testNoPrivateAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387370</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNullablePrivateProperty</span><a href="CheckAccessControlsTest_testNullablePrivateProperty_997.html">CheckAccessControlsTest.testNullablePrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521320</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties6</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties6_31p.html">CheckAccessControlsTest.testNoPrivateAccessForProperties6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521089</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties4</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties4_e1n.html">CheckAccessControlsTest.testPrivateAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742241</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties1</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties1_7o1.html">CheckAccessControlsTest.testProtectedAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387424</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties4</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties4_aq2.html">CheckAccessControlsTest.testNoPrivateAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521070</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadOverrideOfProtectedProperty</span><a href="CheckAccessControlsTest_testBadOverrideOfProtectedProperty_acj.html">CheckAccessControlsTest.testBadOverrideOfProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387565</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInGlobalScopeForCall</span><a href="CheckAccessControlsTest_testNoWarningInGlobalScopeForCall_6bh.html">CheckAccessControlsTest.testNoWarningInGlobalScopeForCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386730</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testInstanceofOfPrivateConstructor</span><a href="CheckAccessControlsTest_testInstanceofOfPrivateConstructor_32s.html">CheckAccessControlsTest.testInstanceofOfPrivateConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387606</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedClassInGlobalScope</span><a href="CheckAccessControlsTest_testWarningForDeprecatedClassInGlobalScope_2nz.html">CheckAccessControlsTest.testWarningForDeprecatedClassInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521265</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty5</span><a href="CheckAccessControlsTest_testConstantProperty5_316.html">CheckAccessControlsTest.testConstantProperty5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387707</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadOverrideOfPrivateProperty</span><a href="CheckAccessControlsTest_testBadOverrideOfPrivateProperty_dnb.html">CheckAccessControlsTest.testBadOverrideOfPrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387572</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty12</span><a href="CheckAccessControlsTest_testConstantProperty12_3wd.html">CheckAccessControlsTest.testConstantProperty12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520782</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningInStaticMethod</span><a href="CheckAccessControlsTest_testWarningInStaticMethod_3xm.html">CheckAccessControlsTest.testWarningInStaticMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743014</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties2</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties2_eah.html">CheckAccessControlsTest.testNoProtectedAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742680</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties3</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties3_a9v.html">CheckAccessControlsTest.testNoProtectedAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521235</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForDeprecatedClassInstance</span><a href="CheckAccessControlsTest_testNoWarningForDeprecatedClassInstance_bxy.html">CheckAccessControlsTest.testNoWarningForDeprecatedClassInstance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386829</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedStaticMethod</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedStaticMethod_2tz.html">CheckAccessControlsTest.testNoWarningInDeprecatedStaticMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742540</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoExceptionsWithBadConstructors1</span><a href="CheckAccessControlsTest_testNoExceptionsWithBadConstructors1_15s.html">CheckAccessControlsTest.testNoExceptionsWithBadConstructors1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521534</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty6</span><a href="CheckAccessControlsTest_testConstantProperty6_afg.html">CheckAccessControlsTest.testConstantProperty6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520490</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedSuperClass</span><a href="CheckAccessControlsTest_testWarningForDeprecatedSuperClass_6kb.html">CheckAccessControlsTest.testWarningForDeprecatedSuperClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386841</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForBind</span><a href="CheckAccessControlsTest_testWarningForBind_4d4.html">CheckAccessControlsTest.testWarningForBind</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521549</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty6</span><a href="CheckAccessControlsTest_testConstantProperty6_5kb.html">CheckAccessControlsTest.testConstantProperty6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387714</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedClass</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedClass_3u.html">CheckAccessControlsTest.testNoWarningInDeprecatedClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742520</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties4</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties4_b6z.html">CheckAccessControlsTest.testNoProtectedAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521245</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedClassInGlobalScope</span><a href="CheckAccessControlsTest_testWarningForDeprecatedClassInGlobalScope_av0.html">CheckAccessControlsTest.testWarningForDeprecatedClassInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387206</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty4</span><a href="CheckAccessControlsTest_testConstantProperty4_dn1.html">CheckAccessControlsTest.testConstantProperty4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742321</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty4</span><a href="CheckAccessControlsTest_testConstantProperty4_5ll.html">CheckAccessControlsTest.testConstantProperty4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520458</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNullableDeprecatedProperty</span><a href="CheckAccessControlsTest_testNullableDeprecatedProperty_2np.html">CheckAccessControlsTest.testNullableDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520626</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.044</span>0.044</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties2</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties2_a73.html">CheckAccessControlsTest.testPrivateAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387300</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty5</span><a href="CheckAccessControlsTest_testConstantProperty5_437.html">CheckAccessControlsTest.testConstantProperty5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742331</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateQualifiedConstructor</span><a href="CheckAccessControlsTest_testAccessOfStaticMethodOnPrivateQualifiedConstructor_ayo.html">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateQualifiedConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742381</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningOnDeprecatedConstVariable</span><a href="CheckAccessControlsTest_testWarningOnDeprecatedConstVariable_1xi.html">CheckAccessControlsTest.testWarningOnDeprecatedConstVariable</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520852</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties4</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties4_e78.html">CheckAccessControlsTest.testNoPrivateAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387376</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAutoboxedDeprecatedProperty</span><a href="CheckAccessControlsTest_testAutoboxedDeprecatedProperty_5om.html">CheckAccessControlsTest.testAutoboxedDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521260</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperClassWithDeprecatedSubclassMethod</span><a href="CheckAccessControlsTest_testWarningForSuperClassWithDeprecatedSubclassMethod_58e.html">CheckAccessControlsTest.testWarningForSuperClassWithDeprecatedSubclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742726</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties7</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties7_9lf.html">CheckAccessControlsTest.testNoPrivateAccessForProperties7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387395</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties3</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties3_780.html">CheckAccessControlsTest.testProtectedAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387452</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty2</span><a href="CheckAccessControlsTest_testConstantProperty2_cdk.html">CheckAccessControlsTest.testConstantProperty2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742301</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testSuppressConstantProperty</span><a href="CheckAccessControlsTest_testSuppressConstantProperty_a5j.html">CheckAccessControlsTest.testSuppressConstantProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521501</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForNames</span><a href="CheckAccessControlsTest_testPrivateAccessForNames_5h1.html">CheckAccessControlsTest.testPrivateAccessForNames</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387264</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties5</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties5_d13.html">CheckAccessControlsTest.testProtectedAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742697</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty13</span><a href="CheckAccessControlsTest_testConstantProperty13_1j5.html">CheckAccessControlsTest.testConstantProperty13</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742613</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadOverrideOfPrivateProperty</span><a href="CheckAccessControlsTest_testBadOverrideOfPrivateProperty_8am.html">CheckAccessControlsTest.testBadOverrideOfPrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742881</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSubclassMethod</span><a href="CheckAccessControlsTest_testWarningForSubclassMethod_bbd.html">CheckAccessControlsTest.testWarningForSubclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521137</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadOverrideOfProtectedProperty</span><a href="CheckAccessControlsTest_testBadOverrideOfProtectedProperty_2si.html">CheckAccessControlsTest.testBadOverrideOfProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742875</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties3</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties3_ty.html">CheckAccessControlsTest.testPrivateAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521016</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties3</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties3_dg9.html">CheckAccessControlsTest.testPrivateAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742229</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNullableDeprecatedProperty</span><a href="CheckAccessControlsTest_testNullableDeprecatedProperty_di7.html">CheckAccessControlsTest.testNullableDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387651</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForDeprecatedClassInstance</span><a href="CheckAccessControlsTest_testNoWarningForDeprecatedClassInstance_3r6.html">CheckAccessControlsTest.testNoWarningForDeprecatedClassInstance</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521275</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedSuperClass</span><a href="CheckAccessControlsTest_testWarningForDeprecatedSuperClass_3ya.html">CheckAccessControlsTest.testWarningForDeprecatedSuperClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742810</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateQualifiedConstructor</span><a href="CheckAccessControlsTest_testAccessOfStaticMethodOnPrivateQualifiedConstructor_3c7.html">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateQualifiedConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521123</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties7</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties7_3fy.html">CheckAccessControlsTest.testNoPrivateAccessForProperties7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742169</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForMethod2</span><a href="CheckAccessControlsTest_testWarningForMethod2_5th.html">CheckAccessControlsTest.testWarningForMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521613</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedClass</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedClass_5sc.html">CheckAccessControlsTest.testNoWarningInDeprecatedClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521182</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForBind</span><a href="CheckAccessControlsTest_testWarningForBind_3m5.html">CheckAccessControlsTest.testWarningForBind</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742979</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateConstructor</span><a href="CheckAccessControlsTest_testAccessOfStaticMethodOnPrivateConstructor_2ht.html">CheckAccessControlsTest.testAccessOfStaticMethodOnPrivateConstructor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521440</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSubclassMethod</span><a href="CheckAccessControlsTest_testWarningForSubclassMethod_5x7.html">CheckAccessControlsTest.testWarningForSubclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697743038</span>2 Jan 15:15:43</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedClass</span><a href="CheckAccessControlsTest_testWarningForDeprecatedClass_dig.html">CheckAccessControlsTest.testWarningForDeprecatedClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386812</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForPrototypeCopying</span><a href="CheckAccessControlsTest_testNoWarningForPrototypeCopying_op.html">CheckAccessControlsTest.testNoWarningForPrototypeCopying</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521568</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty9</span><a href="CheckAccessControlsTest_testConstantProperty9_8ug.html">CheckAccessControlsTest.testConstantProperty9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387742</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForPrototypeProperty</span><a href="CheckAccessControlsTest_testWarningForPrototypeProperty_3y3.html">CheckAccessControlsTest.testWarningForPrototypeProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386878</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testFinalClassCannotBeSubclassed</span><a href="CheckAccessControlsTest_testFinalClassCannotBeSubclassed_asz.html">CheckAccessControlsTest.testFinalClassCannotBeSubclassed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387811</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty14</span><a href="CheckAccessControlsTest_testConstantProperty14_94v.html">CheckAccessControlsTest.testConstantProperty14</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520816</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties4</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties4_518.html">CheckAccessControlsTest.testPrivateAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387326</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties4</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties4_93o.html">CheckAccessControlsTest.testProtectedAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742690</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties2</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties2_25e.html">CheckAccessControlsTest.testNoProtectedAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387509</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties4</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties4_dgj.html">CheckAccessControlsTest.testNoProtectedAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742752</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInDeprecatedFunction</span><a href="CheckAccessControlsTest_testNoWarningInDeprecatedFunction_7jv.html">CheckAccessControlsTest.testNoWarningInDeprecatedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386747</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNullablePrivateProperty</span><a href="CheckAccessControlsTest_testNullablePrivateProperty_695.html">CheckAccessControlsTest.testNullablePrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387665</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty9</span><a href="CheckAccessControlsTest_testConstantProperty9_1lv.html">CheckAccessControlsTest.testConstantProperty9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520559</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.02</span>0.02</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperclassMethod</span><a href="CheckAccessControlsTest_testWarningForSuperclassMethod_96g.html">CheckAccessControlsTest.testWarningForSuperclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387130</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testBadReadOfDeprecatedProperty</span><a href="CheckAccessControlsTest_testBadReadOfDeprecatedProperty_6xg.html">CheckAccessControlsTest.testBadReadOfDeprecatedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521524</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties6</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties6_e8h.html">CheckAccessControlsTest.testNoPrivateAccessForProperties6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742144</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties2</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties2_73t.html">CheckAccessControlsTest.testPrivateAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521002</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties1</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties1_d1m.html">CheckAccessControlsTest.testNoProtectedAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742675</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningInGlobalScope</span><a href="CheckAccessControlsTest_testNoWarningInGlobalScope_3sw.html">CheckAccessControlsTest.testNoWarningInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520727</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty8</span><a href="CheckAccessControlsTest_testConstantProperty8_512.html">CheckAccessControlsTest.testConstantProperty8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520537</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties2</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties2_2c0.html">CheckAccessControlsTest.testPrivateAccessForProperties2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742210</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties5</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties5_dcm.html">CheckAccessControlsTest.testProtectedAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387476</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties4</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties4_d6q.html">CheckAccessControlsTest.testNoPrivateAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742792</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties4</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties4_e1g.html">CheckAccessControlsTest.testNoProtectedAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387522</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoWarningForNumbers</span><a href="CheckAccessControlsTest_testNoWarningForNumbers_2ly.html">CheckAccessControlsTest.testNoWarningForNumbers</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521577</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoExceptionsWithBadConstructors2</span><a href="CheckAccessControlsTest_testNoExceptionsWithBadConstructors2_916.html">CheckAccessControlsTest.testNoExceptionsWithBadConstructors2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521541</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties6</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties6_6te.html">CheckAccessControlsTest.testNoPrivateAccessForProperties6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387388</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty1</span><a href="CheckAccessControlsTest_testConstantProperty1_12b.html">CheckAccessControlsTest.testConstantProperty1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742291</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties4</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties4_8hq.html">CheckAccessControlsTest.testProtectedAccessForProperties4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697520936</span>2 Jan 15:12:00</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties5</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties5_f84.html">CheckAccessControlsTest.testNoProtectedAccessForProperties5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387529</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testProtectedAccessForProperties3</span><a href="CheckAccessControlsTest_testProtectedAccessForProperties3_7pl.html">CheckAccessControlsTest.testProtectedAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742468</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testAutoboxedPrivateProperty</span><a href="CheckAccessControlsTest_testAutoboxedPrivateProperty_arh.html">CheckAccessControlsTest.testAutoboxedPrivateProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742261</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperClassWithDeprecatedSubclassMethod</span><a href="CheckAccessControlsTest_testWarningForSuperClassWithDeprecatedSubclassMethod_6lz.html">CheckAccessControlsTest.testWarningForSuperClassWithDeprecatedSubclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387107</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForMethod1</span><a href="CheckAccessControlsTest_testWarningForMethod1_8lm.html">CheckAccessControlsTest.testWarningForMethod1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697386909</span>2 Jan 15:09:46</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testGoodOverrideOfProtectedProperty</span><a href="CheckAccessControlsTest_testGoodOverrideOfProtectedProperty_9wa.html">CheckAccessControlsTest.testGoodOverrideOfProtectedProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521156</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testDeprecatedObjLitKey</span><a href="CheckAccessControlsTest_testDeprecatedObjLitKey_6s0.html">CheckAccessControlsTest.testDeprecatedObjLitKey</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387048</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSubclassMethod</span><a href="CheckAccessControlsTest_testWarningForSubclassMethod_ajf.html">CheckAccessControlsTest.testWarningForSubclassMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387073</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.033</span>0.033</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForSuperclassMethod2</span><a href="CheckAccessControlsTest_testWarningForSuperclassMethod2_74o.html">CheckAccessControlsTest.testWarningForSuperclassMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387154</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoPrivateAccessForProperties3</span><a href="CheckAccessControlsTest_testNoPrivateAccessForProperties3_25c.html">CheckAccessControlsTest.testNoPrivateAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521062</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testNoProtectedAccessForProperties3</span><a href="CheckAccessControlsTest_testNoProtectedAccessForProperties3_8cp.html">CheckAccessControlsTest.testNoProtectedAccessForProperties3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387515</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty6</span><a href="CheckAccessControlsTest_testConstantProperty6_70v.html">CheckAccessControlsTest.testConstantProperty6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742339</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningInStaticMethod</span><a href="CheckAccessControlsTest_testWarningInStaticMethod_3za.html">CheckAccessControlsTest.testWarningInStaticMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521342</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty8</span><a href="CheckAccessControlsTest_testConstantProperty8_eag.html">CheckAccessControlsTest.testConstantProperty8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742361</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testConstantProperty7</span><a href="CheckAccessControlsTest_testConstantProperty7_dhl.html">CheckAccessControlsTest.testConstantProperty7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697387722</span>2 Jan 15:09:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testWarningForDeprecatedSuperClass</span><a href="CheckAccessControlsTest_testWarningForDeprecatedSuperClass_8lj.html">CheckAccessControlsTest.testWarningForDeprecatedSuperClass</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697521447</span>2 Jan 15:12:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">CheckAccessControlsTest.testPrivateAccessForProperties1</span><a href="CheckAccessControlsTest_testPrivateAccessForProperties1_5vy.html">CheckAccessControlsTest.testPrivateAccessForProperties1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697742937</span>2 Jan 15:15:42</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

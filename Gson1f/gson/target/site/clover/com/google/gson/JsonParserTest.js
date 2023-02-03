@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":97,"id":4385,"methods":[{"el":39,"sc":3,"sl":35},{"el":47,"sc":3,"sl":41},{"el":53,"sc":3,"sl":49},{"el":58,"sc":3,"sl":55},{"el":69,"sc":3,"sl":60},{"el":77,"sc":3,"sl":71},{"el":96,"sc":3,"sl":79}],"name":"JsonParserTest","sl":31}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_104":{"methods":[{"sl":71}],"name":"testParseReader","pass":true,"statements":[{"sl":72},{"sl":73},{"sl":74},{"sl":75},{"sl":76}]},"test_215":{"methods":[{"sl":41}],"name":"testParseString","pass":true,"statements":[{"sl":42},{"sl":43},{"sl":44},{"sl":45},{"sl":46}]},"test_301":{"methods":[{"sl":79}],"name":"testReadWriteTwoObjects","pass":true,"statements":[{"sl":80},{"sl":81},{"sl":82},{"sl":83},{"sl":84},{"sl":85},{"sl":86},{"sl":88},{"sl":89},{"sl":90},{"sl":91},{"sl":92},{"sl":93},{"sl":94},{"sl":95}]},"test_306":{"methods":[{"sl":55}],"name":"testParseEmptyWhitespaceInput","pass":true,"statements":[{"sl":56},{"sl":57}]},"test_426":{"methods":[{"sl":60}],"name":"testParseMixedArray","pass":true,"statements":[{"sl":61},{"sl":62},{"sl":63},{"sl":65},{"sl":66},{"sl":67},{"sl":68}]},"test_51":{"methods":[{"sl":49}],"name":"testParseEmptyString","pass":true,"statements":[{"sl":50},{"sl":51},{"sl":52}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [215], [215], [215], [215], [215], [215], [], [], [51], [51], [51], [51], [], [], [306], [306], [306], [], [], [426], [426], [426], [426], [], [426], [426], [426], [426], [], [], [104], [104], [104], [104], [104], [104], [], [], [301], [301], [301], [301], [301], [301], [301], [301], [], [301], [301], [301], [301], [301], [301], [301], [301], [], []]

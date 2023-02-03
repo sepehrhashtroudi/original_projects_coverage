@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class ProcessClosurePrimitivesTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="ProcessClosurePrimitivesTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>ProcessClosurePrimitivesTest</td>
+        <td class="testPasses"><span class="sortValue">160</span>160</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.162</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf4</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf4_oi.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771972</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleProvides</span><a href="ProcessClosurePrimitivesTest_testMultipleProvides_5jk.html">ProcessClosurePrimitivesTest.testMultipleProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771908</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalOfProvidedObjLit</span><a href="ProcessClosurePrimitivesTest_testRemovalOfProvidedObjLit_85f.html">ProcessClosurePrimitivesTest.testRemovalOfProvidedObjLit</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603179</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.059</span>0.059</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef4</span><a href="ProcessClosurePrimitivesTest_testNoStubForProvidedTypedef4_9zg.html">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603052</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment4</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment4_e0m.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771949</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef2</span><a href="ProcessClosurePrimitivesTest_testNoStubForProvidedTypedef2_3tt.html">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771864</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoRemovalFunction1</span><a href="ProcessClosurePrimitivesTest_testNoRemovalFunction1_oq.html">ProcessClosurePrimitivesTest.testNoRemovalFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603339</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalOfRequires</span><a href="ProcessClosurePrimitivesTest_testRemovalOfRequires_9p2.html">ProcessClosurePrimitivesTest.testRemovalOfRequires</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603065</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.039</span>0.039</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleAdditionalProvideAtEnd</span><a href="ProcessClosurePrimitivesTest_testSimpleAdditionalProvideAtEnd_bh3.html">ProcessClosurePrimitivesTest.testSimpleAdditionalProvideAtEnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603643</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder3b</span><a href="ProcessClosurePrimitivesTest_testProvideOrder3b_1th.html">ProcessClosurePrimitivesTest.testProvideOrder3b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603457</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalOfRequires</span><a href="ProcessClosurePrimitivesTest_testRemovalOfRequires_bku.html">ProcessClosurePrimitivesTest.testRemovalOfRequires</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772008</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase7</span><a href="ProcessClosurePrimitivesTest_testInvalidBase7_c5m.html">ProcessClosurePrimitivesTest.testInvalidBase7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603625</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef2</span><a href="ProcessClosurePrimitivesTest_testNoStubForProvidedTypedef2_2ic.html">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603038</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase5</span><a href="ProcessClosurePrimitivesTest_testValidBase5_se.html">ProcessClosurePrimitivesTest.testValidBase5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603383</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testOverlappingDottedAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testOverlappingDottedAdditionalProvide_29r.html">ProcessClosurePrimitivesTest.testOverlappingDottedAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772117</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase9</span><a href="ProcessClosurePrimitivesTest_testInvalidBase9_49i.html">ProcessClosurePrimitivesTest.testInvalidBase9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603631</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidProvide</span><a href="ProcessClosurePrimitivesTest_testInvalidProvide_9v.html">ProcessClosurePrimitivesTest.testInvalidProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603059</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidSetCssNameMapping</span><a href="ProcessClosurePrimitivesTest_testValidSetCssNameMapping_71e.html">ProcessClosurePrimitivesTest.testValidSetCssNameMapping</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772051</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidSetCssNameMappingWithType</span><a href="ProcessClosurePrimitivesTest_testValidSetCssNameMappingWithType_7fl.html">ProcessClosurePrimitivesTest.testValidSetCssNameMappingWithType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603401</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase2</span><a href="ProcessClosurePrimitivesTest_testValidBase2_1fg.html">ProcessClosurePrimitivesTest.testValidBase2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603360</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidSetCssNameMappingWithType</span><a href="ProcessClosurePrimitivesTest_testValidSetCssNameMappingWithType_4z5.html">ProcessClosurePrimitivesTest.testValidSetCssNameMappingWithType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772054</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment1</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment1_409.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771938</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoRemovalFunction1</span><a href="ProcessClosurePrimitivesTest_testNoRemovalFunction1_1iw.html">ProcessClosurePrimitivesTest.testNoRemovalFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771953</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf1</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf1_dbj.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771961</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules2</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules2_1r9.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771838</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment3</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment3_830.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603024</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSourcePositionPreservation</span><a href="ProcessClosurePrimitivesTest_testSourcePositionPreservation_a4s.html">ProcessClosurePrimitivesTest.testSourcePositionPreservation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771859</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf3</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf3_aag.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771968</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules4</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules4_dpv.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771852</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleProvides</span><a href="ProcessClosurePrimitivesTest_testSimpleProvides_alp.html">ProcessClosurePrimitivesTest.testSimpleProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771889</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf4</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf4_7n4.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603136</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules3</span><a href="ProcessClosurePrimitivesTest_testImplicitProvideInIndependentModules3_eta.html">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771832</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRequireOfAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testRequireOfAdditionalProvide_32x.html">ProcessClosurePrimitivesTest.testRequireOfAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603501</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase1</span><a href="ProcessClosurePrimitivesTest_testValidBase1_7z7.html">ProcessClosurePrimitivesTest.testValidBase1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772180</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitAndExplicitProvide</span><a href="ProcessClosurePrimitivesTest_testImplicitAndExplicitProvide_8n4.html">ProcessClosurePrimitivesTest.testImplicitAndExplicitProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603662</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testOverlappingDottedAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testOverlappingDottedAdditionalProvide_6uw.html">ProcessClosurePrimitivesTest.testOverlappingDottedAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603491</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSetCssNameMappingValidity</span><a href="ProcessClosurePrimitivesTest_testSetCssNameMappingValidity_1ck.html">ProcessClosurePrimitivesTest.testSetCssNameMappingValidity</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603561</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testReorderedProvides</span><a href="ProcessClosurePrimitivesTest_testReorderedProvides_vg.html">ProcessClosurePrimitivesTest.testReorderedProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697602778</span>2 Jan 15:13:22</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.232</span>0.232</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSetCssNameMappingNonStringValueReturnsError</span><a href="ProcessClosurePrimitivesTest_testSetCssNameMappingNonStringValueReturnsError_65i.html">ProcessClosurePrimitivesTest.testSetCssNameMappingNonStringValueReturnsError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772060</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMissingProvides</span><a href="ProcessClosurePrimitivesTest_testMissingProvides_3h8.html">ProcessClosurePrimitivesTest.testMissingProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603480</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMissingRequireWithAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testMissingRequireWithAdditionalProvide_93r.html">ProcessClosurePrimitivesTest.testMissingRequireWithAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772125</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidSetCssNameMapping</span><a href="ProcessClosurePrimitivesTest_testValidSetCssNameMapping_5rs.html">ProcessClosurePrimitivesTest.testValidSetCssNameMapping</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603415</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire1</span><a href="ProcessClosurePrimitivesTest_testGoodCrossModuleRequire1_exg.html">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772092</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire1</span><a href="ProcessClosurePrimitivesTest_testGoodCrossModuleRequire1_9it.html">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603515</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleDeclarationError1</span><a href="ProcessClosurePrimitivesTest_testMultipleDeclarationError1_7v.html">ProcessClosurePrimitivesTest.testMultipleDeclarationError1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771977</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvidedDeclaredFunctionError</span><a href="ProcessClosurePrimitivesTest_testProvidedDeclaredFunctionError_9n.html">ProcessClosurePrimitivesTest.testProvidedDeclaredFunctionError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771936</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testReorderedProvides2</span><a href="ProcessClosurePrimitivesTest_testReorderedProvides2_h4.html">ProcessClosurePrimitivesTest.testReorderedProvides2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772132</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideAfterDeclarationError</span><a href="ProcessClosurePrimitivesTest_testProvideAfterDeclarationError_9ct.html">ProcessClosurePrimitivesTest.testProvideAfterDeclarationError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603104</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase8</span><a href="ProcessClosurePrimitivesTest_testInvalidBase8_4ur.html">ProcessClosurePrimitivesTest.testInvalidBase8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772174</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules2b</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules2b_bp1.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603552</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvideAtEnd</span><a href="ProcessClosurePrimitivesTest_testOverlappingAdditionalProvideAtEnd_62.html">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvideAtEnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772113</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef</span><a href="ProcessClosurePrimitivesTest_testNoStubForProvidedTypedef_2iz.html">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603447</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules3b</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules3b_da4.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules3b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771849</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleDeclarationError3</span><a href="ProcessClosurePrimitivesTest_testMultipleDeclarationError3_9c3.html">ProcessClosurePrimitivesTest.testMultipleDeclarationError3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603290</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf2</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf2_jq.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771965</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleDeclarationError1</span><a href="ProcessClosurePrimitivesTest_testMultipleDeclarationError1_126.html">ProcessClosurePrimitivesTest.testMultipleDeclarationError1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603274</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase4</span><a href="ProcessClosurePrimitivesTest_testInvalidBase4_2qh.html">ProcessClosurePrimitivesTest.testInvalidBase4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603615</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase8</span><a href="ProcessClosurePrimitivesTest_testInvalidBase8_b2q.html">ProcessClosurePrimitivesTest.testInvalidBase8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603628</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvidedDeclaredFunctionError</span><a href="ProcessClosurePrimitivesTest_testProvidedDeclaredFunctionError_b2e.html">ProcessClosurePrimitivesTest.testProvidedDeclaredFunctionError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603571</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMissingProvides</span><a href="ProcessClosurePrimitivesTest_testMissingProvides_6us.html">ProcessClosurePrimitivesTest.testMissingProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772038</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRequireOfBaseGoog</span><a href="ProcessClosurePrimitivesTest_testRequireOfBaseGoog_9hj.html">ProcessClosurePrimitivesTest.testRequireOfBaseGoog</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603596</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideRequireSameFile</span><a href="ProcessClosurePrimitivesTest_testProvideRequireSameFile_8w7.html">ProcessClosurePrimitivesTest.testProvideRequireSameFile</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772026</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleProvides</span><a href="ProcessClosurePrimitivesTest_testMultipleProvides_ab4.html">ProcessClosurePrimitivesTest.testMultipleProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603419</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.018</span>0.018</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase5</span><a href="ProcessClosurePrimitivesTest_testInvalidBase5_d5f.html">ProcessClosurePrimitivesTest.testInvalidBase5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603618</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoRemovalFunction2</span><a href="ProcessClosurePrimitivesTest_testNoRemovalFunction2_6d5.html">ProcessClosurePrimitivesTest.testNoRemovalFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603346</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase6</span><a href="ProcessClosurePrimitivesTest_testValidBase6_9bz.html">ProcessClosurePrimitivesTest.testValidBase6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771815</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase4</span><a href="ProcessClosurePrimitivesTest_testInvalidBase4_7ho.html">ProcessClosurePrimitivesTest.testInvalidBase4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772022</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder4a</span><a href="ProcessClosurePrimitivesTest_testProvideOrder4a_b4x.html">ProcessClosurePrimitivesTest.testProvideOrder4a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772154</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitAndExplicitProvide</span><a href="ProcessClosurePrimitivesTest_testImplicitAndExplicitProvide_60y.html">ProcessClosurePrimitivesTest.testImplicitAndExplicitProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771820</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules4</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules4_ahc.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603587</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase4</span><a href="ProcessClosurePrimitivesTest_testValidBase4_5ei.html">ProcessClosurePrimitivesTest.testValidBase4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603376</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testLateRequire</span><a href="ProcessClosurePrimitivesTest_testLateRequire_5rx.html">ProcessClosurePrimitivesTest.testLateRequire</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603510</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleDottedAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testSimpleDottedAdditionalProvide_4eb.html">ProcessClosurePrimitivesTest.testSimpleDottedAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772105</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalOfProvidedObjLit</span><a href="ProcessClosurePrimitivesTest_testRemovalOfProvidedObjLit_6kh.html">ProcessClosurePrimitivesTest.testRemovalOfProvidedObjLit</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771921</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideRequireSameFile</span><a href="ProcessClosurePrimitivesTest_testProvideRequireSameFile_b0u.html">ProcessClosurePrimitivesTest.testProvideRequireSameFile</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603592</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testAddDependency</span><a href="ProcessClosurePrimitivesTest_testAddDependency_vv.html">ProcessClosurePrimitivesTest.testAddDependency</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603649</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules3</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules3_3xf.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771845</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleDottedAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testSimpleDottedAdditionalProvide_4pc.html">ProcessClosurePrimitivesTest.testSimpleDottedAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603526</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase3</span><a href="ProcessClosurePrimitivesTest_testValidBase3_dn5.html">ProcessClosurePrimitivesTest.testValidBase3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772188</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment2</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment2_5lu.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603017</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder3b</span><a href="ProcessClosurePrimitivesTest_testProvideOrder3b_6cn.html">ProcessClosurePrimitivesTest.testProvideOrder3b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772150</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder4b</span><a href="ProcessClosurePrimitivesTest_testProvideOrder4b_7an.html">ProcessClosurePrimitivesTest.testProvideOrder4b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603469</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire2</span><a href="ProcessClosurePrimitivesTest_testGoodCrossModuleRequire2_7jp.html">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772094</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSetCssNameMappingValidity</span><a href="ProcessClosurePrimitivesTest_testSetCssNameMappingValidity_c2x.html">ProcessClosurePrimitivesTest.testSetCssNameMappingValidity</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772080</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef4</span><a href="ProcessClosurePrimitivesTest_testNoStubForProvidedTypedef4_d2j.html">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771867</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder3a</span><a href="ProcessClosurePrimitivesTest_testProvideOrder3a_2r2.html">ProcessClosurePrimitivesTest.testProvideOrder3a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772145</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder1</span><a href="ProcessClosurePrimitivesTest_testProvideOrder1_lr.html">ProcessClosurePrimitivesTest.testProvideOrder1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603541</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase1</span><a href="ProcessClosurePrimitivesTest_testInvalidBase1_3wp.html">ProcessClosurePrimitivesTest.testInvalidBase1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603606</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRequireErrorCases</span><a href="ProcessClosurePrimitivesTest_testRequireErrorCases_73h.html">ProcessClosurePrimitivesTest.testRequireErrorCases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603532</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testAddDependency</span><a href="ProcessClosurePrimitivesTest_testAddDependency_1n6.html">ProcessClosurePrimitivesTest.testAddDependency</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772047</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder2</span><a href="ProcessClosurePrimitivesTest_testProvideOrder2_63g.html">ProcessClosurePrimitivesTest.testProvideOrder2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772141</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder1</span><a href="ProcessClosurePrimitivesTest_testProvideOrder1_c1b.html">ProcessClosurePrimitivesTest.testProvideOrder1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772136</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSetCssNameMappingNonStringValueReturnsError</span><a href="ProcessClosurePrimitivesTest_testSetCssNameMappingNonStringValueReturnsError_3oo.html">ProcessClosurePrimitivesTest.testSetCssNameMappingNonStringValueReturnsError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603298</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.041</span>0.041</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf2</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf2_des.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603118</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment3</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment3_eln.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771946</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase2</span><a href="ProcessClosurePrimitivesTest_testValidBase2_647.html">ProcessClosurePrimitivesTest.testValidBase2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772184</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testLateProvides</span><a href="ProcessClosurePrimitivesTest_testLateProvides_6f.html">ProcessClosurePrimitivesTest.testLateProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771881</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase3</span><a href="ProcessClosurePrimitivesTest_testInvalidBase3_9bh.html">ProcessClosurePrimitivesTest.testInvalidBase3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603612</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testBadCrossModuleRequire</span><a href="ProcessClosurePrimitivesTest_testBadCrossModuleRequire_c1n.html">ProcessClosurePrimitivesTest.testBadCrossModuleRequire</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603506</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf3</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf3_8ar.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603127</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testOverlappingAdditionalProvide_9sw.html">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603496</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRequireOfBaseGoog</span><a href="ProcessClosurePrimitivesTest_testRequireOfBaseGoog_dpn.html">ProcessClosurePrimitivesTest.testRequireOfBaseGoog</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771856</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase1</span><a href="ProcessClosurePrimitivesTest_testValidBase1_8oy.html">ProcessClosurePrimitivesTest.testValidBase1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603352</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder4a</span><a href="ProcessClosurePrimitivesTest_testProvideOrder4a_avh.html">ProcessClosurePrimitivesTest.testProvideOrder4a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603463</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase3</span><a href="ProcessClosurePrimitivesTest_testValidBase3_3g6.html">ProcessClosurePrimitivesTest.testValidBase3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603368</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRequireErrorCases</span><a href="ProcessClosurePrimitivesTest_testRequireErrorCases_322.html">ProcessClosurePrimitivesTest.testRequireErrorCases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772029</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules2b</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules2b_1ub.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules2b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771842</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testBadCrossModuleRequire</span><a href="ProcessClosurePrimitivesTest_testBadCrossModuleRequire_3ph.html">ProcessClosurePrimitivesTest.testBadCrossModuleRequire</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772089</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment2</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment2_78t.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771942</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase1</span><a href="ProcessClosurePrimitivesTest_testInvalidBase1_1jq.html">ProcessClosurePrimitivesTest.testInvalidBase1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771873</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoRemovalFunction2</span><a href="ProcessClosurePrimitivesTest_testNoRemovalFunction2_4d5.html">ProcessClosurePrimitivesTest.testNoRemovalFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771957</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase9</span><a href="ProcessClosurePrimitivesTest_testInvalidBase9_48y.html">ProcessClosurePrimitivesTest.testInvalidBase9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772177</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleDeclarationError2</span><a href="ProcessClosurePrimitivesTest_testMultipleDeclarationError2_acq.html">ProcessClosurePrimitivesTest.testMultipleDeclarationError2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603282</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder3a</span><a href="ProcessClosurePrimitivesTest_testProvideOrder3a_7ll.html">ProcessClosurePrimitivesTest.testProvideOrder3a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603451</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testLateProvides</span><a href="ProcessClosurePrimitivesTest_testLateProvides_18c.html">ProcessClosurePrimitivesTest.testLateProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603438</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase7</span><a href="ProcessClosurePrimitivesTest_testInvalidBase7_elh.html">ProcessClosurePrimitivesTest.testInvalidBase7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772171</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment4</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment4_awp.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603030</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSourcePositionPreservation</span><a href="ProcessClosurePrimitivesTest_testSourcePositionPreservation_3sj.html">ProcessClosurePrimitivesTest.testSourcePositionPreservation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603599</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules2</span><a href="ProcessClosurePrimitivesTest_testImplicitProvideInIndependentModules2_c1z.html">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603653</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleDeclarationError3</span><a href="ProcessClosurePrimitivesTest_testMultipleDeclarationError3_byj.html">ProcessClosurePrimitivesTest.testMultipleDeclarationError3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771985</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvideAtEnd</span><a href="ProcessClosurePrimitivesTest_testOverlappingAdditionalProvideAtEnd_ajz.html">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvideAtEnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603634</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testLateRequire</span><a href="ProcessClosurePrimitivesTest_testLateRequire_10i.html">ProcessClosurePrimitivesTest.testLateRequire</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771876</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase2</span><a href="ProcessClosurePrimitivesTest_testInvalidBase2_4jp.html">ProcessClosurePrimitivesTest.testInvalidBase2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771871</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase6</span><a href="ProcessClosurePrimitivesTest_testInvalidBase6_cf7.html">ProcessClosurePrimitivesTest.testInvalidBase6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603621</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules1</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules1_dfk.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603574</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules</span><a href="ProcessClosurePrimitivesTest_testImplicitProvideInIndependentModules_dgs.html">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771824</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase5</span><a href="ProcessClosurePrimitivesTest_testInvalidBase5_5jp.html">ProcessClosurePrimitivesTest.testInvalidBase5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772165</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testReorderedProvides</span><a href="ProcessClosurePrimitivesTest_testReorderedProvides_bvn.html">ProcessClosurePrimitivesTest.testReorderedProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772129</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules3</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules3_6dg.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603582</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder2</span><a href="ProcessClosurePrimitivesTest_testProvideOrder2_6h4.html">ProcessClosurePrimitivesTest.testProvideOrder2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603546</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRequireOfAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testRequireOfAdditionalProvide_u2.html">ProcessClosurePrimitivesTest.testRequireOfAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772121</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideErrorCases</span><a href="ProcessClosurePrimitivesTest_testProvideErrorCases_279.html">ProcessClosurePrimitivesTest.testProvideErrorCases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771993</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideOrder4b</span><a href="ProcessClosurePrimitivesTest_testProvideOrder4b_2wc.html">ProcessClosurePrimitivesTest.testProvideOrder4b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772158</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire2</span><a href="ProcessClosurePrimitivesTest_testGoodCrossModuleRequire2_6bd.html">ProcessClosurePrimitivesTest.testGoodCrossModuleRequire2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603518</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideAfterDeclarationError</span><a href="ProcessClosurePrimitivesTest_testProvideAfterDeclarationError_atl.html">ProcessClosurePrimitivesTest.testProvideAfterDeclarationError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771989</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase3</span><a href="ProcessClosurePrimitivesTest_testInvalidBase3_46a.html">ProcessClosurePrimitivesTest.testInvalidBase3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772019</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideErrorCases</span><a href="ProcessClosurePrimitivesTest_testProvideErrorCases_27i.html">ProcessClosurePrimitivesTest.testProvideErrorCases</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603146</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules3b</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules3b_ey6.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules3b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603556</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules1</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules1_6bq.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771835</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase6</span><a href="ProcessClosurePrimitivesTest_testInvalidBase6_8ci.html">ProcessClosurePrimitivesTest.testInvalidBase6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772168</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidProvide</span><a href="ProcessClosurePrimitivesTest_testInvalidProvide_eea.html">ProcessClosurePrimitivesTest.testInvalidProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772162</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase6</span><a href="ProcessClosurePrimitivesTest_testValidBase6_qy.html">ProcessClosurePrimitivesTest.testValidBase6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603390</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf1</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignmentInIf1_4yb.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignmentInIf1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603110</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules2</span><a href="ProcessClosurePrimitivesTest_testImplicitProvideInIndependentModules2_2uz.html">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771828</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase4</span><a href="ProcessClosurePrimitivesTest_testValidBase4_54q.html">ProcessClosurePrimitivesTest.testValidBase4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772192</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules</span><a href="ProcessClosurePrimitivesTest_testImplicitProvideInIndependentModules_2s0.html">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603409</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment1</span><a href="ProcessClosurePrimitivesTest_testRemovalMultipleAssignment1_c1s.html">ProcessClosurePrimitivesTest.testRemovalMultipleAssignment1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603010</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testReorderedProvides2</span><a href="ProcessClosurePrimitivesTest_testReorderedProvides2_26l.html">ProcessClosurePrimitivesTest.testReorderedProvides2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603521</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleProvides</span><a href="ProcessClosurePrimitivesTest_testSimpleProvides_5e5.html">ProcessClosurePrimitivesTest.testSimpleProvides</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603238</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.035</span>0.035</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules3</span><a href="ProcessClosurePrimitivesTest_testImplicitProvideInIndependentModules3_aab.html">ProcessClosurePrimitivesTest.testImplicitProvideInIndependentModules3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603657</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testSimpleAdditionalProvide_20d.html">ProcessClosurePrimitivesTest.testSimpleAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772097</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testOverlappingAdditionalProvide_2hs.html">ProcessClosurePrimitivesTest.testOverlappingAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772109</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef</span><a href="ProcessClosurePrimitivesTest_testNoStubForProvidedTypedef_wo.html">ProcessClosurePrimitivesTest.testNoStubForProvidedTypedef</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771861</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testSimpleAdditionalProvide_5zi.html">ProcessClosurePrimitivesTest.testSimpleAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603475</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMultipleDeclarationError2</span><a href="ProcessClosurePrimitivesTest_testMultipleDeclarationError2_8pg.html">ProcessClosurePrimitivesTest.testMultipleDeclarationError2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697771981</span>2 Jan 15:16:11</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testProvideInIndependentModules2</span><a href="ProcessClosurePrimitivesTest_testProvideInIndependentModules2_bip.html">ProcessClosurePrimitivesTest.testProvideInIndependentModules2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603578</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testSimpleAdditionalProvideAtEnd</span><a href="ProcessClosurePrimitivesTest_testSimpleAdditionalProvideAtEnd_702.html">ProcessClosurePrimitivesTest.testSimpleAdditionalProvideAtEnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772101</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testMissingRequireWithAdditionalProvide</span><a href="ProcessClosurePrimitivesTest_testMissingRequireWithAdditionalProvide_2el.html">ProcessClosurePrimitivesTest.testMissingRequireWithAdditionalProvide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603640</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testValidBase5</span><a href="ProcessClosurePrimitivesTest_testValidBase5_2n5.html">ProcessClosurePrimitivesTest.testValidBase5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697772195</span>2 Jan 15:16:12</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ProcessClosurePrimitivesTest.testInvalidBase2</span><a href="ProcessClosurePrimitivesTest_testInvalidBase2_dsz.html">ProcessClosurePrimitivesTest.testInvalidBase2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697603609</span>2 Jan 15:13:23</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

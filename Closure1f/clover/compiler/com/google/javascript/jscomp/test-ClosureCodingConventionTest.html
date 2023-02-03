@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class ClosureCodingConventionTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="ClosureCodingConventionTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>ClosureCodingConventionTest</td>
+        <td class="testPasses"><span class="sortValue">72</span>72</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.252</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection11</span><a href="ClosureCodingConventionTest_testInheritanceDetection11_8il.html">ClosureCodingConventionTest.testInheritanceDetection11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527351</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testVarAndOptionalParams</span><a href="ClosureCodingConventionTest_testVarAndOptionalParams_cfn.html">ClosureCodingConventionTest.testVarAndOptionalParams</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527336</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testObjectLiteralCast</span><a href="ClosureCodingConventionTest_testObjectLiteralCast_f97.html">ClosureCodingConventionTest.testObjectLiteralCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389184</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection10</span><a href="ClosureCodingConventionTest_testInheritanceDetection10_4rh.html">ClosureCodingConventionTest.testInheritanceDetection10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389234</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetectionPostCollapseProperties</span><a href="ClosureCodingConventionTest_testInheritanceDetectionPostCollapseProperties_bdy.html">ClosureCodingConventionTest.testInheritanceDetectionPostCollapseProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389182</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection10</span><a href="ClosureCodingConventionTest_testInheritanceDetection10_71k.html">ClosureCodingConventionTest.testInheritanceDetection10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527350</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection7</span><a href="ClosureCodingConventionTest_testInheritanceDetection7_f7l.html">ClosureCodingConventionTest.testInheritanceDetection7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389231</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testFunctionBind</span><a href="ClosureCodingConventionTest_testFunctionBind_8mn.html">ClosureCodingConventionTest.testFunctionBind</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744320</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection9</span><a href="ClosureCodingConventionTest_testInheritanceDetection9_arf.html">ClosureCodingConventionTest.testInheritanceDetection9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389233</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection14</span><a href="ClosureCodingConventionTest_testInheritanceDetection14_2p2.html">ClosureCodingConventionTest.testInheritanceDetection14</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744309</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testPrivateName</span><a href="ClosureCodingConventionTest_testPrivateName_8cm.html">ClosureCodingConventionTest.testPrivateName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744295</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInlineName</span><a href="ClosureCodingConventionTest_testInlineName_b6b.html">ClosureCodingConventionTest.testInlineName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527337</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection6</span><a href="ClosureCodingConventionTest_testInheritanceDetection6_exx.html">ClosureCodingConventionTest.testInheritanceDetection6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744298</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection14</span><a href="ClosureCodingConventionTest_testInheritanceDetection14_ezp.html">ClosureCodingConventionTest.testInheritanceDetection14</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389238</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection13</span><a href="ClosureCodingConventionTest_testInheritanceDetection13_6nq.html">ClosureCodingConventionTest.testInheritanceDetection13</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389237</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection12</span><a href="ClosureCodingConventionTest_testInheritanceDetection12_3yr.html">ClosureCodingConventionTest.testInheritanceDetection12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527352</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testVarAndOptionalParams</span><a href="ClosureCodingConventionTest_testVarAndOptionalParams_evc.html">ClosureCodingConventionTest.testVarAndOptionalParams</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389203</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testObjectLiteralCast</span><a href="ClosureCodingConventionTest_testObjectLiteralCast_dkg.html">ClosureCodingConventionTest.testObjectLiteralCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527179</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.148</span>0.148</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection6</span><a href="ClosureCodingConventionTest_testInheritanceDetection6_cw9.html">ClosureCodingConventionTest.testInheritanceDetection6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389214</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection8</span><a href="ClosureCodingConventionTest_testInheritanceDetection8_e46.html">ClosureCodingConventionTest.testInheritanceDetection8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744300</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testApplySubclassRelationship</span><a href="ClosureCodingConventionTest_testApplySubclassRelationship_17g.html">ClosureCodingConventionTest.testApplySubclassRelationship</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744328</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection10</span><a href="ClosureCodingConventionTest_testInheritanceDetection10_c39.html">ClosureCodingConventionTest.testInheritanceDetection10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744303</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testPrivateName</span><a href="ClosureCodingConventionTest_testPrivateName_e2f.html">ClosureCodingConventionTest.testPrivateName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527350</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection1</span><a href="ClosureCodingConventionTest_testInheritanceDetection1_ah5.html">ClosureCodingConventionTest.testInheritanceDetection1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527328</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testVarAndOptionalParams</span><a href="ClosureCodingConventionTest_testVarAndOptionalParams_fy.html">ClosureCodingConventionTest.testVarAndOptionalParams</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744314</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection14</span><a href="ClosureCodingConventionTest_testInheritanceDetection14_9qy.html">ClosureCodingConventionTest.testInheritanceDetection14</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527354</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection7</span><a href="ClosureCodingConventionTest_testInheritanceDetection7_5wz.html">ClosureCodingConventionTest.testInheritanceDetection7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527333</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testRequire</span><a href="ClosureCodingConventionTest_testRequire_bx8.html">ClosureCodingConventionTest.testRequire</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389195</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testEnumKey</span><a href="ClosureCodingConventionTest_testEnumKey_163.html">ClosureCodingConventionTest.testEnumKey</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389205</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection12</span><a href="ClosureCodingConventionTest_testInheritanceDetection12_a5n.html">ClosureCodingConventionTest.testInheritanceDetection12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389236</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection1</span><a href="ClosureCodingConventionTest_testInheritanceDetection1_da5.html">ClosureCodingConventionTest.testInheritanceDetection1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744315</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testApplySubclassRelationship</span><a href="ClosureCodingConventionTest_testApplySubclassRelationship_bt8.html">ClosureCodingConventionTest.testApplySubclassRelationship</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527148</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection5</span><a href="ClosureCodingConventionTest_testInheritanceDetection5_a1g.html">ClosureCodingConventionTest.testInheritanceDetection5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527332</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection5</span><a href="ClosureCodingConventionTest_testInheritanceDetection5_elx.html">ClosureCodingConventionTest.testInheritanceDetection5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744297</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testObjectLiteralCast</span><a href="ClosureCodingConventionTest_testObjectLiteralCast_c1m.html">ClosureCodingConventionTest.testObjectLiteralCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744326</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetectionPostCollapseProperties</span><a href="ClosureCodingConventionTest_testInheritanceDetectionPostCollapseProperties_dzt.html">ClosureCodingConventionTest.testInheritanceDetectionPostCollapseProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744311</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection3</span><a href="ClosureCodingConventionTest_testInheritanceDetection3_a9m.html">ClosureCodingConventionTest.testInheritanceDetection3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744318</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testExportedName</span><a href="ClosureCodingConventionTest_testExportedName_3ml.html">ClosureCodingConventionTest.testExportedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744295</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection4</span><a href="ClosureCodingConventionTest_testInheritanceDetection4_ah9.html">ClosureCodingConventionTest.testInheritanceDetection4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527331</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection4</span><a href="ClosureCodingConventionTest_testInheritanceDetection4_ep6.html">ClosureCodingConventionTest.testInheritanceDetection4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389211</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection9</span><a href="ClosureCodingConventionTest_testInheritanceDetection9_cbt.html">ClosureCodingConventionTest.testInheritanceDetection9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527335</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection2</span><a href="ClosureCodingConventionTest_testInheritanceDetection2_9co.html">ClosureCodingConventionTest.testInheritanceDetection2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527329</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection13</span><a href="ClosureCodingConventionTest_testInheritanceDetection13_c80.html">ClosureCodingConventionTest.testInheritanceDetection13</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527354</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testExportedName</span><a href="ClosureCodingConventionTest_testExportedName_d3r.html">ClosureCodingConventionTest.testExportedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527338</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection7</span><a href="ClosureCodingConventionTest_testInheritanceDetection7_ddv.html">ClosureCodingConventionTest.testInheritanceDetection7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744299</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testRequire</span><a href="ClosureCodingConventionTest_testRequire_6fw.html">ClosureCodingConventionTest.testRequire</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744312</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection3</span><a href="ClosureCodingConventionTest_testInheritanceDetection3_8ka.html">ClosureCodingConventionTest.testInheritanceDetection3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527330</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection12</span><a href="ClosureCodingConventionTest_testInheritanceDetection12_774.html">ClosureCodingConventionTest.testInheritanceDetection12</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744307</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection6</span><a href="ClosureCodingConventionTest_testInheritanceDetection6_1du.html">ClosureCodingConventionTest.testInheritanceDetection6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527333</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testRequire</span><a href="ClosureCodingConventionTest_testRequire_1xj.html">ClosureCodingConventionTest.testRequire</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527338</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection2</span><a href="ClosureCodingConventionTest_testInheritanceDetection2_8y3.html">ClosureCodingConventionTest.testInheritanceDetection2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389208</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testFunctionBind</span><a href="ClosureCodingConventionTest_testFunctionBind_el6.html">ClosureCodingConventionTest.testFunctionBind</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389187</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testExportedName</span><a href="ClosureCodingConventionTest_testExportedName_eec.html">ClosureCodingConventionTest.testExportedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389201</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection4</span><a href="ClosureCodingConventionTest_testInheritanceDetection4_25p.html">ClosureCodingConventionTest.testInheritanceDetection4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744319</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection2</span><a href="ClosureCodingConventionTest_testInheritanceDetection2_dpj.html">ClosureCodingConventionTest.testInheritanceDetection2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744317</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection13</span><a href="ClosureCodingConventionTest_testInheritanceDetection13_ej8.html">ClosureCodingConventionTest.testInheritanceDetection13</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744308</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetectionPostCollapseProperties</span><a href="ClosureCodingConventionTest_testInheritanceDetectionPostCollapseProperties_4u1.html">ClosureCodingConventionTest.testInheritanceDetectionPostCollapseProperties</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527336</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testPrivateName</span><a href="ClosureCodingConventionTest_testPrivateName_6jm.html">ClosureCodingConventionTest.testPrivateName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389200</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection3</span><a href="ClosureCodingConventionTest_testInheritanceDetection3_af5.html">ClosureCodingConventionTest.testInheritanceDetection3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389209</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testEnumKey</span><a href="ClosureCodingConventionTest_testEnumKey_dqa.html">ClosureCodingConventionTest.testEnumKey</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744315</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection1</span><a href="ClosureCodingConventionTest_testInheritanceDetection1_8rg.html">ClosureCodingConventionTest.testInheritanceDetection1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389206</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testApplySubclassRelationship</span><a href="ClosureCodingConventionTest_testApplySubclassRelationship_7vp.html">ClosureCodingConventionTest.testApplySubclassRelationship</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389198</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection11</span><a href="ClosureCodingConventionTest_testInheritanceDetection11_e2c.html">ClosureCodingConventionTest.testInheritanceDetection11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389235</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection8</span><a href="ClosureCodingConventionTest_testInheritanceDetection8_7jo.html">ClosureCodingConventionTest.testInheritanceDetection8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389232</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInlineName</span><a href="ClosureCodingConventionTest_testInlineName_5fx.html">ClosureCodingConventionTest.testInlineName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744296</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection5</span><a href="ClosureCodingConventionTest_testInheritanceDetection5_51y.html">ClosureCodingConventionTest.testInheritanceDetection5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389213</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection8</span><a href="ClosureCodingConventionTest_testInheritanceDetection8_ex7.html">ClosureCodingConventionTest.testInheritanceDetection8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527334</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection9</span><a href="ClosureCodingConventionTest_testInheritanceDetection9_9n3.html">ClosureCodingConventionTest.testInheritanceDetection9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744301</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testFunctionBind</span><a href="ClosureCodingConventionTest_testFunctionBind_6j0.html">ClosureCodingConventionTest.testFunctionBind</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527340</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInheritanceDetection11</span><a href="ClosureCodingConventionTest_testInheritanceDetection11_1zg.html">ClosureCodingConventionTest.testInheritanceDetection11</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697744306</span>2 Jan 15:15:44</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testInlineName</span><a href="ClosureCodingConventionTest_testInlineName_cxp.html">ClosureCodingConventionTest.testInlineName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697389202</span>2 Jan 15:09:49</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">ClosureCodingConventionTest.testEnumKey</span><a href="ClosureCodingConventionTest_testEnumKey_c8c.html">ClosureCodingConventionTest.testEnumKey</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697527148</span>2 Jan 15:12:07</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

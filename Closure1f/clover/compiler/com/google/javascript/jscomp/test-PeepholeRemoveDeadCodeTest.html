@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class PeepholeRemoveDeadCodeTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="PeepholeRemoveDeadCodeTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>PeepholeRemoveDeadCodeTest</td>
+        <td class="testPasses"><span class="sortValue">156</span>156</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>2.433</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs1</span><a href="PeepholeRemoveDeadCodeTest_testNoSimplifyFunctionArgs1_7rx.html">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595894</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex3</span><a href="PeepholeRemoveDeadCodeTest_testComplex3_jt.html">PeepholeRemoveDeadCodeTest.testComplex3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596582</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testArrayLiteral</span><a href="PeepholeRemoveDeadCodeTest_testArrayLiteral_2uj.html">PeepholeRemoveDeadCodeTest.testArrayLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596482</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook4</span><a href="PeepholeRemoveDeadCodeTest_testHook4_231.html">PeepholeRemoveDeadCodeTest.testHook4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596012</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect1</span><a href="PeepholeRemoveDeadCodeTest_testConstantConditionWithSideEffect1_6et.html">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769986</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveVar1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveVar1_5rf.html">PeepholeRemoveDeadCodeTest.testNoRemoveVar1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769797</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveNamespaceGet2_6ci.html">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769976</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect2</span><a href="PeepholeRemoveDeadCodeTest_testConstantConditionWithSideEffect2_2vs.html">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596695</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.043</span>0.043</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook3</span><a href="PeepholeRemoveDeadCodeTest_testHook3_74z.html">PeepholeRemoveDeadCodeTest.testHook3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769748</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook6</span><a href="PeepholeRemoveDeadCodeTest_testHook6_1f9.html">PeepholeRemoveDeadCodeTest.testHook6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769755</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook2</span><a href="PeepholeRemoveDeadCodeTest_testHook2_gu.html">PeepholeRemoveDeadCodeTest.testHook2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595997</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex5</span><a href="PeepholeRemoveDeadCodeTest_testComplex5_ajl.html">PeepholeRemoveDeadCodeTest.testComplex5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769677</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveFunctionDeclaration1_7xu.html">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769681</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveVarGet2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveVarGet2_n0.html">PeepholeRemoveDeadCodeTest.testRemoveVarGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596210</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveInControlStructure1_yt.html">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769736</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook6</span><a href="PeepholeRemoveDeadCodeTest_testHook6_266.html">PeepholeRemoveDeadCodeTest.testHook6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596026</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign2_3rx.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596281</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNew1</span><a href="PeepholeRemoveDeadCodeTest_testNew1_1h.html">PeepholeRemoveDeadCodeTest.testNew1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596173</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testTryCatchFinally</span><a href="PeepholeRemoveDeadCodeTest_testTryCatchFinally_23h.html">PeepholeRemoveDeadCodeTest.testTryCatchFinally</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596372</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.079</span>0.079</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldUselessWhile</span><a href="PeepholeRemoveDeadCodeTest_testFoldUselessWhile_ak4.html">PeepholeRemoveDeadCodeTest.testFoldUselessWhile</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596509</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.04</span>0.04</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveThrow2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveThrow2_a3p.html">PeepholeRemoveDeadCodeTest.testNoRemoveThrow2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769728</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit3</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit3_6hh.html">PeepholeRemoveDeadCodeTest.testShortCircuit3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596466</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook5</span><a href="PeepholeRemoveDeadCodeTest_testHook5_2r3.html">PeepholeRemoveDeadCodeTest.testHook5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596018</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook7</span><a href="PeepholeRemoveDeadCodeTest_testHook7_2q5.html">PeepholeRemoveDeadCodeTest.testHook7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596033</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet2</span><a href="PeepholeRemoveDeadCodeTest_testRemovePrototypeGet2_dyk.html">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769658</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveFromLabel2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveFromLabel2_aud.html">PeepholeRemoveDeadCodeTest.testRemoveFromLabel2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697597395</span>2 Jan 15:13:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits3_4c5.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769782</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall3_afz.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595808</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNew1</span><a href="PeepholeRemoveDeadCodeTest_testNew1_2u2.html">PeepholeRemoveDeadCodeTest.testNew1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770079</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign5</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign5_cst.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596302</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveNumber</span><a href="PeepholeRemoveDeadCodeTest_testRemoveNumber_1h1.html">PeepholeRemoveDeadCodeTest.testRemoveNumber</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770064</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldConstantCommaExpressions</span><a href="PeepholeRemoveDeadCodeTest_testFoldConstantCommaExpressions_dar.html">PeepholeRemoveDeadCodeTest.testFoldConstantCommaExpressions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770159</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveFunctionDeclaration1_8lz.html">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697597065</span>2 Jan 15:13:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveThrow3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveThrow3_eo0.html">PeepholeRemoveDeadCodeTest.testNoRemoveThrow3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769732</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits1_6h5.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596331</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveNamespaceGet2_4q7.html">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595778</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveVar2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveVar2_2qd.html">PeepholeRemoveDeadCodeTest.testNoRemoveVar2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596324</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect1</span><a href="PeepholeRemoveDeadCodeTest_testConstantConditionWithSideEffect1_6sy.html">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596623</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex2</span><a href="PeepholeRemoveDeadCodeTest_testComplex2_bas.html">PeepholeRemoveDeadCodeTest.testComplex2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769764</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testIf</span><a href="PeepholeRemoveDeadCodeTest_testIf_cm9.html">PeepholeRemoveDeadCodeTest.testIf</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596217</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.056</span>0.056</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldUselessWhile</span><a href="PeepholeRemoveDeadCodeTest_testFoldUselessWhile_116.html">PeepholeRemoveDeadCodeTest.testFoldUselessWhile</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770114</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet1</span><a href="PeepholeRemoveDeadCodeTest_testRemovePrototypeGet1_7bk.html">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596188</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveFromLabel1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveFromLabel1_660.html">PeepholeRemoveDeadCodeTest.testRemoveFromLabel1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697597389</span>2 Jan 15:13:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testTryCatchFinally</span><a href="PeepholeRemoveDeadCodeTest_testTryCatchFinally_6qv.html">PeepholeRemoveDeadCodeTest.testTryCatchFinally</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770010</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveVarGet2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveVarGet2_9j8.html">PeepholeRemoveDeadCodeTest.testRemoveVarGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769972</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveInControlStructure1_1c4.html">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596602</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure3</span><a href="PeepholeRemoveDeadCodeTest_testRemoveInControlStructure3_8b2.html">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596612</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveFunctionDeclaration2_715.html">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697597071</span>2 Jan 15:13:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldBlock</span><a href="PeepholeRemoveDeadCodeTest_testFoldBlock_6jj.html">PeepholeRemoveDeadCodeTest.testFoldBlock</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596955</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.109</span>0.109</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveNamespaceGet1_8s3.html">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769974</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveVarGet1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveVarGet1_9x3.html">PeepholeRemoveDeadCodeTest.testRemoveVarGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769970</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldBlocksWithManyChildren</span><a href="PeepholeRemoveDeadCodeTest_testFoldBlocksWithManyChildren_a7r.html">PeepholeRemoveDeadCodeTest.testFoldBlocksWithManyChildren</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596738</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits3_5py.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596356</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testVarLifting</span><a href="PeepholeRemoveDeadCodeTest_testVarLifting_17l.html">PeepholeRemoveDeadCodeTest.testVarLifting</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770168</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveThrow1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveThrow1_4je.html">PeepholeRemoveDeadCodeTest.testNoRemoveThrow1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769724</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall1_8hv.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769708</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall4</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall4_7lo.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595815</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect2</span><a href="PeepholeRemoveDeadCodeTest_testConstantConditionWithSideEffect2_3jv.html">PeepholeRemoveDeadCodeTest.testConstantConditionWithSideEffect2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770100</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign3_6bf.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596288</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall4</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall4_49c.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769715</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveInControlStructure2_19y.html">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769739</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveAdd1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveAdd1_3eg.html">PeepholeRemoveDeadCodeTest.testRemoveAdd1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770165</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook1</span><a href="PeepholeRemoveDeadCodeTest_testHook1_bst.html">PeepholeRemoveDeadCodeTest.testHook1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769744</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testMinimizeWhileConstantCondition</span><a href="PeepholeRemoveDeadCodeTest_testMinimizeWhileConstantCondition_8em.html">PeepholeRemoveDeadCodeTest.testMinimizeWhileConstantCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595841</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.052</span>0.052</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits4</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits4_akd.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596364</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit2</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit2_13e.html">PeepholeRemoveDeadCodeTest.testShortCircuit2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769772</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldAssign</span><a href="PeepholeRemoveDeadCodeTest_testFoldAssign_48z.html">PeepholeRemoveDeadCodeTest.testFoldAssign</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769697</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign3_62o.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769667</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall6</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall6_383.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595831</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs1</span><a href="PeepholeRemoveDeadCodeTest_testNoSimplifyFunctionArgs1_5mr.html">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769687</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testObjectLiteral</span><a href="PeepholeRemoveDeadCodeTest_testObjectLiteral_bop.html">PeepholeRemoveDeadCodeTest.testObjectLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770088</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testCall1</span><a href="PeepholeRemoveDeadCodeTest_testCall1_8dr.html">PeepholeRemoveDeadCodeTest.testCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770083</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNew2</span><a href="PeepholeRemoveDeadCodeTest_testNew2_41f.html">PeepholeRemoveDeadCodeTest.testNew2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596180</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveNamespaceGet1_6oj.html">PeepholeRemoveDeadCodeTest.testRemoveNamespaceGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595734</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.044</span>0.044</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook2</span><a href="PeepholeRemoveDeadCodeTest_testHook2_au8.html">PeepholeRemoveDeadCodeTest.testHook2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769746</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex3</span><a href="PeepholeRemoveDeadCodeTest_testComplex3_2cd.html">PeepholeRemoveDeadCodeTest.testComplex3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769767</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldUselessDo</span><a href="PeepholeRemoveDeadCodeTest_testFoldUselessDo_451.html">PeepholeRemoveDeadCodeTest.testFoldUselessDo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770135</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook7</span><a href="PeepholeRemoveDeadCodeTest_testHook7_9a1.html">PeepholeRemoveDeadCodeTest.testHook7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769757</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook</span><a href="PeepholeRemoveDeadCodeTest_testHook_p8.html">PeepholeRemoveDeadCodeTest.testHook</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770172</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.039</span>0.039</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit4</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit4_d7y.html">PeepholeRemoveDeadCodeTest.testShortCircuit4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596474</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign1_41j.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769663</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveVar1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveVar1_6b0.html">PeepholeRemoveDeadCodeTest.testNoRemoveVar1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596317</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex1</span><a href="PeepholeRemoveDeadCodeTest_testComplex1_8u3.html">PeepholeRemoveDeadCodeTest.testComplex1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769762</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign6</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign6_f3v.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769706</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall1_3wj.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595791</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testArrayLiteral</span><a href="PeepholeRemoveDeadCodeTest_testArrayLiteral_f32.html">PeepholeRemoveDeadCodeTest.testArrayLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770094</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex4</span><a href="PeepholeRemoveDeadCodeTest_testComplex4_6n0.html">PeepholeRemoveDeadCodeTest.testComplex4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769674</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testCall2</span><a href="PeepholeRemoveDeadCodeTest_testCall2_8dv.html">PeepholeRemoveDeadCodeTest.testCall2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595981</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveThrow2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveThrow2_3h0.html">PeepholeRemoveDeadCodeTest.testNoRemoveThrow2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596560</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook4</span><a href="PeepholeRemoveDeadCodeTest_testHook4_7jt.html">PeepholeRemoveDeadCodeTest.testHook4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769751</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs2</span><a href="PeepholeRemoveDeadCodeTest_testNoSimplifyFunctionArgs2_6xv.html">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769689</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit1</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit1_ejy.html">PeepholeRemoveDeadCodeTest.testShortCircuit1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769770</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits1_1es.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769694</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveUselessOps</span><a href="PeepholeRemoveDeadCodeTest_testRemoveUselessOps_4xv.html">PeepholeRemoveDeadCodeTest.testRemoveUselessOps</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769801</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.08</span>0.08</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testOptimizeSwitch</span><a href="PeepholeRemoveDeadCodeTest_testOptimizeSwitch_3ic.html">PeepholeRemoveDeadCodeTest.testOptimizeSwitch</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697597093</span>2 Jan 15:13:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.263</span>0.263</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign1_c6y.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596274</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveVarGet1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveVarGet1_3f2.html">PeepholeRemoveDeadCodeTest.testRemoveVarGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596203</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNew2</span><a href="PeepholeRemoveDeadCodeTest_testNew2_4vr.html">PeepholeRemoveDeadCodeTest.testNew2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770081</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldUselessDo</span><a href="PeepholeRemoveDeadCodeTest_testFoldUselessDo_pj.html">PeepholeRemoveDeadCodeTest.testFoldUselessDo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595418</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.315</span>0.315</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs2</span><a href="PeepholeRemoveDeadCodeTest_testNoSimplifyFunctionArgs2_9i5.html">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595899</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit3</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit3_rz.html">PeepholeRemoveDeadCodeTest.testShortCircuit3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769775</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall5</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall5_cn4.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595823</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveVar2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveVar2_92x.html">PeepholeRemoveDeadCodeTest.testNoRemoveVar2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769661</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex5</span><a href="PeepholeRemoveDeadCodeTest_testComplex5_66l.html">PeepholeRemoveDeadCodeTest.testComplex5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596595</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldBlocksWithManyChildren</span><a href="PeepholeRemoveDeadCodeTest_testFoldBlocksWithManyChildren_4ft.html">PeepholeRemoveDeadCodeTest.testFoldBlocksWithManyChildren</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769981</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testVarLifting</span><a href="PeepholeRemoveDeadCodeTest_testVarLifting_au1.html">PeepholeRemoveDeadCodeTest.testVarLifting</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697597079</span>2 Jan 15:13:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldBlock</span><a href="PeepholeRemoveDeadCodeTest_testFoldBlock_9gb.html">PeepholeRemoveDeadCodeTest.testFoldBlock</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770036</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.027</span>0.027</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall6</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall6_8vg.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769721</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook3</span><a href="PeepholeRemoveDeadCodeTest_testHook3_dta.html">PeepholeRemoveDeadCodeTest.testHook3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596005</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveInControlStructure2_2sz.html">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596607</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign2_60u.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769665</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit2</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit2_5gj.html">PeepholeRemoveDeadCodeTest.testShortCircuit2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596459</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testIf</span><a href="PeepholeRemoveDeadCodeTest_testIf_drq.html">PeepholeRemoveDeadCodeTest.testIf</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770066</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex2</span><a href="PeepholeRemoveDeadCodeTest_testComplex2_4xw.html">PeepholeRemoveDeadCodeTest.testComplex2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596576</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook1</span><a href="PeepholeRemoveDeadCodeTest_testHook1_9im.html">PeepholeRemoveDeadCodeTest.testHook1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595989</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign4</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign4_1kn.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596295</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testCall1</span><a href="PeepholeRemoveDeadCodeTest_testCall1_8j1.html">PeepholeRemoveDeadCodeTest.testCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595973</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure3</span><a href="PeepholeRemoveDeadCodeTest_testRemoveInControlStructure3_7jg.html">PeepholeRemoveDeadCodeTest.testRemoveInControlStructure3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769742</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit1</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit1_2t2.html">PeepholeRemoveDeadCodeTest.testShortCircuit1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596451</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveNumber</span><a href="PeepholeRemoveDeadCodeTest_testRemoveNumber_7xo.html">PeepholeRemoveDeadCodeTest.testRemoveNumber</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596549</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs3</span><a href="PeepholeRemoveDeadCodeTest_testNoSimplifyFunctionArgs3_35z.html">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769692</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign4</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign4_74w.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769670</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet2</span><a href="PeepholeRemoveDeadCodeTest_testRemovePrototypeGet2_c86.html">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596195</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign5</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign5_1zx.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769672</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall2_3oh.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769711</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs3</span><a href="PeepholeRemoveDeadCodeTest_testNoSimplifyFunctionArgs3_4rg.html">PeepholeRemoveDeadCodeTest.testNoSimplifyFunctionArgs3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595907</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.009</span>0.009</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldUselessFor</span><a href="PeepholeRemoveDeadCodeTest_testFoldUselessFor_awv.html">PeepholeRemoveDeadCodeTest.testFoldUselessFor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596758</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.033</span>0.033</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook</span><a href="PeepholeRemoveDeadCodeTest_testHook_4ku.html">PeepholeRemoveDeadCodeTest.testHook</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596049</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.123</span>0.123</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldUselessFor</span><a href="PeepholeRemoveDeadCodeTest_testFoldUselessFor_66k.html">PeepholeRemoveDeadCodeTest.testFoldUselessFor</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770124</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testOptimizeSwitch</span><a href="PeepholeRemoveDeadCodeTest_testOptimizeSwitch_8cu.html">PeepholeRemoveDeadCodeTest.testOptimizeSwitch</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769882</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.087</span>0.087</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook8</span><a href="PeepholeRemoveDeadCodeTest_testHook8_6vk.html">PeepholeRemoveDeadCodeTest.testHook8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769759</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveThrow1</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveThrow1_1td.html">PeepholeRemoveDeadCodeTest.testNoRemoveThrow1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596554</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveFromLabel2</span><a href="PeepholeRemoveDeadCodeTest_testRemoveFromLabel2_e3i.html">PeepholeRemoveDeadCodeTest.testRemoveFromLabel2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769793</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits2_3ee.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769779</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testObjectLiteral</span><a href="PeepholeRemoveDeadCodeTest_testObjectLiteral_5j1.html">PeepholeRemoveDeadCodeTest.testObjectLiteral</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595946</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.026</span>0.026</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldConstantCommaExpressions</span><a href="PeepholeRemoveDeadCodeTest_testFoldConstantCommaExpressions_3tb.html">PeepholeRemoveDeadCodeTest.testFoldConstantCommaExpressions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595917</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.029</span>0.029</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits2_2nh.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596340</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testCall2</span><a href="PeepholeRemoveDeadCodeTest_testCall2_2da.html">PeepholeRemoveDeadCodeTest.testCall2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770086</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveInherits4</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveInherits4_au2.html">PeepholeRemoveDeadCodeTest.testNoRemoveInherits4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769785</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook5</span><a href="PeepholeRemoveDeadCodeTest_testHook5_56a.html">PeepholeRemoveDeadCodeTest.testHook5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769753</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveAdd1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveAdd1_820.html">PeepholeRemoveDeadCodeTest.testRemoveAdd1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596618</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testMinimizeWhileConstantCondition</span><a href="PeepholeRemoveDeadCodeTest_testMinimizeWhileConstantCondition_74s.html">PeepholeRemoveDeadCodeTest.testMinimizeWhileConstantCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697770148</span>2 Jan 15:16:10</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall3_8gb.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769713</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveAssign6</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveAssign6_9cm.html">PeepholeRemoveDeadCodeTest.testNoRemoveAssign6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596309</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testHook8</span><a href="PeepholeRemoveDeadCodeTest_testHook8_77o.html">PeepholeRemoveDeadCodeTest.testHook8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596041</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall5</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall5_14o.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769718</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveUselessOps</span><a href="PeepholeRemoveDeadCodeTest_testRemoveUselessOps_91.html">PeepholeRemoveDeadCodeTest.testRemoveUselessOps</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596791</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.163</span>0.163</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex1</span><a href="PeepholeRemoveDeadCodeTest_testComplex1_9dy.html">PeepholeRemoveDeadCodeTest.testComplex1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596571</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testShortCircuit4</span><a href="PeepholeRemoveDeadCodeTest_testShortCircuit4_13m.html">PeepholeRemoveDeadCodeTest.testShortCircuit4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769777</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveThrow3</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveThrow3_75f.html">PeepholeRemoveDeadCodeTest.testNoRemoveThrow3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596566</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveCall2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveCall2_9ro.html">PeepholeRemoveDeadCodeTest.testNoRemoveCall2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697595800</span>2 Jan 15:13:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testFoldAssign</span><a href="PeepholeRemoveDeadCodeTest_testFoldAssign_aw.html">PeepholeRemoveDeadCodeTest.testFoldAssign</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697597357</span>2 Jan 15:13:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.032</span>0.032</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration2</span><a href="PeepholeRemoveDeadCodeTest_testNoRemoveFunctionDeclaration2_10r.html">PeepholeRemoveDeadCodeTest.testNoRemoveFunctionDeclaration2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769684</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemoveFromLabel1</span><a href="PeepholeRemoveDeadCodeTest_testRemoveFromLabel1_bmv.html">PeepholeRemoveDeadCodeTest.testRemoveFromLabel1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769789</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testComplex4</span><a href="PeepholeRemoveDeadCodeTest_testComplex4_72r.html">PeepholeRemoveDeadCodeTest.testComplex4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697596587</span>2 Jan 15:13:16</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet1</span><a href="PeepholeRemoveDeadCodeTest_testRemovePrototypeGet1_5ua.html">PeepholeRemoveDeadCodeTest.testRemovePrototypeGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697769978</span>2 Jan 15:16:09</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

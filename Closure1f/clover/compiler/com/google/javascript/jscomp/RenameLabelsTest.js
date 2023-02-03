@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":92,"id":95690,"methods":[{"el":28,"sc":3,"sl":25},{"el":59,"sc":3,"sl":31},{"el":86,"sc":3,"sl":61},{"el":90,"sc":3,"sl":88}],"name":"RenameLabelsTest","sl":23}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_11737":{"methods":[{"sl":25},{"sl":88}],"name":"testRenameReused","pass":true,"statements":[{"sl":27},{"sl":89}]},"test_14941":{"methods":[{"sl":25},{"sl":88}],"name":"testRenameReused","pass":true,"statements":[{"sl":27},{"sl":89}]},"test_15837":{"methods":[{"sl":25},{"sl":61}],"name":"testRenameGlobals","pass":true,"statements":[{"sl":27},{"sl":62},{"sl":64},{"sl":66},{"sl":68},{"sl":70},{"sl":73},{"sl":75},{"sl":77},{"sl":80},{"sl":84}]},"test_16508":{"methods":[{"sl":25},{"sl":31}],"name":"testRenameInFunction","pass":true,"statements":[{"sl":27},{"sl":32},{"sl":34},{"sl":36},{"sl":47}]},"test_17798":{"methods":[{"sl":25},{"sl":61}],"name":"testRenameGlobals","pass":true,"statements":[{"sl":27},{"sl":62},{"sl":64},{"sl":66},{"sl":68},{"sl":70},{"sl":73},{"sl":75},{"sl":77},{"sl":80},{"sl":84}]},"test_3725":{"methods":[{"sl":25},{"sl":31}],"name":"testRenameInFunction","pass":true,"statements":[{"sl":27},{"sl":32},{"sl":34},{"sl":36},{"sl":47}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [11737, 14941, 3725, 15837, 16508, 17798], [], [11737, 14941, 3725, 15837, 16508, 17798], [], [], [], [3725, 16508], [3725, 16508], [], [3725, 16508], [], [3725, 16508], [], [], [], [], [], [], [], [], [], [], [3725, 16508], [], [], [], [], [], [], [], [], [], [], [], [], [], [15837, 17798], [15837, 17798], [], [15837, 17798], [], [15837, 17798], [], [15837, 17798], [], [15837, 17798], [], [], [15837, 17798], [], [15837, 17798], [], [15837, 17798], [], [], [15837, 17798], [], [], [], [15837, 17798], [], [], [], [11737, 14941], [11737, 14941], [], [], []]

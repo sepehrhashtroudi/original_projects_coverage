@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":110,"id":7121,"methods":[{"el":45,"sc":3,"sl":41},{"el":54,"sc":3,"sl":47},{"el":66,"sc":3,"sl":56},{"el":80,"sc":3,"sl":68},{"el":97,"sc":3,"sl":82},{"el":109,"sc":3,"sl":99}],"name":"JsonParserTest","sl":38}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_220":{"methods":[{"sl":68}],"name":"testBadFieldTypeForCustomDeserializerCustomTree","pass":true,"statements":[{"sl":69},{"sl":70},{"sl":71},{"sl":72},{"sl":73},{"sl":74},{"sl":76},{"sl":77}]},"test_312":{"methods":[{"sl":99}],"name":"testChangingCustomTreeAndDeserializing","pass":true,"statements":[{"sl":100},{"sl":102},{"sl":103},{"sl":104},{"sl":105},{"sl":106},{"sl":107},{"sl":108}]},"test_329":{"methods":[{"sl":47}],"name":"testDeserializingCustomTree","pass":true,"statements":[{"sl":48},{"sl":49},{"sl":50},{"sl":51},{"sl":52},{"sl":53}]},"test_498":{"methods":[{"sl":56}],"name":"testBadTypeForDeserializingCustomTree","pass":true,"statements":[{"sl":57},{"sl":58},{"sl":59},{"sl":60},{"sl":61},{"sl":62},{"sl":63}]},"test_78":{"methods":[{"sl":82}],"name":"testBadFieldTypeForDeserializingCustomTree","pass":true,"statements":[{"sl":83},{"sl":84},{"sl":85},{"sl":86},{"sl":87},{"sl":89},{"sl":90},{"sl":91},{"sl":93},{"sl":94}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [329], [329], [329], [329], [329], [329], [329], [], [], [498], [498], [498], [498], [498], [498], [498], [498], [], [], [], [], [220], [220], [220], [220], [220], [220], [220], [], [220], [220], [], [], [], [], [78], [78], [78], [78], [78], [78], [], [78], [78], [78], [], [78], [78], [], [], [], [], [312], [312], [], [312], [312], [312], [312], [312], [312], [312], [], []]

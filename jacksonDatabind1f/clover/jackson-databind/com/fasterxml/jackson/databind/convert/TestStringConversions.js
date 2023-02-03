@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":54,"id":43155,"methods":[{"el":27,"sc":5,"sl":14},{"el":34,"sc":5,"sl":29},{"el":43,"sc":5,"sl":36},{"el":53,"sc":5,"sl":45}],"name":"TestStringConversions","sl":9}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1859":{"methods":[{"sl":14}],"name":"testSimple","pass":true,"statements":[{"sl":16},{"sl":17},{"sl":18},{"sl":20},{"sl":21},{"sl":22},{"sl":23},{"sl":24},{"sl":26}]},"test_2046":{"methods":[{"sl":36}],"name":"testBytesToBase64AndBack","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":40},{"sl":41},{"sl":42}]},"test_2179":{"methods":[{"sl":45}],"name":"testBytestoCharArray","pass":true,"statements":[{"sl":47},{"sl":49},{"sl":51},{"sl":52}]},"test_223":{"methods":[{"sl":36}],"name":"testBytesToBase64AndBack","pass":true,"statements":[{"sl":38},{"sl":39},{"sl":40},{"sl":41},{"sl":42}]},"test_309":{"methods":[{"sl":45}],"name":"testBytestoCharArray","pass":true,"statements":[{"sl":47},{"sl":49},{"sl":51},{"sl":52}]},"test_330":{"methods":[{"sl":14}],"name":"testSimple","pass":true,"statements":[{"sl":16},{"sl":17},{"sl":18},{"sl":20},{"sl":21},{"sl":22},{"sl":23},{"sl":24},{"sl":26}]},"test_44":{"methods":[{"sl":29}],"name":"testStringsToInts","pass":true,"statements":[{"sl":32}]},"test_978":{"methods":[{"sl":29}],"name":"testStringsToInts","pass":true,"statements":[{"sl":32}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [330, 1859], [], [330, 1859], [330, 1859], [330, 1859], [], [330, 1859], [330, 1859], [330, 1859], [330, 1859], [330, 1859], [], [330, 1859], [], [], [978, 44], [], [], [978, 44], [], [], [], [223, 2046], [], [223, 2046], [223, 2046], [223, 2046], [223, 2046], [223, 2046], [], [], [2179, 309], [], [2179, 309], [], [2179, 309], [], [2179, 309], [2179, 309], [], []]

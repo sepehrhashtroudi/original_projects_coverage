@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jackson-core</title>
+    </head>
+
+<body onresize="processTreeMapDashJson(treeMapJson);" >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="historical.html">jackson-core-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jackson-core
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Mon Jan 9 2023 12:42:15 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+        <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+
+
+
+
+
+<div class="aui-group">
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                
+                <h3>
+                    Code coverage
+                    <small style="float:right; font-weight: normal">
+                        88 classes,
+                        9,006 /
+                        13,947 elements
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.64573026</span>64.6%</div><div style="display: table-cell">
+ <div title="64.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:64.6%"></div></div></div></div>
+                <p><a href="pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>
+                    Test results
+                    <small style="float:right; font-weight: normal">
+                        206 /
+                        206 tests
+                        13.79 secs
+                    </small>
+                </h3>
+            </header>
+            <div class="dashboard-widget-content">
+                                    
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>                                <p><a href="test-pkg-summary.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Code metrics</h3>
+            </header>
+                         
+
+<div id="$statsId" class="aui-item" style="display: ${display}">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this project">Branches:</label></div>
+        <div class="stats-box-value">4,074</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this project">Statements:</label></div>
+        <div class="stats-box-value">8,629</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this project">Methods:</label></div>
+        <div class="stats-box-value">1,244</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this project">Classes:</label></div>
+        <div class="stats-box-value">88</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this project">Files:</label></div>
+            <div class="stats-box-value">71</div>
+        </div>
+                <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of packages in this project">Packages:</label></div>
+            <div class="stats-box-value">10</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this project">LOC:</label></div>
+        <div class="stats-box-value">28,364</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this project">NCLOC:</label></div>
+        <div class="stats-box-value">16,258</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this project">Total complexity:</label></div>
+        <div class="stats-box-value">3,757</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this project">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.44</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.94</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">14.14</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Number of classes per package.">Classes/Package:</label></div>
+            <div class="stats-box-value">8.8</div>
+        </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this project">Average method complexity:</label></div>
+        <div class="stats-box-value">3.02</div>
+    </div>
+</div>
+
+</div>        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Coverage Distribution</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">                     <img src="img/classDistrubutionChart.png" alt="img/classDistrubutionChart.png" usemap="#classDistrubutionChart.png"/>
+                </div>
+                <map id="classDistrubutionChart.png" name="classDistrubutionChart.png">
+<area shape="rect" coords="288,15,310,206" title="17 classes have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="263,139,285,206" title="6 classes have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="238,139,260,206" title="6 classes have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="213,15,235,206" title="17 classes have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="188,128,210,206" title="7 classes have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="163,139,185,206" title="6 classes have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="138,173,160,206" title="3 classes have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="113,184,135,206" title="2 classes have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,94,60,206" title="10 classes have 0% coverage" alt="" nohref="nohref"/>
+</map>
+            </div>
+        </div>
+        
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Class Complexity</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div style="text-align: center">
+                    <img src="img/classComplexityChart.png" alt="img/classComplexityChart.png" usemap="#classComplexityChart.png"/>
+                </div>
+                <map id="classComplexityChart.png" name="classComplexityChart.png">
+<area shape="poly" coords="54,207,51,209,49,207,51,204,54,207,54,207" title="Complexity: 8; Coverage: 0%; Class: ConcurrencyReadTest" alt="" href="perf/ConcurrencyReadTest.html#ConcurrencyReadTest"/>
+<area shape="poly" coords="54,206,51,209,49,206,51,204,54,206,54,206" title="Complexity: 10; Coverage: 0%; Class: BaseTest.FiveMinuteUser.Name" alt="" href="com/fasterxml/jackson/test/BaseTest.html#BaseTest.FiveMinuteUser.Name"/>
+<area shape="poly" coords="54,203,51,206,49,203,51,201,54,203,54,203" title="Complexity: 20; Coverage: 0%; Class: BaseTest.FiveMinuteUser" alt="" href="com/fasterxml/jackson/test/BaseTest.html#BaseTest.FiveMinuteUser"/>
+<area shape="poly" coords="264,195,262,197,259,195,262,192,264,195,264,195" title="Complexity: 50; Coverage: 86%; Class: BaseTest" alt="" href="com/fasterxml/jackson/test/BaseTest.html#BaseTest"/>
+<area shape="poly" coords="183,181,181,183,178,181,181,178,183,181,183,181" title="Complexity: 98; Coverage: 53%; Class: ParserMinimalBase" alt="" href="com/fasterxml/jackson/core/base/ParserMinimalBase.html#ParserMinimalBase"/>
+<area shape="poly" coords="215,187,213,190,210,187,213,185,215,187,215,187" title="Complexity: 75; Coverage: 66%; Class: GeneratorBase" alt="" href="com/fasterxml/jackson/core/base/GeneratorBase.html#GeneratorBase"/>
+<area shape="poly" coords="215,165,213,168,210,165,213,163,215,165,215,165" title="Complexity: 151; Coverage: 66%; Class: ParserBase" alt="" href="com/fasterxml/jackson/core/base/ParserBase.html#ParserBase"/>
+<area shape="poly" coords="200,208,198,210,195,208,198,205,200,208,200,208" title="Complexity: 4; Coverage: 60%; Class: Name2" alt="" href="com/fasterxml/jackson/core/sym/Name2.html#Name2"/>
+<area shape="poly" coords="208,208,205,210,203,208,205,205,208,208,208,208" title="Complexity: 5; Coverage: 63%; Class: Name" alt="" href="com/fasterxml/jackson/core/sym/Name.html#Name"/>
+<area shape="poly" coords="200,207,198,209,195,207,198,204,200,207,200,207" title="Complexity: 8; Coverage: 60%; Class: NameN" alt="" href="com/fasterxml/jackson/core/sym/NameN.html#NameN"/>
+<area shape="poly" coords="252,208,249,210,247,208,249,205,252,208,252,208" title="Complexity: 5; Coverage: 81%; Class: Name1" alt="" href="com/fasterxml/jackson/core/sym/Name1.html#Name1"/>
+<area shape="poly" coords="208,208,205,210,203,208,205,205,208,208,208,208" title="Complexity: 4; Coverage: 63%; Class: Name3" alt="" href="com/fasterxml/jackson/core/sym/Name3.html#Name3"/>
+<area shape="poly" coords="298,206,296,208,293,206,296,203,298,206,298,206" title="Complexity: 11; Coverage: 100%; Class: CharsToNameCanonicalizer.Bucket" alt="" href="com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer.html#CharsToNameCanonicalizer.Bucket"/>
+<area shape="poly" coords="276,193,274,195,271,193,274,190,276,193,276,193" title="Complexity: 56; Coverage: 91%; Class: CharsToNameCanonicalizer" alt="" href="com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer.html#CharsToNameCanonicalizer"/>
+<area shape="poly" coords="276,205,274,207,271,205,274,202,276,205,276,205" title="Complexity: 15; Coverage: 91%; Class: BytesToNameCanonicalizer.Bucket" alt="" href="com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.html#BytesToNameCanonicalizer.Bucket"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: BytesToNameCanonicalizer.TableInfo" alt="" href="com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.html#BytesToNameCanonicalizer.TableInfo"/>
+<area shape="poly" coords="262,177,259,180,257,177,259,175,262,177,262,177" title="Complexity: 109; Coverage: 85%; Class: BytesToNameCanonicalizer" alt="" href="com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.html#BytesToNameCanonicalizer"/>
+<area shape="poly" coords="54,208,51,210,49,208,51,205,54,208,54,208" title="Complexity: 4; Coverage: 0%; Class: TypeReference" alt="" href="com/fasterxml/jackson/core/type/TypeReference.html#TypeReference"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 4; Coverage: 100%; Class: InternCache" alt="" href="com/fasterxml/jackson/core/util/InternCache.html#InternCache"/>
+<area shape="poly" coords="54,204,51,206,49,204,51,201,54,204,54,204" title="Complexity: 18; Coverage: 0%; Class: JsonParserSequence" alt="" href="com/fasterxml/jackson/core/util/JsonParserSequence.html#JsonParserSequence"/>
+<area shape="poly" coords="223,206,220,208,218,206,220,203,223,206,223,206" title="Complexity: 12; Coverage: 69%; Class: DefaultPrettyPrinter.Lf2SpacesIndenter" alt="" href="com/fasterxml/jackson/core/util/DefaultPrettyPrinter.html#DefaultPrettyPrinter.Lf2SpacesIndenter"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 2; Coverage: 100%; Class: BytesToNameCanonicalizer.TableInfo" alt="" href="com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.html#BytesToNameCanonicalizer.TableInfo"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: DefaultPrettyPrinter.NopIndenter" alt="" href="com/fasterxml/jackson/core/util/DefaultPrettyPrinter.html#DefaultPrettyPrinter.NopIndenter"/>
+<area shape="poly" coords="156,196,154,199,151,196,154,194,156,196,156,196" title="Complexity: 44; Coverage: 42%; Class: DefaultPrettyPrinter" alt="" href="com/fasterxml/jackson/core/util/DefaultPrettyPrinter.html#DefaultPrettyPrinter"/>
+<area shape="poly" coords="235,205,232,207,230,205,232,202,235,205,235,205" title="Complexity: 14; Coverage: 74%; Class: MinimalPrettyPrinter" alt="" href="com/fasterxml/jackson/core/util/MinimalPrettyPrinter.html#MinimalPrettyPrinter"/>
+<area shape="poly" coords="164,198,161,200,159,198,161,195,164,198,164,198" title="Complexity: 39; Coverage: 45%; Class: VersionUtil" alt="" href="com/fasterxml/jackson/core/util/VersionUtil.html#VersionUtil"/>
+<area shape="poly" coords="54,191,51,194,49,191,51,189,54,191,54,191" title="Complexity: 61; Coverage: 0%; Class: JsonParserDelegate" alt="" href="com/fasterxml/jackson/core/util/JsonParserDelegate.html#JsonParserDelegate"/>
+<area shape="poly" coords="254,182,252,184,249,182,252,179,254,182,254,182" title="Complexity: 94; Coverage: 82%; Class: TextBuffer" alt="" href="com/fasterxml/jackson/core/util/TextBuffer.html#TextBuffer"/>
+<area shape="poly" coords="54,190,51,192,49,190,51,187,54,190,54,190" title="Complexity: 67; Coverage: 0%; Class: JsonGeneratorDelegate" alt="" href="com/fasterxml/jackson/core/util/JsonGeneratorDelegate.html#JsonGeneratorDelegate"/>
+<area shape="poly" coords="213,199,210,201,208,199,210,196,213,199,213,199" title="Complexity: 35; Coverage: 65%; Class: ByteArrayBuilder" alt="" href="com/fasterxml/jackson/core/util/ByteArrayBuilder.html#ByteArrayBuilder"/>
+<area shape="poly" coords="298,209,296,211,293,209,296,206,298,209,298,209" title="Complexity: 1; Coverage: 100%; Class: BufferRecycler.CharBufferType" alt="" href="com/fasterxml/jackson/core/util/BufferRecycler.html#BufferRecycler.CharBufferType"/>
+<area shape="poly" coords="298,209,296,211,293,209,296,206,298,209,298,209" title="Complexity: 1; Coverage: 100%; Class: BufferRecycler.CharBufferType" alt="" href="com/fasterxml/jackson/core/util/BufferRecycler.html#BufferRecycler.CharBufferType"/>
+<area shape="poly" coords="289,206,286,208,284,206,286,203,289,206,289,206" title="Complexity: 12; Coverage: 96%; Class: BufferRecycler" alt="" href="com/fasterxml/jackson/core/util/BufferRecycler.html#BufferRecycler"/>
+<area shape="poly" coords="252,207,249,210,247,207,249,205,252,207,252,207" title="Complexity: 6; Coverage: 81%; Class: JsonFactory.Feature" alt="" href="com/fasterxml/jackson/core/JsonFactory.html#JsonFactory.Feature"/>
+<area shape="poly" coords="225,178,222,181,220,178,222,176,225,178,225,178" title="Complexity: 106; Coverage: 70%; Class: JsonFactory" alt="" href="com/fasterxml/jackson/core/JsonFactory.html#JsonFactory"/>
+<area shape="poly" coords="134,208,132,211,129,208,132,206,134,208,134,208" title="Complexity: 3; Coverage: 33%; Class: JsonGenerationException" alt="" href="com/fasterxml/jackson/core/JsonGenerationException.html#JsonGenerationException"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 5; Coverage: 100%; Class: JsonGenerator.Feature" alt="" href="com/fasterxml/jackson/core/JsonGenerator.html#JsonGenerator.Feature"/>
+<area shape="poly" coords="161,198,159,201,156,198,159,196,161,198,161,198" title="Complexity: 38; Coverage: 44%; Class: JsonGenerator" alt="" href="com/fasterxml/jackson/core/JsonGenerator.html#JsonGenerator"/>
+<area shape="poly" coords="176,208,174,211,171,208,174,206,176,208,176,208" title="Complexity: 2; Coverage: 50%; Class: JsonParseException" alt="" href="com/fasterxml/jackson/core/JsonParseException.html#JsonParseException"/>
+<area shape="poly" coords="186,188,183,190,181,188,183,185,186,188,186,188" title="Complexity: 73; Coverage: 54%; Class: Base64Variant" alt="" href="com/fasterxml/jackson/core/Base64Variant.html#Base64Variant"/>
+<area shape="poly" coords="298,208,296,211,293,208,296,206,298,208,298,208" title="Complexity: 3; Coverage: 100%; Class: JsonEncoding" alt="" href="com/fasterxml/jackson/core/JsonEncoding.html#JsonEncoding"/>
+<area shape="poly" coords="139,204,137,206,134,204,137,201,139,204,139,204" title="Complexity: 18; Coverage: 35%; Class: JsonLocation" alt="" href="com/fasterxml/jackson/core/JsonLocation.html#JsonLocation"/>
+<area shape="poly" coords="54,208,51,211,49,208,51,206,54,208,54,208" title="Complexity: 2; Coverage: 0%; Class: DefaultPrettyPrinter.NopIndenter" alt="" href="com/fasterxml/jackson/core/util/DefaultPrettyPrinter.html#DefaultPrettyPrinter.NopIndenter"/>
+<area shape="poly" coords="286,206,284,208,281,206,284,203,286,206,286,206" title="Complexity: 11; Coverage: 95%; Class: JsonStreamContext" alt="" href="com/fasterxml/jackson/core/JsonStreamContext.html#JsonStreamContext"/>
+<area shape="poly" coords="298,208,296,210,293,208,296,205,298,208,298,208" title="Complexity: 5; Coverage: 100%; Class: JsonGenerator.Feature" alt="" href="com/fasterxml/jackson/core/JsonGenerator.html#JsonGenerator.Feature"/>
+<area shape="poly" coords="120,190,117,193,115,190,117,188,120,190,120,190" title="Complexity: 64; Coverage: 27%; Class: JsonParser" alt="" href="com/fasterxml/jackson/core/JsonParser.html#JsonParser"/>
+<area shape="poly" coords="220,207,218,209,215,207,218,204,220,207,220,207" title="Complexity: 8; Coverage: 68%; Class: JsonToken" alt="" href="com/fasterxml/jackson/core/JsonToken.html#JsonToken"/>
+<area shape="poly" coords="120,201,117,204,115,201,117,199,120,201,120,201" title="Complexity: 26; Coverage: 27%; Class: Version" alt="" href="com/fasterxml/jackson/core/Version.html#Version"/>
+<area shape="poly" coords="188,206,186,209,183,206,186,204,188,206,188,206" title="Complexity: 10; Coverage: 55%; Class: Base64Variants" alt="" href="com/fasterxml/jackson/core/Base64Variants.html#Base64Variants"/>
+<area shape="poly" coords="220,204,218,207,215,204,218,202,220,204,220,204" title="Complexity: 16; Coverage: 68%; Class: JsonProcessingException" alt="" href="com/fasterxml/jackson/core/JsonProcessingException.html#JsonProcessingException"/>
+<area shape="poly" coords="213,202,210,205,208,202,210,200,213,202,213,202" title="Complexity: 24; Coverage: 65%; Class: JsonWriteContext" alt="" href="com/fasterxml/jackson/core/json/JsonWriteContext.html#JsonWriteContext"/>
+<area shape="poly" coords="213,120,210,122,208,120,210,117,213,120,213,120" title="Complexity: 309; Coverage: 65%; Class: WriterBasedJsonGenerator" alt="" href="com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.html#WriterBasedJsonGenerator"/>
+<area shape="poly" coords="235,87,232,89,230,87,232,84,235,87,235,87" title="Complexity: 423; Coverage: 74%; Class: ReaderBasedJsonParser" alt="" href="com/fasterxml/jackson/core/json/ReaderBasedJsonParser.html#ReaderBasedJsonParser"/>
+<area shape="poly" coords="208,184,205,187,203,184,205,182,208,184,208,184" title="Complexity: 86; Coverage: 63%; Class: ByteSourceJsonBootstrapper" alt="" href="com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.html#ByteSourceJsonBootstrapper"/>
+<area shape="poly" coords="203,121,200,124,198,121,200,119,203,121,203,121" title="Complexity: 304; Coverage: 61%; Class: UTF8JsonGenerator" alt="" href="com/fasterxml/jackson/core/json/UTF8JsonGenerator.html#UTF8JsonGenerator"/>
+<area shape="poly" coords="210,204,208,206,205,204,208,201,210,204,210,204" title="Complexity: 18; Coverage: 64%; Class: JsonReadContext" alt="" href="com/fasterxml/jackson/core/json/JsonReadContext.html#JsonReadContext"/>
+<area shape="poly" coords="227,206,225,208,222,206,225,203,227,206,227,206" title="Complexity: 11; Coverage: 71%; Class: JsonGeneratorImpl" alt="" href="com/fasterxml/jackson/core/json/JsonGeneratorImpl.html#JsonGeneratorImpl"/>
+<area shape="poly" coords="210,18,208,20,205,18,208,15,210,18,210,18" title="Complexity: 662; Coverage: 64%; Class: UTF8StreamJsonParser" alt="" href="com/fasterxml/jackson/core/json/UTF8StreamJsonParser.html#UTF8StreamJsonParser"/>
+<area shape="poly" coords="298,209,296,211,293,209,296,206,298,209,298,209" title="Complexity: 1; Coverage: 100%; Class: BufferRecycler.CharBufferType" alt="" href="com/fasterxml/jackson/core/util/BufferRecycler.html#BufferRecycler.CharBufferType"/>
+<area shape="poly" coords="193,206,191,209,188,206,191,204,193,206,193,206" title="Complexity: 10; Coverage: 57%; Class: BaseReader" alt="" href="com/fasterxml/jackson/core/io/BaseReader.html#BaseReader"/>
+<area shape="poly" coords="240,202,237,205,235,202,237,200,240,202,240,202" title="Complexity: 24; Coverage: 76%; Class: MergedStream" alt="" href="com/fasterxml/jackson/core/io/MergedStream.html#MergedStream"/>
+<area shape="poly" coords="296,199,294,202,291,199,294,197,296,199,296,199" title="Complexity: 34; Coverage: 99%; Class: CharTypes" alt="" href="com/fasterxml/jackson/core/io/CharTypes.html#CharTypes"/>
+<area shape="poly" coords="227,192,225,194,222,192,225,189,227,192,227,192" title="Complexity: 59; Coverage: 71%; Class: JsonStringEncoder" alt="" href="com/fasterxml/jackson/core/io/JsonStringEncoder.html#JsonStringEncoder"/>
+<area shape="poly" coords="54,206,51,208,49,206,51,203,54,206,54,206" title="Complexity: 12; Coverage: 0%; Class: SegmentedStringWriter" alt="" href="com/fasterxml/jackson/core/io/SegmentedStringWriter.html#SegmentedStringWriter"/>
+<area shape="poly" coords="294,201,291,203,289,201,291,198,294,201,294,201" title="Complexity: 28; Coverage: 98%; Class: IOContext" alt="" href="com/fasterxml/jackson/core/io/IOContext.html#IOContext"/>
+<area shape="poly" coords="298,209,296,211,293,209,296,206,298,209,298,209" title="Complexity: 1; Coverage: 100%; Class: BufferRecycler.CharBufferType" alt="" href="com/fasterxml/jackson/core/util/BufferRecycler.html#BufferRecycler.CharBufferType"/>
+<area shape="poly" coords="161,200,159,203,156,200,159,198,161,200,161,200" title="Complexity: 30; Coverage: 44%; Class: UTF32Reader" alt="" href="com/fasterxml/jackson/core/io/UTF32Reader.html#UTF32Reader"/>
+<area shape="poly" coords="237,197,235,200,232,197,235,195,237,197,237,197" title="Complexity: 40; Coverage: 75%; Class: SerializedString" alt="" href="com/fasterxml/jackson/core/io/SerializedString.html#SerializedString"/>
+<area shape="poly" coords="154,191,151,194,149,191,151,189,154,191,154,191" title="Complexity: 62; Coverage: 41%; Class: UTF8Writer" alt="" href="com/fasterxml/jackson/core/io/UTF8Writer.html#UTF8Writer"/>
+<area shape="poly" coords="218,187,215,190,213,187,215,185,218,187,218,187" title="Complexity: 76; Coverage: 67%; Class: NumberInput" alt="" href="com/fasterxml/jackson/core/io/NumberInput.html#NumberInput"/>
+<area shape="poly" coords="208,191,205,194,203,191,205,189,208,191,208,191" title="Complexity: 61; Coverage: 63%; Class: NumberOutput" alt="" href="com/fasterxml/jackson/core/io/NumberOutput.html#NumberOutput"/>
+<area shape="poly" coords="147,203,144,205,142,203,144,200,147,203,147,203" title="Complexity: 21; Coverage: 38%; Class: DataFormatDetector" alt="" href="com/fasterxml/jackson/core/format/DataFormatDetector.html#DataFormatDetector"/>
+<area shape="poly" coords="267,206,264,208,262,206,264,203,267,206,267,206" title="Complexity: 11; Coverage: 87%; Class: DataFormatMatcher" alt="" href="com/fasterxml/jackson/core/format/DataFormatMatcher.html#DataFormatMatcher"/>
+<area shape="poly" coords="191,205,188,208,186,205,188,203,191,205,191,205" title="Complexity: 13; Coverage: 56%; Class: InputAccessor.Std" alt="" href="com/fasterxml/jackson/core/format/InputAccessor.html#InputAccessor.Std"/>
+</map>
+            </div>
+        </div>
+        
+                    <div class="dashboard-widget">
+                <header class="dashboard-widget-header">
+                    <h3>Coverage tree map</h3>
+                </header>
+                <div class="dashboard-widget-content">
+                    <div id="infovis" style="width:100%; height:250px;">
+                        <div id="treemap-loader" style="position:relative;top:50px;">
+                            <p>
+                                Generating Coverage Tree Map. Please wait...
+                            </p>
+                            <p>
+                                <img src="img/ajax-loader.gif" alt="Loading Treemap"/>
+                            </p>
+                        </div>
+                    </div>
+                    <p><a href="treemap.html">See more</a></p>
+                </div>
+
+            </div>
+            </div>
+
+
+    <div class="aui-item">
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Top 20 project risks</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                                                                <a class="tag" href="com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.html"
+                            style="font-size: 19px;color:#14892c"
+                            title="Average Method Complexity - 3.75 , Coverage - 91.7% ">BytesToNameCanonicalizer.Bucket</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/json/ReaderBasedJsonParser.html"
+                            style="font-size: 27px;color:#fae1a0"
+                            title="Average Method Complexity - 8.135 , Coverage - 74.6% ">ReaderBasedJsonParser</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/io/JsonStringEncoder.html"
+                            style="font-size: 23px;color:#f6c342"
+                            title="Average Method Complexity - 5.9 , Coverage - 71.2% ">JsonStringEncoder</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/sym/BytesToNameCanonicalizer.html"
+                            style="font-size: 18px;color:#14892c"
+                            title="Average Method Complexity - 3.114 , Coverage - 85.9% ">BytesToNameCanonicalizer</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/test/BaseTest.html"
+                            style="font-size: 17px;color:#14892c"
+                            title="Average Method Complexity - 2.778 , Coverage - 86.2% ">BaseTest</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/util/TextBuffer.html"
+                            style="font-size: 17px;color:#fae1a0"
+                            title="Average Method Complexity - 3.032 , Coverage - 82.1% ">TextBuffer</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer.html"
+                            style="font-size: 16px;color:#14892c"
+                            title="Average Method Complexity - 2.333 , Coverage - 91% ">CharsToNameCanonicalizer</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/io/NumberInput.html"
+                            style="font-size: 22px;color:#f6c342"
+                            title="Average Method Complexity - 5.429 , Coverage - 67.5% ">NumberInput</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/io/CharTypes.html"
+                            style="font-size: 15px;color:#89c495"
+                            title="Average Method Complexity - 1.889 , Coverage - 99.3% ">CharTypes</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/json/UTF8StreamJsonParser.html"
+                            style="font-size: 28px;color:#f6c342"
+                            title="Average Method Complexity - 8.275 , Coverage - 64.9% ">UTF8StreamJsonParser</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.html"
+                            style="font-size: 21px;color:#f6c342"
+                            title="Average Method Complexity - 4.754 , Coverage - 65.3% ">WriterBasedJsonGenerator</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.html"
+                            style="font-size: 23px;color:#f6c342"
+                            title="Average Method Complexity - 6.143 , Coverage - 63.6% ">ByteSourceJsonBootstrapper</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/io/MergedStream.html"
+                            style="font-size: 16px;color:#fae1a0"
+                            title="Average Method Complexity - 2.182 , Coverage - 76.7% ">MergedStream</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/io/SerializedString.html"
+                            style="font-size: 15px;color:#fae1a0"
+                            title="Average Method Complexity - 2 , Coverage - 75.3% ">SerializedString</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/base/ParserBase.html"
+                            style="font-size: 18px;color:#f6c342"
+                            title="Average Method Complexity - 3.146 , Coverage - 66.3% ">ParserBase</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/io/NumberOutput.html"
+                            style="font-size: 20px;color:#f6c342"
+                            title="Average Method Complexity - 4.357 , Coverage - 63.3% ">NumberOutput</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/JsonStreamContext.html"
+                            style="font-size: 15px;color:#89c495"
+                            title="Average Method Complexity - 1.571 , Coverage - 95.5% ">JsonStreamContext</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/base/GeneratorBase.html"
+                            style="font-size: 17px;color:#f6c342"
+                            title="Average Method Complexity - 2.778 , Coverage - 66.5% ">GeneratorBase</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/util/BufferRecycler.html"
+                            style="font-size: 14px;color:#89c495"
+                            title="Average Method Complexity - 1.5 , Coverage - 97% ">BufferRecycler</a>
+                                    
+                                                                <a class="tag" href="com/fasterxml/jackson/core/json/UTF8JsonGenerator.html"
+                            style="font-size: 20px;color:#f6c342"
+                            title="Average Method Complexity - 4.282 , Coverage - 62% ">UTF8JsonGenerator</a>
+                                                    <p><a href="top-risks.html">See more</a></p>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex packages</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6652589</span>66.5%</div><div style="display: table-cell">
+ <div title="66.5% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.5%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/core/json/pkg-summary.html">com.fasterxml.jackson.core.json</a>
+                                <span class="aui-badge" title="Package complexity">1838</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6544118</span>65.4%</div><div style="display: table-cell">
+ <div title="65.4% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:65.4%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/core/io/pkg-summary.html">com.fasterxml.jackson.core.io</a>
+                                <span class="aui-badge" title="Package complexity">437</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.50082374</span>50.1%</div><div style="display: table-cell">
+ <div title="50.1% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:50.1%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/core/util/pkg-summary.html">com.fasterxml.jackson.core.util</a>
+                                <span class="aui-badge" title="Package complexity">406</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.54697984</span>54.7%</div><div style="display: table-cell">
+ <div title="54.7% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:54.7%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/core/pkg-summary.html">com.fasterxml.jackson.core</a>
+                                <span class="aui-badge" title="Package complexity">396</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6333657</span>63.3%</div><div style="display: table-cell">
+ <div title="63.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:63.3%"></div></div></div></div></td>
+                            <td>
+                                <a href="com/fasterxml/jackson/core/base/pkg-summary.html">com.fasterxml.jackson.core.base</a>
+                                <span class="aui-badge" title="Package complexity">324</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+        <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Most complex classes</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+                                                <tr>
+                            <td>1. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.64912283</span>64.9%</div><div style="display: table-cell">
+ <div title="64.9% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:64.9%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/core/json/UTF8StreamJsonParser.html"  title="com.fasterxml.jackson.core.json.UTF8StreamJsonParser">UTF8StreamJsonParser</a>
+                                <span class="aui-badge" title="Class complexity">662</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>2. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.74559194</span>74.6%</div><div style="display: table-cell">
+ <div title="74.6% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:74.6%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/core/json/ReaderBasedJsonParser.html"  title="com.fasterxml.jackson.core.json.ReaderBasedJsonParser">ReaderBasedJsonParser</a>
+                                <span class="aui-badge" title="Class complexity">423</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>3. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6526316</span>65.3%</div><div style="display: table-cell">
+ <div title="65.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:65.3%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.html"  title="com.fasterxml.jackson.core.json.WriterBasedJsonGenerator">WriterBasedJsonGenerator</a>
+                                <span class="aui-badge" title="Class complexity">309</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>4. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.61984736</span>62%</div><div style="display: table-cell">
+ <div title="62% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:62%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/core/json/UTF8JsonGenerator.html"  title="com.fasterxml.jackson.core.json.UTF8JsonGenerator">UTF8JsonGenerator</a>
+                                <span class="aui-badge" title="Class complexity">304</span>
+                            </td>
+                        </tr>
+                                            
+                                                <tr>
+                            <td>5. </td>
+                            <td><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6627451</span>66.3%</div><div style="display: table-cell">
+ <div title="66.3% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.3%"></div></div></div></div></td>
+                            <td>
+                                <a  href="com/fasterxml/jackson/core/base/ParserBase.html"  title="com.fasterxml.jackson.core.base.ParserBase">ParserBase</a>
+                                <span class="aui-badge" title="Class complexity">151</span>
+                            </td>
+                        </tr>
+                                    </table>
+            </div>
+        </div>
+
+                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Least tested methods</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <table class="aui">
+                                            
+
+                    <tr>
+                        <td align="right">1.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="Base64Variant.decode(String,ByteArrayBuilder)&#160;:&#160;void" href="com/fasterxml/jackson/core/Base64Variant.html?line=450#src-450">Base64Variant.decode(String,ByteArrayBuilder)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">17</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">2.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="WriterBasedJsonGenerator._writeStringCustom(char[],int,int)&#160;:&#160;void" href="com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.html?line=1380#src-1380">WriterBasedJsonGenerator._writeStringCustom(char[],int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">12</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">3.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="WriterBasedJsonGenerator._writeStringASCII(char[],int,int,int)&#160;:&#160;void" href="com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.html?line=1222#src-1222">WriterBasedJsonGenerator._writeStringASCII(char[],int,int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">4.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="NumberOutput.outputLong(long,byte[],int)&#160;:&#160;int" href="com/fasterxml/jackson/core/io/NumberOutput.html?line=237#src-237">NumberOutput.outputLong(long,byte[],int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">5.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="WriterBasedJsonGenerator._writeSegmentASCII(int,int)&#160;:&#160;void" href="com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.html?line=1181#src-1181">WriterBasedJsonGenerator._writeSegmentASCII(int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">6.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="NumberInput.parseAsInt(String,int)&#160;:&#160;int" href="com/fasterxml/jackson/core/io/NumberInput.html?line=189#src-189">NumberInput.parseAsInt(String,int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">7.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="BaseTest.FiveMinuteUser.equals(Object)&#160;:&#160;boolean" href="com/fasterxml/jackson/test/BaseTest.html?line=113#src-113">BaseTest.FiveMinuteUser.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">10</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">8.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="UTF8StreamJsonParser.nextBooleanValue()&#160;:&#160;Boolean" href="com/fasterxml/jackson/core/json/UTF8StreamJsonParser.html?line=1120#src-1120">UTF8StreamJsonParser.nextBooleanValue()&#160;:&#160;Boolean</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">9.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReaderBasedJsonParser.nextBooleanValue()&#160;:&#160;Boolean" href="com/fasterxml/jackson/core/json/ReaderBasedJsonParser.html?line=779#src-779">ReaderBasedJsonParser.nextBooleanValue()&#160;:&#160;Boolean</a>
+                            <span class="aui-badge" title="Method complexity">8</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">10.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="UTF8JsonGenerator._writeSegmentedRaw(char[],int,int)&#160;:&#160;void" href="com/fasterxml/jackson/core/json/UTF8JsonGenerator.html?line=673#src-673">UTF8JsonGenerator._writeSegmentedRaw(char[],int,int)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">11.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="UTF8StreamJsonParser._loadToHaveAtLeast(int)&#160;:&#160;boolean" href="com/fasterxml/jackson/core/json/UTF8StreamJsonParser.html?line=190#src-190">UTF8StreamJsonParser._loadToHaveAtLeast(int)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">12.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="UTF8StreamJsonParser.nextTextValue()&#160;:&#160;String" href="com/fasterxml/jackson/core/json/UTF8StreamJsonParser.html?line=1044#src-1044">UTF8StreamJsonParser.nextTextValue()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">13.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReaderBasedJsonParser.nextTextValue()&#160;:&#160;String" href="com/fasterxml/jackson/core/json/ReaderBasedJsonParser.html?line=703#src-703">ReaderBasedJsonParser.nextTextValue()&#160;:&#160;String</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">14.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ParserMinimalBase.getValueAsInt(int)&#160;:&#160;int" href="com/fasterxml/jackson/core/base/ParserMinimalBase.html?line=291#src-291">ParserMinimalBase.getValueAsInt(int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">11</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">15.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="JsonLocation.equals(Object)&#160;:&#160;boolean" href="com/fasterxml/jackson/core/JsonLocation.html?line=121#src-121">JsonLocation.equals(Object)&#160;:&#160;boolean</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">16.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="WriterBasedJsonGenerator.writeString(SerializableString)&#160;:&#160;void" href="com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.html?line=360#src-360">WriterBasedJsonGenerator.writeString(SerializableString)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">5</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">17.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="VersionUtil.doReadVersion(Reader)&#160;:&#160;Version" href="com/fasterxml/jackson/core/util/VersionUtil.html?line=156#src-156">VersionUtil.doReadVersion(Reader)&#160;:&#160;Version</a>
+                            <span class="aui-badge" title="Method complexity">7</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">18.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="UTF8StreamJsonParser.nextIntValue(int)&#160;:&#160;int" href="com/fasterxml/jackson/core/json/UTF8StreamJsonParser.html?line=1072#src-1072">UTF8StreamJsonParser.nextIntValue(int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">19.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="UTF8JsonGenerator._writePPFieldName(SerializableString,boolean)&#160;:&#160;void" href="com/fasterxml/jackson/core/json/UTF8JsonGenerator.html?line=382#src-382">UTF8JsonGenerator._writePPFieldName(SerializableString,boolean)&#160;:&#160;void</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                            
+
+                    <tr>
+                        <td align="right">20.</td>
+                        <td align="right"><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:40px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+                        <td>
+                              <!-- normal method -->
+                                                      <a title="ReaderBasedJsonParser.nextIntValue(int)&#160;:&#160;int" href="com/fasterxml/jackson/core/json/ReaderBasedJsonParser.html?line=731#src-731">ReaderBasedJsonParser.nextIntValue(int)&#160;:&#160;int</a>
+                            <span class="aui-badge" title="Method complexity">6</span>
+
+                        </td>
+                    </tr>
+                                    </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+                            </div> <!-- tabs-pane active-pane -->
+                        </div>
+
+    <script type="text/javascript" src="jit.js" ></script>
+    <script type="text/javascript" src="treemap-dash-json.js" ></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 9 2023 12:42:46 MST using coverage data from Mon Jan 9 2023 12:42:45 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

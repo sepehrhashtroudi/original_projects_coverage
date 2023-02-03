@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":63,"id":33938,"methods":[{"el":41,"sc":5,"sl":24},{"el":51,"sc":5,"sl":43},{"el":62,"sc":5,"sl":53}],"name":"TestMapConversions","sl":9},{"el":14,"id":33938,"methods":[],"name":"TestMapConversions.AB","sl":14},{"el":19,"id":33938,"methods":[],"name":"TestMapConversions.Bean","sl":16}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1134":{"methods":[{"sl":43}],"name":"testMapToBean","pass":true,"statements":[{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":49},{"sl":50}]},"test_1415":{"methods":[{"sl":53}],"name":"testBeanToMap","pass":true,"statements":[{"sl":55},{"sl":56},{"sl":57},{"sl":58},{"sl":60},{"sl":61}]},"test_1710":{"methods":[{"sl":53}],"name":"testBeanToMap","pass":true,"statements":[{"sl":55},{"sl":56},{"sl":57},{"sl":58},{"sl":60},{"sl":61}]},"test_1741":{"methods":[{"sl":24}],"name":"testMapToMap","pass":true,"statements":[{"sl":26},{"sl":27},{"sl":28},{"sl":29},{"sl":31},{"sl":32},{"sl":33},{"sl":36},{"sl":38},{"sl":39},{"sl":40}]},"test_597":{"methods":[{"sl":43}],"name":"testMapToBean","pass":true,"statements":[{"sl":45},{"sl":46},{"sl":47},{"sl":48},{"sl":49},{"sl":50}]},"test_634":{"methods":[{"sl":24}],"name":"testMapToMap","pass":true,"statements":[{"sl":26},{"sl":27},{"sl":28},{"sl":29},{"sl":31},{"sl":32},{"sl":33},{"sl":36},{"sl":38},{"sl":39},{"sl":40}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [634, 1741], [], [634, 1741], [634, 1741], [634, 1741], [634, 1741], [], [634, 1741], [634, 1741], [634, 1741], [], [], [634, 1741], [], [634, 1741], [634, 1741], [634, 1741], [], [], [1134, 597], [], [1134, 597], [1134, 597], [1134, 597], [1134, 597], [1134, 597], [1134, 597], [], [], [1415, 1710], [], [1415, 1710], [1415, 1710], [1415, 1710], [1415, 1710], [], [1415, 1710], [1415, 1710], [], []]

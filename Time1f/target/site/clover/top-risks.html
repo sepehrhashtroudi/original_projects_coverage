@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>Joda-Time 2.4-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://www.joda.org/joda-time/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://www.joda.org/joda-time/" target="_top">
+                                        Joda-Time 2.4-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Wed Dec 28 2022 16:43:51 MST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = topRisksDescription();
+                var title = 'Top Risks';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/joda/time/convert/AbstractConverter.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">AbstractConverter</a>
+            
+    
+            <a href="org/joda/time/base/AbstractDateTime.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.167 , Coverage - 100% ">AbstractDateTime</a>
+            
+    
+            <a href="org/joda/time/base/AbstractDuration.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.1 , Coverage - 100% ">AbstractDuration</a>
+            
+    
+            <a href="org/joda/time/base/AbstractInstant.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.31 , Coverage - 100% ">AbstractInstant</a>
+            
+    
+            <a href="org/joda/time/base/AbstractInterval.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.407 , Coverage - 100% ">AbstractInterval</a>
+            
+    
+            <a href="org/joda/time/base/AbstractPartial.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 2.35 , Coverage - 100% ">AbstractPartial</a>
+            
+    
+            <a href="org/joda/time/field/AbstractPartialFieldProperty.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.381 , Coverage - 100% ">AbstractPartialFieldProperty</a>
+            
+    
+            <a href="org/joda/time/base/AbstractPeriod.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.786 , Coverage - 100% ">AbstractPeriod</a>
+            
+    
+            <a href="org/joda/time/field/AbstractReadableInstantFieldProperty.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 96.3% ">AbstractReadableInstantFieldProperty</a>
+            
+    
+            <a href="org/joda/time/chrono/AssembledChronology.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.182 , Coverage - 66.5% ">AssembledChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/AssembledChronology.html" class="tag"
+            style="font-size: 47px;color:#e7a19b"
+            title="Average Method Complexity - 10.25 , Coverage - 52% ">AssembledChronology.Fields</a>
+            
+    
+            <a href="org/joda/time/chrono/BaseChronology.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.413 , Coverage - 61.4% ">BaseChronology</a>
+            
+    
+            <a href="org/joda/time/base/BaseDateTime.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BaseDateTime</a>
+            
+    
+            <a href="org/joda/time/field/BaseDateTimeField.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.841 , Coverage - 96.5% ">BaseDateTimeField</a>
+            
+    
+            <a href="org/joda/time/base/BaseDuration.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.067 , Coverage - 100% ">BaseDuration</a>
+            
+    
+            <a href="org/joda/time/field/BaseDurationField.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">BaseDurationField</a>
+            
+    
+            <a href="org/joda/time/base/BaseInterval.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.636 , Coverage - 100% ">BaseInterval</a>
+            
+    
+            <a href="org/joda/time/base/BaseLocal.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BaseLocal</a>
+            
+    
+            <a href="org/joda/time/base/BasePartial.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.125 , Coverage - 89.1% ">BasePartial</a>
+            
+    
+            <a href="org/joda/time/base/BasePeriod.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.906 , Coverage - 99.1% ">BasePeriod</a>
+            
+    
+            <a href="org/joda/time/base/BaseSingleFieldPeriod.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.25 , Coverage - 98.3% ">BaseSingleFieldPeriod</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicChronology.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.75 , Coverage - 95.2% ">BasicChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicChronology.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BasicChronology.HalfdayField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicChronology.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BasicChronology.YearInfo</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicDayOfMonthDateTimeField.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.6 , Coverage - 91.7% ">BasicDayOfMonthDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicDayOfYearDateTimeField.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 76.9% ">BasicDayOfYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicFixedMonthChronology.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.4 , Coverage - 84.5% ">BasicFixedMonthChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicGJChronology.html" class="tag"
+            style="font-size: 29px;color:#89c495"
+            title="Average Method Complexity - 5.222 , Coverage - 100% ">BasicGJChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicMonthOfYearDateTimeField.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 2.389 , Coverage - 76.3% ">BasicMonthOfYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicSingleEraDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.125 , Coverage - 34.2% ">BasicSingleEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicWeekOfWeekyearDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.308 , Coverage - 79.5% ">BasicWeekOfWeekyearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicWeekyearDateTimeField.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.647 , Coverage - 95.7% ">BasicWeekyearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BasicYearDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.278 , Coverage - 96.9% ">BasicYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/BuddhistChronology.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.818 , Coverage - 91.1% ">BuddhistChronology</a>
+            
+    
+            <a href="org/joda/time/tz/CachedDateTimeZone.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.714 , Coverage - 86.3% ">CachedDateTimeZone</a>
+            
+    
+            <a href="org/joda/time/tz/CachedDateTimeZone.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 3.25 , Coverage - 100% ">CachedDateTimeZone.Info</a>
+            
+    
+            <a href="org/joda/time/convert/CalendarConverter.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.2 , Coverage - 100% ">CalendarConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ConverterManager.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.107 , Coverage - 95.3% ">ConverterManager</a>
+            
+    
+            <a href="org/joda/time/convert/ConverterSet.html" class="tag"
+            style="font-size: 32px;color:#89c495"
+            title="Average Method Complexity - 6 , Coverage - 98.5% ">ConverterSet</a>
+            
+    
+            <a href="org/joda/time/convert/ConverterSet.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ConverterSet.Entry</a>
+            
+    
+            <a href="org/joda/time/chrono/CopticChronology.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.857 , Coverage - 98.9% ">CopticChronology</a>
+            
+    
+            <a href="org/joda/time/convert/DateConverter.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateConverter</a>
+            
+    
+            <a href="org/joda/time/DateMidnight.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.373 , Coverage - 100% ">DateMidnight</a>
+            
+    
+            <a href="org/joda/time/DateMidnight.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateMidnight.Property</a>
+            
+    
+            <a href="org/joda/time/DateTime.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.343 , Coverage - 99.5% ">DateTime</a>
+            
+    
+            <a href="org/joda/time/DateTime.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 93.2% ">DateTime.Property</a>
+            
+    
+            <a href="org/joda/time/DateTimeComparator.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.308 , Coverage - 100% ">DateTimeComparator</a>
+            
+    
+            <a href="org/joda/time/DateTimeConstants.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateTimeConstants</a>
+            
+    
+            <a href="org/joda/time/DateTimeFieldType.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateTimeFieldType</a>
+            
+    
+            <a href="org/joda/time/DateTimeFieldType.html" class="tag"
+            style="font-size: 39px;color:#89c495"
+            title="Average Method Complexity - 7.857 , Coverage - 96.7% ">DateTimeFieldType.StandardDateTimeFieldType</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormat.html" class="tag"
+            style="font-size: 28px;color:#14892c"
+            title="Average Method Complexity - 4.654 , Coverage - 86.2% ">DateTimeFormat</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormat.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.6 , Coverage - 76.8% ">DateTimeFormat.StyleFormatter</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatter.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.933 , Coverage - 93.1% ">DateTimeFormatter</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 76.9% ">DateTimeFormatterBuilder</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 94.6% ">DateTimeFormatterBuilder.CharacterLiteral</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 3.167 , Coverage - 90.7% ">DateTimeFormatterBuilder.Composite</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 27px;color:#14892c"
+            title="Average Method Complexity - 4.5 , Coverage - 89.7% ">DateTimeFormatterBuilder.FixedNumber</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 30px;color:#e7a19b"
+            title="Average Method Complexity - 5.5 , Coverage - 57.8% ">DateTimeFormatterBuilder.Fraction</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 34px;color:#89c495"
+            title="Average Method Complexity - 6.667 , Coverage - 97.2% ">DateTimeFormatterBuilder.MatchingParser</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 34px;color:#89c495"
+            title="Average Method Complexity - 6.667 , Coverage - 95.2% ">DateTimeFormatterBuilder.NumberFormatter</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 80.6% ">DateTimeFormatterBuilder.PaddedNumber</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.125 , Coverage - 71.4% ">DateTimeFormatterBuilder.StringLiteral</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 2.6 , Coverage - 89.2% ">DateTimeFormatterBuilder.TextField</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.75 , Coverage - 77.8% ">DateTimeFormatterBuilder.TimeZoneId</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 44px;color:#f6c342"
+            title="Average Method Complexity - 9.556 , Coverage - 67% ">DateTimeFormatterBuilder.TimeZoneOffset</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 27px;color:#f6c342"
+            title="Average Method Complexity - 4.4 , Coverage - 71.1% ">DateTimeFormatterBuilder.TwoDigitYear</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeFormatterBuilder.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 50% ">DateTimeFormatterBuilder.UnpaddedNumber</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeParserBucket.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 2.292 , Coverage - 81.9% ">DateTimeParserBucket</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeParserBucket.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.75 , Coverage - 100% ">DateTimeParserBucket.SavedField</a>
+            
+    
+            <a href="org/joda/time/format/DateTimeParserBucket.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 89.5% ">DateTimeParserBucket.SavedState</a>
+            
+    
+            <a href="org/joda/time/DateTimeUtils.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.92 , Coverage - 94.3% ">DateTimeUtils</a>
+            
+    
+            <a href="org/joda/time/DateTimeUtils.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateTimeUtils.FixedMillisProvider</a>
+            
+    
+            <a href="org/joda/time/DateTimeUtils.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateTimeUtils.OffsetMillisProvider</a>
+            
+    
+            <a href="org/joda/time/DateTimeUtils.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateTimeUtils.SystemMillisProvider</a>
+            
+    
+            <a href="org/joda/time/DateTimeZone.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 3.2 , Coverage - 92.6% ">DateTimeZone</a>
+            
+    
+            <a href="org/joda/time/DateTimeZone.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DateTimeZone.Stub</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 3.867 , Coverage - 87.8% ">DateTimeZoneBuilder</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 3.273 , Coverage - 74.7% ">DateTimeZoneBuilder.DSTZone</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 3.818 , Coverage - 86.8% ">DateTimeZoneBuilder.OfYear</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 35px;color:#fae1a0"
+            title="Average Method Complexity - 6.917 , Coverage - 83% ">DateTimeZoneBuilder.PrecalculatedZone</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.182 , Coverage - 82.9% ">DateTimeZoneBuilder.Recurrence</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.571 , Coverage - 87.2% ">DateTimeZoneBuilder.Rule</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 2.583 , Coverage - 92.6% ">DateTimeZoneBuilder.RuleSet</a>
+            
+    
+            <a href="org/joda/time/tz/DateTimeZoneBuilder.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">DateTimeZoneBuilder.Transition</a>
+            
+    
+            <a href="org/joda/time/Days.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.769 , Coverage - 100% ">Days</a>
+            
+    
+            <a href="org/joda/time/field/DecoratedDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 93.1% ">DecoratedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/DecoratedDurationField.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.2 , Coverage - 51.7% ">DecoratedDurationField</a>
+            
+    
+            <a href="org/joda/time/tz/DefaultNameProvider.html" class="tag"
+            style="font-size: 26px;color:#f6c342"
+            title="Average Method Complexity - 4.2 , Coverage - 72.2% ">DefaultNameProvider</a>
+            
+    
+            <a href="org/joda/time/field/DelegatedDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.056 , Coverage - 55.4% ">DelegatedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/DividedDateTimeField.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.474 , Coverage - 51.1% ">DividedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/Duration.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.517 , Coverage - 100% ">Duration</a>
+            
+    
+            <a href="org/joda/time/DurationField.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">DurationField</a>
+            
+    
+            <a href="org/joda/time/DurationFieldType.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DurationFieldType</a>
+            
+    
+            <a href="org/joda/time/DurationFieldType.html" class="tag"
+            style="font-size: 33px;color:#14892c"
+            title="Average Method Complexity - 6.2 , Coverage - 91.7% ">DurationFieldType.StandardDurationFieldType</a>
+            
+    
+            <a href="org/joda/time/chrono/EthiopicChronology.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.786 , Coverage - 93% ">EthiopicChronology</a>
+            
+    
+            <a href="org/joda/time/field/FieldUtils.html" class="tag"
+            style="font-size: 23px;color:#14892c"
+            title="Average Method Complexity - 3.294 , Coverage - 92.4% ">FieldUtils</a>
+            
+    
+            <a href="org/joda/time/tz/FixedDateTimeZone.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.455 , Coverage - 100% ">FixedDateTimeZone</a>
+            
+    
+            <a href="org/joda/time/format/FormatUtils.html" class="tag"
+            style="font-size: 30px;color:#e7a19b"
+            title="Average Method Complexity - 5.25 , Coverage - 53% ">FormatUtils</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.115 , Coverage - 93% ">GJChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.029 , Coverage - 67.4% ">GJChronology.CutoverField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 3.5 , Coverage - 60.3% ">GJChronology.ImpreciseCutoverField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJChronology.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 81.8% ">GJChronology.LinkedDurationField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJDayOfWeekDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 91.3% ">GJDayOfWeekDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJEraDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.235 , Coverage - 74.1% ">GJEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJLocaleSymbols.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.87 , Coverage - 99.4% ">GJLocaleSymbols</a>
+            
+    
+            <a href="org/joda/time/chrono/GJMonthOfYearDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">GJMonthOfYearDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GJYearOfEraDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.125 , Coverage - 62.8% ">GJYearOfEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/GregorianChronology.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">GregorianChronology</a>
+            
+    
+            <a href="org/joda/time/Hours.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.808 , Coverage - 100% ">Hours</a>
+            
+    
+            <a href="org/joda/time/chrono/ISOChronology.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.833 , Coverage - 98.6% ">ISOChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/ISOChronology.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ISOChronology.Stub</a>
+            
+    
+            <a href="org/joda/time/format/ISODateTimeFormat.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.22 , Coverage - 96.8% ">ISODateTimeFormat</a>
+            
+    
+            <a href="org/joda/time/format/ISODateTimeFormat.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 84.4% ">ISODateTimeFormat.Constants</a>
+            
+    
+            <a href="org/joda/time/format/ISOPeriodFormat.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.833 , Coverage - 100% ">ISOPeriodFormat</a>
+            
+    
+            <a href="org/joda/time/chrono/ISOYearOfEraDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.125 , Coverage - 37.5% ">ISOYearOfEraDateTimeField</a>
+            
+    
+            <a href="org/joda/time/IllegalFieldValueException.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.421 , Coverage - 91.7% ">IllegalFieldValueException</a>
+            
+    
+            <a href="org/joda/time/IllegalInstantException.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 85% ">IllegalInstantException</a>
+            
+    
+            <a href="org/joda/time/field/ImpreciseDateTimeField.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.5% ">ImpreciseDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/ImpreciseDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 81.8% ">ImpreciseDateTimeField.LinkedDurationField</a>
+            
+    
+            <a href="org/joda/time/Instant.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">Instant</a>
+            
+    
+            <a href="org/joda/time/Interval.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.458 , Coverage - 100% ">Interval</a>
+            
+    
+            <a href="org/joda/time/chrono/IslamicChronology.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.906 , Coverage - 73.4% ">IslamicChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/IslamicChronology.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 25.9% ">IslamicChronology.LeapYearPatternType</a>
+            
+    
+            <a href="org/joda/time/chrono/JulianChronology.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.7 , Coverage - 98.1% ">JulianChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/LenientChronology.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.889 , Coverage - 80.8% ">LenientChronology</a>
+            
+    
+            <a href="org/joda/time/field/LenientDateTimeField.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.75 , Coverage - 66.7% ">LenientDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/LimitChronology.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2.812 , Coverage - 67.6% ">LimitChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/LimitChronology.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 57.6% ">LimitChronology.LimitDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/LimitChronology.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 78.1% ">LimitChronology.LimitDurationField</a>
+            
+    
+            <a href="org/joda/time/chrono/LimitChronology.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="Average Method Complexity - 1.667 , Coverage - 10.7% ">LimitChronology.LimitException</a>
+            
+    
+            <a href="org/joda/time/LocalDate.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.66 , Coverage - 96.9% ">LocalDate</a>
+            
+    
+            <a href="org/joda/time/LocalDate.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60.5% ">LocalDate.Property</a>
+            
+    
+            <a href="org/joda/time/LocalDateTime.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.517 , Coverage - 94.6% ">LocalDateTime</a>
+            
+    
+            <a href="org/joda/time/LocalDateTime.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">LocalDateTime.Property</a>
+            
+    
+            <a href="org/joda/time/LocalTime.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.714 , Coverage - 96% ">LocalTime</a>
+            
+    
+            <a href="org/joda/time/LocalTime.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.048 , Coverage - 83% ">LocalTime.Property</a>
+            
+    
+            <a href="org/joda/time/convert/LongConverter.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">LongConverter</a>
+            
+    
+            <a href="org/joda/time/field/MillisDurationField.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.13 , Coverage - 96.7% ">MillisDurationField</a>
+            
+    
+            <a href="org/joda/time/Minutes.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.615 , Coverage - 100% ">Minutes</a>
+            
+    
+            <a href="org/joda/time/MonthDay.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.364 , Coverage - 96.4% ">MonthDay</a>
+            
+    
+            <a href="org/joda/time/MonthDay.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MonthDay.Property</a>
+            
+    
+            <a href="org/joda/time/Months.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.25 , Coverage - 100% ">Months</a>
+            
+    
+            <a href="org/joda/time/MutableDateTime.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.412 , Coverage - 99% ">MutableDateTime</a>
+            
+    
+            <a href="org/joda/time/MutableDateTime.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MutableDateTime.Property</a>
+            
+    
+            <a href="org/joda/time/MutableInterval.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.222 , Coverage - 98.8% ">MutableInterval</a>
+            
+    
+            <a href="org/joda/time/MutablePeriod.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.069 , Coverage - 97% ">MutablePeriod</a>
+            
+    
+            <a href="org/joda/time/convert/NullConverter.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NullConverter</a>
+            
+    
+            <a href="org/joda/time/field/OffsetDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 93.5% ">OffsetDateTimeField</a>
+            
+    
+            <a href="org/joda/time/Partial.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2.697 , Coverage - 98.9% ">Partial</a>
+            
+    
+            <a href="org/joda/time/Partial.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Partial.Property</a>
+            
+    
+            <a href="org/joda/time/Period.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.372 , Coverage - 100% ">Period</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormat.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">PeriodFormat</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatter.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.474 , Coverage - 100% ">PeriodFormatter</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.889 , Coverage - 89.3% ">PeriodFormatterBuilder</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 3.125 , Coverage - 92% ">PeriodFormatterBuilder.Composite</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 48px;color:#14892c"
+            title="Average Method Complexity - 10.462 , Coverage - 87.1% ">PeriodFormatterBuilder.FieldFormatter</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.167 , Coverage - 100% ">PeriodFormatterBuilder.Literal</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 2.667 , Coverage - 64.9% ">PeriodFormatterBuilder.PluralAffix</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 36px;color:#14892c"
+            title="Average Method Complexity - 7 , Coverage - 89% ">PeriodFormatterBuilder.Separator</a>
+            
+    
+            <a href="org/joda/time/format/PeriodFormatterBuilder.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 3.833 , Coverage - 89.1% ">PeriodFormatterBuilder.SimpleAffix</a>
+            
+    
+            <a href="org/joda/time/PeriodType.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.308 , Coverage - 99.1% ">PeriodType</a>
+            
+    
+            <a href="org/joda/time/field/PreciseDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.429 , Coverage - 100% ">PreciseDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/PreciseDurationDateTimeField.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">PreciseDurationDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/PreciseDurationField.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.182 , Coverage - 100% ">PreciseDurationField</a>
+            
+    
+            <a href="org/joda/time/convert/ReadableDurationConverter.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.25 , Coverage - 100% ">ReadableDurationConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadableInstantConverter.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.8 , Coverage - 100% ">ReadableInstantConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadableIntervalConverter.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">ReadableIntervalConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadablePartialConverter.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.4 , Coverage - 100% ">ReadablePartialConverter</a>
+            
+    
+            <a href="org/joda/time/convert/ReadablePeriodConverter.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ReadablePeriodConverter</a>
+            
+    
+            <a href="org/joda/time/field/RemainderDateTimeField.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.25 , Coverage - 53.4% ">RemainderDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/ScaledDurationField.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.235 , Coverage - 100% ">ScaledDurationField</a>
+            
+    
+            <a href="org/joda/time/Seconds.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.615 , Coverage - 100% ">Seconds</a>
+            
+    
+            <a href="org/joda/time/field/SkipDateTimeField.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.833 , Coverage - 78.9% ">SkipDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/SkipUndoDateTimeField.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 76.5% ">SkipUndoDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/StrictChronology.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.889 , Coverage - 68.5% ">StrictChronology</a>
+            
+    
+            <a href="org/joda/time/field/StrictDateTimeField.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 1.75 , Coverage - 38.1% ">StrictDateTimeField</a>
+            
+    
+            <a href="org/joda/time/convert/StringConverter.html" class="tag"
+            style="font-size: 33px;color:#89c495"
+            title="Average Method Complexity - 6.143 , Coverage - 97.8% ">StringConverter</a>
+            
+    
+            <a href="org/joda/time/TimeOfDay.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.241 , Coverage - 100% ">TimeOfDay</a>
+            
+    
+            <a href="org/joda/time/TimeOfDay.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TimeOfDay.Property</a>
+            
+    
+            <a href="org/joda/time/tz/UTCProvider.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">UTCProvider</a>
+            
+    
+            <a href="org/joda/time/field/UnsupportedDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">UnsupportedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/field/UnsupportedDurationField.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.2 , Coverage - 58.7% ">UnsupportedDurationField</a>
+            
+    
+            <a href="org/joda/time/Weeks.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.615 , Coverage - 100% ">Weeks</a>
+            
+    
+            <a href="org/joda/time/YearMonth.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.348 , Coverage - 96.5% ">YearMonth</a>
+            
+    
+            <a href="org/joda/time/YearMonth.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">YearMonth.Property</a>
+            
+    
+            <a href="org/joda/time/YearMonthDay.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.255 , Coverage - 100% ">YearMonthDay</a>
+            
+    
+            <a href="org/joda/time/YearMonthDay.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">YearMonthDay.Property</a>
+            
+    
+            <a href="org/joda/time/Years.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.8 , Coverage - 100% ">Years</a>
+            
+    
+            <a href="org/joda/time/field/ZeroIsMaxDateTimeField.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.115 , Coverage - 34.3% ">ZeroIsMaxDateTimeField</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 31px;color:#fae1a0"
+            title="Average Method Complexity - 5.647 , Coverage - 80.8% ">ZoneInfoCompiler</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2.8 , Coverage - 84% ">ZoneInfoCompiler.DateTimeOfYear</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.25 , Coverage - 90.2% ">ZoneInfoCompiler.Rule</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.667 , Coverage - 86.7% ">ZoneInfoCompiler.RuleSet</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoCompiler.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 82.5% ">ZoneInfoCompiler.Zone</a>
+            
+    
+            <a href="org/joda/time/tz/ZoneInfoProvider.html" class="tag"
+            style="font-size: 22px;color:#fae1a0"
+            title="Average Method Complexity - 3.091 , Coverage - 76% ">ZoneInfoProvider</a>
+            
+    
+            <a href="org/joda/time/chrono/ZonedChronology.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.938 , Coverage - 76.6% ">ZonedChronology</a>
+            
+    
+            <a href="org/joda/time/chrono/ZonedChronology.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.371 , Coverage - 84.5% ">ZonedChronology.ZonedDateTimeField</a>
+            
+    
+            <a href="org/joda/time/chrono/ZonedChronology.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.75 , Coverage - 68.4% ">ZonedChronology.ZonedDurationField</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Wed Dec 28 2022 16:44:45 MST using coverage data from Wed Dec 28 2022 16:44:38 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

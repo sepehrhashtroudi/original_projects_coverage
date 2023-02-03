@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class UnreachableCodeEliminationTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="UnreachableCodeEliminationTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>UnreachableCodeEliminationTest</td>
+        <td class="testPasses"><span class="sortValue">50</span>50</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>1.305</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428c</span><a href="UnreachableCodeEliminationTest_testIssue4177428c_air.html">UnreachableCodeEliminationTest.testIssue4177428c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658587</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUselessStrings</span><a href="UnreachableCodeEliminationTest_testRemoveUselessStrings_ali.html">UnreachableCodeEliminationTest.testRemoveUselessStrings</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791824</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUselessLiteralValueStatements</span><a href="UnreachableCodeEliminationTest_testRemoveUselessLiteralValueStatements_56k.html">UnreachableCodeEliminationTest.testRemoveUselessLiteralValueStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791756</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.017</span>0.017</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue311</span><a href="UnreachableCodeEliminationTest_testIssue311_5jj.html">UnreachableCodeEliminationTest.testIssue311</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658542</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428_continue</span><a href="UnreachableCodeEliminationTest_testIssue4177428_continue_8yb.html">UnreachableCodeEliminationTest.testIssue4177428_continue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791819</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428c</span><a href="UnreachableCodeEliminationTest_testIssue4177428c_d3.html">UnreachableCodeEliminationTest.testIssue4177428c</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791814</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428a</span><a href="UnreachableCodeEliminationTest_testIssue4177428a_4j7.html">UnreachableCodeEliminationTest.testIssue4177428a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791804</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428a</span><a href="UnreachableCodeEliminationTest_testIssue4177428a_eyc.html">UnreachableCodeEliminationTest.testIssue4177428a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658562</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testUnlessUnconditonalBreak</span><a href="UnreachableCodeEliminationTest_testUnlessUnconditonalBreak_b71.html">UnreachableCodeEliminationTest.testUnlessUnconditonalBreak</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658600</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.079</span>0.079</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemovalRequiresRedeclaration</span><a href="UnreachableCodeEliminationTest_testRemovalRequiresRedeclaration_b2c.html">UnreachableCodeEliminationTest.testRemovalRequiresRedeclaration</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791901</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue5215541_deadVarDeclar</span><a href="UnreachableCodeEliminationTest_testIssue5215541_deadVarDeclar_2va.html">UnreachableCodeEliminationTest.testIssue5215541_deadVarDeclar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791786</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testAssignPropertyOnCreatedObject</span><a href="UnreachableCodeEliminationTest_testAssignPropertyOnCreatedObject_82s.html">UnreachableCodeEliminationTest.testAssignPropertyOnCreatedObject</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791907</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testConditionalDeadCode</span><a href="UnreachableCodeEliminationTest_testConditionalDeadCode_wi.html">UnreachableCodeEliminationTest.testConditionalDeadCode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791773</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemovalRequiresRedeclaration</span><a href="UnreachableCodeEliminationTest_testRemovalRequiresRedeclaration_ax8.html">UnreachableCodeEliminationTest.testRemovalRequiresRedeclaration</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658526</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testUselessUnconditionalReturn</span><a href="UnreachableCodeEliminationTest_testUselessUnconditionalReturn_a4y.html">UnreachableCodeEliminationTest.testUselessUnconditionalReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791926</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428b</span><a href="UnreachableCodeEliminationTest_testIssue4177428b_7d0.html">UnreachableCodeEliminationTest.testIssue4177428b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791809</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUselessLiteralValueStatements</span><a href="UnreachableCodeEliminationTest_testRemoveUselessLiteralValueStatements_8a3.html">UnreachableCodeEliminationTest.testRemoveUselessLiteralValueStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658322</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.052</span>0.052</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testCascadedRemovalOfUnlessUnconditonalJumps</span><a href="UnreachableCodeEliminationTest_testCascadedRemovalOfUnlessUnconditonalJumps_3ny.html">UnreachableCodeEliminationTest.testCascadedRemovalOfUnlessUnconditonalJumps</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697657611</span>2 Jan 15:14:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.321</span>0.321</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testUnlessUnconditionalContinue</span><a href="UnreachableCodeEliminationTest_testUnlessUnconditionalContinue_cp5.html">UnreachableCodeEliminationTest.testUnlessUnconditionalContinue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658127</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.043</span>0.043</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testSwitchCase</span><a href="UnreachableCodeEliminationTest_testSwitchCase_drv.html">UnreachableCodeEliminationTest.testSwitchCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791954</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testTryCatchFinally</span><a href="UnreachableCodeEliminationTest_testTryCatchFinally_8de.html">UnreachableCodeEliminationTest.testTryCatchFinally</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658195</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.071</span>0.071</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428_multifinally</span><a href="UnreachableCodeEliminationTest_testIssue4177428_multifinally_5ng.html">UnreachableCodeEliminationTest.testIssue4177428_multifinally</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791782</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testConditionalDeadCode</span><a href="UnreachableCodeEliminationTest_testConditionalDeadCode_2ms.html">UnreachableCodeEliminationTest.testConditionalDeadCode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658081</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUselessNameStatements</span><a href="UnreachableCodeEliminationTest_testRemoveUselessNameStatements_2za.html">UnreachableCodeEliminationTest.testRemoveUselessNameStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658111</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.016</span>0.016</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testForInLoop</span><a href="UnreachableCodeEliminationTest_testForInLoop_7e8.html">UnreachableCodeEliminationTest.testForInLoop</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658554</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testUselessUnconditionalReturn</span><a href="UnreachableCodeEliminationTest_testUselessUnconditionalReturn_c99.html">UnreachableCodeEliminationTest.testUselessUnconditionalReturn</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658375</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.072</span>0.072</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428_return</span><a href="UnreachableCodeEliminationTest_testIssue4177428_return_8i4.html">UnreachableCodeEliminationTest.testIssue4177428_return</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658267</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUselessNameStatements</span><a href="UnreachableCodeEliminationTest_testRemoveUselessNameStatements_7cv.html">UnreachableCodeEliminationTest.testRemoveUselessNameStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791895</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testUnlessUnconditionalContinue</span><a href="UnreachableCodeEliminationTest_testUnlessUnconditionalContinue_98z.html">UnreachableCodeEliminationTest.testUnlessUnconditionalContinue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791687</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.014</span>0.014</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue5215541_deadVarDeclar</span><a href="UnreachableCodeEliminationTest_testIssue5215541_deadVarDeclar_7dg.html">UnreachableCodeEliminationTest.testIssue5215541_deadVarDeclar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697657938</span>2 Jan 15:14:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.025</span>0.025</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testForInLoop</span><a href="UnreachableCodeEliminationTest_testForInLoop_9en.html">UnreachableCodeEliminationTest.testForInLoop</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791796</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428b</span><a href="UnreachableCodeEliminationTest_testIssue4177428b_aef.html">UnreachableCodeEliminationTest.testIssue4177428b</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658574</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428_return</span><a href="UnreachableCodeEliminationTest_testIssue4177428_return_5uy.html">UnreachableCodeEliminationTest.testIssue4177428_return</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791777</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUnreachableCode</span><a href="UnreachableCodeEliminationTest_testRemoveUnreachableCode_47g.html">UnreachableCodeEliminationTest.testRemoveUnreachableCode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791827</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.041</span>0.041</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428_multifinally</span><a href="UnreachableCodeEliminationTest_testIssue4177428_multifinally_5ph.html">UnreachableCodeEliminationTest.testIssue4177428_multifinally</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658515</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue4177428_continue</span><a href="UnreachableCodeEliminationTest_testIssue4177428_continue_1kv.html">UnreachableCodeEliminationTest.testIssue4177428_continue</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658300</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.013</span>0.013</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testNoRemoveUseStrict</span><a href="UnreachableCodeEliminationTest_testNoRemoveUseStrict_9gm.html">UnreachableCodeEliminationTest.testNoRemoveUseStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791951</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testNoRemoveUseStrict</span><a href="UnreachableCodeEliminationTest_testNoRemoveUseStrict_2jw.html">UnreachableCodeEliminationTest.testNoRemoveUseStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658314</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUselessStrings</span><a href="UnreachableCodeEliminationTest_testRemoveUselessStrings_ax7.html">UnreachableCodeEliminationTest.testRemoveUselessStrings</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658076</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testCascadedRemovalOfUnlessUnconditonalJumps</span><a href="UnreachableCodeEliminationTest_testCascadedRemovalOfUnlessUnconditonalJumps_4d8.html">UnreachableCodeEliminationTest.testCascadedRemovalOfUnlessUnconditonalJumps</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791734</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.015</span>0.015</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testNoRemoveUselessNameStatements</span><a href="UnreachableCodeEliminationTest_testNoRemoveUselessNameStatements_cap.html">UnreachableCodeEliminationTest.testNoRemoveUselessNameStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791890</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testNoRemoveUselessNameStatements</span><a href="UnreachableCodeEliminationTest_testNoRemoveUselessNameStatements_b05.html">UnreachableCodeEliminationTest.testNoRemoveUselessNameStatements</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658171</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testUnlessUnconditonalBreak</span><a href="UnreachableCodeEliminationTest_testUnlessUnconditonalBreak_5aa.html">UnreachableCodeEliminationTest.testUnlessUnconditonalBreak</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791702</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.031</span>0.031</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testSwitchCase</span><a href="UnreachableCodeEliminationTest_testSwitchCase_965.html">UnreachableCodeEliminationTest.testSwitchCase</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658089</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.022</span>0.022</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testAssignPropertyOnCreatedObject</span><a href="UnreachableCodeEliminationTest_testAssignPropertyOnCreatedObject_4yp.html">UnreachableCodeEliminationTest.testAssignPropertyOnCreatedObject</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658448</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.067</span>0.067</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveUnreachableCode</span><a href="UnreachableCodeEliminationTest_testRemoveUnreachableCode_52e.html">UnreachableCodeEliminationTest.testRemoveUnreachableCode</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697657964</span>2 Jan 15:14:17</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.111</span>0.111</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testTryCatchFinally</span><a href="UnreachableCodeEliminationTest_testTryCatchFinally_etr.html">UnreachableCodeEliminationTest.testTryCatchFinally</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791868</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveDo</span><a href="UnreachableCodeEliminationTest_testRemoveDo_4x8.html">UnreachableCodeEliminationTest.testRemoveDo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697658280</span>2 Jan 15:14:18</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.019</span>0.019</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testRemoveDo</span><a href="UnreachableCodeEliminationTest_testRemoveDo_1r4.html">UnreachableCodeEliminationTest.testRemoveDo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791750</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">UnreachableCodeEliminationTest.testIssue311</span><a href="UnreachableCodeEliminationTest_testIssue311_4ss.html">UnreachableCodeEliminationTest.testIssue311</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791800</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

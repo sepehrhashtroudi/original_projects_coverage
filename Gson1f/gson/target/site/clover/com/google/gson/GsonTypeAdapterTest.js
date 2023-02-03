@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":108,"id":4184,"methods":[{"el":42,"sc":3,"sl":35},{"el":49,"sc":3,"sl":44},{"el":61,"sc":3,"sl":51},{"el":71,"sc":3,"sl":63},{"el":80,"sc":3,"sl":73}],"name":"GsonTypeAdapterTest","sl":32},{"el":94,"id":4211,"methods":[{"el":87,"sc":5,"sl":84},{"el":93,"sc":5,"sl":89}],"name":"GsonTypeAdapterTest.ExceptionTypeAdapter","sl":82},{"el":107,"id":4215,"methods":[{"el":100,"sc":5,"sl":98},{"el":106,"sc":5,"sl":102}],"name":"GsonTypeAdapterTest.AtomicIntegerTypeAdapter","sl":96}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_130":{"methods":[{"sl":63},{"sl":98},{"sl":102}],"name":"testTypeAdapterProperlyConvertsTypes","pass":true,"statements":[{"sl":64},{"sl":65},{"sl":66},{"sl":67},{"sl":69},{"sl":70},{"sl":99},{"sl":104},{"sl":105}]},"test_138":{"methods":[{"sl":51},{"sl":84},{"sl":89}],"name":"testTypeAdapterThrowsException","pass":true,"statements":[{"sl":52},{"sl":53},{"sl":57},{"sl":58},{"sl":86},{"sl":92}]},"test_47":{"methods":[{"sl":73}],"name":"testTypeAdapterDoesNotAffectNonAdaptedTypes","pass":true,"statements":[{"sl":74},{"sl":75},{"sl":76},{"sl":78},{"sl":79}]},"test_473":{"methods":[{"sl":44}],"name":"testDefaultTypeAdapterThrowsParseException","pass":true,"statements":[{"sl":45},{"sl":46}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [473], [473], [473], [], [], [], [], [138], [138], [138], [], [], [], [138], [138], [], [], [], [], [130], [130], [130], [130], [130], [], [130], [130], [], [], [47], [47], [47], [47], [], [47], [47], [], [], [], [], [138], [], [138], [], [], [138], [], [], [138], [], [], [], [], [], [130], [130], [], [], [130], [], [130], [130], [], [], []]

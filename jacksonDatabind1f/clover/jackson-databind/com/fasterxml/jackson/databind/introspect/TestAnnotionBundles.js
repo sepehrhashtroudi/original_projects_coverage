@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":77,"id":37854,"methods":[{"el":66,"sc":5,"sl":63},{"el":71,"sc":5,"sl":68},{"el":76,"sc":5,"sl":73}],"name":"TestAnnotionBundles","sl":12},{"el":17,"id":37854,"methods":[],"name":"TestAnnotionBundles.MyIgnoral","sl":17},{"el":22,"id":37854,"methods":[],"name":"TestAnnotionBundles.MyRename","sl":22},{"el":30,"id":37854,"methods":[{"el":26,"sc":9,"sl":25}],"name":"TestAnnotionBundles.Bean","sl":24},{"el":36,"id":37856,"methods":[],"name":"TestAnnotionBundles.JsonAutoDetectOff","sl":36},{"el":44,"id":37856,"methods":[{"el":40,"sc":7,"sl":40},{"el":43,"sc":7,"sl":42}],"name":"TestAnnotionBundles.NoAutoDetect","sl":39},{"el":49,"id":37860,"methods":[],"name":"TestAnnotionBundles.Bundle92","sl":49},{"el":54,"id":37860,"methods":[],"name":"TestAnnotionBundles.Bean92","sl":51}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1295":{"methods":[{"sl":73}],"name":"testIssue92","pass":true,"statements":[{"sl":75}]},"test_1598":{"methods":[{"sl":63}],"name":"testBundledIgnore","pass":true,"statements":[{"sl":65}]},"test_1963":{"methods":[{"sl":63}],"name":"testBundledIgnore","pass":true,"statements":[{"sl":65}]},"test_2171":{"methods":[{"sl":42},{"sl":68}],"name":"testVisibilityBundle","pass":true,"statements":[{"sl":43},{"sl":70}]},"test_422":{"methods":[{"sl":42},{"sl":68}],"name":"testVisibilityBundle","pass":true,"statements":[{"sl":43},{"sl":70}]},"test_979":{"methods":[{"sl":73}],"name":"testIssue92","pass":true,"statements":[{"sl":75}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [422, 2171], [422, 2171], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [1598, 1963], [], [1598, 1963], [], [], [422, 2171], [], [422, 2171], [], [], [979, 1295], [], [979, 1295], [], []]

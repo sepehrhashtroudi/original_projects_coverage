@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class DevirtualizePrototypeMethodsTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="DevirtualizePrototypeMethodsTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>DevirtualizePrototypeMethodsTest</td>
+        <td class="testPasses"><span class="sortValue">132</span>132</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.758</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteDefinitionBeforeUse</span><a href="DevirtualizePrototypeMethodsTest_testRewriteDefinitionBeforeUse_eo2.html">DevirtualizePrototypeMethodsTest.testRewriteDefinitionBeforeUse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748985</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods1</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeMethods1_68r.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540247</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.023</span>0.023</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule2_3an.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748981</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule1</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule1_cbc.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540410</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.044</span>0.044</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSingleDefinition2_8et.html">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748883</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteIfNotInGlobalScope1_e02.html">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393840</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteNoNestedFunction</span><a href="DevirtualizePrototypeMethodsTest_testRewriteNoNestedFunction_mh.html">DevirtualizePrototypeMethodsTest.testRewriteNoNestedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393886</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNamespaceFunctions</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNamespaceFunctions_bwt.html">DevirtualizePrototypeMethodsTest.testNoRewriteNamespaceFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540400</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteGet1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteGet1_a2v.html">DevirtualizePrototypeMethodsTest.testNoRewriteGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748913</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition1</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSingleDefinition1_6kw.html">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393849</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethodInObj</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethodInObj_bjr.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethodInObj</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540230</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsAssignmentRhs</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteDeclUsedAsAssignmentRhs_bcx.html">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsAssignmentRhs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748851</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition3</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition3_651.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540185</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteExternalMethods2_k6.html">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748936</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteChained</span><a href="DevirtualizePrototypeMethodsTest_testRewriteChained_6zx.html">DevirtualizePrototypeMethodsTest.testRewriteChained</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748866</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteSet1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteSet1_5k6.html">DevirtualizePrototypeMethodsTest.testNoRewriteSet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540351</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsCallArgument</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteDeclUsedAsCallArgument_6o4.html">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsCallArgument</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393835</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNotImplementedMethod</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNotImplementedMethod_5hf.html">DevirtualizePrototypeMethodsTest.testNoRewriteNotImplementedMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393916</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition3</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition3_3d6.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393858</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition1_bpu.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393853</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition1_7pb.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748887</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule1</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule1_8qj.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393919</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod2_cgh.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540214</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNestedFunction</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNestedFunction_1ud.html">DevirtualizePrototypeMethodsTest.testNoRewriteNestedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393888</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteInGlobalScope</span><a href="DevirtualizePrototypeMethodsTest_testRewriteInGlobalScope_1k6.html">DevirtualizePrototypeMethodsTest.testRewriteInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748859</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods2</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeMethods2_1pv.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540271</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.059</span>0.059</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteCallReference</span><a href="DevirtualizePrototypeMethodsTest_testRewriteCallReference_9nj.html">DevirtualizePrototypeMethodsTest.testRewriteCallReference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748957</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteSet1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteSet1_21j.html">DevirtualizePrototypeMethodsTest.testNoRewriteSet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393910</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod4</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod4_8lu.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748901</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteSet1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteSet1_1g7.html">DevirtualizePrototypeMethodsTest.testNoRewriteSet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748975</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule3</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule3_dib.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748983</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteSet2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteSet2_7zu.html">DevirtualizePrototypeMethodsTest.testNoRewriteSet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748978</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteChained</span><a href="DevirtualizePrototypeMethodsTest_testRewriteChained_67w.html">DevirtualizePrototypeMethodsTest.testRewriteChained</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393828</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteVarArgs</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteVarArgs_1f.html">DevirtualizePrototypeMethodsTest.testNoRewriteVarArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748954</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition1_6xw.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540170</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNestedFunction</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNestedFunction_c1c.html">DevirtualizePrototypeMethodsTest.testNoRewriteNestedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748962</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeNoObjectLiterals</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeNoObjectLiterals_dgi.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeNoObjectLiterals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393860</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteExternalMethods2_l3.html">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540201</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod_x2.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748966</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteUseBeforeDefinition</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteUseBeforeDefinition_7st.html">DevirtualizePrototypeMethodsTest.testNoRewriteUseBeforeDefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748973</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNoReferences</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNoReferences_6av.html">DevirtualizePrototypeMethodsTest.testNoRewriteNoReferences</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540485</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewritePrototypeObjectLiterals2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewritePrototypeObjectLiterals2_bgf.html">DevirtualizePrototypeMethodsTest.testNoRewritePrototypeObjectLiterals2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748930</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteIfNotInGlobalScope1_chs.html">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748863</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule2_1ag.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540454</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeObjectLiterals1</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeObjectLiterals1_8jw.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeObjectLiterals1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393863</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethodInObj</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethodInObj_2wx.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethodInObj</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748909</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition1</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSingleDefinition1_2yv.html">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748881</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod4</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod4_bov.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540225</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteNoVarArgs</span><a href="DevirtualizePrototypeMethodsTest_testRewriteNoVarArgs_7s4.html">DevirtualizePrototypeMethodsTest.testRewriteNoVarArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393873</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethodInObj</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethodInObj_dfd.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethodInObj</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393900</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteExternalMethods1_z1.html">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540196</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteCodingConvention</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteCodingConvention_7tq.html">DevirtualizePrototypeMethodsTest.testNoRewriteCodingConvention</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748938</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteNoVarArgs</span><a href="DevirtualizePrototypeMethodsTest_testRewriteNoVarArgs_dva.html">DevirtualizePrototypeMethodsTest.testRewriteNoVarArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748941</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeNoObjectLiterals</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeNoObjectLiterals_8y0.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeNoObjectLiterals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748924</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSingleDefinition2_7uq.html">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393851</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNoReferences</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNoReferences_dy7.html">DevirtualizePrototypeMethodsTest.testNoRewriteNoReferences</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393881</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteExternalMethods2_2gt.html">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393869</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteInGlobalScope</span><a href="DevirtualizePrototypeMethodsTest_testRewriteInGlobalScope_3ko.html">DevirtualizePrototypeMethodsTest.testRewriteInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540374</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteCallReference</span><a href="DevirtualizePrototypeMethodsTest_testRewriteCallReference_19f.html">DevirtualizePrototypeMethodsTest.testRewriteCallReference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540362</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteIfNotInGlobalScope1_7nt.html">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540474</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteDeclIsExpressionStatement</span><a href="DevirtualizePrototypeMethodsTest_testRewriteDeclIsExpressionStatement_2ia.html">DevirtualizePrototypeMethodsTest.testRewriteDeclIsExpressionStatement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393830</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods1</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeMethods1_1pe.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748920</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteGet1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteGet1_alu.html">DevirtualizePrototypeMethodsTest.testNoRewriteGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540337</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteDeclIsExpressionStatement</span><a href="DevirtualizePrototypeMethodsTest_testRewriteDeclIsExpressionStatement_20a.html">DevirtualizePrototypeMethodsTest.testRewriteDeclIsExpressionStatement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540499</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod3</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod3_4oa.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540220</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNonCallReference</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNonCallReference_8kq.html">DevirtualizePrototypeMethodsTest.testNoRewriteNonCallReference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748944</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteCodingConvention</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteCodingConvention_963.html">DevirtualizePrototypeMethodsTest.testNoRewriteCodingConvention</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540390</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNonCallReference</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNonCallReference_om.html">DevirtualizePrototypeMethodsTest.testNoRewriteNonCallReference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540384</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteIfNotInGlobalScope2_82h.html">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393842</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteCallReference</span><a href="DevirtualizePrototypeMethodsTest_testRewriteCallReference_8c1.html">DevirtualizePrototypeMethodsTest.testRewriteCallReference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393878</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods2</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeMethods2_7is.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393817</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.01</span>0.01</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteDefinitionBeforeUse</span><a href="DevirtualizePrototypeMethodsTest_testRewriteDefinitionBeforeUse_8y2.html">DevirtualizePrototypeMethodsTest.testRewriteDefinitionBeforeUse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393924</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNamespaceFunctions</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNamespaceFunctions_3ga.html">DevirtualizePrototypeMethodsTest.testNoRewriteNamespaceFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748878</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteSet2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteSet2_u8.html">DevirtualizePrototypeMethodsTest.testNoRewriteSet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540356</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod_4r7.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393891</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition2_2ej.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540178</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition2_awo.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748890</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testWrapper</span><a href="DevirtualizePrototypeMethodsTest_testWrapper_3xz.html">DevirtualizePrototypeMethodsTest.testWrapper</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748951</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testWrapper</span><a href="DevirtualizePrototypeMethodsTest_testWrapper_azh.html">DevirtualizePrototypeMethodsTest.testWrapper</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540490</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsAssignmentRhs</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteDeclUsedAsAssignmentRhs_10o.html">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsAssignmentRhs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540379</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteChained</span><a href="DevirtualizePrototypeMethodsTest_testRewriteChained_aad.html">DevirtualizePrototypeMethodsTest.testRewriteChained</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540405</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteGet2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteGet2_76e.html">DevirtualizePrototypeMethodsTest.testNoRewriteGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748916</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteGet1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteGet1_d4n.html">DevirtualizePrototypeMethodsTest.testNoRewriteGet1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393904</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod2_e22.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393893</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod_6rl.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540494</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition3</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition3_6ki.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748894</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteIfNotInGlobalScope2_52w.html">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540480</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteVarArgs</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteVarArgs_ei3.html">DevirtualizePrototypeMethodsTest.testNoRewriteVarArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393876</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteCodingConvention</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteCodingConvention_3w.html">DevirtualizePrototypeMethodsTest.testNoRewriteCodingConvention</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393871</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteExternalMethods1_1e7.html">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748933</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsCallArgument</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteDeclUsedAsCallArgument_4n5.html">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsCallArgument</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540235</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteGet2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteGet2_4fl.html">DevirtualizePrototypeMethodsTest.testNoRewriteGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540345</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod3</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod3_9gy.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748898</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNotImplementedMethod</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNotImplementedMethod_aeo.html">DevirtualizePrototypeMethodsTest.testNoRewriteNotImplementedMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748905</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule2_3vq.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393921</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteGet2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteGet2_bps.html">DevirtualizePrototypeMethodsTest.testNoRewriteGet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393908</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule3</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule3_bjj.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540459</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNonCallReference</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNonCallReference_45z.html">DevirtualizePrototypeMethodsTest.testNoRewriteNonCallReference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393884</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeObjectLiterals1</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeObjectLiterals1_eh8.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeObjectLiterals1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748927</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod3</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod3_4f3.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393896</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods1</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteExternalMethods1_adn.html">DevirtualizePrototypeMethodsTest.testNoRewriteExternalMethods1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393867</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsAssignmentRhs</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteDeclUsedAsAssignmentRhs_82a.html">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsAssignmentRhs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393833</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeObjectLiterals1</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeObjectLiterals1_1o3.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeObjectLiterals1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540368</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteUseBeforeDefinition</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteUseBeforeDefinition_36h.html">DevirtualizePrototypeMethodsTest.testNoRewriteUseBeforeDefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393925</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewritePrototypeObjectLiterals2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewritePrototypeObjectLiterals2_1a0.html">DevirtualizePrototypeMethodsTest.testNoRewritePrototypeObjectLiterals2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393865</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods1</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeMethods1_9yt.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393926</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteDeclIsExpressionStatement</span><a href="DevirtualizePrototypeMethodsTest_testRewriteDeclIsExpressionStatement_4zw.html">DevirtualizePrototypeMethodsTest.testRewriteDeclIsExpressionStatement</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748848</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition1</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSingleDefinition1_1rh.html">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540462</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteVarArgs</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteVarArgs_bbb.html">DevirtualizePrototypeMethodsTest.testNoRewriteVarArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540206</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule1</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule1_3h1.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748907</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testWrapper</span><a href="DevirtualizePrototypeMethodsTest_testWrapper_4qm.html">DevirtualizePrototypeMethodsTest.testWrapper</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393918</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNamespaceFunctions</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNamespaceFunctions_3dm.html">DevirtualizePrototypeMethodsTest.testNoRewriteNamespaceFunctions</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393845</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod2_d1e.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748969</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteNoNestedFunction</span><a href="DevirtualizePrototypeMethodsTest_testRewriteNoNestedFunction_6mw.html">DevirtualizePrototypeMethodsTest.testRewriteNoNestedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540161</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod4</span><a href="DevirtualizePrototypeMethodsTest_testRewriteImplementedMethod4_8e7.html">DevirtualizePrototypeMethodsTest.testRewriteImplementedMethod4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393898</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteMultipleDefinition2_s7.html">DevirtualizePrototypeMethodsTest.testNoRewriteMultipleDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393855</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsCallArgument</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteDeclUsedAsCallArgument_5y2.html">DevirtualizePrototypeMethodsTest.testNoRewriteDeclUsedAsCallArgument</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748854</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteDefinitionBeforeUse</span><a href="DevirtualizePrototypeMethodsTest_testRewriteDefinitionBeforeUse_6dn.html">DevirtualizePrototypeMethodsTest.testRewriteDefinitionBeforeUse</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540241</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteSet2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteSet2_b4s.html">DevirtualizePrototypeMethodsTest.testNoRewriteSet2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393913</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteInGlobalScope</span><a href="DevirtualizePrototypeMethodsTest_testRewriteInGlobalScope_9mi.html">DevirtualizePrototypeMethodsTest.testRewriteInGlobalScope</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393837</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods2</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeMethods2_5pr.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeMethods2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748839</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSameModule3</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSameModule3_815.html">DevirtualizePrototypeMethodsTest.testRewriteSameModule3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697393922</span>2 Jan 15:09:53</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteNoNestedFunction</span><a href="DevirtualizePrototypeMethodsTest_testRewriteNoNestedFunction_7pf.html">DevirtualizePrototypeMethodsTest.testRewriteNoNestedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748948</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNotImplementedMethod</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNotImplementedMethod_djc.html">DevirtualizePrototypeMethodsTest.testNoRewriteNotImplementedMethod</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540504</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNestedFunction</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNestedFunction_85.html">DevirtualizePrototypeMethodsTest.testNoRewriteNestedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540331</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewritePrototypeNoObjectLiterals</span><a href="DevirtualizePrototypeMethodsTest_testRewritePrototypeNoObjectLiterals_7wd.html">DevirtualizePrototypeMethodsTest.testRewritePrototypeNoObjectLiterals</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697539917</span>2 Jan 15:12:19</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.233</span>0.233</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition2</span><a href="DevirtualizePrototypeMethodsTest_testRewriteSingleDefinition2_317.html">DevirtualizePrototypeMethodsTest.testRewriteSingleDefinition2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540466</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteIfNotInGlobalScope2_c9y.html">DevirtualizePrototypeMethodsTest.testNoRewriteIfNotInGlobalScope2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748870</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteNoReferences</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteNoReferences_77q.html">DevirtualizePrototypeMethodsTest.testNoRewriteNoReferences</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697748960</span>2 Jan 15:15:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewritePrototypeObjectLiterals2</span><a href="DevirtualizePrototypeMethodsTest_testNoRewritePrototypeObjectLiterals2_4h.html">DevirtualizePrototypeMethodsTest.testNoRewritePrototypeObjectLiterals2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540394</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testRewriteNoVarArgs</span><a href="DevirtualizePrototypeMethodsTest_testRewriteNoVarArgs_5qm.html">DevirtualizePrototypeMethodsTest.testRewriteNoVarArgs</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540150</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.011</span>0.011</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">DevirtualizePrototypeMethodsTest.testNoRewriteUseBeforeDefinition</span><a href="DevirtualizePrototypeMethodsTest_testNoRewriteUseBeforeDefinition_1ny.html">DevirtualizePrototypeMethodsTest.testNoRewriteUseBeforeDefinition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697540471</span>2 Jan 15:12:20</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

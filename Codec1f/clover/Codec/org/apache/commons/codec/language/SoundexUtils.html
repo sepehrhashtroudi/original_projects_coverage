@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../style.css');
+        @import url('../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>Codec</title>
+    </head>
+
+<body  onload="onLoad('Codec: org.apache.commons.codec.language.SoundexUtils.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../../historical.html">Codec-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        Codec
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../" data-package-name="org.apache.commons.codec.language">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../../dashboard.html">Project Clover database Thu Aug 4 2022 16:04:21 MDT</a></li> 
+        <li><a href="pkg-summary.html">        Package org.apache.commons.codec.language</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File SoundexUtils.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../../img/srcFileCovDistChart10.png" alt="../../../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="17 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,63,98,66" title="1 file has 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,66,89,67" title="0 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,66,80,67" title="0 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,66,71,67" title="0 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,66,63,67" title="0 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,66,54,67" title="0 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,66,45,67" title="0 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="0 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="0 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,63,18,66" title="1 file has 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">20</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">123</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">38</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">14</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">20</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">123</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">38</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">6.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="SoundexUtils">
+        <span><a href="#30" title="SoundexUtils" onclick="closeDialogAndScrollTo('dialog-SoundexUtils', '30');">SoundexUtils</a></span>
+</td>
+<td>30<a name="sl-30"></a></td>
+    <td class="">20</td>
+    <td class="">12</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-SoundexUtils" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-SoundexUtils" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class SoundexUtils</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-SoundexUtils-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-SoundexUtils-methods-body', 'dialog-SoundexUtils-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                    
+                    <thead>
+                                                 <tr> <th id="SoundexUtils">
+    Class<br/>    <span><a href="#30" title="SoundexUtils" onclick="closeDialogAndScrollTo('dialog-SoundexUtils', '30');">SoundexUtils</a></span>
+</th>
+<th>Line #<br/>30<a name="sl-30"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>20</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>12</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-SoundexUtils-methods-body">
+                                                                                                            <tr id="SoundexUtils-1">
+<td id="summary-40-5">
+ <span class="sortValue">clean(String)&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#40" title="clean(String)&#160;:&#160;String" name="sl-40" onclick="closeDialogAndScrollTo('dialog-SoundexUtils', '40');">clean(String)&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">40</span>40</td>
+<td class="" align="right"><span class="sortValue">11.0</span>11</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="SoundexUtils-2">
+<td id="summary-84-5">
+ <span class="sortValue">difference(StringEncoder,String,String)&#160;:&#160;int</span>
+&#160;&#160;<a href="?line=29#84" title="difference(StringEncoder,String,String)&#160;:&#160;int" name="sl-84" onclick="closeDialogAndScrollTo('dialog-SoundexUtils', '84');">difference(StringEncoder,String,String)&#160;:&#160;int</a>
+</td>
+<td align="right"><span class="sortValue">84</span>84</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="SoundexUtils-3">
+<td id="summary-108-5">
+ <span class="sortValue">differenceEncoded(String,String)&#160;:&#160;int</span>
+&#160;&#160;<a href="?line=29#108" title="differenceEncoded(String,String)&#160;:&#160;int" name="sl-108" onclick="closeDialogAndScrollTo('dialog-SoundexUtils', '108');">differenceEncoded(String,String)&#160;:&#160;int</a>
+</td>
+<td align="right"><span class="sortValue">108</span>108</td>
+<td class="" align="right"><span class="sortValue">8.0</span>8</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-SoundexUtils">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 29 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-10">
+<td><a name="testA-10"></a><input type="checkbox" id="cb-10" value="10" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testDifference_a.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-10">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testDifference</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testDifference_a.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testDifference</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=127#src-127" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testDifference_a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-153">
+<td><a name="testA-153"></a><input type="checkbox" id="cb-153" value="153" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testDifference_49.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-153">  <span class="sortValue">org.apache.commons.codec.language.RefinedSoundexTest.testDifference</span><a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testDifference_49.html" title="View Test Summary Page">org.apache.commons.codec.language.RefinedSoundexTest.testDifference</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest.html?line=74#src-74" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testDifference_49.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-67">
+<td><a name="testA-67"></a><input type="checkbox" id="cb-67" value="67" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreApostrophes_1v.html';">
+<span class="sortValue">0.4864865</span>
+<div>
+<div title="48.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:48.6%"></div></div></div></td>
+<td id="tc-67">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeIgnoreApostrophes</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreApostrophes_1v.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeIgnoreApostrophes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=218#src-218" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreApostrophes_1v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-200">
+<td><a name="testA-200"></a><input type="checkbox" id="cb-200" value="200" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx2_5k.html';">
+<span class="sortValue">0.4864865</span>
+<div>
+<div title="48.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:48.6%"></div></div></div></td>
+<td id="tc-200">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testHWRuleEx2</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx2_5k.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testHWRuleEx2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=264#src-264" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx2_5k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-47">
+<td><a name="testA-47"></a><input type="checkbox" id="cb-47" value="47" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreHyphens_1b.html';">
+<span class="sortValue">0.4864865</span>
+<div>
+<div title="48.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:48.6%"></div></div></div></td>
+<td id="tc-47">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeIgnoreHyphens</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreHyphens_1b.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeIgnoreHyphens</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=225#src-225" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreHyphens_1b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-124">
+<td><a name="testA-124"></a><input type="checkbox" id="cb-124" value="124" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/StringEncoderComparatorTest_testComparatorWithSoundex_3g.html';">
+<span class="sortValue">0.43243244</span>
+<div>
+<div title="43.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.2%"></div></div></div></td>
+<td id="tc-124">  <span class="sortValue">org.apache.commons.codec.StringEncoderComparatorTest.testComparatorWithSoundex</span><a href="../../../../../org/apache/commons/codec/StringEncoderComparatorTest_testComparatorWithSoundex_3g.html" title="View Test Summary Page">org.apache.commons.codec.StringEncoderComparatorTest.testComparatorWithSoundex</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/StringEncoderComparatorTest.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/StringEncoderComparatorTest_testComparatorWithSoundex_3g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-44">
+<td><a name="testA-44"></a><input type="checkbox" id="cb-44" value="44" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testEncodeEmpty_18.html';">
+<span class="sortValue">0.43243244</span>
+<div>
+<div title="43.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.2%"></div></div></div></td>
+<td id="tc-44">  <span class="sortValue">org.apache.commons.codec.language.RefinedSoundexTest.testEncodeEmpty</span><a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testEncodeEmpty_18.html" title="View Test Summary Page">org.apache.commons.codec.language.RefinedSoundexTest.testEncodeEmpty</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/StringEncoderAbstractTest.html?line=38#src-38" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testEncodeEmpty_18.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-55">
+<td><a name="testA-55"></a><input type="checkbox" id="cb-55" value="55" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testBadCharacters_1j.html';">
+<span class="sortValue">0.43243244</span>
+<div>
+<div title="43.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.2%"></div></div></div></td>
+<td id="tc-55">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testBadCharacters</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testBadCharacters_1j.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testBadCharacters</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=213#src-213" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testBadCharacters_1j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-60">
+<td><a name="testA-60"></a><input type="checkbox" id="cb-60" value="60" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreTrimmable_1o.html';">
+<span class="sortValue">0.43243244</span>
+<div>
+<div title="43.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.2%"></div></div></div></td>
+<td id="tc-60">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeIgnoreTrimmable</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreTrimmable_1o.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeIgnoreTrimmable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=242#src-242" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeIgnoreTrimmable_1o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-172">
+<td><a name="testA-172"></a><input type="checkbox" id="cb-172" value="172" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeEmpty_4s.html';">
+<span class="sortValue">0.43243244</span>
+<div>
+<div title="43.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:43.2%"></div></div></div></td>
+<td id="tc-172">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeEmpty</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeEmpty_4s.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeEmpty</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/StringEncoderAbstractTest.html?line=38#src-38" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeEmpty_4s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-199">
+<td><a name="testA-199"></a><input type="checkbox" id="cb-199" value="199" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testUsEnglishStatic_5j.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-199">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testUsEnglishStatic</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testUsEnglishStatic_5j.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testUsEnglishStatic</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=384#src-384" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testUsEnglishStatic_5j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-78">
+<td><a name="testA-78"></a><input type="checkbox" id="cb-78" value="78" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx1_26.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-78">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testHWRuleEx1</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx1_26.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testHWRuleEx1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=250#src-250" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx1_26.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-57">
+<td><a name="testA-57"></a><input type="checkbox" id="cb-57" value="57" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testMaxLengthLessThan3Fix_1l.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-57">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testMaxLengthLessThan3Fix</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMaxLengthLessThan3Fix_1l.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testMaxLengthLessThan3Fix</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=304#src-304" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMaxLengthLessThan3Fix_1l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-146">
+<td><a name="testA-146"></a><input type="checkbox" id="cb-146" value="146" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer1_42.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-146">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testMsSqlServer1</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer1_42.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testMsSqlServer1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=314#src-314" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer1_42.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-138">
+<td><a name="testA-138"></a><input type="checkbox" id="cb-138" value="138" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testUsMappingEWithAcute_3u.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-138">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testUsMappingEWithAcute</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testUsMappingEWithAcute_3u.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testUsMappingEWithAcute</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=366#src-366" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testUsMappingEWithAcute_3u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-155">
+<td><a name="testA-155"></a><input type="checkbox" id="cb-155" value="155" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testEncode_4b.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-155">  <span class="sortValue">org.apache.commons.codec.language.RefinedSoundexTest.testEncode</span><a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testEncode_4b.html" title="View Test Summary Page">org.apache.commons.codec.language.RefinedSoundexTest.testEncode</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest.html?line=95#src-95" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testEncode_4b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9">
+<td><a name="testA-9"></a><input type="checkbox" id="cb-9" value="9" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testMaxLength_9.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-9">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testMaxLength</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMaxLength_9.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testMaxLength</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=298#src-298" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMaxLength_9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-185">
+<td><a name="testA-185"></a><input type="checkbox" id="cb-185" value="185" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer3_55.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-185">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testMsSqlServer3</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer3_55.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testMsSqlServer3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=330#src-330" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer3_55.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-25">
+<td><a name="testA-25"></a><input type="checkbox" id="cb-25" value="25" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testLocaleIndependence_p.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-25">  <span class="sortValue">org.apache.commons.codec.language.RefinedSoundexTest.testLocaleIndependence</span><a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testLocaleIndependence_p.html" title="View Test Summary Page">org.apache.commons.codec.language.RefinedSoundexTest.testLocaleIndependence</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/StringEncoderAbstractTest.html?line=69#src-69" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/RefinedSoundexTest_testLocaleIndependence_p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-36">
+<td><a name="testA-36"></a><input type="checkbox" id="cb-36" value="36" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBasic_10.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-36">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeBasic</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBasic_10.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeBasic</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=146#src-146" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBasic_10.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-128">
+<td><a name="testA-128"></a><input type="checkbox" id="cb-128" value="128" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch4_3k.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-128">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeBatch4</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch4_3k.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeBatch4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=201#src-201" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch4_3k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-53">
+<td><a name="testA-53"></a><input type="checkbox" id="cb-53" value="53" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testNewInstance_1h.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-53">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testNewInstance</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testNewInstance_1h.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testNewInstance</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=392#src-392" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testNewInstance_1h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-39">
+<td><a name="testA-39"></a><input type="checkbox" id="cb-39" value="39" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch2_13.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-39">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeBatch2</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch2_13.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeBatch2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=163#src-163" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch2_13.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-34">
+<td><a name="testA-34"></a><input type="checkbox" id="cb-34" value="34" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx3_y.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-34">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testHWRuleEx3</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx3_y.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testHWRuleEx3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=273#src-273" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testHWRuleEx3_y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-158">
+<td><a name="testA-158"></a><input type="checkbox" id="cb-158" value="158" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch3_4e.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-158">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testEncodeBatch3</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch3_4e.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testEncodeBatch3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=186#src-186" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testEncodeBatch3_4e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-163">
+<td><a name="testA-163"></a><input type="checkbox" id="cb-163" value="163" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testLocaleIndependence_4j.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-163">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testLocaleIndependence</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testLocaleIndependence_4j.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testLocaleIndependence</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/StringEncoderAbstractTest.html?line=69#src-69" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testLocaleIndependence_4j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-101">
+<td><a name="testA-101"></a><input type="checkbox" id="cb-101" value="101" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer2_2t.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-101">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testMsSqlServer2</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer2_2t.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testMsSqlServer2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=323#src-323" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testMsSqlServer2_2t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3">
+<td><a name="testA-3"></a><input type="checkbox" id="cb-3" value="3" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testUsMappingOWithDiaeresis_3.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-3">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testUsMappingOWithDiaeresis</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testUsMappingOWithDiaeresis_3.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testUsMappingOWithDiaeresis</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=347#src-347" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testUsMappingOWithDiaeresis_3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-45">
+<td><a name="testA-45"></a><input type="checkbox" id="cb-45" value="45" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/commons/codec/language/SoundexTest_testB650_19.html';">
+<span class="sortValue">0.4054054</span>
+<div>
+<div title="40.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40.5%"></div></div></div></td>
+<td id="tc-45">  <span class="sortValue">org.apache.commons.codec.language.SoundexTest.testB650</span><a href="../../../../../org/apache/commons/codec/language/SoundexTest_testB650_19.html" title="View Test Summary Page">org.apache.commons.codec.language.SoundexTest.testB650</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/commons/codec/language/SoundexTest.html?line=81#src-81" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/commons/codec/language/SoundexTest_testB650_19.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Licensed to the Apache Software Foundation (ASF) under one or more</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> * contributor license agreements.  See the NOTICE file distributed with</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * this work for additional information regarding copyright ownership.</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * The ASF licenses this file to You under the Apache License, Version 2.0</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * (the &quot;License&quot;); you may not use this file except in compliance with</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> * the License.  You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *      http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="keyword">package</span> org.apache.commons.<a href="../../codec/pkg-summary.html">codec</a>.<a href="../language/pkg-summary.html">language</a>;</span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="keyword">import</span> org.apache.commons.<a href="../../codec/pkg-summary.html">codec</a>.<a href="../../../../../org/apache/commons/codec/EncoderException.html#EncoderException">EncoderException</a>;</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> org.apache.commons.<a href="../../codec/pkg-summary.html">codec</a>.<a href="../../../../../org/apache/commons/codec/StringEncoder.html#StringEncoder">StringEncoder</a>;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment"> * Utility methods for {</span><span class="javadoc">@link</span><span class="comment"> Soundex} and {</span><span class="javadoc">@link</span><span class="comment"> RefinedSoundex} classes.</span></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Apache Software Foundation</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="comment"> * </span><span class="javadoc">@version</span><span class="comment"> $Id$</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="comment"> * </span><span class="javadoc">@since</span><span class="comment"> 1.3</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="30" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-30' onclick="toggleInlineStats(this, 'inlinestats-30');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-30" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-30'), 'inlinestats-30');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (37)</td>
+                <td class="inlineStat">Complexity: 12</td>
+                <td class="inlineStat">Complexity Density: 0.6</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 30, 'Tests that hit SoundexUtils');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-30"><span class="spacer"></span><span id="src-30" class="srcLine"><span class="keyword">final</span> <span class="keyword">class</span> <a href="../../../../../org/apache/commons/codec/language/SoundexUtils.html#SoundexUtils">SoundexUtils</a> {</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="comment">     * Cleans up the input string before Soundex processing by only returning</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="comment">     * upper case letters.</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> str</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="comment">     *                  The String to clean.</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> A clean String.</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="40" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-40' onclick="toggleInlineStats(this, 'inlinestats-40');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-40" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-40'), 'inlinestats-40');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (19)</td>
+                <td class="inlineStat">Complexity: 6</td>
+                <td class="inlineStat">Complexity Density: 0.55</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l40">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 40, 'Tests that hit clean(String)&#160;:&#160;String');" ><span title="Line 40, Col 5: method entered 224 times." class="nolink">&#160;224</span></td>
+<td class=" methodStart  srcCell" id="id-40"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 40,56);" id="img-40" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-40" class="srcLine"><span class="nolink" title="Line 40, Col 5: method entered 224 times.">    <span class="keyword">static</span> String clean(String str) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-40'), 40,56);" id="e40" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 41, 'Tests that hit line # 41');" ><span title="Line 41, Col 12: true branch executed 6 times, false branch executed 218 times." class="nolink">&#160;224</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"><span class="nolink" title="Line 41, Col 12: true branch executed 6 times, false branch executed 218 times.">        <span class="keyword">if</span> (str == <span class="keyword">null</span> || str.length() == 0) {</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 42, 'Tests that hit line # 42');" ><span title="Line 42, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="nolink" title="Line 42, Col 13: statement executed 6 times.">            <span class="keyword">return</span> str;</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 44, 'Tests that hit line # 44');" ><span title="Line 44, Col 9: statement executed 218 times." class="nolink">&#160;218</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"><span class="nolink" title="Line 44, Col 9: statement executed 218 times.">        <span class="keyword">int</span> len = str.length();</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit line # 45');" ><span title="Line 45, Col 9: statement executed 218 times." class="nolink">&#160;218</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine"><span class="nolink" title="Line 45, Col 9: statement executed 218 times.">        <span class="keyword">char</span>[] chars = <span class="keyword">new</span> <span class="keyword">char</span>[len];</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 9: statement executed 218 times." class="nolink">&#160;218</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 9: statement executed 218 times.">        <span class="keyword">int</span> count = 0;</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit line # 47');" ><span title="Line 47, Col 24: true branch executed 1,299 times, false branch executed 218 times." class="nolink">&#160;1517</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine"><span class="nolink" title="Line 47, Col 24: true branch executed 1,299 times, false branch executed 218 times.">        <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; len; i++) {</span></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 16: true branch executed 1,258 times, false branch executed 41 times." class="nolink">&#160;1299</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 16: true branch executed 1,258 times, false branch executed 41 times.">            <span class="keyword">if</span> (Character.isLetter(str.charAt(i))) {</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 17: statement executed 1,258 times." class="nolink">&#160;1258</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 17: statement executed 1,258 times.">                chars[count++] = str.charAt(i);</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 12: true branch executed 186 times, false branch executed 32 times." class="nolink">&#160;218</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 12: true branch executed 186 times, false branch executed 32 times.">        <span class="keyword">if</span> (count == len) {</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 53, 'Tests that hit line # 53');" ><span title="Line 53, Col 13: statement executed 186 times." class="nolink">&#160;186</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"><span class="nolink" title="Line 53, Col 13: statement executed 186 times.">            <span class="keyword">return</span> str.toUpperCase(java.util.Locale.ENGLISH);</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit line # 55');" ><span title="Line 55, Col 9: statement executed 32 times." class="nolink">&#160;32</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 9: statement executed 32 times.">        <span class="keyword">return</span> <span class="keyword">new</span> String(chars, 0, count).toUpperCase(java.util.Locale.ENGLISH);</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine"><span class="comment">     * Encodes the Strings and returns the number of characters in the two</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"><span class="comment">     * encoded Strings that are the same.</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine"><span class="comment">     * &lt;ul&gt;</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="comment">     * &lt;li&gt;For Soundex, this return value ranges from 0 through 4: 0 indicates</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="comment">     * little or no similarity, and 4 indicates strong similarity or identical</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="comment">     * values.&lt;/li&gt;</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"><span class="comment">     * &lt;li&gt;For refined Soundex, the return value can be greater than 4.&lt;/li&gt;</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"><span class="comment">     * &lt;/ul&gt;</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> encoder</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"><span class="comment">     *                  The encoder to use to encode the Strings.</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> s1</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="comment">     *                  A String that will be encoded and compared.</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> s2</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="comment">     *                  A String that will be encoded and compared.</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> The number of characters in the two Soundex encoded Strings that</span></span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine"><span class="comment">     *             are the same.</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="comment">     * </span><span class="javadoc">@see</span><span class="comment"> #differenceEncoded(String,String)</span></span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine"><span class="comment">     * </span><span class="javadoc">@see</span><span class="comment"> &lt;a href=&quot;http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_de-dz_8co5.asp&quot;&gt;</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"><span class="comment">     *          MS T-SQL DIFFERENCE&lt;/a&gt;</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"><span class="comment">     * </span><span class="javadoc">@throws</span><span class="comment"> EncoderException</span></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine"><span class="comment">     *                  if an error occurs encoding one of the strings</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="84" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-84' onclick="toggleInlineStats(this, 'inlinestats-84');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-84" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-84'), 'inlinestats-84');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l84">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 84, 'Tests that hit difference(StringEncoder,String,String)&#160;:&#160;int');" ><span title="Line 84, Col 5: method entered 24 times." class="nolink">&#160;24</span></td>
+<td class=" methodStart  srcCell" id="id-84"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 84,86);" id="img-84" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-84" class="srcLine"><span class="nolink" title="Line 84, Col 5: method entered 24 times.">    <span class="keyword">static</span> <span class="keyword">int</span> difference(<a href="../../../../../org/apache/commons/codec/StringEncoder.html#StringEncoder">StringEncoder</a> encoder, String s1, String s2) <span class="keyword">throws</span> <a href="../../../../../org/apache/commons/codec/EncoderException.html#EncoderException">EncoderException</a> {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-84'), 84,86);" id="e84" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 85, 'Tests that hit line # 85');" ><span title="Line 85, Col 9: statement executed 24 times." class="nolink">&#160;24</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine"><span class="nolink" title="Line 85, Col 9: statement executed 24 times.">        <span class="keyword">return</span> differenceEncoded(encoder.encode(s1), encoder.encode(s2));</span></span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine"><span class="comment">     * Returns the number of characters in the two Soundex encoded Strings that</span></span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"><span class="comment">     * are the same.</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="comment">     * &lt;ul&gt;</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="comment">     * &lt;li&gt;For Soundex, this return value ranges from 0 through 4: 0 indicates</span></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine"><span class="comment">     * little or no similarity, and 4 indicates strong similarity or identical</span></span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="comment">     * values.&lt;/li&gt;</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine"><span class="comment">     * &lt;li&gt;For refined Soundex, the return value can be greater than 4.&lt;/li&gt;</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="comment">     * &lt;/ul&gt;</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> es1</span></span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"><span class="comment">     *                  An encoded String.</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"><span class="comment">     * </span><span class="javadoc">@param</span><span class="comment"> es2</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine"><span class="comment">     *                  An encoded String.</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> The number of characters in the two Soundex encoded Strings that</span></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine"><span class="comment">     *             are the same.</span></span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"><span class="comment">     * </span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine"><span class="comment">     * </span><span class="javadoc">@see</span><span class="comment"> &lt;a href=&quot;http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tsqlref/ts_de-dz_8co5.asp&quot;&gt;</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="comment">     *          MS T-SQL DIFFERENCE&lt;/a&gt;</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="108" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-108' onclick="toggleInlineStats(this, 'inlinestats-108');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-108" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-108'), 'inlinestats-108');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (14)</td>
+                <td class="inlineStat">Complexity: 5</td>
+                <td class="inlineStat">Complexity Density: 0.62</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l108">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 108, 'Tests that hit differenceEncoded(String,String)&#160;:&#160;int');" ><span title="Line 108, Col 5: method entered 24 times." class="nolink">&#160;24</span></td>
+<td class=" methodStart  srcCell" id="id-108"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 108,121);" id="img-108" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-108" class="srcLine"><span class="nolink" title="Line 108, Col 5: method entered 24 times.">    <span class="keyword">static</span> <span class="keyword">int</span> differenceEncoded(String es1, String es2) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-108'), 108,121);" id="e108" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine"></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 110, 'Tests that hit line # 110');" ><span title="Line 110, Col 12: true branch executed 2 times, false branch executed 22 times." class="nolink">&#160;24</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine"><span class="nolink" title="Line 110, Col 12: true branch executed 2 times, false branch executed 22 times.">        <span class="keyword">if</span> (es1 == <span class="keyword">null</span> || es2 == <span class="keyword">null</span>) {</span></span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 111, 'Tests that hit line # 111');" ><span title="Line 111, Col 13: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLine"><span class="nolink" title="Line 111, Col 13: statement executed 2 times.">            <span class="keyword">return</span> 0;</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 113, 'Tests that hit line # 113');" ><span title="Line 113, Col 9: statement executed 22 times." class="nolink">&#160;22</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine"><span class="nolink" title="Line 113, Col 9: statement executed 22 times.">        <span class="keyword">int</span> lengthToMatch = Math.min(es1.length(), es2.length());</span></span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 9: statement executed 22 times." class="nolink">&#160;22</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 9: statement executed 22 times.">        <span class="keyword">int</span> diff = 0;</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 115, 'Tests that hit line # 115');" ><span title="Line 115, Col 24: true branch executed 90 times, false branch executed 22 times." class="nolink">&#160;112</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine"><span class="nolink" title="Line 115, Col 24: true branch executed 90 times, false branch executed 22 times.">        <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; lengthToMatch; i++) {</span></span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 116, 'Tests that hit line # 116');" ><span title="Line 116, Col 16: true branch executed 57 times, false branch executed 33 times." class="nolink">&#160;90</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"><span class="nolink" title="Line 116, Col 16: true branch executed 57 times, false branch executed 33 times.">            <span class="keyword">if</span> (es1.charAt(i) == es2.charAt(i)) {</span></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 117, 'Tests that hit line # 117');" ><span title="Line 117, Col 17: statement executed 57 times." class="nolink">&#160;57</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine"><span class="nolink" title="Line 117, Col 17: statement executed 57 times.">                diff++;</span></span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 120, 'Tests that hit line # 120');" ><span title="Line 120, Col 9: statement executed 22 times." class="nolink">&#160;22</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine"><span class="nolink" title="Line 120, Col 9: statement executed 22 times.">        <span class="keyword">return</span> diff;</span></span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLine"></span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="SoundexUtils.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu Aug 4 2022 16:04:28 MDT using coverage data from Thu Aug 4 2022 16:04:27 MDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

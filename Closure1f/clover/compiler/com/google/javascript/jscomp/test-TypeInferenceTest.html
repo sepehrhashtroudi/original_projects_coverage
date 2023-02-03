@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class TypeInferenceTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="TypeInferenceTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>TypeInferenceTest</td>
+        <td class="testPasses"><span class="sortValue">220</span>220</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.665</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert1</span><a href="TypeInferenceTest_testAssert1_2ui.html">TypeInferenceTest.testAssert1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791009</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testBackwardsInferenceCall</span><a href="TypeInferenceTest_testBackwardsInferenceCall_m7.html">TypeInferenceTest.testBackwardsInferenceCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790950</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertWithIsDefAndNotNull</span><a href="TypeInferenceTest_testAssertWithIsDefAndNotNull_62h.html">TypeInferenceTest.testAssertWithIsDefAndNotNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655169</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert10</span><a href="TypeInferenceTest_testAssert10_6c.html">TypeInferenceTest.testAssert10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791011</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject2</span><a href="TypeInferenceTest_testAssertObject2_6el.html">TypeInferenceTest.testAssertObject2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654968</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf2</span><a href="TypeInferenceTest_testInstanceOf2_422.html">TypeInferenceTest.testInstanceOf2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791109</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof5</span><a href="TypeInferenceTest_testAssertInstanceof5_8ex.html">TypeInferenceTest.testAssertInstanceof5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655502</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testTry1</span><a href="TypeInferenceTest_testTry1_cdn.html">TypeInferenceTest.testTry1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655121</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf1</span><a href="TypeInferenceTest_testIf1_wj.html">TypeInferenceTest.testIf1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654993</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testUnary</span><a href="TypeInferenceTest_testUnary_9oi.html">TypeInferenceTest.testUnary</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790914</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI3</span><a href="TypeInferenceTest_testEnumRAI3_bnv.html">TypeInferenceTest.testEnumRAI3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655021</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testWhile2</span><a href="TypeInferenceTest_testWhile2_dax.html">TypeInferenceTest.testWhile2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790846</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCatch1</span><a href="TypeInferenceTest_testCatch1_5t9.html">TypeInferenceTest.testCatch1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791093</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch2</span><a href="TypeInferenceTest_testSwitch2_5em.html">TypeInferenceTest.testSwitch2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655522</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert6</span><a href="TypeInferenceTest_testAssert6_377.html">TypeInferenceTest.testAssert6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790942</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject4</span><a href="TypeInferenceTest_testAssertObject4_8pa.html">TypeInferenceTest.testAssertObject4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790984</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testUnary</span><a href="TypeInferenceTest_testUnary_56j.html">TypeInferenceTest.testUnary</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655062</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf3</span><a href="TypeInferenceTest_testInstanceOf3_76k.html">TypeInferenceTest.testInstanceOf3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655449</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject</span><a href="TypeInferenceTest_testAssertObject_b9g.html">TypeInferenceTest.testAssertObject</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655338</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertFunction</span><a href="TypeInferenceTest_testAssertFunction_b9a.html">TypeInferenceTest.testAssertFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655327</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertTypeofProp</span><a href="TypeInferenceTest_testAssertTypeofProp_5ef.html">TypeInferenceTest.testAssertTypeofProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655465</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testJoin1</span><a href="TypeInferenceTest_testJoin1_avb.html">TypeInferenceTest.testJoin1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791002</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCast1</span><a href="TypeInferenceTest_testCast1_bka.html">TypeInferenceTest.testCast1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790947</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor3</span><a href="TypeInferenceTest_testFor3_2mh.html">TypeInferenceTest.testFor3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790927</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCast1</span><a href="TypeInferenceTest_testCast1_4ua.html">TypeInferenceTest.testCast1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655040</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf2</span><a href="TypeInferenceTest_testIf2_deh.html">TypeInferenceTest.testIf2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790969</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testWhile2</span><a href="TypeInferenceTest_testWhile2_3r9.html">TypeInferenceTest.testWhile2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655481</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAdd2</span><a href="TypeInferenceTest_testAdd2_dj9.html">TypeInferenceTest.testAdd2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791026</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testBackwardsInferenceCall</span><a href="TypeInferenceTest_testBackwardsInferenceCall_541.html">TypeInferenceTest.testBackwardsInferenceCall</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655394</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertNumber</span><a href="TypeInferenceTest_testAssertNumber_2yh.html">TypeInferenceTest.testAssertNumber</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790995</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI2</span><a href="TypeInferenceTest_testEnumRAI2_ca0.html">TypeInferenceTest.testEnumRAI2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790857</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssignment</span><a href="TypeInferenceTest_testAssignment_1c1.html">TypeInferenceTest.testAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791108</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertNumber2</span><a href="TypeInferenceTest_testAssertNumber2_ajc.html">TypeInferenceTest.testAssertNumber2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790981</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch3</span><a href="TypeInferenceTest_testSwitch3_904.html">TypeInferenceTest.testSwitch3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791074</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testPropertyInference1</span><a href="TypeInferenceTest_testPropertyInference1_9f0.html">TypeInferenceTest.testPropertyInference1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655399</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testBackwardsInferenceNew</span><a href="TypeInferenceTest_testBackwardsInferenceNew_czd.html">TypeInferenceTest.testBackwardsInferenceNew</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790953</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCast2</span><a href="TypeInferenceTest_testCast2_awj.html">TypeInferenceTest.testCast2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655043</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testReturn1</span><a href="TypeInferenceTest_testReturn1_8sm.html">TypeInferenceTest.testReturn1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655386</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingAnd2</span><a href="TypeInferenceTest_testShortCircuitingAnd2_6mc.html">TypeInferenceTest.testShortCircuitingAnd2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790866</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor4</span><a href="TypeInferenceTest_testFor4_ji.html">TypeInferenceTest.testFor4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655092</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testVar</span><a href="TypeInferenceTest_testVar_6vd.html">TypeInferenceTest.testVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655007</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingAnd2</span><a href="TypeInferenceTest_testShortCircuitingAnd2_ay2.html">TypeInferenceTest.testShortCircuitingAnd2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655311</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject5</span><a href="TypeInferenceTest_testAssertObject5_6dt.html">TypeInferenceTest.testAssertObject5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654981</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf1</span><a href="TypeInferenceTest_testInstanceOf1_akm.html">TypeInferenceTest.testInstanceOf1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790876</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFlattening</span><a href="TypeInferenceTest_testFlattening_8np.html">TypeInferenceTest.testFlattening</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790882</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.03</span>0.03</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInfiniteLoop1</span><a href="TypeInferenceTest_testInfiniteLoop1_eaa.html">TypeInferenceTest.testInfiniteLoop1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791100</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssumption</span><a href="TypeInferenceTest_testAssumption_8dp.html">TypeInferenceTest.testAssumption</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654965</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch1</span><a href="TypeInferenceTest_testSwitch1_9t7.html">TypeInferenceTest.testSwitch1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655514</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.006</span>0.006</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf6</span><a href="TypeInferenceTest_testInstanceOf6_5bg.html">TypeInferenceTest.testInstanceOf6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655461</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor6</span><a href="TypeInferenceTest_testFor6_bdb.html">TypeInferenceTest.testFor6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655104</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert2</span><a href="TypeInferenceTest_testAssert2_cr4.html">TypeInferenceTest.testAssert2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790979</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert6</span><a href="TypeInferenceTest_testAssert6_9ab.html">TypeInferenceTest.testAssert6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655154</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testWhile1</span><a href="TypeInferenceTest_testWhile1_7wf.html">TypeInferenceTest.testWhile1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791121</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testExprWithinCast</span><a href="TypeInferenceTest_testExprWithinCast_de.html">TypeInferenceTest.testExprWithinCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655474</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert1a</span><a href="TypeInferenceTest_testAssert1a_8n3.html">TypeInferenceTest.testAssert1a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655366</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testReturn1</span><a href="TypeInferenceTest_testReturn1_2pm.html">TypeInferenceTest.testReturn1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791029</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testPropertyInference1</span><a href="TypeInferenceTest_testPropertyInference1_6ac.html">TypeInferenceTest.testPropertyInference1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791017</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingOr2</span><a href="TypeInferenceTest_testShortCircuitingOr2_ayt.html">TypeInferenceTest.testShortCircuitingOr2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790871</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf5</span><a href="TypeInferenceTest_testInstanceOf5_aoc.html">TypeInferenceTest.testInstanceOf5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655457</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testArrayLit</span><a href="TypeInferenceTest_testArrayLit_2em.html">TypeInferenceTest.testArrayLit</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791104</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssumption</span><a href="TypeInferenceTest_testAssumption_yf.html">TypeInferenceTest.testAssumption</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790924</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testThrownExpression</span><a href="TypeInferenceTest_testThrownExpression_6mu.html">TypeInferenceTest.testThrownExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790921</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCast2</span><a href="TypeInferenceTest_testCast2_equ.html">TypeInferenceTest.testCast2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791037</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject2</span><a href="TypeInferenceTest_testAssertObject2_2m6.html">TypeInferenceTest.testAssertObject2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790850</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testObjectLit</span><a href="TypeInferenceTest_testObjectLit_ef9.html">TypeInferenceTest.testObjectLit</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791049</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testNew1</span><a href="TypeInferenceTest_testNew1_4bc.html">TypeInferenceTest.testNew1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655117</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testDo</span><a href="TypeInferenceTest_testDo_c0u.html">TypeInferenceTest.testDo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790974</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertFunction</span><a href="TypeInferenceTest_testAssertFunction_dur.html">TypeInferenceTest.testAssertFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791040</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testNew1</span><a href="TypeInferenceTest_testNew1_9z4.html">TypeInferenceTest.testNew1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791034</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf4</span><a href="TypeInferenceTest_testInstanceOf4_14x.html">TypeInferenceTest.testInstanceOf4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791113</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testHook</span><a href="TypeInferenceTest_testHook_6so.html">TypeInferenceTest.testHook</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655109</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject3</span><a href="TypeInferenceTest_testAssertObject3_99n.html">TypeInferenceTest.testAssertObject3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790854</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEmptyVar</span><a href="TypeInferenceTest_testEmptyVar_8hk.html">TypeInferenceTest.testEmptyVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790926</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIsDefAndNoResolvedType</span><a href="TypeInferenceTest_testIsDefAndNoResolvedType_a5b.html">TypeInferenceTest.testIsDefAndNoResolvedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791013</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf3</span><a href="TypeInferenceTest_testIf3_200.html">TypeInferenceTest.testIf3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790972</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof3</span><a href="TypeInferenceTest_testAssertInstanceof3_bjw.html">TypeInferenceTest.testAssertInstanceof3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655493</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testJoin2</span><a href="TypeInferenceTest_testJoin2_ama.html">TypeInferenceTest.testJoin2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791004</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testUnknownType1</span><a href="TypeInferenceTest_testUnknownType1_c10.html">TypeInferenceTest.testUnknownType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655316</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof1</span><a href="TypeInferenceTest_testAssertInstanceof1_nn.html">TypeInferenceTest.testAssertInstanceof1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790840</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testComparison</span><a href="TypeInferenceTest_testComparison_2gd.html">TypeInferenceTest.testComparison</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654985</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.007</span>0.007</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testGetElem</span><a href="TypeInferenceTest_testGetElem_6oa.html">TypeInferenceTest.testGetElem</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655304</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof2</span><a href="TypeInferenceTest_testAssertInstanceof2_ams.html">TypeInferenceTest.testAssertInstanceof2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655489</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf1a</span><a href="TypeInferenceTest_testIf1a_4f0.html">TypeInferenceTest.testIf1a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655113</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testTry3</span><a href="TypeInferenceTest_testTry3_7mk.html">TypeInferenceTest.testTry3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655129</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAdd1</span><a href="TypeInferenceTest_testAdd1_4dq.html">TypeInferenceTest.testAdd1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655067</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInfiniteLoop2</span><a href="TypeInferenceTest_testInfiniteLoop2_cz8.html">TypeInferenceTest.testInfiniteLoop2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791102</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssignInCondition</span><a href="TypeInferenceTest_testAssignInCondition_cht.html">TypeInferenceTest.testAssignInCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655436</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAdd3</span><a href="TypeInferenceTest_testAdd3_7p1.html">TypeInferenceTest.testAdd3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655074</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIssue785</span><a href="TypeInferenceTest_testIssue785_4dj.html">TypeInferenceTest.testIssue785</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655431</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testHook</span><a href="TypeInferenceTest_testHook_8lt.html">TypeInferenceTest.testHook</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791115</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInnerFunction1</span><a href="TypeInferenceTest_testInnerFunction1_c8d.html">TypeInferenceTest.testInnerFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791117</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI1</span><a href="TypeInferenceTest_testEnumRAI1_5jo.html">TypeInferenceTest.testEnumRAI1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655010</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject4</span><a href="TypeInferenceTest_testAssertObject4_1db.html">TypeInferenceTest.testAssertObject4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654977</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert7</span><a href="TypeInferenceTest_testAssert7_83u.html">TypeInferenceTest.testAssert7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790929</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testJoin1</span><a href="TypeInferenceTest_testJoin1_1cu.html">TypeInferenceTest.testJoin1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655048</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert4</span><a href="TypeInferenceTest_testAssert4_a83.html">TypeInferenceTest.testAssert4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790852</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf4</span><a href="TypeInferenceTest_testInstanceOf4_6nm.html">TypeInferenceTest.testInstanceOf4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655453</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssignInCondition</span><a href="TypeInferenceTest_testAssignInCondition_93z.html">TypeInferenceTest.testAssignInCondition</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790874</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCatch2</span><a href="TypeInferenceTest_testCatch2_5g9.html">TypeInferenceTest.testCatch2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791095</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testWhile1</span><a href="TypeInferenceTest_testWhile1_2xf.html">TypeInferenceTest.testWhile1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655477</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert10</span><a href="TypeInferenceTest_testAssert10_28r.html">TypeInferenceTest.testAssert10</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655362</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInfiniteLoop1</span><a href="TypeInferenceTest_testInfiniteLoop1_6dd.html">TypeInferenceTest.testInfiniteLoop1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655346</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testTry1</span><a href="TypeInferenceTest_testTry1_3du.html">TypeInferenceTest.testTry1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791080</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert7</span><a href="TypeInferenceTest_testAssert7_dg.html">TypeInferenceTest.testAssert7</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655158</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf1</span><a href="TypeInferenceTest_testIf1_aga.html">TypeInferenceTest.testIf1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790967</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertTypeofProp</span><a href="TypeInferenceTest_testAssertTypeofProp_2wm.html">TypeInferenceTest.testAssertTypeofProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790964</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof4</span><a href="TypeInferenceTest_testAssertInstanceof4_5cd.html">TypeInferenceTest.testAssertInstanceof4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791043</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof3</span><a href="TypeInferenceTest_testAssertInstanceof3_5m9.html">TypeInferenceTest.testAssertInstanceof3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791045</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI1</span><a href="TypeInferenceTest_testEnumRAI1_3oz.html">TypeInferenceTest.testEnumRAI1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790855</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI4</span><a href="TypeInferenceTest_testEnumRAI4_5s5.html">TypeInferenceTest.testEnumRAI4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790862</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testTry2</span><a href="TypeInferenceTest_testTry2_b0l.html">TypeInferenceTest.testTry2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791085</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testDo</span><a href="TypeInferenceTest_testDo_3x6.html">TypeInferenceTest.testDo</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655172</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch1</span><a href="TypeInferenceTest_testSwitch1_7wq.html">TypeInferenceTest.testSwitch1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791064</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testObjectLit</span><a href="TypeInferenceTest_testObjectLit_c19.html">TypeInferenceTest.testObjectLit</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655177</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEmptyVar</span><a href="TypeInferenceTest_testEmptyVar_af3.html">TypeInferenceTest.testEmptyVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655507</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingOr</span><a href="TypeInferenceTest_testShortCircuitingOr_393.html">TypeInferenceTest.testShortCircuitingOr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790869</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor4</span><a href="TypeInferenceTest_testFor4_d2t.html">TypeInferenceTest.testFor4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791055</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testPropertyInference3</span><a href="TypeInferenceTest_testPropertyInference3_amn.html">TypeInferenceTest.testPropertyInference3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791022</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertWithNotIsNull</span><a href="TypeInferenceTest_testAssertWithNotIsNull_8t7.html">TypeInferenceTest.testAssertWithNotIsNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655331</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIsDefAndNoResolvedType</span><a href="TypeInferenceTest_testIsDefAndNoResolvedType_7e3.html">TypeInferenceTest.testIsDefAndNoResolvedType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655030</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert2</span><a href="TypeInferenceTest_testAssert2_ahj.html">TypeInferenceTest.testAssert2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655137</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingOr</span><a href="TypeInferenceTest_testShortCircuitingOr_887.html">TypeInferenceTest.testShortCircuitingOr</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655382</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testGetElemDereference</span><a href="TypeInferenceTest_testGetElemDereference_awm.html">TypeInferenceTest.testGetElemDereference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791047</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFlattening</span><a href="TypeInferenceTest_testFlattening_198.html">TypeInferenceTest.testFlattening</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655191</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.106</span>0.106</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIssue785</span><a href="TypeInferenceTest_testIssue785_7zf.html">TypeInferenceTest.testIssue785</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790962</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testTry3</span><a href="TypeInferenceTest_testTry3_9vj.html">TypeInferenceTest.testTry3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791091</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testPropertyInference2</span><a href="TypeInferenceTest_testPropertyInference2_d85.html">TypeInferenceTest.testPropertyInference2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791020</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor5</span><a href="TypeInferenceTest_testFor5_caa.html">TypeInferenceTest.testFor5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655098</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testRecordInference</span><a href="TypeInferenceTest_testRecordInference_2u5.html">TypeInferenceTest.testRecordInference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655358</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testThrow</span><a href="TypeInferenceTest_testThrow_2wr.html">TypeInferenceTest.testThrow</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655057</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInnerFunction1</span><a href="TypeInferenceTest_testInnerFunction1_83z.html">TypeInferenceTest.testInnerFunction1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655374</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf3</span><a href="TypeInferenceTest_testIf3_bei.html">TypeInferenceTest.testIf3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655003</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testExprWithinCast</span><a href="TypeInferenceTest_testExprWithinCast_5my.html">TypeInferenceTest.testExprWithinCast</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791006</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testPropertyInference2</span><a href="TypeInferenceTest_testPropertyInference2_7ae.html">TypeInferenceTest.testPropertyInference2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655403</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAdd2</span><a href="TypeInferenceTest_testAdd2_bpy.html">TypeInferenceTest.testAdd2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655071</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertNumber3</span><a href="TypeInferenceTest_testAssertNumber3_9lw.html">TypeInferenceTest.testAssertNumber3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654938</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertString</span><a href="TypeInferenceTest_testAssertString_4h9.html">TypeInferenceTest.testAssertString</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655371</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert8</span><a href="TypeInferenceTest_testAssert8_a85.html">TypeInferenceTest.testAssert8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655162</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testTry2</span><a href="TypeInferenceTest_testTry2_392.html">TypeInferenceTest.testTry2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655125</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testUnknownType2</span><a href="TypeInferenceTest_testUnknownType2_8rl.html">TypeInferenceTest.testUnknownType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655319</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch2</span><a href="TypeInferenceTest_testSwitch2_18q.html">TypeInferenceTest.testSwitch2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791067</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testArrayLit</span><a href="TypeInferenceTest_testArrayLit_at0.html">TypeInferenceTest.testArrayLit</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655299</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInfiniteLoop2</span><a href="TypeInferenceTest_testInfiniteLoop2_bmp.html">TypeInferenceTest.testInfiniteLoop2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655351</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf1</span><a href="TypeInferenceTest_testInstanceOf1_54z.html">TypeInferenceTest.testInstanceOf1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655440</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertNumber</span><a href="TypeInferenceTest_testAssertNumber_32w.html">TypeInferenceTest.testAssertNumber</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655334</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssignment</span><a href="TypeInferenceTest_testAssignment_bcj.html">TypeInferenceTest.testAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655354</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf5</span><a href="TypeInferenceTest_testInstanceOf5_2sj.html">TypeInferenceTest.testInstanceOf5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790878</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testGetProp</span><a href="TypeInferenceTest_testGetProp_42t.html">TypeInferenceTest.testGetProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791106</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI2</span><a href="TypeInferenceTest_testEnumRAI2_9rh.html">TypeInferenceTest.testEnumRAI2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655016</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testReturn2</span><a href="TypeInferenceTest_testReturn2_sf.html">TypeInferenceTest.testReturn2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791031</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testNoThisInference</span><a href="TypeInferenceTest_testNoThisInference_cn6.html">TypeInferenceTest.testNoThisInference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790955</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert3</span><a href="TypeInferenceTest_testAssert3_nr.html">TypeInferenceTest.testAssert3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790935</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof2</span><a href="TypeInferenceTest_testAssertInstanceof2_7dx.html">TypeInferenceTest.testAssertInstanceof2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790989</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testGetProp</span><a href="TypeInferenceTest_testGetProp_eij.html">TypeInferenceTest.testGetProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655308</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testGetElem</span><a href="TypeInferenceTest_testGetElem_1ka.html">TypeInferenceTest.testGetElem</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791007</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testComparison</span><a href="TypeInferenceTest_testComparison_aov.html">TypeInferenceTest.testComparison</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790917</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof4</span><a href="TypeInferenceTest_testAssertInstanceof4_7s.html">TypeInferenceTest.testAssertInstanceof4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655496</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testJoin2</span><a href="TypeInferenceTest_testJoin2_bx.html">TypeInferenceTest.testJoin2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655052</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert9</span><a href="TypeInferenceTest_testAssert9_qf.html">TypeInferenceTest.testAssert9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790937</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAdd3</span><a href="TypeInferenceTest_testAdd3_aec.html">TypeInferenceTest.testAdd3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791028</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert1</span><a href="TypeInferenceTest_testAssert1_4e2.html">TypeInferenceTest.testAssert1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655133</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject</span><a href="TypeInferenceTest_testAssertObject_320.html">TypeInferenceTest.testAssertObject</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790940</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor2</span><a href="TypeInferenceTest_testFor2_brk.html">TypeInferenceTest.testFor2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790848</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof1</span><a href="TypeInferenceTest_testAssertInstanceof1_1xt.html">TypeInferenceTest.testAssertInstanceof1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655485</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingAnd</span><a href="TypeInferenceTest_testShortCircuitingAnd_886.html">TypeInferenceTest.testShortCircuitingAnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655412</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testReturn2</span><a href="TypeInferenceTest_testReturn2_bpt.html">TypeInferenceTest.testReturn2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655391</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertNumber3</span><a href="TypeInferenceTest_testAssertNumber3_edr.html">TypeInferenceTest.testAssertNumber3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790993</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor1</span><a href="TypeInferenceTest_testFor1_3bb.html">TypeInferenceTest.testFor1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655077</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert8</span><a href="TypeInferenceTest_testAssert8_xa.html">TypeInferenceTest.testAssert8</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790931</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert5</span><a href="TypeInferenceTest_testAssert5_bcl.html">TypeInferenceTest.testAssert5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655150</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject3</span><a href="TypeInferenceTest_testAssertObject3_aw6.html">TypeInferenceTest.testAssertObject3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654972</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor1</span><a href="TypeInferenceTest_testFor1_e14.html">TypeInferenceTest.testFor1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790933</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI4</span><a href="TypeInferenceTest_testEnumRAI4_2f4.html">TypeInferenceTest.testEnumRAI4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655026</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertInstanceof5</span><a href="TypeInferenceTest_testAssertInstanceof5_8s6.html">TypeInferenceTest.testAssertInstanceof5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790945</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf2</span><a href="TypeInferenceTest_testInstanceOf2_by7.html">TypeInferenceTest.testInstanceOf2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655445</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testRecordInference</span><a href="TypeInferenceTest_testRecordInference_dp7.html">TypeInferenceTest.testRecordInference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790959</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInnerFunction2</span><a href="TypeInferenceTest_testInnerFunction2_4hu.html">TypeInferenceTest.testInnerFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791119</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testUnknownType1</span><a href="TypeInferenceTest_testUnknownType1_9q4.html">TypeInferenceTest.testUnknownType1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791097</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInnerFunction2</span><a href="TypeInferenceTest_testInnerFunction2_c30.html">TypeInferenceTest.testInnerFunction2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655378</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssignAdd</span><a href="TypeInferenceTest_testAssignAdd_8q.html">TypeInferenceTest.testAssignAdd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790916</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testEnumRAI3</span><a href="TypeInferenceTest_testEnumRAI3_1ix.html">TypeInferenceTest.testEnumRAI3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790859</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert5</span><a href="TypeInferenceTest_testAssert5_adt.html">TypeInferenceTest.testAssert5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790842</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testThrow</span><a href="TypeInferenceTest_testThrow_7f1.html">TypeInferenceTest.testThrow</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790997</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCatch2</span><a href="TypeInferenceTest_testCatch2_44x.html">TypeInferenceTest.testCatch2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655424</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testThrownExpression</span><a href="TypeInferenceTest_testThrownExpression_1ba.html">TypeInferenceTest.testThrownExpression</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655342</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor5</span><a href="TypeInferenceTest_testFor5_de8.html">TypeInferenceTest.testFor5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791057</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert9</span><a href="TypeInferenceTest_testAssert9_62m.html">TypeInferenceTest.testAssert9</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655165</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert1a</span><a href="TypeInferenceTest_testAssert1a_3ct.html">TypeInferenceTest.testAssert1a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790991</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf2</span><a href="TypeInferenceTest_testIf2_b9e.html">TypeInferenceTest.testIf2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654999</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testBackwardsInferenceNew</span><a href="TypeInferenceTest_testBackwardsInferenceNew_15k.html">TypeInferenceTest.testBackwardsInferenceNew</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654943</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.021</span>0.021</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testIf1a</span><a href="TypeInferenceTest_testIf1a_eyy.html">TypeInferenceTest.testIf1a</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790977</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor6</span><a href="TypeInferenceTest_testFor6_b9s.html">TypeInferenceTest.testFor6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791060</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch4</span><a href="TypeInferenceTest_testSwitch4_24z.html">TypeInferenceTest.testSwitch4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655535</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertNumber2</span><a href="TypeInferenceTest_testAssertNumber2_9bk.html">TypeInferenceTest.testAssertNumber2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697654849</span>2 Jan 15:14:14</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.087</span>0.087</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingOr2</span><a href="TypeInferenceTest_testShortCircuitingOr2_clf.html">TypeInferenceTest.testShortCircuitingOr2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655416</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertWithNotIsNull</span><a href="TypeInferenceTest_testAssertWithNotIsNull_8du.html">TypeInferenceTest.testAssertWithNotIsNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790999</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf3</span><a href="TypeInferenceTest_testInstanceOf3_217.html">TypeInferenceTest.testInstanceOf3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791112</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testVar</span><a href="TypeInferenceTest_testVar_e9v.html">TypeInferenceTest.testVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790844</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testGetElemDereference</span><a href="TypeInferenceTest_testGetElemDereference_6h3.html">TypeInferenceTest.testGetElemDereference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655428</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testShortCircuitingAnd</span><a href="TypeInferenceTest_testShortCircuitingAnd_ms.html">TypeInferenceTest.testShortCircuitingAnd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790864</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCatch1</span><a href="TypeInferenceTest_testCatch1_31o.html">TypeInferenceTest.testCatch1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655420</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertWithIsDefAndNotNull</span><a href="TypeInferenceTest_testAssertWithIsDefAndNotNull_38a.html">TypeInferenceTest.testAssertWithIsDefAndNotNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790986</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor2</span><a href="TypeInferenceTest_testFor2_bmz.html">TypeInferenceTest.testFor2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655082</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCall1</span><a href="TypeInferenceTest_testCall1_bw3.html">TypeInferenceTest.testCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791035</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAdd1</span><a href="TypeInferenceTest_testAdd1_9yn.html">TypeInferenceTest.testAdd1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791025</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testInstanceOf6</span><a href="TypeInferenceTest_testInstanceOf6_efg.html">TypeInferenceTest.testInstanceOf6</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790880</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertArray</span><a href="TypeInferenceTest_testAssertArray_84x.html">TypeInferenceTest.testAssertArray</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655323</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert4</span><a href="TypeInferenceTest_testAssert4_9qa.html">TypeInferenceTest.testAssert4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655146</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch4</span><a href="TypeInferenceTest_testSwitch4_2sn.html">TypeInferenceTest.testSwitch4</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791078</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testFor3</span><a href="TypeInferenceTest_testFor3_9wr.html">TypeInferenceTest.testFor3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655087</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssert3</span><a href="TypeInferenceTest_testAssert3_2f8.html">TypeInferenceTest.testAssert3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655141</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssignAdd</span><a href="TypeInferenceTest_testAssignAdd_41z.html">TypeInferenceTest.testAssignAdd</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655511</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testNoThisInference</span><a href="TypeInferenceTest_testNoThisInference_1e0.html">TypeInferenceTest.testNoThisInference</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655469</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testSwitch3</span><a href="TypeInferenceTest_testSwitch3_ca7.html">TypeInferenceTest.testSwitch3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655528</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testPropertyInference3</span><a href="TypeInferenceTest_testPropertyInference3_6xn.html">TypeInferenceTest.testPropertyInference3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655408</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testCall1</span><a href="TypeInferenceTest_testCall1_4z3.html">TypeInferenceTest.testCall1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697655036</span>2 Jan 15:14:15</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testUnknownType2</span><a href="TypeInferenceTest_testUnknownType2_4yt.html">TypeInferenceTest.testUnknownType2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791099</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertArray</span><a href="TypeInferenceTest_testAssertArray_e63.html">TypeInferenceTest.testAssertArray</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697790922</span>2 Jan 15:16:30</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertObject5</span><a href="TypeInferenceTest_testAssertObject5_4dn.html">TypeInferenceTest.testAssertObject5</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791042</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">TypeInferenceTest.testAssertString</span><a href="TypeInferenceTest_testAssertString_3v5.html">TypeInferenceTest.testAssertString</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697791000</span>2 Jan 15:16:31</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

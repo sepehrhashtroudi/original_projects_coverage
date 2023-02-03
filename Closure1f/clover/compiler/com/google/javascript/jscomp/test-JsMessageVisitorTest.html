@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.jscomp</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class JsMessageVisitorTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="JsMessageVisitorTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>JsMessageVisitorTest</td>
+        <td class="testPasses"><span class="sortValue">126</span>126</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.303</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureMessageWithoutGoogGetmsg</span><a href="JsMessageVisitorTest_testClosureMessageWithoutGoogGetmsg_7ag.html">JsMessageVisitorTest.testClosureMessageWithoutGoogGetmsg</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401701</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyMessage</span><a href="JsMessageVisitorTest_testEmptyMessage_en0.html">JsMessageVisitorTest.testEmptyMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756696</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIncorrectMessage</span><a href="JsMessageVisitorTest_testIncorrectMessage_f4f.html">JsMessageVisitorTest.testIncorrectMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401713</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testJsMessageOnVar</span><a href="JsMessageVisitorTest_testJsMessageOnVar_21t.html">JsMessageVisitorTest.testJsMessageOnVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756673</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsLowerCamelCaseWithNumericSuffixes</span><a href="JsMessageVisitorTest_testIsLowerCamelCaseWithNumericSuffixes_dhv.html">JsMessageVisitorTest.testIsLowerCamelCaseWithNumericSuffixes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756666</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnrecognizedFunction</span><a href="JsMessageVisitorTest_testUnrecognizedFunction_7us.html">JsMessageVisitorTest.testUnrecognizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568034</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.004</span>0.004</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testExternalMessage</span><a href="JsMessageVisitorTest_testExternalMessage_s2.html">JsMessageVisitorTest.testExternalMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756649</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnusedReferenesAreNotOK</span><a href="JsMessageVisitorTest_testUnusedReferenesAreNotOK_833.html">JsMessageVisitorTest.testUnusedReferenesAreNotOK</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401722</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMsgVarWithoutAssignment</span><a href="JsMessageVisitorTest_testMsgVarWithoutAssignment_r4.html">JsMessageVisitorTest.testMsgVarWithoutAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756640</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyMessageWithDescAnnotationAndHelpVar</span><a href="JsMessageVisitorTest_testLegacyMessageWithDescAnnotationAndHelpVar_96s.html">JsMessageVisitorTest.testLegacyMessageWithDescAnnotationAndHelpVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568041</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.012</span>0.012</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIncorrectMessage</span><a href="JsMessageVisitorTest_testIncorrectMessage_a6g.html">JsMessageVisitorTest.testIncorrectMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568055</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnexistedPlaceholders</span><a href="JsMessageVisitorTest_testUnexistedPlaceholders_1ad.html">JsMessageVisitorTest.testUnexistedPlaceholders</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568095</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyMessageWithDescAnnotation</span><a href="JsMessageVisitorTest_testLegacyMessageWithDescAnnotation_8hu.html">JsMessageVisitorTest.testLegacyMessageWithDescAnnotation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401698</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureMessageWithHelpPostfix</span><a href="JsMessageVisitorTest_testClosureMessageWithHelpPostfix_38g.html">JsMessageVisitorTest.testClosureMessageWithHelpPostfix</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401700</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicatePlaceholderReferencesAreOk</span><a href="JsMessageVisitorTest_testDuplicatePlaceholderReferencesAreOk_7gy.html">JsMessageVisitorTest.testDuplicatePlaceholderReferencesAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401729</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIncorrectMessageReporting</span><a href="JsMessageVisitorTest_testIncorrectMessageReporting_6v4.html">JsMessageVisitorTest.testIncorrectMessageReporting</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401693</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testJsMessageOnProperty</span><a href="JsMessageVisitorTest_testJsMessageOnProperty_3j2.html">JsMessageVisitorTest.testJsMessageOnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401727</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMsgVarWithoutAssignment</span><a href="JsMessageVisitorTest_testMsgVarWithoutAssignment_8po.html">JsMessageVisitorTest.testMsgVarWithoutAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568059</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testToLowerCamelCaseWithNumericSuffixes</span><a href="JsMessageVisitorTest_testToLowerCamelCaseWithNumericSuffixes_8dt.html">JsMessageVisitorTest.testToLowerCamelCaseWithNumericSuffixes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756666</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testAlmostButNotExternalMessage</span><a href="JsMessageVisitorTest_testAlmostButNotExternalMessage_4so.html">JsMessageVisitorTest.testAlmostButNotExternalMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568070</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testJsMessageOnProperty</span><a href="JsMessageVisitorTest_testJsMessageOnProperty_91d.html">JsMessageVisitorTest.testJsMessageOnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568083</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIncorrectMessageReporting</span><a href="JsMessageVisitorTest_testIncorrectMessageReporting_69s.html">JsMessageVisitorTest.testIncorrectMessageReporting</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756677</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyTextComplexMessage</span><a href="JsMessageVisitorTest_testEmptyTextComplexMessage_6ip.html">JsMessageVisitorTest.testEmptyTextComplexMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568056</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testHugeMessage</span><a href="JsMessageVisitorTest_testHugeMessage_daa.html">JsMessageVisitorTest.testHugeMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401725</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureFormatParametizedFunction</span><a href="JsMessageVisitorTest_testClosureFormatParametizedFunction_rm.html">JsMessageVisitorTest.testClosureFormatParametizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401702</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameRelax</span><a href="JsMessageVisitorTest_testIsValidMessageNameRelax_5xv.html">JsMessageVisitorTest.testIsValidMessageNameRelax</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756651</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicatePlaceHoldersAreBad</span><a href="JsMessageVisitorTest_testDuplicatePlaceHoldersAreBad_9tr.html">JsMessageVisitorTest.testDuplicatePlaceHoldersAreBad</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568096</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyFormatDescription</span><a href="JsMessageVisitorTest_testLegacyFormatDescription_xu.html">JsMessageVisitorTest.testLegacyFormatDescription</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568039</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testExtractPropertyMessage</span><a href="JsMessageVisitorTest_testExtractPropertyMessage_5zu.html">JsMessageVisitorTest.testExtractPropertyMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756645</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testErrorWhenUsingMsgPrefixWithFallback</span><a href="JsMessageVisitorTest_testErrorWhenUsingMsgPrefixWithFallback_emw.html">JsMessageVisitorTest.testErrorWhenUsingMsgPrefixWithFallback</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756671</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMessageIsNoUnnamed</span><a href="JsMessageVisitorTest_testMessageIsNoUnnamed_c0h.html">JsMessageVisitorTest.testMessageIsNoUnnamed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568075</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testConcatOfStrings</span><a href="JsMessageVisitorTest_testConcatOfStrings_cyx.html">JsMessageVisitorTest.testConcatOfStrings</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401695</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testExtractPropertyMessage</span><a href="JsMessageVisitorTest_testExtractPropertyMessage_2o9.html">JsMessageVisitorTest.testExtractPropertyMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568089</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameLegacy</span><a href="JsMessageVisitorTest_testIsValidMessageNameLegacy_9fg.html">JsMessageVisitorTest.testIsValidMessageNameLegacy</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401721</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureMessageWithoutGoogGetmsg</span><a href="JsMessageVisitorTest_testClosureMessageWithoutGoogGetmsg_9sk.html">JsMessageVisitorTest.testClosureMessageWithoutGoogGetmsg</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568058</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnnamedGoogleMessage</span><a href="JsMessageVisitorTest_testUnnamedGoogleMessage_aq0.html">JsMessageVisitorTest.testUnnamedGoogleMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756694</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testOrphanedJsMessage</span><a href="JsMessageVisitorTest_testOrphanedJsMessage_8j5.html">JsMessageVisitorTest.testOrphanedJsMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756675</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testRegularVarWithoutAssignment</span><a href="JsMessageVisitorTest_testRegularVarWithoutAssignment_18j.html">JsMessageVisitorTest.testRegularVarWithoutAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697567855</span>2 Jan 15:12:47</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.179</span>0.179</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testCamelcasePlaceholderNamesAreOk</span><a href="JsMessageVisitorTest_testCamelcasePlaceholderNamesAreOk_eod.html">JsMessageVisitorTest.testCamelcasePlaceholderNamesAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401730</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameStrict</span><a href="JsMessageVisitorTest_testIsValidMessageNameStrict_7qp.html">JsMessageVisitorTest.testIsValidMessageNameStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756650</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIncorrectMessage</span><a href="JsMessageVisitorTest_testIncorrectMessage_ew6.html">JsMessageVisitorTest.testIncorrectMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756643</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyMessage</span><a href="JsMessageVisitorTest_testEmptyMessage_7d.html">JsMessageVisitorTest.testEmptyMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568098</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnquotedPlaceholdersAreOk</span><a href="JsMessageVisitorTest_testUnquotedPlaceholdersAreOk_50y.html">JsMessageVisitorTest.testUnquotedPlaceholdersAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401733</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnnamedGoogleMessage</span><a href="JsMessageVisitorTest_testUnnamedGoogleMessage_a0u.html">JsMessageVisitorTest.testUnnamedGoogleMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401705</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMsgVarWithIncorrectRightSide</span><a href="JsMessageVisitorTest_testMsgVarWithIncorrectRightSide_dw3.html">JsMessageVisitorTest.testMsgVarWithIncorrectRightSide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401712</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyTextMessage</span><a href="JsMessageVisitorTest_testEmptyTextMessage_2pg.html">JsMessageVisitorTest.testEmptyTextMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568063</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testCamelcasePlaceholderNamesAreOk</span><a href="JsMessageVisitorTest_testCamelcasePlaceholderNamesAreOk_998.html">JsMessageVisitorTest.testCamelcasePlaceholderNamesAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568071</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testOrphanedJsMessage</span><a href="JsMessageVisitorTest_testOrphanedJsMessage_cuo.html">JsMessageVisitorTest.testOrphanedJsMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568062</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyFormatParametizedFunction</span><a href="JsMessageVisitorTest_testLegacyFormatParametizedFunction_5ww.html">JsMessageVisitorTest.testLegacyFormatParametizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568076</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnquotedPlaceholdersAreOk</span><a href="JsMessageVisitorTest_testUnquotedPlaceholdersAreOk_cet.html">JsMessageVisitorTest.testUnquotedPlaceholdersAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568060</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnrecognizedFunction</span><a href="JsMessageVisitorTest_testUnrecognizedFunction_bd2.html">JsMessageVisitorTest.testUnrecognizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756644</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsLowerCamelCaseWithNumericSuffixes</span><a href="JsMessageVisitorTest_testIsLowerCamelCaseWithNumericSuffixes_dyq.html">JsMessageVisitorTest.testIsLowerCamelCaseWithNumericSuffixes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401734</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicateMessageError</span><a href="JsMessageVisitorTest_testDuplicateMessageError_5ax.html">JsMessageVisitorTest.testDuplicateMessageError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756668</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testConcatOfStrings</span><a href="JsMessageVisitorTest_testConcatOfStrings_dcw.html">JsMessageVisitorTest.testConcatOfStrings</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756678</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testRegularVarWithoutAssignment</span><a href="JsMessageVisitorTest_testRegularVarWithoutAssignment_72n.html">JsMessageVisitorTest.testRegularVarWithoutAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401711</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyFormatDescription</span><a href="JsMessageVisitorTest_testLegacyFormatDescription_8bx.html">JsMessageVisitorTest.testLegacyFormatDescription</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756679</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.008</span>0.008</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testWithNonCamelcasePlaceholderNamesAreNotOk</span><a href="JsMessageVisitorTest_testWithNonCamelcasePlaceholderNamesAreNotOk_b3.html">JsMessageVisitorTest.testWithNonCamelcasePlaceholderNamesAreNotOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401732</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnrecognizedFunction</span><a href="JsMessageVisitorTest_testUnrecognizedFunction_a0e.html">JsMessageVisitorTest.testUnrecognizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401715</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureMessageWithoutGoogGetmsg</span><a href="JsMessageVisitorTest_testClosureMessageWithoutGoogGetmsg_dkt.html">JsMessageVisitorTest.testClosureMessageWithoutGoogGetmsg</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756692</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testRegularVarWithoutAssignment</span><a href="JsMessageVisitorTest_testRegularVarWithoutAssignment_diy.html">JsMessageVisitorTest.testRegularVarWithoutAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756641</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIncorrectMessageReporting</span><a href="JsMessageVisitorTest_testIncorrectMessageReporting_5n.html">JsMessageVisitorTest.testIncorrectMessageReporting</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568086</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyFormatParametizedFunction</span><a href="JsMessageVisitorTest_testLegacyFormatParametizedFunction_44g.html">JsMessageVisitorTest.testLegacyFormatParametizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756688</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyMessageWithDescAnnotation</span><a href="JsMessageVisitorTest_testLegacyMessageWithDescAnnotation_bxv.html">JsMessageVisitorTest.testLegacyMessageWithDescAnnotation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568082</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicatePlaceHoldersAreBad</span><a href="JsMessageVisitorTest_testDuplicatePlaceHoldersAreBad_bl9.html">JsMessageVisitorTest.testDuplicatePlaceHoldersAreBad</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756656</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testCamelcasePlaceholderNamesAreOk</span><a href="JsMessageVisitorTest_testCamelcasePlaceholderNamesAreOk_1tj.html">JsMessageVisitorTest.testCamelcasePlaceholderNamesAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756658</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMsgVarWithoutAssignment</span><a href="JsMessageVisitorTest_testMsgVarWithoutAssignment_f7r.html">JsMessageVisitorTest.testMsgVarWithoutAssignment</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401710</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMsgVarWithIncorrectRightSide</span><a href="JsMessageVisitorTest_testMsgVarWithIncorrectRightSide_21e.html">JsMessageVisitorTest.testMsgVarWithIncorrectRightSide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756642</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testHugeMessage</span><a href="JsMessageVisitorTest_testHugeMessage_d7s.html">JsMessageVisitorTest.testHugeMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568079</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicateMessageError</span><a href="JsMessageVisitorTest_testDuplicateMessageError_8cq.html">JsMessageVisitorTest.testDuplicateMessageError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401739</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyFormatDescription</span><a href="JsMessageVisitorTest_testLegacyFormatDescription_f9e.html">JsMessageVisitorTest.testLegacyFormatDescription</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401696</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testJsMessageOnProperty</span><a href="JsMessageVisitorTest_testJsMessageOnProperty_o3.html">JsMessageVisitorTest.testJsMessageOnProperty</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756674</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyTextComplexMessage</span><a href="JsMessageVisitorTest_testEmptyTextComplexMessage_3cl.html">JsMessageVisitorTest.testEmptyTextComplexMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756637</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMessageWithoutDescription</span><a href="JsMessageVisitorTest_testMessageWithoutDescription_ddc.html">JsMessageVisitorTest.testMessageWithoutDescription</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756676</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureMessageWithHelpPostfix</span><a href="JsMessageVisitorTest_testClosureMessageWithHelpPostfix_164.html">JsMessageVisitorTest.testClosureMessageWithHelpPostfix</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568079</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnusedReferenesAreNotOK</span><a href="JsMessageVisitorTest_testUnusedReferenesAreNotOK_f52.html">JsMessageVisitorTest.testUnusedReferenesAreNotOK</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756654</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testAlmostButNotExternalMessage</span><a href="JsMessageVisitorTest_testAlmostButNotExternalMessage_7zk.html">JsMessageVisitorTest.testAlmostButNotExternalMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756648</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testToLowerCamelCaseWithNumericSuffixes</span><a href="JsMessageVisitorTest_testToLowerCamelCaseWithNumericSuffixes_ue.html">JsMessageVisitorTest.testToLowerCamelCaseWithNumericSuffixes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401735</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsLowerCamelCaseWithNumericSuffixes</span><a href="JsMessageVisitorTest_testIsLowerCamelCaseWithNumericSuffixes_c58.html">JsMessageVisitorTest.testIsLowerCamelCaseWithNumericSuffixes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568092</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testToLowerCamelCaseWithNumericSuffixes</span><a href="JsMessageVisitorTest_testToLowerCamelCaseWithNumericSuffixes_aff.html">JsMessageVisitorTest.testToLowerCamelCaseWithNumericSuffixes</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568053</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testJsMessageOnVar</span><a href="JsMessageVisitorTest_testJsMessageOnVar_8x9.html">JsMessageVisitorTest.testJsMessageOnVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568073</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testOrphanedJsMessage</span><a href="JsMessageVisitorTest_testOrphanedJsMessage_d61.html">JsMessageVisitorTest.testOrphanedJsMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401691</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameStrict</span><a href="JsMessageVisitorTest_testIsValidMessageNameStrict_f2q.html">JsMessageVisitorTest.testIsValidMessageNameStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401719</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureMessageWithHelpPostfix</span><a href="JsMessageVisitorTest_testClosureMessageWithHelpPostfix_ak1.html">JsMessageVisitorTest.testClosureMessageWithHelpPostfix</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756691</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testWithNonCamelcasePlaceholderNamesAreNotOk</span><a href="JsMessageVisitorTest_testWithNonCamelcasePlaceholderNamesAreNotOk_4qs.html">JsMessageVisitorTest.testWithNonCamelcasePlaceholderNamesAreNotOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568067</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnusedReferenesAreNotOK</span><a href="JsMessageVisitorTest_testUnusedReferenesAreNotOK_9ny.html">JsMessageVisitorTest.testUnusedReferenesAreNotOK</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568069</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testAlmostButNotExternalMessage</span><a href="JsMessageVisitorTest_testAlmostButNotExternalMessage_4j5.html">JsMessageVisitorTest.testAlmostButNotExternalMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401717</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMessageWithoutDescription</span><a href="JsMessageVisitorTest_testMessageWithoutDescription_apg.html">JsMessageVisitorTest.testMessageWithoutDescription</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568097</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testNoDuplicateErrorOnExternMessage</span><a href="JsMessageVisitorTest_testNoDuplicateErrorOnExternMessage_ezo.html">JsMessageVisitorTest.testNoDuplicateErrorOnExternMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756670</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMessageWithoutDescription</span><a href="JsMessageVisitorTest_testMessageWithoutDescription_7n5.html">JsMessageVisitorTest.testMessageWithoutDescription</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401692</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMessageIsNoUnnamed</span><a href="JsMessageVisitorTest_testMessageIsNoUnnamed_ei6.html">JsMessageVisitorTest.testMessageIsNoUnnamed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401708</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnquotedPlaceholdersAreOk</span><a href="JsMessageVisitorTest_testUnquotedPlaceholdersAreOk_6fa.html">JsMessageVisitorTest.testUnquotedPlaceholdersAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756664</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicateMessageError</span><a href="JsMessageVisitorTest_testDuplicateMessageError_2k1.html">JsMessageVisitorTest.testDuplicateMessageError</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568084</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureFormatParametizedFunction</span><a href="JsMessageVisitorTest_testClosureFormatParametizedFunction_bfs.html">JsMessageVisitorTest.testClosureFormatParametizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756693</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyTextMessage</span><a href="JsMessageVisitorTest_testEmptyTextMessage_4x6.html">JsMessageVisitorTest.testEmptyTextMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401706</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnexistedPlaceholders</span><a href="JsMessageVisitorTest_testUnexistedPlaceholders_euw.html">JsMessageVisitorTest.testUnexistedPlaceholders</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756652</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyTextComplexMessage</span><a href="JsMessageVisitorTest_testEmptyTextComplexMessage_dpi.html">JsMessageVisitorTest.testEmptyTextComplexMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401707</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testNoDuplicateErrorOnExternMessage</span><a href="JsMessageVisitorTest_testNoDuplicateErrorOnExternMessage_ayd.html">JsMessageVisitorTest.testNoDuplicateErrorOnExternMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568064</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.003</span>0.003</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyMessageWithDescAnnotation</span><a href="JsMessageVisitorTest_testLegacyMessageWithDescAnnotation_2ze.html">JsMessageVisitorTest.testLegacyMessageWithDescAnnotation</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756689</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testExternalMessage</span><a href="JsMessageVisitorTest_testExternalMessage_1gn.html">JsMessageVisitorTest.testExternalMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401718</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testConcatOfStrings</span><a href="JsMessageVisitorTest_testConcatOfStrings_990.html">JsMessageVisitorTest.testConcatOfStrings</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568092</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testNoDuplicateErrorOnExternMessage</span><a href="JsMessageVisitorTest_testNoDuplicateErrorOnExternMessage_4.html">JsMessageVisitorTest.testNoDuplicateErrorOnExternMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401740</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameStrict</span><a href="JsMessageVisitorTest_testIsValidMessageNameStrict_7vk.html">JsMessageVisitorTest.testIsValidMessageNameStrict</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568071</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameLegacy</span><a href="JsMessageVisitorTest_testIsValidMessageNameLegacy_d91.html">JsMessageVisitorTest.testIsValidMessageNameLegacy</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568067</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testWithNonCamelcasePlaceholderNamesAreNotOk</span><a href="JsMessageVisitorTest_testWithNonCamelcasePlaceholderNamesAreNotOk_d9a.html">JsMessageVisitorTest.testWithNonCamelcasePlaceholderNamesAreNotOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756660</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyTextMessage</span><a href="JsMessageVisitorTest_testEmptyTextMessage_4fu.html">JsMessageVisitorTest.testEmptyTextMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756636</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testJsMessageOnVar</span><a href="JsMessageVisitorTest_testJsMessageOnVar_cxo.html">JsMessageVisitorTest.testJsMessageOnVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401704</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicatePlaceholderReferencesAreOk</span><a href="JsMessageVisitorTest_testDuplicatePlaceholderReferencesAreOk_5tf.html">JsMessageVisitorTest.testDuplicatePlaceholderReferencesAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568074</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testErrorWhenUsingMsgPrefixWithFallback</span><a href="JsMessageVisitorTest_testErrorWhenUsingMsgPrefixWithFallback_6ts.html">JsMessageVisitorTest.testErrorWhenUsingMsgPrefixWithFallback</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568093</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testErrorWhenUsingMsgPrefixWithFallback</span><a href="JsMessageVisitorTest_testErrorWhenUsingMsgPrefixWithFallback_72u.html">JsMessageVisitorTest.testErrorWhenUsingMsgPrefixWithFallback</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401742</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicatePlaceHoldersAreBad</span><a href="JsMessageVisitorTest_testDuplicatePlaceHoldersAreBad_la.html">JsMessageVisitorTest.testDuplicatePlaceHoldersAreBad</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401728</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyMessageWithDescAnnotationAndHelpVar</span><a href="JsMessageVisitorTest_testLegacyMessageWithDescAnnotationAndHelpVar_8im.html">JsMessageVisitorTest.testLegacyMessageWithDescAnnotationAndHelpVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401699</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMessageIsNoUnnamed</span><a href="JsMessageVisitorTest_testMessageIsNoUnnamed_f87.html">JsMessageVisitorTest.testMessageIsNoUnnamed</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756638</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testMsgVarWithIncorrectRightSide</span><a href="JsMessageVisitorTest_testMsgVarWithIncorrectRightSide_7o3.html">JsMessageVisitorTest.testMsgVarWithIncorrectRightSide</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568094</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnexistedPlaceholders</span><a href="JsMessageVisitorTest_testUnexistedPlaceholders_2sk.html">JsMessageVisitorTest.testUnexistedPlaceholders</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401721</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyMessageWithDescAnnotationAndHelpVar</span><a href="JsMessageVisitorTest_testLegacyMessageWithDescAnnotationAndHelpVar_emn.html">JsMessageVisitorTest.testLegacyMessageWithDescAnnotationAndHelpVar</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756690</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testExternalMessage</span><a href="JsMessageVisitorTest_testExternalMessage_7bf.html">JsMessageVisitorTest.testExternalMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568091</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testHugeMessage</span><a href="JsMessageVisitorTest_testHugeMessage_d1b.html">JsMessageVisitorTest.testHugeMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756697</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameLegacy</span><a href="JsMessageVisitorTest_testIsValidMessageNameLegacy_4s2.html">JsMessageVisitorTest.testIsValidMessageNameLegacy</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756652</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameRelax</span><a href="JsMessageVisitorTest_testIsValidMessageNameRelax_8or.html">JsMessageVisitorTest.testIsValidMessageNameRelax</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568041</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testIsValidMessageNameRelax</span><a href="JsMessageVisitorTest_testIsValidMessageNameRelax_738.html">JsMessageVisitorTest.testIsValidMessageNameRelax</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401720</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testClosureFormatParametizedFunction</span><a href="JsMessageVisitorTest_testClosureFormatParametizedFunction_85q.html">JsMessageVisitorTest.testClosureFormatParametizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568077</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testExtractPropertyMessage</span><a href="JsMessageVisitorTest_testExtractPropertyMessage_8e4.html">JsMessageVisitorTest.testExtractPropertyMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401716</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testUnnamedGoogleMessage</span><a href="JsMessageVisitorTest_testUnnamedGoogleMessage_795.html">JsMessageVisitorTest.testUnnamedGoogleMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697568072</span>2 Jan 15:12:48</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testLegacyFormatParametizedFunction</span><a href="JsMessageVisitorTest_testLegacyFormatParametizedFunction_1w9.html">JsMessageVisitorTest.testLegacyFormatParametizedFunction</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401697</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testEmptyMessage</span><a href="JsMessageVisitorTest_testEmptyMessage_f82.html">JsMessageVisitorTest.testEmptyMessage</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697401724</span>2 Jan 15:10:01</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">JsMessageVisitorTest.testDuplicatePlaceholderReferencesAreOk</span><a href="JsMessageVisitorTest_testDuplicatePlaceholderReferencesAreOk_dof.html">JsMessageVisitorTest.testDuplicatePlaceholderReferencesAreOk</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697756657</span>2 Jan 15:15:56</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

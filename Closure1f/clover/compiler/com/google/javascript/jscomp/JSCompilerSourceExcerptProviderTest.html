@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body  onload="onLoad('compiler: com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.jscomp">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li> 
+        <li><a href="testsrc-pkg-summary.html">        Package com.google.javascript.jscomp</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File JSCompilerSourceExcerptProviderTest.java
+    </h1>
+
+
+
+
+
+
+
+
+        
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+                <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+                <a href="#tabs-file-source"><strong>Source file</strong></a>
+            </li>
+            <li class="menu-item">
+                <a href="test-JSCompilerSourceExcerptProviderTest.html"><strong>Test results</strong></a>
+            </li>
+        </ul>
+        <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                        <div style="display: table-cell; ">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">52</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">121</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">86</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">5.78</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.11</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">52</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">121</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">86</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.19</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">5.78</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.11</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="JSCompilerSourceExcerptProviderTest">
+        <span><a href="#25" title="JSCompilerSourceExcerptProviderTest" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '25');">JSCompilerSourceExcerptProviderTest</a></span>
+</td>
+<td>25<a name="sl-25"></a></td>
+    <td class="">52</td>
+    <td class="">10</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-JSCompilerSourceExcerptProviderTest" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-JSCompilerSourceExcerptProviderTest" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class JSCompilerSourceExcerptProviderTest</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-JSCompilerSourceExcerptProviderTest-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-JSCompilerSourceExcerptProviderTest-methods-body', 'dialog-JSCompilerSourceExcerptProviderTest-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                    <thead>
+                                                 <tr> <th id="JSCompilerSourceExcerptProviderTest">
+    Class<br/>    <span><a href="#25" title="JSCompilerSourceExcerptProviderTest" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '25');">JSCompilerSourceExcerptProviderTest</a></span>
+</th>
+<th>Line #<br/>25<a name="sl-25"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>52</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>10</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-JSCompilerSourceExcerptProviderTest-methods-body">
+                                                                                                            <tr id="JSCompilerSourceExcerptProviderTest-1">
+<td id="summary-28-3">
+ <span class="sortValue">setUp()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#28" title="setUp()&#160;:&#160;void" name="sl-28" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '28');">setUp()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">28</span>28</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-2">
+<td id="summary-45-3">
+ <span class="sortValue">testExcerptOneLine()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#45" title="testExcerptOneLine()&#160;:&#160;void" name="sl-45" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '45');">testExcerptOneLine()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">45</span>45</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-3">
+<td id="summary-55-3">
+ <span class="sortValue">testExcerptLineFromInexistantSource()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#55" title="testExcerptLineFromInexistantSource()&#160;:&#160;void" name="sl-55" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '55');">testExcerptLineFromInexistantSource()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">55</span>55</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-4">
+<td id="summary-61-3">
+ <span class="sortValue">testExcerptInexistantLine()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#61" title="testExcerptInexistantLine()&#160;:&#160;void" name="sl-61" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '61');">testExcerptInexistantLine()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">61</span>61</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-5">
+<td id="summary-68-3">
+ <span class="sortValue">testExceptNoNewLine()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#68" title="testExceptNoNewLine()&#160;:&#160;void" name="sl-68" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '68');">testExceptNoNewLine()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">68</span>68</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-6">
+<td id="summary-75-3">
+ <span class="sortValue">testExcerptRegion()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#75" title="testExcerptRegion()&#160;:&#160;void" name="sl-75" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '75');">testExcerptRegion()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">75</span>75</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-7">
+<td id="summary-85-3">
+ <span class="sortValue">testExcerptRegionFromInexistantSource()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#85" title="testExcerptRegionFromInexistantSource()&#160;:&#160;void" name="sl-85" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '85');">testExcerptRegionFromInexistantSource()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">85</span>85</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-8">
+<td id="summary-91-3">
+ <span class="sortValue">testExcerptInexistantRegion()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#91" title="testExcerptInexistantRegion()&#160;:&#160;void" name="sl-91" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '91');">testExcerptInexistantRegion()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">91</span>91</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="JSCompilerSourceExcerptProviderTest-9">
+<td id="summary-103-3">
+ <span class="sortValue">assertRegionWellFormed(String,int)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#103" title="assertRegionWellFormed(String,int)&#160;:&#160;void" name="sl-103" onclick="closeDialogAndScrollTo('dialog-JSCompilerSourceExcerptProviderTest', '103');">assertRegionWellFormed(String,int)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">103</span>103</td>
+<td class="" align="right"><span class="sortValue">13.0</span>13</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-JSCompilerSourceExcerptProviderTest">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 21 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-2950">
+<td><a name="testA-2950"></a><input type="checkbox" id="cb-2950" value="2950" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_29y.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-2950">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegion</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_29y.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=75#src-75" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_29y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-11418">
+<td><a name="testA-11418"></a><input type="checkbox" id="cb-11418" value="11418" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_8t6.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-11418">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegion</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_8t6.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=75#src-75" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_8t6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-14600">
+<td><a name="testA-14600"></a><input type="checkbox" id="cb-14600" value="14600" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_b9k.html';">
+<span class="sortValue">0.3809524</span>
+<div>
+<div title="38.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.1%"></div></div></div></td>
+<td id="tc-14600">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegion</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_b9k.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=75#src-75" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegion_b9k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2197">
+<td><a name="testA-2197"></a><input type="checkbox" id="cb-2197" value="2197" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_1p1.html';">
+<span class="sortValue">0.12698413</span>
+<div>
+<div title="12.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12.7%"></div></div></div></td>
+<td id="tc-2197">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptOneLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_1p1.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptOneLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_1p1.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-12180">
+<td><a name="testA-12180"></a><input type="checkbox" id="cb-12180" value="12180" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_9ec.html';">
+<span class="sortValue">0.12698413</span>
+<div>
+<div title="12.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12.7%"></div></div></div></td>
+<td id="tc-12180">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptOneLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_9ec.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptOneLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_9ec.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17474">
+<td><a name="testA-17474"></a><input type="checkbox" id="cb-17474" value="17474" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_dhe.html';">
+<span class="sortValue">0.12698413</span>
+<div>
+<div title="12.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12.7%"></div></div></div></td>
+<td id="tc-17474">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptOneLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_dhe.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptOneLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=45#src-45" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptOneLine_dhe.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9319">
+<td><a name="testA-9319"></a><input type="checkbox" id="cb-9319" value="9319" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_76v.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-9319">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantRegion</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_76v.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantRegion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_76v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-13811">
+<td><a name="testA-13811"></a><input type="checkbox" id="cb-13811" value="13811" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_ann.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-13811">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_ann.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=61#src-61" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_ann.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10521">
+<td><a name="testA-10521"></a><input type="checkbox" id="cb-10521" value="10521" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_849.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-10521">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExceptNoNewLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_849.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExceptNoNewLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=68#src-68" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_849.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-10595">
+<td><a name="testA-10595"></a><input type="checkbox" id="cb-10595" value="10595" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_86b.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-10595">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExceptNoNewLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_86b.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExceptNoNewLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=68#src-68" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_86b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18020">
+<td><a name="testA-18020"></a><input type="checkbox" id="cb-18020" value="18020" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_dwk.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-18020">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantRegion</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_dwk.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantRegion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_dwk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-16471">
+<td><a name="testA-16471"></a><input type="checkbox" id="cb-16471" value="16471" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_cpj.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-16471">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_cpj.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=61#src-61" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_cpj.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2081">
+<td><a name="testA-2081"></a><input type="checkbox" id="cb-2081" value="2081" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_1lt.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-2081">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantRegion</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_1lt.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantRegion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantRegion_1lt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-18565">
+<td><a name="testA-18565"></a><input type="checkbox" id="cb-18565" value="18565" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_ebp.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-18565">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExceptNoNewLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_ebp.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExceptNoNewLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=68#src-68" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExceptNoNewLine_ebp.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-19137">
+<td><a name="testA-19137"></a><input type="checkbox" id="cb-19137" value="19137" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_erl.html';">
+<span class="sortValue">0.07936508</span>
+<div>
+<div title="7.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:7.9%"></div></div></div></td>
+<td id="tc-19137">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantLine</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_erl.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptInexistantLine</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=61#src-61" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptInexistantLine_erl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-9564">
+<td><a name="testA-9564"></a><input type="checkbox" id="cb-9564" value="9564" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_7do.html';">
+<span class="sortValue">0.06349207</span>
+<div>
+<div title="6.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.3%"></div></div></div></td>
+<td id="tc-9564">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptLineFromInexistantSource</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_7do.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptLineFromInexistantSource</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=55#src-55" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_7do.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-8570">
+<td><a name="testA-8570"></a><input type="checkbox" id="cb-8570" value="8570" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_6m2.html';">
+<span class="sortValue">0.06349207</span>
+<div>
+<div title="6.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.3%"></div></div></div></td>
+<td id="tc-8570">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegionFromInexistantSource</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_6m2.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegionFromInexistantSource</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_6m2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-728">
+<td><a name="testA-728"></a><input type="checkbox" id="cb-728" value="728" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_k8.html';">
+<span class="sortValue">0.06349207</span>
+<div>
+<div title="6.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.3%"></div></div></div></td>
+<td id="tc-728">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegionFromInexistantSource</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_k8.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegionFromInexistantSource</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_k8.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-17449">
+<td><a name="testA-17449"></a><input type="checkbox" id="cb-17449" value="17449" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_dgp.html';">
+<span class="sortValue">0.06349207</span>
+<div>
+<div title="6.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.3%"></div></div></div></td>
+<td id="tc-17449">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptLineFromInexistantSource</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_dgp.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptLineFromInexistantSource</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=55#src-55" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_dgp.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5930">
+<td><a name="testA-5930"></a><input type="checkbox" id="cb-5930" value="5930" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_4kq.html';">
+<span class="sortValue">0.06349207</span>
+<div>
+<div title="6.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.3%"></div></div></div></td>
+<td id="tc-5930">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptLineFromInexistantSource</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_4kq.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptLineFromInexistantSource</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=55#src-55" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptLineFromInexistantSource_4kq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-16573">
+<td><a name="testA-16573"></a><input type="checkbox" id="cb-16573" value="16573" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_csd.html';">
+<span class="sortValue">0.06349207</span>
+<div>
+<div title="6.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.3%"></div></div></div></td>
+<td id="tc-16573">  <span class="sortValue">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegionFromInexistantSource</span><a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_csd.html" title="View Test Summary Page">com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest.testExcerptRegionFromInexistantSource</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html?line=85#src-85" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest_testExcerptRegionFromInexistantSource_csd.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Copyright 2007 The Closure Compiler Authors.</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="keyword">package</span> com.google.javascript.<a href="../jscomp/pkg-summary.html">jscomp</a>;</span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> com.google.common.collect.ImmutableList;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> junit.framework.TestCase;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="25" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-25' onclick="toggleInlineStats(this, 'inlinestats-25');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-25" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-25'), 'inlinestats-25');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (63)</td>
+                <td class="inlineStat">Complexity: 10</td>
+                <td class="inlineStat">Complexity Density: 0.19</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 25, 'Tests that hit JSCompilerSourceExcerptProviderTest');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-25"><span class="spacer"></span><span id="src-25" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../../com/google/javascript/jscomp/JSCompilerSourceExcerptProviderTest.html#JSCompilerSourceExcerptProviderTest">JSCompilerSourceExcerptProviderTest</a> <span class="keyword">extends</span> TestCase {</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine">  <span class="keyword">private</span> <a href="../../../../com/google/javascript/jscomp/SourceExcerptProvider.html#SourceExcerptProvider">SourceExcerptProvider</a> provider;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="28" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-28' onclick="toggleInlineStats(this, 'inlinestats-28');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-28" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-28'), 'inlinestats-28');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (7)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.14</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l28">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 28, Col 3: method entered 21 times." class="nolink">&#160;21</span></td>
+<td class=" methodStart  srcCell" id="id-28"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 28,43);" id="img-28" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-28" class="srcLine"><span class="nolink" title="Line 28, Col 3: method entered 21 times.">  @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-28'), 28,43);" id="e28" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine">  <span class="keyword">protected</span> <span class="keyword">void</span> setUp() <span class="keyword">throws</span> Exception {</span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 30, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="nolink" title="Line 30, Col 5: statement executed 21 times.">    <a href="../../../../com/google/javascript/jscomp/SourceFile.html#SourceFile">SourceFile</a> foo = <a href="../../../../com/google/javascript/jscomp/SourceFile.html#SourceFile">SourceFile</a>.fromCode(<span class="string">&quot;foo&quot;</span>,</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine">        <span class="string">&quot;foo:first line\nfoo:second line\nfoo:third line\n&quot;</span>);</span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 32, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="nolink" title="Line 32, Col 5: statement executed 21 times.">    <a href="../../../../com/google/javascript/jscomp/SourceFile.html#SourceFile">SourceFile</a> bar = <a href="../../../../com/google/javascript/jscomp/SourceFile.html#SourceFile">SourceFile</a>.fromCode(<span class="string">&quot;bar&quot;</span>,</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine">        <span class="string">&quot;bar:first line\nbar:second line\nbar:third line\nbar:fourth line\n&quot;</span>);</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 34, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="nolink" title="Line 34, Col 5: statement executed 21 times.">    <a href="../../../../com/google/javascript/jscomp/SourceFile.html#SourceFile">SourceFile</a> foo2 = <a href="../../../../com/google/javascript/jscomp/SourceFile.html#SourceFile">SourceFile</a>.fromCode(<span class="string">&quot;foo2&quot;</span>,</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">        <span class="string">&quot;foo2:first line\nfoo2:second line\nfoo2:third line&quot;</span>);</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 36, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"><span class="nolink" title="Line 36, Col 5: statement executed 21 times.">    <a href="../../../../com/google/javascript/jscomp/Compiler.html#Compiler">Compiler</a> compiler = <span class="keyword">new</span> <a href="../../../../com/google/javascript/jscomp/Compiler.html#Compiler">Compiler</a>();</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 37, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="nolink" title="Line 37, Col 5: statement executed 21 times.">    <a href="../../../../com/google/javascript/jscomp/CompilerOptions.html#CompilerOptions">CompilerOptions</a> options = <span class="keyword">new</span> <a href="../../../../com/google/javascript/jscomp/CompilerOptions.html#CompilerOptions">CompilerOptions</a>();</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 38, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="nolink" title="Line 38, Col 5: statement executed 21 times.">    compiler.init(</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine">        ImmutableList.&lt;<a href="../../../../com/google/javascript/jscomp/SourceFile.html#SourceFile">SourceFile</a>&gt;of(),</span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">        ImmutableList.of(foo, bar, foo2),</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine">        options);</span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 42, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="nolink" title="Line 42, Col 5: statement executed 21 times.">    <span class="keyword">this</span>.provider = compiler;</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="45" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-45' onclick="toggleInlineStats(this, 'inlinestats-45');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-45" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-45'), 'inlinestats-45');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (7)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.14</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l45">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit testExcerptOneLine()&#160;:&#160;void');" ><span title="Line 45, Col 3: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-45"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 45,53);" id="img-45" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-45" class="srcLine"><span class="nolink" title="Line 45, Col 3: method entered 3 times.">  <span class="keyword">public</span> <span class="keyword">void</span> testExcerptOneLine() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-45'), 45,53);" id="e45" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;foo:first line&quot;</span>, provider.getSourceLine(<span class="string">&quot;foo&quot;</span>, 1));</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit line # 47');" ><span title="Line 47, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine"><span class="nolink" title="Line 47, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;foo:second line&quot;</span>, provider.getSourceLine(<span class="string">&quot;foo&quot;</span>, 2));</span></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;foo:third line&quot;</span>, provider.getSourceLine(<span class="string">&quot;foo&quot;</span>, 3));</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;bar:first line&quot;</span>, provider.getSourceLine(<span class="string">&quot;bar&quot;</span>, 1));</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 50, 'Tests that hit line # 50');" ><span title="Line 50, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine"><span class="nolink" title="Line 50, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;bar:second line&quot;</span>, provider.getSourceLine(<span class="string">&quot;bar&quot;</span>, 2));</span></span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 51, 'Tests that hit line # 51');" ><span title="Line 51, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"><span class="nolink" title="Line 51, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;bar:third line&quot;</span>, provider.getSourceLine(<span class="string">&quot;bar&quot;</span>, 3));</span></span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;bar:fourth line&quot;</span>, provider.getSourceLine(<span class="string">&quot;bar&quot;</span>, 4));</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="55" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-55' onclick="toggleInlineStats(this, 'inlinestats-55');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-55" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-55'), 'inlinestats-55');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit testExcerptLineFromInexistantSource()&#160;:&#160;void');" ><span title="Line 55, Col 3: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-55"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 55,59);" id="img-55" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 3: method entered 3 times.">  <span class="keyword">public</span> <span class="keyword">void</span> testExcerptLineFromInexistantSource() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-55'), 55,59);" id="e55" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 56, 'Tests that hit line # 56');" ><span title="Line 56, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"><span class="nolink" title="Line 56, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;inexistant&quot;</span>, 1));</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 57, 'Tests that hit line # 57');" ><span title="Line 57, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"><span class="nolink" title="Line 57, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;inexistant&quot;</span>, 7));</span></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 58, 'Tests that hit line # 58');" ><span title="Line 58, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"><span class="nolink" title="Line 58, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;inexistant&quot;</span>, 90));</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="61" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-61' onclick="toggleInlineStats(this, 'inlinestats-61');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-61" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-61'), 'inlinestats-61');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l61">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 61, 'Tests that hit testExcerptInexistantLine()&#160;:&#160;void');" ><span title="Line 61, Col 3: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-61"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 61,66);" id="img-61" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-61" class="srcLine"><span class="nolink" title="Line 61, Col 3: method entered 3 times.">  <span class="keyword">public</span> <span class="keyword">void</span> testExcerptInexistantLine() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-61'), 61,66);" id="e61" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 62, 'Tests that hit line # 62');" ><span title="Line 62, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="nolink" title="Line 62, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;foo&quot;</span>, 0));</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 63, 'Tests that hit line # 63');" ><span title="Line 63, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="nolink" title="Line 63, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;foo&quot;</span>, 4));</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit line # 64');" ><span title="Line 64, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;bar&quot;</span>, 0));</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 65, 'Tests that hit line # 65');" ><span title="Line 65, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"><span class="nolink" title="Line 65, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;bar&quot;</span>, 5));</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="68" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-68' onclick="toggleInlineStats(this, 'inlinestats-68');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-68" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-68'), 'inlinestats-68');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l68">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 68, 'Tests that hit testExceptNoNewLine()&#160;:&#160;void');" ><span title="Line 68, Col 3: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-68"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 68,73);" id="img-68" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-68" class="srcLine"><span class="nolink" title="Line 68, Col 3: method entered 3 times.">  <span class="keyword">public</span> <span class="keyword">void</span> testExceptNoNewLine() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-68'), 68,73);" id="e68" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 69, 'Tests that hit line # 69');" ><span title="Line 69, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"><span class="nolink" title="Line 69, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;foo2:first line&quot;</span>, provider.getSourceLine(<span class="string">&quot;foo2&quot;</span>, 1));</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 70, 'Tests that hit line # 70');" ><span title="Line 70, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine"><span class="nolink" title="Line 70, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;foo2:second line&quot;</span>, provider.getSourceLine(<span class="string">&quot;foo2&quot;</span>, 2));</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit line # 71');" ><span title="Line 71, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 5: statement executed 3 times.">    assertEquals(<span class="string">&quot;foo2:third line&quot;</span>, provider.getSourceLine(<span class="string">&quot;foo2&quot;</span>, 3));</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 72, 'Tests that hit line # 72');" ><span title="Line 72, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="nolink" title="Line 72, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceLine(<span class="string">&quot;foo2&quot;</span>, 4));</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="75" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-75' onclick="toggleInlineStats(this, 'inlinestats-75');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-75" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-75'), 'inlinestats-75');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (7)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.14</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l75">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 75, 'Tests that hit testExcerptRegion()&#160;:&#160;void');" ><span title="Line 75, Col 3: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-75"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 75,83);" id="img-75" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-75" class="srcLine"><span class="nolink" title="Line 75, Col 3: method entered 3 times.">  <span class="keyword">public</span> <span class="keyword">void</span> testExcerptRegion() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-75'), 75,83);" id="e75" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 76, 'Tests that hit line # 76');" ><span title="Line 76, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine"><span class="nolink" title="Line 76, Col 5: statement executed 3 times.">    assertRegionWellFormed(<span class="string">&quot;foo&quot;</span>, 1);</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 77, 'Tests that hit line # 77');" ><span title="Line 77, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="nolink" title="Line 77, Col 5: statement executed 3 times.">    assertRegionWellFormed(<span class="string">&quot;foo&quot;</span>, 2);</span></span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit line # 78');" ><span title="Line 78, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 5: statement executed 3 times.">    assertRegionWellFormed(<span class="string">&quot;foo&quot;</span>, 3);</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 79, 'Tests that hit line # 79');" ><span title="Line 79, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"><span class="nolink" title="Line 79, Col 5: statement executed 3 times.">    assertRegionWellFormed(<span class="string">&quot;bar&quot;</span>, 1);</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 80, 'Tests that hit line # 80');" ><span title="Line 80, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"><span class="nolink" title="Line 80, Col 5: statement executed 3 times.">    assertRegionWellFormed(<span class="string">&quot;bar&quot;</span>, 2);</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 81, 'Tests that hit line # 81');" ><span title="Line 81, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"><span class="nolink" title="Line 81, Col 5: statement executed 3 times.">    assertRegionWellFormed(<span class="string">&quot;bar&quot;</span>, 3);</span></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 82, 'Tests that hit line # 82');" ><span title="Line 82, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine"><span class="nolink" title="Line 82, Col 5: statement executed 3 times.">    assertRegionWellFormed(<span class="string">&quot;bar&quot;</span>, 4);</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="85" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-85' onclick="toggleInlineStats(this, 'inlinestats-85');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-85" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-85'), 'inlinestats-85');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l85">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 85, 'Tests that hit testExcerptRegionFromInexistantSource()&#160;:&#160;void');" ><span title="Line 85, Col 3: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-85"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 85,89);" id="img-85" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-85" class="srcLine"><span class="nolink" title="Line 85, Col 3: method entered 3 times.">  <span class="keyword">public</span> <span class="keyword">void</span> testExcerptRegionFromInexistantSource() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-85'), 85,89);" id="e85" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 86, 'Tests that hit line # 86');" ><span title="Line 86, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine"><span class="nolink" title="Line 86, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceRegion(<span class="string">&quot;inexistant&quot;</span>, 0));</span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 87, 'Tests that hit line # 87');" ><span title="Line 87, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"><span class="nolink" title="Line 87, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceRegion(<span class="string">&quot;inexistant&quot;</span>, 6));</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 88, 'Tests that hit line # 88');" ><span title="Line 88, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"><span class="nolink" title="Line 88, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceRegion(<span class="string">&quot;inexistant&quot;</span>, 90));</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="91" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-91' onclick="toggleInlineStats(this, 'inlinestats-91');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-91" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-91'), 'inlinestats-91');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit testExcerptInexistantRegion()&#160;:&#160;void');" ><span title="Line 91, Col 3: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-91"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 91,96);" id="img-91" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 3: method entered 3 times.">  <span class="keyword">public</span> <span class="keyword">void</span> testExcerptInexistantRegion() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-91'), 91,96);" id="e91" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 92, 'Tests that hit line # 92');" ><span title="Line 92, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="nolink" title="Line 92, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceRegion(<span class="string">&quot;foo&quot;</span>, 0));</span></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 93, 'Tests that hit line # 93');" ><span title="Line 93, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine"><span class="nolink" title="Line 93, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceRegion(<span class="string">&quot;foo&quot;</span>, 4));</span></span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceRegion(<span class="string">&quot;bar&quot;</span>, 0));</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 95, 'Tests that hit line # 95');" ><span title="Line 95, Col 5: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine"><span class="nolink" title="Line 95, Col 5: statement executed 3 times.">    assertEquals(<span class="keyword">null</span>, provider.getSourceRegion(<span class="string">&quot;bar&quot;</span>, 5));</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine">  <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"><span class="comment">   * Asserts that a region is 'well formed': it must not be an empty and</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"><span class="comment">   * cannot start or finish by a carriage return. In addition, it must</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine"><span class="comment">   * contain the line whose region we are taking.</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"><span class="comment">   */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="103" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-103' onclick="toggleInlineStats(this, 'inlinestats-103');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-103" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-103'), 'inlinestats-103');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (15)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.15</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l103">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 103, 'Tests that hit assertRegionWellFormed(String,int)&#160;:&#160;void');" ><span title="Line 103, Col 3: method entered 21 times." class="nolink">&#160;21</span></td>
+<td class=" methodStart  srcCell" id="id-103"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 103,120);" id="img-103" src="../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-103" class="srcLine"><span class="nolink" title="Line 103, Col 3: method entered 21 times.">  <span class="keyword">private</span> <span class="keyword">void</span> assertRegionWellFormed(String sourceName, <span class="keyword">int</span> lineNumber) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-103'), 103,120);" id="e103" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 104, 'Tests that hit line # 104');" ><span title="Line 104, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"><span class="nolink" title="Line 104, Col 5: statement executed 21 times.">    <a href="../../../../com/google/javascript/jscomp/Region.html#Region">Region</a> region = provider.getSourceRegion(sourceName, lineNumber);</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 105, 'Tests that hit line # 105');" ><span title="Line 105, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine"><span class="nolink" title="Line 105, Col 5: statement executed 21 times.">    assertNotNull(region);</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 106, 'Tests that hit line # 106');" ><span title="Line 106, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 5: statement executed 21 times.">    String sourceRegion = region.getSourceExcerpt();</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 107, 'Tests that hit line # 107');" ><span title="Line 107, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"><span class="nolink" title="Line 107, Col 5: statement executed 21 times.">    assertNotNull(sourceRegion);</span></span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 108, 'Tests that hit line # 108');" ><span title="Line 108, Col 8: true branch executed 6 times, false branch executed 15 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine"><span class="nolink" title="Line 108, Col 8: true branch executed 6 times, false branch executed 15 times.">    <span class="keyword">if</span> (lineNumber == 1) {</span></span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 109, 'Tests that hit line # 109');" ><span title="Line 109, Col 7: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine"><span class="nolink" title="Line 109, Col 7: statement executed 6 times.">      assertEquals(1, region.getBeginningLineNumber());</span></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine">    } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 111, 'Tests that hit line # 111');" ><span title="Line 111, Col 7: statement executed 15 times." class="nolink">&#160;15</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLine"><span class="nolink" title="Line 111, Col 7: statement executed 15 times.">      assertTrue(region.getBeginningLineNumber() &lt;= lineNumber);</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 113, 'Tests that hit line # 113');" ><span title="Line 113, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine"><span class="nolink" title="Line 113, Col 5: statement executed 21 times.">    assertTrue(lineNumber &lt;= region.getEndingLineNumber());</span></span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 5: statement executed 21 times.">    assertNotSame(sourceRegion, 0, sourceRegion.length());</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 115, 'Tests that hit line # 115');" ><span title="Line 115, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine"><span class="nolink" title="Line 115, Col 5: statement executed 21 times.">    assertNotSame(sourceRegion, '\n', sourceRegion.charAt(0));</span></span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 116, 'Tests that hit line # 116');" ><span title="Line 116, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"><span class="nolink" title="Line 116, Col 5: statement executed 21 times.">    assertNotSame(sourceRegion,</span></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine">        '\n', sourceRegion.charAt(sourceRegion.length() - 1));</span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 118, 'Tests that hit line # 118');" ><span title="Line 118, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine"><span class="nolink" title="Line 118, Col 5: statement executed 21 times.">    String line = provider.getSourceLine(sourceName, lineNumber);</span></span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 119, 'Tests that hit line # 119');" ><span title="Line 119, Col 5: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine"><span class="nolink" title="Line 119, Col 5: statement executed 21 times.">    assertTrue(sourceRegion, sourceRegion.contains(line));</span></span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine">  }</span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="JSCompilerSourceExcerptProviderTest.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

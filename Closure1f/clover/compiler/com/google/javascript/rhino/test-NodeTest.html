@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>compiler</title>
+    </head>
+
+<body>
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                                <ul class="aui-nav">
+                    <li>
+                        <a href="#dropdown2-jira3" aria-owns="dropdown2-jira3" aria-haspopup="true"
+                           class="aui-dropdown2-trigger" aria-controls="dropdown2-header7">
+                            Linked reports
+                            <span class="aui-icon-dropdown"></span>
+                        </a>
+
+                        <div class="aui-dropdown2 aui-style-default aui-dropdown2-in-header" id="dropdown2-jira3"
+                             style="display: none; top: 40px; min-width: 160px; left: 1213px; " aria-hidden="true">
+                            <div class="aui-dropdown2-section">
+                                <ul>
+                                                                                                                <li><a href="../../../../historical.html">compiler-Historical</a></li>
+                                                                    </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        compiler
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="com.google.javascript.rhino">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <div class="aui-page-header-main"><ol class="aui-nav aui-nav-breadcrumbs">
+    
+    <li><a href="../../../../dashboard.html"> Project Clover database Mon Jan 2 2023 15:09:37 MST</a></li>
+     <li><a href="test-pkg-summary.html">Package com.google.javascript.rhino</a></li>
+</ol></div>
+    
+<h1 class="aui-h2-clover">
+            
+        Class NodeTest
+    </h1>
+
+
+ 
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+    <ul class="tabs-menu">
+        <li class="menu-item">
+            <a href="NodeTest.html"><strong>Source file</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="#tabs-file-test-results"><strong>Test results</strong></a>
+        </li>
+    </ul>
+    <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-test-results">
+        <div>&#160;</div>
+
+
+
+
+<table id="testClassSummaryTable" class="aui">
+<thead>
+    <tr>
+        <th width="40%"><label>Class</label></th>
+        <th width="10%"><label title="Total number of tests (or test iterations) executed.">Tests</label></th>
+        <th width="10%"><label title="Number of failed tests">Fail</label></th>
+        <th width="10%"><label title="Number of test errors">Error</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="20%"><label>% Tests Success</label></th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>NodeTest</td>
+        <td class="testPasses"><span class="sortValue">66</span>66</td>
+<td class=""><span class="sortValue">0</span>0</td>
+<td class=""><span class="sortValue">0</span>0</td>
+        <td>0.099</td>
+        <td class="align-middle">
+            
+
+<div style="display: table; width: 100%">
+            <div class="barGraphValue"><span class="sortValue">1.0</span>100%</div>         <div style="display: table-cell">
+            
+            <div title="0% Errors" style="min-width: 40px;" class="testBarError">
+                <div title="100% of tests passed&lt;br/&gt;0% of tests failed" class="testBarFail" style="width: 100%"><div class="testBarPass" style="width: 100%"></div></div>
+            </div>
+        </div>
+    </div>        </td>
+    </tr>
+</tbody>
+</table>
+
+<div>&#160;</div>
+
+<table id="testClassTestsTable" class="aui aui-table-sortable">
+<thead>
+    <tr>
+        <th width="40%">
+            <label title="Tests (or test iterations) which were executed.">Tests</label>
+        </th>
+        <th width="10%"><label>Started</label></th>
+        <th width="10%"><label>Status</label></th>
+        <th width="10%">
+            <label title="The total time in seconds taken to run this set of tests.">Time (secs)</label>
+        </th>
+        <th width="30%"><label>Message</label></th>
+    </tr>
+</thead>
+<tbody>
+
+
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentIncProp</span><a href="NodeTest_testCheckTreeEqualsImplDifferentIncProp_bnq.html">NodeTest.testCheckTreeEqualsImplDifferentIncProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795929</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testFileLevelJSDocAppender</span><a href="NodeTest_testFileLevelJSDocAppender_7kf.html">NodeTest.testFileLevelJSDocAppender</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795935</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testVarArgs2</span><a href="NodeTest_testVarArgs2_f6a.html">NodeTest.testVarArgs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795946</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsSame</span><a href="NodeTest_testCheckTreeTypeAwareEqualsSame_4x9.html">NodeTest.testCheckTreeTypeAwareEqualsSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666470</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.054</span>0.054</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsDifferentNull</span><a href="NodeTest_testCheckTreeTypeAwareEqualsDifferentNull_2zl.html">NodeTest.testCheckTreeTypeAwareEqualsDifferentNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666537</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testGetIndexOfChild</span><a href="NodeTest_testGetIndexOfChild_bh9.html">NodeTest.testGetIndexOfChild</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666536</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsBooleanDifferent</span><a href="NodeTest_testCheckTreeEqualsBooleanDifferent_3sn.html">NodeTest.testCheckTreeEqualsBooleanDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666528</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsBooleanSame</span><a href="NodeTest_testCheckTreeEqualsBooleanSame_at5.html">NodeTest.testCheckTreeEqualsBooleanSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666540</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testQualifiedName</span><a href="NodeTest_testQualifiedName_bp8.html">NodeTest.testQualifiedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795944</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testSharedProps3</span><a href="NodeTest_testSharedProps3_atj.html">NodeTest.testSharedProps3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666529</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplSame</span><a href="NodeTest_testCheckTreeEqualsImplSame_agk.html">NodeTest.testCheckTreeEqualsImplSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795972</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsSlashVDifferent</span><a href="NodeTest_testCheckTreeEqualsSlashVDifferent_9p9.html">NodeTest.testCheckTreeEqualsSlashVDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666528</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplSame</span><a href="NodeTest_testCheckTreeEqualsImplSame_6na.html">NodeTest.testCheckTreeEqualsImplSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666544</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testVarArgs3</span><a href="NodeTest_testVarArgs3_cky.html">NodeTest.testVarArgs3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795946</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testBooleanProp</span><a href="NodeTest_testBooleanProp_eki.html">NodeTest.testBooleanProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795938</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testVarArgs2</span><a href="NodeTest_testVarArgs2_34t.html">NodeTest.testVarArgs2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666527</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testMergeExtractErroneous</span><a href="NodeTest_testMergeExtractErroneous_26q.html">NodeTest.testMergeExtractErroneous</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666545</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsSame</span><a href="NodeTest_testCheckTreeEqualsSame_28n.html">NodeTest.testCheckTreeEqualsSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795926</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testUseSourceInfoIfMissingFrom</span><a href="NodeTest_testUseSourceInfoIfMissingFrom_o0.html">NodeTest.testUseSourceInfoIfMissingFrom</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795943</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCopyInformationFrom</span><a href="NodeTest_testCopyInformationFrom_8iq.html">NodeTest.testCopyInformationFrom</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795942</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentType</span><a href="NodeTest_testCheckTreeEqualsImplDifferentType_dkc.html">NodeTest.testCheckTreeEqualsImplDifferentType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795972</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCloneAnnontations2</span><a href="NodeTest_testCloneAnnontations2_24r.html">NodeTest.testCloneAnnontations2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795941</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentChild</span><a href="NodeTest_testCheckTreeEqualsImplDifferentChild_dzj.html">NodeTest.testCheckTreeEqualsImplDifferentChild</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795925</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testSharedProps3</span><a href="NodeTest_testSharedProps3_42g.html">NodeTest.testSharedProps3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795937</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testBooleanProp</span><a href="NodeTest_testBooleanProp_5ur.html">NodeTest.testBooleanProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666544</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testUseSourceInfoFrom</span><a href="NodeTest_testUseSourceInfoFrom_qt.html">NodeTest.testUseSourceInfoFrom</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795943</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testInvalidSourceOffset</span><a href="NodeTest_testInvalidSourceOffset_b1s.html">NodeTest.testInvalidSourceOffset</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666536</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsStringDifferent</span><a href="NodeTest_testCheckTreeEqualsStringDifferent_btp.html">NodeTest.testCheckTreeEqualsStringDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666538</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsStringDifferent</span><a href="NodeTest_testCheckTreeEqualsStringDifferent_96t.html">NodeTest.testCheckTreeEqualsStringDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795926</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsSame</span><a href="NodeTest_testCheckTreeEqualsSame_3pc.html">NodeTest.testCheckTreeEqualsSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666540</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsBooleanDifferent</span><a href="NodeTest_testCheckTreeEqualsBooleanDifferent_d5t.html">NodeTest.testCheckTreeEqualsBooleanDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795927</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsDifferent</span><a href="NodeTest_testCheckTreeTypeAwareEqualsDifferent_4mk.html">NodeTest.testCheckTreeTypeAwareEqualsDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795932</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testSharedProps2</span><a href="NodeTest_testSharedProps2_b2f.html">NodeTest.testSharedProps2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666529</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testMergeExtractNormal</span><a href="NodeTest_testMergeExtractNormal_e.html">NodeTest.testMergeExtractNormal</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666526</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testVarArgs1</span><a href="NodeTest_testVarArgs1_23b.html">NodeTest.testVarArgs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666527</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsSameNull</span><a href="NodeTest_testCheckTreeTypeAwareEqualsSameNull_ps.html">NodeTest.testCheckTreeTypeAwareEqualsSameNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795931</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testQualifiedName</span><a href="NodeTest_testQualifiedName_b50.html">NodeTest.testQualifiedName</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666541</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentChild</span><a href="NodeTest_testCheckTreeEqualsImplDifferentChild_9f9.html">NodeTest.testCheckTreeEqualsImplDifferentChild</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666541</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testMergeOverflowGraciously</span><a href="NodeTest_testMergeOverflowGraciously_dew.html">NodeTest.testMergeOverflowGraciously</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795947</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.024</span>0.024</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCloneAnnontations2</span><a href="NodeTest_testCloneAnnontations2_8xl.html">NodeTest.testCloneAnnontations2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666462</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.005</span>0.005</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testFileLevelJSDocAppender</span><a href="NodeTest_testFileLevelJSDocAppender_3ca.html">NodeTest.testFileLevelJSDocAppender</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666531</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsSameNull</span><a href="NodeTest_testCheckTreeTypeAwareEqualsSameNull_4vm.html">NodeTest.testCheckTreeTypeAwareEqualsSameNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666534</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testSharedProps2</span><a href="NodeTest_testSharedProps2_4ih.html">NodeTest.testSharedProps2</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795937</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsSlashVDifferent</span><a href="NodeTest_testCheckTreeEqualsSlashVDifferent_du0.html">NodeTest.testCheckTreeEqualsSlashVDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795928</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testInvalidSourceOffset</span><a href="NodeTest_testInvalidSourceOffset_d0m.html">NodeTest.testInvalidSourceOffset</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795944</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testSharedProps1</span><a href="NodeTest_testSharedProps1_ql.html">NodeTest.testSharedProps1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666529</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentChildCount</span><a href="NodeTest_testCheckTreeEqualsImplDifferentChildCount_alc.html">NodeTest.testCheckTreeEqualsImplDifferentChildCount</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666530</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsBooleanSame</span><a href="NodeTest_testCheckTreeEqualsBooleanSame_a0k.html">NodeTest.testCheckTreeEqualsBooleanSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795927</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCloneAnnontations</span><a href="NodeTest_testCloneAnnontations_6ot.html">NodeTest.testCloneAnnontations</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666544</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentType</span><a href="NodeTest_testCheckTreeEqualsImplDifferentType_x9.html">NodeTest.testCheckTreeEqualsImplDifferentType</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666536</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testMergeExtractErroneous</span><a href="NodeTest_testMergeExtractErroneous_7g2.html">NodeTest.testMergeExtractErroneous</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795945</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testUseSourceInfoIfMissingFrom</span><a href="NodeTest_testUseSourceInfoIfMissingFrom_acx.html">NodeTest.testUseSourceInfoIfMissingFrom</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666530</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCopyInformationFrom</span><a href="NodeTest_testCopyInformationFrom_9oe.html">NodeTest.testCopyInformationFrom</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666543</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testGetIndexOfChild</span><a href="NodeTest_testGetIndexOfChild_b85.html">NodeTest.testGetIndexOfChild</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795941</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsSame</span><a href="NodeTest_testCheckTreeTypeAwareEqualsSame_2sm.html">NodeTest.testCheckTreeTypeAwareEqualsSame</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795929</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testUseSourceInfoFrom</span><a href="NodeTest_testUseSourceInfoFrom_24a.html">NodeTest.testUseSourceInfoFrom</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666467</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.002</span>0.002</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsDifferent</span><a href="NodeTest_testCheckTreeTypeAwareEqualsDifferent_4ba.html">NodeTest.testCheckTreeTypeAwareEqualsDifferent</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666525</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCloneAnnontations</span><a href="NodeTest_testCloneAnnontations_e2x.html">NodeTest.testCloneAnnontations</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795936</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testSharedProps1</span><a href="NodeTest_testSharedProps1_5g2.html">NodeTest.testSharedProps1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795936</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testVarArgs1</span><a href="NodeTest_testVarArgs1_1un.html">NodeTest.testVarArgs1</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795947</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testMergeOverflowGraciously</span><a href="NodeTest_testMergeOverflowGraciously_2uv.html">NodeTest.testMergeOverflowGraciously</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666528</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentIncProp</span><a href="NodeTest_testCheckTreeEqualsImplDifferentIncProp_50s.html">NodeTest.testCheckTreeEqualsImplDifferentIncProp</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666543</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testMergeExtractNormal</span><a href="NodeTest_testMergeExtractNormal_16g.html">NodeTest.testMergeExtractNormal</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795924</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeEqualsImplDifferentChildCount</span><a href="NodeTest_testCheckTreeEqualsImplDifferentChildCount_17i.html">NodeTest.testCheckTreeEqualsImplDifferentChildCount</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795924</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.001</span>0.001</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testCheckTreeTypeAwareEqualsDifferentNull</span><a href="NodeTest_testCheckTreeTypeAwareEqualsDifferentNull_75n.html">NodeTest.testCheckTreeTypeAwareEqualsDifferentNull</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697795934</span>2 Jan 15:16:35</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+<tr>
+    <td><span class="sortValue">NodeTest.testVarArgs3</span><a href="NodeTest_testVarArgs3_cm8.html">NodeTest.testVarArgs3</a></td>
+    <td style="whitespace:nowrap;"><span class="sortValue">1672697666527</span>2 Jan 15:14:26</td>
+    <td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+    <td><span class="sortValue">0.0</span>0</td>
+    <td style="width:50%">
+     &#160;     </td>
+</tr>
+
+    </tbody>
+</table>
+
+    </div> <!-- tabs-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Mon Jan 2 2023 15:17:08 MST using coverage data from Mon Jan 2 2023 15:16:37 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

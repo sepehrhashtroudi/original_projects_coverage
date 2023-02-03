@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>Joda-Time 2.4-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('Joda-Time 2.4-SNAPSHOT: org.joda.time.TestChronology.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://www.joda.org/joda-time/" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://www.joda.org/joda-time/" target="_top">
+                                        Joda-Time 2.4-SNAPSHOT
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.joda.time">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Wed Dec 28 2022 16:43:51 MST</a></li> 
+        <li><a href="testsrc-pkg-summary.html">        Package org.joda.time</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File TestChronology.java
+    </h1>
+
+
+
+
+
+
+
+
+        
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+                <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+                <a href="#tabs-file-source"><strong>Source file</strong></a>
+            </li>
+            <li class="menu-item">
+                <a href="test-TestChronology.html"><strong>Test results</strong></a>
+            </li>
+        </ul>
+        <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                        <div style="display: table-cell; ">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">104</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">249</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">169</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">8.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">104</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">249</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">169</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.12</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">8.67</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">12</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="TestChronology">
+        <span><a href="#42" title="TestChronology" onclick="closeDialogAndScrollTo('dialog-TestChronology', '42');">TestChronology</a></span>
+</td>
+<td>42<a name="sl-42"></a></td>
+    <td class="">104</td>
+    <td class="">0%</td>
+    <td class="">12</td>
+    <td class="">2</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.98275864</span>98.3%</div><div style="display: table-cell">
+ <div title="98.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:98.3%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-TestChronology" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-TestChronology" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class TestChronology</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-TestChronology-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-TestChronology-methods-body', 'dialog-TestChronology-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                    <thead>
+                                                 <tr> <th id="TestChronology">
+    Class<br/>    <span><a href="#42" title="TestChronology" onclick="closeDialogAndScrollTo('dialog-TestChronology', '42');">TestChronology</a></span>
+</th>
+<th>Line #<br/>42<a name="sl-42"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>104</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>12</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>2</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.98275864</span>98.3%</div><div style="display: table-cell">
+ <div title="98.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:98.3%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-TestChronology-methods-body">
+                                                                                                            <tr id="TestChronology-1">
+<td id="summary-78-5">
+ <span class="sortValue">main(String[])&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#78" title="main(String[])&#160;:&#160;void" name="sl-78" onclick="closeDialogAndScrollTo('dialog-TestChronology', '78');">main(String[])&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">78</span>78</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-2">
+<td id="summary-82-5">
+ <span class="sortValue">suite()&#160;:&#160;TestSuite</span>
+&#160;&#160;<a href="?line=29#82" title="suite()&#160;:&#160;TestSuite" name="sl-82" onclick="closeDialogAndScrollTo('dialog-TestChronology', '82');">suite()&#160;:&#160;TestSuite</a>
+</td>
+<td align="right"><span class="sortValue">82</span>82</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-3">
+<td id="summary-86-5">
+ <span class="sortValue">TestChronology(String)</span>
+&#160;&#160;<a href="?line=29#86" title="TestChronology(String)" name="sl-86" onclick="closeDialogAndScrollTo('dialog-TestChronology', '86');">TestChronology(String)</a>
+</td>
+<td align="right"><span class="sortValue">86</span>86</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-4">
+<td id="summary-90-5">
+ <span class="sortValue">setUp()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#90" title="setUp()&#160;:&#160;void" name="sl-90" onclick="closeDialogAndScrollTo('dialog-TestChronology', '90');">setUp()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">90</span>90</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-5">
+<td id="summary-100-5">
+ <span class="sortValue">tearDown()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#100" title="tearDown()&#160;:&#160;void" name="sl-100" onclick="closeDialogAndScrollTo('dialog-TestChronology', '100');">tearDown()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">100</span>100</td>
+<td class="" align="right"><span class="sortValue">7.0</span>7</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-6">
+<td id="summary-111-5">
+ <span class="sortValue">testTest()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#111" title="testTest()&#160;:&#160;void" name="sl-111" onclick="closeDialogAndScrollTo('dialog-TestChronology', '111');">testTest()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">111</span>111</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-7">
+<td id="summary-118-5">
+ <span class="sortValue">testEqualsHashCode_ISO()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#118" title="testEqualsHashCode_ISO()&#160;:&#160;void" name="sl-118" onclick="closeDialogAndScrollTo('dialog-TestChronology', '118');">testEqualsHashCode_ISO()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">118</span>118</td>
+<td class="" align="right"><span class="sortValue">12.0</span>12</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-8">
+<td id="summary-138-5">
+ <span class="sortValue">testEqualsHashCode_Lenient()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#138" title="testEqualsHashCode_Lenient()&#160;:&#160;void" name="sl-138" onclick="closeDialogAndScrollTo('dialog-TestChronology', '138');">testEqualsHashCode_Lenient()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">138</span>138</td>
+<td class="" align="right"><span class="sortValue">12.0</span>12</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-9">
+<td id="summary-158-5">
+ <span class="sortValue">testEqualsHashCode_Strict()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#158" title="testEqualsHashCode_Strict()&#160;:&#160;void" name="sl-158" onclick="closeDialogAndScrollTo('dialog-TestChronology', '158');">testEqualsHashCode_Strict()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">158</span>158</td>
+<td class="" align="right"><span class="sortValue">12.0</span>12</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-10">
+<td id="summary-178-5">
+ <span class="sortValue">testEqualsHashCode_Limit()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#178" title="testEqualsHashCode_Limit()&#160;:&#160;void" name="sl-178" onclick="closeDialogAndScrollTo('dialog-TestChronology', '178');">testEqualsHashCode_Limit()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">178</span>178</td>
+<td class="" align="right"><span class="sortValue">20.0</span>20</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-11">
+<td id="summary-207-5">
+ <span class="sortValue">testEqualsHashCode_Zoned()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#207" title="testEqualsHashCode_Zoned()&#160;:&#160;void" name="sl-207" onclick="closeDialogAndScrollTo('dialog-TestChronology', '207');">testEqualsHashCode_Zoned()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">207</span>207</td>
+<td class="" align="right"><span class="sortValue">14.0</span>14</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TestChronology-12">
+<td id="summary-230-5">
+ <span class="sortValue">testToString()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#230" title="testToString()&#160;:&#160;void" name="sl-230" onclick="closeDialogAndScrollTo('dialog-TestChronology', '230');">testToString()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">230</span>230</td>
+<td class="" align="right"><span class="sortValue">14.0</span>14</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-TestChronology">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 7 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-2994">
+<td><a name="testA-2994"></a><input type="checkbox" id="cb-2994" value="2994" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/joda/time/TestChronology_testEqualsHashCode_Limit_2b6.html';">
+<span class="sortValue">0.18103448</span>
+<div>
+<div title="18.1% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.1%"></div></div></div></td>
+<td id="tc-2994">  <span class="sortValue">org.joda.time.TestChronology.testEqualsHashCode_Limit</span><a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Limit_2b6.html" title="View Test Summary Page">org.joda.time.TestChronology.testEqualsHashCode_Limit</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/joda/time/TestChronology.html?line=178#src-178" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Limit_2b6.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1786">
+<td><a name="testA-1786"></a><input type="checkbox" id="cb-1786" value="1786" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/joda/time/TestChronology_testToString_1dm.html';">
+<span class="sortValue">0.12931034</span>
+<div>
+<div title="12.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12.9%"></div></div></div></td>
+<td id="tc-1786">  <span class="sortValue">org.joda.time.TestChronology.testToString</span><a href="../../../org/joda/time/TestChronology_testToString_1dm.html" title="View Test Summary Page">org.joda.time.TestChronology.testToString</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/joda/time/TestChronology.html?line=230#src-230" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/joda/time/TestChronology_testToString_1dm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-2870">
+<td><a name="testA-2870"></a><input type="checkbox" id="cb-2870" value="2870" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/joda/time/TestChronology_testEqualsHashCode_Zoned_27q.html';">
+<span class="sortValue">0.12931034</span>
+<div>
+<div title="12.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12.9%"></div></div></div></td>
+<td id="tc-2870">  <span class="sortValue">org.joda.time.TestChronology.testEqualsHashCode_Zoned</span><a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Zoned_27q.html" title="View Test Summary Page">org.joda.time.TestChronology.testEqualsHashCode_Zoned</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/joda/time/TestChronology.html?line=207#src-207" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Zoned_27q.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3688">
+<td><a name="testA-3688"></a><input type="checkbox" id="cb-3688" value="3688" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/joda/time/TestChronology_testEqualsHashCode_Strict_2ug.html';">
+<span class="sortValue">0.112068966</span>
+<div>
+<div title="11.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:11.2%"></div></div></div></td>
+<td id="tc-3688">  <span class="sortValue">org.joda.time.TestChronology.testEqualsHashCode_Strict</span><a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Strict_2ug.html" title="View Test Summary Page">org.joda.time.TestChronology.testEqualsHashCode_Strict</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/joda/time/TestChronology.html?line=158#src-158" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Strict_2ug.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-4032">
+<td><a name="testA-4032"></a><input type="checkbox" id="cb-4032" value="4032" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/joda/time/TestChronology_testEqualsHashCode_ISO_340.html';">
+<span class="sortValue">0.112068966</span>
+<div>
+<div title="11.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:11.2%"></div></div></div></td>
+<td id="tc-4032">  <span class="sortValue">org.joda.time.TestChronology.testEqualsHashCode_ISO</span><a href="../../../org/joda/time/TestChronology_testEqualsHashCode_ISO_340.html" title="View Test Summary Page">org.joda.time.TestChronology.testEqualsHashCode_ISO</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/joda/time/TestChronology.html?line=118#src-118" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/joda/time/TestChronology_testEqualsHashCode_ISO_340.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1489">
+<td><a name="testA-1489"></a><input type="checkbox" id="cb-1489" value="1489" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/joda/time/TestChronology_testEqualsHashCode_Lenient_15d.html';">
+<span class="sortValue">0.112068966</span>
+<div>
+<div title="11.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:11.2%"></div></div></div></td>
+<td id="tc-1489">  <span class="sortValue">org.joda.time.TestChronology.testEqualsHashCode_Lenient</span><a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Lenient_15d.html" title="View Test Summary Page">org.joda.time.TestChronology.testEqualsHashCode_Lenient</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/joda/time/TestChronology.html?line=138#src-138" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/joda/time/TestChronology_testEqualsHashCode_Lenient_15d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-3279">
+<td><a name="testA-3279"></a><input type="checkbox" id="cb-3279" value="3279" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/joda/time/TestChronology_testTest_2j3.html';">
+<span class="sortValue">0.03448276</span>
+<div>
+<div title="3.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:3.4%"></div></div></div></td>
+<td id="tc-3279">  <span class="sortValue">org.joda.time.TestChronology.testTest</span><a href="../../../org/joda/time/TestChronology_testTest_2j3.html" title="View Test Summary Page">org.joda.time.TestChronology.testTest</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/joda/time/TestChronology.html?line=111#src-111" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/joda/time/TestChronology_testTest_2j3.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> *  Copyright 2001-2005 Stephen Colebourne</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> *  Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> *  you may not use this file except in compliance with the License.</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> *  You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> *      http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> *  Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> *  distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> *  See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> *  limitations under the License.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="keyword">package</span> org.joda.<a href="../time/pkg-summary.html">time</a>;</span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="keyword">import</span> java.util.Locale;</span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">import</span> java.util.TimeZone;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> junit.framework.TestCase;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">import</span> junit.framework.TestSuite;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/BuddhistChronology.html#BuddhistChronology">BuddhistChronology</a>;</span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/CopticChronology.html#CopticChronology">CopticChronology</a>;</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/EthiopicChronology.html#EthiopicChronology">EthiopicChronology</a>;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/GJChronology.html#GJChronology">GJChronology</a>;</span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/GregorianChronology.html#GregorianChronology">GregorianChronology</a>;</span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>;</span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/IslamicChronology.html#IslamicChronology">IslamicChronology</a>;</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/JulianChronology.html#JulianChronology">JulianChronology</a>;</span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/LenientChronology.html#LenientChronology">LenientChronology</a>;</span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/LimitChronology.html#LimitChronology">LimitChronology</a>;</span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/StrictChronology.html#StrictChronology">StrictChronology</a>;</span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine"><span class="keyword">import</span> org.joda.<a href="../time/pkg-summary.html">time</a>.<a href="../time/chrono/pkg-summary.html">chrono</a>.<a href="../../../org/joda/time/chrono/ZonedChronology.html#ZonedChronology">ZonedChronology</a>;</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="comment"> * This class is a Junit unit test for Chronology.</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="comment"> *</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> Stephen Colebourne</span></span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="42" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-42' onclick="toggleInlineStats(this, 'inlinestats-42');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-42" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-42'), 'inlinestats-42');return true;">
+                <td><div>
+<div title="98.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:98.3%"></div></div></div></td><td>98.3%</td>
+                <td class="inlineStat">Uncovered Elements: 2 (116)</td>
+                <td class="inlineStat">Complexity: 12</td>
+                <td class="inlineStat">Complexity Density: 0.12</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 42, 'Tests that hit TestChronology');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-42"><span class="spacer"></span><span id="src-42" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../org/joda/time/TestChronology.html#TestChronology">TestChronology</a> <span class="keyword">extends</span> TestCase {</span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">    <span class="comment">// Test in 2002/03 as time zones are more well known</span></span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine">    <span class="comment">// (before the late 90's they were all over the place)</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine"></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"><span class="comment">//    private static final DateTimeZone PARIS = DateTimeZone.forID(&quot;Europe/Paris&quot;);</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a> LONDON = <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.forID(<span class="string">&quot;Europe/London&quot;</span>);</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine">    </span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine">    <span class="keyword">long</span> y2002days = 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + </span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">                     366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + </span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">                     365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 +</span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine">                     366 + 365;</span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">    <span class="keyword">long</span> y2003days = 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + </span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine">                     366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + </span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine">                     365 + 365 + 366 + 365 + 365 + 365 + 366 + 365 + 365 + 365 +</span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">                     366 + 365 + 365;</span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">    </span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine">    <span class="comment">// 2002-06-09</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine">    <span class="keyword">private</span> <span class="keyword">long</span> TEST_TIME_NOW =</span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine">            (y2002days + 31L + 28L + 31L + 30L + 31L + 9L -1L) * <a href="../../../org/joda/time/DateTimeConstants.html#DateTimeConstants">DateTimeConstants</a>.MILLIS_PER_DAY;</span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">            </span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine">    <span class="comment">// 2002-04-05</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine">    <span class="keyword">private</span> <span class="keyword">long</span> TEST_TIME1 =</span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine">            (y2002days + 31L + 28L + 31L + 5L -1L) * <a href="../../../org/joda/time/DateTimeConstants.html#DateTimeConstants">DateTimeConstants</a>.MILLIS_PER_DAY</span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine">            + 12L * <a href="../../../org/joda/time/DateTimeConstants.html#DateTimeConstants">DateTimeConstants</a>.MILLIS_PER_HOUR</span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine">            + 24L * <a href="../../../org/joda/time/DateTimeConstants.html#DateTimeConstants">DateTimeConstants</a>.MILLIS_PER_MINUTE;</span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine">        </span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine">    <span class="comment">// 2003-05-06</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine">    <span class="keyword">private</span> <span class="keyword">long</span> TEST_TIME2 =</span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine">            (y2003days + 31L + 28L + 31L + 30L + 6L -1L) * <a href="../../../org/joda/time/DateTimeConstants.html#DateTimeConstants">DateTimeConstants</a>.MILLIS_PER_DAY</span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine">            + 14L * <a href="../../../org/joda/time/DateTimeConstants.html#DateTimeConstants">DateTimeConstants</a>.MILLIS_PER_HOUR</span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">            + 28L * <a href="../../../org/joda/time/DateTimeConstants.html#DateTimeConstants">DateTimeConstants</a>.MILLIS_PER_MINUTE;</span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine">    </span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">    <span class="keyword">private</span> <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a> originalDateTimeZone = <span class="keyword">null</span>;</span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine">    <span class="keyword">private</span> TimeZone originalTimeZone = <span class="keyword">null</span>;</span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine">    <span class="keyword">private</span> Locale originalLocale = <span class="keyword">null</span>;</span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="78" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-78' onclick="toggleInlineStats(this, 'inlinestats-78');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-78" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-78'), 'inlinestats-78');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l78">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 78, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-78"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 78,80);" id="img-78" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-78" class="srcLineHilight"><span class="nolink" title="Line 78, Col 5: method not entered.">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> main(String[] args) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-78'), 78,80);" id="e78" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 79, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLineHilight"><span class="nolink" title="Line 79, Col 9: statement not executed.">        junit.textui.TestRunner.run(suite());</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="82" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-82' onclick="toggleInlineStats(this, 'inlinestats-82');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-82" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-82'), 'inlinestats-82');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l82">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 82, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-82"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 82,84);" id="img-82" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-82" class="srcLine"><span class="nolink" title="Line 82, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">static</span> TestSuite suite() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-82'), 82,84);" id="e82" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 83, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="nolink" title="Line 83, Col 9: statement executed 1 time.">        <span class="keyword">return</span> <span class="keyword">new</span> TestSuite(<a href="../../../org/joda/time/TestChronology.html#TestChronology">TestChronology</a>.<span class="keyword">class</span>);</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="86" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-86' onclick="toggleInlineStats(this, 'inlinestats-86');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-86" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-86'), 'inlinestats-86');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l86">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 86, Col 5: method entered 7 times." class="nolink">&#160;7</span></td>
+<td class=" methodStart  srcCell" id="id-86"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 86,88);" id="img-86" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-86" class="srcLine"><span class="nolink" title="Line 86, Col 5: method entered 7 times.">    <span class="keyword">public</span> <a href="../../../org/joda/time/TestChronology.html#TestChronology">TestChronology</a>(String name) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-86'), 86,88);" id="e86" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 87, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"><span class="nolink" title="Line 87, Col 9: statement executed 7 times.">        <span class="keyword">super</span>(name);</span></span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="90" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-90' onclick="toggleInlineStats(this, 'inlinestats-90');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-90" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-90'), 'inlinestats-90');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (7)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.14</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l90">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 90, Col 5: method entered 7 times." class="nolink">&#160;7</span></td>
+<td class=" methodStart  srcCell" id="id-90"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 90,98);" id="img-90" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-90" class="srcLine"><span class="nolink" title="Line 90, Col 5: method entered 7 times.">    <span class="keyword">protected</span> <span class="keyword">void</span> setUp() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-90'), 90,98);" id="e90" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 91, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 9: statement executed 7 times.">        <a href="../../../org/joda/time/DateTimeUtils.html#DateTimeUtils">DateTimeUtils</a>.setCurrentMillisFixed(TEST_TIME_NOW);</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 92, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine"><span class="nolink" title="Line 92, Col 9: statement executed 7 times.">        originalDateTimeZone = <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.getDefault();</span></span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 93, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine"><span class="nolink" title="Line 93, Col 9: statement executed 7 times.">        originalTimeZone = TimeZone.getDefault();</span></span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 94, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 9: statement executed 7 times.">        originalLocale = Locale.getDefault();</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 95, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine"><span class="nolink" title="Line 95, Col 9: statement executed 7 times.">        <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.setDefault(LONDON);</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 96, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="nolink" title="Line 96, Col 9: statement executed 7 times.">        TimeZone.setDefault(TimeZone.getTimeZone(<span class="string">&quot;Europe/London&quot;</span>));</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 97, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 9: statement executed 7 times.">        Locale.setDefault(Locale.UK);</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="100" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-100' onclick="toggleInlineStats(this, 'inlinestats-100');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-100" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-100'), 'inlinestats-100');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (7)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.14</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l100">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 100, Col 5: method entered 7 times." class="nolink">&#160;7</span></td>
+<td class=" methodStart  srcCell" id="id-100"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 100,108);" id="img-100" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-100" class="srcLine"><span class="nolink" title="Line 100, Col 5: method entered 7 times.">    <span class="keyword">protected</span> <span class="keyword">void</span> tearDown() <span class="keyword">throws</span> Exception {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-100'), 100,108);" id="e100" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 101, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 9: statement executed 7 times.">        <a href="../../../org/joda/time/DateTimeUtils.html#DateTimeUtils">DateTimeUtils</a>.setCurrentMillisSystem();</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 102, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine"><span class="nolink" title="Line 102, Col 9: statement executed 7 times.">        <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.setDefault(originalDateTimeZone);</span></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 103, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine"><span class="nolink" title="Line 103, Col 9: statement executed 7 times.">        TimeZone.setDefault(originalTimeZone);</span></span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 104, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"><span class="nolink" title="Line 104, Col 9: statement executed 7 times.">        Locale.setDefault(originalLocale);</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 105, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine"><span class="nolink" title="Line 105, Col 9: statement executed 7 times.">        originalDateTimeZone = <span class="keyword">null</span>;</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 106, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 9: statement executed 7 times.">        originalTimeZone = <span class="keyword">null</span>;</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount Good missedByTest"   ><span title="Line 107, Col 9: statement executed 7 times." class="nolink">&#160;7</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"><span class="nolink" title="Line 107, Col 9: statement executed 7 times.">        originalLocale = <span class="keyword">null</span>;</span></span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine"></span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="111" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-111' onclick="toggleInlineStats(this, 'inlinestats-111');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-111" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-111'), 'inlinestats-111');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l111">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 111, 'Tests that hit testTest()&#160;:&#160;void');" ><span title="Line 111, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-111"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 111,115);" id="img-111" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-111" class="srcLine"><span class="nolink" title="Line 111, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">void</span> testTest() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-111'), 111,115);" id="e111" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 112, 'Tests that hit line # 112');" ><span title="Line 112, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine"><span class="nolink" title="Line 112, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;2002-06-09T00:00:00.000Z&quot;</span>, <span class="keyword">new</span> <a href="../../../org/joda/time/Instant.html#Instant">Instant</a>(TEST_TIME_NOW).toString());</span></span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 113, 'Tests that hit line # 113');" ><span title="Line 113, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine"><span class="nolink" title="Line 113, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;2002-04-05T12:24:00.000Z&quot;</span>, <span class="keyword">new</span> <a href="../../../org/joda/time/Instant.html#Instant">Instant</a>(TEST_TIME1).toString());</span></span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;2003-05-06T14:28:00.000Z&quot;</span>, <span class="keyword">new</span> <a href="../../../org/joda/time/Instant.html#Instant">Instant</a>(TEST_TIME2).toString());</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="118" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-118' onclick="toggleInlineStats(this, 'inlinestats-118');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-118" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-118'), 'inlinestats-118');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (12)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.08</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l118">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 118, 'Tests that hit testEqualsHashCode_ISO()&#160;:&#160;void');" ><span title="Line 118, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-118"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 118,135);" id="img-118" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-118" class="srcLine"><span class="nolink" title="Line 118, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">void</span> testEqualsHashCode_ISO() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-118'), 118,135);" id="e118" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 119, 'Tests that hit line # 119');" ><span title="Line 119, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine"><span class="nolink" title="Line 119, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono1 = <a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC();</span></span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 120, 'Tests that hit line # 120');" ><span title="Line 120, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine"><span class="nolink" title="Line 120, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono2 = <a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC();</span></span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 121, 'Tests that hit line # 121');" ><span title="Line 121, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine"><span class="nolink" title="Line 121, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono3 = <a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstance();</span></span></td>
+</tr>
+ <tr id="l122">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-122" class="srcLine">        </span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 123, 'Tests that hit line # 123');" ><span title="Line 123, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLine"><span class="nolink" title="Line 123, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.equals(chrono2));</span></span></td>
+</tr>
+ <tr id="l124">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 124, 'Tests that hit line # 124');" ><span title="Line 124, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-124" class="srcLine"><span class="nolink" title="Line 124, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.equals(chrono3));</span></span></td>
+</tr>
+ <tr id="l125">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-125" class="srcLine">        </span></td>
+</tr>
+ <tr id="l126">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=126#src-126">126</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 126, 'Tests that hit line # 126');" ><span title="Line 126, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-126" class="srcLine"><span class="nolink" title="Line 126, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt1 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono1);</span></span></td>
+</tr>
+ <tr id="l127">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=127#src-127">127</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 127, 'Tests that hit line # 127');" ><span title="Line 127, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-127" class="srcLine"><span class="nolink" title="Line 127, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt2 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono2);</span></span></td>
+</tr>
+ <tr id="l128">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=128#src-128">128</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 128, 'Tests that hit line # 128');" ><span title="Line 128, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-128" class="srcLine"><span class="nolink" title="Line 128, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt3 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono3);</span></span></td>
+</tr>
+ <tr id="l129">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=129#src-129">129</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-129" class="srcLine">        </span></td>
+</tr>
+ <tr id="l130">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=130#src-130">130</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 130, 'Tests that hit line # 130');" ><span title="Line 130, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-130" class="srcLine"><span class="nolink" title="Line 130, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, dt1.equals(dt2));</span></span></td>
+</tr>
+ <tr id="l131">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=131#src-131">131</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 131, 'Tests that hit line # 131');" ><span title="Line 131, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-131" class="srcLine"><span class="nolink" title="Line 131, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, dt1.equals(dt3));</span></span></td>
+</tr>
+ <tr id="l132">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=132#src-132">132</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-132" class="srcLine">        </span></td>
+</tr>
+ <tr id="l133">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=133#src-133">133</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 133, 'Tests that hit line # 133');" ><span title="Line 133, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-133" class="srcLine"><span class="nolink" title="Line 133, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.hashCode() == chrono2.hashCode());</span></span></td>
+</tr>
+ <tr id="l134">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=134#src-134">134</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 134, 'Tests that hit line # 134');" ><span title="Line 134, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-134" class="srcLine"><span class="nolink" title="Line 134, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.hashCode() == chrono3.hashCode());</span></span></td>
+</tr>
+ <tr id="l135">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=135#src-135">135</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-135" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l136">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=136#src-136">136</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-136" class="srcLine"></span></td>
+</tr>
+ <tr id="l137">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=137#src-137">137</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-137" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="138" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-138' onclick="toggleInlineStats(this, 'inlinestats-138');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-138" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-138'), 'inlinestats-138');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (12)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.08</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l138">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=138#src-138">138</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 138, 'Tests that hit testEqualsHashCode_Lenient()&#160;:&#160;void');" ><span title="Line 138, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-138"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 138,155);" id="img-138" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-138" class="srcLine"><span class="nolink" title="Line 138, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">void</span> testEqualsHashCode_Lenient() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-138'), 138,155);" id="e138" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l139">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=139#src-139">139</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 139, 'Tests that hit line # 139');" ><span title="Line 139, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-139" class="srcLine"><span class="nolink" title="Line 139, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono1 = <a href="../../../org/joda/time/chrono/LenientChronology.html#LenientChronology">LenientChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC());</span></span></td>
+</tr>
+ <tr id="l140">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=140#src-140">140</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 140, 'Tests that hit line # 140');" ><span title="Line 140, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-140" class="srcLine"><span class="nolink" title="Line 140, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono2 = <a href="../../../org/joda/time/chrono/LenientChronology.html#LenientChronology">LenientChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC());</span></span></td>
+</tr>
+ <tr id="l141">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=141#src-141">141</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 141, 'Tests that hit line # 141');" ><span title="Line 141, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-141" class="srcLine"><span class="nolink" title="Line 141, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono3 = <a href="../../../org/joda/time/chrono/LenientChronology.html#LenientChronology">LenientChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstance());</span></span></td>
+</tr>
+ <tr id="l142">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=142#src-142">142</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-142" class="srcLine">        </span></td>
+</tr>
+ <tr id="l143">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=143#src-143">143</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 143, 'Tests that hit line # 143');" ><span title="Line 143, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-143" class="srcLine"><span class="nolink" title="Line 143, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.equals(chrono2));</span></span></td>
+</tr>
+ <tr id="l144">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=144#src-144">144</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 144, 'Tests that hit line # 144');" ><span title="Line 144, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-144" class="srcLine"><span class="nolink" title="Line 144, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.equals(chrono3));</span></span></td>
+</tr>
+ <tr id="l145">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=145#src-145">145</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-145" class="srcLine">        </span></td>
+</tr>
+ <tr id="l146">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=146#src-146">146</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 146, 'Tests that hit line # 146');" ><span title="Line 146, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-146" class="srcLine"><span class="nolink" title="Line 146, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt1 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono1);</span></span></td>
+</tr>
+ <tr id="l147">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=147#src-147">147</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 147, 'Tests that hit line # 147');" ><span title="Line 147, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-147" class="srcLine"><span class="nolink" title="Line 147, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt2 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono2);</span></span></td>
+</tr>
+ <tr id="l148">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=148#src-148">148</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 148, 'Tests that hit line # 148');" ><span title="Line 148, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-148" class="srcLine"><span class="nolink" title="Line 148, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt3 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono3);</span></span></td>
+</tr>
+ <tr id="l149">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=149#src-149">149</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-149" class="srcLine">        </span></td>
+</tr>
+ <tr id="l150">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=150#src-150">150</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 150, 'Tests that hit line # 150');" ><span title="Line 150, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-150" class="srcLine"><span class="nolink" title="Line 150, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, dt1.equals(dt2));</span></span></td>
+</tr>
+ <tr id="l151">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=151#src-151">151</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 151, 'Tests that hit line # 151');" ><span title="Line 151, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-151" class="srcLine"><span class="nolink" title="Line 151, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, dt1.equals(dt3));</span></span></td>
+</tr>
+ <tr id="l152">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=152#src-152">152</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-152" class="srcLine">        </span></td>
+</tr>
+ <tr id="l153">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=153#src-153">153</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 153, 'Tests that hit line # 153');" ><span title="Line 153, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-153" class="srcLine"><span class="nolink" title="Line 153, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.hashCode() == chrono2.hashCode());</span></span></td>
+</tr>
+ <tr id="l154">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=154#src-154">154</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 154, 'Tests that hit line # 154');" ><span title="Line 154, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-154" class="srcLine"><span class="nolink" title="Line 154, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.hashCode() == chrono3.hashCode());</span></span></td>
+</tr>
+ <tr id="l155">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=155#src-155">155</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-155" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l156">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=156#src-156">156</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-156" class="srcLine"></span></td>
+</tr>
+ <tr id="l157">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=157#src-157">157</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-157" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="158" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-158' onclick="toggleInlineStats(this, 'inlinestats-158');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-158" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-158'), 'inlinestats-158');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (12)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.08</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l158">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=158#src-158">158</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 158, 'Tests that hit testEqualsHashCode_Strict()&#160;:&#160;void');" ><span title="Line 158, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-158"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 158,175);" id="img-158" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-158" class="srcLine"><span class="nolink" title="Line 158, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">void</span> testEqualsHashCode_Strict() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-158'), 158,175);" id="e158" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l159">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=159#src-159">159</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 159, 'Tests that hit line # 159');" ><span title="Line 159, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-159" class="srcLine"><span class="nolink" title="Line 159, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono1 = <a href="../../../org/joda/time/chrono/StrictChronology.html#StrictChronology">StrictChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC());</span></span></td>
+</tr>
+ <tr id="l160">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=160#src-160">160</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 160, 'Tests that hit line # 160');" ><span title="Line 160, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-160" class="srcLine"><span class="nolink" title="Line 160, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono2 = <a href="../../../org/joda/time/chrono/StrictChronology.html#StrictChronology">StrictChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC());</span></span></td>
+</tr>
+ <tr id="l161">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=161#src-161">161</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 161, 'Tests that hit line # 161');" ><span title="Line 161, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-161" class="srcLine"><span class="nolink" title="Line 161, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono3 = <a href="../../../org/joda/time/chrono/StrictChronology.html#StrictChronology">StrictChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstance());</span></span></td>
+</tr>
+ <tr id="l162">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=162#src-162">162</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-162" class="srcLine">        </span></td>
+</tr>
+ <tr id="l163">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=163#src-163">163</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 163, 'Tests that hit line # 163');" ><span title="Line 163, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-163" class="srcLine"><span class="nolink" title="Line 163, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.equals(chrono2));</span></span></td>
+</tr>
+ <tr id="l164">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=164#src-164">164</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 164, 'Tests that hit line # 164');" ><span title="Line 164, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-164" class="srcLine"><span class="nolink" title="Line 164, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.equals(chrono3));</span></span></td>
+</tr>
+ <tr id="l165">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=165#src-165">165</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-165" class="srcLine">        </span></td>
+</tr>
+ <tr id="l166">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=166#src-166">166</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 166, 'Tests that hit line # 166');" ><span title="Line 166, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-166" class="srcLine"><span class="nolink" title="Line 166, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt1 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono1);</span></span></td>
+</tr>
+ <tr id="l167">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=167#src-167">167</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 167, 'Tests that hit line # 167');" ><span title="Line 167, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-167" class="srcLine"><span class="nolink" title="Line 167, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt2 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono2);</span></span></td>
+</tr>
+ <tr id="l168">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=168#src-168">168</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 168, 'Tests that hit line # 168');" ><span title="Line 168, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-168" class="srcLine"><span class="nolink" title="Line 168, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt3 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono3);</span></span></td>
+</tr>
+ <tr id="l169">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=169#src-169">169</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-169" class="srcLine">        </span></td>
+</tr>
+ <tr id="l170">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=170#src-170">170</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 170, 'Tests that hit line # 170');" ><span title="Line 170, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-170" class="srcLine"><span class="nolink" title="Line 170, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, dt1.equals(dt2));</span></span></td>
+</tr>
+ <tr id="l171">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=171#src-171">171</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 171, 'Tests that hit line # 171');" ><span title="Line 171, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-171" class="srcLine"><span class="nolink" title="Line 171, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, dt1.equals(dt3));</span></span></td>
+</tr>
+ <tr id="l172">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=172#src-172">172</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-172" class="srcLine">        </span></td>
+</tr>
+ <tr id="l173">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=173#src-173">173</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 173, 'Tests that hit line # 173');" ><span title="Line 173, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-173" class="srcLine"><span class="nolink" title="Line 173, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.hashCode() == chrono2.hashCode());</span></span></td>
+</tr>
+ <tr id="l174">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=174#src-174">174</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 174, 'Tests that hit line # 174');" ><span title="Line 174, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-174" class="srcLine"><span class="nolink" title="Line 174, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.hashCode() == chrono3.hashCode());</span></span></td>
+</tr>
+ <tr id="l175">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=175#src-175">175</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-175" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l176">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=176#src-176">176</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-176" class="srcLine"></span></td>
+</tr>
+ <tr id="l177">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=177#src-177">177</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-177" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="178" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-178' onclick="toggleInlineStats(this, 'inlinestats-178');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-178" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-178'), 'inlinestats-178');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (20)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.05</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l178">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=178#src-178">178</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 178, 'Tests that hit testEqualsHashCode_Limit()&#160;:&#160;void');" ><span title="Line 178, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-178"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 178,204);" id="img-178" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-178" class="srcLine"><span class="nolink" title="Line 178, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">void</span> testEqualsHashCode_Limit() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-178'), 178,204);" id="e178" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l179">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=179#src-179">179</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 179, 'Tests that hit line # 179');" ><span title="Line 179, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-179" class="srcLine"><span class="nolink" title="Line 179, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> lower = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L);</span></span></td>
+</tr>
+ <tr id="l180">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=180#src-180">180</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 180, 'Tests that hit line # 180');" ><span title="Line 180, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-180" class="srcLine"><span class="nolink" title="Line 180, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> higherA = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(1000000L);</span></span></td>
+</tr>
+ <tr id="l181">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=181#src-181">181</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 181, 'Tests that hit line # 181');" ><span title="Line 181, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-181" class="srcLine"><span class="nolink" title="Line 181, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> higherB = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(2000000L);</span></span></td>
+</tr>
+ <tr id="l182">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=182#src-182">182</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-182" class="srcLine">        </span></td>
+</tr>
+ <tr id="l183">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=183#src-183">183</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 183, 'Tests that hit line # 183');" ><span title="Line 183, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-183" class="srcLine"><span class="nolink" title="Line 183, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono1 = <a href="../../../org/joda/time/chrono/LimitChronology.html#LimitChronology">LimitChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC(), lower, higherA);</span></span></td>
+</tr>
+ <tr id="l184">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=184#src-184">184</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 184, 'Tests that hit line # 184');" ><span title="Line 184, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-184" class="srcLine"><span class="nolink" title="Line 184, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono2A = <a href="../../../org/joda/time/chrono/LimitChronology.html#LimitChronology">LimitChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC(), lower, higherA);</span></span></td>
+</tr>
+ <tr id="l185">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=185#src-185">185</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 185, 'Tests that hit line # 185');" ><span title="Line 185, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-185" class="srcLine"><span class="nolink" title="Line 185, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono2B = <a href="../../../org/joda/time/chrono/LimitChronology.html#LimitChronology">LimitChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC(), lower, higherB);</span></span></td>
+</tr>
+ <tr id="l186">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=186#src-186">186</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 186, 'Tests that hit line # 186');" ><span title="Line 186, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-186" class="srcLine"><span class="nolink" title="Line 186, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono3 = <a href="../../../org/joda/time/chrono/LimitChronology.html#LimitChronology">LimitChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstance(), lower, higherA);</span></span></td>
+</tr>
+ <tr id="l187">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=187#src-187">187</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-187" class="srcLine">        </span></td>
+</tr>
+ <tr id="l188">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=188#src-188">188</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 188, 'Tests that hit line # 188');" ><span title="Line 188, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-188" class="srcLine"><span class="nolink" title="Line 188, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.equals(chrono2A));</span></span></td>
+</tr>
+ <tr id="l189">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=189#src-189">189</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 189, 'Tests that hit line # 189');" ><span title="Line 189, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-189" class="srcLine"><span class="nolink" title="Line 189, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.equals(chrono2B));</span></span></td>
+</tr>
+ <tr id="l190">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=190#src-190">190</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 190, 'Tests that hit line # 190');" ><span title="Line 190, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-190" class="srcLine"><span class="nolink" title="Line 190, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.equals(chrono3));</span></span></td>
+</tr>
+ <tr id="l191">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=191#src-191">191</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-191" class="srcLine">        </span></td>
+</tr>
+ <tr id="l192">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=192#src-192">192</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 192, 'Tests that hit line # 192');" ><span title="Line 192, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-192" class="srcLine"><span class="nolink" title="Line 192, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt1 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono1);</span></span></td>
+</tr>
+ <tr id="l193">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=193#src-193">193</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 193, 'Tests that hit line # 193');" ><span title="Line 193, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-193" class="srcLine"><span class="nolink" title="Line 193, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt2A = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono2A);</span></span></td>
+</tr>
+ <tr id="l194">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=194#src-194">194</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 194, 'Tests that hit line # 194');" ><span title="Line 194, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-194" class="srcLine"><span class="nolink" title="Line 194, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt2B = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono2B);</span></span></td>
+</tr>
+ <tr id="l195">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=195#src-195">195</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 195, 'Tests that hit line # 195');" ><span title="Line 195, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-195" class="srcLine"><span class="nolink" title="Line 195, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt3 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono3);</span></span></td>
+</tr>
+ <tr id="l196">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=196#src-196">196</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-196" class="srcLine">        </span></td>
+</tr>
+ <tr id="l197">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=197#src-197">197</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 197, 'Tests that hit line # 197');" ><span title="Line 197, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-197" class="srcLine"><span class="nolink" title="Line 197, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, dt1.equals(dt2A));</span></span></td>
+</tr>
+ <tr id="l198">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=198#src-198">198</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 198, 'Tests that hit line # 198');" ><span title="Line 198, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-198" class="srcLine"><span class="nolink" title="Line 198, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, dt1.equals(dt2B));</span></span></td>
+</tr>
+ <tr id="l199">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=199#src-199">199</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 199, 'Tests that hit line # 199');" ><span title="Line 199, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-199" class="srcLine"><span class="nolink" title="Line 199, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, dt1.equals(dt3));</span></span></td>
+</tr>
+ <tr id="l200">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=200#src-200">200</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-200" class="srcLine">        </span></td>
+</tr>
+ <tr id="l201">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=201#src-201">201</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 201, 'Tests that hit line # 201');" ><span title="Line 201, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-201" class="srcLine"><span class="nolink" title="Line 201, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.hashCode() == chrono2A.hashCode());</span></span></td>
+</tr>
+ <tr id="l202">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=202#src-202">202</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 202, 'Tests that hit line # 202');" ><span title="Line 202, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-202" class="srcLine"><span class="nolink" title="Line 202, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.hashCode() == chrono2B.hashCode());</span></span></td>
+</tr>
+ <tr id="l203">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=203#src-203">203</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 203, 'Tests that hit line # 203');" ><span title="Line 203, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-203" class="srcLine"><span class="nolink" title="Line 203, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.hashCode() == chrono3.hashCode());</span></span></td>
+</tr>
+ <tr id="l204">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=204#src-204">204</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-204" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l205">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=205#src-205">205</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-205" class="srcLine"></span></td>
+</tr>
+ <tr id="l206">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=206#src-206">206</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-206" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="207" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-207' onclick="toggleInlineStats(this, 'inlinestats-207');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-207" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-207'), 'inlinestats-207');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (14)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.07</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l207">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=207#src-207">207</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 207, 'Tests that hit testEqualsHashCode_Zoned()&#160;:&#160;void');" ><span title="Line 207, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-207"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 207,227);" id="img-207" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-207" class="srcLine"><span class="nolink" title="Line 207, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">void</span> testEqualsHashCode_Zoned() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-207'), 207,227);" id="e207" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l208">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=208#src-208">208</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 208, 'Tests that hit line # 208');" ><span title="Line 208, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-208" class="srcLine"><span class="nolink" title="Line 208, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a> zoneA = <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.forID(<span class="string">&quot;Europe/Paris&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l209">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=209#src-209">209</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 209, 'Tests that hit line # 209');" ><span title="Line 209, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-209" class="srcLine"><span class="nolink" title="Line 209, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a> zoneB = <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.forID(<span class="string">&quot;Asia/Tokyo&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l210">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=210#src-210">210</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-210" class="srcLine">        </span></td>
+</tr>
+ <tr id="l211">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=211#src-211">211</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 211, 'Tests that hit line # 211');" ><span title="Line 211, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-211" class="srcLine"><span class="nolink" title="Line 211, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono1 = <a href="../../../org/joda/time/chrono/ZonedChronology.html#ZonedChronology">ZonedChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC(), zoneA);</span></span></td>
+</tr>
+ <tr id="l212">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=212#src-212">212</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 212, 'Tests that hit line # 212');" ><span title="Line 212, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-212" class="srcLine"><span class="nolink" title="Line 212, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono2 = <a href="../../../org/joda/time/chrono/ZonedChronology.html#ZonedChronology">ZonedChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC(), zoneA);</span></span></td>
+</tr>
+ <tr id="l213">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=213#src-213">213</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 213, 'Tests that hit line # 213');" ><span title="Line 213, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-213" class="srcLine"><span class="nolink" title="Line 213, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/Chronology.html#Chronology">Chronology</a> chrono3 = <a href="../../../org/joda/time/chrono/ZonedChronology.html#ZonedChronology">ZonedChronology</a>.getInstance(<a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstanceUTC(), zoneB);</span></span></td>
+</tr>
+ <tr id="l214">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=214#src-214">214</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-214" class="srcLine">        </span></td>
+</tr>
+ <tr id="l215">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=215#src-215">215</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 215, 'Tests that hit line # 215');" ><span title="Line 215, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-215" class="srcLine"><span class="nolink" title="Line 215, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.equals(chrono2));</span></span></td>
+</tr>
+ <tr id="l216">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=216#src-216">216</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 216, 'Tests that hit line # 216');" ><span title="Line 216, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-216" class="srcLine"><span class="nolink" title="Line 216, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.equals(chrono3));</span></span></td>
+</tr>
+ <tr id="l217">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=217#src-217">217</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-217" class="srcLine">        </span></td>
+</tr>
+ <tr id="l218">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=218#src-218">218</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 218, 'Tests that hit line # 218');" ><span title="Line 218, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-218" class="srcLine"><span class="nolink" title="Line 218, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt1 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono1);</span></span></td>
+</tr>
+ <tr id="l219">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=219#src-219">219</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 219, 'Tests that hit line # 219');" ><span title="Line 219, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-219" class="srcLine"><span class="nolink" title="Line 219, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt2 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono2);</span></span></td>
+</tr>
+ <tr id="l220">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=220#src-220">220</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 220, 'Tests that hit line # 220');" ><span title="Line 220, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-220" class="srcLine"><span class="nolink" title="Line 220, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a> dt3 = <span class="keyword">new</span> <a href="../../../org/joda/time/DateTime.html#DateTime">DateTime</a>(0L, chrono3);</span></span></td>
+</tr>
+ <tr id="l221">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=221#src-221">221</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-221" class="srcLine">        </span></td>
+</tr>
+ <tr id="l222">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=222#src-222">222</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 222, 'Tests that hit line # 222');" ><span title="Line 222, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-222" class="srcLine"><span class="nolink" title="Line 222, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, dt1.equals(dt2));</span></span></td>
+</tr>
+ <tr id="l223">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=223#src-223">223</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 223, 'Tests that hit line # 223');" ><span title="Line 223, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-223" class="srcLine"><span class="nolink" title="Line 223, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, dt1.equals(dt3));</span></span></td>
+</tr>
+ <tr id="l224">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=224#src-224">224</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-224" class="srcLine">        </span></td>
+</tr>
+ <tr id="l225">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=225#src-225">225</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 225, 'Tests that hit line # 225');" ><span title="Line 225, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-225" class="srcLine"><span class="nolink" title="Line 225, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">true</span>, chrono1.hashCode() == chrono2.hashCode());</span></span></td>
+</tr>
+ <tr id="l226">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=226#src-226">226</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 226, 'Tests that hit line # 226');" ><span title="Line 226, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-226" class="srcLine"><span class="nolink" title="Line 226, Col 9: statement executed 1 time.">        assertEquals(<span class="keyword">false</span>, chrono1.hashCode() == chrono3.hashCode());</span></span></td>
+</tr>
+ <tr id="l227">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=227#src-227">227</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-227" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l228">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=228#src-228">228</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-228" class="srcLine"></span></td>
+</tr>
+ <tr id="l229">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=229#src-229">229</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-229" class="srcLine">    <span class="comment">//-----------------------------------------------------------------------</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="230" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-230' onclick="toggleInlineStats(this, 'inlinestats-230');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-230" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-230'), 'inlinestats-230');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (14)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.07</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l230">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=230#src-230">230</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 230, 'Tests that hit testToString()&#160;:&#160;void');" ><span title="Line 230, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-230"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 230,247);" id="img-230" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-230" class="srcLine"><span class="nolink" title="Line 230, Col 5: method entered 1 time.">    <span class="keyword">public</span> <span class="keyword">void</span> testToString() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-230'), 230,247);" id="e230" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l231">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=231#src-231">231</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 231, 'Tests that hit line # 231');" ><span title="Line 231, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-231" class="srcLine"><span class="nolink" title="Line 231, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a> paris = <a href="../../../org/joda/time/DateTimeZone.html#DateTimeZone">DateTimeZone</a>.forID(<span class="string">&quot;Europe/Paris&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l232">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=232#src-232">232</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 232, 'Tests that hit line # 232');" ><span title="Line 232, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-232" class="srcLine"><span class="nolink" title="Line 232, Col 9: statement executed 1 time.">        <a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a> isoParis = <a href="../../../org/joda/time/chrono/ISOChronology.html#ISOChronology">ISOChronology</a>.getInstance(paris);</span></span></td>
+</tr>
+ <tr id="l233">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=233#src-233">233</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-233" class="srcLine">        </span></td>
+</tr>
+ <tr id="l234">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=234#src-234">234</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 234, 'Tests that hit line # 234');" ><span title="Line 234, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-234" class="srcLine"><span class="nolink" title="Line 234, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;ISOChronology[Europe/Paris]&quot;</span>, isoParis.toString());</span></span></td>
+</tr>
+ <tr id="l235">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=235#src-235">235</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 235, 'Tests that hit line # 235');" ><span title="Line 235, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-235" class="srcLine"><span class="nolink" title="Line 235, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;GJChronology[Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/GJChronology.html#GJChronology">GJChronology</a>.getInstance(paris).toString());</span></span></td>
+</tr>
+ <tr id="l236">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=236#src-236">236</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 236, 'Tests that hit line # 236');" ><span title="Line 236, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-236" class="srcLine"><span class="nolink" title="Line 236, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;GregorianChronology[Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/GregorianChronology.html#GregorianChronology">GregorianChronology</a>.getInstance(paris).toString());</span></span></td>
+</tr>
+ <tr id="l237">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=237#src-237">237</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 237, 'Tests that hit line # 237');" ><span title="Line 237, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-237" class="srcLine"><span class="nolink" title="Line 237, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;JulianChronology[Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/JulianChronology.html#JulianChronology">JulianChronology</a>.getInstance(paris).toString());</span></span></td>
+</tr>
+ <tr id="l238">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=238#src-238">238</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 238, 'Tests that hit line # 238');" ><span title="Line 238, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-238" class="srcLine"><span class="nolink" title="Line 238, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;BuddhistChronology[Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/BuddhistChronology.html#BuddhistChronology">BuddhistChronology</a>.getInstance(paris).toString());</span></span></td>
+</tr>
+ <tr id="l239">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=239#src-239">239</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 239, 'Tests that hit line # 239');" ><span title="Line 239, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-239" class="srcLine"><span class="nolink" title="Line 239, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;CopticChronology[Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/CopticChronology.html#CopticChronology">CopticChronology</a>.getInstance(paris).toString());</span></span></td>
+</tr>
+ <tr id="l240">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=240#src-240">240</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 240, 'Tests that hit line # 240');" ><span title="Line 240, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-240" class="srcLine"><span class="nolink" title="Line 240, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;EthiopicChronology[Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/EthiopicChronology.html#EthiopicChronology">EthiopicChronology</a>.getInstance(paris).toString());</span></span></td>
+</tr>
+ <tr id="l241">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=241#src-241">241</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 241, 'Tests that hit line # 241');" ><span title="Line 241, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-241" class="srcLine"><span class="nolink" title="Line 241, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;IslamicChronology[Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/IslamicChronology.html#IslamicChronology">IslamicChronology</a>.getInstance(paris).toString());</span></span></td>
+</tr>
+ <tr id="l242">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=242#src-242">242</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-242" class="srcLine">        </span></td>
+</tr>
+ <tr id="l243">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=243#src-243">243</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 243, 'Tests that hit line # 243');" ><span title="Line 243, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-243" class="srcLine"><span class="nolink" title="Line 243, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;LenientChronology[ISOChronology[Europe/Paris]]&quot;</span>, <a href="../../../org/joda/time/chrono/LenientChronology.html#LenientChronology">LenientChronology</a>.getInstance(isoParis).toString());</span></span></td>
+</tr>
+ <tr id="l244">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=244#src-244">244</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 244, 'Tests that hit line # 244');" ><span title="Line 244, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-244" class="srcLine"><span class="nolink" title="Line 244, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;StrictChronology[ISOChronology[Europe/Paris]]&quot;</span>, <a href="../../../org/joda/time/chrono/StrictChronology.html#StrictChronology">StrictChronology</a>.getInstance(isoParis).toString());</span></span></td>
+</tr>
+ <tr id="l245">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=245#src-245">245</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 245, 'Tests that hit line # 245');" ><span title="Line 245, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-245" class="srcLine"><span class="nolink" title="Line 245, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;LimitChronology[ISOChronology[Europe/Paris], NoLimit, NoLimit]&quot;</span>, <a href="../../../org/joda/time/chrono/LimitChronology.html#LimitChronology">LimitChronology</a>.getInstance(isoParis, <span class="keyword">null</span>, <span class="keyword">null</span>).toString());</span></span></td>
+</tr>
+ <tr id="l246">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=246#src-246">246</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 246, 'Tests that hit line # 246');" ><span title="Line 246, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-246" class="srcLine"><span class="nolink" title="Line 246, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;ZonedChronology[ISOChronology[UTC], Europe/Paris]&quot;</span>, <a href="../../../org/joda/time/chrono/ZonedChronology.html#ZonedChronology">ZonedChronology</a>.getInstance(isoParis, paris).toString());</span></span></td>
+</tr>
+ <tr id="l247">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=247#src-247">247</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-247" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l248">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=248#src-248">248</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-248" class="srcLine"></span></td>
+</tr>
+ <tr id="l249">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=249#src-249">249</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-249" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="TestChronology.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Wed Dec 28 2022 16:44:45 MST using coverage data from Wed Dec 28 2022 16:44:38 MST.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>
